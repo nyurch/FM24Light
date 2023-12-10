@@ -590,7 +590,7 @@
 	<!-- Results -->
 	<colour name="result_background"										value="bg accent"/>
 	<!-- Background for result on fixtures and results panel -->
-	<colour name="aggregate_result_background"								value="bg green"/>
+	<colour name="aggregate_result_background"								value="green 700"/>
 	<!-- Background for aggregate result on fixtures and results panel -->
 	<colour name="result_time_background"									value="bg blue darker"/>
 

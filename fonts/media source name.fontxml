@@ -1,0 +1,8 @@
+<record>
+	<string id="file_name" value="Lato-Bold.ttf"/>
+
+	<integer id="extra_spacing" value="-0.2"/>
+
+	<real id="extra_height" value="-2"/>
+
+</record>

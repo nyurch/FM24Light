@@ -1,0 +1,364 @@
+﻿<panel height="740">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<integer id="kick_taker_low_res_width" value="850" />
+	<integer id="kick_taker_high_res_width" value="1400" />
+	<integer id="non_kick_taker_width" value="980" />
+
+	<list id="properties_to_forward">
+		<record get_property="titl" set_property="text" target="titl" />
+		<record get_property="ltxt" set_property="text" target="ltxt" />
+		<record get_property="rtxt" set_property="text" target="rtxt" />
+	</list>
+
+	<attachment class="test_screen_size_attachment">
+		<list id="properties">
+			<record>
+				<flags id="alignment" value="horizontal" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="1425" />
+				<symbol id="set_property" value="mode" />
+				<boolean id="true_value" value="false" />
+				<boolean id="false_value" value="true" />
+			</record>
+		</list>
+	</attachment>
+
+	<set_var name="player_table">
+		<widget class="client_object_list_table" fixed_size_rows="true" auto_size="none" database_table_type="1" row_height="45">
+			<flags id="mode" value="fill_rows, select_rows, stripe_rows, draw_drag_marker_from_direction" />
+			<flags id="default_view" value="defa" />
+			<boolean id="should_force_refresh" value="true" />
+			<boolean id="force_refresh_on_object_list" value="true" />
+
+			<!--available views-->
+			<list id="viws">
+				<record id="defa">
+					<record id="view">
+						<record id="choI" auto_hide_priority="0" width="120" sort_disabled="true" alignment="centre" />
+						<!-- Choice -->
+						<record id="namE" auto_hide_priority="0" minimum_width="180" sort_disabled="true" />
+						<!-- Player -->
+						
+						<!--The order is important as we hide the columns we don't need while maintaining their column index--> 
+						
+						<flags id="Ppac" />
+						<!--Pace-->
+						<record id="Pmar" />
+						<!--Marking-->
+						<record id="Pcnt" />
+						<!--Concentration-->
+						<record id="Pant" />
+						<!--Anticipation-->
+						<record id="Pdri" />
+						<!--Dribbling-->
+						<record id="Pfin" />
+						<!--Finishing-->
+						<flags id="Pjum" />
+						<!--Jumping-->
+						<flags id="Pstr" />
+						<!--Strength-->
+						<record id="Phea" />
+						<!--Heading-->
+						<record id="Potb" />
+						<!--Off The Ball-->
+						<record id="Plsh" />
+						<!--Long Shots-->
+						<record id="Ptec" />
+						<!--Technique-->
+						<flags id="Pcro" />
+						<!--Crossing-->
+						<record id="Ptac" />
+						<!--Tackling-->
+						<record id="Pbra" />
+						<!-- Bravery -->
+						<record id="Pfrk" />
+						<!--Free Kicks-->
+						<record id="Pcor" />
+						<!--Corners-->
+						<record id="Plth" />
+						<!--Long Throws-->
+						<record id="Ppas" />
+						<!--Passing-->
+						<record id="Ppsn" />
+						<!--Positioning-->
+						<record id="Pfot" />
+						<!--Foot-->
+						<record id="Ppos" />
+						<!--Position-->
+						<record id="Remp" width="30" alignment="centre" />
+						<!-- Remove -->
+					</record>
+				</record>
+			</list>
+		</widget>
+	</set_var>
+
+	<set_var name="specialist_check_box">
+
+		<container height="55">
+			<list id="properties_to_forward">
+				<record get_property="text" set_property="text" target="ckbx" />
+				<record get_property="clke" set_property="clke" target="ckbx" />
+				<record get_property="slct" set_property="slct" target="ckbx" />
+			</list>
+			<attachment_group class="vertical_arrange" vertical_alignment="bottom" vertical_offset="0" vertical_gap="0" />
+
+			<container class="inner_subtle_box" height="50">
+				<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" vertical_gap="0" />
+
+				<widget class="check_box_button" value="0" icon_alignment="left" id="ckbx" />
+			</container>
+		</container>
+	</set_var>
+
+
+	<list id="instruction_table_meta_data">
+		<record id="choI" rdrh="true" rddh="true">
+			<record id="column_heading" alignment="centre">
+				<translation id="text" translation_id="559072" type="use" value="Choice[COMMENT: AREA: Team Squad; SUB-AREA: Squad Planner; FR-BN: FM-4070; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Squad Planner, make a choice and move the player up or down the list]" />
+				<translation id="hint" translation_id="559073" type="use" value="Move up/down list[COMMENT: AREA: Team Squad; SUB-AREA: Squad Planner; FR-BN: FM-4070; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Person property meta data column hint.]" />
+			</record>
+			<record id="widget_info" class="table_row_order_widget" draggable="true" wigd="false" alignment="left, centre_y" change_order_event="mspt" dgTi="plyr" pCid="plyr" />
+		</record>
+		<record id="namE" width="-1" minimum_width="120" auto_hide_priority="0" dont_use_aliased_property_id_for_sort="true" locked="true" aliased_property_id="Pers" customisation_context="none">
+			<translation id="name" translation_id="327299" type="use" value="Name (Detailed)[COMMENT: The column name representing the Name of the person. It is detailed due to the fact it colours depending on the players status information; used in the customisable views in the customisable columns]" />
+			<record id="column_heading" alignment="left, centre_y">
+				<translation id="text" translation_id="227765" type="use" value="Name[comment - Person Name]" />
+				<translation id="hint" translation_id="247479" type="use" value="Person Name" />
+			</record>
+			<record id="widget_info" class="client_object_viewer_xml_panel" file="widgets/player kit name and team position widget" />
+			<record id="column_widget_properties" alignment="left, centre_y" navigation_focus_target="true" />
+		</record>
+		<record id="Remp">
+			<record id="column_heading" alignment="centre">
+				<translation id="hint" translation_id="251907" type="use" value="Remove[COMMENT: team scouting panel; button for adding a new assignment]" />
+			</record>
+			<record id="widget_info" class="icon_button" click_event="rspt" icon="icons/16px/remove from list" appearance="" icon_colour="text" scale_picture="true" label_disabled="true" auto_size="horizontal" alignment="left, centre_y">
+				<translation id="hint" translation_id="251907" type="use" value="Remove[COMMENT: team scouting panel; button for adding a new assignment]" />
+			</record>
+		</record>
+	</list>
+	<container class="main_contrast_box" appearance="boxes/popup/standard/paper">
+		<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_gap="15" />
+
+		<!--Title-->
+		<container height="40">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+			<container width="34">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
+				<widget class="label" text="1" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
+			</container>
+
+			<widget id="titl" class="label" colour="accent" font="title" alignment="left, centre_y" auto_size="horizontal">
+				<translation id="text" translation_id="596494" type="use" value="Select Instruction Category[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-20494; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for selecting set piece instruction category]" />
+			</widget>
+		</container>
+
+		<!--Buttons-->
+		<container height="45" id="raBu">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="20" horizontal_gap="20" vertical_inset="0" />
+
+			<!--Buttons added in code-->
+			<record id="default_properties" alignment="centre" group="0" icon_enabled="false" secondary_icon_enabled="false" secondary_icon="icons/16px/circle" secondary_icon_alignment="centre" show_button_appearance="true" appearance="buttons/standard/set pieces/button" />
+
+		</container>
+
+		<widget class="horizontal_divider" id="sePa" />
+
+		<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right, extend" horizontal_offset="0" horizontal_gap="30" vertical_inset="0" />
+
+			<!--Table(s)-->
+			<container draw_vertical_dividers="true" id="tblz">
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1, extend" horizontal_offset="20" horizontal_gap="30" vertical_inset="10" />
+
+				<!--Left Table-->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="middle, extend" vertical_offset="0" vertical_gap="0" />
+
+					<!--Heading-->
+					<container height="40">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+						<container width="34" id="num2">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+							<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
+							<widget class="label" text="2" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
+						</container>
+						
+						<widget class="picture" id="lftI" file="icons/16px/left footed" scale_picture="false" image_alignment="centre" hidden="true" width="24" />
+
+						<widget class="label" id="ltxt" colour="accent" font="title" alignment="left, centre_y" auto_size="horizontal" />
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+
+							<widget class="widget_popup_button" id="apPL" auto_size="horizontal">
+								<translation id="text" translation_id="395006" type="use" value="Add Player[COMMENT: FR 8517 button text for adding a specific player to a fantasy club]" />
+								<string id="popup_alignment" value="left, bottom" />
+								<string id="widget_type" value="team_tactics_set_piece_routine_player_popup" />
+								<record id="widget_properties" width="500" height="440" />
+								<record id="modal_popup_properties" file="modal popup panel auto sized" dont_close_existing_popup="true" dark="false" />
+							</widget>
+
+							<container>
+								<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="-3" vertical_inset="0" />
+
+								<widget class="button" auto_size="horizontal" appearance="buttons/standard/split/left/button">
+									<record id="click_event" event_id="qpck" SPsd="0" />
+									<translation id="text" translation_id="329695" type="use" value="Ask Assistant to Assign[COMMENT: team training coaches panel; ask assistant manager to take control over areas of training]" />
+								</widget>
+								<widget class="popup_button" auto_size="horizontal" appearance="buttons/standard/split/right/button" id="akPL" fixed="true" />							
+							</container>
+						</container>
+					</container>
+
+					<!--Side Selection-->
+					<container height="40" id="Side" hidden="true">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left" horizontal_offset="0" horizontal_gap="0" vertical_inset="5" />
+
+						<list id="properties_to_forward">
+							<record get_property="ltxt" set_property="text" target="sdLT" />
+							<record get_property="rtxt" set_property="text" target="rtxt" />
+						</list>
+
+						<widget class="radio_toggle_switch_left" group="0" selected="true" alignment="centre" auto_size="horizontal" id="sdLT">
+							<record id="click_event">
+								<flags id="event_id" value="SISL" />
+								<flags id="valu" value="PlfG" />
+							</record>
+						</widget>
+						<widget class="radio_toggle_switch_right" group="0" selected="false" alignment="centre" auto_size="horizontal" id="rtxt">
+							<record id="click_event">
+								<flags id="event_id" value="SISL" />
+								<flags id="valu" value="PrfG" />
+							</record>
+						</widget>
+
+					</container>
+
+					<var id="plt1" name="player_table" />
+					<var id="spCL" name="specialist_check_box" />
+					<widget class="spacer" height="1" id="spSL" hidden="true" />
+				</container>
+
+				<!--Right Table-->
+				<container id="t2Co">
+					<attachment_group class="vertical_arrange" vertical_alignment="middle, extend" vertical_offset="0" vertical_gap="0" />
+
+					<!--Heading-->
+					<container height="40">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+						<container width="34" id="num3">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+							<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
+							<widget class="label" text="3" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
+						</container>
+						
+						<widget class="picture" id="rftI" file="icons/16px/right footed" scale_picture="false" image_alignment="centre" hidden="true" width="24" />
+
+						<widget class="label" id="rtxt" colour="accent" font="title" alignment="left, centre_y" auto_size="horizontal" />
+
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+
+							<widget class="widget_popup_button" id="apPR" auto_size="horizontal">
+								<translation id="text" translation_id="395006" type="use" value="Add Player[COMMENT: FR 8517 button text for adding a specific player to a fantasy club]" />
+								<string id="popup_alignment" value="left, bottom" />
+								<string id="widget_type" value="team_tactics_set_piece_routine_player_popup" />
+								<record id="widget_properties" width="500" height="440" />
+								<record id="modal_popup_properties" file="modal popup panel auto sized" dont_close_existing_popup="true" dark="false" />
+							</widget>
+
+							<container>
+								<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="-3" vertical_inset="0" />
+
+								<widget class="button" auto_size="horizontal" appearance="buttons/standard/split/left/button">
+								<record id="click_event" event_id="qpck" SPsd="1" />
+									<translation id="text" translation_id="329695" type="use" value="Ask Assistant to Assign[COMMENT: team training coaches panel; ask assistant manager to take control over areas of training]" />
+								</widget>
+								<widget class="popup_button" auto_size="horizontal" appearance="buttons/standard/split/right/button" id="akPR" fixed="true" />
+							</container>
+						</container>
+					</container>
+
+					<var id="plt2" name="player_table" />
+
+					<var id="spCR" name="specialist_check_box" />
+					<widget class="spacer" height="1" id="spSR" hidden="true" />
+				</container>
+			</container>
+
+			<!--Priorities-->
+			<container width="300" id="Priy" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" />
+				<container height="40">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+					<container width="34">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+						<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
+						<widget class="label" text="3" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
+					</container>
+
+					<widget class="label" colour="accent" font="title" alignment="left, centre_y" auto_size="none">
+						<translation id="text" translation_id="596492" type="use" value="Set Priorities[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-20494; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for ordering the priority of set piece instructions]" />
+
+					</widget>
+				</container>
+
+				<container class="inner_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" vertical_offset="0" vertical_gap="12" />
+
+					<!--Title & Priorities-->
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right, extend" horizontal_gap="0" horizontal_offset="2" vertical_alignment="top" vertical_inset="0" />
+
+						<widget class="label" font="label" height="25" alignment="left, centre_y" size="large" auto_size="none">
+							<translation id="text" translation_id="596493" type="use" value="Priority List[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-20494; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for ordering the priority of set piece instructions]" />
+						</widget>
+					</container>
+
+					<widget class="label" alignment="left, centre_y" multiline="true" auto_size="vertical" size="small">
+						<translation id="text" translation_id="597578" type="use" value="This order determines which set piece category is prioritised when players are being assigned set piece instructions on a matchday.[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-20494; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Description for ordering the priority of set piece instructions]" />
+					</widget>
+
+					<widget class="label" colour="disabled" alignment="left, centre_y" size="small" multiline="true" auto_size="vertical" id="prDe">
+						<translation id="text" translation_id="597580" type="use" value="For example, if a player is ranked first for Aerial Defenders and Trackers, priority will be given to whichever is higher in this list. The lower ranked category will then pick the next highest ranked player in its list, from whichever players are remaining.[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-25617; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Example Description for ordering the priority of set piece instructions]" />
+					</widget>					
+					
+					<widget class="label" colour="disabled" alignment="left, centre_y" size="small" multiline="true" auto_size="vertical" id="prAt">
+						<translation id="text" translation_id="598134" type="use" value="For example, if a player is ranked first for Aerial Threats and Box Threats, priority will be given to whichever is higher in this list. The lower ranked category will then pick the next highest ranked player in its list, from whichever players are remaining.[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-25617; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Example Description for ordering the priority of set piece instructions]" />
+					</widget>
+
+					<container class="inner_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" />
+
+					<widget class="table" id="PrTB" layout="-1" all_content_same_height="false" row_spacing="8" auto_size_rows="true" fixed_size_rows="false" mode="fill_rows,drag_rows, drop_on_rows, draw_drag_marker_from_direction" auto_size="vertical">
+						<flags id="row_appearance" value="tables/standard/row/divider/row fg" />
+					</widget>
+
+				</container>
+
+
+				</container>
+			</container>
+		</container>
+
+	</container>
+
+	<!--Close-->
+	<widget class="icon_button" appearance="none" icon="icons/16px/close" auto_size="all" icon_colour="white">
+		<layout class="stick_to_sides_attachment" alignment="right,top" inset="14" />
+		<record id="click_event">
+			<flags id="event_id" value="mcan" />
+		</record>
+	</widget>
+</panel>

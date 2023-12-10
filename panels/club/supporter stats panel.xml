@@ -1,0 +1,103 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<!-- Relationship With Board -->
+	<container id="rbrd">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" vertical_gap="6" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="8" />
+			<widget class="picture" file="icons/custom/scouting/report card/adaptability" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="20" width="20" red_replacement="fg blue" blue_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+			<widget class="label" section="slab" font="title" style="bold" colour="accent" alignment="left, centre_y" auto_size="all">
+				<translation id="text" translation_id="558913" type="use" value="Supporters' Influence On The Board" />
+			</widget>
+		</container>
+				<container height="15">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="8"/>
+			<widget class="value_based_picture" id="rbri" scale_picture="true" image_alignment="left" keep_aspect_ratio="true" width="73">
+				<list id="value_list">
+					<record min_value="16" max_value="10000" file="icons/custom/supporter/very high" red_replacement="green 900"/>
+					<record min_value="12" max_value="15" file="icons/custom/supporter/high" red_replacement="green 600"/>
+					<record min_value="9" max_value="11" file="icons/custom/supporter/moderate" red_replacement="green 300"/>
+					<record min_value="5" max_value="8" file="icons/custom/supporter/low" red_replacement="green 100"/>
+					<record min_value="0" max_value="7" file="icons/custom/supporter/very low" red_replacement="green"/>
+				</list>
+			</widget>
+			<widget class="text" id="sbtn" auto_size="horizontal" style="bold"/>
+		</container>
+
+	</container>
+
+	<!-- International Reach -->
+	<container id="intr">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" vertical_gap="6" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="8" />
+			<widget class="picture" file="icons/26px/international_reach" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="20" width="20" red_replacement="fg green" blue_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+			<widget class="label" section="slab" font="title" style="bold" colour="accent" alignment="left, centre_y" auto_size="all">
+				<translation id="text" translation_id="558905" type="use" value="International Reach" />
+			</widget>
+		</container>
+		<widget class="icon_button" id="sbtn" minimum_width="100" height="20" alignment="left,centre_y" appearance="buttons/text/button" navigation_focus_target="false" auto_size="horizontal"/>
+
+	</container>
+
+	<!-- Social Media -->
+	<container id="socm">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" vertical_gap="6" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="8" />
+			<widget class="picture" file="icons/custom/start screen/steam workshop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="20" width="20" red_replacement="fg green" blue_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+			<widget class="label" section="slab" font="title" style="bold" colour="accent" alignment="left, centre_y" auto_size="all">
+				<translation id="text" translation_id="558907" type="use" value="Social Media" />
+			</widget>
+		</container>
+		<widget class="icon_button" id="sbtn" minimum_width="100" height="20" alignment="left,centre_y" appearance="buttons/text/button" navigation_focus_target="false" auto_size="horizontal"/>
+
+	</container>
+
+	<!-- Season Ticket Holders -->
+	<container id="stkh">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" vertical_gap="6" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="8" />
+			<widget class="picture" file="icons/custom/player stats/earner" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="20" width="20" red_replacement="fg orange" blue_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+			<widget class="label" section="slab" font="title" style="bold" colour="accent" alignment="left, centre_y" auto_size="all">
+				<translation id="text" translation_id="558911" type="use" value="Season Ticket Holders" />
+			</widget>
+		</container>
+		<widget class="icon_button" id="sbtn" minimum_width="100" height="20" alignment="left,centre_y" appearance="buttons/text/button" navigation_focus_target="false" auto_size="horizontal"/>
+
+	</container>
+
+	<!-- Season Ticket Waiting List -->
+	<container id="stwl">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" vertical_gap="6" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="8" />
+			<widget class="picture" file="icons/custom/shortlist/list" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="20" width="20" red_replacement="fg magenta" blue_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" />
+			</widget>
+			<widget class="label" section="slab" font="title" style="bold" colour="accent" alignment="left, centre_y" auto_size="all">
+				<translation id="text" translation_id="558912" type="use" value="Season Ticket Waiting List" />
+			</widget>
+		</container>
+		<widget class="icon_button" id="sbtn" minimum_width="100" height="20" alignment="left,centre_y" appearance="buttons/text/button" navigation_focus_target="false" auto_size="horizontal"/>
+
+	</container>
+
+
+
+</panel>

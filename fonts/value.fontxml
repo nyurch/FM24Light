@@ -1,0 +1,9 @@
+<record>
+	<string id="file_name" value="Lato-Bold.ttf"/>
+	<real id="font_size_small" value="10" />
+	<real id="font_size_normal" value="12" />
+	<real id="font_size_large" value="14" />
+
+	<flags id="colour" value="fg"/>
+
+</record>

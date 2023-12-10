@@ -1,0 +1,68 @@
+﻿<panel wants_mouse_events="true">
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+
+	<list id="properties_to_forward">
+		<record get_property="category_highlight_appearance" set_property="appearance" target="hghC" />
+		<record get_property="category_highlight_colour" set_property="red_replacement" target="hghC" />
+		<record get_property="titl" set_property="text" target="titl" />
+		<record get_property="hopo" set_property="hopo" target="desc" />
+		<record get_property="desc" set_property="hint" target="desc" />
+		<record get_property="desc" set_property="text" target="desc" />
+		<record get_property="clke" set_property="clke" target="titB" />
+	</list>
+
+	<container class="plain_box" id="hghC">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="6" vertical_gap="5" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" />
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" vertical_offset="0" horizontal_inset="0" vertical_gap="0" />
+				<container>
+					<attachment_group class="vertical_arrange_autosize_all" vertical_offset="0" horizontal_inset="0" vertical_gap="4" />
+					<widget class="button" id="titl" icon_enabled="true" appearance="" red_replacement="text" colour="black" font="title" auto_size="all"  size="large">
+						<translation id="text" translation_id="573194" type="use" value="Box Threat[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Player Instructions; FR-BN: todo george.webster; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for player instructions of those who pose a threat in the penalty box]" />
+					</widget>
+					<widget class="picture" file="dividers/solid/intro line" height="4">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+					</widget>
+				</container>
+				<widget class="picture" file="icons/16px/maximise" width="20" colour="black" image_alignment="top, centre_x">
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+				</widget>
+			</container>
+		
+			<widget class="button" id="titB" ignore_sizing="true" show_button_appearance="">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="2" horizontal_offset="0" vertical_alignment="top" vertical_inset="0" />
+
+			<widget class="icon_button" id="desc" auto_size_restricted_to_parent_width="true" icon="icons/custom/more/button" icon_enabled="true" appearance="" icon_colour="black" colour="disabled" auto_size="all" icon_alignment="left" size="10" multiline="true">
+				<translation id="hint" translation_id="573207" type="use" value="Most dangerous box threat ranked first[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Player Instructions; FR-BN: todo george.webster; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; info on the order to place players in a list]" />
+				<translation id="text" translation_id="573207" type="use" value="Most dangerous box threat ranked first[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Player Instructions; FR-BN: todo george.webster; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; info on the order to place players in a list]" />
+			</widget>
+		</container>
+
+		<widget class="table" id="tabl" layout="-1" row_insert_appearance="tables/standard/row/row insert full width/insert" all_content_same_height="false" row_spacing="8" auto_size_rows="true" fixed_size_rows="false" mode="stripe_rows, drag_rows, drop_on_rows, draw_drag_marker_from_direction" auto_size="vertical" />
+
+		<!--Category is full warning box-->
+		<container id="maxB" class="plain_box" hidden="true" igSz="true">
+
+			<list id="properties_to_forward">
+				<record get_property="text" set_property="text" target="txtW" />
+			</list>
+			
+			<widget class="text" id="txtW" alignment="centre" multiline="true" style="bold">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="false" inset="0" />
+			</widget>
+			
+		</container>
+
+		<widget class="text" id="drgT" height="50" hidden="true" alignment="centre">
+			<translation id="text" translation_id="596488" type="use" value="Drag instructions into this category[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece instruction category container; FR:; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; warning for wehen instruction being dragged into new category - where to drop it]" />
+		</widget>
+	</container>
+</panel>

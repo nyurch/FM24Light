@@ -26,11 +26,11 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="12" />
 
 			<!-- Home result -->
-			<widget id="hres" class="text" font="text" alignment="right,centre_y" size="large" colour="black" auto_size="vertical" />
+			<widget id="hres" class="text" font="text" alignment="right,centre_y" size="large" colour="white" auto_size="vertical" />
 			<!-- Score -->
 			<widget id="scor" class="text" colour="white" font="bold" size="12" alignment="centre" auto_size="vertical" />
 			<!-- Away result -->
-			<widget id="ares" class="text" font="text" alignment="left,centre_y" size="large" colour="black" auto_size="vertical" />
+			<widget id="ares" class="text" font="text" alignment="left,centre_y" size="large" colour="white" auto_size="vertical" />
 		</container>
 
 		<!-- Aggregate total result -->
@@ -39,11 +39,11 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="12" />
 
 			<!-- Home aggregate win due to most away goals scores -->
-			<widget id="hagw" class="label" font="bold" alignment="right,centre_y" size="large" colour="black" auto_size="vertical" />
+			<widget id="hagw" class="label" font="bold" alignment="right,centre_y" size="large" colour="white" auto_size="vertical" />
 			<!-- Aggregate score -->
 			<widget id="scra" class="text" colour="white" font="bold" alignment="centre" auto_size="vertical" />
 			<!-- Away aggregate win due to most away goals scores -->
-			<widget id="aagw" class="label" font="bold" alignment="left,centre_y" size="large" colour="black" auto_size="vertical" />
+			<widget id="aagw" class="label" font="bold" alignment="left,centre_y" size="large" colour="white" auto_size="vertical" />
 		</container>
 
 		<!-- Kick off time-->

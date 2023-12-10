@@ -10,8 +10,8 @@
 		<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" height="160"/>
 
 		<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" default_height="-1">
-			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="4"/>
-			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="1" apply_to_children="true" />
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="-4" apply_to_children="true" />
 
 			<!--club/nation selector-->
 			<container class="tabbed_container" id="tabc" changed_event="Tesc" contents_kind="container" group_kind="container" hide_selector_if_one_or_fewer_items="true">
@@ -119,11 +119,11 @@
 
 			<!-- battery indicator, only shows up for laptops	& chat indicator-->
 			<container>
-				<layout class="arrange_vertical_attachment" alignment="bottom" gap="0" offset="5"/>
+				<layout class="arrange_vertical_attachment" alignment="bottom" gap="0" offset="0"/>
 				<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" apply_to_children="true" />
 				<layout class="stick_to_sides_attachment" alignment="left,bottom" inset="0"/>
 
-				<layout class="fit_children_attachment" alignment="vertical,fill" offset="5"/>
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0"/>
 
 				<widget class="feed_button" id="ChBt" width="45" height="40" event_id="addF" secondary_icon="icons/26px/speech bubble" secondary_icon_alignment="centre" appearance="" alignment="left,top">
 					<record id="secondary_icon_properties" red_replacement="black"/>

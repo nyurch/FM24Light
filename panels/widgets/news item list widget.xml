@@ -9,6 +9,7 @@
 	<colour id="read_headline_text_style" name="default"/>
 	<colour id="unread_headline_text_style" name="semi_bold"/>
 	<colour id="selected_headline_text_style" name="semi_bold"/>
+    <colour id="selected_item_alt_bg_colour" name="deadline day bg"/>
 
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 

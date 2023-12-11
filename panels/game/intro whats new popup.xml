@@ -1,0 +1,100 @@
+﻿<panel width="955" height="612">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<!-- This one was addded for translation but not used in the mockup -->
+	<!--<widget class="label"  auto_size="vertical" alignment="centre">
+    <translation id="text" type="new" value="Headline features:[COMMENT: FR 19098; What's new in the game popup string]" />
+  </widget>-->
+
+	<container class="main_box" appearance="boxes/custom/whats new/paper">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="16" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true" />
+
+		<container height="30">
+			<layout class="arrange_horizontal_attachment" layout="-1,42" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="3" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- the text for this is updated from code in intro_panel.cpp -->
+				<widget class="label" id="titl" auto_size="vertical" alignment="centre" font="extendedblack" size="16" colour="title" />
+			</container>
+
+			<widget class="icon_button" click_event="mcan" height="30" width="42" icon="icons/16px/cross" icon_alignment="centre" appearance="buttons/standard/normal/button" red_replacement="text">
+				<layout class="stick_to_sides_attachment" alignment="right,top" inset="0" />
+			</widget>
+		</container>
+
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="16" />
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="16" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="16" apply_to_children="true" />
+
+			<container height="410">
+				<layout class="grid_layout_attachment" row_layout="45,155,45,155" column_layout="-1,-1" mode="auto" vertical_gap="0" horizontal_gap="12" />&gt;
+
+				<record id="default_properties" colour="text" />
+
+				<widget class="text" alignment="centre" font="extendedblack" size="16">
+					<translation id="text" translation_id="596552" type="use" value="Enhanced Match Engine[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+				</widget>
+				<widget class="text" alignment="centre" font="extendedblack" size="16" style="bold">
+					<translation id="text" translation_id="596550" type="use" value="Set Pieces Revamp[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game]" />
+				</widget>
+
+				<widget class="text" alignment="centre_x,top">
+					<translation id="text" translation_id="596553" type="use" value="Upgrades to player movement, ball physics and lighting level up the immersion and drama in every highlight. New match preparation and briefing meetings deliver you the best, actionable insights before each fixture.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+				</widget>
+				<widget class="text" alignment="centre_x,top">
+					<translation id="text" translation_id="596557" type="use" value="Make an impact at both ends of the pitch with an overhauled Set Piece Creator. Lean on the expertise of the brand new Set Piece Coaches to develop winning routines in every scenario.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised, SIxG is SI's version of Expected Goals]" />
+				</widget>
+
+				<widget class="text" alignment="centre" font="extendedblack" size="16" style="bold" multiline="true">
+					<translation id="text" translation_id="596554" type="use" value="Smarter Transfer Market[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+				</widget>
+
+				<widget class="text" alignment="centre" font="extendedblack" size="16" style="bold" multiline="true">
+					<translation id="text" translation_id="596551" type="use" value="New Ways To Communicate[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game]" />
+				</widget>
+
+				<widget class="text" alignment="centre_x,top">
+					<translation id="text" translation_id="596555" type="use" value="Showcase your squad-building skills in our most refined transfer market yet. You'll face a trickier battle for talent as your rival opposition managers are more strategic than ever in their recruitment decision-making.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+				</widget>
+
+				<widget class="text" alignment="centre_x,top">
+					<translation id="text" translation_id="596558" type="use" value="Incentivise your team with a new individual performance target motivational tool to get the most out of them on Matchday, while improvements to Staff Meetings provide increased depth of interaction.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised, SIxG is SI's version of Expected Goals]" />
+				</widget>
+			</container>
+		</container>
+
+		<widget class="horizontal_divider" red_replacement="text">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="60" />
+		</widget>
+		<widget class="button" show_button_appearance="false" auto_size="vertical" alignment="centre" colour="text" multiline="true" size="large">
+			<translation id="text" translation_id="596556" type="use" value="Full information on the ability to load a saved game from Football Manager 2023, the new Inverted Full-Back player role, the introduction of specialised Agents to help in the transfer market, and much, much more is available at footballmanager.com.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="60" />
+			<record id="click_event">
+				<flags id="event_id" value="OURL" />
+				<string id="url" value="https://www.footballmanager.com/features" />
+				<string id="url_tracking_category" value="FM21 Features" />
+			</record>
+		</widget>
+
+		<container height="50">
+			<layout class="centre_in_parent_attachment" alignment="all" offset="0" apply_to_children="true" />
+
+			<widget class="primary_button" height="50" size="large" style="semi_bold">
+				<translation id="text" translation_id="339126" type="use" value="Start a new game[COMMENT: intro panel; start a new game, use top matches as a similar string was previously used]" />
+				<record id="click_event" event_id="gmpu" evtg="root" evfl="7" />
+				<string id="remove_if" value="is_demo_mode" />
+			</widget>
+		</container>
+		<container height="50">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="30,8" apply_to_children="true" />
+
+
+		</container>
+	</container>
+
+</panel>

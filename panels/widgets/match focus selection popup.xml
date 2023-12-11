@@ -1,0 +1,23 @@
+﻿<panel width="600">
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="6" horizontal_inset="4" vertical_gap="6"/>
+	<container class="main_box" appearance="menus/standard/box"  draw_vertical_dividers="true">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-2,-3" horizontal_offset="0" horizontal_gap="12" />
+		<!--selection-->
+		<widget class="table" id="itmT"  select_event="mchF"  msov="mchH" auto_size_rows="true" mode="stripe_rows,select_rows" layout="-1" auto_size="vertical">
+			<list id="column_widget_properties">
+				<record indx="0" colour="black" secondary_icon_colour="black" />
+			</list> 
+		</widget>
+		<!--details container-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="4" vertical_gap="6"/>
+			<widget class="text" id="slcT" colour="text" auto_size="vertical" />
+			<container class="main_contrast_box" id="rcmB">
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="4"  horizontal_gap="6"/>
+				<widget class="picture" file="icons/16px/thumbs up"  red_replacement="white" scale_picture="true" image_alignment="centre" width="16" height="16"/>
+				<widget class="text" id="rcmT" auto_size="vertical" />
+			</container>
+		</container>
+	</container>
+
+</panel>

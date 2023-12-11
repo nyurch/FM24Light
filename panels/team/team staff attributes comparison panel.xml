@@ -1,7 +1,7 @@
 <panel>
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 
-	<flags id="bcol" value="fg yellow" />
+	<flags id="bcol" value="fg magenta" />
 	<flags id="wcol" value="fg blue lighter" />
 	<flags id="acol" value="bg grey" />
 	<flags id="ncol" value="fg positive" />

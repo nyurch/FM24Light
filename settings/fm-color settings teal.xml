@@ -19,11 +19,11 @@
 	<colour name="fg accent"														value="rgb(20,141,154)"/>
 	<colour name="fg tertiary"														value="rgb(20,141,154)"/>
 
-	<colour name="fg range1"														value="rgb(183,0,5)" />
-	<colour name="fg range2"														value="rgb(195,24,0)" />
-	<colour name="fg range3"														value="rgb(195,30,0)" />
-	<colour name="fg range4"														value="rgb(203,39,0)" />
-	<colour name="fg range5"														value="rgb(204,51,0)" />
+	<colour name="fg range1"														value="rgb(182,32,32)" />
+	<colour name="fg range2"														value="rgb(203,36,36)" />
+	<colour name="fg range3"														value="rgb(254,46,46)" />
+	<colour name="fg range4"														value="rgb(254,87,87)" />
+	<colour name="fg range5"														value="rgb(254,129,129)" />
 	<colour name="fg range6"														value="rgb(204,70,0)" />
 	<colour name="fg range7"														value="rgb(196,90,0)" />
 	<colour name="fg range8"														value="rgb(201,115,0)" />
@@ -33,12 +33,12 @@
 	<colour name="fg range12"														value="rgb(185,174,0)" />
 	<colour name="fg range13"														value="rgb(171,175,0)" />
 	<colour name="fg range14"														value="rgb(162,186,0)" />
-	<colour name="fg range15"														value="rgb(125,174,0)" />
-	<colour name="fg range16"														value="rgb(87,169,0)" />
-	<colour name="fg range17"														value="rgb(48,179,0)" />
-	<colour name="fg range18"														value="rgb(35,184,0)" />
-	<colour name="fg range19"														value="rgb(0,184,20)" />
-	<colour name="fg range20"														value="rgb(0,168,63)" />
+	<colour name="fg range15"														value="(82,199,85)" />
+	<colour name="fg range16"														value="(67,180,70)" />
+	<colour name="fg range17"														value="(51,160,54)" />
+	<colour name="fg range18"														value="rgb(36,141,39)" />
+	<colour name="fg range19"														value="rgb(20,121,23)" />
+	<colour name="fg range20"														value="rgb(5,102,8)" />
 
 	<colour name="fg positive"														value="fg range20"/>
 	<colour name="fg alert"															value="fg range1"/>
@@ -460,8 +460,8 @@
 	<colour name="match rating zero to five"							value="fg range1"/>
 	<colour name="match rating five to six"								value="fg range2"/>
 	<colour name="match rating six to seven"							value="bg lighter"/>
-	<colour name="match rating seven to eight"							value="fg range16"/>
-	<colour name="match rating eight to nine"							value="fg range18"/>
+	<colour name="match rating seven to eight"							value="fg range18"/>
+	<colour name="match rating eight to nine"							value="fg range19"/>
 	<colour name="match rating nine to ten"								value="fg range20"/>
 
 	<!-- match rating text colours -->
@@ -478,8 +478,8 @@
 	<colour name="match form zero to five"								value="bg range1"/>
 	<colour name="match form five to six"								value="bg range2"/>
 	<colour name="match form six to seven"								value="bg range10"/>
-	<colour name="match form seven to eight"							value="bg range16"/>
-	<colour name="match form eight to nine"								value="bg range18"/>
+	<colour name="match form seven to eight"							value="bg range18"/>
+	<colour name="match form eight to nine"								value="bg range19"/>
 	<colour name="match form nine to ten"								value="bg range20"/>
 
 	<!-- training rating colours -->
@@ -487,8 +487,8 @@
 	<colour name="training rating zero to five"							value="fg range1"/>
 	<colour name="training rating five to six"							value="fg range2"/>
 	<colour name="training rating six to seven"							value="fg"/>
-	<colour name="training rating seven to eight"						value="fg range16"/>
-	<colour name="training rating eight to nine"						value="fg range18"/>
+	<colour name="training rating seven to eight"						value="fg range18"/>
+	<colour name="training rating eight to nine"						value="fg range19"/>
 	<colour name="training rating nine to ten"							value="fg range20"/>
 
 	<!-- Colours for player name on tactics pitch -->

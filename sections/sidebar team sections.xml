@@ -37,14 +37,8 @@ this file contains a list of all of the sections in the game
 				<record id="tacT" />
 				<!--player-->
 				<record id="tacP" />
-				<!--takers-->
-				<record id="tacS" />
-				<!--corners-->
-				<record id="tacR" />
-				<!--free kicks-->
-				<record id="tacK" />
-				<!--throw ins-->
-				<record id="tacH" />
+				<!--set pieces-->
+				<record id="tcSP" />
 				<!--penalties-->
 				<record id="tacN" />
 				<!--captains-->

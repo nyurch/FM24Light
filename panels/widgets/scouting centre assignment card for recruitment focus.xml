@@ -91,23 +91,23 @@
 								<record id="Ppab" auto_hide_priority="7" />
 								<!-- PA Stars -->
 								<record id="Pdet" auto_hide_priority="3">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- determination -->
 								<record id="Pwkr" auto_hide_priority="3">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- determination -->
 								<record id="Ptwr" auto_hide_priority="3">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- teamwork -->
 								<record id="Pacc" auto_hide_priority="3">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- acceleration -->
 								<record id="Ppac" auto_hide_priority="3">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- pace -->
 								<record id="Pdva" auto_hide_priority="4" />

@@ -73,15 +73,15 @@
 							<flags id="Pfot" />
 							<!--footedness-->
 							<record id="Pcor">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- (t) corner taking -->
 							<record id="Pfrk">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- free kicks -->
 							<record id="Plth">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- long throws -->
 						</record>
@@ -220,23 +220,23 @@
 							<record id="Pnam" person_is_player="true" colour="black" />
 							<!-- person name -->
 							<record id="Pmar" auto_hide_priority="900">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- marking -->
 							<record id="Pjum" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- jumping -->
 							<record id="Phea" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- heading -->
 							<record id="Pcnt" auto_hide_priority="1100">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- concentration -->
 							<record id="Pdec" auto_hide_priority="1200">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- decisions -->
 						</record>
@@ -252,29 +252,29 @@
 							<record id="Pnam" person_is_player="true" colour="black" />
 							<!-- person name -->
 							<record id="Pfrk" auto_hide_priority="800">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- free kicks -->
 							<record id="Plsh" auto_hide_priority="900">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- long shots -->
 							<record id="Ppas" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- passing -->
 							<record id="Pcro" auto_hide_priority="1100">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- crossing -->
 							<record id="Pfot" auto_hide_priority="1200"/>
 							<!-- person preferred foot -->
 							<record id="Pjum" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- jumping -->
 							<record id="Phea" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- heading -->
 						</record>
@@ -290,23 +290,23 @@
 							<record id="Pnam" person_is_player="true" colour="black" />
 							<!-- person name -->
 							<record id="Pmar" auto_hide_priority="900">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- marking -->
 							<record id="Pjum" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- jumping -->
 							<record id="Phea" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- heading -->
 							<record id="Pcnt" auto_hide_priority="1100">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- concentration -->
 							<record id="Pdec" auto_hide_priority="1200">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- decisions -->
 						</record>
@@ -322,25 +322,25 @@
 							<record id="Pnam" person_is_player="true" colour="black" />
 							<!-- person name -->
 							<record id="Pcor" auto_hide_priority="900">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- (t) corner taking -->
 							<record id="Ppas" auto_hide_priority="1000">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- passing -->
 							<record id="Pcro" auto_hide_priority="1100">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- crossing -->
 							<record id="Pfot" auto_hide_priority="1200" />
 							<!-- person preferred foot -->
 							<record id="Pjum" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- jumping -->
 							<record id="Phea" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- heading -->
 						</record>
@@ -356,15 +356,15 @@
 							<record id="Pnam" person_is_player="true" colour="black" />
 							<!-- person name -->
 							<record id="Plth">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- long throws -->
 							<record id="Pjum" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- jumping -->
 							<record id="Phea" auto_hide_priority="1300">
-								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+								<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 							</record>
 							<!-- heading -->
 						</record>

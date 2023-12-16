@@ -13,7 +13,7 @@
 			</record>
 			<!-- Attribute value -->
 			<record index="1" id="val " sort_disabled="true" column_alignment="centre" right="4">
-				<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" style="bold" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" style="bold" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 			</record>
 		</list>
 	</record>

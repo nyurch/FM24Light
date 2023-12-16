@@ -63,15 +63,15 @@
 								<flags id="Pnms" />
 								<!-- person name -->
 								<record id="Pfin">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- finishing -->
 								<record id="Pcmp">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- composure -->
 								<record id="Ppen">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>
 								<!-- penalty taking -->
 							</record>

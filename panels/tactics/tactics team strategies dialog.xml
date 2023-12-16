@@ -35,7 +35,7 @@
 			<container class="main_contrast_box_no_margin" red_replacement="pitch_box_background">
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0,8,8,8" />
 
-				<container class="tabbed_container_white_text" id="ovar" default_item="poSE" >
+				<container class="tabbed_container_text_white" id="ovar" default_item="poSE" >
 
 					<!--in possession-->
 					<container id="poSE" icon="icons/16px/in possession">

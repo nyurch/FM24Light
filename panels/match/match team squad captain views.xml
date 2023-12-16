@@ -78,10 +78,10 @@
 								<flags id="PSag" />
 								<!-- age -->
 								<record id="Pinf">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>								<!-- influence -->
 								<record id="Ptwr">
-									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="label" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+									<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
 								</record>								<!-- (m) teamwork -->
 							</record>
 						</record>

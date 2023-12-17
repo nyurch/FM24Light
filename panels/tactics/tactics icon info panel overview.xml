@@ -5,13 +5,6 @@
 
 	<container class="plain_box" id="bssl" appearance="boxes/custom/tactics kit/selected/paper" hidden="true"/>
 
-	<container>
-		<layout class="stick_to_sides_attachment" alignment="top,right" inset="0" apply_to_children="true"/>
-		<!--injury/red/yellow card -->
-		<container class="inner_box_no_margin" id="inji" height="16" width="16">
-		</container>
-	</container>
-
 	<!--main area-->
 	<container class="main_box" id="nmcN" appearance="boxes/custom/tactics kit/paper">
 		<layout class="arrange_vertical_attachment" alignment="bottom" offset="0"/>
@@ -134,6 +127,13 @@
 			</record>
 		</widget>
 		<container class="spacer" id="kizS"/>
+	</container>
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="top,right" inset="-2" apply_to_children="true"/>
+		<!--injury/red/yellow card -->
+		<container class="inner_box_no_margin" id="inji" height="16" width="16">
+		</container>
 	</container>
 
 	<!--suitability pie-->

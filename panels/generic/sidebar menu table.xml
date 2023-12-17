@@ -11,7 +11,7 @@
 
 		<container class="main_box" appearance="boxes/custom/interface/sidebar/paper" default_height="-1">
 			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="0" offset="0"/>
-			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="-4" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="-6" apply_to_children="true" />
 
 			<!--club/nation selector-->
 			<container class="tabbed_container" id="tabc" changed_event="Tesc" contents_kind="container" group_kind="container" hide_selector_if_one_or_fewer_items="true">

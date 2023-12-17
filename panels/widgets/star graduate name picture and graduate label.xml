@@ -1,0 +1,23 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" layout="all" apply_to_children="true" inset="0"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="50, -1"/>
+		<layout class="centre_in_parent_attachment" alignment="vertical"/>
+		<widget class="object_portrait_picture" width="50" height="50" scale_picture="true" keep_aspect_ratio="true">
+			<record id="object_property" get_property="Pers" set_property="valu"/>
+		</widget>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="person_button" colour="black" person_is_player="true" icon_enabled="true" info_popup_enabled="true" id="valu" auto_size="vertical">
+				<record id="object_property" get_property="Pers" set_property="valu"/>
+			</widget>
+
+			<widget class="graduates_in_top_division_label" auto_size="vertical" width="50" id="grad">
+				<record id="object_property" get_property="valu" set_property="valu"/>
+			</widget>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,5 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+ <widget class="info_icon_hint_text" InCL="true" id="labl" multiline="true" icon_alignment="centre" widget_type="property_list_viewer_xml_panel" auto_size="vertical" colour="black"/>
+</panel>

@@ -1,0 +1,58 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<!-- main body text -->
+	<widget class="inbox_body_text" id="bdtx" />
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<widget class="picture" id="impi" file="icons/custom/vision/objectives/academy" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="25" height="25" disabled_colour="faded white" />
+			<widget class="text" id="impt" font="title" size="large" auto_size="all" colour="text" alignment="left, centre_y">
+				<translation id="text" translation_id="596002" type="use" value="Top 10 academies in the world[COMMENT: AREA: News Item; SUB-AREA: Top Youth Facilities News Item; FR-BN: FM-2205; TONE:Informal; CHARLIMIT:None; REF-ID: XXXXXX; NOTE: Title for Youth Academy Table]" />
+			</widget>
+		</container>
+
+		<widget class="table" id="tabl" auto_size_maximum_height="350" row_spacing="5" auto_size="vertical" auto_size_rows="false" fixed_size_rows="true" fixed_row_height="25" row_height="85" mode="stripe_rows, fill_rows" layout="50,-1,-1,-1,50">
+			<list id="default_sort_column">
+				<integer value="Rank" />
+			</list>
+
+			<list id="headings">
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="562725" type="use" value="Rank[COMMENT:club qualified via coefficient]" />
+				</record>
+				<record alignment="left,centre_y" sort_disabled="true">
+					<translation id="text" translation_id="227737" type="use" value="Club" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="243485" type="use" value="Division[COMMENT: player history screen heading]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="538865" type="use" value="Star Graduate[COMMENT: AREA: dev centre; SUB-AREA: youth intake; NOTE: highlights the star player in the intake group]" />
+				</record>
+			</list>
+			
+			<list id="column_widget_properties">
+				<record index="0" alignment="centre" />
+				<record index="1" alignment="left,centre_y" />
+				<record index="2" alignment="left,centre_y" multiline="true" />
+				<record index="3" alignment="left,centre_y" />
+				<record index="4" alignment="centre_x,centre_y" colour="black"/>
+			</list>
+
+			<list id="column_table_properties">
+				<record index="0" id="Rank" />
+				<record index="1" id="club" sort_disabled="true" />
+				<record index="2" id="divi" sort_disabled="true" />
+				<record index="3" id="StGr" sort_disabled="true" />
+				<record index="4" sort_disabled="true" id="Chan" />
+			</list>
+		</widget>
+
+	</container>
+
+</panel>

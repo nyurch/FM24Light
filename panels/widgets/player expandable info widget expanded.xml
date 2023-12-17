@@ -1,0 +1,74 @@
+﻿<panel height="55" navigation_container="false" wants_mouse_events="true" navigation_focus_target="true">
+	<list id="properties_to_forward">
+		<record get_property="pitch_kit_icon" set_property="shown" target="pkit"/>
+	</list>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<widget id="apbt" class="icon_button" alignment="left" height="55" click_event="clic" appearance="buttons/custom/dynamics/fmc/player info/button" wants_mouse_events="false" navigation_focus_target="true"/>
+
+	<container class="main_subtle_box_no_margin" hidden="false" appearance="">
+		<attachment_group class="horizontal_arrange" horizontal_layout="55,5,-7,-9,1,10,30,10" horizontal_gap="0" horizontal_offset="0" vertical_inset="0"/>
+		<container>
+			<widget class="kit_icon" file="generic/kit icon tactics" kit_path="fmc" kit_number_path="fmc" id="pkit" keep_aspect_ratio="true" scale_picture="true">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				<record id="object_property" get_property="Pers" set_property="objt"/>
+			</widget>
+
+			<widget class="team_player_captain_vice_widget" id="cpve"/>
+		</container>
+
+		<container class="spacer" />
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+
+			<container height="20">
+				<attachment_group class="horizontal_arrange_autosize" vertical_alignment="bottom" horizontal_gap="3"/>
+				<widget class="picture" id="recw" file="icons/custom/ftue/welcome to team/star" colour="fg positive" width="15" height="15" scale_picture="true" image_alignment="centre" hidden="true"/>
+				<widget class="nation_button" font="bold" auto_size="all" use_format="very_short" alignment="bottom" navigation_focus_target="false" wants_mouse_events="false">
+					<record id="object_property" get_property="PNat" set_property="valu"/>
+				</widget>
+				<widget class="person_button" colour="black" info_popup_enabled="false" style="bold" size="normal" auto_size="horizontal" height="16" navigation_focus_target="false" wants_mouse_events="false" alignment="left,can_scale" auto_size_maximum_width="113">
+					<record id="object_property" get_property="PnmP" set_property="valu" />
+				</widget>
+			</container>
+
+			<container height="20">
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1"/>
+
+				<container id="infw">
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1"/>
+					<!--information to show widgets added here-->
+				</container>
+
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_gap="0" />
+
+			<container id="einw">
+				<attachment_group class="horizontal_arrange_autosize" horizontal_gap="0" horizontal_offset="0"/>
+				<!--expanded information to show widgets added here-->
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_layout="-1" horizontal_gap="0" vertical_offset="10"/>
+			<widget class="vertical_divider" id="vDiv" alignment="right"/>
+		</container>
+
+		<container class="spacer" />
+
+		<container id="selw" hidden="false">
+			<attachment_group class="vertical_arrange" vertical_layout="-1"/>
+			<!--selection behaviour widgets added here-->
+		</container>
+
+		<container class="spacer" />
+
+	</container>
+
+</panel>

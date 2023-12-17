@@ -1,0 +1,15 @@
+﻿<panel width="475" height="250">
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<widget class="client_object_list_table" database_table_type="1" height="125" layout="-1,-1, 40,40" mode="fill_rows, stripe_rows" fixed_size_rows="true" auto_size_rows="false">
+			<record id="object_property" get_property="objL" set_property="objL"/>
+			<record id="viewed_property_ids">
+				<record id="Pers" auto_hide_priority="1" colour="black" />
+				<record id="Pcte" auto_hide_priority="6" />
+				<record id="Pnat" auto_hide_priority="2" />
+				<record id="Piap" auto_hide_priority="2" />
+			</record>
+		</widget>
+	</container>
+</panel>

@@ -33,7 +33,7 @@
 	<container/>
 
 	<container class="bordered_box">
-		<layout class="arrange_vertical_attachment" layout="40,40,40,40,40,-1" offset="0" gap="0" />
+		<layout class="arrange_vertical_attachment" layout="40,40,40,40,40,40,60,-1" offset="0" gap="0" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 		<!--days til match -->
 		<container class="animated_wipe_container" duration="0.5" id="days" wipe_data_trigger_id="text" remove_widget_after_wipe="true" skip_first_wipe_in="true">
@@ -43,7 +43,6 @@
 				<record class="translate_animation" duration="2" trigger_id="hidden" trigger_value="true" coord_mode="relative_to_target" start_value="0.0, 0.0" end_value="-1.05, 0.0" end_mode="hold_end" />
 				<record class="fade_animation" duration="1" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" end_mode="hold_end" />
 			</list>
-
 			<record id="widget_properties" class="text" colour="red 900" alignment="left, centre_y" style="bold" size="15" multiline="false" />
 		</container>
 		<!-- This label may be hidden if the days to match is 'Today', 'Tomorrow' etc -->
@@ -60,7 +59,21 @@
 		</widget>
 		<!--competition-->
 		<widget class="text" id="comp" colour="grey" alignment="left, top" style="bold" size="13" />
-
+		<!--previous meetings-->
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="200,-1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+				<widget class="label"  alignment="left, centre_y" font="title" colour="fg magenta" size="12" >
+					<translation id="text" translation_id="344616" type="use" value="Previous Meetings[COMMENT: title for a box containing information on previous meetings between two sides]" />
+				</widget>
+				<widget class="team_recent_form_widget" id="pmet" colour="black" show_no_form_on_empty="true" alignment="right, centre_y" icon_alignment="left" bar_width="24"  show_form_letters="true" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw" >
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+				</widget>
+		</container>
+		<!--weather-->
+		<!--
+		<widget class="weather_indicator_panel_horizontal" id="weat" file="match/weather indicator centred" colour="black" alignment="left, top" size="14" multiline="true" />
+		-->
 	</container>
 
 </panel>

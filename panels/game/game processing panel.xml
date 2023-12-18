@@ -146,7 +146,7 @@
 			</widget>
 
 			<widget class="animated_wipe_fade_container" id="tick" wipe_data_trigger_id="objt" >
-				<record id="widget_info" class="property_list_viewer_xml_panel" file="game/processing prozone panel" alignment="left,centre_y" colour="text"/>
+				<record id="widget_info" class="property_list_viewer_xml_panel" file="game/processing prozone panel" alignment="left,centre_y" colour="white"/>
 			</widget>
 		</container>
 

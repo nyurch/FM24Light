@@ -54,7 +54,7 @@
 					<integer id="min_value" value="1068" />
 					<integer id="max_value" value="10000" />
 					<symbol id="set_property" value="height" />
-					<integer id="true_value" value="1040" />
+					<integer id="true_value" value="1030" />
 					<integer id="false_value" value="700" />
 				</record>
 

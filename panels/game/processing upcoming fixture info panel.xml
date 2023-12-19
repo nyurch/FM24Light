@@ -33,8 +33,8 @@
 	<container/>
 
 	<container class="bordered_box">
-		<layout class="arrange_vertical_attachment" layout="40,40,40,40,40,40,60,-1" offset="0" gap="0" />
-		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<layout class="arrange_vertical_attachment" layout="40,40,30,30,40,40,-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" horizontal_alignment="left,extend" apply_to_children="true" inset="0" />
 		<!--days til match -->
 		<container class="animated_wipe_container" duration="0.5" id="days" wipe_data_trigger_id="text" remove_widget_after_wipe="true" skip_first_wipe_in="true">
 			<!-- This container will wipe in new text from the right and wipe old text out the left with an additional fade -->
@@ -46,19 +46,27 @@
 			<record id="widget_properties" class="text" colour="red 900" alignment="left, centre_y" style="bold" size="15" multiline="false" />
 		</container>
 		<!-- This label may be hidden if the days to match is 'Today', 'Tomorrow' etc -->
-		<widget class="text" id="dayE" colour="red" alignment="left, top" font="title" style="bold" size="15">
+		<widget class="text" id="dayE" colour="red" alignment="left, centre_y" font="title" style="bold" size="15">
 			<translation id="text" translation_id="348442" type="use" value="To Next Match[COMMENT: Game processing panel; label for number of days until the next match]" />
 		</widget>
 		<!--fixture "home" vs "away"-->
-		<widget class="text" id="fixt" colour="accent" alignment="left, bottom" style="bold" size="15" />
+		<widget class="text" id="fixt" colour="accent" alignment="left, centre_y" style="bold" size="15" />
 		<!--stadium-->
 		<widget class="client_object_label" spec="text,bold" id="stad" style="bold" size="14" alignment="left,centre_y">
 			<record id="object_property">
 				<integer id="get_property" value="objt" />
 			</record>
 		</widget>
+		<container>
+			<layout class="arrange_horizontal_attachment"  alignment="left, centre_y" layout="180,-1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+				<widget class="text" alignment="left, centre_y" size="12" font="label" colour="black">
+					<translation id="text" translation_id="247236" type="use" value="Weather Forecast" />
+				</widget>
+				<widget class="weather_indicator_panel_horizontal" id="weat" colour="black" alignment="left, top" multiline="true" />
+		</container>
 		<!--competition-->
-		<widget class="text" id="comp" colour="grey" alignment="left, top" style="bold" size="13" />
+		<widget class="text" id="comp" colour="grey" alignment="left, centre_y" style="bold" size="13" />
 		<!--previous meetings-->
 		<container>
 			<layout class="arrange_horizontal_attachment" layout="200,-1" offset="0" gap="0" />
@@ -70,10 +78,6 @@
 					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
 				</widget>
 		</container>
-		<!--weather-->
-		<!--
-		<widget class="weather_indicator_panel_horizontal" id="weat" file="match/weather indicator centred" colour="black" alignment="left, top" size="14" multiline="true" />
-		-->
 	</container>
 
 </panel>

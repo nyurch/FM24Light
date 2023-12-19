@@ -1,0 +1,43 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="text" set_property="valu" target="titl"/>
+		<record get_property="itms" set_property="itms" target="gadf"/>
+		<record get_property="disa" set_property="disa" target="gadf"/>
+	</list>
+	<attachment_group class="vertical_arrange_autosize" />
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" />
+		<widget class="label" id="titl" auto_size="vertical" font="title" colour="black"/>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-2" horizontal_offset="0" vertical_inset="0" />
+			<widget class="label" auto_size="vertical" multiline="true" font="text" colour="faded text">
+				<translation id="text" translation_id="416314" type="use" value="Get Advice From[COMMENT: FR 17000; backroom advice settings table heading; choose a staff member to give advice to the user]" />
+			</widget>
+
+			<widget class="popup_table_button" appearance="buttons/subtle/normal/button"  id="gadf" hidden="true" auto_size="vertical">
+				<translation id="text" translation_id="247153" type="use" value="None Selected" />
+				<record id="table_properties" layout="180,140,50,50" fixed_size_rows="true" row_height="25" auto_size_maximum_height="400">
+					<list id="column_table_properties">
+						<!-- Default columns -->
+						<record id="text">
+							<record id="column_heading" alignment="left,centre_y">
+								<translation id="text" translation_id="229689" type="use" value="Name" />
+							</record>
+							<record id="widget_info" class="label" alignment="left,centre_y" />
+						</record>
+						<record id="Pcjo">
+							<record id="column_heading" alignment="left,centre_y">
+								<translation id="text" translation_id="227964" type="use" value="Job" />
+							</record>
+							<record id="widget_info" class="label" alignment="left,centre_y" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<!-- responsibility person picker -->
+			<widget class="popup_button"  appearance="buttons/subtle/normal/button"  id="read" hidden="true" auto_size="vertical" />
+		</container>
+	</container>
+</panel>

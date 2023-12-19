@@ -6,6 +6,9 @@
 	<!-- content area -->
 	<container class="scrolling_box">
 		<container>
+		<attachment_group class="vertical_arrange_autosize"/>
+
+		<container>
 			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right,extend" horizontal_offset="0" vertical_alignment="top" vertical_inset="0" />
 
 			<!--body text-->
@@ -100,5 +103,20 @@
 				</container>
 			</container>
 		</container>
+
+		<container class="inner_subtle_box" height="200">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="player_history_achievements_panel" file="player/player history achievements small" item_file="player/career milestone item small news item" id="pac1">
+			<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="hisA" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+	</container>
 	</container>
 </panel>

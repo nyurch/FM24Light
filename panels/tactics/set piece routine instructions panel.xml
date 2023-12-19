@@ -39,9 +39,9 @@
 						<!-- Choice -->
 						<record id="namE" auto_hide_priority="0" minimum_width="180" sort_disabled="true" />
 						<!-- Player -->
-						
-						<!--The order is important as we hide the columns we don't need while maintaining their column index--> 
-						
+
+						<!--The order is important as we hide the columns we don't need while maintaining their column index-->
+
 						<flags id="Ppac" />
 						<!--Pace-->
 						<record id="Pmar" />
@@ -190,7 +190,7 @@
 							<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
 							<widget class="label" text="2" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
 						</container>
-						
+
 						<widget class="picture" id="lftI" file="icons/16px/left footed" scale_picture="false" image_alignment="centre" hidden="true" width="24" />
 
 						<widget class="label" id="ltxt" colour="accent" font="title" alignment="left, centre_y" auto_size="horizontal" />
@@ -212,7 +212,7 @@
 									<record id="click_event" event_id="qpck" SPsd="0" />
 									<translation id="text" translation_id="329695" type="use" value="Ask Assistant to Assign[COMMENT: team training coaches panel; ask assistant manager to take control over areas of training]" />
 								</widget>
-								<widget class="popup_button" auto_size="horizontal" appearance="buttons/standard/split/right/button" id="akPL" fixed="true" />							
+								<widget class="popup_button" auto_size="horizontal" appearance="buttons/standard/split/right/button" id="akPL" fixed="true" />
 							</container>
 						</container>
 					</container>
@@ -260,7 +260,7 @@
 							<widget class="picture" file="icons/48px/bullet" scale_picture="true" image_alignment="centre" colour="bg accent" />
 							<widget class="label" text="3" colour="white" font="title" alignment="centre" auto_size="none" size="large" />
 						</container>
-						
+
 						<widget class="picture" id="rftI" file="icons/16px/right footed" scale_picture="false" image_alignment="centre" hidden="true" width="24" />
 
 						<widget class="label" id="rtxt" colour="accent" font="title" alignment="left, centre_y" auto_size="horizontal" />
@@ -280,7 +280,7 @@
 								<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="-3" vertical_inset="0" />
 
 								<widget class="button" auto_size="horizontal" appearance="buttons/standard/split/left/button">
-								<record id="click_event" event_id="qpck" SPsd="1" />
+									<record id="click_event" event_id="qpck" SPsd="1" />
 									<translation id="text" translation_id="329695" type="use" value="Ask Assistant to Assign[COMMENT: team training coaches panel; ask assistant manager to take control over areas of training]" />
 								</widget>
 								<widget class="popup_button" auto_size="horizontal" appearance="buttons/standard/split/right/button" id="akPR" fixed="true" />
@@ -332,20 +332,20 @@
 
 					<widget class="label" colour="disabled" alignment="left, centre_y" size="small" multiline="true" auto_size="vertical" id="prDe">
 						<translation id="text" translation_id="597580" type="use" value="For example, if a player is ranked first for Aerial Defenders and Trackers, priority will be given to whichever is higher in this list. The lower ranked category will then pick the next highest ranked player in its list, from whichever players are remaining.[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-25617; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Example Description for ordering the priority of set piece instructions]" />
-					</widget>					
-					
+					</widget>
+
 					<widget class="label" colour="disabled" alignment="left, centre_y" size="small" multiline="true" auto_size="vertical" id="prAt">
 						<translation id="text" translation_id="598134" type="use" value="For example, if a player is ranked first for Aerial Threats and Box Threats, priority will be given to whichever is higher in this list. The lower ranked category will then pick the next highest ranked player in its list, from whichever players are remaining.[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR: FM-25617; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Example Description for ordering the priority of set piece instructions]" />
 					</widget>
 
 					<container class="inner_subtle_box">
-					<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" />
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" />
 
-					<widget class="table" id="PrTB" layout="-1" all_content_same_height="false" row_spacing="8" auto_size_rows="true" fixed_size_rows="false" mode="fill_rows,drag_rows, drop_on_rows, draw_drag_marker_from_direction" auto_size="vertical">
-						<flags id="row_appearance" value="tables/standard/row/divider/row fg" />
-					</widget>
+						<widget class="table" id="PrTB" layout="-1" all_content_same_height="false" row_spacing="8" auto_size_rows="true" fixed_size_rows="false" mode="fill_rows,drag_rows, drop_on_rows, draw_drag_marker_from_direction" auto_size="vertical">
+							<flags id="row_appearance" value="tables/standard/row/divider/row fg" />
+						</widget>
 
-				</container>
+					</container>
 
 
 				</container>

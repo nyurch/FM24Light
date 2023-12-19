@@ -46,7 +46,7 @@
 			<record id="widget_properties" class="text" colour="red 900" alignment="left, centre_y" style="bold" size="15" multiline="false" />
 		</container>
 		<!-- This label may be hidden if the days to match is 'Today', 'Tomorrow' etc -->
-		<widget class="text" id="dayE" colour="red" alignment="left, top" style="bold" size="15">
+		<widget class="text" id="dayE" colour="red" alignment="left, top" font="title" style="bold" size="15">
 			<translation id="text" translation_id="348442" type="use" value="To Next Match[COMMENT: Game processing panel; label for number of days until the next match]" />
 		</widget>
 		<!--fixture "home" vs "away"-->

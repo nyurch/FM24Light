@@ -150,6 +150,9 @@
 			</widget>
 		</container>
 
+		<!-- New loading panel -->
+		<widget class="property_list_viewer_xml_panel" id="LoSp" hidden="true" auto_size="vertical" file="game/loading save details panel"/>
+
 		<!-- Footer with hints -->
 		<container background_colour="processing_hints_background" height="85">
 

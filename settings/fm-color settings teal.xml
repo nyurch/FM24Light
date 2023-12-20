@@ -33,9 +33,9 @@
 	<colour name="fg range12"														value="rgb(185,174,0)" />
 	<colour name="fg range13"														value="rgb(171,175,0)" />
 	<colour name="fg range14"														value="rgb(162,186,0)" />
-	<colour name="fg range15"														value="(82,199,85)" />
-	<colour name="fg range16"														value="(67,180,70)" />
-	<colour name="fg range17"														value="(51,160,54)" />
+	<colour name="fg range15"														value="rgb(82,199,85)" />
+	<colour name="fg range16"														value="rgb(67,180,70)" />
+	<colour name="fg range17"														value="rgb(51,160,54)" />
 	<colour name="fg range18"														value="rgb(36,141,39)" />
 	<colour name="fg range19"														value="rgb(20,121,23)" />
 	<colour name="fg range20"														value="rgb(5,102,8)" />
@@ -375,6 +375,7 @@
 	<colour name="morale18"													value="fg range18"/>
 	<colour name="morale19"													value="fg range19"/>
 	<colour name="morale20"													value="fg range20"/>
+
 	<colour name="morale default"											value="fg"/>
 	<colour name="morale arrow"												value="bg"/>
 

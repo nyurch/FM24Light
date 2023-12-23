@@ -46,7 +46,7 @@
 			<container>
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
 				<widget class="table" mode="fill_rows, stripe_rows" id="COta" layout="-1,30" fixed_size_rows="false" auto_size_rows="true" auto_size="vertical" row_spacing="4">
-					<boolean id="save_session_state" value="true" />
+					<boolean id="save_session_state" value="true" />z
 
 					<!-- column display properties -->
 
@@ -65,7 +65,7 @@
 
 					<list id="column_widget_properties">
 						<record indx="0" alignment="left,centre_y" auto_size="vertical" />
-						<record indx="1" alignment="centre,centre_y" auto_size="vertical" style="semi_bold" />
+						<record indx="1" alignment="centre_x,centre_y" auto_size="vertical" style="semi_bold" />
 					</list>
 
 					<!-- Coaching Attributes -->
@@ -90,14 +90,19 @@
 					<widget class="attribute_label" row="3" column="1" id="MTat" />
 
 					<widget class="label" row="4" column="0">
-						<translation id="text" translation_id="229413" type="use" value="Technical" />
+						<translation id="text" translation_id="585677" type="use" value="Set Pieces[COMMENT: AREA: non player attributes; SUB-AREA: non player attributes; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:None; NOTE: Name of the coaching set pieces non player attribute]" />
 					</widget>
-					<widget class="attribute_label" row="4" column="1" id="TCat" />
+					<widget class="attribute_label" row="4" column="1" id="STat" />
 
 					<widget class="label" row="5" column="0">
+						<translation id="text" translation_id="229413" type="use" value="Technical" />
+					</widget>
+					<widget class="attribute_label" row="5" column="1" id="TCat" />
+
+					<widget class="label" row="6" column="0">
 						<translation id="text" translation_id="248614" type="use" value="Tactical[COMMENT - non playing data; Abbr. Tactical coaching]" />
 					</widget>
-					<widget class="attribute_label" row="5" column="1" id="Taat" />
+					<widget class="attribute_label" row="6" column="1" id="Taat" />
 				</widget>
 			</container>
 
@@ -124,7 +129,7 @@
 
 					<list id="column_widget_properties">
 						<record indx="0" alignment="left,centre_y" auto_size="vertical" />
-						<record indx="1" alignment="centre,centre_y" auto_size="vertical" style="semi_bold" />
+						<record indx="1" alignment="centre_x,centre_y" auto_size="vertical" style="semi_bold" />
 					</list>
 
 					<!-- Goalkeeper Coaching Attributes -->
@@ -168,7 +173,7 @@
 
 					<list id="column_widget_properties">
 						<record indx="0" alignment="left,centre_y" auto_size="vertical" />
-						<record indx="1" alignment="centre,centre_y" auto_size="vertical" style="semi_bold" />
+						<record indx="1" alignment="centre_x,centre_y" auto_size="vertical" style="semi_bold" />
 					</list>
 
 					<!-- Mental Attributes -->

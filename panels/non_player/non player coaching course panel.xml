@@ -323,8 +323,29 @@
 				<record id="Psnm" width="-1" />
 				<record id="PcjN" width="-1" />
 				<record id="Page" width="40" />
+				<record id="PPst" width="130" />
 				<record id="Prsa" width="80" />
 				<record id="Pcqu" width="-1" />
+				<record id="Pcww" width="90"/>
+				<record id="Pced" width="90"/>
+				<record id="Npad" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
+				<record id="Npde" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
+				<record id="Npmm" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
+				<record id="Npld" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
+				<record id="Npmo" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
+				<record id="Npld" width="40">
+					<record id="widget_info" class="attribute_label" alignment="centre,can_scale" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper"/>
+				</record>
 			</record>
 
 			<list id="column_widget_properties">

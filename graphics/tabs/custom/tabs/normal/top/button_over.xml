@@ -4,10 +4,10 @@
 	<record id="image_slices" left="15" right="10"/>
 
 	<record id="font_spec">
-		<colour id="colour" name="text"/>
+		<colour id="colour" name="fg magenta"/>
 	</record>
 
-	<record id="primary_icon_properties" red_replacement="text" />
-	<colour id="green_replacement" name="text"/>
+	<record id="primary_icon_properties" red_replacement="fg magenta" />
+	<colour id="green_replacement" name="fg magenta"/>
 
 </properties>

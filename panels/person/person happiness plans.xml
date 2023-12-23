@@ -1,0 +1,41 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container class="tabs" default_item="shor" save_session_state="true">
+		<!-- short term future / long term future -->
+		<!-- short term plans -->
+		<container id="shor">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6"/>
+			<translation id="title" translation_id="251277" type="use" value="Short-term Plans[COMMENT: player happiness panel]" />
+
+			<widget class="table" id="futt" layout="16,-1" auto_size_rows="true" fixed_size_rows="false">
+				<list id="column_table_properties">
+					<record id="bull">
+						<record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="16" />
+					</record>
+					<record id="text">
+						<record id="widget_info" class="text" auto_size="vertical"/>
+					</record>
+				</list>
+			</widget>
+
+		</container>
+		<!-- Long term plans -->
+		<container id="long">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="6"/>
+			<translation id="title" translation_id="251278" type="use" value="Long-term Plans[COMMENT: player happiness panel]" />
+
+			<widget class="table" id="lftt" layout="16,-1" auto_size_rows="true" fixed_size_rows="false">
+				<list id="column_table_properties">
+					<record id="bull">
+						<record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="16" />
+					</record>
+					<record id="text">
+						<record id="widget_info" class="text" auto_size="vertical"/>
+					</record>
+				</list>
+			</widget>
+		</container>
+	</container>
+
+</panel>

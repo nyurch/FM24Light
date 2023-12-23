@@ -1,0 +1,79 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle"/>
+
+		<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" end_mode="hold_end" trigger_id="hidden" trigger_value="false"/>
+		<animation class="fade_animation" start_value="1" end_value="0" duration="0.5" end_mode="hold_end" trigger_id="hidden" trigger_value="true"/>
+
+		<container class="contrast_box_no_margin" red_replacement="bg" height="400" width="575">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<widget class="picture" file="backgrounds/player pitch" scale_picture="true" keep_aspect_ratio_high="true" transparency="0.6"/>
+			<widget class="picture" file="backgrounds/VAR pattern" red_replacement="fg accent" green_replacement="bg" scale_picture="false">
+				<animation class="fade_animation" start_value="0.3" end_value="1.0" duration="1.0" delay="0" end_mode="cycle" trigger_id="hidden" trigger_start="false" trigger_end="true" />
+			</widget>
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="20"/>
+
+				<!--Title-->
+				<widget class="label" alignment="centre" font="title" size="35" colour="fg accent" auto_size="vertical">
+					<translation id="text" translation_id="248716" type="use" value="Full Time[COMMENT - end of match]" />
+				</widget>
+
+				<!--Description(s)-->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="2" horizontal_inset="85" horizontal_alignment="horizontal" />
+
+					<widget hidden="true" class="text" id="deDM" alignment="centre" size="12" colour="black" auto_size="vertical" multiline="true">
+						<translation id="text" translation_id="256749" type="use" value="Thank you for playing the [%string#1 - full name of the application] Demo[COMMENT: demo end screen text above logo; the string argument will be changed to the application name by the game]" />
+					</widget>
+
+					<!--<widget hidden="true" class="text" id="deEA" alignment="centre" size="12" colour="white" auto_size="vertical" multiline="true">
+						<translation id="text" type="new" value="Thank you for playing the [%string#1 - full name of the application] Early Access[COMMENT: AREA: Early Access Ended dialog; SUB-AREA: ; FR-BN: FM-9726; TONE: N/A; CHARLIMIT: None; REF-ID: 256749; NOTE; text shown when play time of the early access version has ended]" />
+					</widget>-->
+
+					<!-- split each line into separate text widget for easier translation while keeping it in XML -->
+					<widget class="text" id="act1" alignment="centre" size="12" colour="black" auto_size="vertical" multiline="true">
+						<translation id="text" translation_id="289530" type="use" value="Thank you for playing [%string#1 - application title].[COMMENT: Text when an demo period ends for unactivated copy of the game]" />
+					</widget>
+					<widget class="text" alignment="centre" size="12" colour="black" auto_size="vertical" multiline="true">
+						<translation id="text" translation_id="289531" type="use" value="You must now activate your copy before you can continue to play.[COMMENT: Text when an demo period ends for unactivated copy of the game]" />
+					</widget>
+					<!--<widget class="text" alignment="centre" size="12" colour="white" auto_size="vertical" multiline="true">
+						<translation id="text" translation_id="289532" type="use" value="Please launch the game again and follow the instructions.[COMMENT: Text when an demo period ends for unactivated copy of the game]" />
+					</widget>-->
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_inset="0" horizontal_gap="4"/>
+
+					<!--Store-->
+					<widget class="primary_button" id="ppfm" auto_size="all" text="awd">
+						<record id="click_event" event_id="OURL" url="https://www.footballmanager.com" />
+						<translation id="text" translation_id="334059" type="use" value="Store[COMMENT: game.xml, text for the Football Manager Store, where user can buy additional content and unlockables for use in FMC]" />
+					</widget>
+
+					<!-- Wishlist -->
+					<widget class="subtle_button" id="wish" click_event="wish" auto_size="all">
+						<string id="create_if" value="is_demo_mode_and_steam" />
+						<translation id="text" translation_id="532237" type="use" value="Add to Wishlist[COMMENT: AREA: start screen; FR: 35432 TONE: Formal; CHARLIMIT: None; NOTE: used in demo mode only to open url link to add game to users wishlist;]" />
+					</widget>
+
+					<!--Start Screen-->
+					<widget class="subtle_button" click_event="MAMN" auto_size="all">
+						<translation id="text" translation_id="291297" type="use" value="Start Screen[COMMENT: section title for game start screen]" />
+					</widget>
+
+					<!-- Exit -->
+					<widget class="subtle_button" id="exdm" click_event="exdm" auto_size="all">
+						<translation id="text" translation_id="256750" type="use" value="Exit[COMMENT: demo end screen: exit game button text]" />
+					</widget>
+				</container>
+
+			</container>
+		</container>
+	</container>
+</panel>

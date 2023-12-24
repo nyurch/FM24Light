@@ -1,0 +1,149 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="8" vertical_gap="4" horizontal_alignment="horizontal" horizontal_inset="4" />
+
+		<!--Competition Title (Display icon with full name)-->
+		<widget class="comp_button" comp_display_type="0" alignment="left, centre_y" font="title" colour="black" size="large">
+			<record id="object_property">
+				<integer id="get_property" value="comp" />
+				<integer id="set_property" value="valu" />
+			</record>
+		</widget>
+
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="4" horizontal_alignment="horizontal" />
+			<record id="object_property" get_property="hWvC" set_property="Shwn"/>
+
+			<!--Subsection (Board Investment)-->
+			<widget class="property_list_viewer_xml_panel" file="widgets/ffp rule widget">
+				<translation id="titl" translation_id="595940" type="use" value="Board Investment[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-1199; NOTE: Financial Fair Play regulation name.]" />
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="fbih" />
+							<integer id="set_property" value="hint" />
+						</record>
+						<record>
+							<integer id="get_property" value="fbim" />
+							<integer id="set_property" value="text" />
+						</record>
+						<record>
+							<integer id="get_property" value="fbic" />
+							<integer id="set_property" value="curv" />
+						</record>
+						<record>
+							<integer id="get_property" value="fbiC" />
+							<integer id="set_property" value="colr" />
+						</record>
+						<record>
+							<integer id="get_property" value="fbiX" />
+							<integer id="set_property" value="hidn" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+			<widget class="spacer" />
+			<widget class="horizontal_divider" />
+
+			<!--Subsection (Finances)-->
+			<widget class="property_list_viewer_xml_panel" file="widgets/ffp rule widget">
+				<translation id="titl" translation_id="595941" type="use" value="Finances (Three-Year Period)[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-1199; NOTE: Financial Fair Play regulation name.]" />
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="ffvh" />
+							<integer id="set_property" value="hint" />
+						</record>
+						<record>
+							<integer id="get_property" value="ffvm" />
+							<integer id="set_property" value="text" />
+						</record>
+						<record>
+							<integer id="get_property" value="ffvc" />
+							<integer id="set_property" value="curv" />
+						</record>
+						<record>
+							<integer id="get_property" value="ffvC" />
+							<integer id="set_property" value="colr" />
+						</record>
+						<record>
+							<integer id="get_property" value="ffvX" />
+							<integer id="set_property" value="hidn" />
+						</record>
+					</list>
+				</record>
+			</widget>
+
+		</container>
+
+
+
+		<!--Subsection (Wage)-->
+		<container class="main_box">
+			<attachment_group class="vertical_arrange_autosize" />
+			<record id="object_property" get_property="hWvC" set_property="hidn"/>
+
+			<widget class="info_icon_hint_text" id="iiht" auto_size="all" font="title" colour="faded text" icon_alignment="centre">
+				<translation id="text" translation_id="416327" type="use" value="Total wage for period[COMMENT: FR 12541]" />
+				<record id="object_property" get_property="ffvh" set_property="inhi"/>
+			</widget>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill"/>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="text" auto_size="vertical" font="title" colour="faded text">
+						<translation id="text" translation_id="416328" type="use" value="Current [COMMENT:FR 12541]" />
+					</widget>
+
+					<widget class="text" auto_size="vertical" font="value">
+						<record id="object_property" get_property="fcwV" set_property="text"/>
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="text" auto_size="vertical" font="title" colour="faded text">
+						<translation id="text" translation_id="416329" type="use" value="Maximum Allowed[COMMENT:FFP label]" />
+					</widget>
+
+					<widget class="text" auto_size="vertical" font="value">
+						<record id="object_property" get_property="fmwV" set_property="text"/>
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="text" auto_size="vertical" font="title" colour="faded text">
+						<translation id="text" translation_id="416330" type="use" value="Current Surplus/(Deficit) for Period[COMMENT:FFP label]" />
+					</widget>
+
+					<widget class="text" auto_size="vertical" font="value">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="fwsc" />
+									<integer id="set_property" value="colr" />
+								</record>
+								<record>
+									<integer id="get_property" value="fwsd" />
+									<integer id="set_property" value="text" />
+								</record>
+							</list>
+						</record>
+					</widget>
+				</container>
+
+			</container>
+		</container>
+
+	</container>
+</panel>

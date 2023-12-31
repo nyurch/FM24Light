@@ -32,51 +32,63 @@
 
 	<container/>
 
-	<container class="bordered_box">
-		<layout class="arrange_vertical_attachment" layout="40,40,30,30,40,40,-1" offset="0" gap="0" />
-		<layout class="stick_to_sides_attachment" horizontal_alignment="left,extend" apply_to_children="true" inset="0" />
-		<!--days til match -->
-		<container class="animated_wipe_container" duration="0.5" id="days" wipe_data_trigger_id="text" remove_widget_after_wipe="true" skip_first_wipe_in="true">
-			<!-- This container will wipe in new text from the right and wipe old text out the left with an additional fade -->
-			<record id="wipe_in_animation" class="translate_animation" duration="1" trigger_id="hidden" trigger_value="false" coord_mode="relative_to_target" start_value="1.05, 0.0" end_value="0.0, 0.0" end_mode="hold_end" />
-			<list id="wipe_out_animation">
-				<record class="translate_animation" duration="2" trigger_id="hidden" trigger_value="true" coord_mode="relative_to_target" start_value="0.0, 0.0" end_value="-1.05, 0.0" end_mode="hold_end" />
-				<record class="fade_animation" duration="1" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" end_mode="hold_end" />
-			</list>
-			<record id="widget_properties" class="text" colour="red 900" alignment="left, centre_y" style="bold" size="15" multiline="false" />
-		</container>
-		<!-- This label may be hidden if the days to match is 'Today', 'Tomorrow' etc -->
-		<widget class="text" id="dayE" colour="red" alignment="left, centre_y" font="title" style="bold" size="15">
-			<translation id="text" translation_id="348442" type="use" value="To Next Match[COMMENT: Game processing panel; label for number of days until the next match]" />
+	<container>
+		<!--background-->
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<widget class="picture" file="photos/dynamic/match ticket/bg" scale_picture="true">
+			<boolean id="keep_aspect_ratio" value="false" />
 		</widget>
-		<!--fixture "home" vs "away"-->
-		<widget class="text" id="fixt" colour="accent" alignment="left, centre_y" style="bold" size="15" />
-		<!--stadium-->
-		<widget class="client_object_label" spec="text,bold" id="stad" style="bold" size="14" alignment="left,centre_y">
-			<record id="object_property">
-				<integer id="get_property" value="objt" />
-			</record>
+		<!--overlay-->
+		<widget class="picture" file="boxes/custom/overlay/paper" scale_picture="true">
+			<boolean id="keep_aspect_ratio" value="false" />
 		</widget>
-		<container>
-			<layout class="arrange_horizontal_attachment"  alignment="left, centre_y" layout="180,-1" offset="0" gap="0" />
-			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+		<container class="bordered_box">
+			<layout class="arrange_vertical_attachment" layout="40,40,30,30,40,40,-1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" horizontal_alignment="left,extend" apply_to_children="true" inset="0" />
+			<!--days til match -->
+			<container class="animated_wipe_container" duration="0.5" id="days" wipe_data_trigger_id="text" remove_widget_after_wipe="true" skip_first_wipe_in="true">
+				<!-- This container will wipe in new text from the right and wipe old text out the left with an additional fade -->
+				<record id="wipe_in_animation" class="translate_animation" duration="1" trigger_id="hidden" trigger_value="false" coord_mode="relative_to_target" start_value="1.05, 0.0" end_value="0.0, 0.0" end_mode="hold_end" />
+				<list id="wipe_out_animation">
+					<record class="translate_animation" duration="2" trigger_id="hidden" trigger_value="true" coord_mode="relative_to_target" start_value="0.0, 0.0" end_value="-1.05, 0.0" end_mode="hold_end" />
+					<record class="fade_animation" duration="1" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" end_mode="hold_end" />
+				</list>
+				<record id="widget_properties" class="text" colour="red 900" alignment="left, centre_y" style="bold" size="15" multiline="false" />
+			</container>
+			<!-- This label may be hidden if the days to match is 'Today', 'Tomorrow' etc -->
+			<widget class="text" id="dayE" colour="red" alignment="left, centre_y" font="title" style="bold" size="15">
+				<translation id="text" translation_id="348442" type="use" value="To Next Match[COMMENT: Game processing panel; label for number of days until the next match]" />
+			</widget>
+			<!--fixture "home" vs "away"-->
+			<widget class="text" id="fixt" colour="accent" alignment="left, centre_y" style="bold" size="15" />
+			<!--stadium-->
+			<widget class="client_object_label" spec="text,bold" id="stad" style="bold" size="14" alignment="left,centre_y">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+				</record>
+			</widget>
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="left, centre_y" layout="180,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
 				<widget class="text" alignment="left, centre_y" size="12" font="label" colour="black">
 					<translation id="text" translation_id="247236" type="use" value="Weather Forecast" />
 				</widget>
 				<widget class="weather_indicator_panel_horizontal" id="weat" colour="black" alignment="left, top" multiline="true" />
-		</container>
-		<!--competition-->
-		<widget class="text" id="comp" colour="grey" alignment="left, centre_y" style="bold" size="13" />
-		<!--previous meetings-->
-		<container>
-			<layout class="arrange_horizontal_attachment" layout="200,-1" offset="0" gap="0" />
-			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
-				<widget class="label"  alignment="left, centre_y" font="title" colour="fg magenta" size="12" >
+			</container>
+			<!--competition-->
+			<widget class="text" id="comp" colour="grey" alignment="left, centre_y" style="bold" size="13" />
+			<!--previous meetings-->
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="200,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+				<widget class="label" alignment="left, centre_y" font="title" colour="fg magenta" size="12">
 					<translation id="text" translation_id="344616" type="use" value="Previous Meetings[COMMENT: title for a box containing information on previous meetings between two sides]" />
 				</widget>
-				<widget class="team_recent_form_widget" id="pmet" colour="black" show_no_form_on_empty="true" alignment="right, centre_y" icon_alignment="left" bar_width="24"  show_form_letters="true" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw" >
+				<widget class="team_recent_form_widget" id="pmet" colour="black" show_no_form_on_empty="true" alignment="right, centre_y" icon_alignment="left" bar_width="24" show_form_letters="true" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw">
 					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
 				</widget>
+			</container>
 		</container>
 	</container>
 

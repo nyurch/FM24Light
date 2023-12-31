@@ -1,0 +1,51 @@
+﻿<panel height="50">
+	<attachment_group class="horizontal_arrange" horizontal_alignment="middle,extend"/>
+
+	<list id="properties_to_forward">
+		<record get_property="height" set_property="height" target="slid"/>
+		<record get_property="max_value" set_property="max_value" target="slid"/>
+		<record get_property="min_value" set_property="min_value" target="slid"/>
+		<record get_property="max_value" set_property="max_value" target="this"/>
+		<record get_property="min_value" set_property="min_value" target="this"/>
+		<record get_property="notch_frequency" set_property="notch_frequency" target="slid"/>
+		<record get_property="interval" set_property="interval" target="slid"/>
+		<record get_property="page_interval" set_property="page_interval" target="slid"/>
+		<record get_property="show_notch_text_under" set_property="show_notch_text_under" target="slid"/>
+		<record get_property="draw_notches" set_property="draw_notches" target="slid"/>
+		<record get_property="draw_middle_notch" set_property="draw_middle_notch" target="slid"/>
+		<record get_property="text_width" set_property="text_width" target="slid"/>
+		<record get_property="show_current_notch_text_left" set_property="show_current_notch_text_left" target="slid"/>
+		<record get_property="show_current_notch_text_under" set_property="show_current_notch_text_under" target="sltx"/>
+		<record get_property="limit_click_to_notch" set_property="limit_click_to_notch" target="slid"/>
+		<record get_property="show_value_on_thumb" set_property="show_value_on_thumb" target="slid"/>
+		<record get_property="items" set_property="items" target="slid" />
+		<record get_property="item_frequency" set_property="item_frequency" target="slid" />
+		<record get_property="settings_name" set_property="settings_name" target="slid" />
+		<record get_property="hint" set_property="hint" target="slid" />
+	</list>
+
+	<!-- Minus button -->
+	<widget class="selection_minus" id="-sli" click_event="slMi" appearance="buttons/subtle/normal/button">
+		<string id="create_if" value="ui.is_fmt_controller_skin" />
+	</widget>
+
+	<container id="slct">
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" vertical_gap="-10"/>
+
+		<!-- Slider -->
+		<widget class="slider_horizontal" id="slid" final_changed_event="SlRe" changed_event="SlDr" show_filler="true" filler_red_replacement="bg accent" thumb_red_replacement="bg accent" thumb_blue_replacement="black" alignment="centre" dont_use_click_offset="false" limit_click_to_notch="false" navigation_focus_target="false">
+			<integer id="text_width" value="90" />
+			<record id="notch_label_properties" font="title" size="10" colour="black"/>
+		</widget>
+
+		<!-- Text -->
+		<widget class="text" id="sltx" font="text" auto_size="vertical" multiline="true" alignment="top, centre" size="10" colour="black" />
+
+	</container>
+
+	<!-- Plus button -->
+	<widget class="selection_plus" id="+sli" click_event="slPl" appearance="buttons/subtle/normal/button">
+		<string id="create_if" value="ui.is_fmt_controller_skin" />
+	</widget>
+
+</panel>

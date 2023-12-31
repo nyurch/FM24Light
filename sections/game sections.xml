@@ -60,7 +60,7 @@ this file contains a list of all of the sections in the game
 		<!-- forced results-->
 		<record id="Gfrs"/>
 		<!--actions-->
-		<record id="ADDm" appearance="buttons/standard/normal/button" stick_to_side="right" icon="icons/16px/manager" colour="white" icon_colour="white" red_replacement="white" item_type="ACTT"/>
+		<record id="ADDm" appearance="buttons/standard/normal/button" stick_to_side="right" icon="icons/16px/manager" font="text_white" colour="white" icon_colour="white" red_replacement="white" item_type="ACTT"/>
 
 	</list>
 </properties>

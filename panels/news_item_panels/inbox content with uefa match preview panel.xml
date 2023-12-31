@@ -1,0 +1,759 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<flags id="odds_favourite_highlight_appearance" value="boxes/custom/darken/rounded/no margin/paper" />
+	<flags id="odds_favourite_highlight_colour" value="bg positive" />
+
+	<!-- content area -->
+	<container class="scrolling_box">
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="250,-1" horizontal_offset="0" horizontal_gap="15" vertical_inset="0" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!--dynamic image here please-->
+				<container id="ICdi" height="150">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				</container>
+
+				<!-- Social Poll Odds -->
+				<container class="inner_subtle_box" hidden="true" id="mloC">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<widget class="news_feed_panel" id="poll" filter="Fsco" file="">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="bar_value_colour" />
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+						<container id="PlPa">
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+
+							<widget class="text" auto_size="all" font="title">
+								<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+								<translation id="text" translation_id="553523" type="use" value="Most Likely Outcome[COMMENT: AREA: UI; SUB-AREA: UEFA License; FR: 34747; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Pre-match odds news panel section title for social reactions poll result]" />
+							</widget>
+
+							<widget class="text" id="PlSt" auto_size="vertical" alignment="left, centre_y" colour="faded text" size="small" />
+
+							<widget class="spacer" height="10" />
+							<!-- poll result bar charts added in code here -->
+						</container>
+					</widget>
+				</container>
+
+				<!-- Group Table record -->
+				<container class="property_list_viewer_xml_panel" hidden="true" id="GTab">
+
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+						<widget class="link_text" auto_size="vertical" id="Gtat" alignment="left, centre_y" font="title">
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						</widget>
+
+						<widget class="competition_stage_panel" file="team/team competitions overview competition stage panel" height="150" width="250" id="grTa">
+							<record id="object_property">
+								<list id="get_properties">
+									<record get_property="cmsi" set_property="cmsi" />
+									<record get_property="cssi" set_property="cssi" />
+									<record get_property="comp" set_property="objt" />
+								</list>
+							</record>
+						</widget>
+
+					</container>
+				</container>
+
+				<!-- Player Information record -->
+				<container class="property_list_viewer_xml_panel" hidden="true" id="info">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+						<widget class="text" auto_size="all" alignment="centre_x, centre_y" font="title">
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+							<translation id="text" type="use" translation_id="323669" value="Player Information[COMMENT: how to system, help string]" />
+						</widget>
+						<!-- Captains record -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/player stats/captain" height="20" scale_picture="true" red_replacement="fg magenta" image_alignment="centre" />
+								<widget class="text" auto_size="vertical" alignment="left, centre_y" colour="text" font="title">
+									<translation id="text" translation_id="300013" type="use" value="Captain" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="30, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="home" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Home Captain">
+									<record id="object_property" get_property="htcp" set_property="valu" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="30, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="away" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Away Captain">
+									<record id="object_property" get_property="atcp" set_property="valu" />
+								</widget>
+							</container>
+						</container>
+
+						<!-- Star Players -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/star rating/senior/unknown" height="20" scale_picture="true" red_replacement="red" image_alignment="left" />
+								<widget class="text" auto_size="vertical" alignment="left, centre_y" colour="text" font="title">
+									<translation id="text" translation_id="553453" type="use" value="Star Player[COMMENT: AREA: Achievements; SUB-AREA: In-game achievement names and descriptions; FR-BN: n/a; TONE: Formal; CHARLIMIT: 40; REF-ID: n/a; NOTE: these appear through the Steam client and other platform pop-up notifications when achievements have been hit, cannot be feminised, Achievement is Star Player]" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="30, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="home" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Home Captain">
+									<record id="object_property" get_property="htsp" set_property="valu" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="30, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="away" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Away Captain">
+									<record id="object_property" get_property="atsp" set_property="valu" />
+								</widget>
+							</container>
+						</container>
+					</container>
+				</container>
+
+				<!-- First Leg Spotlight -->
+				<container class="property_list_viewer_xml_panel" hidden="true" id="firL">
+
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+						<widget class="text" auto_size="vertical" alignment="centre,top" font="title">
+							<translation id="text" translation_id="596261" type="use" value="First Leg[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for First Leg; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />"/&gt;
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						</widget>
+
+						<!--First Leg record-->
+						<container class="property_list_viewer_xml_panel" id="fixL">
+							<record id="object_property" get_property="FirL" set_property="" />
+							<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+							<container>
+								<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+								<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+									<record id="object_property" get_property="home" set_property="objt" />
+								</widget>
+
+								<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" size="small" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+									<record id="object_property" get_property="FxCG" />
+								</widget>
+							</container>
+
+							<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="20" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+								<record id="object_property" get_property="FxRs" set_property="valu" />
+							</widget>
+
+							<container>
+								<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+								<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+									<record id="object_property" get_property="away" set_property="objt" />
+								</widget>
+
+								<!--away scorers-->
+								<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" size="small" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+									<record id="object_property" get_property="FxCG" />
+								</widget>
+							</container>
+
+						</container>
+
+						<widget class="horizontal_divider" auto_size="vertical" />
+
+						<!-- Highest Rated Players -->
+						<container class="property_list_viewer_xml_panel" height="50">
+							<record id="object_property" get_property="hrdv" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/milestones/awards" height="20" scale_picture="true" red_replacement="green 600" image_alignment="left" />
+								<widget class="text" auto_size="vertical" alignment="left, centre_y" colour="text" font="title">
+									<translation id="text" translation_id="232096" type="use" value="Highest Average Rating" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="30, -1, 50" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="home" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Home Captain">
+									<record id="object_property" get_property="htsp" set_property="valu" />
+								</widget>
+								<widget class="match_rating_label_formatted" id="hava" auto_size="vertical" alignment="centre" format="[%fraction#1-2.1]" navigation_focus_target="false">
+									<record id="object_property" get_property="htpv" set_property="valu" />
+								</widget>
+							</container>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="30, -1, 50" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="object_portrait_picture" height="25" scale_picture="true" red_replacement="white" image_alignment="centre">
+									<record id="object_property" get_property="away" set_property="objt" />
+								</widget>
+								<widget class="person_button" auto_size="vertical" alignment="left, centre_y" colour="text" value="Away Captain">
+									<record id="object_property" get_property="atsp" set_property="valu" />
+								</widget>
+
+								<widget class="match_rating_label_formatted" id="aava" auto_size="vertical" alignment="centre" format="[%fraction#1-2.1]" navigation_focus_target="false">
+									<record id="object_property" get_property="atpv" set_property="valu" />
+								</widget>
+							</container>
+
+						</container>
+						<!-- Other Semi-Final First Leg Match-->
+						<container id="OthM">
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							
+							<widget class="text" auto_size="vertical" alignment="centre,top" font="title" colour="faded text">
+								<translation id="text" translation_id="596262" type="use" value="Other Semi-Final[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for First Leg; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+							</widget>
+
+							<container class="property_list_viewer_xml_panel">
+								<record id="object_property" get_property="OFiL" set_property="objt" />
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+									<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="home" set_property="objt" />
+									</widget>
+
+									<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" size="small" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+
+								<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="20" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" set_property="valu" />
+								</widget>
+
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+									<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="away" set_property="objt" />
+									</widget>
+
+									<!--away scorers-->
+									<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" size="small" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+							</container>
+
+						</container>
+					</container>
+				</container>
+
+
+				<!--Team Spotlight -->
+				<container class="inner_subtle_box" hidden="true" id="TeaS">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<widget class="text" auto_size="all" id="Tsti" alignment="centre_x, centre_y" font="title">
+						<translation id="text" translation_id="596267" type="use" value="Team Spotlight[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for Team Spotlight; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+					</widget>
+
+					<widget class="simple_data_list" id="Spot" gap="6" auto_size="vertical">
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/team spotlight widget" />
+					</widget>
+
+
+				</container>
+
+
+				<!-- Matchup Player Stats-->
+				<container class="inner_subtle_box" hidden="true" id="MPst">
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+					<widget class="text" auto_size="all" alignment="centre_x, centre_y" font="title">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						<translation id="text" translation_id="596265" type="use" value="Matchup Stats[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for Matchup Centric comp stats stats; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+					</widget>
+					<widget class="simple_data_list" id="MPli" gap="6" auto_size="vertical">
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/competition player stat list widget" />
+					</widget>
+				</container>
+				<!-- Competition Player All Stats-->
+				<container class="inner_subtle_box" hidden="true" id="CPaC">
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+					<widget class="text" id="CPTi" auto_size="vertical" font="title">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+					</widget>
+					<widget class="simple_data_list" id="ComA" gap="6" auto_size="vertical">
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/competition player stat list widget" />
+					</widget>
+				</container>
+
+				<!-- Competition Team All Stats-->
+				<container class="inner_subtle_box" hidden="true" id="CTaC">
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+					<widget class="link_text" id="CTTi" auto_size="vertical" font="title">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+					</widget>
+					<widget class="simple_data_list" id="ComT" gap="6" auto_size="vertical">
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/competition team stat list widget" />
+					</widget>
+				</container>
+
+				<!--Comp History-->
+				<container class="property_list_viewer_xml_panel" id="comH" hidden="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+						<widget class="text" auto_size="all" alignment="centre_x, centre_y" font="title">
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+							<translation id="text" translation_id="596263" type="use" value="Competition Info[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for histrory section; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="fg" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
+								<translation id="link_title" translation_id="247942" type="use" value="Past Winners" />
+								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title">
+									<translation id="text" translation_id="247942" type="use" value="Past Winners" />
+								</widget>
+							</container>
+
+							<widget class="simple_data_list" id="ReWW" gap="6" auto_size="vertical">
+								<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/text and team button horizontal widget" />
+							</widget>
+
+						</container>
+
+						<container class="property_list_viewer_xml_panel" id="lyFi">
+							<record id="object_property" get_property="CFcR" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title">
+								<translation id="text" translation_id="596264" type="use" value="Last Year's Final[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for Last Year's Final; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+							</widget>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+									<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="home" set_property="objt" />
+									</widget>
+
+									<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" size="small" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+
+								<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="20" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" set_property="valu" />
+								</widget>
+
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+									<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="away" set_property="objt" />
+									</widget>
+
+									<!--away scorers-->
+									<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" size="small" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+							</container>
+
+						</container>
+
+						<container class="property_list_viewer_xml_panel" id="coMW">
+							<record id="object_property" get_property="MSTs" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							<!-- most successful clubs -->
+							<widget class="text" font="title" auto_size="vertical" colour="faded text" alignment="left, centre_y">
+								<translation id="text" translation_id="491933" type="use" value="Most Times Won[COMMENT: AREA: Records; SUB-AREA: Label for team that won the comp the most times; FR-BN: n/a; TONE: Formal; CHARLIMIT: Short; REF-ID: 249024; NOTE: making the referenced ID a lot more grammatically correct]" />
+							</widget>
+
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="40, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+								<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="40">
+									<record id="object_property" get_property="Ttea" set_property="objt" />
+								</widget>
+								<widget class="text" id="MoWi" alignment="centre_x,centre_y" auto_size="vertical">
+									<record id="object_property" get_property="valu" set_property="valu" />
+								</widget>
+							</container>
+
+						</container>
+					</container>
+				</container>
+
+				<!--Comp History - Supercup-->
+				<container class="property_list_viewer_xml_panel" id="coHS" hidden="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+						<widget class="text" auto_size="all" alignment="centre_x, centre_y" font="title">
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+							<translation id="text" translation_id="596263" type="use" value="Competition Info[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for histrory section; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />"/&gt;
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="fg" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
+								<translation id="link_title" translation_id="247942" type="use" value="Past Winners" />
+								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title">
+									<translation id="text" translation_id="247942" type="use" value="Past Winners" />
+								</widget>
+							</container>
+
+							<widget class="simple_data_list" id="ReWW" gap="6" auto_size="vertical">
+								<record id="widget_properties" class="property_list_viewer_xml_panel" file="widgets/text and team button horizontal widget" />
+							</widget>
+
+						</container>
+
+						<container class="property_list_viewer_xml_panel" id="lyFi">
+							<record id="object_property" get_property="CFcR" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							<widget class="text" auto_size="vertical" alignment="left,centre_y" colour="text" font="title">
+								<translation id="text" translation_id="596847" type="use" value="Last Year's UEFA Champions League Final[COMMENT: AREA: UEFA Match Preview Panel; NOTE: additional competition info]" />
+							</widget>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+									<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="home" set_property="objt" />
+									</widget>
+
+									<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" size="small" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+
+								<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="20" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" set_property="valu" />
+								</widget>
+
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+									<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="away" set_property="objt" />
+									</widget>
+
+									<!--away scorers-->
+									<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" size="small" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+							</container>
+
+						</container>
+
+						<container class="property_list_viewer_xml_panel" id="OtFi">
+							<record id="object_property" get_property="OFiL" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							<widget class="text" auto_size="vertical" colour="text" alignment="left,centre_y" font="title">
+								<translation id="text" translation_id="596848" type="use" value="Last Year's UEFA Europa League Final[COMMENT: AREA: UEFA Match Preview Panel; NOTE: additional competition info]" />
+							</widget>
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+									<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="home" set_property="objt" />
+									</widget>
+
+									<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" size="small" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+
+								<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="20" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" set_property="valu" />
+								</widget>
+
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+									<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+										<record id="object_property" get_property="away" set_property="objt" />
+									</widget>
+
+									<!--away scorers-->
+									<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" size="small" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false" colour="faded text">
+										<record id="object_property" get_property="FxCG" />
+									</widget>
+								</container>
+							</container>
+
+						</container>
+					</container>
+				</container>
+
+				<!-- Comp Journey -->
+				<container class="property_list_viewer_xml_panel" hidden="true" id="CJou">
+
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+						<widget class="text" auto_size="vertical" alignment="left,top" font="title">
+							<translation id="text" translation_id="596260" type="use" value="Competition Journey[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for Competition Journey; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+							<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						</widget>
+
+						<!--Previous Result-->
+						<container class="property_list_viewer_xml_panel" id="preR">
+							<record id="object_property" get_property="Tlaf" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+							<container class="inner_subtle_box">
+								<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+								<widget class="text" auto_size="vertical" id="CjoT" alignment="left,top" font="title" />
+							</container>
+
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+								<widget class="object_portrait_picture" image_alignment="right, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+									<record id="object_property" get_property="home" set_property="objt" />
+								</widget>
+
+								<container>
+									<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+									<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" style="bold" size="20" format="[%scoreline#1-current_opposition_agg]" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+										<record id="object_property" get_property="FxRs" set_property="valu" />
+									</widget>
+									<widget class="text" auto_size="vertical" alignment="centre_x,top" font="text">
+										<translation id="text" translation_id="596849" type="use" value="On Agg[COMMENT: AREA: UEFA Match Preview Panel; NOTE: short for on aggregate]" />
+									</widget>
+								</container>
+
+								<widget class="object_portrait_picture" image_alignment="left, centre_y" scale_picture="true" keep_aspect_ratio="true" height="60" width="60">
+									<record id="object_property" get_property="away" set_property="objt" />
+								</widget>
+
+							</container>
+						</container>
+						<!--Opp Team Prev Positions-->
+						<container class="property_list_viewer_xml_panel" id="CJpp">
+							<record id="object_property" get_property="Tspp" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+
+							<widget class="text" font="title" colour="faded text" id="OpPT" auto_size="vertical" alignment="left, centre_y" />
+
+							<widget class="fixture_name_text" id="PPer" alignment="centre_x,centre_y" auto_size="vertical">
+								<record id="object_property" get_property="Tspp" set_property="valu" />
+							</widget>
+
+						</container>
+						<!--Memorable Match-->
+						<container class="property_list_viewer_xml_panel" id="MemM">
+							<record id="object_property" get_property="phFR" set_property="objt" />
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_alignment="horizontal" />
+							<widget class="horizontal_divider" auto_size="vertical" />
+							<widget class="text" auto_size="vertical" id="mmmT" alignment="centre,top" font="title" colour="faded text">
+								<translation id="text" translation_id="596266" type="use" value="Most Memorable Match[COMMENT: AREA: Pre Match Odds UEFA Item; SUB-AREA: Title for Most Memorable Match; FR-BN: FM-6015; TONE: Informal; CHARLIMIT:N/A; REF-ID:; NOTE:]" />
+							</widget>
+
+							<widget class="text" id="MSta" auto_size="vertical" colour="faded text" alignment="centre_x,top" font="text" />
+
+							<container>
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 80, -1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+								<widget class="team_button" image_alignment="right, centre_y" auto_size="vertical" width="60">
+									<record id="object_property" get_property="home" set_property="value" />
+								</widget>
+
+								<widget class="fixture_full_result_text" id="FxFR" auto_size="vertical" format="[%scoreline#1-result_h_a_result]" style="bold" size="10" alignment="centre" reverse_teams="false" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" set_property="valu" />
+								</widget>
+
+								<widget class="team_button" image_alignment="left, centre_y" auto_size="vertical" width="60">
+									<record id="object_property" get_property="away" set_property="value" />
+								</widget>
+
+							</container>
+						</container>
+					</container>
+				</container>
+
+				<!-- form -->
+				<container class="inner_subtle_box" hidden="true" height="90">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="8" horizontal_inset="0" />
+
+					<widget class="label" auto_size="vertical" font="title" alignment="centre">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+					</widget>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" />
+
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+							<container class="client_object_viewer_xml_panel" id="htfw" width="50">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<widget class="team_recent_form_widget" alignment="right" navigation_focus_target="false">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="Tfrm" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+							</container>
+
+							<widget class="team_button" id="htbf" />
+						</container>
+
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+							<container class="client_object_viewer_xml_panel" id="atfw" width="50">
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+								<widget class="team_recent_form_widget" alignment="right" navigation_focus_target="false">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="Tfrm" />
+												<integer id="set_property" value="valu" />
+											</record>
+										</list>
+									</record>
+								</widget>
+							</container>
+
+							<widget class="team_button" id="atbf" />
+						</container>
+					</container>
+				</container>
+
+				<!-- referee -->
+				<container class="inner_subtle_box" hidden="true" id="refc">
+					<string id="remove_if" value="is_fmt" />
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<widget class="label" auto_size="vertical" font="title" alignment="centre">
+						<attachment class="get_global_attachment" get_property="CDtc" set_property="colour" />
+						<translation id="text" translation_id="227993" type="use" value="Referee" />
+					</widget>
+
+					<widget class="client_object_label" id="rfnm" auto_size="vertical" spec="text" size="large" colour="text" alignment="centre" multiline="false" />
+					<widget class="text" id="rfma" auto_size="vertical" spec="text" colour="faded text" alignment="centre" />
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" horizontal_gap="8" />
+
+						<record id="default_properties" auto_size="all" />
+
+						<widget class="picture" file="icons/16px/yellow card" image_alignment="centre" />
+						<widget class="text" id="rfye" alignment="centre" spec="text" style="bold" colour="yellow card" size="large" />
+						<widget class="picture" file="icons/16px/red card" image_alignment="centre" />
+						<widget class="text" id="rfrd" alignment="centre" spec="text" style="bold" colour="red card" size="large" />
+					</container>
+				</container>
+			</container>
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+				<!-- logos -->
+				<container height="43">
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1,40,-1" horizontal_gap="8" vertical_inset="0" />
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<widget class="client_object_label" id="hmnm" height="25" size="large" style="bold" colour="text" alignment="right,bottom" navigation_focus_target="true" />
+
+						<container class="client_object_viewer_xml_panel" id="hmrc">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+							<widget class="text" alignment="right" colour="faded text">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="subl" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+					</container>
+
+					<widget class="text" alignment="centre" colour="text" font="title" size="15">
+						<translation id="text" translation_id="242324" type="use" value="v[versus]" />
+					</widget>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<widget class="client_object_label" id="awnm" height="25" spec="large" style="bold" colour="text" alignment="left,bottom" navigation_focus_target="true" />
+
+						<container class="client_object_viewer_xml_panel" id="awrc">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+							<widget class="text" alignment="left" colour="faded text">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="subl" />
+											<integer id="set_property" value="valu" />
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+					</container>
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="left" horizontal_inset="0" />
+
+					<widget class="comp_button" id="comp" auto_size="all" icon_enabled="true" navigation_focus_target="true">
+						<layout class="centre_in_parent_attachment" alignment="horizontal" />
+					</widget>
+
+					<widget class="text" id="stda" auto_size="all" colour="faded text">
+						<layout class="centre_in_parent_attachment" alignment="horizontal" />
+					</widget>
+				</container>
+
+				<widget class="horizontal_divider" />
+
+				<!-- main body text -->
+				<widget class="inbox_body_text" id="bdtx" />
+			</container>
+		</container>
+	</container>
+
+</panel>

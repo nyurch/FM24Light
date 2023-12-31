@@ -2,7 +2,7 @@
 	<layout class="arrange_vertical_attachment" alignment="fill" offset="0" />
 	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
-	<container class="main_transparent_box" force_title_borders="true" navigation_container="true">
+	<container class="main_subtle_box" peri="4" force_title_borders="true" navigation_container="true">
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
@@ -48,10 +48,10 @@
 			<widget class="picture" width="90" height="30" image_alignment="right,top" file="icons/custom/prozone/logo" scale_picture="true" keep_aspect_ratio="true" embed_in_frame="true" />
 		</container>
 
-		<widget class="pitch_action_zones" id="azpt" vertical="false" fixed="true" auto_tick_exclusive="true" font_colour="black" pitch_line_colour="faded white" alignment="centre" pitch_draw_grass="true" hide_team_names="true" />
+		<widget class="pitch_action_zones" id="azpt" peri="4" default_view="4" vertical="false" fixed="true" auto_tick_exclusive="true" font_colour="white" pitch_line_colour="white" alignment="centre" pitch_draw_grass="true" hide_team_names="false" />
 	</container>
 
-	<container class="main_transparent_box">
+	<container class="main_subtle_box">
 		<translation id="title" translation_id="420657" type="use" value="Focus of Attacks[COMMENT: match action zones label, indicates the main focuses of team attacking moves]" />
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />

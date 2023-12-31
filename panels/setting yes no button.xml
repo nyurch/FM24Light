@@ -1,0 +1,19 @@
+﻿<panel>
+	<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0 "/>
+
+	<widget class="label" id="labl" alignment="centre" auto_size="all"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left" horizontal_gap="0" horizontal_offset="0" vertical_inset="0" />
+
+		<widget class="radio_toggle_switch_left" id="yes " alignment="centre" click_event="yes " auto_size="all">
+			<translation id="text" translation_id="242044" type="use" value="Yes" />
+		</widget>
+
+		<widget class="radio_toggle_switch_right" id="no  " alignment="centre" click_event="no  " auto_size="all">
+			<translation id="text" translation_id="231460" type="use" value="No" />
+		</widget>
+
+	</container>
+
+</panel>

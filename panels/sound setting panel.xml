@@ -1,0 +1,102 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+	<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+	<layout class="arrange_horizontal_attachment" alignment="middle, extend" offset="0" gap="4" />
+
+	<widget class="test_sounds_button" id="teSS" auto_size="all" icon="icons/play/button_disabled">
+		<string id="remove_if" value="is_fmt" />
+	</widget>
+
+	<widget class="test_sounds_button" id="teSS" auto_size="all" icon="icons/play/button_disabled" appearance="buttons/subtle/normal/button">
+		<string id="create_if" value="is_fmt" />
+	</widget>
+
+	<!-- Minus button -->
+	<widget class="selection_minus" id="-sli" click_event="slMi" appearance="buttons/subtle/normal/button">
+		<string id="create_if" value="ui.is_fmt_controller_skin" />
+	</widget>
+
+	<container height="40">
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" vertical_gap="-5"/>
+
+		<widget id="slid" class="slider_horizontal" height="30" changed_event="SlDr" show_filler="true" filler_red_replacement="bg accent" thumb_red_replacement="bg accent" thumb_blue_replacement="white" navigation_focus_target="false" limit_click_to_notch="false" draw_notches="true">
+			<translation id="hint" translation_id="329753" type="use" value="Change the volume to play sounds[COMMENT: sound setting panel; slider hint text for changing volume]" />
+			<integer id="width" value="110"/>
+			<integer id="notch_frequency" value="1" />
+			<integer id="interval" value="1" />
+			<integer id="page_interval" value="1" />
+			<boolean id="draw_middle_notch" value="yes" />
+			<flags id="alignment" value="centre_y" />
+			<integer id="min_value" value="0" />
+			<integer id="max_value" value="10" />
+			<integer id="value" value="10" />
+			<boolean id="show_notch_text" value="true" />
+			<integer id="text_width" value="50" />
+			<flags id="final_changed_event" value="sliC" />
+			<list id="items">
+				<record>
+					<string id="text" value="0" />
+				</record>
+				<record>
+					<string id="text" value="1" />
+				</record>
+				<record>
+					<string id="text" value="2" />
+				</record>
+				<record>
+					<string id="text" value="3" />
+				</record>
+				<record>
+					<string id="text" value="4" />
+				</record>
+				<record>
+					<string id="text" value="5" />
+				</record>
+				<record>
+					<string id="text" value="6" />
+				</record>
+				<record>
+					<string id="text" value="7" />
+				</record>
+				<record>
+					<string id="text" value="8" />
+				</record>
+				<record>
+					<string id="text" value="9" />
+				</record>
+				<record>
+					<string id="text" value="10" />
+				</record>
+			</list>
+		</widget>
+
+		<!-- Text -->
+		<widget class="text" id="sltx" font="text" auto_size="vertical" multiline="true" alignment="top, centre" size="10" colour="black" />
+
+	</container>
+	<!-- Plus button -->
+	<widget class="selection_plus" id="+sli" click_event="slPl" appearance="buttons/subtle/normal/button">
+		<string id="create_if" value="ui.is_fmt_controller_skin" />
+	</widget>
+
+	<list id="properties_to_forward">
+		<record get_property="notch_frequency" target="slid" set_property="notch_frequency" />
+		<record get_property="interval" target="slid" set_property="interval" />
+		<record get_property="page_interval" target="slid" set_property="page_interval" />
+		<record get_property="draw_middle_notch" target="slid" set_property="draw_middle_notch" />
+		<record get_property="alignment" target="slid" set_property="alignment" />
+		<record get_property="min_value" target="slid" set_property="min_value" />
+		<record get_property="max_value" target="slid" set_property="max_value" />
+		<record get_property="show_notch_text" target="slid" set_property="show_notch_text" />
+		<record get_property="text_width" target="slid" set_property="text_width" />
+		<record get_property="items" target="slid" set_property="items" />
+		<record get_property="thumb_red_replacement" target="slid" set_property="thumb_red_replacement" />
+		<record get_property="thumb_blue_replacement" target="slid" set_property="thumb_blue_replacement" />
+		<record get_property="limit_click_to_notch" target="slid" set_property="limit_click_to_notch"/>
+		<record get_property="draw_notches" target="slid" set_property="draw_notches"/>
+		<record get_property="items" target="slid" set_property="items" />
+		<record get_property="item_frequency" target="slid" set_property="item_frequency"/>
+		<record get_property="show_notch_text_under" target="slid" set_property="show_notch_text_under" />
+	</list>
+
+</panel>

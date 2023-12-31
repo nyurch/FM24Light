@@ -60,7 +60,7 @@
 					</container>
 				</container>
 				<container id="KeyM" class="main_box" red_replacement="">
-					<translation id="title" translation_id="483633" type="use" value="Key Moments[COMMENT: Refers to events within a match that were critical to the match result]" />
+					<translation id="title" translation_id="509881" type="use" value="Moments To Remember" />
 					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
 					<widget class="preselected_match_chalkboard_panel" vertical="true" id="kPms">
 						<list id="chalkboard_events_to_display">

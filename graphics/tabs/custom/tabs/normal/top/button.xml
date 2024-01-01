@@ -7,7 +7,7 @@
 		<colour id="colour" name="faded text"/>
 	</record>
 
-	<record id="primary_icon_properties" red_replacement="faded text" />
-	<colour id="green_replacement" name="grey 800"/>
+	<record id="primary_icon_properties" red_replacement="black" />
+	<colour id="green_replacement" name="black"/>
 
 </properties>

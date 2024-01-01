@@ -1,0 +1,75 @@
+﻿<panel width="310">
+	<list id="properties_to_forward">
+		<record get_property="hidC" set_property="hidn" target="dapo" />
+	</list>
+
+	<attachment_group class="vertical_arrange" vertical_alignment="top" horizontal_inset="0" vertical_offset="2" />
+
+	<!--buttons box-->
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="0" horizontal_alignment="left,extend" />
+		<widget class="icon_button" id="mdmn" show_button_appearance="false" icon_colour="text" icon_alignment="centre" auto_size="horizontal" height="40" icon="icons/16px/expand">
+			<!--set pitch state mini-->
+			<record id="click_event" event_id="PiSt" index="0" />
+		</widget>
+
+		<!--tactics popup and full screen button-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_alignment="top" vertical_gap="12" />
+			<widget class="icon_button" id="mdmx" icon_colour="text" icon_alignment="right" icon="icons/16px/maximise" auto_size="all">
+				<!--set pitch state maximised-->
+				<record id="click_event" event_id="PiSt" index="2" />
+				<translation id="text" translation_id="560962" type="use" value="Show full squad view[COMMENT: AREA: Team Squad; SUB-AREA: Squad Planner; FR-BN: FM-11545; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: button to show the full squd view panel.]" />
+
+			</widget>
+
+			<widget class="tactic_popup_button" alignment="centre" auto_size="all" colour="black" show_button_appearance="false" request_tactic="false" id="tsbn" dont_add_reset_text="true" value="0" />
+		</container>
+	</container>
+
+	<!-- Position detail selection radio buttons-->
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_inset="0" vertical_offset="4" vertical_gap="4" />
+		<!--radio buttons-->
+		<container height="24">
+			<attachment_group class="horizontal_arrange" vertical_inset="0" horizontal_alignment="middle" />
+			<widget class="radio_toggle_switch_left" id="ptcA" auto_size="horizontal" size="small" show_button_appearance="true" appearance="tabs/subsection/normal/top/button" click_event="sptV" type="0">
+				<translation id="text" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]" />
+			</widget>
+			<widget class="radio_toggle_switch_middle" id="ptcD" auto_size="horizontal" size="small" show_button_appearance="true" appearance="tabs/subsection/normal/top/button" click_event="sptV" type="1">
+				<translation id="text" translation_id="598166" type="use" value="Depth[COMMENT: AREA: Planner; SUB-AREA: Planner Panel; FR-BN: FM-32305; NOTE: Tab title for showing squad depth in position]" />
+			</widget>
+			<widget class="radio_toggle_switch_right" id="ptcR" auto_size="horizontal" size="small" show_button_appearance="true" appearance="tabs/subsection/normal/top/button" click_event="sptV" type="2">
+				<translation id="text" translation_id="316816" type="use" value="Role[COMMENT - person list view column heading]" />
+			</widget>
+		</container>
+		<!--description-->
+		<container height="24">
+			<attachment_group class="horizontal_arrange" vertical_inset="0" horizontal_gap="8" horizontal_alignment="middle" />
+			<widget class="text" id="pviA" auto_size="horizontal" alignment="centre" colour="text" style="bold" font="title">
+				<translation id="text" translation_id="598169" type="use" value="Team average ability:[COMMENT: AREA: Planner; SUB-AREA: Planner Panel; FR-BN: FM-32305; NOTE: description for section showing the average ability for the entire team in the selected tactic]" />
+			</widget>
+
+			<widget class="text" id="pviD" auto_size="horizontal" alignment="centre" colour="faded text" />
+			<widget class="picture" id="pviP" width="20" image_alignment="centre" hidden="true" />
+		</container>
+	</container>
+	<!--pitch container-->
+	<container height="360">
+
+		<widget class="pitch_with_squad_depth" id="pitc" height="360" display_centre_side_positions="true" vertical="true" pitch_alignment="centre_x,top" pitch_draw_goals="false" pitch_draw_markings="false" show_position_strength="false" pitch_show_names="false" pitch_draw_grass="true" pitch_line_colour="white" pitch_touchline_width_percentage="10" pitch_perspective="0.0" pitch_override_icon_size="2" line_width="1.5" pitch_vertical_padding="16" disable_animations="true">
+			<string id="pitch_kit_icon" value="pitch/icons/dots" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0,0,0,0" />
+		</widget>
+
+		<widget class="check_box" auto_size="all" id="dasw" click_event="daWI" selected="true" show_button_appearance="true" appearance="buttons/custom/tactics/pitch switch/normal/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon="icons/custom/tactics/pitch switch/analysis" secondary_icon_alignment="left,centre_y">
+			<translation id="hint" translation_id="596073" type="use" value="Show Position Issues[COMMENT: AREA: Planner; SUB-AREA: Planner Panel; FR-BN: FM-11444 NOTE: Show positions with issues icon on the pitch]" />
+			<layout class="stick_to_sides_attachment" alignment="left,top" inset="0,8" />
+		</widget>
+	</container>
+
+	<widget class="check_box" auto_size="vertical" alignment="centre" icon_alignment="centre" id="dapo" click_event="daPo">
+		<translation id="text" translation_id="560963" type="use" value="Show All Positions[COMMENT: AREA: Planner; SUB-AREA: Planner Panel; FR-BN: FM-11444 NOTE: Show all possible player positions on the pitch]" />
+	</widget>
+
+</panel>

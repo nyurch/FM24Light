@@ -1,0 +1,36 @@
+﻿<panel auto_size_minimum_height="45">
+	
+	<layout class="arrange_horizontal_attachment" layout="45,  -1" offset="2" gap="2"/>
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+	<flags id="child_for_sort" value="PnmP"/>
+
+	<list id="properties_to_forward">
+		<record get_property="NFtg" set_property="NFtg" target="PnmP"/>
+	</list>
+
+	<widget class="kit_icon" file="generic/kit icon tactics with bib" kit_path="default" kit_number_path="default"  keep_aspect_ratio="true" scale_picture="true">
+
+		<record id="object_property">
+			<list id="get_properties">
+				<!-- description -->
+				<record get_property="Pers" set_property="objt" />
+				<record get_property="PtsL" set_property="PtsL" />
+			</list>
+		</record>
+	</widget>
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="middle" />
+
+		<flags id="child_for_sort" value="PnmP"/>
+
+		<widget class="person_button" colour="black" id="PnmP" auto_size="vertical" info_popup_enabled="true" style="bold">
+				<record id="object_property" get_property="PnmP" set_property="valu" />
+			</widget>
+
+		<widget class="team_selection_picked_button" read_only="true" overwrite_appearance="true" extended_text="true" appearance="labels/standard" alignment="centre" secondary_icon_enabled="false" auto_size="all" picked_normal_colour="fg alpha" unavailable_colour="fg alpha">
+			<record id="object_property" get_property="PtsL" set_property="valu" />
+		</widget>
+	</container>
+</panel>

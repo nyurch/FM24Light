@@ -50,12 +50,12 @@
 				<widget class="financial_status_label" row="3" col="1" alignment="left,centre_y">
 					<record id="object_property" get_property="Csfs"/>
 				</widget>
-				<!-- Media Prediction -->
+				<!-- Youth Recruitment -->
 				<widget class="label" row="4" col="0">
-					<record id="object_property" get_property="Crcs" name="true"/>
+					<record id="object_property" get_property="Crcb" name="true"/>
 				</widget>
-				<widget class="youth_recruitment_status_label" row="4" col="1">
-					<record id="object_property" get_property="Crcs"/>
+				<widget class="youth_facilities_stars_label" row="4" col="1">
+					<record id="object_property" get_property="Crcb"/>
 				</widget>
 				<!-- Youth Facilities -->
 				<widget class="label" row="5" col="0">

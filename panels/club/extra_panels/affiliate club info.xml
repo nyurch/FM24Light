@@ -117,12 +117,12 @@
 				<widget class="club_squad_character_label" row="9" col="1">
 					<record id="object_property" get_property="Csca"/>
 				</widget>
-				<!-- media prediction -->
+				<!-- youth recruitment -->
 				<widget class="label" row="10" col="0">
-					<record id="object_property" get_property="Crcs" name="true"/>
+					<record id="object_property" get_property="Crcb" name="true"/>
 				</widget>
-				<widget class="youth_recruitment_status_label" row="10" col="1">
-					<record id="object_property" get_property="Crcs"/>
+				<widget class="youth_facilities_stars_label" row="10" col="1">
+					<record id="object_property" get_property="Crcb"/>
 				</widget>
 				<!-- youth facilities -->
 				<widget class="label" row="11" col="0">

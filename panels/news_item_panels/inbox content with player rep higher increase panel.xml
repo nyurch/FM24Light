@@ -1,0 +1,179 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="pvDR" set_property="pvDR" target="asda" />
+		<record get_property="tObj" set_property="objt" target="tamC" />
+		<record get_property="tHid" set_property="hidden" target="tamC" />
+		<record get_property="pObj" set_property="objt" target="pdes" />
+		<record get_property="pObj" set_property="value" target="pnam" />
+		<record get_property="pHid" set_property="hidden" target="plrC" />
+		<record get_property="title" set_property="text" target="titT" />
+		<record get_property="auth" set_property="value" target="auth" />
+		<record get_property="pdsi" set_property="disabled" target="asda" />
+		<record get_property="valu" set_property="valu" target="visH" />
+		<record get_property="Ttea" set_property="valu" target="team" />
+		<record get_property="MPpc" set_property="valu" target="PaCo" />
+		<record get_property="Pgls" set_property="value" target="Goal" />
+		<record get_property="MPas" set_property="value" target="Assi" />
+		<record get_property="PDru" set_property="value" target="Dist" />
+		<record get_property="MPkp" set_property="value" target="KeyP" />
+		<record get_property="FxRs" set_property="value" target="scrL" />
+		<record get_property="home" set_property="value" target="home" />
+		<record get_property="home" set_property="value" target="homT" />
+		<record get_property="away" set_property="value" target="away" />
+		<record get_property="away" set_property="value" target="awyT" />
+		<record get_property="Prat" set_property="value" target="ORat" />
+		<record get_property="Prat" set_property="value" target="GRat" />
+		<record get_property="Pigo" set_property="hidn" target="Oufi" />
+		<record get_property="Pigo" set_property="shwn" target="gkst" />
+		<record get_property="MPsv" set_property="valu" target="Save" />
+		<record get_property="Poco" set_property="valu" target="Conc" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="inner_box">
+		<attachment_group class="horizontal_arrange" horizontal_layout="260,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+		<!--LHS column-->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="6" vertical_alignment="top, extend" horizontal_inset="0" />
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+				<container id="cent">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_offset="0" vertical_inset="0" />
+
+					<!-- Home team name -->
+					<widget class="team_button" id="homT" size="10" icon_enabled="false" auto_size="all" alignment="right,centre_y" navigation_focus_target="true" />
+					<!-- Home team logo -->
+					<widget class="object_portrait_picture" id="home" image_alignment="centre" scale_picture="true" height="20" width="20" />
+
+					<!-- scoreline -->
+					<widget class="fixture_button" size="10" id="scrL" alignment="centre" auto_size="all" navigation_focus_target="true" />
+
+					<!-- Away team logo -->
+					<widget class="object_portrait_picture" id="away" scale_picture="true" height="20" width="20" image_alignment="centre" />
+
+					<!-- Away team name -->
+					<widget class="team_button" id="awyT" size="10" icon_enabled="false" auto_size="all" alignment="right,centre_y" navigation_focus_target="true" />
+				</container>
+				<widget class="text" auto_size="vertical" alignment="centre_x,centre_y" font="title" colour="text">
+					<translation id="text" translation_id="420696" type="use" value="Player of the Match[COMMENT: Player of the Match award]"/>
+				</widget>
+				<!-- logos -->
+				<container id="ICdi" height="140">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				</container>
+				<!--player details-->
+				<container id="plrC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<widget class="person_button" colour="black" id="pnam" auto_size="vertical" alignment="centre" icon_enabled="false" info_popup_enabled="false" person_is_player="true" style="bold" size="large" />
+					<container class="player_age_and_description_widget" id="pdes" alignment="centre_x, centre_y" auto_size="vertical" file="none" colour="faded text">
+						<attachment_group class="vertical_arrange_autosize"/>
+						<widget class="text" id="mtxt" auto_size="vertical" alignment="left, centre_y">
+							<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+						</widget>
+
+					</container>
+
+					<widget class="team_button" auto_size="vertical" alignment="centre_x,centre_y" icon_alignment="centre_x,centre_y" id="team"/>
+
+				</container>
+			</container>
+			<container class="inner_subtle_box" height="80">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+				<!-- match stats for player-->
+				<widget class="text" auto_size="vertical" size="Medium" font="title" colour="faded text">
+					<translation id="text" translation_id="247439" type="use" value="Match Stats" />
+				</widget>
+				<container id="Oufi">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1,-1" horizontal_offset="0" vertical_inset="0" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="258243" type="use" value="Goals[COMMENT: Awards Panel; past winners data header]" />
+							</widget>
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" id="Goal" style="bold" colour="text"/>
+						</container>
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="258244" type="use" value="Assists[COMMENT: Awards Panel; past winners data header]" />
+							</widget>
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" id="Assi" style="bold" colour="text"/>
+						</container>
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="319558" type="use" value="Rating[COMMENT: Player rating for the match]" />
+							</widget>
+							<widget class="match_rating_label_formatted" format="[%fraction#1-1.2]" auto_size="vertical" alignment="centre_x,centre_y" id="ORat" style="bold"/>
+						</container>
+					</container>
+					<widget class="horizontal_divider" auto_size="vertical"/>
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="-1" horizontal_offset="0" vertical_inset="0" />
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="289453" type="use" value="Distance Covered[COMMENT: player stat: total distance covered by a player]" />
+							</widget>
+							<widget class="distance_label" auto_size="vertical" alignment="centre_x,centre_y" id="Dist" style="bold" colour="text"/>
+						</container>
+					</container>
+					<widget class="horizontal_divider" auto_size="vertical"/>
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" horizontal_offset="0" vertical_inset="0" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="318355" type="use" value="Key Passes[COMMENT: Player stats column name]" />
+							</widget>
+							<widget class="label" auto_size="vertical" style="semi_bold" id="KeyP" alignment="centre_x,centre_y" />
+						</container>
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+								<translation id="text" translation_id="249444" type="use" value="Passes completed" />
+							</widget>
+							<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" id="PaCo" style="bold" colour="text"/>
+						</container>
+					</container>
+
+				</container>
+
+				<container id="gkst">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1,-1" horizontal_offset="0" vertical_inset="0" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+						<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+							<translation id="text" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
+						</widget>
+						<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" id="Save" style="bold" colour="text"/>
+					</container>
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+						<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+							<translation id="text" translation_id="247734" type="use" value="Conceded"/>
+						</widget>
+						<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" id="Conc" style="bold" colour="text"/>
+					</container>
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+						<widget class="label" auto_size="vertical" alignment="centre_x,centre_y" colour="faded text">
+							<translation id="text" translation_id="319558" type="use" value="Rating[COMMENT: Player rating for the match]" />
+						</widget>
+						<widget class="match_rating_label_formatted" format="[%fraction#1-1.2]" auto_size="vertical" alignment="centre_x,centre_y" id="GRat" style="bold"/>
+					</container>
+				</container>
+			</container>
+		</container>
+
+
+
+		<widget class="inbox_body_text" id="bdtx" />
+	</container>
+</panel>

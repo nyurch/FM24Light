@@ -1,0 +1,17 @@
+﻿<panel auto_size_minimum_height="60" auto_size_minimum_width="200">
+	<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0" vertical_offset="0" horizontal_inset="0"/>
+
+	<flags id="child_for_sort" value="PagP"/>
+
+	<widget class="person_button" id="PagP" info_popup_enabled="true" info_popup_alignment="left,centre_y" auto_size="vertical" colour="black" style="semi_bold">
+		<record id="object_property" get_property="Pagn" set_property="valu" />
+	</widget>
+
+	<widget class="relationship_text_label" auto_size="vertical" size="small" colour="faded text">
+		<record id="object_property">
+			<integer id="get_property" value="rlhn"/>
+			<integer id="set_property" value="valu"/>
+		</record>
+	</widget>
+
+</panel>

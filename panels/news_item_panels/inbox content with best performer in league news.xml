@@ -1,0 +1,83 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="pvDR" set_property="pvDR" target="asda" />
+		<record get_property="tObj" set_property="objt" target="tamC" />
+		<record get_property="tHid" set_property="hidden" target="tamC" />
+		<record get_property="pObj" set_property="objt" target="pdes" />
+		<record get_property="pObj" set_property="value" target="pnam" />
+		<record get_property="pHid" set_property="hidden" target="plrC" />
+		<record get_property="title" set_property="text" target="titT" />
+		<record get_property="auth" set_property="value" target="auth" />
+		<record get_property="pdsi" set_property="disabled" target="asda" />
+		<record get_property="valu" set_property="valu" target="visH" />
+		<record get_property="Ttea" set_property="valu" target="team" />
+		<record get_property="pdsi" set_property="hidden" target="data" />
+	</list>
+
+
+	<!--list of colours for ranking table bases upon percentile value-->
+	<list id="rpLi">
+		<record colour="injury_proneness_colour_very_high" min_value="0" max_value="20" />
+		<record colour="injury_proneness_colour_above_average" min_value="20" max_value="40" />
+		<record colour="number_box_average_colour" min_value="40" max_value="60" />
+		<record colour="injury_proneness_colour_below_average" min_value="60" max_value="80" />
+		<record colour="injury_proneness_colour_very_low" min_value="80" max_value="100" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="inner_box">
+		<attachment_group class="horizontal_arrange" horizontal_layout="260,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+		<!--LHS column-->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="6" vertical_alignment="top, extend" horizontal_inset="0" />
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+				<!-- logos -->
+				<container id="ICdi" height="140">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				</container>
+				<!--player details-->
+				<container id="plrC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<widget class="person_button" colour="black" id="pnam" auto_size="vertical" alignment="centre" icon_enabled="false" info_popup_enabled="false" person_is_player="true" style="bold" size="large" />
+					<container class="player_age_and_description_widget" id="pdes" alignment="centre_x, centre_y" auto_size="vertical" file="none" colour="faded text">
+						<attachment_group class="vertical_arrange_autosize"/>
+						<widget class="text" id="mtxt" auto_size="vertical" alignment="left, centre_y">
+							<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+						</widget>
+
+					</container>
+
+					<widget class="team_button" auto_size="vertical" alignment="centre_x,centre_y" icon_alignment="centre_x,centre_y" id="team"/>
+
+				</container>
+			</container>
+			<widget class="horizontal_divider" height="1" />
+
+			<container class="inner_box_no_margin" id="data">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="5" horizontal_inset="0" />
+
+				<widget class="text" size="xlarge" font="title" id="visH" auto_size="vertical" />
+
+				<widget class="text" id="titT" auto_size="vertical"/>
+
+				<widget class="text" auto_size="vertical" colour="faded text">
+					<translation id="text" translation_id="551831" type="use" value="League Ranking[COMMENT: AREA: Best Performers inbox item; SUB-AREA: Ranking in league; FR-BN: ; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for table showing player/team ranking in comparison to rest of league]" />
+				</widget>
+
+					<!--table for league rankings-->
+					<widget class="table" id="tabl" mode="fill_rows, stripe_rows" layout="-2,-6,40" row_height="25" default_sort_column="0">
+						<list id="column_widget_properties">
+							<record indx="0" style="semi_bold" alignment="centre" />
+							<record indx="1" alignment="centre_y,left" />
+							<record indx="2" colour="faded text" alignment="left, centre_y" />
+						</list>
+					</widget>
+			</container>
+		</container>
+
+
+		<widget class="inbox_body_text" id="bdtx" />
+	</container>
+</panel>

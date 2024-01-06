@@ -1,0 +1,12 @@
+﻿<panel>
+	<boolean id="should_force_refresh" value="true" />
+	<attachment_group class="horizontal_arrange" horizontal_layout="50,-1" vertical_offset="0" />
+	<container class="kit_icon" file="generic/kit icon tactics" kit_properties_id="kib2" always_use_latest_object_list="true" kit_path="default" kit_number_path="default" id="kitp" height="50" keep_aspect_ratio="true" scale_picture="true" >
+		<layout class="centre_in_parent_attachment" alignment="vertical" />
+	</container>
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+		<widget class="person_button" colour="black" id="PBut" info_popup_enabled="true" links_enabled_in_popup="false" person_is_player="true" auto_size="vertical" />
+		<widget class="club_button" id="PClu" auto_size="vertical"/>
+	</container>
+</panel>

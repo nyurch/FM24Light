@@ -1,0 +1,59 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="pObj" set_property="objt" target="pdes" />
+		<record get_property="pObj" set_property="value" target="pnam" />
+		<record get_property="Pcfm" set_property="Pcfm" target="frmS" />
+		<record get_property="pHid" set_property="hidden" target="plrC" />
+		<record get_property="title" set_property="text" target="titT" />
+		<record get_property="auth" set_property="value" target="auth" />
+		<record get_property="valu" set_property="valu" target="visH" />
+		<record get_property="Ttea" set_property="valu" target="team" />
+		<record get_property="Pgls" set_property="value" target="Goal" />
+		<record get_property="MPas" set_property="value" target="Assi" />
+		<record get_property="Prat" set_property="value" target="Rati" />
+	</list>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="inner_box">
+		<attachment_group class="horizontal_arrange" horizontal_layout="260,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+		<!--LHS column-->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_offset="0" vertical_gap="6" vertical_alignment="top" horizontal_inset="0" />
+			<container class="inner_subtle_box">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+
+				<!-- logos -->
+				<container id="ICdi" height="140">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				</container>
+				<!--player details-->
+				<container id="plrC">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_alignment="top" horizontal_inset="0" />
+					<widget class="person_button" colour="black" id="pnam" auto_size="vertical" alignment="centre" icon_enabled="false" info_popup_enabled="false" person_is_player="true" style="bold" size="large" />
+					<container class="player_age_and_description_widget" id="pdes" alignment="centre_x, centre_y" auto_size="vertical" file="none" colour="faded text">
+						<attachment_group class="vertical_arrange_autosize"/>
+						<widget class="text" id="mtxt" auto_size="vertical" alignment="left, centre_y">
+							<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+						</widget>
+
+					</container>
+
+					<widget class="team_button" auto_size="vertical" alignment="centre_x,centre_y" icon_alignment="centre_x,centre_y" id="team"/>
+
+				</container>
+			</container>
+			<widget class="horizontal_divider" height="1" />
+
+			<container class="inner_subtle_box" height="150">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<container class="player_form_summary_panel" id="frmS" maximum_items="5" file="player/player form summary panel for news item"/>
+
+			</container>
+
+		</container>
+
+
+		<widget class="inbox_body_text" id="bdtx" />
+	</container>
+</panel>

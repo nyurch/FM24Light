@@ -1,10 +1,12 @@
 <panel>
+	<layout class="horizontal_arrange" horizontal_layout="-3,-2" />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<!-- MEDIA CONTAINER -->
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
-	<container class="inner_subtle_box" red_replacement="black">
+	<container>
 		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="10" gap="10"/>
 		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
-
-
 		<!--City-->
 		<container>
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
@@ -37,7 +39,6 @@
 				</widget>
 			</container>
 		</container>
-
 		<!--Stadium-->
 		<container>
 			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
@@ -57,7 +58,7 @@
 					<container>
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
 						<widget class="stadium_picture" file="none" scale_picture="true" keep_aspect_ratio="true">
-							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-60"/>
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-150"/>
 							<record id="object_property" get_property="objt" set_property="objt"/>
 							<widget class="picture" file="pictures/stadiums/stadium_bg" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x"/>
 							<widget class="picture" id="STPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
@@ -80,7 +81,51 @@
 				</container>
 			</container>
 		</container>
+	</container>
 
+	<!-- INFO CONTAINER -->
+	<container>
+		<layout class="vertical_arrange" vertical_layout="650,-1" />
+		<!-- TEAM INFO -->
+		<container class="bordered_box">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+			<widget class="club_overview_panel" file="club/extra_panels/affiliate club info" width="-1" priority="1">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+		<!-- TEAM KITS -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre" default_width="200" priority="2">
+			<attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+			<widget class="club_overview_kits_panel" file="none">
+				<attachment class="horizontal_arrange" horizontal_layout="-5,-3" horizontal_gap="10"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				<container>
+					<attachment class="horizontal_arrange" horizontal_layout="-1,-1,-1" horizontal_gap="10"/>
+					<container id="T_hk" class="main_subtle_box_no_margin" priority="4">
+						<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+							<record id="object_property">
+								<integer id="get_property" value="Tidx"/>
+								<integer id="set_property" value="indx"/>
+							</record>
+						</record>
+						<widget class="kit_picture" kit_id="0">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+						</widget>
+					</container>
+					<container id="T_ak" class="main_subtle_box_no_margin" priority="5">
+						<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+							<record id="object_property">
+								<integer id="get_property" value="Tidx"/>
+								<integer id="set_property" value="indx"/>
+							</record>
+						</record>
+						<widget class="kit_picture" kit_id="1">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+						</widget>
+					</container>
+				</container>
+			</widget>
+		</container>
 	</container>
 
 </panel>

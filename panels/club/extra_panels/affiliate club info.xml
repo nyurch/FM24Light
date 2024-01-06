@@ -1,0 +1,167 @@
+<panel>
+
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0"/>
+	<attachment class="vertical_arrange_autosize"/>
+	<container height="650">
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+		<layout class="arrange_vertical_attachment" layout="130,-1" gap="0"/>
+
+		<!--division/country-->
+		<container height="130">
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_gap="20" horizontal_layout="120,-1"/>
+			<!--division logo-->
+			<widget class="object_portrait_picture" id="lepi" height="100" width="100">
+				<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+				<boolean id="scale_picture" value="true"/>
+				<boolean id="keep_aspect_ratio" value="true"/>
+				<flags id="image_alignment" value="centre"/>
+				<record id="object_property">
+					<integer id="get_property" value="Cdiv"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+				<!--division-->
+				<widget class="comp_button" id="comp" icon_enabled="false" comp_display_type="1" alignment="left, bottom" font="value" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="Cdiv"/>
+						<boolean id="dont_set_hint" value="true"/>
+					</record>
+				</widget>
+				<!--country-->
+				<widget class="nation_button" id="nati" auto_size="vertical" alignment="left, centre_y">
+					<record id="object_property">
+						<integer id="get_property" value="Cnat"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</widget>
+			</container>
+		</container>
+
+		<!-- club info -->
+		<container class="horizontal_adaptive_container" vertical_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+			<widget class="table" layout="220,-3" mode="fill_rows,stripe_rows" fixed_size_rows="true" row_height="32">
+				<record id="default_properties" alignment="left,centre_y"/>
+				<list id="column_widget_properties">
+					<record index="0" colour="faded text"/>
+				</list>
+				<!-- nickname -->
+				<widget class="label" row="0" col="0">
+					<record id="object_property" get_property="TCnn" name="true"/>
+				</widget>
+				<widget class="text" row="0" col="1">
+					<record id="object_property" get_property="TCnn"/>
+				</widget>
+				<!-- city -->
+				<widget class="label" row="1" col="0">
+					<record id="object_property" get_property="SctI" name="true"/>
+				</widget>
+				<widget class="city_label" row="1" col="1">
+					<record id="object_property" get_property="SctI"/>
+				</widget>
+				<!-- year founded -->
+				<widget class="label" row="2" col="0">
+					<record id="object_property" get_property="Cyfn" name="true"/>
+				</widget>
+				<widget class="dashed_number_label" row="2" col="1" NumF="0">
+					<record id="object_property" get_property="Cyfn"/>
+				</widget>
+				<!-- professional status -->
+				<widget class="label" colour="faded text" row="3" col="0">
+					<translation id="text" translation_id="242853" type="use" value="Status" />
+				</widget>
+				<widget class="professional_status_label" row="3" col="1" alignment="left,centre_y">
+					<record id="object_property" get_property="Cprs"/>
+				</widget>
+				<!-- reputation -->
+				<widget class="label" colour="faded text" row="4" col="0">
+					<record id="object_property" get_property="Csta" name="true"/>
+				</widget>
+				<widget class="club_reputation_stars_label" row="4" col="1" alignment="left,centre_y">
+					<record id="object_property" get_property="Csta"/>
+				</widget>
+				<!-- social followers -->
+				<widget class="label" row="5" col="0">
+					<record id="object_property" get_property="CsSF" name="true"/>
+				</widget>
+				<widget class="number_label" row="5" col="1">
+					<record id="object_property" get_property="CsSF"/>
+				</widget>
+				<!-- finances -->
+				<widget class="label" colour="faded text" row="6" col="0">
+					<record id="object_property" get_property="Csfs" name="true"/>
+				</widget>
+				<widget class="financial_status_label" row="6" col="1" alignment="left,centre_y">
+					<record id="object_property" get_property="Csfs"/>
+				</widget>
+				<!-- owner status -->
+				<widget class="label" row="7" col="0">
+					<record id="object_property" get_property="CStT" name="true"/>
+				</widget>
+				<widget class="chairman_status_text" row="7" col="1">
+					<record id="object_property" get_property="CStT"/>
+				</widget>
+				<!-- transfer policy -->
+				<widget class="label" row="8" col="0">
+					<record id="object_property" get_property="Cvis" name="true"/>
+				</widget>
+				<widget class="transfer_policy_label" row="8" col="1">
+					<record id="object_property" get_property="Cvis"/>
+				</widget>
+				<!-- squad character -->
+				<widget class="label" row="9" col="0">
+					<record id="object_property" get_property="Csca" name="true"/>
+				</widget>
+				<widget class="club_squad_character_label" row="9" col="1">
+					<record id="object_property" get_property="Csca"/>
+				</widget>
+				<!-- media prediction -->
+				<widget class="label" row="10" col="0">
+					<record id="object_property" get_property="Crcs" name="true"/>
+				</widget>
+				<widget class="youth_recruitment_status_label" row="10" col="1">
+					<record id="object_property" get_property="Crcs"/>
+				</widget>
+				<!-- youth facilities -->
+				<widget class="label" row="11" col="0">
+					<record id="object_property" get_property="Cfc*" name="true"/>
+				</widget>
+				<widget class="youth_facilities_stars_label" row="11" col="1">
+					<record id="object_property" get_property="Cfc*"/>
+				</widget>
+				<!-- youth coaching status -->
+				<widget class="label" row="12" col="0">
+					<record id="object_property" get_property="Cyos" name="true"/>
+				</widget>
+				<widget class="youth_coaching_status_label" row="12" col="1">
+					<record id="object_property" get_property="Cyos"/>
+				</widget>
+				<!-- scouting knowledge -->
+				<widget class="label" row="13" col="0">
+					<record id="object_property" get_property="CWsc" name="true"/>
+				</widget>
+				<widget class="scouting_knowledge_label" row="13" col="1">
+					<record id="object_property" get_property="CWsc"/>
+				</widget>
+				<!-- training facilities -->
+				<widget class="label" row="14" col="0">
+					<record id="object_property" get_property="Ctf*" name="true"/>
+				</widget>
+				<widget class="training_facilities_stars_label" row="14" col="1">
+					<record id="object_property" get_property="Ctf*"/>
+				</widget>
+				<!-- corporate facilities -->
+				<widget class="label" row="15" col="0">
+					<record id="object_property" get_property="Ccfs" name="true"/>
+				</widget>
+				<widget class="corporate_facilities_text" row="15" col="1">
+					<record id="object_property" get_property="Ccfs"/>
+				</widget>
+			</widget>
+		</container>
+
+	</container>
+
+</panel>

@@ -6,7 +6,7 @@
 	<boolean id="scale_picture" value="true" />
 	<!-- First layer colour-->
 	<record id="line_style">
-		<colour id="colour" name="fg" />
+		<colour id="colour" name="white" />
 		<real id="width" value="2" />
 	</record>
 	<!-- Second layer colour-->

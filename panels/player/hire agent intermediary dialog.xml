@@ -1,0 +1,144 @@
+﻿<panel width="950">
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="0" />
+	<layout class="centre_in_parent_attachment" alignment="all" />
+
+	<widget class="picture" id="cico" file="boxes/custom/agents/paper" auto_size="all" embed_in_frame="true">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" embed_in_frame="true" />
+	</widget>
+
+	<container id="haID">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="16" horizontal_inset="16" vertical_gap="24" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="2" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" />
+
+				<widget class="picture" file="icons/16px/manager" red_replacement="title" image_alignment="centre" height="26" width="26" />
+				<widget class="text" font="title" alignment="centre" auto_size="all">
+					<translation id="text" translation_id="594933" type="use" value="Hire an Intermediary[COMMENT: AREA: Agent Feedback Panel; SUB-AREA: Conversation button; FR-BN: 22941; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: button label to choose an intermediary agent to help sell a player]" />
+				</widget>
+			</container>
+
+			<widget class="text" id="cmpl" colour="faded text" alignment="centre" auto_size="vertical" />
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="12" />
+
+			<widget class="text" id="desc" alignment="centre" auto_size="vertical" />
+			<widget class="text" id="fdes" alignment="centre" auto_size="vertical" />
+		</container>
+
+		<container id="haib" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="8" vertical_gap="4" />
+
+			<widget class="spacer" height="0" />
+
+			<widget class="table" id="AgTb" layout="-6, -6, -6, -5, -5, -5" mode="fill_rows, stripe_rows, select_rows, show_bullets" select_event="SelA" fixed_size_rows="false" auto_size_rows="true" auto_size="vertical">
+				<list id="default_sort_column">
+					<integer value="3" />
+				</list>
+				<list id="headings">
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="308492" type="use" value="Agent[COMMENT - column header to show players agent]" />
+					</record>
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="308447" type="use" value="Scope[COMMENT: agents operates in, so eg. national, regional etc]" />
+					</record>
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="596220" type="use" value="Offer Type[COMMENT: AREA: Player Transfer Status Panel; SUB-AREA: Hire Intermediary dialog; FR-BN: 22942; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Table column heading for the agent intermediaries potential transfer offer type]" />
+					</record>
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="596805" type="use" value="Intermediary Fee[COMMENT: AREA: Transfer Centre; SUB-AREA: Ongoing transfers table; FR-BN: 22979; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Table column heading for the agent intermediary fee percentage]" />
+					</record>
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="597656" type="use" value="Expected Offers In[COMMENT: AREA: Transfer Centre; SUB-AREA: Ongoing transfers table; FR-BN: 22979; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Table column heading for how long it will take for the agent intermediaries to return with an offer]" />
+					</record>
+					<record alignment="left, centre_y">
+						<translation id="text" translation_id="597554" type="use" value="Expected Deal Value[COMMENT: AREA: Player Transfer Status Panel; SUB-AREA: Hire Intermediary dialog; FR-BN: 22942; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Table column heading for the agent intermediaries estimated value range of the player]" />
+					</record>
+				</list>
+				<list id="column_table_properties">
+					<record index="0" left="4">
+						<record id="widget_info" class="person_button" alignment="left, centre_y" colour="black"/>
+					</record>
+					<record index="1">
+						<record id="widget_info" class="text" colour="text" alignment="left, centre_y" />
+					</record>
+					<record index="2">
+						<record id="widget_info" class="text" colour="text" alignment="left, centre_y" />
+					</record>
+					<record index="3">
+						<record id="widget_info" class="text" colour="text" alignment="left, centre_y" />
+					</record>
+					<record index="4">
+						<record id="widget_info" class="text" colour="text" alignment="left, centre_y" />
+					</record>
+					<record index="5" right="4" top="3">
+						<record id="widget_info" class="hire_agent_intermediary_offer_value_widget" style="bold" />
+					</record>
+				</list>
+				<list id="column_widget_properties">
+					<record index="0" alignment="left, centre_y" />
+					<record index="1" alignment="left, centre_y" />
+					<record index="2" alignment="left, centre_y" />
+					<record index="3" alignment="left, centre_y" />
+				</list>
+			</widget>
+			
+			<widget class="spacer" height="4" />
+
+			<widget class="text" colour="faded text" alignment="right, centre_y" auto_size="vertical">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+				<translation id="text" translation_id="597555" type="use" value="Expected Deal Value may include additional fees and/or additional clauses.[COMMENT: AREA: Player Transfer Status Panel; SUB-AREA: Hire Intermediary dialog; FR-BN: FM-31233; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Label informing user of additional fees and clauses that may be included in any potential transfer offers]" />
+			</widget>
+		</container>
+
+		<!-- widgets when there is interest in the player but no offers -->
+		<container id="noof" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="12" vertical_gap="8" />
+
+			<widget class="text" colour="text" alignment="centre" auto_size="vertical">
+				<translation id="text" translation_id="597558" type="use" value="A deadline of 30 days will be set for clubs to make offers, otherwise the deal will not be valid.[COMMENT: AREA: Player Transfer Status Panel; SUB-AREA: Hire Intermediary dialog; FR-BN: FM-31233; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: String explaining a deadline can be set for intermediaries to get back to you with offers for the player]" />
+			</widget>
+			<widget class="spacer" height="12" />
+			<widget class="text" id="dlnt" colour="text" alignment="centre" auto_size="vertical" text="no offers text" />
+		</container>
+		
+		<!-- widgets when there is no interest in the player -->
+		<container id="noib" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="24" vertical_gap="8" />
+
+			<widget class="text" id="noin" colour="text" alignment="centre" auto_size="vertical" />
+			<widget class="spacer" height="4" />
+			<widget class="text" id="dsct" colour="text" alignment="centre" auto_size="vertical" />
+			<widget class="spacer" height="8" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+
+				<widget class="icon_button" id="dscb" appearance="buttons/subtle/normal/button" icon="icons/16px/speech bubble" auto_size="all">
+					<translation id="text" translation_id="509216" type="use" value="Discuss[COMMENT: AREA: Team section tree; SUB-AREA: Button text; FR-BN: n/a; TONE: Formal; CHARLIMIT: 15 chars; REF-ID: n/a; NOTE: appears on a button to start a conversation with a player, needs to be short to fit on the button]" />
+				</widget>
+			</container>
+		</container>
+
+		<widget class="spacer" height="4" />
+
+		<container>
+			<attachment_group class="button_arrangement_right" />
+
+			<widget class="icon_button" id="ok  " icon="icons/16px/tick" auto_size="vertical" controller_button="y_button" appearance="buttons/primary/normal/button">
+				<translation id="text" translation_id="229918" type="use" value="Confirm" />
+				<layout class="autosize_attachment" />
+			</widget>
+
+			<widget class="icon_button" id="canc" click_event="canc" auto_size="vertical" controller_button="b_button">
+				<translation id="text" translation_id="229828" type="use" value="Cancel" />
+				<layout class="autosize_attachment" />
+			</widget>
+		</container>
+	</container>
+</panel>

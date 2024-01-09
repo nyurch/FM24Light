@@ -1,0 +1,215 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom, extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<boolean id="is_transfer_and_loan_settings_tabbed" value="true" />
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" vertical_offset="0" vertical_gap="4" horizontal_inset="8" />
+
+		<container class="tabs" id="tabs" default_item="trSt" changed_event="ChTb" save_session_state="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="0" />
+
+			<!-- transfer status -->
+			<container id="trSt">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="12" vertical_gap="12" />
+				<translation id="title" translation_id="227953" type="use" value="Transfer Status" />
+
+				<container id="trnC">
+					<attachment_group class="vertical_arrange_autosize_all" vertical_alignment="top" vertical_offset="0" vertical_gap="4" horizontal_inset="0" />
+
+					<widget class="text" font="label" auto_size="all">
+						<translation id="text" translation_id="227953" type="use" value="Transfer Status" />
+					</widget>
+					<widget class="subtle_popup_button" id="trnS" auto_size="all" auto_tick_exclusive="true" />
+				</container>
+
+				<container id="askC">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+					<!-- Set asking price and transfer offer response -->
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="6" vertical_inset="0" />
+
+						<!-- Asking price -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+							<widget class="text" font="label" auto_size="all">
+								<translation id="text" translation_id="227778" type="use" value="Asking Price" />
+							</widget>
+							<widget class="cash_selection_list" id="askp" cash_round_style="4" cash_min_value="0" select_event="cask" minus_kind="selection_subtle_minus" plus_kind="selection_subtle_plus" auto_size="vertical">
+								<flags id="colour" value="text" />
+								<record id="alternative_main_kind" class="edit_box">
+									<record id="properties">
+										<flags id="colour" value="text" />
+										<boolean id="show_clear_text_icon" value="false"/>
+									</record>
+								</record>
+								<boolean id="enforce_style" value="true" />
+							</widget>
+						</container>
+
+						<!-- Offer response -->
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+							<widget class="text" font="label" auto_size="all">
+								<translation id="text" translation_id="598747" type="use" value="Transfer Instructions[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: FM-22931; TONE: Formal; CHARLIMIT: Shortish, column header; Label for widget that allow the user to choose what should happen if an offer is received for a player. Example option: 'I'll respond to it myself']" />
+							</widget>
+							<widget class="subtle_popup_button" id="inst" auto_size="vertical" auto_tick_exclusive="true" select_event="inst">
+								<integer id="selection" value="none" />
+							</widget>
+						</container>
+					</container>
+				</container>
+			</container>
+
+			<!-- loan status -->
+			<container id="lnSt">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="12" vertical_gap="12" />
+				<translation id="title" translation_id="247489" type="use" value="Loan Status" />
+
+				<container id="loaC">
+					<attachment_group class="vertical_arrange_autosize_all" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+					<widget class="text" font="label" auto_size="all">
+						<translation id="text" translation_id="247489" type="use" value="Loan Status" />
+					</widget>
+					<widget class="subtle_popup_button" id="loaS" auto_size="all" auto_tick_exclusive="true" />
+				</container>
+
+				<!-- loan options -->
+				<container id="lopc">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="12" horizontal_inset="0" />
+
+					<!-- monthly fee -->
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="12" vertical_inset="0" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="5" horizontal_inset="0" />
+
+							<widget class="text" id="lftx" font="label" size="small" colour="faded text" alignment="left, centre_y" auto_size="vertical">
+								<translation id="text" translation_id="423917" type="use" value="Playing Monthly Fee[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is playing]" />
+								<translation id="hint" translation_id="470029" type="use" value="A fee paid to the loaning club when the player is playing in the first team[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is playing]" />
+							</widget>
+
+							<widget class="cash_selection_list" id="lfpp" select_event="eLFP" minus_kind="selection_subtle_minus" plus_kind="selection_subtle_plus" alignment="left, centre_y" style="bold" size="10" auto_size="vertical">
+								<flags id="colour" value="text" />
+								<record id="alternative_main_kind" class="edit_box">
+									<record id="properties">
+										<flags id="colour" value="text" />
+										<boolean id="show_clear_text_icon" value="false"/>
+									</record>
+								</record>
+								<boolean id="enforce_style" value="true" />
+							</widget>
+						</container>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+							<widget class="text" font="label" size="small" colour="faded text" alignment="left, centre_y" auto_size="vertical">
+								<translation id="text" translation_id="420722" type="use" value="Unused Monthly Fee[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is not playing]" />
+								<translation id="hint" translation_id="469784" type="use" value="A fee paid to the loaning club when the player is not playing in the first team[COMMENT: FR 14469; transfer offer; monthly fee paid to loaning club when the player is not playing]" />
+							</widget>
+
+							<widget class="cash_selection_list" id="lfup" select_event="eLFU" minus_kind="selection_subtle_minus" plus_kind="selection_subtle_plus" alignment="left, centre_y" style="bold" size="10" auto_size="vertical">
+								<flags id="colour" value="text" />
+								<record id="alternative_main_kind" class="edit_box">
+									<record id="properties">
+										<flags id="colour" value="text" />
+										<boolean id="show_clear_text_icon" value="false"/>
+									</record>
+								</record>
+								<boolean id="enforce_style" value="true" />
+							</widget>
+						</container>
+					</container>
+
+					<!-- wage percentage -->
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="12" vertical_inset="0" />
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+							<widget class="text" id="wppl" font="label" size="small" colour="faded text" alignment="left, centre_y" auto_size="vertical">
+								<translation id="text" translation_id="420694" type="use" value="Playing Wage Percentage[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is playing]" />
+								<translation id="hint" translation_id="469785" type="use" value="A proportion of the player's wage to be paid by the loaning club when the player is playing in the first team[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is playing]" />
+							</widget>
+
+							<widget class="subtle_popup_button" id="wppb" select_event="eLWP" alignment="left, centre_y" size="10" auto_size="vertical" />
+						</container>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
+
+							<widget class="text" font="label" size="small" colour="faded text" alignment="left, centre_y" auto_size="vertical">
+								<translation id="text" translation_id="420695" type="use" value="Unused Wage Percentage[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is not playing]" />
+								<translation id="hint" translation_id="469786" type="use" value="A proportion of the player's wage to be paid by the loaning club when the player is not playing in the first team[COMMENT: FR 14469; transfer offer; wages paid to loaning club when the player is not playing]" />
+							</widget>
+
+							<widget class="subtle_popup_button" id="nwpb" select_event="eNWP" alignment="left, centre_y" size="10" auto_size="vertical" />
+						</container>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<widget class="horizontal_divider" />
+
+		<!-- unwanted player widgets -->
+		<container id="UnwS">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="6" vertical_gap="12" horizontal_inset="0" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_autosize_all" />
+
+				<!-- Title. Something like 'Instructions for Director of Football' but job name can vary -->
+				<widget class="link_button" id="DofL" appearance="buttons/link/title/button" colour="text" red_replacement="text" auto_size="all" />
+			</container>
+
+			<!-- Unwanted list -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+				<!-- DoF instructions -->
+				<container>
+					<attachment_group class="horizontal_arrange_autosize_all" />
+
+					<widget class="subtle_popup_button" id="dofS" auto_size="all" />
+				</container>
+
+				<container id="uwnt" hidden="true">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" />
+
+					<!-- Table with the widgets for editing the listing -->
+					<widget class="table" mode="fill_rows" layout="-1, -1, 75" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+						<list id="column_table_properties">
+							<record index="2" alignment="centre" />
+						</list>
+
+						<widget class="text" font="label" auto_size="vertical" col="0" row="0">
+							<translation id="text" translation_id="227778" type="use" value="Asking Price" />
+						</widget>
+
+						<widget class="text" id="APtx" font="title" colour="text" size="large" auto_size="vertical" col="0" row="1" />
+
+						<widget class="text" font="label" auto_size="vertical" col="1" row="0">
+							<translation id="text" translation_id="335979" type="use" value="Expiry Date[COMMENT: transfers unwanted list; column header, expiry date of bid]" />
+						</widget>
+						<widget class="text" id="EDtx" font="title" colour="text" size="large" auto_size="vertical" col="1" row="1" />
+
+						<widget class="date_select_panel" id="eDat" event_id="eDat" height="26" file="date select no label panel" col="2" row="0" row_span="2" />
+					</widget>
+				</container>
+			</container>
+
+			<widget class="horizontal_divider" />
+		</container>
+
+		<!-- Confirm/undo buttons -->
+		<container class="inner_box_no_margin" file="player/set transfer status buttons" />
+	</container>
+</panel>

@@ -1364,6 +1364,7 @@
 	<colour name="staff overview physio colour"											value="deep orange 600"/>
 	<colour name="staff overview chief doctor colour"									value="red 900"/>
 	<colour name="staff overview doctor colour"											value="red 600"/>
+	<colour name="staff overview set piece coach colour"								value="pink 900"/>
 	<colour name="staff overview head of sports science colour"							value="pink 900"/>
 	<colour name="staff overview sports scientist colour"								value="pink 600"/>
 	<colour name="staff empty slot colour"												value="blue grey 300"/>

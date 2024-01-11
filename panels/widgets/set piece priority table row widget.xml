@@ -1,0 +1,11 @@
+﻿<panel>
+	<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_gap="10" vertical_inset="10"/>
+
+	<list id="properties_to_forward">
+		<record get_property="icon" set_property="icon" target="pbtn"/>
+	</list>
+
+	<widget class="icon_button" id="pbtn" width="30" show_button_appearance="false" icon="icons/16px/draggable" icon_alignment="centre" wants_mouse_events="true" />
+	<widget class="text" id="odex" font="title" colour="black" size="xlarge" auto_size="horizontal" alignment="right, centre_y"/>
+	<widget class="text" id="dscr" auto_size="none" alignment="left, centre_y"/>
+</panel>

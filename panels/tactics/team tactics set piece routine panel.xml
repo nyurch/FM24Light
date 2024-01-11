@@ -482,10 +482,10 @@
 							<widget class="text" id="dbug" auto_size="vertical" />
 						</container>
 
-						<widget class="pitch_with_set_piece_routine" id="piwd" pitch_draw_arrows="true" pitch_use_gradient="true" select_event="ppSl" pitch_horizontal_padding="35" pitch_vertical_padding="35">
+						<widget class="pitch_with_set_piece_routine" id="piwd" pitch_draw_arrows="true" pitch_draw_grass="true" pitch_use_gradient="true" select_event="ppSl" pitch_horizontal_padding="35" pitch_vertical_padding="35">
 							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 							<list id="pitch_gradient_colours">
-								<symbol value="fg" />
+								<symbol value="bg" />
 								<symbol value="transparent" />
 							</list>
 						</widget>

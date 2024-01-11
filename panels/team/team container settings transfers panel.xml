@@ -71,7 +71,7 @@
 
 				<!-- Offer to Club Responsibilities-->
 				<container file="team/team container offer to club responsibilities" id="ocRe">
-					<translation id="title" translation_id="243361" type="use" value="Offer To Clubs" />
+					<translation id="title" translation_id="586120" type="use" value="Offer via TransferRoom[COMMENT: AREA: Transfers; NOTE: Used to be Offer to Clubs, has changed due to BizDev Partnership with TransferRoom, leave TransferRoom as translation, do not attempt to localise, thanks]" />
 				</container>
 
 			</container>

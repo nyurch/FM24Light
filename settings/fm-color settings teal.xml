@@ -482,13 +482,13 @@
 	<colour name="match rating text nine to ten"						value="white"/>
 
 	<!-- match form colours -->
-	<colour name="match form none"										value="bg lighter"/>
-	<colour name="match form zero to five"								value="bg range1"/>
-	<colour name="match form five to six"								value="bg range2"/>
-	<colour name="match form six to seven"								value="bg range10"/>
-	<colour name="match form seven to eight"							value="bg range18"/>
-	<colour name="match form eight to nine"								value="bg range19"/>
-	<colour name="match form nine to ten"								value="bg range20"/>
+	<colour name="match form none"										value="fg lighter"/>
+	<colour name="match form zero to five"								value="fg range1"/>
+	<colour name="match form five to six"								value="fg range2"/>
+	<colour name="match form six to seven"								value="fg range10"/>
+	<colour name="match form seven to eight"							value="fg range18"/>
+	<colour name="match form eight to nine"								value="fg range19"/>
+	<colour name="match form nine to ten"								value="fg range20"/>
 
 	<!-- training rating colours -->
 	<colour name="training rating none"									value="fg"/>

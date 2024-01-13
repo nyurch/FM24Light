@@ -1,4 +1,4 @@
-<panel inset="3,20,3,3" show_instant_hint="false">
+<panel inset="3,63,3,3" show_instant_hint="false">
 	<list id="graph_series">
 		<record id="bar1" type="bar" maximum_width="160" label_alignment="centre_x,bottom, can_scale"/>
 		<record id="bar2" type="bar" maximum_width="170" appearance="charts/bar/custom/top line/thick"/>

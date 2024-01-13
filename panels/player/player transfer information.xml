@@ -176,7 +176,7 @@
 							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" vertical_offset="8" horizontal_inset="8" />
 
 							<!--player demands as supplied by agent-->
-							<widget class="player_demands_icon_list" id="PlEx" auto_size="vertical" apd_string_mode="panel" m_standard_text_and_icon_colour="text" m_locked_text_and_icon_colour="text" m_altered_text_and_icon_colour="text">
+							<widget class="player_demands_icon_list" id="PlEx" auto_size="vertical" apd_string_mode="panel" m_standard_text_and_icon_colour="bg" m_locked_text_and_icon_colour="bg" m_altered_text_and_icon_colour="bg">
 								<record id="object_property" get_property="objt" set_property="objt" />
 							</widget>
 						</container>

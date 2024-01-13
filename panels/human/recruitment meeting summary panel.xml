@@ -1,0 +1,54 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle, extend" horizontal_alignment="horizontal" horizontal_inset="40" vertical_offset="0"/>
+	<layout class="centre_in_parent_attachment" alignment="vertical"/>
+
+	<container class="inner_contrast_box" red_replacement="bg">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-9, -8" horizontal_gap="8"/>
+
+		<!-- summary details-->
+		<container class="inner_subtle_box" colour="text">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0"/>
+			<translation id="text" translation_id="515156" type="use" value="Meeting Summary[COMMENT: AREA: Conversations; SUB-AREA: Header section; FR-BN: 32022; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for conversation summary screen]"/>
+
+			<container class="scrolling_box" auto_size="vertical" auto_size_maximum_height="500">
+				<widget class="simple_data_list" id="agen" set_property="objt" gap="12" auto_size="vertical">
+					<record id="widget_properties" class="property_list_viewer_xml_panel" file="club/recruitment meeting category agenda item widget" isMf="true"/>
+				</widget>
+			</container>
+
+			<widget class="text" id="noac" colour="text" auto_size="vertical">
+				<translation id="text" translation_id="539186" type="use" value="No actions taken[COMMENT: AREA: Backroom advice; SUB-AREA: Summary at end of meeting; FR-BN: 35390; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Confirmation of action taken during meeting]"/>
+			</widget>
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0"/>
+
+			<container class="inner_subtle_box" id="APcn" colour="text">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="6"/>
+				<translation id="title" translation_id="534809" type="use" value="Action Points[COMMENT: AREA: Staff Meeting; SUB-AREA: Staff Meeting Summary; FR-BN: 35392; TONE: Informal;]"/>
+
+				<widget class="text" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="538963" type="use" value="These items will be compiled into an inbox item:[COMMENT: FR-35392 AREA: Staff Meeting; SUB-AREA: Staff Meeting Summary; FR-BN: 35392; TONE: Informal;]"/>
+				</widget>
+
+				<widget class="simple_data_list" id="actp" gap="6" set_property="valu" auto_size="vertical">
+					<record id="widget_properties" class="icon_button" icon_spacing="10" size="large" colour="black" icon_colour="black" height="22" icon="icons/26px/inbox" appearance=""/>
+				</widget>
+			</container>
+
+			<container class="inner_subtle_box" colour="text">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="6"/>
+				<translation id="title" translation_id="376487" type="use" value="In Attendance[COMMENT: FR 7884 - in attendance label; team meeting introduction box; team meeting, list of players who are in attendance]"/>
+
+				<container class="scrolling_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="6"/>
+
+					<widget class="simple_data_list" id="sslP" draw_horizontal_dividers="true" set_property="objt" gap="15" inset="10" auto_size="vertical">
+						<record id="widget_properties" class="client_object_viewer_xml_panel" file="person/person details panel small" height="50"/>
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

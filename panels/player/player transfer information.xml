@@ -182,7 +182,7 @@
 						</container>
 
 						<!-- transfer status agent feedback -->
-						<container class="plain_box" id="AFbC" appearance="boxes/custom/speech bubble/top/paper" red_replacement="bg info" hidden="true">
+						<container class="plain_box" id="AFbC" appearance="boxes/custom/speech bubble/top/paper" red_replacement="bg" hidden="true">
 							<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" vertical_offset="0" horizontal_inset="0" />
 							<string id="remove_if" value="distribution_is_ms_store" />
 

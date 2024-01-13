@@ -10,6 +10,13 @@
 	<colour name="default secondary"												value="rgb(240,245,248)"/>
 	<colour name="match accent"														value="fg tertiary"/>
 
+	<!-- FAKE Default FM purple colours -->
+	<colour name="FM purple dark" 							value="rgb(0,95,102)" />
+	<colour name="FM purple" 								value="rgb(0,131,140)" />
+	<colour name="FM purple light" 							value="rgb(0,167,179)" />
+	<colour name="FM purple ultra violet" 					value="rgb(27,186,204)" />
+	<colour name="FM orange"								value="rgb(255,80,30)" />
+
 	<!-- Foreground colours - used for text, icon etc -->
 	<colour name="fg lighter"														value="rgb(10,20,20)"/>
 	<colour name="fg"																value="rgb(1,2,20)"/>

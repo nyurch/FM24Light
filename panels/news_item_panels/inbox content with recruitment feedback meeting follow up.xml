@@ -1,0 +1,79 @@
+﻿<panel class="inner_contrast_box">
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="0" vertical_gap="12" />
+	
+	<boolean id="should_force_refresh" value="true" />
+
+	<widget class="text" font="title" size="xlarge" colour="black" auto_size="vertical">
+		<translation id="text" translation_id="557817" type="use" value="Recruitment Feedback Meeting[COMMENT: AREA: Recruitment Feedback Meeting; SUB-AREA: Follow Up; FR-BN: FM-4277; NOTE: title of feedback meeting follow up inbox item]" />
+	</widget>
+
+	<container class="scrolling_box" auto_size="vertical">
+		<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_offset="0" vertical_gap="12" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_offset="0" vertical_gap="16" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" vertical_offset="0" horizontal_gap="8" horizontal_offset="0" horizontal_layout="16, -1" />
+
+				<widget class="picture" file="icons/custom/scouting/recommendation" red_replacement="title" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" blue_replacement="black" height="16" width="16" />
+				<widget class="text" size="large" font="title" alignment="left,centre_y" auto_size="vertical">
+					<translation id="text" translation_id="557619" type="use" value="Recommendations For: [COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4270; NOTE: Header text for current recruitment focus]" />
+					<translation id="hint" translation_id="557619" type="use" value="Recommendations For: [COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4270; NOTE: Header text for current recruitment focus]" />
+				</widget>
+			</container>
+
+			<container id="rfPC">
+				<attachment_group class="vertical_arrange_autosize" vertical_layout="16, -1" vertical_gap="12" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="6" vertical_offset="0" />
+
+					<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" red_replacement="bg yellow lighter" blue_replacement="black" height="16" width="16" />
+					<widget class="text" font="title" size="large" colour="black" auto_size="vertical" alignment="left, centre_y">
+						<translation id="text" translation_id="557818" type="use" value="Recruitment Focus Recommendations[COMMENT: AREA: Recruitment Feedback Meeting; SUB-AREA: Follow Up; FR-BN: FM-4277; NOTE: title of feedback meeting follow up inbox item recruitment focus players container]" />
+					</widget>
+				</container>
+
+				<widget class="client_object_list_table" id="rfPT" database_table_type="1" mode="fill_rows, hide_headings" horizontal_inset="4" horizontal_offset="4" auto_size="vertical">
+					<integer id="row_height" value="70" />
+					<integer id="row_spacing" value="4" />
+					<integer id="column_spacing" value="4" />
+
+					<boolean id="should_force_refresh" value="true" />
+					<string id="contextual_handler_column_id" value="Pnms" />
+					<record id="viewed_property_ids">
+						<record id="PPDW" width="-1" />
+						<record id="RMcb" width="-1" is_feedback_follow_up="true" />
+					</record>
+				</widget>
+			</container>
+
+			<container id="hrPC">
+				<attachment_group class="vertical_arrange_autosize" vertical_layout="16, -1" vertical_gap="12" horizontal_alignment="horizontal" horizontal_inset="0" vertical_offset="0" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="6" vertical_offset="0" />
+
+					<widget class="picture" file="icons/custom/star rating/senior/large/full" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" red_replacement="green" height="16" width="16" />
+					<widget class="text" font="title" size="large" colour="black" auto_size="vertical" alignment="left, centre_y">
+						<translation id="text" translation_id="560930" type="use" value="Other Recommended Players[COMMENT: AREA: Recruitment Meeting; SUB-AREA: Recommended players panel; FN: FM-12191; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Button label to view other recommended players not listed in the scouting focus lists]" />
+					</widget>
+				</container>
+
+				<widget class="client_object_list_table" id="hrPT" database_table_type="1" mode="fill_rows, hide_headings" horizontal_inset="4" horizontal_offset="4" auto_size="vertical">
+					<integer id="row_height" value="70" />
+					<integer id="row_spacing" value="4" />
+					<integer id="column_spacing" value="4" />
+
+					<boolean id="should_force_refresh" value="true" />
+					<string id="contextual_handler_column_id" value="Pnms" />
+					<record id="viewed_property_ids">
+						<record id="PPDW" width="-1" />
+						<record id="RMcb" width="-1" is_feedback_follow_up="true" />
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

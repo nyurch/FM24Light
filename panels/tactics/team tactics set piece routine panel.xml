@@ -4,7 +4,7 @@
 	<string id="category_negative_appearance" value="boxes/main/contrast/no margin/paper" />
 	<string id="category_negative_colour" value="bg darker" />
 	<float id="category_negative_opacity" value="0.8" />
-	
+
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
 	<container class="contrast_box" red_replacement="bg lighter" transparency="0.0">
@@ -231,16 +231,16 @@
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 						<!--first XI preview-->
 						<container id="fstX" hidden="true">
-							
+
 							<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="5" />
-							
+
 							<widget class="text" auto_size="vertical" alignment="left, centre_y" size="large" style="bold" font="title" colour="text">
 								<translation id="text" translation_id="596466" type="use" value="Preview with Starting XI[COMMENT: AREA: Set Pieces; SUB-AREA: pitch preview; FR-BN: FM-24172; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: title text for selecting to preview a set piece routine using the current starting eleven]" />
 							</widget>
-							
+
 							<widget class="text" auto_size="vertical" id="sXId" alignment="left, centre_y" />
-						
-	
+
+
 							<!--top container for preview-->
 							<container class="vertical_arrange_container" auto_size="vertical" vertical_gap="5" id="tpCn" />
 
@@ -397,7 +397,7 @@
 												<widget class="radio_button" id="shrT" group="1" group_parent_level="2" appearance="buttons/standard/flex/button" icon_enabled="false" show_button_appearance="true" red_replacement="grey 800" blue_replacement="fg accent">
 													<record id="click_event" event_id="spTC" value="0" />
 												</widget>
-												
+
 												<!--retain possesion/Work Into Box-->
 												<container wants_mouse_events="false">
 													<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="12" vertical_gap="24" horizontal_inset="18" />
@@ -411,7 +411,7 @@
 
 														<widget class="text" colour="text" id="shtD" size="small" auto_size="vertical" alignment="centre" wants_mouse_events="false" />
 													</container>
-												</container>			
+												</container>
 											</container>
 
 											<!--long throw radio container-->
@@ -455,24 +455,24 @@
 
 					<widget class="spacer" height="6" />
 
-				<container>
-				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left" horizontal_offset="40" horizontal_gap="8" />
-					
-					<widget class="widget_popup_button" id="setS" auto_size="all" appearance="buttons/subtle/normal/button" hidden="false">
-						<translation id="text" translation_id="597581" type="use" value="Preview Options[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Pitch; FR:FM-30731; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; button to bring up options for first xi preview on pitch]" />
-						<string id="widget_type" value="container" />
-						<record id="widget_properties" file="tactics/set piece routine pitch toggle popup" />
-						<record id="modal_popup_properties">
-							<boolean id="darkened" value="false" />
-							<boolean id="attempt_to_reposition" value="true" />
-							<list id="eTST">
-								<flags value="eVss" />
-								<flags value="plrP" />
-							</list>
-						</record>
-					</widget>
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left" horizontal_offset="40" horizontal_gap="8" />
 
-				</container>
+						<widget class="widget_popup_button" id="setS" auto_size="all" appearance="buttons/subtle/normal/button" hidden="false">
+							<translation id="text" translation_id="597581" type="use" value="Preview Options[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Pitch; FR:FM-30731; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; button to bring up options for first xi preview on pitch]" />
+							<string id="widget_type" value="container" />
+							<record id="widget_properties" file="tactics/set piece routine pitch toggle popup" />
+							<record id="modal_popup_properties">
+								<boolean id="darkened" value="false" />
+								<boolean id="attempt_to_reposition" value="true" />
+								<list id="eTST">
+									<flags value="eVss" />
+									<flags value="plrP" />
+								</list>
+							</record>
+						</widget>
+
+					</container>
 
 					<container>
 						<container class="scrolling_box">

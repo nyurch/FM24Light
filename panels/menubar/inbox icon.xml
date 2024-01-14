@@ -9,7 +9,7 @@
   <!-- the bit with the number of unread news (text) -->
   <widget class="button" id="ibic" height="20" width="20" size="6" alignment="centre_x, centre_y" appearance="buttons/custom/interface/notification/button" colour="fg">
     <layout class="stick_to_sides_attachment" alignment="top" inset="2"/>
-    <layout class="stick_to_sides_attachment" alignment="right" inset="20"/>
+    <layout class="stick_to_sides_attachment" alignment="left" inset="20"/>
     <attachment class="get_global_attachment" get_property="mgru" set_property="text"/>
     <attachment class="test_global_attachment" get_property="mgru" mode="equal" value="0" set_property="hidn"/>
   </widget>

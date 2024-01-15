@@ -60,7 +60,7 @@
 		<container class="horizontal_adaptive_container" id="nomP" inset="0" offset="0" draw_vertical_dividers="true">
 			<global id="gap" name="ui.main_box_gap" />
 
-						<!--this panel always here-->
+			<!--this panel always here-->
 			<container class="client_object_viewer_selector_panel" id="cos2" file="team/team training selector panel" default_width="-1" minimum_width="300" priority="1">
 				<integer id="default_widget" value="tMpr" />
 			</container>
@@ -83,47 +83,47 @@
 				<container class="horizontal_adaptive_container" id="row2" mode="distribute_equally" inset="0" offset="0" default_height="-3" minimum_height="200" priority="2" draw_vertical_dividers="true">
 					<global id="gap" name="ui.main_contrast_box_gap" />
 
-		<container>
-			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_gap="0" />
-			
-			<container height="35" id="unts" navigation_container="true">
-				<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="10" horizontal_offset="0" />
-				<widget class="tab_strip" auto_size="all" select_event="eUUT" id="SPft" selection_dont_suppress="true" colour="text" top_level_tab_focus="false" navigation_focus_target="true" navigation_container="true" enable_icons_as_tabs="true">
-					<flags id="appearance" value="tabs/custom/dynamics" />
-					<list id="items">
-						<record>
-							<translation id="text" translation_id="247414" type="use" value="Overview" />
-							<integer id="id" value="5" />
-						</record>
-						<record>
-							<translation id="text" translation_id="585264" type="use" value="Attacking Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
-							<integer id="id" value="0" />
-							<string id="icon" value="icons/16px/Units attacking" />
-						</record>
-						<record>
-							<translation id="text" translation_id="585265" type="use" value="Defending Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
-							<integer id="id" value="1" />
-							<string id="icon" value="icons/16px/units defending" />
-						</record>
-						<record>
-							<translation id="text" translation_id="585266" type="use" value="Goalkeeping Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
-							<integer id="id" value="2" />
-							<string id="icon" value="icons/16px/units goalkeeping" />
-						</record>
-					</list>
-					<string id="selection" value="5" />
-				</widget>
-			</container>
-			
-			<container>
-				<attachment_group class="horizontal_arrange" horizontal_layout="-6,-4" horizontal_gap="20" vertical_inset="0" />
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_gap="0" />
 
-				<widget id="ttrw" class="team_training_rating_widget" />
+						<container height="35" id="unts" navigation_container="true">
+							<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="10" horizontal_offset="0" />
+							<widget class="tab_strip" auto_size="all" select_event="eUUT" id="SPft" selection_dont_suppress="true" colour="text" top_level_tab_focus="false" navigation_focus_target="true" navigation_container="true" enable_icons_as_tabs="true">
+								<flags id="appearance" value="tabs/custom/dynamics" />
+								<list id="items">
+									<record>
+										<translation id="text" translation_id="247414" type="use" value="Overview" />
+										<integer id="id" value="5" />
+									</record>
+									<record>
+										<translation id="text" translation_id="585264" type="use" value="Attacking Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
+										<integer id="id" value="0" />
+										<string id="icon" value="icons/16px/Units attacking" />
+									</record>
+									<record>
+										<translation id="text" translation_id="585265" type="use" value="Defending Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
+										<integer id="id" value="1" />
+										<string id="icon" value="icons/16px/units defending" />
+									</record>
+									<record>
+										<translation id="text" translation_id="585266" type="use" value="Goalkeeping Unit[COMMENT: AREA: Training unit panel, Training Overview panel; SUB-AREA: training unit tabs; Note: Type of unit used to determine traning groups]" />
+										<integer id="id" value="2" />
+										<string id="icon" value="icons/16px/units goalkeeping" />
+									</record>
+								</list>
+								<string id="selection" value="5" />
+							</widget>
+						</container>
 
-				<widget id="ttiw" class="team_training_information_widget" />
+						<container>
+							<attachment_group class="horizontal_arrange" horizontal_layout="-6,-4" horizontal_gap="20" vertical_inset="0" />
 
-			</container>
-		</container>
+							<widget id="ttrw" class="team_training_rating_widget" />
+
+							<widget id="ttiw" class="team_training_information_widget" />
+
+						</container>
+					</container>
 				</container>
 			</container>
 

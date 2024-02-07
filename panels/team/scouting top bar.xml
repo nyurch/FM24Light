@@ -131,7 +131,7 @@
 								<translation id="text" translation_id="242603" type="use" value="Transfer Budget" />
 							</widget>
 
-							<widget class="text" id="tbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
+							<widget class="cash_cell" format="[%cash#1-transferbudget]" id="tbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
 							<widget class="text" id="nxbw" auto_size="vertical" size="small" alignment="left, centre_y" wants_mouse_events="false" colour="faded text" />
 						</container>
 

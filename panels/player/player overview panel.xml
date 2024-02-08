@@ -617,7 +617,7 @@
 						<widget class="picture" file="icons/26px/formation" red_replacement="green 900" alignment="left,centre_y" scale_picture="true">
 							<layout class="stick_to_sides_attachment" alignment="left,centre_y"/>
 						</widget>
-						<widget class="label" font="title" size="large" colour="faded black" alignment="left,centre_y">
+						<widget class="label" size="large" colour="faded black" alignment="left,centre_y">
 							<translation id="text" type="use" translation_id="227884" value="Position" />
 						</widget>
 						<widget class="position_label" size="large" id="Pdes" colour="fg" alignment="right,centre_y">
@@ -630,7 +630,7 @@
 						<widget class="picture" file="icons/26px/time" red_replacement="green 900" scale_picture="true">
 							<layout class="stick_to_sides_attachment" alignment="left,centre_y"/>
 						</widget>
-						<widget class="label" font="title" size="large" colour="faded black" alignment="left,centre_y">
+						<widget class="label" size="large" colour="faded black" alignment="left,centre_y">
 							<translation id="text" type="use" translation_id="249451" value="Minutes" />
 						</widget>
 						<widget class="number_label" id="Pghm" size="large" colour="fg" alignment="right,centre_y">
@@ -644,7 +644,7 @@
 						<widget class="picture" file="icons/26px/ball" red_replacement="green 900" scale_picture="true">
 							<layout class="stick_to_sides_attachment" alignment="left,centre_y" />
 						</widget>
-						<widget class="label" font="title" size="large" colour="faded black" alignment="left,centre_y">
+						<widget class="label" size="large" colour="faded black" alignment="left,centre_y">
 							<translation id="text" type="use" translation_id="227851" value="Goals" />
 						</widget>
 						<widget class="number_label" id="Pghm" size="large" colour="fg" alignment="right,centre_y">
@@ -657,7 +657,7 @@
 						<widget class="picture" file="icons/26px/assist" red_replacement="green 900" scale_picture="true">
 							<layout class="stick_to_sides_attachment" alignment="left,centre_y"/>
 						</widget>
-						<widget class="label" font="title" size="large" colour="faded black" alignment="left,centre_y">
+						<widget class="label" size="large" colour="faded black" alignment="left,centre_y">
 							<translation id="text" type="use" translation_id="227847" value="Assists" />
 						</widget>
 						<widget class="number_label" id="Pghm" size="large" colour="fg" alignment="right,centre_y">
@@ -670,7 +670,7 @@
 						<widget class="picture" file="icons/26px/star" white_replacement="green 900" scale_picture="true">
 							<layout class="stick_to_sides_attachment" alignment="left,centre_y"/>
 						</widget>
-						<widget class="label" font="title" size="large" colour="faded black" alignment="left,centre_y">
+						<widget class="label" size="large" colour="faded black" alignment="left,centre_y">
 							<translation id="text" type="use" translation_id="227849" value="Rating" />
 						</widget>
 						<widget class="dashed_number_label" size="large" colour="fg" format="[%fraction#1-3.2]" id="Pghm" alignment="right,centre_y">

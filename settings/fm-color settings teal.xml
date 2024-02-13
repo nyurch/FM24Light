@@ -1928,6 +1928,101 @@
 	<colour name="groups default"										value="rgb(250,250,250)"/>
 	<colour name="groups active"										value="rgb(237,236,238)"/>
 
+	<!-- Player target progress colours-->
+	<colour name="player target progress happy" value="positive"/>
+	<colour name="player target progress unhappy" value="negative"/>
+	<colour name="player target progress neutral" value="fg"/>
+
+	<!-- Board Requests Colours-->
+	<colour name="board request completed bg"							value="rgb(0,129,138)"/>
+	<colour name="board request rejected bg"							value="rgb(183,0,5)"/>
+	<colour name="board request ongoing bg"								value="rgb(100,30,170)"/>
+	<colour name="board request pending bg"								value="rgb(120,113,247)"/>
+
+	<!--Tactical Suitability Colours-->
+	<colour name="tactical suitability superb"							value="fg range20"/>
+	<colour name="tactical suitability good"							value="fg range15"/>
+	<colour name="tactical suitability ok"								value="fg range12"/>
+	<colour name="tactical suitability terrible"						value="fg range1"/>
+
+	<!--Dynamics colours-->
+	<colour name="buyin score faded bar positive"						value="bg positive"/>
+	<colour name="buyin score faded bar negative"						value="bg negative"/>
+
+	<colour name="buyin level default colour"							value="rgb(0,0,0)"/>
+	<colour name="buyin level engaged colour"							value="rgb(25,25,25)"/>
+	<colour name="buyin level enthusiast colour"						value="rgb(153,57,87)"/>
+	<colour name="buyin level believer colour"							value="rgb(56,160,245)"/>
+	<colour name="buyin level devotee colour"							value="rgb(255,197,66)"/>
+
+	<colour name="hierarchy default colour"								value="white"/>
+	<colour name="hierarchy squad colour"								value="rgb(80,122,163)"/>
+	<colour name="hierarchy influential colour"							value="rgb(239,148,39)"/>
+	<colour name="hierarchy leading colour"								value="rgb(224,224,224)"/>
+	<colour name="hierarchy team leader colour"							value="rgb(252,211,3)"/>
+
+	<colour name="mindset default colour"								value="white"/>
+	<colour name="mindset leader colour"								value="rgb(255,195,0)"/>
+	<colour name="mindset hard worker colour"							value="rgb(255,97,10)"/>
+	<colour name="mindset thinker colour"								value="rgb(163,19,244)"/>
+	<colour name="mindset relaxed colour"								value="rgb(255,118,245)"/>
+	<colour name="mindset balanced colour"								value="rgb(0,209,255)"/>
+
+	<colour name="mindset balance unbalanced colour"					value="rgb(255,84,84)"/>
+	<colour name="mindset balance balanced colour"						value="rgb(239,243,59)"/>
+	<colour name="mindset balance harmonious colour"					value="rgb(147,221,32)"/>
+	<colour name="mindset balance well oiled machine colour"			value="rgb(10,255,111)"/>
+	<colour name="mindset balance dominant colour"						value="rgb(10,255,111)"/>
+
+	<!--Training preset colours-->
+	<colour name="attacking"							value="rgb(1,143,144)"/>
+	<colour name="technical"							value="rgb(0,125,130)"/>
+	<colour name="possession"							value="rgb(12,107,135)"/>
+	<colour name="balanced"								value="rgb(117,118,250)"/>
+	<colour name="tactical"								value="rgb(106,104,227)"/>
+	<colour name="set pieces"							value="rgb(97,82,200)"/>
+	<colour name="physical"								value="rgb(44,117,188)"/>
+	<colour name="defending"							value="rgb(14,98,174)"/>
+
+	<!--Training colours-->
+	<colour name="training focus colour 0" red="95" green="143" blue="176" alpha="255"/>
+	<colour name="attacking gradient 1"					value="rgb(0,227,243)"/>
+	<colour name="attacking gradient 2"					value="rgb(0,190,203)"/>
+	<colour name="defending gradient 1"					value="rgb(56,136,255)"/>
+	<colour name="defending gradient 2"					value="rgb(0,95,235)"/>
+	<colour name="goalkeeping gradient 1"				value="rgb(222,182,168)"/>
+	<colour name="goalkeeping gradient 2"				value="rgb(205,158,142)"/>
+
+	<!--Supporter percentage colours-->
+	<colour name="supporter percentage hardcore"			value="rgb(255,193,84)"/>
+	<colour name="supporter percentage core"				value="rgb(48,232,122)"/>
+	<colour name="supporter percentage family"				value="rgb(70,155,234)"/>
+	<colour name="supporter percentage fair weather"		value="rgb(240,98,146)"/>
+	<colour name="supporter percentage corporate"			value="rgb(134,60,160)"/>
+	<colour name="supporter percentage casual"				value="rgb(236,107,86)"/>
+
+	<!--Recruitment focus priority colours-->
+	<colour name="recruitment focus top priority"				value="fg yellow"/>
+	<colour name="recruitment focus standard priority"			value="fg cyan"/>
+	<colour name="recruitment focus ongoing priority"			value="white"/>
+
+	<colour name="recruitment focus notification"				value="rgb(195,0,165)"/>
+
+	<!--Transfer history colours-->
+	<colour name="transfer history no data colour" value="rgb(42,45,58)"/>
+
+	<!--Scout report neutral grade colour-->
+	<colour name="scouting no grade"						value="rgb(97,18,143)" />
+	<colour name="scouting predicted grade"					value="white" />
+
+	<colour name="global_replacement_colour_red"			value="natural" />
+	<colour name="global_replacement_colour_green"			value="natural" />
+	<colour name="global_replacement_colour_blue"			value="natural" />
+
+	<!-- Manager Timeline -->
+	<colour name="trophy base" 								value="rgb(137,109,54)" />
+	<colour name="trophy accent" 							value="rgb(255,210,90)" />
+
 	<!--Custom colours-->
 	<colour name="top spenders"										value="rgb(0,176,255)"/>
 	<colour name="cup draw team slots redrepl"						value="rgb(0,188,212)"/>

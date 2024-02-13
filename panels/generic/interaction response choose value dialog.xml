@@ -11,6 +11,7 @@
 		<widget class="cash_selection_list" id="calp" select_event="cShS" cash_min_value="0" cash_max_value="300000000" height="35" hidden="true">
 			<record id="default_properties" alignment="right,centre_y" colour="black"/>
 		</widget>
+		<widget class="selection_list" id="valL" select_event="rsse" use_menu_for_plus_minus="false" hidden="true"/>
 
 		<container>
 			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right"/>

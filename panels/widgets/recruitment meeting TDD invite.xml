@@ -32,7 +32,7 @@
 					<widget class="text" auto_size="vertical" colour="fg" font="label" alignment="left,centre_y" wants_mouse_events="false" multiline="true">
 						<translation id="text" translation_id="557848" type="use" value="Available Transfer Budget: [COMMENT: AREA: Inbox; SUB-AREA: Deadline Day Recruitment Meeting; FR-BN: FM-4187; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for transfer budget on meeting invite]" />
 					</widget>
-					<widget class="text" id="tbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
+					<widget class="cash_cell" format="[%cash#1-transferbudget]" id="tbva" auto_size="vertical" font="value" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
 				</container>
 
 				<container wants_mouse_events="false">

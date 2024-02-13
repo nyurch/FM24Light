@@ -45,7 +45,7 @@
 								<translation id="text" translation_id="321077" type="use" value="Transfer Budget Remaining: [COMMENT: player search; displays team's remaining transfer budget]" />
 							</widget>
 
-							<widget class="text" id="tbva" auto_size="none" style="bold" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
+							<widget class="cash_cell" format="[%cash#1-transferbudget]" id="tbva" auto_size="none" style="bold" alignment="left, centre_y" wants_mouse_events="false" colour="fg" />
 						</container>
 
 						<container wants_mouse_events="false">

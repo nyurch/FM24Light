@@ -1,0 +1,612 @@
+﻿<panel>
+	<!--very close relationship colour-->
+	<colour id="pVgC" name="very close relationship" />
+	<!--close relationship colour-->
+	<colour id="pgCl" name="close relationship" />
+	<!--aquaintance relationship colour-->
+	<colour id="pACl" name="aquaintance relationship" />
+	<!--contact relationship colour-->
+	<colour id="pCTr" name="contact relationship" />
+	<!--rival relationship colour-->
+	<colour id="prVr" name="rival relationship" />
+	<!--adversary relationship colour-->
+	<colour id="pAdv" name="adversary relationship" />
+	<!--distant relationship colour-->
+	<colour id="pCds" name="distant relationship" />
+
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<set_var name="bullet_points_table">
+		<widget class="table" layout="20,-1" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false" row_spacing="6">
+			<list id="column_table_properties">
+				<record id="bull">
+					<record id="widget_info" class="picture" height="14" />
+				</record>
+				<record id="text">
+					<record id="widget_info" class="text" />
+				</record>
+			</list>
+			<list id="column_widget_properties">
+				<record id="bull" image_alignment="centre" />
+				<record id="text" alignment="left,centre_y" multiline="true" auto_size="vertical" />
+			</list>
+		</widget>
+	</set_var>
+
+	<set_var name="description_format">
+		<record>
+			<string id="text" value="{upper}[%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+			<integer id="var2" value="vf_player_description" />
+		</record>
+	</set_var>
+
+	<container id="sing" hidden="true">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+		<container class="inner_subtle_box">
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" vertical_offset="6" horizontal_offset="6" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_gap="8" />
+
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" height="54" width="52">
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn" />
+							<!--Fake name request-->
+							<record get_property="Pfke" />
+							<record get_property="prpc" set_property="valu" />
+						</list>
+					</record>
+				</widget>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+
+					<widget class="person_button" auto_size="all" size="large" info_popup_enabled="true" icon_enabled="true" person_is_player="true">
+						<record id="object_property" get_property="objt" set_property="valu" />
+					</widget>
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+						<widget class="object_portrait_picture" id="npiB" image_alignment="centre" scale_picture="true" wants_mouse_events="true" width="20" height="20">
+							<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+						</widget>
+
+						<widget class="player_age_and_description_widget" file="none" height="18">
+							<attachment_group class="vertical_arrange_autosize" vertical_offset="0" />
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<widget class="text" id="mtxt" alignment="left,centre_y" auto_size="vertical" colour="faded text">
+								<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]" />
+							</widget>
+						</widget>
+
+					</container>
+
+					<widget class="text" id="opiL" alignment="left" auto_size="all">
+					</widget>
+
+				</container>
+			</container>
+
+			<widget class="icon_button" id="stBt" appearance="buttons/custom/dof status/normal/button" auto_size="horizontal" height="40" colour="white" size="large">
+
+			</widget>
+
+		</container>
+
+		<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_gap="32" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+					<widget class="link_button_title" id="tarL" section="Mtar" auto_size="all">
+						<translation id="text" translation_id="596177" type="use" value="Player Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+					</widget>
+
+					<widget class="spacer" />
+				</container>
+
+				<widget id="tarW" class="property_list_viewer_xml_panel" file="widgets/player target widget" />
+
+				<widget class="table" id="sptt" layout="-1,-1" mode="fill_rows,stripe_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+					<list id="column_table_properties">
+						<record index="0">
+							<record id="widget_info">
+								<symbol id="class" value="text" />
+								<boolean id="multiline" value="true" />
+								<flags id="auto_size" value="vertical" />
+								<integer id="auto_size_minimum_height" value="30" />
+								<flags id="alignment" value="left,centre_y" />
+							</record>
+						</record>
+						<record index="1">
+							<record id="widget_info">
+								<symbol id="class" value="text" />
+								<boolean id="multiline" value="true" />
+								<flags id="auto_size" value="vertical" />
+								<integer id="auto_size_minimum_height" value="30" />
+								<flags id="alignment" value="left,centre_y" />
+							</record>
+						</record>
+					</list>
+				</widget>
+			</container>
+
+			<!-- Training report-->
+			<container id="trrC" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+						<widget class="link_button_title" section="Pgrg" auto_size="all">
+							<translation id="text" translation_id="466505" type="use" value="Training Report[COMMENT:player training; header feedback from coachs]" />
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<widget class="spacer" />
+					</container>
+
+					<widget class="text" id="trSt" colour="faded text" auto_size="vertical" />
+				</container>
+
+				<container class="inner_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="12" />
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" />
+						<widget class="text" font="label" colour="faded text" auto_size="vertical" alignment="left, centre_y">
+							<translation id="text" translation_id="466504" type="use" value="Training Rating[COMMENT: a rating of how well the player is getting on in training]" />
+						</widget>
+
+						<widget class="text" id="plci" auto_size="all" font="value" />
+
+					</container>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<widget class="text" auto_size="vertical" font="label">
+							<translation id="text" translation_id="363709" type="use" value="Position/Role/Duty[COMMENT: FR 8989 - Player position, role and duty]" />
+						</widget>
+
+						<widget class="training_position_role_duty_label" id="tPRD" auto_size="vertical" icon_enabled="false" font="text" style="bold">
+
+						</widget>
+					</container>
+
+					<container id="ppmC">
+						<attachment_group class="vertical_arrange_autosize" />
+
+						<widget class="text" auto_size="vertical" font="label">
+							<translation id="text" type="use" value="Learning Player Trait[COMMENT: FR 8989 - Player position, role and duty]" />
+						</widget>
+
+						<widget class="text" id="ppmt" auto_size="vertical" font="value">
+
+						</widget>
+
+					</container>
+
+				</container>
+
+				<var id="trBP" name="bullet_points_table" />
+
+			</container>
+
+			<!-- Coach report-->
+			<container id="corC" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+					<widget class="link_button_title" section="Pccr" auto_size="all">
+						<translation id="text" translation_id="316844" type="use" value="Coach Report[COMMENT; coach reports section of player profile]" />
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+
+					<widget class="spacer" />
+				</container>
+
+				<widget class="text" id="crSt" colour="faded text" auto_size="vertical" />
+
+				<widget class="spacer" height="8" />
+
+				<var id="crBP" name="bullet_points_table" />
+
+				<widget class="text" auto_size="vertical" font="title">
+					<translation id="text" translation_id="596179" type="use" value="Target stats[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</widget>
+
+				<widget class="spacer" height="8" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+					<widget class="text" auto_size="vertical" font="label" colour="faded text">
+						<translation id="text" translation_id="227845" type="use" value="Appearances" />
+					</widget>
+
+					<widget class="text" id="apps" auto_size="vertical" font="value" />
+
+				</container>
+
+				<widget class="spacer" height="8" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+					<widget class="formatted_label" id="taPL" auto_size="vertical" font="label" colour="faded text">
+						<list id="format">
+							<record value="2">
+								<translation id="format" translation_id="227853" type="use" value="Average Rating" />
+							</record>
+							<record value="6">
+								<translation id="format" translation_id="227857" type="use" value="Goals" />
+							</record>
+							<record value="7">
+								<translation id="format" translation_id="227847" type="use" value="Assists" />
+							</record>
+							<record value="8">
+								<translation id="format" translation_id="249453" type="use" value="Clean Sheets" />
+							</record>
+							<record value="9">
+								<translation id="format" translation_id="227853" type="use" value="Average Rating" />
+							</record>
+						</list>
+					</widget>
+
+					<widget class="text" id="taPV" auto_size="vertical" font="value" />
+
+				</container>
+
+			</container>
+
+			<!-- Medical report-->
+			<container id="merC" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+						<widget class="link_button_title" section="PInj" auto_size="all">
+							<translation id="text" translation_id="447586" type="use" value="Medical Report[COMMENT: Panel title for when viewing medical report]" />
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<widget class="spacer" />
+					</container>
+
+					<widget class="text" id="mrSt" colour="faded text" auto_size="vertical" />
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" />
+					<widget class="text" auto_size="vertical" font="label">
+						<translation id="text" translation_id="242667" type="use" value="Injured[COMMENT - on player form screen, shown if player was injured]" />
+					</widget>
+
+					<widget class="text" id="injT" auto_size="vertical" font="value">
+
+					</widget>
+				</container>
+
+				<var id="mrBP" name="bullet_points_table" />
+
+			</container>
+
+			<!-- Loan report-->
+			<container id="lorC" hidden="true">
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="16" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+					<widget class="link_button_title" section="Pcnr" auto_size="all">
+						<translation id="text" translation_id="494113" type="use" value="Loan Contract[COMMENT: AREA: Development Centre; SUB-AREA: Loan report; FR-BN: 28433; TONE: Formal; CHARLIMIT: If Applicable, else None; REF-ID: n/a; NOTE: Loan report panel; FR-BN: 28433]" />
+						<record id="object_property" get_property="objt" set_property="objt" />
+					</widget>
+
+					<widget class="spacer" />
+
+				</container>
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+
+					<widget class="text" auto_size="vertical" font="label">
+						<translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+					</widget>
+
+					<widget class="playing_time_label" id="lrPT" auto_size="vertical" font="value">
+
+					</widget>
+
+				</container>
+
+				<widget class="horizontal_divider" />
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+					<container>
+						<attachment_group class="horizontal_arrange_vertical_autosize" />
+
+						<widget class="link_button_title" section="Psta" auto_size="all">
+							<translation id="text" translation_id="385617" type="use" value="Season Stats[COMMENT: player overview; player stats by competition panel title]" />
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+
+						<widget class="spacer" />
+					</container>
+
+					<widget class="table" mode="fill_rows" id="lrST" auto_size="vertical">
+
+					</widget>
+
+				</container>
+
+			</container>
+		</container>
+
+	</container>
+
+	<container id="mulu" hidden="true">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="8" />
+
+		<widget class="text" auto_size="vertical" font="title" size="large">
+			<translation id="text" translation_id="596180" type="use" value="Player targets and promises updates[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_gap="0" />
+
+			<widget class="radio_button" id="taRB" appearance="tabs/subsection/normal/top/button" icon="" secondary_icon_enabled="true" secondary_icon="icons/16px/Target" secondary_icon_alignment="left" show_button_appearance="true" auto_size="all" selected="true">
+				<translation id="text" translation_id="596178" type="use" value="Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				<event id="click_event">
+					<flags id="event_id" value="Chta" />
+					<integer id="mode" value="0" />
+				</event>
+			</widget>
+			<widget class="radio_button" id="prRB" appearance="tabs/subsection/normal/top/button" icon="" secondary_icon_enabled="true" secondary_icon="icons/16px/promise" secondary_icon_alignment="left" show_button_appearance="true" auto_size="all">
+				<translation id="text" translation_id="320154" type="use" value="Promises[COMMENT: player status panel; panel header title for a section listing all promises a manager has made to a player]" />
+				<event id="click_event">
+					<flags id="event_id" value="Chta" />
+					<integer id="mode" value="1" />
+				</event>
+			</widget>
+
+			<widget class="spacer" />
+
+		</container>
+
+		<container class="manager_targets_panel" id="FuTP" file="">
+			<var id="desF" name="description_format" />
+
+			<attachment_group class="vertical_arrange_autosize" />
+
+			<widget class="table" id="tabl" layout="-1,-1,125,120,200" mode="fill_rows, stripe_rows" auto_size_rows="false" fixed_size_rows="true" default_sort_column="cbar" fixed_row_height="30" row_height="55" row_spacing="2" column_spacing="5" auto_size="vertical">
+				<list id="column_table_properties">
+					<record id="cnam" auto_hide_priority="0" minimum_width="200">
+						<record id="column_heading">
+							<translation id="text" translation_id="229689" type="use" value="Name" />
+						</record>
+					</record>
+					<record id="ctar" auto_hide_priority="0" minimum_width="120">
+						<record id="column_heading">
+							<translation id="text" translation_id="596178" type="use" value="Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+						</record>
+					</record>
+					<record id="cpro" auto_hide_priority="0" minimum_width="125">
+						<record id="column_heading">
+							<translation id="text" translation_id="289978" type="use" value="Progress[COMMENT:person screen; achievements section; heading for achievements panel - cup progress]" />
+						</record>
+					</record>
+					<record id="cexi" auto_hide_priority="0" minimum_width="120">
+						<record id="column_heading">
+							<translation id="text" translation_id="596175" type="use" value="Expected in[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; column header for when a target is expected to be completed]" />
+						</record>
+					</record>
+					<record id="cpoo" auto_hide_priority="100" minimum_width="200">
+						<record id="column_heading">
+							<translation id="text" translation_id="597549" type="use" value="Promise/Outcome[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; column header for when a target promise or outcome]" />
+						</record>
+					</record>
+				</list>
+
+				<list id="column_widget_properties">
+					<record index="1" alignment="left,centre_y" />
+					<record index="2" alignment="left,centre_y" />
+					<record index="4" alignment="left,centre_y" />
+				</list>
+
+				<list id="sort">
+					<integer value="cexi" />
+				</list>
+			</widget>
+
+		</container>
+
+		<container class="manager_promises_panel" id="FuPP" file="">
+			<attachment_group class="vertical_arrange_autosize" />
+			<widget class="table" id="tabl" layout="-1,-1, 20,-1" mode="fill_rows, stripe_rows" auto_size_rows="false" fixed_size_rows="true" default_sort_column="cbar" row_height="40" row_spacing="2" column_spacing="5" auto_size="vertical">
+				<list id="column_table_properties">
+					<record id="cnam">
+						<record id="widget_info" class="text" alignment="left,centre_y" />
+						<record id="column_heading">
+							<translation id="text" translation_id="229689" type="use" value="Name" />
+						</record>
+					</record>
+					<record id="cpro">
+						<record id="widget_info" class="text" alignment="left,centre_y" />
+						<record id="column_heading">
+							<translation id="text" translation_id="378026" type="use" value="Promise[COMMENT: FR 3585; manager promises; heading on promises table]" />
+						</record>
+					</record>
+
+					<record id="cico">
+						<record id="widget_info" class="picture" scale_picture="false" image_alignment="centre" />
+						<record id="column_heading" column_span="2">
+							<translation id="text" translation_id="289978" type="use" value="Progress[COMMENT:person screen; achievements section; heading for achievements panel - cup progress]" />
+						</record>
+					</record>
+					<record id="csta">
+						<record id="widget_info" class="text" alignment="left,centre_y" />
+					</record>
+				</list>
+
+				<list id="sort">
+					<integer value="cbar" />
+					<integer value="cnam" />
+				</list>
+			</widget>
+
+		</container>
+	</container>
+
+	<container id="mulf" hidden="true">
+		<attachment_group class="vertical_arrange_autosize" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" />
+
+			<widget class="picture" width="18" height="18" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" file="icons/16px/cross" red_replacement="negative" />
+
+			<widget class="text" id="mfti" height="20" font="title" colour="negative" alignment="left,top">
+			</widget>
+		</container>
+
+		<widget class="table" id="mfpt" mode="fill_rows,stripe_rows" layout="-1,-1,-1,200" auto_size="vertical" auto_size_rows="true" fixed_size_rows="false">
+			<list id="headings">
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="229689" type="use" value="Name" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="596178" type="use" value="Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="596182" type="use" value="Players Reaction[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="597549" type="use" value="Promise/Outcome[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; column header for when a target promise or outcome]" />
+				</record>
+			</list>
+
+			<list id="column_widget_properties">
+				<record indx="0" height="45" />
+				<record indx="1" alignment="left,centre_y" auto_size="vertical" multiline="true" />
+				<record indx="2" alignment="left,centre_y" auto_size="vertical" multiline="true" />
+				<record indx="3" alignment="left,centre_y" auto_size="vertical" multiline="true" />
+			</list>
+
+			<list id="column_table_properties">
+				<record indx="0" alignment="left,centre_y" auto_hide_priority="0" minimum_width="200">
+					<record id="widget_info" class="client_object_viewer_xml_panel">
+						<var id="format" name="description_format" />
+					</record>
+				</record>
+				<record indx="1" alignment="left,centre_y" auto_hide_priority="0" minimum_width="200">
+					<record id="widget_info" class="text" />
+				</record>
+				<record indx="2" alignment="left,centre_y" auto_hide_priority="0" minimum_width="200">
+					<record id="widget_info" class="text" />
+				</record>
+				<record indx="3" alignment="left,centre_y" auto_hide_priority="100" minimum_width="200">
+					<record id="widget_info" class="text" />
+				</record>
+			</list>
+		</widget>
+
+	</container>
+
+	<container id="intr" hidden="true">
+		<attachment_group class="vertical_arrange_autosize" />
+
+		<widget class="text" auto_size="vertical" font="title" size="large">
+			<translation id="text" translation_id="596180" type="use" value="Player targets and promises updates[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,500,-1" vertical_offset="26" />
+
+			<widget class="spacer" />
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" />
+
+				<widget class="manager_text" auto_size="vertical" alignment="centre" style="bold">
+					<translation id="text" translation_id="597551" type="use" value="[%person#1-You] have not set any Player Targets or issued any Promises[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-31524; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</widget>
+
+				<widget class="manager_text" auto_size="vertical" alignment="centre">
+					<translation id="text" translation_id="597552" type="use" value="Regular updates will be delivered to [%person#1-your] inbox based on [%person#1-your] delivery frequency[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-31524; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,50,-1" vertical_offset="26" />
+
+					<widget class="spacer" />
+
+					<widget class="horizontal_divider" height="1" />
+
+					<widget class="spacer" />
+
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" />
+
+					<widget class="picture" height="26" width="26" file="icons/16px/Target" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" />
+
+					<widget class="text" auto_size="all" style="bold">
+						<translation id="text" translation_id="596177" type="use" value="Player Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+					</widget>
+
+				</container>
+
+				<widget class="manager_text" auto_size="vertical" multiline="true">
+					<translation id="text" translation_id="597550" type="use" value="An effective negotiating tool that can be used to help improve the performance and happiness of [%person#1-your] players, as well as convincing them to put pen to paper during contract negotiations. Empowering players to be able to take charge of their own future can have very positive outcomes for the club.[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-31524; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</widget>
+
+				<widget class="spacer" height="26" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" />
+
+					<widget class="picture" height="26" width="26" file="icons/16px/promise" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" />
+
+					<widget class="text" auto_size="all" style="bold">
+						<translation id="text" translation_id="320154" type="use" value="Promises[COMMENT: player status panel; panel header title for a section listing all promises a manager has made to a player]" />
+					</widget>
+
+				</container>
+
+				<widget class="manager_text" auto_size="vertical" multiline="true">
+					<translation id="text" translation_id="597553" type="use" value="When players are set performance-based targets, they will typically be accompanied by a promise that is fulfilled upon successful completion of the task, often something they've been asking for.[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-31524; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+				</widget>
+
+			</container>
+
+			<widget class="spacer" />
+
+		</container>
+
+	</container>
+
+</panel>

@@ -10,13 +10,13 @@
 			<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
 			<container>
 				<!-- Club badge image -->
-				<widget class="object_portrait_picture" id="pclB" image_alignment="centre" scale_picture="true" wants_mouse_events="true">
-					<layout class="stick_to_sides_attachment" alignment="all" inset="20,0,40,40" />
+				<widget class="object_portrait_picture" id="pclB" image_alignment="left,centre_y" scale_picture="true" wants_mouse_events="true">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 					<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
 				</widget>
 				<!-- profile picture -->
-				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x,bottom">
-					<layout class="stick_to_sides_attachment" alignment="all" inset="40,40,0,0" />
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="right,centre_y">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 					<!-- only show the picture if we should show portraits -->
 					<attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
 						<boolean id="value" value="false" />

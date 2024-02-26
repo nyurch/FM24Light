@@ -1,0 +1,44 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1,1,-1" horizontal_gap="10" vertical_inset="5" />
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_layout="18,25,5,-1" vertical_gap="2" horizontal_inset="10" />
+
+			<widget id="trat" class="text" alignment="centre" style="bold" font="title" colour="black" size="9" auto_size="vertical" />
+
+			<widget class="text" alignment="centre" font="text" colour="faded black" size="small" auto_size="vertical" multiline="true">
+				<translation id="text" translation_id="596717" type="use" value="The top attributes that will be trained.[COMMENT: AREA: Training overview panel; SUB-AREA: Top trained attributes section; FR-BN: FM-21946; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: description of what the displayed information actually represents]" />
+			</widget>
+
+			<widget class="spacer" />
+
+			<!-- top 5 attributes -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" />
+
+				<widget class="table" id="tAtT" layout="-1" mode="fill_rows, stripe_rows, printable" row_height="22" row_spacing="2" auto_size="vertical" />
+			</container>
+
+		</container>
+
+		<widget class="vertical_divider" height="180" />
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_layout="20,20,-1" vertical_gap="5" />
+			<widget class="text" alignment="centre" style="bold" font="title" colour="black" size="9" auto_size="vertical">
+				<translation id="text" translation_id="596720" type="use" value="Unit involvement[COMMENT: AREA: Training overview panel; SUB-AREA: Unit involvment section; FR-BN: FM-21946; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: label to start the section that shows the unit involvement for the current training focus]" />
+			</widget>
+
+			<widget class="text" alignment="centre" font="text" colour="faded black" size="small" auto_size="vertical" multiline="true">
+				<translation id="text" translation_id="596719" type="use" value="How involved this unit is in training:[COMMENT: AREA: Training overview panel; SUB-AREA: Unit involvment section; FR-BN: FM-21946; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: description of what the displayed information actually represents]" />
+			</widget>
+
+			<widget class="unit_involvement_widget" id="uinW" file="widgets/unit involvement widget simplified view" />
+
+		</container>
+
+	</container>
+</panel>

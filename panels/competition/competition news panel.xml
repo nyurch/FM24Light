@@ -254,7 +254,7 @@
 			</container>
 		</container>
 
-		<container class="competition_news_side_panel" id="side" default_width="330" priority="2" navigation_container="true"/>
+		<container class="competition_news_side_panel" id="side" default_width="380" priority="2" navigation_container="true"/>
 
 		<container id="sid2" minimum_width="340" priority="3">
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>

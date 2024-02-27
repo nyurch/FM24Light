@@ -14,10 +14,10 @@
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
 	<container class="plain_box" id="nibx">
-		<layout class="arrange_horizontal_attachment" layout="3, -1, 20, 20" offset="0" gap="6"/>
+		<layout class="arrange_horizontal_attachment" layout="8, -1, 40, 40" offset="0" gap="6"/>
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
 
-		<widget class="picture" id="lccs" file="tables/custom/inbox/category/row" height="80" width="3"/>
+		<widget class="picture" id="lccs" file="tables/custom/inbox/category/row" height="80" width="8"/>
 
 		<container>
 			<layout class="centre_in_parent_attachment" alignment="vertical"/>
@@ -34,6 +34,7 @@
 
 		<widget class="picture" id="rdsw" auto_size="horizontal" image_alignment="right, centre_y"/>
 		<widget class="picture" id="rssw" auto_size="horizontal" image_alignment="left, centre_y"/>
+		<widget class="text" id="time" auto_size="horizontal" alignment="right, top" colour="faded black" style="bold" size="10" />
 	</container>
 
 </panel>

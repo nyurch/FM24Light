@@ -47,7 +47,7 @@
 		<widget class="icon_button" id="Cwrs" icon="icons/16px/left" click_event="Cwrs" appearance="switches/toggle/left/button" width="40" hidden="true" row="0" col="0"/>
 
 		<container height="30" row="0" col="1">
-			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0"/>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="3"/>
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
 
 			<widget class="button" id="0" alignment="centre" multiline="true" hidden="true"/>

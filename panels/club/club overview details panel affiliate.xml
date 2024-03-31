@@ -1,5 +1,5 @@
 <panel>
-	<layout class="horizontal_arrange" horizontal_layout="-3,-2" />
+	<layout class="horizontal_arrange" horizontal_layout="-3,-2" horizontal_gap="10"/>
 	<boolean id="should_force_refresh" value="true"/>
 
 	<!-- MEDIA CONTAINER -->

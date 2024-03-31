@@ -82,17 +82,17 @@
 					<record id="gene">
 						<translation id="text" value="MYLight" type="use"/>
 						<record id="view">
-							<string id="fxdt" width="100"/>
-							<string id="FXTm" width="50"/>
-							<string id="fopt" width="150"/>
-							<string id="FxWe" width="150"/>
-							<string id="stad" width="250"/>
-							<string id="FxAt" width="50"/>
-							<string id="FxTV" width="10"/>
-							<string id="FxVn" width="30"/>
-							<string id="FxRT" width="10"/>
-							<record id="FxRs" width="50"/>
-							<string id="FxNm" width=""/>
+							<record id="fxdt" width="100"/>
+							<record id="FXTm" width="70"/>
+							<record id="fopt" width="250"/>
+							<record id="FxWe" width="220"/>
+							<record id="stad" width="270"/>
+							<record id="FxAt" width="60"/>
+							<record id="FxTV" width="20"/>
+							<record id="FxVn" width="30"/>
+							<record id="FxRT" width="20"/>
+							<record id="FxRs" width="70"/>
+							<record id="FxNm" width="-1"/>
 						</record>
 					</record>
 					<record id="gene1">

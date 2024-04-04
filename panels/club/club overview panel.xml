@@ -1,5 +1,5 @@
 <panel>
-	<layout class="vertical_arrange" vertical_layout="200,500,-1" />
+	<layout class="vertical_arrange" vertical_layout="200,505,-1" />
 	<boolean id="should_force_refresh" value="true"/>
 
 	<!-- HEADER CONTAINER -->

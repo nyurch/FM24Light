@@ -1,6 +1,6 @@
 <panel>
 
-	<attachment_group class="horizontal_arrange" horizontal_layout="-1, 700, 1200, -1" horizontal_alignment="centre"/>
+	<attachment_group class="horizontal_arrange" horizontal_layout="-1, 700, 1100, -1" horizontal_alignment="centre"/>
 
 	<container class="main_box" />
 

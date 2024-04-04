@@ -1,17 +1,17 @@
 <panel>
 
-	<layout class="vertical_arrange" vertical_layout="-1,80" vertical_gap="5" />
+	<layout class="vertical_arrange" vertical_layout="-1,50" vertical_gap="0" />
 
 	<!--MAIN PANELS-->
 	<container class="contrast_box" red_replacement="bg">
-		<layout class="vertical_arrange" vertical_layout="-1" vertical_gap="5" />
+		<layout class="vertical_arrange" vertical_layout="-1" vertical_gap="0" />
 
 		<container>
 			<layout class="horizontal_arrange" horizontal_layout="300,600,-1" horizontal_gap="10" />
 
 			<!--CLUB NAME-->
 			<container class="main_subtle_box" width="200">
-				<layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="5" />
+				<layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0" />
 				<container id="affc">
 					<layout class="arrange_horizontal_attachment" layout="-1" offset="0" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
@@ -43,7 +43,7 @@
 
 			<!--DETAILS-->
 			<container class="main_subtle_box" width="550">
-				<layout class="vertical_arrange" vertical_layout="110,-1" vertical_gap="5" />
+				<layout class="vertical_arrange" vertical_layout="110,-1" vertical_gap="0" />
 				<container class="main_box">
 					<layout class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="30" />
 					<!--parent club-->
@@ -121,7 +121,7 @@
 
 			<!--AFFILIATED CLUB PRESENTATION-->
 			<container class="main_subtle_box" width="-1">
-				<layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="5" />
+				<layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0" />
 				<container class="main_box" navigation_container="true">
 					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 					<widget class="club_overview_details_panel" file="club/club overview details panel affiliate" id="cluI" />
@@ -131,10 +131,8 @@
 	</container>
 
 	<!--BOTTOM BUTTONS-->
-	<container class="main_box" entity_layout_id="at29" id="reqb" height="72">
+	<container class="main_box" entity_layout_id="at29" id="reqb" height="40">
 		<string id="navigation_container" value="true" />
-		<translation id="text" translation_id="255092" type="use" value="Board Requests[COMMENT: team feeder club info - button to search for new one]" />
-		<record id="default_properties" auto_size="all" />
 		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main" />
 		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
 		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />

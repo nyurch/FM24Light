@@ -1,23 +1,16 @@
 <panel>
-  <layout class="arrange_horizontal_attachment" layout="-3, -3" gap="5" offset="0"/>
-  <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+	<attachment_group class="horizontal_arrange" horizontal_layout="-2,-3" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
 
+	<container>
+		<attachment_group class="vertical_arrange" vertical_layout="-1,-8,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+		<widget class="spacer" />
+		<widget class="pie_chart" id="piCH"/>
+		<widget class="spacer" />
+	</container>
 
-  <container>
-    <layout class="arrange_vertical_attachment" layout="-2, -10, -2" gap="0" offset="0"/>
-    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
-    <container/>
-    <widget class="pie_chart" id="piCH"/>
-    <container/>
-  </container>
-
-
-  <container>
-    <layout class="arrange_vertical_attachment" alignment="middle" gap="0" offset="0"/>
-    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
-    <widget class="table" id="txtG" layout="-1" row_height="25" row_spacing="0" auto_size="vertical"/>
-  </container>
-
-
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+		<widget class="table" id="txtG" layout="-1" row_height="25" row_spacing="0" auto_size="vertical"/>
+	</container>
 
 </panel>

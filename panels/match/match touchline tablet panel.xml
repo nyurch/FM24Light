@@ -84,7 +84,7 @@
 			</container>
 
 			<!--this will have 2 rows, each can have up to 3 widgets-->
-			<container class="vertical_adaptive_container" draw_horizontal_dividers="true" gap="15">
+			<container class="vertical_adaptive_container" draw_horizontal_dividers="true" gap="5">
 
 				<!--you can cahnge dit1 dit2 and dit3 for the default selection of each slot in a container, ids should match the ones in match touchline tablet slot-->
 				<container class="client_object_viewer_xml_panel" id="con1" file="match/match touchline tablet slot container" priority="1" default_height="-1" dit1="prmC" sid1="slt1" sid2="slt2" sid3="slt3">

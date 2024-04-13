@@ -1,0 +1,206 @@
+﻿<panel width="350">
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<list id="properties_to_forward">
+		<record get_property="desc" set_property="value" target="desc" />
+		<record get_property="value" set_property="value" target="numb" />
+		<record get_property="clke" set_property="clke" target="clke" />
+		<record get_property="catg" set_property="catg" target="risw" />
+		<record get_property="info" set_property="Shwn" target="info" />
+		<record get_property="hsIn" set_property="Shwn" target="risw" />
+		<record get_property="hsIn" set_property="Shwn" target="catE" />
+	</list>
+
+	<container class="contrast_box_no_margin" red_replacement="bg lighter">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+		<container height="170">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="picture" file="backgrounds/VAR pattern" red_replacement="bg lighter" green_replacement="bg" scale_picture="true" keep_aspect_ratio_high="true" />
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="20" vertical_gap="10" horizontal_inset="10" />
+
+				<!--Title-->
+				<widget class="label" alignment="centre" font="title" size="large" colour="fg accent" auto_size="vertical">
+					<translation id="text" translation_id="292589" type="use" value="Information[COMMENT: top level menu title for team information screens]" />
+				</widget>
+
+				<!--Player Info Card-->
+				<container height="95">
+					<attachment_group class="horizontal_arrange" horizontal_layout="85,-1" horizontal_inset="0" horizontal_gap="0" />
+
+					<container class="main_box" rrep="primary" appearance="boxes/contrast/no margin/left/paper">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+						<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="bottom,centre_y">
+							<record id="object_property">
+								<list id="get_properties">
+									<!--Facegen data request-->
+									<record get_property="fcgn" />
+									<!--Fake name request-->
+									<record get_property="Pfke" />
+									<record get_property="prpc" set_property="valu" />
+								</list>
+							</record>
+						</widget>
+					</container>
+
+					<container class="main_box" rrep="bg" appearance="boxes/contrast/no margin/right/paper">
+						<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="8" vertical_gap="4" horizontal_inset="10" />
+
+						<widget class="person_button" info_popup_enabled="false" style="bold">
+							<record id="object_property" get_property="PnmP" set_property="valu" />
+						</widget>
+
+						<widget class="club_button" auto_size="none" colour="faded text">
+							<record id="object_property" get_property="Pclb" set_property="valu" />
+						</widget>
+
+						<widget class="game_formatted_label" alignment="left,centre_y" size="small" colour="faded text" auto_size="none" multiline="false">
+							<record id="format">
+								<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+								<integer id="var2" value="vf_player_description" />
+							</record>
+
+							<record id="object_property">
+								<list id="get_properties">
+									<!-- description -->
+									<record get_property="PXag" set_property="var1" dont_set_object="true" />
+									<record get_property="Pdes" set_property="var2" dont_set_object="true" />
+								</list>
+							</record>
+						</widget>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<container id="info" hidden="true">
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="10" horizontal_inset="10" />
+
+			<container id="catE">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+				<widget class="label" auto_size="none" font="label" alignment="left, centre_y" colour="disabled">
+					<translation id="text" translation_id="596496" type="use" value="Select Instruction Category[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions Dialog; FR-BN: todo george.webster; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for selecting set piece instruction category]" />
+				</widget>
+				<container height="30">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="middle,extend" horizontal_inset="0" horizontal_gap="4" />
+					<widget class="label" id="desc" auto_size="horizontal" size="large" style="bold" colour="black" alignment="left, centre_y" />
+
+					<widget class="label" id="numb" auto_size="horizontal" font="text" alignment="left, centre_y" colour="disabled" auto_size_minimum_width="20" />
+
+					<widget class="icon_button" id="clke" auto_size="horizontal" appearance="buttons/subtle/normal/button" icon="icons/16px/maximise" icon_alignment="right">
+						<translation id="text" translation_id="295066" type="use" value="Change[COMMENT: button for changing a kit style]" />
+					</widget>
+
+
+				</container>
+			</container>
+
+			<!--Table-->
+			<widget class="client_object_list_table" id="ppDT" fixed_size_rows="true" auto_size="none" database_table_type="1" row_height="35" height="70" sort_disabled="true">
+				<flags id="mode" value="fill_rows" />
+				<flags id="default_view" value="defa" />
+				<boolean id="should_force_refresh" value="true" />
+				<boolean id="force_refresh_on_object_list" value="true" />
+
+				<record id="object_property" get_property="objt" set_property="objt" />
+
+				<!--available views-->
+				<list id="viws">
+					<record id="defa">
+						<record id="view">
+							<flags id="Ppac" />
+							<!--Pace-->
+							<record id="Pmar" />
+							<!--Marking-->
+							<record id="Pcnt" />
+							<!--Concentration-->
+							<record id="Pant" />
+							<!--Anticipation-->
+							<record id="Pdri" />
+							<!--Dribbling-->
+							<record id="Pfin" />
+							<!--Finishing-->
+							<flags id="Pjum" />
+							<!--Jumping-->
+							<flags id="Pstr" />
+							<!--Strength-->
+							<record id="Phea" />
+							<!--Heading-->
+							<record id="Potb" />
+							<!--Off The Ball-->
+							<record id="Plsh" />
+							<!--Long Shots-->
+							<record id="Ptec" />
+							<!--Technique-->
+							<flags id="Pcro" />
+							<!--Crossing-->
+							<record id="Ptac" />
+							<!--Tackling-->
+							<record id="Pbra" />
+							<!-- Bravery -->
+							<record id="Pfrk" />
+							<!--Free Kicks-->
+							<record id="Pcor" />
+							<!--Corners-->
+							<record id="Plth" />
+							<!--Long Throws-->
+							<record id="Ppas" />
+							<!--Passing-->
+							<record id="Ppsn" />
+							<!--Positioning-->
+						</record>
+					</record>
+				</list>
+			</widget>
+
+			<widget class="set_piece_routine_instruction_widget" id="risw" rufp="true" file="" draggable="false" hidden="true">
+				<list id="properties_to_forward">
+					<record target="scnd" get_property="pSSb" set_property="shown" />
+					<record target="insP" get_property="priI" set_property="items" />
+					<record target="insP" get_property="priT" set_property="slct" />
+					<record target="ntNd" get_property="prNN" set_property="items" />
+					<record target="ntNd" get_property="prsb" set_property="slct" />
+					<record target="mnBx" get_property="red_replacement" set_property="red_replacement" />
+				</list>
+
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="2" vertical_alignment="top" />
+
+				<!--main instruction container-->
+				<container id="mnBx" height="35">
+					<attachment_group class="horizontal_arrange" horizontal_gap="8" horizontal_offset="4" vertical_inset="4" horizontal_alignment="left, extend" />
+
+					<!--role popup-->
+					<widget class="subtle_popup_button" id="insP" show_button_appearance="true" multiline="false" select_event="erSL">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					</widget>
+				</container>
+
+				<!--bottom container - if not needed dropdown (may be hidden)-->
+				<container id="scnd" hidden="true">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_gap="6" vertical_inset="0" horizontal_alignment="left, extend" />
+					<container width="20" />
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="5" horizontal_inset="0" />
+						<widget class="text" alignment="left,centre_y" font="title" colour="fg accent" auto_size="vertical">
+							<translation id="text" translation_id="596500" type="use" value="If Not Needed:[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions; FR-BN:; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for secondary set piece instruction category that will be used if the primary is not needed]" />
+						</widget>
+						<widget class="popup_button" id="ntNd" multiline="false" />
+					</container>
+				</container>
+			</widget>
+			<widget class="spacer" height="20" />
+
+		</container>
+	</container>
+
+	<widget class="icon_button" appearance="none" icon="icons/16px/minimise" auto_size="all" icon_colour="black">
+		<layout class="stick_to_sides_attachment" alignment="right,top" inset="14" />
+		<record id="click_event">
+			<flags id="event_id" value="mcan" />
+		</record>
+	</widget>
+</panel>

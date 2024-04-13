@@ -1,4 +1,4 @@
-﻿<panel category_highlight_appearance="boxes/main/contrast/no margin/paper" category_highlight_colour="green 900" set_piece_pitch_icon_scale="1.1" set_piece_pitch_ball_scale="1.1" set_piece_pitch_ball_icon="icons/16px/ball">
+﻿<panel category_highlight_appearance="boxes/main/contrast/no margin/paper" category_highlight_colour="white" set_piece_pitch_icon_scale="1.1" set_piece_pitch_ball_scale="1.1" set_piece_pitch_ball_icon="icons/16px/ball">
 	<boolean id="save_session_state" value="true" />
 
 	<string id="category_negative_appearance" value="boxes/main/contrast/no margin/paper" />

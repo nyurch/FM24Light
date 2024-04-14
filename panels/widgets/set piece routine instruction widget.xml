@@ -1,0 +1,90 @@
+﻿<panel draggable="true">
+	<list id="properties_to_forward">
+		<record target="ideT" get_property="indx" set_property="text" />
+		<record target="scnd" get_property="pSSb" set_property="shown" />
+		<record target="insP" get_property="priI" set_property="items" />
+		<record target="insP" get_property="priT" set_property="slct" />
+		<record target="ntNd" get_property="prNN" set_property="items" />
+		<record target="ntNd" get_property="prsb" set_property="slct" />
+		<record target="pbtn" get_property="pIRC" set_property="hidden" />
+		<record target="redC" get_property="pIRC" set_property="shown" />
+		<record target="injI" get_property="pINJ" set_property="shown" />
+		<record target="pbtn" get_property="pINJ" set_property="hidden" />
+		<record target="mnBx" get_property="red_replacement" set_property="red_replacement" />
+		<record target="idBx" get_property="red_replacement" set_property="red_replacement" />
+	</list>
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="2" vertical_alignment="top" />
+
+	<!--top container - drag icon and role dropdown-->
+	<container height="35">
+		<attachment_group class="horizontal_arrange" horizontal_gap="6" vertical_inset="0" horizontal_layout="20, -1" />
+
+		<!--draggable icon container-->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="icon_button" id="pbtn" show_button_appearance="false" icon="icons/16px/draggable" icon_alignment="centre" wants_mouse_events="true" click_event="" />
+		</container>
+		<!--main instyruction container-->
+		<container class="main_subtle_box_no_margin" id="mnBx">
+			<attachment_group class="horizontal_arrange" horizontal_gap="8" horizontal_offset="4" vertical_inset="4" horizontal_alignment="left, extend" />
+			<!--Player Letter/number identification-->
+			<container class="main_contrast_box_no_margin" id="idBx" red_replacement="fg magenta" width="30">
+				<widget class="text" id="ideT" size="large" colour="white" font="title" alignment="centre" auto_size="all">
+					<layout class="centre_in_parent_attachment" alignment="all" />
+				</widget>
+
+				<widget class="button" click_event="ppSl" show_button_appearance="false" id="dlog">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				</widget>
+			</container>
+
+			<container>
+				<!--role popup-->
+				<widget class="popup_button" id="insP" show_button_appearance="false" multiline="false" select_event="erSL" colour="text">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+					<record id="opened_event">
+						<flags id="event_id" value="iwOP" />
+						<flags id="event_target" value="prnt" />
+					</record>
+					<record id="closed_event">
+						<flags id="event_id" value="iwCL" />
+						<flags id="event_target" value="prnt" />
+					</record>
+				</widget>
+
+				<!--red card icon-->
+				<widget class="picture" hidden="true" id="redC" file="icons/26px/red card" width="20" image_alignment="centre">
+					<layout class="stick_to_sides_attachment" alignment="vertical,right" inset="0" />
+				</widget>
+
+				<!--injury icon-->
+				<widget class="picture" hidden="true" id="injI" file="icons/26px/injured" width="20" image_alignment="centre">
+					<layout class="stick_to_sides_attachment" alignment="vertical,right" inset="0" />
+				</widget>
+			</container>
+
+		</container>
+	</container>
+
+	<!--bottom container - if not needed dropdown (may be hidden-->
+	<container height="65" id="scnd" hidden="true">
+		<attachment_group class="horizontal_arrange" horizontal_gap="6" vertical_inset="0" horizontal_alignment="left, extend" />
+		<container width="20" />
+		<container class="titled_box">
+			<translation id="title" translation_id="596500" type="use" value="If Not Needed:[COMMENT: AREA: Set Pieces; SUB-AREA: Set Piece Instructions; FR-BN:; TONE: Formal;  CHARLIMIT: None; REF-ID: ; NOTE; Title for secondary set piece instruction category that will be used if the primary is not needed]" />
+
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<widget class="popup_button" id="ntNd" multiline="false" select_event="nnSL">
+				<record id="opened_event">
+					<flags id="event_id" value="iwOP" />
+					<flags id="event_target" value="prnt" />
+				</record>
+				<record id="closed_event">
+					<flags id="event_id" value="iwCL" />
+					<flags id="event_target" value="prnt" />
+				</record>
+			</widget>
+		</container>
+	</container>
+
+</panel>

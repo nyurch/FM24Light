@@ -9,38 +9,30 @@
 	<!-- Table properties to use for all attribute tables -->
 	<record id="table_properties" mode="fill_rows, stripe_rows, printable" layout="22, 15, 15, 22, 15, 15" row_height="22" row_spacing="1" column_spacing="0" default_sort_column="name" fixed_size_rows="true">
 		<list id="column_table_properties">
-
 			<record index="0" id="name">
 				<record id="widget_info" class="text" colour="white" alignment="left,centre_y" multiline="false" />
 			</record>
-
 			<record index="1" id="val " sort_disabled="true">
 				<record id="widget_info" class="attribute_label" colour="white" ignore_attribute_colours="true" alignment="centre" multiline="false" />
 			</record>
-
 			<record index="2" id="DifV" sort_disabled="true">
 				<record id="widget_info" class="text" alignment="centre" style="bold"/>
 			</record>
-
 			<!--mirroed rows-->
-
 			<record index="3" id="nam2">
 				<record id="widget_info" class="text" alignment="left,centre_y" multiline="false" colour="white" column_spacing="0" />
 			</record>
-
 			<record index="4" id="va2 " sort_disabled="true">
 				<record id="widget_info" class="attribute_label" ignore_attribute_colours="true" colour="white" alignment="centre" multiline="false" />
 			</record>
-
 			<record index="5" id="Dif2" sort_disabled="true">
 				<record id="widget_info" class="text" alignment="centre" style="bold"/>
 			</record>
-
 		</list>
 	</record>
 
 	<container class="main_contrast_box" id="pcom" red_replacement="style_background">
-		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="5" />
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="2" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
 		<widget class="text" id="COti" auto_size="vertical" alignment="centre" font="title" size="large" colour="faded white">
@@ -54,7 +46,7 @@
 
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
-				<container height="30">
+				<container height="20">
 					<layout class="arrange_horizontal_attachment" layout="-1,20" offset="5" gap="0" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
@@ -62,7 +54,7 @@
 					<widget class="picture" file="icons/16px/left" image_alignment="centre" red_replacement="white"/>
 				</container>
 
-				<container height="30" id="eX01">
+				<container height="20" id="eX01">
 					<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="10" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
 
@@ -79,11 +71,9 @@
 
 			</container>
 
-			<container height="4"/>
-
 			<container class="tactical_role_label" id="tR02" auto_size="vertical" use_alternate_text="true" alignment="centre" style="semi_bold" colour="white"/>
 
-			<container height="25">
+			<container height="15">
 				<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="0" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
@@ -100,7 +90,7 @@
 
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
-				<container height="30">
+				<container height="20">
 					<layout class="arrange_horizontal_attachment" layout="-1,20" offset="5" gap="0" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
@@ -108,7 +98,7 @@
 					<widget class="picture" file="icons/16px/right" image_alignment="centre" red_replacement="white"/>
 				</container>
 
-				<container height="30" id="eX02">
+				<container height="20" id="eX02">
 					<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="10" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="5" />
 
@@ -127,11 +117,10 @@
 
 			</container>
 
-			<widget class="spacer" height="4"/>
 
 			<container class="tactical_role_label" id="tR01" auto_size="vertical" use_alternate_text="true" alignment="centre" style="semi_bold" colour="white"/>
 
-			<container height="25">
+			<container height="15">
 				<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="0" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
@@ -142,7 +131,6 @@
 				<translation id="text" translation_id="316628" type="use" value="Important Attributes[COMMENT:title for attributes panel showing which attributes are important for a tactical role]" />
 			</widget>
 
-			<widget class="spacer" height="4"/>
 
 			<!-- Technical Table -->
 			<container id="cntT">
@@ -152,7 +140,7 @@
 					<record id="default_properties" spec="text" />
 				</widget>
 
-				<widget class="horizontal_divider" />
+
 			</container>
 
 			<!-- Goalkeeping Table -->
@@ -163,7 +151,7 @@
 					<record id="default_properties" spec="text" />
 				</widget>
 
-				<widget class="horizontal_divider" />
+
 			</container>
 
 			<!-- Mental Table -->
@@ -174,7 +162,7 @@
 					<record id="default_properties" spec="text" />
 				</widget>
 
-				<widget class="horizontal_divider" />
+
 
 			</container>
 
@@ -186,7 +174,7 @@
 					<record id="default_properties" spec="text" />
 				</widget>
 
-				<widget class="horizontal_divider" />
+
 
 
 			</container>

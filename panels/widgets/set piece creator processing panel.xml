@@ -1,0 +1,32 @@
+﻿<panel height="120" width="800">
+	<list id="properties_to_forward">
+		<record get_property="objt" set_property="objt" target="stpC" />
+		<record get_property="text" set_property="text" target="spCT" />
+	</list>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_contrast_box_no_margin">
+		<attachment_group class="vertical_arrange" vertical_offset="10" horizontal_inset="40" vertical_alignment="top, extend" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_offset="10" horizontal_gap="8" />
+			<!-- The loading animation - GPU rendering -->
+			<widget class="picture" id="anmG" file="progress/circular/spinner" auto_size="all" colour="black">
+				<animation class="rotate_animation" end_mode="repeat" start_value="0" end_value="360" tween="linear" apply_to_mouse="false" limit_frame_rate="true" />
+			</widget>
+
+			<widget class="text" font="title" size="large" auto_size="horizontal" height="30" alignment="left,centre_y">
+				<translation id="text" translation_id="594885" type="use" value="Loading...[COMMENT: AREA: progress bar loading text]" />
+			</widget>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" offset="0" gap="0" inset="0" />
+			<container class="client_object_viewer_xml_panel" id="stpC" file="person/person details panel small" width="200" />
+			<container class="inner_subtle_box" appearance="boxes/custom/speech bubble/left/paper">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<widget class="text" id="spCT" alignment="left, top" auto_size="none" />
+			</container>
+		</container>
+	</container>
+</panel>

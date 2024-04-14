@@ -61,7 +61,7 @@
 		<container class="horizontal_adaptive_container" gap="2" mode="distribute_equally" default_height="-1">
 
 			<container class="main_subtle_box" default_width="550">
-				<layout class="arrange_vertical_attachment" layout="600,-1" offset="0" gap="2" />
+				<layout class="arrange_vertical_attachment" layout="550,-1" offset="0" gap="2" />
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 
 				<list id="disallowed_view_property_ids">
@@ -98,7 +98,9 @@
 					</container>
 				</container>
 
-				<container class="tactics_recent_match_analysis_panel" entity_layout_id="it22" id="anLy" name="analysis"/>
+				<container class="tactics_recent_match_analysis_panel" entity_layout_id="it22" id="anLy" name="analysis">
+					<container class="player_attributes_comparison_panel" entity_layout_id="it11" file="player/player attributes comparison panel tactics" id="comP" hidden="true" name="comparison"/>
+				</container>
 
 			</container>
 

@@ -1,0 +1,131 @@
+﻿<panel save_session_state="true">
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="5" />
+
+	<string id="lack_of_depth_warning_colour" value="fg range1" />
+	<string id="lack_of_quality_warning_colour" value="fg range8" />
+	<list id="view_row_heights">
+		<integer id="0" value="30" />
+		<integer id="1" value="45" />
+	</list>
+	<attachment class="test_screen_size_attachment">
+		<list id="properties">
+			<record>
+				<flags id="alignment" value="horizontal" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="1200" />
+				<integer id="set_property" value="abbt" />
+				<boolean id="true_value" value="true" />
+				<boolean id="false_value" value="false" />
+			</record>
+		</list>
+	</attachment>
+
+	<!--Header-->
+	<container class="inner_subtle_box">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" />
+
+		<widget class="radio_button" group="0" icon_enabled="false" secondary_icon_enabled="true" secondary_icon="icons/16px/team report" secondary_icon_alignment="left" selected="true" auto_size="horizontal" alignment="centre_y" show_button_appearance="true" appearance="switches/toggle/normal/button">
+			<translation id="text" translation_id="361225" type="use" value="List[COMMENT: FR 8117 - calendar list view ]" />
+			<record id="click_event">
+				<integer id="event_id" value="vwSL" />
+				<integer id="valu" value="0" />
+			</record>
+		</widget>
+
+		<widget class="radio_button" id="posn" group="0" icon_enabled="false" secondary_icon_enabled="true" secondary_icon="icons/16px/squad shirt" secondary_icon_alignment="left" auto_size="horizontal" alignment="centre_y" show_button_appearance="true" appearance="switches/toggle/normal/button">
+			<translation id="text" translation_id="227884" type="use" value="Position" />
+			<record id="click_event">
+				<integer id="event_id" value="vwSL" />
+				<integer id="valu" value="1" />
+			</record>
+		</widget>
+
+		<widget class="link_button" hidden="true " id="lnkB" section="tacO" auto_size="horizontal" appearance="switches/toggle/normal/button">
+			<translation id="text" translation_id="363642" type="use" value="Go To Tactics[COMMENT: FR 8989 - text for a button to take you to the tactics page]" />
+		</widget>
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right" />
+
+			<widget class="tactic_popup_button" icon="icons/16px/tactics" appearance="buttons/subtle/normal/button" alignment="centre" auto_size="all" show_button_appearance="true" request_tactic="false" id="tsbn" dont_add_reset_text="true" value="0" />
+
+
+			<widget class="icon_button" id="SqOv" click_event="sqOP" icon="icons/16px/maximise" icon_alignment="right" auto_size="all" alignment="centre_y" appearance="buttons/subtle/normal/button">
+				<translation id="text" translation_id="595719" type="use" value="Squad Overview[COMMENT: AREA: International; SUB-AREA: National Pool; FR-BN: todo george webster; TONE: Formal; CHARLIMIT: None; NOTE; button text to go to an overview of the currently selected players from the national pool]" />
+			</widget>
+		</container>
+	</container>
+
+	<!--Main Area-->
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" />
+
+		<!--LHS-->
+		<container class="inner_subtle_box" width="380" id="pipo">
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="5" />
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+
+				<widget class="tactic_popup_button" auto_size_maximum_width="370" icon="icons/16px/tactics" appearance="buttons/subtle/normal/button" colour="black" alignment="centre" auto_size="all" show_button_appearance="false" request_tactic="false" id="tsbP" dont_add_reset_text="true" value="0" />
+			</container>
+
+			<!--Pitch-->
+			<container height="420">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-10" />
+				<widget class="pitch_with_squad_depth" id="ptch" display_centre_side_positions="true" vertical="true" pitch_alignment="centre_x,top" pitch_draw_goals="false" pitch_draw_markings="false" show_position_strength="false" pitch_show_names="false" pitch_draw_grass="true" pitch_line_colour="white" pitch_touchline_width_percentage="10" pitch_perspective="0" pitch_override_icon_size="2" line_width="1.5" pitch_vertical_padding="16" disable_animations="true">
+				</widget>
+			</container>
+
+			<!--Pitch Info-->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="10" vertical_gap="2" />
+
+				<!--Warning Box-->
+				<container class="inner_box_gradient" id="wrng">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="10" />
+
+					<list id="properties_to_forward">
+						<record target="ttlb" get_property="Icol" set_property="Icol" />
+						<record target="ttlb" get_property="Icol" set_property="fonc" />
+						<record target="ttlb" get_property="titl" set_property="text" />
+					</list>
+
+					<widget class="icon_button" id="ttlb" icon="icons/custom/national pool/warning" show_button_appearance="false" font="title" auto_size="vertical" multiline="true" size="normal" alignment="centre" icon_alignment="centre" />
+
+				</container>
+
+				<!--Help Text-->
+				<widget class="text" id="hlpt" alignment="centre">
+					<translation id="text" translation_id="597200" type="use" value="Choose a position to filter[COMMENT: AREA: International; SUB-AREA: National Pool; FR-BN: FM-23411; TONE: Formal; CHARLIMIT: None; NOTE; help text used with a pitch showing the positions that a table can be filtered to]" />
+				</widget>
+
+				<!--Similar To-->
+				<container id="smlC">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="4" />
+
+					<list id="properties_to_forward">
+						<record target="ttle" get_property="titl" set_property="text" />
+					</list>
+
+					<!--Similar To Title-->
+					<container height="28">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" vertical_alignment="vertical" />
+
+						<widget class="button" appearance="icons/custom/more/button" font="title" auto_size="none" alignment="left, centre_y" height="20" width="20">
+							<translation id="hint" translation_id="598192" type="use" value="'Similar to' allows players that are currently in the squad to be filtered, and shows the players in the national pool that have the most similar attributes.[COMMENT: AREA: National Pool; NOTE: hint string]" />
+						</widget>
+
+						<widget class="text" id="ttle" font="title" auto_size="horizontal" alignment="left, centre_y" size="large" />
+					</container>
+
+					<!--Similar To Table-->
+					<widget class="table" id="smlr" layout="-1,-1" auto_size="none" database_table_type="1" mode="select_rows, show_bullets" select_event="smPS" />
+				</container>
+			</container>
+		</container>
+
+		<!--RHS-->
+		<widget class="national_pool_panel" id="NatP" hdPB="true" hdCP="true" awSA="true" apEn="true" />
+	</container>
+</panel>

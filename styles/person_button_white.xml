@@ -1,0 +1,12 @@
+<properties>
+
+	<!-- list all the widgets to override along with their properties and override values -->
+	<list id="skin_style">
+		<record>
+			<string id="class_name" value="person_button" />
+			<colour id="colour" name="white" />
+			<boolean id="enforce_style" value="true" />
+		</record>
+	</list>
+
+</properties>

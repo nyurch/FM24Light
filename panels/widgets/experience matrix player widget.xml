@@ -1,0 +1,107 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+	<string id="skin_style" value="person_button_white"/>
+	<list id="properties_to_forward">
+		<record get_property="NFtg" set_property="NFtg" target="PnmP" />
+		<record get_property="rrep" set_property="rrep" target="bgCo" />
+		<record get_property="mode" set_property="Shwn" target="lbl2" />
+		<record get_property="indx" set_property="var1" target="lbl2" />
+		<record get_property="transparency" set_property="transparency" target="bgCo" />
+	</list>
+
+	<flags id="child_for_sort" value="PnmP" />
+
+	<container id="bgCo" class="main_box" appearance="boxes/main/contrast/paper">
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle,extend" />
+
+		<!--Picture-->
+		<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" width="45" height="50">
+			<record id="object_property">
+				<list id="get_properties">
+					<!--Facegen data request-->
+					<record get_property="fcgn" />
+					<!--Fake name request-->
+					<record get_property="Pfke" />
+					<record get_property="prpc" set_property="valu" />
+				</list>
+			</record>
+
+			<!--Hidden at min res-->
+			<attachment class="test_screen_size_attachment">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="horizontal" />
+						<integer id="min_value" value="1080" />
+						<integer id="max_value" value="100000" />
+						<integer id="set_property" value="hidden" />
+						<integer id="true_value" value="false" />
+						<integer id="false_value" value="true" />
+					</record>
+				</list>
+			</attachment>
+		</widget>
+
+		<!--Name & Info-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<container height="25">
+				<attachment_group class="vertical_arrange" />
+
+				<widget class="person_button" id="PnmP" info_popup_enabled="true" font="title" size="large" colour="white" style="bold">
+					<record id="object_property" get_property="PnmP" set_property="valu" />
+				</widget>
+			</container>
+
+			<widget class="game_formatted_label" alignment="left,centre_y" size="normal" colour="faded white" auto_size="vertical" multiline="false">
+				<record id="format">
+					<translation id="text" translation_id="388547" type="use" value="[%number#1] year-old [%player_description#2][COMMENT: transfer window opening news, rumoured player moving, graphical display]" />
+					<integer id="var2" value="vf_player_description" />
+				</record>
+
+				<record id="object_property">
+					<list id="get_properties">
+						<!-- age -->
+						<record get_property="Page" set_property="var1" dont_set_object="true" />
+						<!-- description -->
+						<record get_property="Pdes" set_property="var2" dont_set_object="true" />
+					</list>
+				</record>
+			</widget>
+
+			<widget class="game_formatted_label" id="lbl2" alignment="left,centre_y" size="normal" colour="faded white" auto_size="vertical" multiline="false" hidden="true">
+				<record id="format">
+					<translation id="text" translation_id="557843" type="use" value="|b||c:text|[%number#1-nth]|/c||/b| choice in the Squad Planner[COMMENT: AREA: Squad Planner; NOTE: details where the player ranks in their position within the overall squad planner]" />
+				</record>
+			</widget>
+
+
+
+		</container>
+
+		<!--Status-->
+		<widget class="player_status_button" auto_size="horizontal" hide_if_empty="true">
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+			<record id="object_property">
+				<list id="get_properties">
+					<record get_property="Pnfo" set_property="valu" />
+				</list>
+			</record>
+
+			<!--Hidden at min res-->
+			<attachment class="test_screen_size_attachment">
+				<list id="properties">
+					<record>
+						<flags id="alignment" value="horizontal" />
+						<integer id="min_value" value="1080" />
+						<integer id="max_value" value="100000" />
+						<integer id="set_property" value="hidden" />
+						<integer id="true_value" value="false" />
+						<integer id="false_value" value="true" />
+					</record>
+				</list>
+			</attachment>
+		</widget>
+
+	</container>
+</panel>

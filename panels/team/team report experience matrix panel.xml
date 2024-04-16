@@ -3,10 +3,10 @@
 	<boolean id="should_force_refresh" value="true" />
 
 	<!--These apply to the player widgets and the key-->
-	<string id="important_colour" value="bg purple darker" />
+	<string id="important_colour" value="fg magenta" />
 	<string id="squad_depth_colour" value="blue 700" />
 	<string id="youth_colour" value="teal 500" />
-	<integer id="transparency" value="0.7" />
+	<integer id="transparency" value="1.0" />
 
 	<attachment_group class="vertical_arrange" vertical_alignment="middle, extend" vertical_offset="0" vertical_inset="0" vertical_gap="6" />
 

@@ -1,0 +1,71 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+	<container entity_layout_id="at0B" id="dtCn">
+		<layout class="horizontal_arrange" horizontal_layout="300,-1,300" />
+		<boolean id="should_force_refresh" value="true"/>
+
+		<container entity_layout_id="at0K" id="stfC">
+			<string id="remove_if" value="use_limited_staff_numbers"/>
+			<layout class="vertical_arrange" vertical_layout="100,-1" />
+			<container class="main_subtle_box" entity_layout_id="at02" id="at02" name="main details container">
+				<layout class="vertical_arrange" vertical_layout="-1,-1" />
+				<string id="size" value="large" />
+				<translation id="text" translation_id="395169" type="use" value="Competition Performance[COMMENT: FR 11767, board confidence section label]" />
+				<widget class="text" entity_layout_id="at0?" alignment="left,top" id="lgPT" auto_size="vertical" needs_height="true">
+					<string id="style" value="bold" />
+					<string id="size" value="large" />
+					<translation id="text" value="-" translation_id="233089" type="use" />
+				</widget>
+				<widget class="text" entity_layout_id="at0@" alignment="left,bottom" id="wdlT" auto_size="vertical" needs_height="true"/>
+			</container>
+			<container class="main_subtle_box" entity_layout_id="at07" id="at07">
+				<string id="size" value="large" />
+				<translation id="text" translation_id="321152" type="use" value="Team Report[COMMENT: Manager Main/Top Menu; link to team report screen]" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+				<widget class="text" entity_layout_id="at0A" id="rptT"/>
+			</container>
+		</container>
+
+		<container>
+			<layout class="vertical_arrange" vertical_layout="60,-1" />
+			<container class="bordered_box" entity_layout_id="at00" id="at00" file="team/youth development manager tactics bar" height="60" name="manager and tactic details container" navigation_container="true"/>
+			<container entity_layout_id="at0b" file="team/youth development team overview table subpanel"/>
+		</container>
+
+		<container>
+			<layout class="vertical_arrange" vertical_layout="-1" />
+			<container class="team_staff_subteam_overview_panel" entity_layout_id="at0&gt;" id="ovvw" file="team/team staff subteam overview dev centre" navigation_container="true">
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+			</container>
+		</container>
+
+	</container>
+
+	<container entity_layout_id="at0C" id="cntc" name="human in control cont">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+		<container entity_layout_id="at0E" id="at0E">
+			<layout class="vertical_arrange" vertical_layout="-1,60,60,-1" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+			<container/>
+			<widget class="text" entity_layout_id="at0D" alignment="centre_x,centre_y" id="hmCL" auto_size="vertical" needs_height="true">
+				<string id="style" value="semi_bold" />
+				<string id="size" value="large" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+			</widget>
+			<container entity_layout_id="at0H" id="at0H" auto_size="vertical">
+				<layout class="horizontal_arrange" horizontal_layout="-1,150,150,-1" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+				<container/>
+				<widget class="link_button" entity_layout_id="at0I" alignment="centre_y,left" id="tmSc" auto_size="all" needs_width="true" needs_height="true">
+				</widget>
+				<widget class="link_button" entity_layout_id="at0J" alignment="centre_y,right" id="reLb" auto_size="all" needs_width="true" needs_height="true">
+					<string id="section" value="mntr" />
+					<translation id="text" translation_id="335274" type="use" value="Responsibilities[COMMENT: Manager main/top menu: national team options when team name is not visible]" />
+				</widget>
+				<container/>
+			</container>
+			<container/>
+		</container>
+	</container>
+</panel>

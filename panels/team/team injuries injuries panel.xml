@@ -79,7 +79,7 @@
 					<record id="hist" type="line">
 						<record id="line_style" colour="grey1" width="2" dashed="4" gap="2"/>
 					</record>
-					<record id="curr" type="line" line_colour="text" line_width="2" point_colour="white" point_radius="3" point_radius_gap="5"/>
+					<record id="curr" type="line" line_colour="text" line_width="2" point_colour="black" point_radius="3" point_radius_gap="5"/>
 				</list>
 			</widget>
 		</container>

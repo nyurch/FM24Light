@@ -1,4 +1,12 @@
 <panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<widget class="picture" file="backgrounds/default" id="bgnd">
+		<boolean id="scale_picture" value="true" />
+		<boolean id="keep_aspect_ratio" value="false" />
+	</widget>
+
+<container>
 	<layout class="arrange_vertical_attachment" layout="75,315, -1" offset="0">
 		<global id="gap" name="ui.main_contrast_box_gap" />
 	</layout>
@@ -107,5 +115,6 @@
 				<translation id="text" translation_id="241285" type="use" value="Squad end of season break[COMMENT: END_OF_SEASON_HOLIDAY_NEWS; players begin post-season holiday; headline]" />
 			</widget>
 		</container>
+	</container>
 	</container>
 </panel>

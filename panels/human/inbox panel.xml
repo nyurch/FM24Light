@@ -45,11 +45,11 @@
 	<colour id="news_category_text_colour_transfers" name="news_category_colour_transfers"/>
 	<colour id="news_category_text_colour_tutorial" name="news_category_colour_tutorial"/>
 
-	<container id="indm">
+	<container class="plain_box" appearance="fake/appearance/for/transparency" id="indm">
 		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 		<!-- This extra container layer ('indm') is used for holding a modal_popup_panel. We would prefer to use the 'indp' panel below but cannot due to bug #68215 -->
 
-		<container>
+		<container class="plain_box" appearance="fake/appearance/for/transparency">
 			<attachment_group class="horizontal_arrange" horizontal_layout="-3, 1, -9" horizontal_offset="0" horizontal_gap="0" vertical_inset="0">
 			</attachment_group>
 
@@ -58,7 +58,7 @@
 
 				<container file="human/inbox buttons" id="BTNS" height="40" navigation_container="true"/>
 
-				<container id="indb" navigation_container="true">
+				<container class="main_contrast_box" red_replacement="card bg dar" id="indb" navigation_container="true">
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
 					<widget class="table" id="indx" layout="-1" mode="select_rows, fill_rows, dont_allow_empty_selection" fixed_size_rows="false" auto_size_rows="true" navigation_focus_target="true" default_focus="true">

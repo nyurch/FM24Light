@@ -7,7 +7,7 @@
 	<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
 
 	<!-- team table -->
-	<container class="main_box" width="245">
+	<container class="main_box" width="245"  navigation_container="true" navigation_container_allow_empty="true">
 		<translation id="text" translation_id="229362" type="use" value="Teams" />
 		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 

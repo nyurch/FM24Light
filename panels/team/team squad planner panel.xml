@@ -390,8 +390,8 @@
 							<container id="anC1">
 								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 							</container>
-							<container id="anC2">
-								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+							<container id="anC2" background_colour="light text bg">
+								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10" />
 							</container>
 							<container id="anC3">
 								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />

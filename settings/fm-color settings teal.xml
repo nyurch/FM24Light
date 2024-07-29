@@ -89,6 +89,7 @@
 	<colour name="bg lighter"														value="rgb(245,248,250)"/>
 	<colour name="bg"																value="rgb(240,245,248)"/>
 	<colour name="bg darker"														value="rgb(233,238,241)"/>
+	<colour name="light text bg"													value="rgb(193,216,230)"/>
 	<colour name="bg alpha"															value="rgba(240,245,248,0.8)"/>
 	<colour name="bg small alpha"													value="rgba(240,245,248,0.94)"/>
 	<colour name="bg large alpha"													value="rgba(240,245,248,0.5)"/>

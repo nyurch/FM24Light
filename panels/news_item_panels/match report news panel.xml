@@ -20,7 +20,6 @@
 					<container>
 						<attachment_group class="horizontal_arrange" horizontal_alignment="right" horizontal_offset="0" horizontal_gap="2" vertical_inset="0"/>
 
-
 						<widget class="text" auto_size="horizontal" colour="faded text" alignment="left,centre_y">
 							<translation id="text" translation_id="376419" type="use" value="Attendance:[COMMENT: match report news panel, attendance label]"/>
 						</widget>
@@ -38,6 +37,44 @@
 				</container>
 
 				<widget class="horizontal_divider" />
+
+				<container height="400">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1,-1,-1" horizontal_offset="0" horizontal_gap="8" vertical_offset="0" />
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+						<widget class="data_analyst_visualisation_widget" id="vis1" height="250" visualisation_type="momentum" data_type="fixture" file="widgets/data analyst visualisation mini">
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<record id="widget_properties" type="0" />
+						</widget>
+					</container>
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+						<widget class="data_analyst_visualisation_widget" id="vis2" height="250" visualisation_type="shot_map" data_type="fixture" file="widgets/data analyst visualisation mini">
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<record id="widget_properties" type="0"/>
+						</widget>
+					</container>
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+						<widget class="data_analyst_visualisation_widget" id="vis3" height="250" visualisation_type="shot_map" data_type="fixture" file="widgets/data analyst visualisation mini">
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<record id="widget_properties" type="1"/>
+						</widget>
+					</container>
+
+					<container class="inner_subtle_box">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+						<widget class="data_analyst_visualisation_widget" id="asdb" visualisation_type="pass_map_comparison" data_type="fixture" file="widgets/data analyst visualisation mini">
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+					</container>
+
+				</container>
+
+				<widget class="horizontal_divider" />
 				<widget class="inbox_body_text" id="bdtx"/>
 			</container>
 
@@ -49,7 +86,6 @@
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 				</container>
 
-				<!-- shots and possession stats -->
 				<container class="inner_subtle_box" height="95">
 					<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0" vertical_inset="0"/>
 
@@ -161,6 +197,7 @@
 					<!-- incidents are created here -->
 				</container>
 			</container>
+
 		</container>
 	</container>
 </panel>

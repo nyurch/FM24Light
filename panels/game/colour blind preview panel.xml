@@ -1,0 +1,141 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="10" />
+
+	<widget class="text" auto_size="vertical" spec="text" font="text" colour="black">
+		<translation id="text" translation_id="560974" type="use" value="You can test how the intensity option will look on the colour scale and various in-game elements here:[COMMENT: AREA: Preferences; SUB-AREA: Description; NOTE: Explaining the elements below and how they would look with the different colour blind options, can't be feminised]" />
+	</widget>
+
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="4" />
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="black" alignment="centre_y">
+			<translation id="text" translation_id="560975" type="use" value="Foreground colours[COMMENT: AREA: Preferences; SUB-AREA: Description]" />
+		</widget>
+		<container height="26">
+			<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1" horizontal_gap="0" />
+
+			<container class="contrast_box" appearance="boxes/contrast/standard/left/paper" red_replacement="fg orange" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg yellow" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg lime" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg green" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg teal" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg cyan" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg blue" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg purple" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg pink" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/right/paper" red_replacement="fg red" />
+		
+		</container>
+	</container>
+	
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="4" />
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="black" alignment="centre_y">
+			<translation id="text" translation_id="560976" type="use" value="Background colours[COMMENT: AREA: Preferences; SUB-AREA: Description]" />
+		</widget>
+
+		<container height="26">
+			<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1" horizontal_gap="0" />
+
+			<container class="contrast_box" appearance="boxes/contrast/standard/left/paper" red_replacement="bg orange" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg yellow" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg lime" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg green" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg teal" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg cyan" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg blue" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg purple" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="bg pink" />
+			<container class="contrast_box" appearance="boxes/contrast/standard/right/paper" red_replacement="bg red" />
+
+		</container>
+	</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="4" />
+			<widget class="text" auto_size="vertical" spec="text" font="title" colour="black" alignment="centre_y">
+				<translation id="text" translation_id="560977" type="use" value="Rating range[COMMENT: AREA: Preferences; SUB-AREA: Description for colour blind options, Low, Mid 1, Mid 2, High]" />
+			</widget>
+
+			<container height="26">
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1" horizontal_gap="0" />
+		
+				<container class="contrast_box" appearance="boxes/contrast/standard/left/paper" red_replacement="fg range1" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range2" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range3" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range4" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range5" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range6" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range7" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range8" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range9" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range10" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range11" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range12" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range13" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range14" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range15" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range16" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range17" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range18" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/middle/paper" red_replacement="fg range19" />
+				<container class="contrast_box" appearance="boxes/contrast/standard/right/paper" red_replacement="fg range20" />
+
+		</container>
+	</container>
+
+	<container height="46">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0" />
+		
+		<widget class="picture" file="icons/custom/accessibility/kit" image_alignment="centre" red_replacement="fg range1" />
+		<widget class="picture" file="icons/custom/accessibility/kit" image_alignment="centre" red_replacement="fg range10" />
+		<widget class="picture" file="icons/custom/accessibility/kit" image_alignment="centre" red_replacement="fg range15" />
+		<widget class="picture" file="icons/custom/accessibility/kit" image_alignment="centre" red_replacement="fg range20" />
+
+	</container>
+
+	<container height="20">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0" />
+
+		<!--TITLE FONT-->
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="fg range1" alignment="centre">
+			<translation id="text" translation_id="289501" type="use" value="Low[COMMENT: preferences: low graphical detail level, option]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="fg range10" alignment="centre">
+			<translation id="text" translation_id="560978" type="use" value="Mid 1[COMMENT: AREA: Preferences; SUB-AREA: Colour Blind description; NOTE: First mid level colour blind options, Low, Mid 1, Mid 2, High]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="fg range15" alignment="centre">
+			<translation id="text" translation_id="560979" type="use" value="Mid 2[COMMENT: AREA: Preferences; SUB-AREA: Colour Blind description; NOTE: Second mid level colour blind options, Low, Mid 1, Mid 2, High]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="title" colour="fg range20" alignment="centre">
+			<translation id="text" translation_id="289499" type="use" value="High[COMMENT: preferences: high graphical detail level, option]" />
+		</widget>
+
+	</container>
+
+	<container height="20">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="0" />
+		
+		<!--TEXT FONT-->
+		<widget class="text" auto_size="vertical" spec="text" font="text" colour="fg range1" alignment="centre">
+			<translation id="text" translation_id="289501" type="use" value="Low[COMMENT: preferences: low graphical detail level, option]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="text" colour="fg range10" alignment="centre">
+			<translation id="text" translation_id="560980" type="use" value="Mid 1[COMMENT: AREA: Preferences; SUB-AREA: Colour Blind description; NOTE: First mid level]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="text" colour="fg range15" alignment="centre">
+			<translation id="text" translation_id="560981" type="use" value="Mid 2[COMMENT: AREA: Preferences; SUB-AREA: Colour Blind description; NOTE: Second mid level]" />
+		</widget>
+
+		<widget class="text" auto_size="vertical" spec="text" font="text" colour="fg range20" alignment="centre">
+			<translation id="text" translation_id="289499" type="use" value="High[COMMENT: preferences: high graphical detail level, option]" />
+		</widget>
+		
+	</container>
+	
+</panel>

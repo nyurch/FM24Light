@@ -1,0 +1,32 @@
+﻿<panel>
+	<layout class="horizontal_arrange" horizontal_layout="-1,-1" />
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" gap="8" offset="0" />
+
+		<widget class="link_button_title" font="title" colour="positive" auto_size="all" section="TSRp" red_replacement="positive">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0"  />
+			<translation id="text" translation_id="420664" type="use" value="Strengths[COMMENT: team report, strengths (positives) section]" />
+		</widget>
+
+		<widget class="table" mode="fill_rows" id="prot" layout="-1" inset="0" auto_size="none" fixed_size_rows="false" auto_size_rows="true">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"  />
+		</widget>
+
+	</container>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top,extend" gap="8" offset="0" />
+
+		<widget class="link_button_title" spec="text" font="title" colour="negative" auto_size="all" section="TSRp" red_replacement="negative">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0"  />
+			<translation id="text" translation_id="420665" type="use" value="Weaknesses[COMMENT: team report, weaknesses (negatives) section]" />
+		</widget>
+
+		<widget class="table" mode="fill_rows" id="cont" layout="-1" inset="0" auto_size="none" fixed_size_rows="false" auto_size_rows="true">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"  />
+		</widget>
+
+	</container>
+
+</panel>

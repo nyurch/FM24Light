@@ -527,7 +527,7 @@
 	<colour name="trial out"											value="green 900"/>
 	<colour name="shortlisted"											value="dark orange"/>
 	<colour name="golden generation"									value="gold"/>
-	<colour name="human controlled"										value="cyan 900"/>
+	<colour name="human controlled"										value="fg accent"/>
 	<colour name="feeder club"											value="purple 900"/>
 
 	<!-- Status Button Colours -->

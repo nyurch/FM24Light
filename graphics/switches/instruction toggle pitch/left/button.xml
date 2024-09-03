@@ -10,13 +10,13 @@
 	<!-- the image will only slice in the directions slicing values are provided for-->
 	<record id="image_slices" left="25" right="4"/>
 
-	<colour id="red_replacement" name="teal 900"/>
-	<colour id="blue_replacement" name="teal 900"/>
+	<colour id="red_replacement" name="fg accent"/>
+	<colour id="blue_replacement" name="fg accent"/>
 
 	<record id="font_spec">
 		<flags id="alignment" value="left,centre_y"/>
 		<flags id="size" value="normal"/>
-		<flags id="colour" value="teal 900"/>
+		<flags id="colour" value="fg accent"/>
 	</record>
 
 </properties>

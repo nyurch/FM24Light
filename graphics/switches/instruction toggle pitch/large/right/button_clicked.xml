@@ -12,12 +12,12 @@
 
 	<colour id="red_replacement" name="white"/>
 	<colour id="blue_replacement" name="personalised instructions pitch"/>
-	<colour id="green_replacement" name="teal 900"/>
+	<colour id="green_replacement" name="fg accent"/>
 	
 	<record id="font_spec">
 		<flags id="alignment" value="right,centre_y"/>
         <flags id="style" value="semi_bold"/>
-		<flags id="colour" value="teal 900"/> 
+		<flags id="colour" value="fg accent"/> 
 	</record>
 
 	

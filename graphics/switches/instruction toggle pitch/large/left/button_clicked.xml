@@ -16,7 +16,7 @@
 	<record id="font_spec">
 		<flags id="alignment" value="left,centre_y"/>
 		<flags id="style" value="semi_bold"/> 
-		<flags id="colour" value="teal 900"/> 
+		<flags id="colour" value="fg accent"/> 
 	</record>
 
 	

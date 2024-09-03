@@ -31,14 +31,14 @@
 				<container>
 					<attachment_group class="horizontal_arrange_autosize" horizontal_gap="5" horizontal_offset="0" vertical_inset="0"/>
 					<widget class="picture" file="icons/16px/tactics" width="20" height="30" name="tactics icon">
-						<string id="red_replacement" value="teal 900"/>
+						<string id="red_replacement" value="fg accent"/>
 						<string id="image_alignment" value="centre"/>
 						<layout class="stick_to_object_attachment" />
 					</widget>
 					<widget class="text" alignment="centre_y,left" auto_size="horizontal" needs_width="true" height="30" name="tactic title">
 						<string id="always_hide" value="false"/>
 						<string id="font" value="title"/>
-						<string id="colour" value="teal 900"/>
+						<string id="colour" value="fg accent"/>
 						<translation id="text" value="Tactics" translation_id="230056" type="use"/>
 						<layout class="stick_to_object_attachment"/>
 					</widget>

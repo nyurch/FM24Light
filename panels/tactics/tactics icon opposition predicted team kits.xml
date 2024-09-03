@@ -26,7 +26,7 @@
 
 	</container>
 
-	<container class="main_transparent_box_no_margin" red_replacement="teal 900">
+	<container class="main_transparent_box_no_margin" red_replacement="fg accent">
 		<attachment_group class="vertical_arrange_autosize" vertical_alignment="fill" vertical_gap="-1"/>
 
 		<widget class="text" id="name" colour="text" size="8" alignment="centre,can_scale" auto_size="vertical" multiline="false" style="semi_bold"/>

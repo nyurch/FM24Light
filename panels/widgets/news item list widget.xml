@@ -1,5 +1,5 @@
 <panel height="85">
-	<colour id="unread_headline_text_colour" name="teal"/>
+	<colour id="unread_headline_text_colour" name="fg accent"/>
 	<colour id="read_headline_text_colour" name="read headline"/>
 	<colour id="selected_headline_text_colour" name="selected headline"/>
 	<colour id="must_respond_headline_text_colour" name="red 900"/>

@@ -20,7 +20,7 @@
 			</attachment>
 			<list id="headings">
 				<record alignment="left, centre_y">
-					<flags id="colour" value="teal 900" />
+					<flags id="colour" value="fg accent" />
 					<flags id="font" value="title" />
 					<translation id="text" translation_id="466515" type="use" value="Preset Styles[COMMENT: FR 23334; tactics panel; tactical styles popup; table heading for preset styles list]" />
 				</record>
@@ -48,7 +48,7 @@
 		<widget class="table" id="CuST" layout="-1, 25" mode="fill_rows, stripe_rows" auto_size="all" navigation_container="true" fixed_row_height="25" row_height="29">
 			<list id="headings">
 				<record alignment="left, centre_y" column_span="2">
-					<flags id="colour" value="teal 900" />
+					<flags id="colour" value="fg accent" />
 					<flags id="font" value="title" />
 					<translation id="text" translation_id="466516" type="use" value="Custom Styles[COMMENT: FR 23334; tactics panel; tactical styles popup; table heading for custom styles list]" />
 				</record>

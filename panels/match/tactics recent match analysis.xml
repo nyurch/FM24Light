@@ -5,7 +5,7 @@
 	<container>
 		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
 
-		<widget class="link_button" id="LnKB" section="TeRM" auto_size="all" colour="teal 900" red_replacement="teal 900" disabled_colour="teal 900" blue_replacement="teal 900">
+		<widget class="link_button" id="LnKB" section="TeRM" auto_size="all" colour="fg accent" red_replacement="fg accent" disabled_colour="fg accent" blue_replacement="fg accent">
 			<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
 			<translation id="text" translation_id="450754" type="use" value="Recent Matches Analysis[COMMENT: Match Analysis Tab Title - Multiple recent Matches analysis]" />
 		</widget>

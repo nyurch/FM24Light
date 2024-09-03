@@ -12,7 +12,7 @@
 			<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1,-1,75" offset="0" gap="8" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-			<container class="contrast_box_no_margin" red_replacement="teal 900" id="styC">
+			<container class="contrast_box_no_margin" red_replacement="fg accent" id="styC">
 				<layout class="arrange_vertical_attachment" layout="30" offset="0" gap="8" />
 				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true" />
 				<widget class="tactics_tactical_style_popup_button" id="TcSt" widget_type="tactics_tactical_style_popup_panel" popup_alignment="left, bottom" appearance="" font="title" size="normal" alignment="centre_x,centre_y" colour="white" secondary_icon_colour="white" disabled_colour="faded black">

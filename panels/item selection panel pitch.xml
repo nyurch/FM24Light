@@ -18,7 +18,7 @@
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-	<container class="inner_box" id="titl" red_replacement="fg" colour="teal 900">
+	<container class="inner_box" id="titl" red_replacement="fg" colour="fg accent">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="4,0,0,0" apply_to_children="true" />
 
 		<!-- buttons area -->

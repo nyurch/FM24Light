@@ -250,7 +250,6 @@
 	<colour name="calendar_cell_border"												value="fg"/>
 	<colour name="edit_box_background"												value="fg"/>
 	<colour name="edit_box_border"													value="bg accent"/>
-	<colour name="sidebar"															value="rgb(10,5,14)"/>
 	<colour name="processing_box_background"										value="bg"/>
 	<colour name="pitch_box_background"												value="rgb(0,125,63)"/>
 	<colour name="style_background"													value="teal 900"/>

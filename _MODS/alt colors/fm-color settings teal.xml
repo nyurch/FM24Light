@@ -3,18 +3,23 @@
 	<!-- Colour Scheme -->
 	<!-- The following colours define the base colours scheme for the skin. The colours are references by other colour names in fm colours.xml -->
 
+	<!-- Default theme colors -->
+	<colour name="lighter"												value="rgb(27,186,204)" />
+	<colour name="normal"												value="rgb(0,167,179)" />
+	<colour name="darker"												value="rgb(20,141,154)" />
+
 	<!-- Default accent colours used when no object colours are available -->
 	<colour name="default accent"													value="fg tertiary"/>
 	<colour name="default dark accent"												value="bg accent"/>
-	<colour name="default primary"													value="rgb(20,141,154)"/>
+	<colour name="default primary"													value="lighter"/>
 	<colour name="default secondary"												value="rgb(240,245,248)"/>
 	<colour name="match accent"														value="fg tertiary"/>
 
 	<!-- FAKE Default FM purple colours -->
-	<colour name="FM purple dark" 							value="rgb(0,95,102)" />
-	<colour name="FM purple" 								value="rgb(0,131,140)" />
-	<colour name="FM purple light" 							value="rgb(0,167,179)" />
-	<colour name="FM purple ultra violet" 					value="rgb(27,186,204)" />
+	<colour name="FM purple dark" 							value="darker" />
+	<colour name="FM purple" 								value="normal" />
+	<colour name="FM purple light" 							value="lighter" />
+	<colour name="FM purple ultra violet" 					value="darker" />
 	<colour name="FM orange"								value="rgb(255,80,30)" />
 
 	<!-- Foreground colours - used for text, icon etc -->
@@ -23,8 +28,8 @@
 	<colour name="fg darker"														value="rgb(0,0,0)"/>
 	<colour name="fg alpha"															value="rgba(1,2,20,0.7)"/>
 	<colour name="fg info"															value="rgb(239,242,244)"/>
-	<colour name="fg accent"														value="rgb(20,141,154)"/>
-	<colour name="fg tertiary"														value="rgb(20,141,154)"/>
+	<colour name="fg accent"														value="darker"/>
+	<colour name="fg tertiary"														value="lighter"/>
 
 	<colour name="fg range1"														value="rgb(182,32,32)" />
 	<colour name="fg range2"														value="rgb(203,36,36)" />
@@ -86,9 +91,9 @@
 	<colour name="fg grey darker"													value="grey 900" />
 
 	<!-- Background colours - used for background, boxes etc -->
-	<colour name="bg lighter"														value="rgb(245,248,250)"/>
-	<colour name="bg"																value="rgb(240,245,248)"/>
-	<colour name="bg darker"														value="rgb(233,238,241)"/>
+	<colour name="bg lighter"														value="rgb(255,255,255)"/>
+	<colour name="bg"																value="rgb(245,245,245)"/>
+	<colour name="bg darker"														value="rgb(240,240,240)"/>
 	<colour name="light text bg"													value="rgb(193,216,230)"/>
 	<colour name="bg alpha"															value="rgba(240,245,248,0.8)"/>
 	<colour name="bg small alpha"													value="rgba(240,245,248,0.94)"/>
@@ -96,7 +101,7 @@
 	<colour name="bg info"															value="rgb(39,103,192)"/>
 	<colour name="bg positive"														value="rgb(16,165,68)"/>
 	<colour name="bg alert"															value="rgb(202,7,49)"/>
-	<colour name="bg accent"														value="rgb(0,129,138)"/>
+	<colour name="bg accent"														value="lighter"/>
 	<colour name="bg tertiary"														value="rgb(235,240,243)"/>
 	<colour name="bg negative"														value="rgb(182,40,40)"/>
 
@@ -161,9 +166,9 @@
 	<colour name="card fg lighter"													value="rgb(10,20,20)"/>
 	<colour name="card fg"															value="rgb(1,0,20)"/>
 	<colour name="card fg darker"													value="rgb(0,0,0)"/>
-	<colour name="card bg lighter"													value="rgb(250,252,254)"/>
-	<colour name="card bg"															value="rgb(240,242,246)"/>
-	<colour name="card bg darker"													value="rgb(230,232,236)"/>
+	<colour name="card bg lighter"													value="rgb(255,255,255)"/>
+	<colour name="card bg"															value="rgb(245,245,245)"/>
+	<colour name="card bg darker"													value="rgb(240,240,240)"/>
 
 	<colour name="shadow"															value="rgb(0,0,0)" />
 
@@ -189,7 +194,7 @@
 	<colour name="continue text"													value="bg" />
 	<colour name="continue text match"												value="bg" />
 	<colour name="sidebar text"														value="white"/>
-	<colour name="sidebar"															value="rgb(69,90,100)"/>
+	<colour name="sidebar"															value="lighter"/>
 	<colour name="news ticker"														value="fg alert" />
 	<colour name="accent button text"												value="fg"/>
 
@@ -223,8 +228,8 @@
 	<colour name="toggle_button"													value="fg"/>
 	<colour name="primary_button"													value="fg accent"/>
 	<colour name="view_button"														value="fg"/>
-	<colour name="link_button"														value="rgb(20,141,154)"/>
-	<colour name="link_button_inbox"												value="rgb(20,141,154)"/>
+	<colour name="link_button"														value="fg accent"/>
+	<colour name="link_button_inbox"												value="fg accent"/>
 	<colour name="conversation_statement_button"									value="fg"/>
 	<colour name="conversation_statement_selected_button"							value="cyan 400"/>
 	<colour name="standard_label"													value="bg info"/>
@@ -237,8 +242,8 @@
 	<colour name="popup_box_background"												value="bg lighter"/>
 	<colour name="light_box_background"												value="bg lighter"/>
 	<colour name="box_background"													value="bg"/>
-	<colour name="hint_background"													value="rgb(20,141,154)"/>
-	<colour name="hint_border"														value="rgb(20,141,154)"/>
+	<colour name="hint_background"													value="fg accent"/>
+	<colour name="hint_border"														value="fg accent"/>
 	<colour name="alpha_box_background"												value="rgb(241,243,250)"/>
 	<colour name="dark_box_background"												value="bg darker"/>
 	<colour name="contrast_box_background"											value="white"/>
@@ -252,7 +257,7 @@
 	<colour name="edit_box_border"													value="bg accent"/>
 	<colour name="processing_box_background"										value="bg"/>
 	<colour name="pitch_box_background"												value="rgb(0,125,63)"/>
-	<colour name="style_background"													value="teal 900"/>
+	<colour name="style_background"													value="fg accent"/>
 
 	<!-- Scrollbar colours -->
 	<colour name="scrollbar"														value="fg"/>
@@ -743,7 +748,7 @@
 	<!-- picking button colour -->
 	<colour name="picking player unavailable"								value="bg negative"/>
 	<!-- player unavailable -->
-	<colour name="picking player available"									value="teal 900"/>
+	<colour name="picking player available"									value="fg accent"/>
 	<!-- player available - only used on the tactics pitch-->
 	<colour name="picking player first team"								value="bg blue"/>
 	<!-- senior player available for no senior team- only used on the tactics pitch-->
@@ -895,7 +900,7 @@
 	<!-- injury report overall risk -->
 	<colour name="overall_risk_box_colour_low"								value="bg positive"/>
 	<colour name="overall_risk_box_colour_normal"							value="bg dark"/>
-	<colour name="overall_risk_box_colour_increased"						value="yellow 500"/>
+	<colour name="overall_risk_box_colour_increased"						value="yellow 700"/>
 	<colour name="overall_risk_box_colour_high"								value="bg range5"/>
 	<colour name="overall_risk_box_colour_very_high"						value="bg negative"/>
 
@@ -909,9 +914,9 @@
 	<colour name="injury_proneness_colour_very_high"						value="fg range1"/>
 
 	<!-- injury report injury severity -->
-	<colour name="injury_severity_colour_slight"							value="blue 500"/>
-	<colour name="injury_severity_colour_minor"								value="amber 600"/>
-	<colour name="injury_severity_colour_moderate"							value="orange 600"/>
+	<colour name="injury_severity_colour_slight"							value="blue 800"/>
+	<colour name="injury_severity_colour_minor"								value="amber 800"/>
+	<colour name="injury_severity_colour_moderate"							value="orange 800"/>
 	<colour name="injury_severity_colour_major"								value="negative"/>
 
 	<!-- injury report body -->
@@ -995,8 +1000,8 @@
 	<colour name="breaking news fg"												value="rgb(255,222,58)"/>
 	<colour name="breaking news text"											value="rgb(0,0,0)"/>
 
-	<colour name="comp news sidebar primary"									value="rgb(115,120,125)"/>
-	<colour name="comp news sidebar secondary"									value="rgb(45,47,49)"/>
+	<colour name="comp news sidebar primary"									value="darker"/>
+	<colour name="comp news sidebar secondary"									value="lighter"/>
 
 	<colour name="goals_scored_0_colour" red="20" green="140" blue="55" alpha="60"/>
 	<colour name="goals_scored_1_10_colour" red="20" green="140" blue="55" alpha="75"/>
@@ -1446,7 +1451,7 @@
 	<colour name="region southern africa map mask colour" red="25" green="25" blue="105"/>
 
 	<!-- Feed -->
-	<colour name="news item"											value="rgb(0,117,121)"/>
+	<colour name="news item"											value="rgb(2,61,112)"/>
 	<colour name="social media"											value="rgb(11,97,162)"/>
 	<colour name="feed box"												value="bg lighter"/>
 	<colour name="social media linked box"								value="bg"/>
@@ -1468,11 +1473,11 @@
 	<colour name="website faded text"									value="fg alpha"/>
 
 	<!-- Processing -->
-	<colour name="world_news_background"													value="teal 900"/>
+	<colour name="world_news_background"													value="fg accent"/>
 	<!-- World news background colour - red_replacement -->
 	<colour name="processing_box_background"												value="rgb(202,219,239)"/>
 	<!-- Processing panel hints background - red_replacement -->
-	<colour name="processing_hints_background"												value="rgb(44,44,44)"/>
+	<colour name="processing_hints_background"												value="rgb(2,61,112)"/>
 	<!-- Processing box background colour - red_replacement -->
 	<colour name="processing_box_border"													value="fg"/>
 	<!-- Processing box border - blue_replacement -->
@@ -2032,8 +2037,8 @@
 	<colour name="cup draw team slots active greenrepl"				value="rgb(255,214,0)"/>
 	<colour name="cup draw react bgnd"								value="rgb(0,0,75)"/>
 	<colour name="cup draw react"									value="rgb(13,58,255)"/>
-	<colour name="top news"											value="rgb(51,71,78)"/>
-	<colour name="top news related"									value="rgb(88,109,121)"/>
-	<colour name="topbar menu"										value="rgb(120,144,156)"/>
+	<colour name="top news"											value="darker"/>
+	<colour name="top news related"									value="lighter"/>
+	<colour name="topbar menu"										value="darker"/>
 	<colour name="fg magenta"										value="rgb(187,38,73)"/>
 </properties>

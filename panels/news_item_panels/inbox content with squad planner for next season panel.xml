@@ -1,0 +1,12 @@
+﻿<panel height="680">
+	<list id="properties_to_forward">
+		<record get_property="Ttea" set_property="objt" target="SqPl" />
+	</list>
+
+	<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" />
+
+	<widget class="icon_button" font="title" icon="icons/16px/shirt" appearance="" icon_colour="title">
+		<translation id="text" translation_id="557827" type="use" value="Squad Planner[COMMENT: AREA: News Inbox Item; SUB-AREA: Squad Planner for Next Season; FR-BN: FM-9701; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Container title for squad planner for next season inbox item]" />
+	</widget>
+	<container class="team_squad_planner_panel" id="SqPl" read_only="true" is_in_inbox="true" squad_plan_location="2"/>
+</panel>

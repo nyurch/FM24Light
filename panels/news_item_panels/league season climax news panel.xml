@@ -15,7 +15,7 @@
 				<translation id="format" translation_id="447589" type="use" value="[%comp#1-short] League Table[COMMENT: FR 20945, news item; heading for section showing the competition standings]"/>
 				<record id="object_property" get_property="comp" set_property="valu"/>
 
-				<widget class="object_portrait_picture" scale_picture="true" height="200">
+				<widget class="object_portrait_picture" scale_picture="true" height="400">
 					<record id="object_property" get_property="comp" set_property="objt"/>
 				</widget>
 

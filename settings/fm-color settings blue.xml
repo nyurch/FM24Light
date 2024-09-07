@@ -255,7 +255,6 @@
 	<colour name="calendar_cell_border"												value="fg"/>
 	<colour name="edit_box_background"												value="fg"/>
 	<colour name="edit_box_border"													value="bg accent"/>
-	<colour name="processing_box_background"										value="bg"/>
 	<colour name="pitch_box_background"												value="rgb(0,125,63)"/>
 	<colour name="style_background"													value="fg accent"/>
 
@@ -1475,9 +1474,9 @@
 	<!-- Processing -->
 	<colour name="world_news_background"													value="fg accent"/>
 	<!-- World news background colour - red_replacement -->
-	<colour name="processing_box_background"												value="rgb(202,219,239)"/>
+	<colour name="processing_box_background"												value="bg"/>
 	<!-- Processing panel hints background - red_replacement -->
-	<colour name="processing_hints_background"												value="rgb(2,61,112)"/>
+	<colour name="processing_hints_background"												value="lighter"/>
 	<!-- Processing box background colour - red_replacement -->
 	<colour name="processing_box_border"													value="fg"/>
 	<!-- Processing box border - blue_replacement -->

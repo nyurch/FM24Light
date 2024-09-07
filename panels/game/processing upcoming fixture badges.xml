@@ -67,7 +67,7 @@
 				</record>
 			</widget>
 
-			<widget class="label" size="30" alignment="centre">
+			<widget class="label" size="30" colour="white" alignment="centre">
 				<translation id="text" translation_id="364192" type="use" value="?[COMMENT:upcoming fixture info panel; placeholder used for when match opposition isn't known yet, keep to single character where possible]" />
 				<record id="object_property">
 					<integer id="get_property" value="Hawy" />

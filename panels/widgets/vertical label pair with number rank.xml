@@ -1,0 +1,24 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="title" target="hdrT" set_property="text" />
+		<record get_property="text" target="bodT" set_property="text" />
+		<record get_property="icon" target="picI" set_property="file" />
+		<record get_property="size" target="bodT" set_property="size" />
+		<record get_property="size" target="hdrT" set_property="size" />
+		<record get_property="numb" target="numb" set_property="text" />
+	</list>
+
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="40, -1" horizontal_gap="10" />
+
+	<container height="40">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<widget class="picture" file="icons/26px/circle" scale_picture="true" image_alignment="centre_x, centre_y" keep_aspect_ratio="true" red_replacement="accent"/>
+		<widget class="text" id="numb" font="bold" size="18" alignment="centre_x, centre_y" colour="white"/>
+	</container>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+		<widget class="text" id="hdrT" alignment="left" style="bold" font="title" colour="text" size="14" auto_size="vertical"/>
+		<widget class="text" id="bodT" alignment="left" colour="faded text" size="10" auto_size="vertical"/>
+	</container>
+</panel>

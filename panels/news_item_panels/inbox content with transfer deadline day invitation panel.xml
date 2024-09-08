@@ -1,0 +1,28 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
+
+	<string id="skin_style" value="subtle box" />
+
+	<container class="main_subtle_box" height="120">
+		<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="200, 1, -1" horizontal_gap="10" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_offset="0" horizontal_inset="0" />
+
+			<widget class="transfer_deadline_day_logo_widget" mode="1" />
+			<widget class="text" id="TiRE" auto_size="all" multiline="false" font="title" size="large" colour="text" />
+		</container>
+
+		<widget class="vertical_divider" width="1" height="52" />
+
+		<widget class="scouting_top_panel" file="team/scouting top bar tdd invite panel" navigation_container="false" default_focus="false">
+			<layout class="stick_to_sides_attachment" alignment="vertical"/>
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</widget>
+	</container>
+
+	<container class="transfer_window_players_in_and_out_panel" id="Plio">
+		<translation id="NoIT" translation_id="539005" type="use" value="No incoming activity expected[COMMENT: AREA: UI; SUB-AREA: Transfer Window Closed News; FR: 34771; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: String to explain the club isn't expected to do any incoming transfer business on deadline day]" />
+		<translation id="NoOT" translation_id="539006" type="use" value="No outgoing activity expected[COMMENT: AREA: UI; SUB-AREA: Transfer Window Closed News; FR: 34771; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: String to explain the club isn't expected to do any outgoing transfer business on deadline day]" />
+	</container>
+</panel>

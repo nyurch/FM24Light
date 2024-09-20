@@ -1,0 +1,141 @@
+<panel>
+	<layout class="vertical_arrange" vertical_layout="400,-1" />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1" />
+		<container class="horizontal_adaptive_container" vertical_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+			<widget class="stadium_picture" file="none" scale_picture="true" keep_aspect_ratio="true">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-60"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				<widget class="picture" id="STPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
+					<layout class="centre_in_parent_attachment" alignment="all"/>
+					<record id="object_property">
+						<integer id="get_property" value="text"/>
+						<string id="set_property" value="hint"/>
+					</record>
+				</widget>
+			</widget>
+		</container>
+	</container>
+
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1" />
+		<container class="main_subtle_box" vertical_alignment="centre">
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="5" layout="120,5,20" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top" gap="0" offset="5" />
+				<layout class="fit_children_attachment" alignment="vertical,fill" gap="0" offset="5" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<!--comp picture-->
+				<widget class="object_portrait_picture" id="fxCo" scale_picture="true" height="200">
+					<boolean id="keep_aspect_ratio" value="true" />
+					<flags id="image_alignment" value="centre" />
+					<record id="object_property">
+						<integer id="get_property" value="fxCo" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+				<!--spacer-->
+				<container height="5" />
+				<!--comp-->
+				<widget class="fixture_name_text" id="FxNm" font="title" colour="accent" size="14" alignment="centre_x" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="FxNm" />
+					</record>
+				</widget>
+				<!--spacer-->
+				<container height="5" />
+				<!--date-->
+				<widget class="date_cell" id="fxdt" alignment="centre_x" auto_size="vertical" size="10">
+					<translation id="format" value="[%date#1-long]" />
+					<record id="object_property">
+						<integer id="get_property" value="fxdt" />
+					</record>
+				</widget>
+				<!--attendance-->
+				<widget class="number_label" id="FxAt" alignment="centre_x" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="FxAt" />
+						<boolean id="dont_set_hint" value="true"/>
+					</record>
+				</widget>
+			</container>
+			<!--spacer-->
+			<container height="5" />
+			<!--stadium-->
+			<container>
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+				<widget class="stadium_button" id="stad" auto_size="all" colour="accent" size="12" auto_size_restricted_to_parent_width="true">
+					<layout class="centre_in_parent_attachment" alignment="all" />
+					<translation id="no_object_text" translation_id="227505" type="use" value="Unknown Stadium"/>
+					<record id="object_property">
+						<integer id="get_property" value="stad" />
+					</record>
+				</widget>
+			</container>
+		</container>
+
+		<container class="main_subtle_box" vertical_alignment="centre">
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="5" layout="-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<container class="scrolling_box">
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="top" gap="0" offset="5" />
+					<layout class="fit_children_attachment" alignment="vertical,fill" gap="0" offset="5" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<!--big badge display-->
+					<container height="90" id="resB">
+						<widget class="client_object_viewer_xml_panel" id="badg" file="team/team upcoming fixture badges no versus">
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" />
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+						<widget class="fixture_full_result_text" id="FxFR" format="[%scoreline#1-home_away]" style="bold" size="24" alignment="centre" reverse_teams="false">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+							<record id="object_property">
+								<integer id="get_property" value="FxFR" />
+							</record>
+						</widget>
+					</container>
+					<!--scorers-->
+					<container id="SCOR">
+						<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+						<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+						<layout class="arrange_horizontal_attachment" layout="-1,25,-1" offset="0"/>
+						<!--home scorers-->
+						<widget class="fixture_goalscorers_text" id="HMsc" colour="black" team_index="0" auto_size="vertical" alignment="right, top" separate_lines="true" show_none_if_nothing_happened="false">
+							<record id="object_property">
+								<integer id="get_property" value="FxCG" />
+							</record>
+						</widget>
+						<!--spacer-->
+						<container/>
+						<!--away scorers-->
+						<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" colour="black" auto_size="vertical" alignment="left, top" separate_lines="true" show_none_if_nothing_happened="false">
+							<record id="object_property">
+								<integer id="get_property" value="FxCG" />
+							</record>
+						</widget>
+					</container>
+					<!--spacer-->
+					<container height="15" />
+					<!--line up-->
+					<widget class="fixture_lineup_table" id="FxCL" auto_size="vertical" colour="text">
+						<record id="GoaI" file="icons/16px/goal"/>
+						<record id="OwnI" file="icons/16px/own goal"/>
+						<record id="object_property" get_property="FxCL" />
+						<list id="column_widget_properties">
+							<record indx="0" colour="text" />
+						</list>
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

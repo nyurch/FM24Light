@@ -1,0 +1,51 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="scrolling_box">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" gap="0" offset="5" />
+			<layout class="fit_children_attachment" alignment="vertical,fill" gap="0" offset="5" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize">
+					<global id="vertical_gap" name="ui.main_contrast_box_gap"/>
+				</attachment_group>
+				<!-- Player Contract Details panel -->
+				<widget class="player_contract_panel" id="pcnt" hidden="true">
+					<record id="object_property">
+						<list id="get_properties">
+							<!-- PROP_PERSON_ONLY_HAS_PLAYING_CLUB_JOB -> show if true -->
+							<record get_property="Popj" set_property="Shwn"/>
+							<record get_property="objt" set_property="objt"/>
+						</list>
+					</record>
+				</widget>
+				<!-- Non-player Contract Details panel -->
+				<widget class="non_player_contract_panel" id="ncnt" hidden="true">
+					<record id="object_property">
+						<list id="get_properties">
+							<!-- PROP_PERSON_HAS_NON_PLAYING_CLUB_JOB -> show if true -->
+							<record get_property="Phnj" set_property="Shwn"/>
+							<record get_property="objt" set_property="objt"/>
+						</list>
+					</record>
+				</widget>
+				<!-- Second Contract Panel (i.e. out on loan)-->
+				<widget class="player_contract_panel" id="2cnt" pUOC="true" hidden="true">
+					<record id="object_property">
+						<list id="get_properties">
+							<!-- PROP_PERSON_ONLY_HAS_PLAYING_CLUB_JOB -> show if true -->
+							<record get_property="Popj" set_property="Shwn"/>
+							<record get_property="objt" set_property="objt"/>
+						</list>
+					</record>
+				</widget>
+			</container>
+			<!--spacer-->
+			<container height="40" />
+			<widget class="picture" file="pictures/custom/contract" height="400" width="218" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+		</container>
+	</container>
+
+</panel>

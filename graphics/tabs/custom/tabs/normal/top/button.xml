@@ -16,5 +16,6 @@
 	</record>
 
 	<colour id="red_replacement" name="accent"/>
+	<colour id="blue_replacement" name="accent"/>
 
 </properties>

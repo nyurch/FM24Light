@@ -26,7 +26,7 @@
 
 			<widget class="spacer" height="24" />
 
-			<widget class="picture" height="52" width="37" file="icons/custom/saved game compatability/converting file" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" red_replacement="fg" blue_replacement="bg info" green_replacement="shadow" />
+			<widget class="picture" height="52" width="37" file="icons/custom/saved game compatability/converting file" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" red_replacement="accent" blue_replacement="white" green_replacement="shadow" />
 
 			<widget class="spacer" height="6" />
 
@@ -44,7 +44,7 @@
 
 			<widget class="spacer" height="16" />
 
-			<widget class="picture" height="26" width="26" file="icons/26px/time" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" red_replacement="fg" />
+			<widget class="picture" height="48" width="48" file="icons/48px/time" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" red_replacement="accent" />
 
 			<widget class="text" colour="text" font="label" auto_size="all" alignment="centre">
 				<translation id="text" translation_id="247121" type="use" value="Game Status" />
@@ -56,7 +56,7 @@
 				<record id="object_property" get_property="LStp" set_property="text" />
 			</widget>
 
-			<widget class="text" auto_size="vertical" colour="faded text" alignment="centre" multiline="true"  width="300">
+			<widget class="text" auto_size="vertical" colour="faded text" alignment="centre" multiline="true" width="300">
 				<record id="object_property" get_property="LSds" set_property="text" />
 			</widget>
 
@@ -70,13 +70,13 @@
 				<translation id="text" translation_id="594854" type="use" value="Your recently selected XI[COMMENT: AREA: Loading game; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24319; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
 			</widget>
 
-			<widget class="spacer" height="16" />
+			<widget class="spacer" height="5" />
 
-			<widget class="picture" height="52" width="52" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+			<widget class="picture" height="120" width="120" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
 				<record id="object_property" get_property="LScl" set_property="file" />
 			</widget>
 
-			<widget class="spacer" height="6" />
+			<widget class="spacer" height="2" />
 
 			<widget class="text" auto_size="all" size="large" style="bold" alignment="centre">
 				<record id="object_property" get_property="LSCn" set_property="text" />
@@ -86,16 +86,15 @@
 				<record id="object_property" get_property="LSmn" set_property="text" />
 			</widget>
 
-			<widget class="spacer" height="16" />
+			<widget class="spacer" height="5" />
 
 			<widget class="simple_data_list" auto_size="vertical" width="300" set_property="prop">
 				<record id="object_property" get_property="LSpl" set_property="valu" />
-				<record id="widget_properties" class="container" auto_size="vertical" file="widgets/player kit and name" />
+				<record id="widget_properties" class="container" auto_size="vertical" file="widgets/extra_files/player kit and name" />
 
 			</widget>
 
-
-			<widget class="spacer" height="16" />
+			<widget class="spacer" height="5" />
 
 			<widget class="text" alignment="centre" auto_size="vertical" multiline="true">
 				<record id="object_property" get_property="LS4f" set_property="text" />
@@ -103,8 +102,5 @@
 
 		</container>
 	</container>
-
-
-
 
 </panel>

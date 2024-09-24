@@ -1,12 +1,12 @@
 ﻿<panel background_colour="card bg">
-	<attachment_group class="vertical_arrange_autosize" vertical_offset="36" vertical_gap="36" />
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
 
-	<container background_colour="card bg">
+	<container background_colour="accent">
 		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,550,-1" vertical_alignment="vertical" />
 
 		<widget class="spacer" />
 
-		<widget class="text" alignment="centre" auto_size="vertical" multiline="true">
+		<widget class="text" height="70" colour="white" style="bold" alignment="centre" auto_size="vertical" multiline="true">
 			<record id="object_property" get_property="LSfs" set_property="text" />
 		</widget>
 

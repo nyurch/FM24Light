@@ -94,11 +94,11 @@
 		</container>
 	</container>
 
-	<widget class="picture" file="backgrounds/pattern home left" scale_picture="true" keep_aspect_ratio="true" image_alignment="left,top" red_replacement="black" depth="-1.5" ignore_error_detection="true">
+	<widget class="picture" file="backgrounds/pattern home left" scale_picture="true" keep_aspect_ratio="true" image_alignment="left,top" red_replacement="accent" depth="-1.5" ignore_error_detection="true">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="-50"/>
 	</widget>
 
-	<widget class="picture" file="backgrounds/pattern home right" scale_picture="true" keep_aspect_ratio="true" image_alignment="right,top" red_replacement="black" depth="-1.5" ignore_error_detection="true">
+	<widget class="picture" file="backgrounds/pattern home right" scale_picture="true" keep_aspect_ratio="true" image_alignment="right,top" red_replacement="accent" depth="-1.5" ignore_error_detection="true">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="-50"/>
 	</widget>
 

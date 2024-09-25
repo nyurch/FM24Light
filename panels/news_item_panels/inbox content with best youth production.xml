@@ -64,7 +64,7 @@
 		<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 		<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 	</widget>
-	<container entity_layout_id="at01" id="mnCt" height="115" background_colour="green 100">
+	<container entity_layout_id="at01" id="mnCt" height="115" class="main_subtle_box" red_replacement="accent">
 		<layout class="stick_to_object_attachment" id="alPt" offset="4" get_side="bottom" set_side="top" move_side="true" target="at0A" />
 		<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 		<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />

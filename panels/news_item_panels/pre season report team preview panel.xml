@@ -4,11 +4,11 @@
 
 	<string id="skin_style" value="subtle box"/>
 
-	<container background_colour="green 100">
+	<container >
 		<layout class="arrange_vertical_attachment" layout="-1,259" offset="0" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
-		<container class="inner_subtle_box">
+		<container class="main_subtle_box">
 			<layout class="arrange_vertical_attachment" layout="-1,-2" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
@@ -123,7 +123,7 @@
 					<integer id="set_property" value="objt" />
 				</record>
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-				<container class="inner_subtle_box">
+				<container class="main_subtle_box">
 					<translation id="title" translation_id="420587" type="use" value="Transfer Spending[COMMENT: competition team preview panel, displays details of a club's transfer expenditure]" />
 
 					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="2" />
@@ -163,7 +163,7 @@
 				</container>
 			</container>
 
-			<container class="inner_subtle_box">
+			<container class="main_subtle_box">
 				<translation id="title" translation_id="316862" type="use" value="Net Transfer Spend[COMMENT: team stat title for the amount of money a team has spent during this season]" />
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
@@ -183,7 +183,7 @@
 				</container>
 			</container>
 
-			<container class="inner_subtle_box">
+			<container class="main_subtle_box">
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 				<translation id="title" translation_id="316861" type="use" value="Salary Per Annum[COMMENT: team stat title for the team's total salary bill per year]" />
 
@@ -213,7 +213,7 @@
 			<layout class="arrange_horizontal_attachment" layout="-1,-2" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-			<container class="inner_subtle_box">
+			<container class="main_subtle_box">
 				<layout class="arrange_vertical_attachment" layout="22,-1" offset="0" gap="0" />
 
 				<string id="skin_style" value="title link" />
@@ -270,7 +270,7 @@
 				</container>
 			</container>
 
-			<container class="inner_subtle_box">
+			<container class="main_subtle_box">
 				<translation id="title" translation_id="232109" type="use" value="League Positions" />
 				<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="0" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />

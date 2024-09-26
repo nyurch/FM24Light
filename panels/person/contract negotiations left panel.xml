@@ -9,12 +9,12 @@
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-	<container>
+	<container class="main_subtle_box">
 		<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend">
 			<global id="vertical_gap" name="ui.main_contrast_box_gap" />
 		</attachment_group>
 
-		<container class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg" navigation_container="false" id="agnI">
+		<container class="main_transparent_box" navigation_container="false" id="agnI">
 			<attachment_group class="vertical_arrange" vertical_alignment="top,extend"/>
 
 			<container class="client_object_viewer_xml_panel" id="agmi">
@@ -58,7 +58,7 @@
 						<container>
 							<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
 
-							<widget class="person_button" colour="black" id="poct" auto_size="all" font="value" info_popup_enabled="true" icon_enabled="true" navigation_focus_target="false">
+							<widget class="person_button" id="poct" auto_size="all" font="value" colour="black" info_popup_enabled="true" icon_enabled="true" navigation_focus_target="false">
 								<record id="object_property">
 									<list id="get_properties">
 										<record>
@@ -82,8 +82,6 @@
 
 						</container>
 
-
-
 					</container>
 
 					<container id="AgPt">
@@ -106,7 +104,6 @@
 
 					</container>
 
-
 				</container>
 
 			</container>
@@ -121,7 +118,7 @@
 				<global id="vertical_gap" name="ui.main_box_gap" />
 			</attachment_group>
 
-			<container class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg" id="plds" navigation_container="true">
+			<container class="main_transparent_box" id="plds" navigation_container="true">
 				<attachment class="hide_medium_horizontal" />
 				<string id="remove_if" value="ui.is_fmt_controller_skin" />
 				<list id="properties_to_forward">
@@ -133,16 +130,15 @@
 
 				</widget>
 
-
 			</container>
 
-			<container id="incn" class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg">
+			<container id="incn" class="main_transparent_box">
 				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" />
 
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" />
 
-					<widget class="text" font="title" colour="accent" auto_size="vertical">
+					<widget class="text" font="title" auto_size="vertical">
 						<translation id="text" translation_id="491989" type="use" value="Player Interest[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: TBC; TONE: Formal; CHARLIMIT: Shortish; REF-ID: n/a; NOTE: title for how interested the player is in the proposed playing time as part of contract negotiations, Playing Time is ID 423887]" />
 					</widget>
 
@@ -150,13 +146,11 @@
 
 					</widget>
 
-
 				</container>
 
-				<widget class="text" id="itxt" size="large" style="bold" auto_size="vertical" multiline="true">
+				<widget class="text" id="itxt" style="bold" auto_size="vertical" multiline="true">
 
 				</widget>
-
 
 				<widget class="text" id="mitx" auto_size="vertical" multiline="true">
 
@@ -176,7 +170,7 @@
 
 			</container>
 
-			<container id="aprc" class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg">
+			<container id="aprc" class="main_transparent_box">
 				<attachment class="show_medium_vertical" id="smv1" disabled="true" />
 
 				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="1" set_property="hidden" skip_if_false="true" />
@@ -189,16 +183,13 @@
 					<record get_property="objt" set_property="objL" target="apbt" />
 				</list>
 
-
 				<widget class="text" auto_size="vertical" font="title" colour="accent">
 					<translation id="text" translation_id="320154" type="use" value="Promises[COMMENT: player status panel; panel header title for a section listing all promises a manager has made to a player]" />
 				</widget>
 
 				<widget class="property_list_table" id="apbt" mode="fill_rows" auto_size="vertical" auto_size_maximum_height="500" row_spacing="5" auto_size_rows="true" fixed_size_rows="false">
 
-
 					<record id="Cols" file="panels/widgets/player agreed promises properties" />
-
 
 					<!--default view-->
 					<flags id="default_view" value="over" />
@@ -219,16 +210,15 @@
 
 			</container>
 
-			<container id="tstb" class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg" navigation_container="true">
+			<container id="tstb" class="main_transparent_box" navigation_container="true">
 
 				<attachment_group class="vertical_arrange_autosize" />
 
 				<widget class="property_list_viewer_xml_panel" id="budc" file="person/contract negotiation budget impact" auto_size="vertical" />
 
-
 			</container>
 
-			<container id="tptc" class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg">
+			<container id="tptc" class="main_transparent_box">
 				<attachment class="test_screen_size_attachment" id="smv2">
 					<list id="properties">
 						<record>
@@ -236,7 +226,7 @@
 							<flags id="alignment" value="vertical" />
 							<integer id="min_value" value="1000" />
 							<integer id="max_value" value="100000" />
-							<!-- This is a very large value as we want our widget to show if > the min_value.	The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+							<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
 							<symbol id="set_property" value="shown" />
 						</record>
 					</list>
@@ -246,7 +236,6 @@
 				<attachment class="test_global_attachment" mode="equal" get_property="CNsp" value="0" set_property="disabled" skip_if_false="false">
 					<event id="action_event" event_id="set_attachment_property_event" attachment_id="smv2" />
 				</attachment>
-
 
 				<attachment_group class="vertical_arrange_autosize" />
 
@@ -276,7 +265,6 @@
 
 						<record id="Cols" file="panels/widgets/club playing time breakdown properties" />
 
-
 						<!--default view-->
 						<flags id="default_view" value="over" />
 
@@ -295,7 +283,6 @@
 					</widget>
 				</container>
 
-
 			</container>
 
 		</container>
@@ -305,7 +292,8 @@
 				<global id="vertical_gap" name="ui.main_contrast_box_gap" />
 			</attachment_group>
 
-			<container class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg">
+			<container class="main_transparent_box">
+
 				<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
 				<container height="55">
 					<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="8" />
@@ -325,10 +313,9 @@
 					<container>
 						<attachment_group class="vertical_arrange" vertical_gap="0" vertical_alignment="middle"/>
 
-						<widget class="person_button" auto_size="all" colour="black" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="false" navigation_focus_target="false">
+						<widget class="person_button" auto_size="all" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="false" navigation_focus_target="false">
 							<record id="object_property" get_property="objt" set_property="valu" />
 						</widget>
-
 
 						<container>
 							<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
@@ -348,10 +335,7 @@
 								<record id="forced_formats" var2="vf_job" />
 							</widget>
 
-
 						</container>
-
-
 
 					</container>
 
@@ -389,11 +373,12 @@
 					</record>
 				</widget>
 
-
 			</container>
 
-			<container class="main_subtle_box" appearance="boxes/main/subtle/paper" red_replacement="fg" navigation_container="true">
+			<container class="main_transparent_box" navigation_container="true">
+
 				<string id="remove_if" value="ui.is_fmt_controller_skin" />
+
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="10" />
 
 				<widget class="team_staff_subteam_overview_panel" id="pjsb" auto_size="vertical" file="team/team staff subteam impact for contract negotiations">
@@ -407,7 +392,6 @@
 			</container>
 
 		</container>
-
 
 	</container>
 

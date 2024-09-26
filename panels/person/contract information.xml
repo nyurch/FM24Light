@@ -4,7 +4,7 @@
 	<flags id="ocbc" value="positive bg" />
 	<!--own club background colour-->
 	<flags id="bnap" value="tabs/standard/normal/top/button" />
-	<flags id="bsap" value="tabs/standard/selected/top/button" />
+	<flags id="bsap" value="tabs/standard/normal/top/button_showing" />
 
 	<list id="properties_to_forward">
 		<record get_property="hinc" set_property="hinc" target="left" />
@@ -172,7 +172,7 @@
 				<translation id="text" translation_id="394819" type="use" value="[%person#1-You] cannot make a contract offer for this player.[COMMENT: FR 10141, contract information; can't be offered a contract]" />
 			</widget>
 			<widget class="text" id="lvcr" auto_size="vertical" alignment="centre" size="10">
-				<translation id="text" translation_id="443665" type="use" value="[%person#1-You] are leaving the club in the near future and are therefore unable enter into contract negotiations.[COMMENT:	contract information; can't be offered a contract]" />
+				<translation id="text" translation_id="443665" type="use" value="[%person#1-You] are leaving the club in the near future and are therefore unable enter into contract negotiations.[COMMENT:  contract information; can't be offered a contract]" />
 			</widget>
 		</container>
 
@@ -182,7 +182,7 @@
 
 			<!--explanatory text-->
 			<widget class="text" id="hnco" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
-				<translation id="text" translation_id="320414" type="use" value="You haven't been offered a contract at this time[COMMENT:contract information; can't be offered a contract]" />
+				<translation id="text" translation_id="320414" type="use" value="You haven't been offered a contract at this time.[COMMENT:contract information; can't be offered a contract]" />
 			</widget>
 			<widget class="text" id="hodc" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
 				<translation id="text" translation_id="382488" type="use" value="[%person#1-You] have a delayed contract offer outstanding[COMMENT:contract information; can't be offered a contract]" />
@@ -191,7 +191,7 @@
 				<translation id="text" translation_id="382490" type="use" value="[%person#1-You] have multiple delayed contract offers outstanding[COMMENT:contract information; can't be offered a contract]" />
 			</widget>
 			<widget class="text" id="hjob" auto_size="vertical" alignment="centre" size="10">
-				<translation id="text" translation_id="320415" type="use" value="You could either negotiate your contract with your board or look for alternative employement.[COMMENT: contract information; the user can neg. their contract with the board]" />
+				<translation id="text" translation_id="320415" type="use" value="You could either negotiate your contract with your board or look for alternative employment.[COMMENT: contract information; the user can neg. their contract with the board]" />
 			</widget>
 			<widget class="text" id="gjob" auto_size="vertical" alignment="centre" size="10">
 				<translation id="text" translation_id="327249" type="use" value="You should look for employment.[COMMENT: contract information; tell the user to get a job]" />
@@ -199,7 +199,13 @@
 
 			<container id="noCB" class="empty_state_button_container">
 				<widget class="link_appearance_button" id="intb" icon="icons/16px/speech bubble">
+					<string id="remove_if" value="is_fmt"/>
 					<translation id="text" translation_id="349844" type="use" value="Request New Contract[COMMENT: FR 5715, trigger to ask board for a new contract]" />
+				</widget>
+
+				<widget class="link_button" auto_size="all" section="bfbk">
+					<string id="create_if" value="is_fmt"/>
+					<translation id="text" translation_id="333910" type="use" value="Make Board Request[COMMENT: popup button to make a board request]" />
 				</widget>
 
 				<widget class="link_appearance_button" id="viej">
@@ -214,7 +220,7 @@
 
 			<!--explanatory text-->
 			<widget class="text" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
-				<translation id="text" translation_id="326983" type="use" value="You have offered a contract; you can withdraw or change this offer[COMMENT:contract information; can't be offered a contract]" />
+				<translation id="text" translation_id="326983" type="use" value="You have offered a contract; you can withdraw or change this offer.[COMMENT:contract information; can't be offered a contract]" />
 			</widget>
 			<widget class="text" alignment="centre" size="10" auto_size="vertical">
 				<translation id="text" translation_id="338226" type="use" value="This can be done via the 'Contract' actions menu.[COMMENT: contract information; the user can withdraw the contract, use top 10 matches as the location has changed, it's just Contracts now]" />
@@ -319,7 +325,7 @@
 				<translation id="text" translation_id="317863" type="use" value="You cannot make a contract offer for this player." />
 			</widget>
 			<widget class="manager_text" auto_size="vertical" alignment="centre" size="10">
-				<translation id="text" translation_id="376621" type="use" value="The player has already accepted a contract offer. [%person#1-You] can still cancel the transfer via the Transfer Centre.[COMMENT FR 7490, information as to why user cannot negotiate with a player]." />
+				<translation id="text" translation_id="376621" type="use" value="The player has already accepted a contract offer. [%person#1-You] can still cancel the transfer via the Transfer Centre..[COMMENT FR 7490, information as to why user cannot negotiate with a player]" />
 			</widget>
 		</container>
 
@@ -339,7 +345,7 @@
 
 			<!--explanatory text-->
 			<widget class="text" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical">
-				<translation id="text" translation_id="557834" type="use" value="Due to the recent breakdown in talks, this player is currently unwilling to enter contract negotiations[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: 4310; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Text for why contract negotiations can't be held currently]." />
+				<translation id="text" translation_id="557834" type="use" value="Due to the recent breakdown in talks, this player is currently unwilling to enter contract negotiations.[COMMENT: AREA: Contracts; SUB-AREA: Contract Negotiations; FR-BN: 4310; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Text for why contract negotiations can't be held currently]" />
 			</widget>
 			<widget class="text" id="pfnd" auto_size="vertical" alignment="centre" size="10" />
 
@@ -412,7 +418,7 @@
 				</container>
 
 				<!-- The agents demands -->
-				<container class="property_list_viewer_xml_panel" id="hcll" file="generic/response holder panel for promises" height="75" />
+				<container class="property_list_viewer_xml_panel" id="hcll" file="generic/response holder panel for promises" height="80" />
 			</container>
 
 			<!-- main contract offer area -->
@@ -567,15 +573,14 @@
 							<translation id="text" translation_id="320154" type="use" value="Promises[COMMENT: player status panel; panel header title for a section listing all promises a manager has made to a player]" />
 						</widget>
 
-						<widget class="popup_button" id="ctpb" select_event="slcv" auto_size="horizontal" click_event="slcv">
+						<widget class="popup_button" id="ctpb" select_event="slcv" auto_size="horizontal" click_event="slcv" appearance="tabs/standard/normal/top/button">
 							<flags id="icon_enabled" value="true" />
 							<flags id="icon_alignment" value="left,centre_y" />
-							<flags id="secondary_icon_enabled" value="false" />
-							<flags id="icon" value="icons/custom/interface/tab bar/down" />
-							<flags id="icon_alignment" value="right,centre_y" />
+							<flags id="secondary_icon_enabled" value="true" />
+							<flags id="secondary_icon_alignment" value="centre_x,centre_y" />
 							<flags id="draw_arrow" value="false" />
 							<flags id="menu_appearance" value="menus/custom/interface/tab bar" />
-							<flags id="alignment" value="left,centre_y" />
+							<flags id="alignment" value="centre,centre_y" />
 							<flags id="size" value="normal" />
 							<flags id="font" value="fonts/text" />
 							<flags id="auto_size" value="all" />
@@ -659,7 +664,7 @@
 						<container>
 							<attachment_group class="vertical_arrange_autosize" />
 
-							<widget class="person_button" auto_size="all" size="large" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="true" colour="text">
+							<widget class="person_button" colour="black" auto_size="all" size="large" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="true">
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
 
@@ -671,7 +676,7 @@
 									<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
 								</widget>
 
-								<widget class="player_age_and_description_widget" file="none" height="18" colour="faded text">
+								<widget class="player_age_and_description_widget" file="none" height="18" colour="faded">
 									<attachment_group class="vertical_arrange_autosize" vertical_offset="0" />
 									<record id="object_property" get_property="objt" set_property="objt" />
 									<widget class="text" id="mtxt" alignment="left,centre_y" auto_size="vertical">

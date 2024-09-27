@@ -118,7 +118,7 @@
 
 
 			<!--bit at the right with picture, top goalscorer, top assister and highest rated player-->
-			<container class="inner_subtle_box" width="260" red_replacement="blue">
+			<container class="main_subtle_box" width="260">
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 				<!--picture-->

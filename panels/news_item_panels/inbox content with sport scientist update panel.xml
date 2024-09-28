@@ -1,7 +1,7 @@
 ﻿<panel navigation_container="true">
 	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
 
-	<container class="main_contrast_box" red_replacement="indigo 900" height="120">
+	<container class="main_contrast_box" red_replacement="darker" height="120">
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 		<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" />
 
@@ -13,7 +13,7 @@
 				<layout class="arrange_vertical_attachment" alignment="top" />
 				<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
 
-				<widget class="link_button_title" section="TeFi" colour="yellow" red_replacement="yellow">
+				<widget class="link_button_title" section="TeFi" colour="white" red_replacement="white">
 					<translation id="text" translation_id="242258" type="use" value="Fixtures" />
 				</widget>
 			</container>
@@ -30,7 +30,7 @@
 				<layout class="arrange_vertical_attachment" alignment="top" />
 				<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
 
-				<widget class="link_button_title" section="TeOv" colour="yellow" red_replacement="yellow">
+				<widget class="link_button_title" section="TeOv" colour="white" red_replacement="white">
 					<translation id="text" translation_id="447654" type="use" value="Team Training Workload[COMMENT: FR20159; team injuries panel; link button label to team training panel]" />
 				</widget>
 			</container>

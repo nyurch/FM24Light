@@ -4,7 +4,7 @@
 
 	<string id="skin_style" value="subtle box"/>
 
-	<container class="inner_subtle_box" red_replacement="blue">
+	<container class="main_subtle_box" >
 		<translation id="title" translation_id="247942" type="use" value="Past Winners" />
 		<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true"/>
 		<layout class="fit_children_attachment" alignment="vertical,fill" offset="0"/>

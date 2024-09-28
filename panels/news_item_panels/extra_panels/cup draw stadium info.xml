@@ -3,7 +3,7 @@
 
 	<string id="skin_style" value="subtle box"/>
 
-	<container class="inner_subtle_box" height="400">
+	<container class="inner_subtle_box" height="420">
 		<layout class="vertical_arrange" vertical_layout="200,-1" />
 		<widget class="stadium_picture" id="STAp" image_alignment="centre_x,centre_y" scale_picture="true" keep_aspect_ratio="true" height="200">
 			<record id="object_property">

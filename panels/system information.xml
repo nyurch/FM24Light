@@ -63,26 +63,9 @@
 			<record id="instant_hint" format="[%string#1]"/>
 			<record id="default_series_properties" line_width="2" point_radius="0"/>
 			<list id="graph_series">
-				<record id="th00" type="line" colour="graph line 1"/>
-				<record id="th01" type="line" colour="graph line 2"/>
-				<record id="th02" type="line" colour="graph line 3"/>
-				<record id="th03" type="line" colour="graph line 4"/>
-				<record id="th04" type="line" colour="graph line 5"/>
-				<record id="th05" type="line" colour="graph line 6"/>
-				<record id="th06" type="line" colour="graph line 7"/>
-				<record id="th07" type="line" colour="graph line 8"/>
-				<record id="th08" type="line" colour="graph line 9"/>
-				<record id="th09" type="line" colour="graph line 10"/>
-				<record id="th10" type="line" colour="graph line 11"/>
-				<record id="th11" type="line" colour="graph line 12"/>
-				<record id="th12" type="line" colour="graph line 13"/>
-				<record id="th13" type="line" colour="graph line 14"/>
-				<record id="th14" type="line" colour="graph line 15"/>
-				<record id="th15" type="line" colour="graph line 16"/>
+				<record id="all " type="line" colour="graph line 1"/>
 			</list>
-			<record id="x_axis" max_value="100" mark_size="0" show_labels="false">
-				<record id="label_font" colour="faded black"/>
-			</record>
+			<record id="x_axis" max_value="100" mark_size="0" show_labels="false"/>
 			<record id="y_axis" format="[%number#1]%" max_value="100">
 				<record id="label_font" colour="faded black"/>
 				<list id="labels">

@@ -1,0 +1,152 @@
+﻿<panel height="470">
+	<layout class="horizontal_arrange" horizontal_layout="300,-4,-1" />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="220,70,-1" />
+		<container class="main_box_no_margin">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+			<layout class="arrange_vertical_attachment" layout="180,40" gap="0"/>
+			<container>
+				<widget height="164" width="164" class="object_portrait_picture" id="face" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="0"/>
+					<layout class="stick_to_sides_attachment" alignment="right" inset="20"/>
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+				<widget class="player_status_all_button" id="psAB" maximised="true" auto_size="vertical" alignment="bottom" gap="2" max_items_per_row_or_column="6">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="10"/>
+					<layout class="stick_to_sides_attachment" alignment="right" inset="12"/>
+					<record id="object_property" get_property="Pnfa"/>
+				</widget>
+				<container class="main_box" width="101">
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="-20"/>
+					<layout class="stick_to_sides_attachment" alignment="left" inset="12"/>
+				</container>
+				<widget height="55" width="75" class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="15"/>
+					<layout class="stick_to_sides_attachment" alignment="left" inset="25"/>
+					<record id="object_property" get_property="PNat" set_property="objt" dont_set_hint="true"/>
+				</widget>
+				<container height="75" width="75">
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="20"/>
+					<layout class="stick_to_sides_attachment" alignment="left" inset="25"/>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+					<widget class="value_based_picture" scale_picture="true" file="none">
+						<layout class="stick_to_sides_attachment" alignment="all"/>
+						<list id="value_list">
+							<record value="0" file="icons/custom/staff/unemployed"/>
+						</list>
+						<record id="object_property">
+							<list id="get_properties">
+								<record get_property="Pcjo" set_property="valu" dont_set_hint="true"/>
+							</list>
+						</record>
+					</widget>
+					<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
+						<layout class="stick_to_sides_attachment" alignment="all"/>
+						<record id="object_property" get_property="Pclb" set_property="objt" dont_set_hint="true"/>
+					</widget>
+				</container>
+			</container>
+			<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
+				<widget class="text" font="main menu" size="11" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="10"/>
+					<record id="object_property" get_property="titl" set_property="text"/>
+				</widget>
+			</container>
+		</container>
+		<widget class="player_positions_indicator_panel" id="ppos" file="player/player positions indicator panel selector">
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+		<container/>
+	</container>
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="380,-1,1" />
+		<container class="vertical_adaptive_container" horizontal_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+			<container class="player_overview_panel" id="po01" file="none">
+				<translation id="title" translation_id="229822" type="use" value="Attributes"/>
+				<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="2"/>
+				<record id="object_property" get_property="Pers"/>
+				<container>
+					<layout class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill"/>
+					<container class="plain_box" appearance="buttons/subtle/flex/button" height="28">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						<widget class="player_positions_indicator_panel" id="ppos" file="">
+							<layout class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="8"/>
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<widget class="icon_button" id="posS" icon="icons/16px/circle" show_button_appearance="false" navigation_focus_target="false" height="28" width="16"/>
+							<container height="28">
+								<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+								<widget class="position_popup" id="posm" height="28" short_position_string="false" display_compound_positions="true" sele="PosS" skip_no_position_string="false" show_button_appearance="false" font="text"/>
+								<widget class="pitch_with_player_positions" id="ppip" hidden="true" wants_mouse_events="false" />
+							</container>
+						</widget>
+					</container>
+					<widget class="player_roles_popup_button" id="skpa" fixed="true" alignment="left" spec="text" show_selected_role="true" height="28" appearance="buttons/subtle/flex/button" multiline="true">
+						<translation id="text" translation_id="330016" type="use" value="Highlight key attributes for role[COMMENT: option allowing for viewing the key attributes needed to play in a certain role]"/>
+					</widget>
+				</container>
+				<container>
+					<layout class="horizontal_arrange" horizontal_layout="-500,-135" horizontal_gap="8"/>
+					<container id="patt" class="player_attributes_panel" file="player/extra_panels/player overview tabs/attributes/player attributes popup" dont_allow_custom_attribute_change_ranges="true">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</container>
+					<container class="player_attributes_panel" file="player/extra_panels/player overview tabs/attributes/player additional attributes">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</container>
+				</container>
+			</container>
+		</container>
+		<container class="vertical_adaptive_container" horizontal_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+			<container class="main_subtle_box">
+				<layout class="vertical_arrange" vertical_layout="30,30" />
+				<widget class="label" font="title" colour="title" multiline="false">
+					<translation id="text" translation_id="316844" type="use" value="Coach Report[COMMENT; coach reports section of player profile]" />
+				</widget>
+				<widget class="coach_report_comment">
+					<record id="object_property" get_property="Pcpc"/>
+				</widget>
+			</container>
+		</container>
+		<container class="vertical_adaptive_container" horizontal_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+		</container>
+	</container>
+
+	<container class="main_subtle_box">
+		<layout class="vertical_arrange" vertical_layout="60,60,60,1" />
+		<container>
+			<attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+			<widget class="scout_stars_label" size="13" font="title" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
+				<record id="object_property" get_property="Pcab" />
+			</widget>
+			<widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+				<translation id="text" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
+			</widget>
+		</container>
+		<container>
+			<attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+			<widget class="scout_stars_label" size="13" font="title" colour="text" alignment="centre_x,centre_y" hint_if_no_value="-" multiline="false">
+				<record id="object_property" get_property="Ppab" />
+			</widget>
+			<widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+				<translation id="text" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
+			</widget>
+		</container>
+		<container>
+			<attachment class="vertical_arrange" vertical_layout="-4,-3" vertical_gap="0"/>
+			<widget class="global_reputation_stars_label" alignment="centre_x,centre_y">
+				<record id="object_property" get_property="PrSr"/>
+			</widget>
+			<widget class="label" size="8" alignment="middle,top" font="title" colour="title" multiline="false">
+				<translation id="text" translation_id="227963" type="use" value="Reputation" />
+			</widget>
+		</container>
+		<container >
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+		</container>
+	</container>
+</panel>

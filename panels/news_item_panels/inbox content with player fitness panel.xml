@@ -6,7 +6,7 @@
 	<widget class="inbox_body_text" id="bdtx"/>
 
 	<container>
-		<attachment_group class="horizontal_arrange_vertical_autosize" vertical_offset="0" horizontal_layout="-1,-1,-1" horizontal_inset="0"/>
+		<attachment_group class="horizontal_arrange_vertical_autosize" vertical_offset="0" horizontal_layout="-3,-3,-5,-5" horizontal_inset="0"/>
 
 		<container class="client_object_viewer_xml_panel" id="psdt" height="220">
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
@@ -46,6 +46,13 @@
 				</container>
 			</container>
 		</container>
+
+		<widget class="player_injury_panel" file="player/extra_panels/player injury body" height="220">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
 
 		<container class="inner_subtle_box" height="220">
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />

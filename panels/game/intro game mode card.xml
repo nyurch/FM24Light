@@ -1,0 +1,36 @@
+﻿<panel width="290" height="220">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="inner_subtle_box" id="mbox">
+		<attachment_group class="vertical_arrange" vertical_layout="40, 20, -1, 20" vertical_offset="8" vertical_gap="12" horizontal_inset="6" horizontal_alignment="horizontal" />
+
+		<widget class="picture" id="imag" width="40" scale_picture="true" image_alignment="centre" retain_recolour_properties="true" red_replacement="white" />
+
+		<widget class="label" id="titl" size="12" font="extendedblack" colour="text" alignment="centre_x,centre_y" />
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0" vertical_gap="12" horizontal_inset="0" horizontal_alignment="horizontal" />
+
+			<container hidden="true" id="cmso">
+				<attachment_group class="vertical_arrange_autosize_horizontal_centre" />
+
+				<container class="plain_box" width="140" height="18" appearance="boxes/custom/intro/tag/paper">
+					<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="5" horizontal_inset="5" horizontal_alignment="horizontal" />
+
+					<widget class="label" size="small" style="bold" colour="white" alignment="centre_x,centre_y">
+						<!-- <translation id="text" translation_id="538925" type="use" value="COMING SOON[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Promo text for a game mode that will be available at a later date]" /> -->
+						<translation id="text" translation_id="542733" type="use" value="FMFC EXCLUSIVE[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Promo text to show that a feature is only available to members of FMFC]" />
+					</widget>
+				</container>
+			</container>
+
+			<widget class="label" height="60" id="desc" colour="faded text" alignment="centre_x,top" auto_size="vertical" multiline="true" />
+		</container>
+
+		<widget class="label" id="nply" font="title" colour="text" alignment="centre_x,centre_y" />
+
+	</container>
+
+	<widget class="button" appearance="buttons/custom/over state only/button" id="butn" auto_size="vertical" />
+
+</panel>

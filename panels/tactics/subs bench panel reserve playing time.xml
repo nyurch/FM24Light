@@ -4,10 +4,10 @@
 	<container>
 		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_gap="4" horizontal_offset="2"/>
 
-		<widget class="text" alignment="centre" auto_size="all" font="label" colour="faded white" style="bold" size="large">
+		<widget class="text" alignment="centre" auto_size="all" font="label" colour="text" style="bold" size="large">
 			<translation id="text" type="use" translation_id="230321" value="Subs:" />
 		</widget>
-		<widget class="text" id="maxs" alignment="left" style="bold" colour="white" auto_size="vertical"/>
+		<widget class="text" id="maxs" alignment="left" font="label" colour="text" style="bold" size="large" auto_size="all"/>
 
 	</container>
 

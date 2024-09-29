@@ -1,0 +1,181 @@
+﻿<panel width="955" height="612">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+	<container class="main_box" appearance="boxes/custom/whats new/paper">
+
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<container navigation_container="true">
+
+			<attachment_group class="vertical_arrange" vertical_layout="32, -1" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!--Title-->
+			<container>
+				<attachment_group class="horizontal_arrange" vertical_offset="0" vertical_gap="0" horizontal_alignment="middle" vertical_alignment="vertical" horizontal_inset="0" />
+
+				<widget class="label" id="titl" auto_size="horizontal" alignment="centre" font="extendedblack" size="16" colour="text">
+					<translation id="text" translation_id="538926" type="use" value="Select Game Mode[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Title of the game mode selection dialog]" />
+
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+				</widget>
+
+				<widget class="icon_button" controller_button="b_button" icon_alignment="far_right" colour="darker" click_event="mcan" height="92" auto_size="horizontal" secondary_icon_enabled="true" secondary_icon="icons/16px/cross" secondary_icon_alignment="centre_y, centre_x" appearance="buttons/standard/normal/button" red_replacement="darker">
+					<layout class="stick_to_sides_attachment" alignment="right,top" inset="0" />
+				</widget>
+			</container>
+
+			<!-- FM Game Modes -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<string id="remove_if" value="is_fmt" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="16" horizontal_offset="2" vertical_alignment="top" vertical_inset="0" />
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/career">
+						<record id="click_event" event_id="NEWO" is_fmt_game="false" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420633" type="use" value="Career[COMMENT: FR 16138, intro screen, takes the user to all Career game options]" />
+						<translation id="desc" translation_id="538927" type="use" value="The full featured simulation experience. Manage your team, your way[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the regular manager career mode]" />
+						<translation id="hint" translation_id="585750" type="use" value="The full featured simulation experience. Rise to the very top of the managerial pyramid and steer your side(s) to glory across five continents and 55 nations[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the regular manager career mode]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/create a club">
+						<record id="click_event" event_id="NEWO" is_fmt_game="false" is_create_a_club_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420637" type="use" value="Create-a-Club[COMMENT: FR 16138, refer to ID 396025 as this is just a streamlined version of that for UI purposes, both are intro panel items to begin this game mode]" />
+						<translation id="desc" translation_id="420638" type="use" value="Create your own club and lead them to glory[COMMENT: FR 16138, explanation of Create-a-Club mode, cannot be feminised]" />
+						<translation id="hint" translation_id="560943" type="use" value="Create a club in your style, including kits, colours, the name, and starting squad! Lead your club in the full featured simulation experience to the top of the world[COMMENT: FR 16138, explanation of Create-a-Club mode, cannot be feminised]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="16" horizontal_offset="2" vertical_alignment="top" vertical_inset="10" />
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/online career">
+						<record id="click_event" event_id="NEWN" is_fmt_game="false" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420635" type="use" value="Online Career[COMMENT: FR 16138, intro screen, takes the user to all Online game options]" />
+						<translation id="desc" translation_id="542419" type="use" value="Host an online game and play with friends and Football Manager players around the world[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the online manager career mode]" />
+						<translation id="hint" translation_id="560944" type="use" value="Host an online game and earn bragging rights and kudos against your friends and Football Manager players around the world with your managerial and tactical acumen[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the online manager career mode]" />
+						<translation id="text" translation_id="538930" type="use" value="Online | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/fantasy draft">
+						<record id="click_event" event_id="nFdG" evtg="root" evfl="7" mode="0" />
+						<translation id="titl" translation_id="251420" type="use" value="Fantasy Draft[COMMENT - Title of draft for the Fantasy Draft draft type]" />
+						<translation id="desc" translation_id="538931" type="use" value="Build the team of your dreams and go head-to-head against your friends for ultimate supremacy[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the fantasy draft game mode]" />
+						<translation id="hint" translation_id="560945" type="use" value="Go toe-to-toe with your friends' sides for ultimate supremacy by using your FM knowledge to draft the very best squad available to you[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the fantasy draft game mode]" />
+						<translation id="text" translation_id="542734" type="use" value="Online &amp; Local | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode, we use the character reference for ampersand in code but you can use the character in translation]" />
+					</container>
+
+
+					<container class="intro_game_mode_card" id="VSPC" icon="icons/custom/game modes/versus" mode="1">
+						<record id="click_event" event_id="nvmg" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="339240" type="use" value="Versus[COMMENT: intro panel button text for Versus Competition online mode, a custom competition for human users]" />
+						<translation id="desc" translation_id="542735" type="use" value="Challenge your friends in the new Versus Mode[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; Description of the new Versus mode game mode]" />
+						<translation id="hint" translation_id="560946" type="use" value="Challenge accepted! In the exciting Versus Mode, put one of your legendary teams from an FM Career save up against the very best your friends have to offer and see whose team really are the invincibles![COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; Description of the new Versus mode game mode]" />
+						<translation id="text" translation_id="542734" type="use" value="Online &amp; Local | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode, we use the character reference for ampersand in code but you can use the character in translation]" />
+					</container>
+				</container>
+			</container>
+
+			<!-- FMT Game Modes (PC/Xbox) -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<string id="remove_if" value="platform_is_handheld, distribution_is_apple" />
+				<global id="shown" name="is_fmt" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="10" horizontal_offset="2" vertical_alignment="top" vertical_inset="10" />
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/career">
+						<record id="click_event" event_id="NEWO" is_fmt_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420633" type="use" value="Career[COMMENT: FR 16138, intro screen, takes the user to all Career game options]" />
+						<translation id="desc" translation_id="538927" type="use" value="The full featured simulation experience. Manage your team, your way[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the regular manager career mode]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/create a club">
+						<record id="click_event" event_id="NEWO" is_fmt_game="true" is_create_a_club_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420637" type="use" value="Create-a-Club[COMMENT: FR 16138, refer to ID 396025 as this is just a streamlined version of that for UI purposes, both are intro panel items to begin this game mode]" />
+						<translation id="desc" translation_id="420638" type="use" value="Create your own club and lead them to glory[COMMENT: FR 16138, explanation of Create-a-Club mode, cannot be feminised]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/challenge">
+						<record id="click_event" event_id="NEWC" is_fmt_game="true" is_challenge_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="336202" type="use" value="Challenge[COMMENT: leaderboard panel column header, points scored in Challenge modes]" />
+						<translation id="desc" translation_id="538933" type="use" value="Take on a series of challenges to really prove you have what it takes to succeed as a manager[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the challenge game mode]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="10" horizontal_offset="2" vertical_alignment="top" vertical_inset="10" />
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/online career">
+						<record id="click_event" event_id="NEWN" is_fmt_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420635" type="use" value="Online Career[COMMENT: FR 16138, intro screen, takes the user to all Online game options]" />
+						<translation id="desc" translation_id="542419" type="use" value="Host an online game and play with friends and Football Manager players around the world[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the online manager career mode]" />
+						<translation id="text" translation_id="538930" type="use" value="Online | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/fantasy draft">
+						<record id="click_event" event_id="nFdG" evtg="root" evfl="7" mode="1" />
+						<translation id="titl" translation_id="251420" type="use" value="Fantasy Draft[COMMENT - Title of draft for the Fantasy Draft draft type]" />
+						<translation id="desc" translation_id="538931" type="use" value="Build the team of your dreams and go head-to-head against your friends for ultimate supremacy[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the fantasy draft game mode]" />
+						<translation id="text" translation_id="542734" type="use" value="Online &amp; Local | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode, we use the character reference for ampersand in code but you can use the character in translation]" />
+					</container>
+
+
+					<container class="intro_game_mode_card" id="VSXB" icon="icons/custom/game modes/versus">
+						<record id="click_event" event_id="nvmg" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="339240" type="use" value="Versus[COMMENT: intro panel button text for Versus Competition online mode, a custom competition for human users]" />
+						<translation id="desc" translation_id="542735" type="use" value="Challenge your friends in the new Versus Mode[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; Description of the new Versus mode game mode]" />
+						<translation id="text" translation_id="542734" type="use" value="Online &amp; Local | 1+ players[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FM-1825; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode, we use the character reference for ampersand in code but you can use the character in translation]" />
+					</container>
+				</container>
+			</container>
+
+
+			<!-- FMT Game Modes (Touch/Switch/Apple Arcade) -->
+			<container>
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<string id="create_if" value="platform_is_handheld,distribution_is_apple" />
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="10" horizontal_offset="2" vertical_alignment="top" vertical_inset="10" />
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/career">
+						<record id="click_event" event_id="NEWO" is_fmt_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420633" type="use" value="Career[COMMENT: FR 16138, intro screen, takes the user to all Career game options]" />
+						<translation id="desc" translation_id="538927" type="use" value="The full featured simulation experience. Manage your team, your way[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the regular manager career mode]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/create a club">
+						<record id="click_event" event_id="NEWO" is_fmt_game="true" is_create_a_club_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="420637" type="use" value="Create-a-Club[COMMENT: FR 16138, refer to ID 396025 as this is just a streamlined version of that for UI purposes, both are intro panel items to begin this game mode]" />
+						<translation id="desc" translation_id="420638" type="use" value="Create your own club and lead them to glory[COMMENT: FR 16138, explanation of Create-a-Club mode, cannot be feminised]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+					<container class="intro_game_mode_card" icon="icons/custom/game modes/challenge">
+						<record id="click_event" event_id="NEWC" is_fmt_game="true" is_challenge_game="true" evtg="root" evfl="7" />
+						<translation id="titl" translation_id="336202" type="use" value="Challenge[COMMENT: leaderboard panel column header, points scored in Challenge modes]" />
+						<translation id="desc" translation_id="538933" type="use" value="Take on a series of challenges to really prove you have what it takes to succeed as a manager[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the challenge game mode]" />
+						<translation id="text" translation_id="538928" type="use" value="Local | 1 player[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Description of the network and player requirements for a gamemode]" />
+					</container>
+
+				</container>
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

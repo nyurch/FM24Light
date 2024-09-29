@@ -4,7 +4,7 @@
 	<list id="draw_order">
 		<record entity_layout_id="atSD" />
 		<record entity_layout_id="at00" />
-	
+
 		<record entity_layout_id="at08" />
 		<record entity_layout_id="at04" />
 		<record entity_layout_id="at03" />
@@ -276,8 +276,7 @@
 				</container>
 			</container>
 		</container>
-		<container class="contrast_box" entity_layout_id="at04" id="pitv" hidden="true" navigation_container="true">
-			<string id="red_replacement" value="pitch_box_background" />
+		<container class="main_subtle_box" entity_layout_id="at04" id="pitv" hidden="true" navigation_container="true">
 			<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="bottom" set_side="top" target="at0B" />
 			<layout class="stick_to_object_attachment" id="align_bottom" offset="-4" get_side="bottom" set_side="bottom" target="main" />
 			<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="right" set_side="left" target="at0P" />
@@ -303,7 +302,7 @@
 					<boolean id="test_on_layout" value="false" />
 				</layout>
 			</container>
-			
+
 			<container class="pitch_with_tactics" entity_layout_id="at01" id="ypwt" hidden="true" file="widgets/pitch with tactics youth development">
 				<string id="player_icon_file" value="tactics/tactics icon info panel overview" />
 				<string id="icon_flags" value="show_name,show_extra_details,use_overview_icons,drop_initial_if_possible,show_position_role_duty_suitability,show_selection_image,show_role_duty_labels,disable_role_duty_popup,show_familiarity,dont_fade_icons,show_reserves_playing_time" />
@@ -316,8 +315,7 @@
 				<string id="dcol" value="tactics darkened run" />
 				<string id="gcol" value="tactics dragged run" />
 				<string id="pitch_kit_height" value="32" />
-				<string id="pitch_draw_grass" value="false" />
-				<string id="pitch_base_appearance" value="" />
+				<string id="pitch_draw_grass" value="true" />
 				<string id="pitch_alignment" value="can_scale" />
 				<string id="pitch_pattern" value="ui circles" />
 				<integer id="pitch_touchline_width_percentage" value="100" />
@@ -358,7 +356,7 @@
 				<boolean id="auto_size_rows" value="false" />
 				<boolean id="fixed_size_rows" value="true" />
 				<string id="contextual_handler_column_id" value="PlSE" />
-				<list id="default_sort_column" >
+				<list id="default_sort_column">
 					<integer value="TPRD" />
 					<integer value="PpsC" />
 				</list>

@@ -3,7 +3,7 @@
 
 	<string id="skin_style" value="subtle box" />
 
-	<container class="inner_subtle_box" red_replacement="blue" id="cbox">
+	<container class="main_subtle_box" id="cbox">
 		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 		<widget class="text" id="ctxt" auto_size="vertical" spec="text" colour="text" font="fonts/inbox_body" size="11" />

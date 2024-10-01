@@ -11,47 +11,41 @@
 
 			<boolean id="save_session_state" value="true"/>
 
-
-			<container class="horizontal_arrange_container" layout="250, -1" auto_size="vertical" gap="40" inset="0">
+			<container class="horizontal_arrange_container" layout="300, -1" auto_size="vertical" gap="10" inset="0">
 
 				<!--manager profile container-->
-				<container class="vertical_arrange_container" alignment="top" layout="150, 80, 200" auto_size="vertical" inset="0" gap="0">
+				<container class="main_subtle_box">
+					<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal"/>
 
 					<container id="ICdi" height="150" width="250">
 						<layout class="arrange_vertical_attachment" alignment="top" offset="0"/>
 						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 					</container>
 
-					<widget class="client_object_viewer_xml_panel" navigation_focus_target="true" id="ManC">
-						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
-						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+					<widget class="client_object_viewer_xml_panel" id="ManC" navigation_focus_target="true">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal"/>
 						<flags id="child_for_sort" value="PnmP"/>
 
-						<widget class="person_button" id="PnmP" navigation_focus_target="true" info_popup_enabled="true" alignment="centre" info_popup_alignment="centre" auto_size="vertical" font="semibold">
+						<widget class="person_button" id="PnmP" navigation_focus_target="true" info_popup_enabled="true" alignment="centre" info_popup_alignment="centre" auto_size="vertical" font="semibold" colour="text">
 							<record id="object_property" get_property="PnmP" set_property="valu" />
 						</widget>
 
-						<widget class="job_label" auto_size="vertical" alignment="centre" height="25" colour="faded text">
+						<widget class="job_label" auto_size="all" alignment="centre" colour="faded text">
 							<record id="object_property" get_property="PcJj" set_property="valu" />
 						</widget>
 
-						<widget class="person_nationality_button" navigation_focus_target="true" entity_layout_id="at05" id="pntB" alignment="centre" icon_alignment="centre" auto_size="horizontal">
-							<record id="dbrp">
-								<string id="get_property" value="objt" />
-								<string id="set_property" value="objt" />
-							</record>
+						<widget class="person_nationality_button" id="pntB" navigation_focus_target="true" alignment="centre" icon_alignment="centre" auto_size="all">
+							<record id="dbrp" get_property="objt" set_property="objt" />
 						</widget>
-
 					</widget>
 
-					<widget class="client_object_viewer_xml_panel" navigation_focus_target="true" id="AdIn">
-						<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
-						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+					<widget class="client_object_viewer_xml_panel" id="AdIn" navigation_focus_target="true">
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal"/>
 
 						<widget class="horizontal_divider" alignment="left, bottom"/>
 
 						<!-- manager relationship with you (only shown here for non players) -->
-						<widget class="label" alignment="left,bottom" font="label">
+						<widget class="label" alignment="left, bottom" font="label">
 							<translation id="text" translation_id="243508" type="use" value="Relationship With You" />
 						</widget>
 						<widget class="relationship_label" id="mryw" display_format="0" auto_size="vertical" spec="text" value="">
@@ -59,23 +53,20 @@
 						</widget>
 
 						<!-- favoured persons -->
-						<widget class="label" alignment="left,bottom" font="label">
+						<widget class="label" alignment="left, bottom" font="label">
 							<translation id="text" translation_id="247454" type="use" value="Favoured Personnel" />
 						</widget>
-						<widget class="favourite_personel_text" navigation_focus_target="true" id="fvpw" auto_size="vertical" spec="text" colour="accent"/>
+						<widget class="favourite_personel_text" id="fvpw" navigation_focus_target="true" auto_size="vertical" spec="text" colour="accent"/>
 
 						<!-- Media handling -->
-						<widget class="label" row="4" alignment="left,bottom" font="label">
+						<widget class="label" row="4" alignment="left, bottom" font="label">
 							<translation id="text" translation_id="291327" type="use" value="Media Handling Style[COMMENT: player transfer panel; how staff handles media]" />
 						</widget>
 						<widget class="media_handling_label" id="mhst" auto_size="vertical" spec="text" value="">
 							<record id="object_property" get_property="Pghm" set_property="valu"/>
 						</widget>
-
 					</widget>
-
 				</container>
-
 
 				<!-- quote section -->
 				<container id="QtBx" class="vertical_arrange_container" alignment="top, extend" auto_size="vertical" inset="0" offset="">
@@ -91,7 +82,7 @@
 						<layout class="fit_children_attachment" alignment="vertical, fill"/>
 						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 
-						<widget class="text" id="QQtx" auto_size="vertical" size="large">
+						<widget class="text" id="QQtx" auto_size="vertical" size="large" colour="press conference summary quote">
 							<layout class="stick_to_sides_attachment" alignment="horizontal"/>
 						</widget>
 					</container>
@@ -105,10 +96,9 @@
 						<layout class="fit_children_attachment" alignment="vertical, fill"/>
 						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 
-						<widget class="text" id="AQtx" auto_size="vertical" size="large">
+						<widget class="text" id="AQtx" auto_size="vertical" size="large" colour="press conference summary quote">
 							<layout class="stick_to_sides_attachment" alignment="horizontal"/>
 						</widget>
-
 					</container>
 
 					<widget class="text" id="PInt" auto_size="vertical">
@@ -120,13 +110,13 @@
 						<layout class="fit_children_attachment" alignment="vertical, fill"/>
 						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 
-						<widget class="text" id="PQtx" auto_size="vertical" size="large">
+						<widget class="text" id="PQtx" auto_size="vertical" size="large" colour="press conference summary quote">
 							<layout class="stick_to_sides_attachment" alignment="horizontal"/>
 						</widget>
 					</container>
-
 				</container>
 			</container>
+
 			<!-- player reactions -->
 			<container class="inner_subtle_box" id="ReBx">
 				<layout class="arrange_vertical_attachment" alignment="top, extend"/>
@@ -157,5 +147,4 @@
 			</container>
 		</container>
 	</container>
-
 </panel>

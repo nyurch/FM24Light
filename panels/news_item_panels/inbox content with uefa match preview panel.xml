@@ -327,8 +327,8 @@
 						<container>
 							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
 							<container class="inner_subtle_box">
-								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
-								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="fg" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="25, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="accent" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
 								<translation id="link_title" translation_id="247942" type="use" value="Past Winners" />
 								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title">
 									<translation id="text" translation_id="247942" type="use" value="Past Winners" />
@@ -417,8 +417,8 @@
 						<container>
 							<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" horizontal_alignment="horizontal" />
 							<container class="inner_subtle_box">
-								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
-								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="fg" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
+								<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="25, -1" horizontal_offset="0" horizontal_gap="5" vertical_inset="0" />
+								<widget class="picture" file="icons/custom/milestones/competitions" red_replacement="accent" alignment="left, centre_y" id="icon" height="20" scale_picture="true" keep_aspect_ratio="true" />
 								<translation id="link_title" translation_id="247942" type="use" value="Past Winners" />
 								<widget class="text" auto_size="vertical" alignment="left,centre_y" font="title">
 									<translation id="text" translation_id="247942" type="use" value="Past Winners" />

@@ -2,7 +2,7 @@
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 	<string id="skin_style" value="subtle box"/>
 
-	<container class="inner_subtle_box" red_replacement="blue">
+	<container class="main_subtle_box">
 		<attachment class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_gap="10"/>
 		<!-- trophy picture -->
 		<widget class="comp_award_trophy_picture" id="trop" scale_picture="true" keep_aspect_ratio="true" height="175" image_alignment="centre">

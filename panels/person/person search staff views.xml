@@ -1,0 +1,252 @@
+<record>
+	<record id="current_view" value="ctrc" />
+
+	<list id="views">
+		<record id="ctrc">
+			<translation id="text" translation_id="230163" type="use" value="Contract" />
+			<record id="view">
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="PSag" />
+				<!-- person age -->
+				<record id="Ppfj" multiline="false" />
+				<!-- role desired -->
+				<record id="Pclb" />
+				<!-- club team -->
+				<record id="PCcj" multiline="false" />
+				<!-- club job text -->
+				<record id="PCij" multiline="false" />
+				<!-- internationl job text -->
+				<record id="Pcif" />
+				<!-- full time or part-time contract -->
+				<record id="Pnrs" />
+				<!-- reputation -->
+				<record id="Pcty" />
+				<!-- contact type -->
+				<record id="Pcww" />
+				<!-- weekly wage -->
+				<record id="Pced" />
+				<!-- end date -->
+			</record>
+		</record>
+
+		<record id="----" />
+
+		<record id="rate">
+			<translation id="text" translation_id="229619" type="use" value="Rating" />
+
+			<!-- Define attributes/properties to view in this view type on the panel.
+								  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="Pclb" />
+				<!-- club team -->
+				<record id="PCcj" multiline="false" />
+				<!-- club job text -->
+				<record id="NCst" auto_hide_priority="1" />
+				<!-- rating for current role-->
+				<record id="PCij" multiline="false" />
+				<!-- internationl job text -->
+				<record id="Ppfj" multiline="false" />
+				<!-- role desired -->
+				<record id="NIst" auto_hide_priority="1" />
+				<!-- rating for preferred role-->
+			</record>
+		</record>
+
+		<record id="coat">
+			<translation id="text" translation_id="230027" type="use" value="Coaching Attributes" />
+
+			<!-- Define attributes/properties to view in this view type on the panel.
+								  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="Page" />
+				<!-- person age -->
+				<record id="Pnat" />
+				<!-- person nationality -->
+				<record id="Psnt" />
+				<!-- person 2 nationality -->
+				<record id="Pcsj" />
+				<!-- current job -->
+				<record id="Ppfj" multiline="false" />
+				<!-- role desired -->
+				<record id="Pclb" />
+				<!-- club team -->
+				<record id="Npgd" />
+				<!-- goalkeeper coaching distribution -->
+				<record id="Npgh" />
+				<!-- goalkeeper coaching handling -->
+				<record id="Npgs" />
+				<!-- goalkeeper coaching shot stopping -->
+				<record id="Ncha" />
+				<!-- coaching attacking-->
+				<record id="Nchd" />
+				<!-- coaching defending-->
+				<record id="Nchf" />
+				<!-- fitness coaching -->
+				<record id="Nchm" />
+				<!-- mental coaching-->
+				<record id="Ncte" />
+				<!-- technical coaching-->
+				<record id="Ncta" />
+				<!-- tactical coaching-->
+				<record id="Ncsp" />
+				<!-- set piece coaching-->
+				<record id="Npmm" />
+				<!-- man management -->
+				<record id="Npwy" />
+				<!-- working with youngsters -->
+				<record id="PPst" />
+				<!-- personality -->
+				<record id="Prsa" />
+				<!-- reputation -->
+				<record id="Npde" />
+				<!-- determination -->
+				<record id="Npmo" />
+				<!-- motivating -->
+				<record id="Npld" />
+				<!-- level of discipline -->
+			</record>
+		</record>
+
+		<record id="miat">
+			<translation id="text" translation_id="394485" type="use" value="Medical Team Attributes[COMMENT: team staff attributes panel label]" />
+
+			<!-- Define attributes/properties to view in this view type on the panel.
+								  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="Page" />
+				<!-- person age -->
+				<record id="Pnat" />
+				<!-- person nationality -->
+				<record id="Psnt" />
+				<!-- person 2 nationality -->
+				<record id="Ppfj" multiline="false" />
+				<record id="Pcsj" />
+				<!-- current job -->
+				<!-- role desired -->
+				<record id="Pclb" />
+				<!-- club team -->
+				<record id="Npph" />
+				<!-- physiotherapy -->
+				<record id="NpIM" />
+				<!-- injury management -->
+				<record id="Npad" />
+				<!-- adaptability -->
+				<record id="PPst" />
+				<!-- personality -->
+				<record id="Prsa" />
+				<!-- reputation -->
+				<record id="Npde" />
+				<!-- determination -->
+				<record id="Npmo" />
+				<!-- motivating -->
+				<record id="Npld" />
+				<!-- level of discipline -->
+			</record>
+		</record>
+
+		<record id="MEat">
+			<translation id="text" translation_id="230062" type="use" value="Mental Attributes" />
+
+			<!-- Define attributes/properties to view in this view type on the panel.
+								  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="Page" />
+				<!-- person age -->
+				<record id="Pnat" />
+				<!-- person nationality -->
+				<record id="Psnt" />
+				<!-- person 2 nationality -->
+				<record id="Pcsj" />
+				<!-- current job -->
+				<record id="Ppfj" multiline="false" />
+				<!-- role desired -->
+				<record id="Pclb" />
+				<!-- club team -->
+				<record id="Npad" />
+				<!-- adaptability -->
+				<record id="Nptk" />
+				<!-- tactical knowledge -->
+				<record id="Npja" />
+				<!-- judging ability -->
+				<record id="Npjp" />
+				<!-- judging potential -->
+				<record id="Npjs" />
+				<!-- judging staff ability -->
+				<record id="Npjd" />
+				<!-- analysing data -->
+				<record id="Nneg" />
+				<!--negotiating-->
+				<record id="PPst" />
+				<!-- personality -->
+				<record id="Prsa" />
+				<!-- reputation -->
+				<record id="Npde" />
+				<!-- determination -->
+				<record id="Npmo" />
+				<!-- motivating -->
+				<record id="Npld" />
+				<!-- level of discipline -->
+
+			</record>
+		</record>
+
+		<record id="----" />
+
+		<record id="nige">
+			<translation id="name" translation_id="361135" type="use" value="Hidden Attributes[COMMENT: attirbute filters; hidden attributes filterable in the editor]" />
+			<!-- Define attributes/properties to view in this view type on the panel.
+									  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="Psnm" />
+				<record id="Pcsj" />
+				<record id="PSag" />
+				<record id="Ncra" />
+				<record id="Npta" />
+				<record id="Nwrr" />
+				<record id="Ncrr" />
+				<record id="Nhmr" />
+			</record>
+		</record>
+
+		<record id="ndbg">
+			<translation id="name" translation_id="247109" type="use" value="Debug" />
+			<!-- Define attributes/properties to view in this view type on the panel.
+									  Any properties not defined here will be hidden for this view. -->
+			<record id="view">
+				<record id="Pcsj" />
+				<!-- short job text -->
+				<record id="PSpi" />
+				<!-- status record -->
+				<record id="Psnm" />
+				<!-- person name with information icon -->
+				<record id="PSag" />
+				<!-- person age -->
+				<record id="Ncra" />
+				<record id="Npta" />
+				<record id="Nwrr" />
+				<record id="Ncrr" />
+				<record id="Nhmr" />
+				<record id="Npqs" />
+			</record>
+		</record>
+	</list>
+</record>

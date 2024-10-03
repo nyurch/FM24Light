@@ -23,14 +23,13 @@
 	<container>
 		<layout class="horizontal_arrange" horizontal_layout="-1,-1" />
 		<container class="main_subtle_box" vertical_alignment="centre">
-			<layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="5" layout="120,5,20" offset="0" />
+			<layout class="arrange_vertical_attachment" alignment="all" gap="5" layout="-1,5,30" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 			<container>
 				<layout class="arrange_vertical_attachment" alignment="top" gap="0" offset="5" />
-				<layout class="fit_children_attachment" alignment="vertical,fill" gap="0" offset="5" />
 				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 				<!--comp picture-->
-				<widget class="object_portrait_picture" id="fxCo" scale_picture="true" height="200">
+				<widget class="object_portrait_picture" id="fxCo" scale_picture="true" height="180">
 					<boolean id="keep_aspect_ratio" value="true" />
 					<flags id="image_alignment" value="centre" />
 					<record id="object_property">
@@ -63,8 +62,7 @@
 					</record>
 				</widget>
 			</container>
-			<!--spacer-->
-			<container height="5" />
+			<container />
 			<!--stadium-->
 			<container>
 				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />

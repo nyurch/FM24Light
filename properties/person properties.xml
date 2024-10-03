@@ -14890,6 +14890,34 @@
 			</record>
 		</record>
 
+		<!--coaching set pieces-->
+		<record>
+			<integer id="id" value="Ncsp" />
+			<integer id="width" value="65" />
+			<translation id="name" translation_id="585677" type="use" value="Set Pieces[COMMENT: AREA: non player attributes; SUB-AREA: non player attributes; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:None; NOTE: Name of the coaching set pieces non player attribute]" />
+			<flags id="customisation_context" value="staf" />
+			<translation id="category" translation_id="229822" type="use" value="Attributes" />
+			<translation id="subcategory" translation_id="230043" type="use" value="Coaching" />
+			<boolean id="sort_ascending" value="false" />
+			<record id="widget_info" alignment="centre,can_scale" colour="white" font="text_white" size="12" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper">
+				<symbol id="class" value="attribute_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="attribute_edit_box" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="585679" type="use" value="SPC[COMMENT: AREA: non player attributes; SUB-AREA: Abbreviation of non player attribute; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:3; NOTE: Abbreviation of the coaching set pieces non player attribute]" />
+				<translation id="hint" translation_id="585678" type="use" value="Set Piece Coaching[COMMENT: AREA: non player attributes; SUB-AREA: Name of non player attribute; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:None; NOTE: Name of the coaching set pieces non player attribute]" />
+			</record>
+			<record id="search_filter">
+				<integer id="id" value="pf20" />
+			</record>
+		</record>
+
 		<!--physiotherapy-->
 		<record>
 			<integer id="id" value="Npph" />

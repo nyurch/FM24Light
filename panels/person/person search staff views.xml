@@ -67,7 +67,7 @@
 			<record id="view">
 				<record id="PSpi" />
 				<!-- status record -->
-				<record id="Psnm" />
+				<record id="Psnm"  width="-1"/>
 				<!-- person name with information icon -->
 				<record id="Page" />
 				<!-- person age -->
@@ -75,45 +75,43 @@
 				<!-- person nationality -->
 				<record id="Psnt" />
 				<!-- person 2 nationality -->
-				<record id="Pcsj" />
-				<!-- current job -->
 				<record id="Ppfj" multiline="false" />
 				<!-- role desired -->
 				<record id="Pclb" />
 				<!-- club team -->
-				<record id="Npgd" />
+				<record id="Npgd" width="30" />
 				<!-- goalkeeper coaching distribution -->
-				<record id="Npgh" />
+				<record id="Npgh" width="30" />
 				<!-- goalkeeper coaching handling -->
-				<record id="Npgs" />
+				<record id="Npgs" width="30" />
 				<!-- goalkeeper coaching shot stopping -->
-				<record id="Ncha" />
+				<record id="Ncha" width="30" />
 				<!-- coaching attacking-->
-				<record id="Nchd" />
+				<record id="Nchd" width="30" />
 				<!-- coaching defending-->
-				<record id="Nchf" />
+				<record id="Nchf" width="30" />
 				<!-- fitness coaching -->
-				<record id="Nchm" />
+				<record id="Nchm" width="30" />
 				<!-- mental coaching-->
-				<record id="Ncte" />
+				<record id="Ncte" width="30" />
 				<!-- technical coaching-->
-				<record id="Ncta" />
+				<record id="Ncta" width="30" />
 				<!-- tactical coaching-->
-				<record id="Ncsp" />
+				<record id="Ncsp" width="30" />
 				<!-- set piece coaching-->
-				<record id="Npmm" />
+				<record id="Npmm" width="30" />
 				<!-- man management -->
-				<record id="Npwy" />
+				<record id="Npwy" width="30" />
 				<!-- working with youngsters -->
 				<record id="PPst" />
 				<!-- personality -->
 				<record id="Prsa" />
 				<!-- reputation -->
-				<record id="Npde" />
+				<record id="Npde" width="30" />
 				<!-- determination -->
-				<record id="Npmo" />
+				<record id="Npmo" width="30" />
 				<!-- motivating -->
-				<record id="Npld" />
+				<record id="Npld" width="30" />
 				<!-- level of discipline -->
 			</record>
 		</record>
@@ -126,7 +124,7 @@
 			<record id="view">
 				<record id="PSpi" />
 				<!-- status record -->
-				<record id="Psnm" />
+				<record id="Psnm"  width="-1"/>
 				<!-- person name with information icon -->
 				<record id="Page" />
 				<!-- person age -->
@@ -140,21 +138,21 @@
 				<!-- role desired -->
 				<record id="Pclb" />
 				<!-- club team -->
-				<record id="Npph" />
+				<record id="Npph" width="30" />
 				<!-- physiotherapy -->
-				<record id="NpIM" />
+				<record id="NpIM" width="30" />
 				<!-- injury management -->
-				<record id="Npad" />
+				<record id="Npad" width="30" />
 				<!-- adaptability -->
 				<record id="PPst" />
 				<!-- personality -->
 				<record id="Prsa" />
 				<!-- reputation -->
-				<record id="Npde" />
+				<record id="Npde" width="30" />
 				<!-- determination -->
-				<record id="Npmo" />
+				<record id="Npmo" width="30" />
 				<!-- motivating -->
-				<record id="Npld" />
+				<record id="Npld" width="30" />
 				<!-- level of discipline -->
 			</record>
 		</record>
@@ -167,7 +165,7 @@
 			<record id="view">
 				<record id="PSpi" />
 				<!-- status record -->
-				<record id="Psnm" />
+				<record id="Psnm"  width="-1"/>
 				<!-- person name with information icon -->
 				<record id="Page" />
 				<!-- person age -->
@@ -181,29 +179,29 @@
 				<!-- role desired -->
 				<record id="Pclb" />
 				<!-- club team -->
-				<record id="Npad" />
+				<record id="Npad" width="30" />
 				<!-- adaptability -->
-				<record id="Nptk" />
+				<record id="Nptk" width="30" />
 				<!-- tactical knowledge -->
-				<record id="Npja" />
+				<record id="Npja" width="30" />
 				<!-- judging ability -->
-				<record id="Npjp" />
+				<record id="Npjp" width="30" />
 				<!-- judging potential -->
-				<record id="Npjs" />
+				<record id="Npjs" width="30" />
 				<!-- judging staff ability -->
-				<record id="Npjd" />
+				<record id="Npjd" width="30" />
 				<!-- analysing data -->
-				<record id="Nneg" />
+				<record id="Nneg" width="30" />
 				<!--negotiating-->
 				<record id="PPst" />
 				<!-- personality -->
 				<record id="Prsa" />
 				<!-- reputation -->
-				<record id="Npde" />
+				<record id="Npde" width="30" />
 				<!-- determination -->
-				<record id="Npmo" />
+				<record id="Npmo" width="30" />
 				<!-- motivating -->
-				<record id="Npld" />
+				<record id="Npld" width="30" />
 				<!-- level of discipline -->
 
 			</record>

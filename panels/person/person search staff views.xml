@@ -134,9 +134,9 @@
 				<!-- person nationality -->
 				<record id="Psnt" />
 				<!-- person 2 nationality -->
-				<record id="Ppfj" multiline="false" />
 				<record id="Pcsj" />
 				<!-- current job -->
+				<record id="Ppfj" multiline="false" />
 				<!-- role desired -->
 				<record id="Pclb" />
 				<!-- club team -->

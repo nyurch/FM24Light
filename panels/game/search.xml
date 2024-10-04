@@ -42,7 +42,7 @@
 		<!-- Search box -->
 
 		<!-- Multibox containing the search results -->
-		<container class="tabbed_container" id="main" navigation_container="true">
+		<container class="tabs" id="main" navigation_container="true">
 
 			<!-- IMPORTANT: The index property set on these widgets is so that the code can find the corresponding tab in the tab_strip. If the order of the
 			results tables is changed the indices must be updated! -->

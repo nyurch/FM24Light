@@ -4,7 +4,7 @@
 	<boolean id="should_force_refresh" value="true" />
 
 	<!-- Player Info -->
-	<container class="horizontal_arrange_container" layout="300,-1" gap="8" height="218" id="popu">
+	<container class="horizontal_arrange_container" layout="300,-1" gap="8" height="230" id="popu">
 
 		<!-- Player Box -->
 		<container>

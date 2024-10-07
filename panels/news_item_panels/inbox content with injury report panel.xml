@@ -4,7 +4,7 @@
 	<string id="skin_style" value="subtle box"/>
 
 	<container height="300">
-		<layout class="arrange_horizontal_attachment" layout="-4, -5, -5" offset="0"/>
+		<layout class="arrange_horizontal_attachment" layout="400, 300, -1" offset="0"/>
 		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
 
 		<container class="main_subtle_box">

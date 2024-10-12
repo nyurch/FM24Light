@@ -30,7 +30,7 @@
 			<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="top,extend" vertical_offset="2" vertical_gap="8" horizontal_inset="10" horizontal_gap="0" />
 
 			<widget class="primary_icon_button" id="cfBT" auto_size="horizontal" alignment="centre_y, centre_x" height="30" click_event="scfC" navigation_focus_target="true">
-				<record id="primary_icon_properties" file="icons/custom/scouting/target" red_replacement="primary_button" blue_replacement="accent button text" />
+				<record id="primary_icon_properties" file="icons/custom/scouting/target" red_replacement="primary_button" blue_replacement="white" />
 
 				<translation id="text" translation_id="557608" type="use" value="Create Recruitment Focus[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4023; NOTE: Text on the button, which opens the create recruitment focus dialog]" />
 			</widget>

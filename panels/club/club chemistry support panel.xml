@@ -95,7 +95,7 @@
 						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 					</widget>
 					<widget class="picture" entity_layout_id="at01" file="icons/custom/icon box/stats" id="at01" auto_size="horizontal" scale_picture="true" needs_width="true">
-						<string id="red_replacement" value="red" />
+						<string id="red_replacement" value="accent" />
 						<string id="blue_replacement" value="white" />
 						<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" target="main" />
 						<layout class="stick_to_object_attachment" id="align_bottom" offset="-4" get_side="bottom" set_side="bottom" target="main" />
@@ -234,7 +234,7 @@
 						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 					</widget>
 					<widget class="picture" entity_layout_id="at18" file="icons/custom/icon box/squad" id="at18" auto_size="horizontal" scale_picture="true" needs_width="true">
-						<string id="red_replacement" value="red" />
+						<string id="red_replacement" value="accent" />
 						<string id="blue_replacement" value="white"/>
 						<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" target="main" />
 						<layout class="stick_to_object_attachment" id="align_bottom" offset="-4" get_side="bottom" set_side="bottom" target="main" />
@@ -372,7 +372,7 @@
 						<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 					</widget>
 					<widget class="picture" entity_layout_id="at35" file="icons/custom/icon box/manager" id="at35" auto_size="horizontal" scale_picture="true" needs_width="true">
-						<string id="red_replacement" value="red" />
+						<string id="red_replacement" value="accent" />
 						<string id="blue_replacement" value="white" />
 						<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" target="main" />
 						<layout class="stick_to_object_attachment" id="align_bottom" offset="-4" get_side="bottom" set_side="bottom" target="main" />

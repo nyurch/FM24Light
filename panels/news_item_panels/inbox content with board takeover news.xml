@@ -1,0 +1,98 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_alignment="horizontal" vertical_offset="0" vertical_gap="8" horizontal_inset="0"/>
+
+	<list id="properties_to_forward">
+		<record get_property="stad" set_property="valu" target="staB"/>
+		<record get_property="comp" set_property="valu" target="comp"/>
+		<record get_property="shpc" set_property="Shwn" target="upar"/>
+	</list>
+
+	<string id="skin_style" value="subtle box"/>
+
+	<!-- content area -->
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1, 255" horizontal_offset="0" vertical_inset="0"/>
+
+		<widget class="inbox_body_text" id="bdtx" colour="inbox_text"/>
+
+		<!--RHS Club and Finances container-->
+		<container class="scrolling_box">
+			<container class="main_subtle_box">
+				<attachment_group class="vertical_arrange_autosize"/>
+
+				<!--Dynamic image-->
+				<container id="ICdi" height="140">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+				</container>
+
+				<!--Team button with reputation stars-->
+				<widget class="team_button" size="large" style="bold" icon_enabled="false" format="[%team#1-long]" mode="1" alignment="centre_x, centre_y" auto_size="vertical">
+					<record id="object_property" get_property="objt" set_property="valu"/>
+				</widget>
+
+				<widget class="club_reputation_stars_label" size="large" alignment="centre_x, centre_y" auto_size="vertical">
+					<record id="object_property" get_property="Csta" set_property="valu"/>
+				</widget>
+
+				<widget class="horizontal_divider" auto_size="vertical"/>
+
+				<!--Finances-->
+				<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="229821" type="use" value="Finances"/>
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_gap="0"/>
+
+					<!--An up arrow to be shown if there has been an improvment-->
+					<widget class="picture" id="upar" width="16" image_alignment="top" file="icons/16px/increase" shown="false">
+						<layout class="stick_to_sides_attachment" alignment="vertical"/>
+					</widget>
+
+					<!--Finances description text-->
+					<widget class="club_finances_description_text" spec="large" alignment="left,centre_y" font="inbox_body" style="bold" auto_size="vertical">
+						<record id="object_property" get_property="CfiD" set_property="valu"/>
+					</widget>
+				</container>
+
+				<!--Owner Status-->
+				<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="394525" type="use" value="Owner Status[COMMENT: heading; team_information_panel; owner's confidence in the club]"/>
+				</widget>
+
+				<widget class="chairman_status_text" spec="text" alignment="left, centre_y" font="inbox_body" auto_size="vertical">
+					<record id="object_property" get_property="CStT" set_property="valu"/>
+				</widget>
+
+				<widget class="horizontal_divider" auto_size="vertical"/>
+
+				<!--Division-->
+				<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="243485" type="use" value="Division[COMMENT: player history screen heading]"/>
+				</widget>
+
+				<widget class="comp_button" id="comp" colour="text" alignment="left, centre_y" icon_enabled="false" auto_size="vertical"/>
+
+				<widget class="horizontal_divider" auto_size="vertical"/>
+
+				<!--Stadium-->
+				<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="229366" type="use" value="Stadium"/>
+				</widget>
+
+				<widget class="stadium_button" id="staB" colour="text" alignment="left, centre_y" icon_enabled="false" auto_size="vertical"/>
+
+				<!--Capacity-->
+				<widget class="text" font="title" colour="faded text" auto_size="vertical">
+					<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]"/>
+				</widget>
+
+				<widget class="dashed_number_label" auto_size="vertical">
+					<translation id="format" translation_id="356426" type="use" value="[%number#1][COMMENT: stadium capacity. Primarily for Korean as a marker needs to be added to indicate it's for a count of people]"/>
+					<record id="object_property" get_property="Scpy" set_property="valu"/>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+</panel>

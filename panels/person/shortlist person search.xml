@@ -19,13 +19,13 @@
 
 
 			<container>
-				<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_offset="6" horizontal_gap="6" vertical_offset="0" />
+				<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_offset="6" horizontal_gap="1" vertical_offset="0" />
 
-				<widget class="radio_button" id="pspa" auto_size="horizontal" alignment="centre" height="30" click_event="pspa" ticked="true" secondary_icon="icons/custom/shortlist/list" show_button_appearance="true" appearance="switches/store toggle/normal/button" colour="white" red_replacement="grey" blue_replacement="sidebar" green_replacement="bg accent" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
+				<widget class="radio_toggle_switch_left" id="pspa" auto_size="horizontal" alignment="centre" height="30" click_event="pspa" ticked="true" secondary_icon="icons/custom/shortlist/list" show_button_appearance="true" appearance="switches/toggle/left/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
 					<translation id="text" translation_id="293613" type="use" value="List" />
 				</widget>
 
-				<widget class="radio_button" id="posi" auto_size="horizontal" alignment="centre" height="30" click_event="posi" secondary_icon="icons/custom/shortlist/position" show_button_appearance="true" appearance="switches/store toggle/normal/button" colour="white" red_replacement="grey" blue_replacement="sidebar" green_replacement="bg accent" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
+				<widget class="radio_toggle_switch_right" id="posi" auto_size="horizontal" alignment="centre" height="30" click_event="posi" secondary_icon="icons/custom/shortlist/position" show_button_appearance="true" appearance="switches/toggle/right/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
 					<translation id="text" translation_id="227884" type="use" value="Position" />
 				</widget>
 			</container>

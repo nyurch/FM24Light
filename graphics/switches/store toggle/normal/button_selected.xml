@@ -17,9 +17,9 @@
 		<flags id="disabled_colour" value="faded white"/>
 	</record>
 
-	<colour id="red_replacement" name="store_button"/>
-	<colour id="green_replacement" name="fmt_downloads_colour"/>
-	<colour id="blue_replacement" name="store_button"/>
+	<colour id="red_replacement" name="lighter"/>
+	<colour id="green_replacement" name="lighter"/>
+	<colour id="blue_replacement" name="darker"/>
 
 	<record id="primary_icon_properties" red_replacement="white" />
 	<record id="secondary_icon_properties" red_replacement="white"/>

@@ -27,12 +27,12 @@
 			<container>
 				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left" />
 
-				<widget class="radio_button" select_event="ECST" auto_size="horizontal" show_button_appearance="true" alignment="centre" appearance="switches/store toggle/normal/button" colour="bg" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left" selected="true">
+				<widget class="radio_button" select_event="ECST" auto_size="horizontal" show_button_appearance="true" alignment="centre" appearance="switches/store toggle/normal/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left" selected="true">
 					<record id="secondary_icon_properties" file="icons/16px/staff" />
 					<translation id="text" translation_id="458567" type="use" value="Scouts[COMMENT: filter option to show only scout suggestions in scouting centre; fr 22700]" />
 				</widget>
 
-				<widget class="radio_button" select_event="ECKT" auto_size="horizontal" show_button_appearance="true" alignment="centre" appearance="switches/store toggle/normal/button" colour="bg" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
+				<widget class="radio_button" select_event="ECKT" auto_size="horizontal" show_button_appearance="true" alignment="centre" appearance="switches/store toggle/normal/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left">
 					<record id="secondary_icon_properties" file="icons/16px/world" />
 					<translation id="text" translation_id="334387" type="use" value="World Knowledge[COMMENT: team scouts; information about range of knowledge]" />
 				</widget>
@@ -51,14 +51,14 @@
 						<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" />
 						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-						<widget class="picture" auto_size="all" file="icons/custom/add manager/colour unpicked" red_replacement="black">
+						<widget class="picture" auto_size="all" file="icons/custom/add manager/colour unpicked" red_replacement="accent">
 						</widget>
 
 						<widget class="text" id="stnw" auto_size="all" font="bold" wants_mouse_events="false" colour="bg" alignment="centre, centre_y">
 						</widget>
 					</container>
 
-					<widget class="text" font="title" colour="black" size="xlarge" auto_size="all">
+					<widget class="text" font="title" colour="accent" size="xlarge" auto_size="all">
 						<layout class="centre_in_parent_attachment" alignment="vertical" />
 						<translation id="text" translation_id="259890" type="use" value="Scout Assignments[COMMENT; scout assignments section in person screen]" />
 					</widget>
@@ -118,7 +118,7 @@
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" vertical_gap="10" />
 
 				<!--title section-->
-				<widget class="text" font="title" colour="black" size="xlarge" auto_size="vertical">
+				<widget class="text" font="title" colour="accent" size="xlarge" auto_size="vertical">
 					<translation id="text" translation_id="334387" type="use" value="World Knowledge[COMMENT: team scouts; information about range of knowledge]" />
 				</widget>
 

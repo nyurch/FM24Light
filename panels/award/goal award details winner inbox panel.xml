@@ -7,7 +7,7 @@
 
 	<boolean id="is_in_inbox" value="true"/>
 
-	<container class="inner_subtle_box" red_replacement="green">
+	<container class="main_subtle_box">
 		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
 		<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="1" />
 		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
@@ -28,7 +28,7 @@
 			<layout class="stick_to_sides_attachment" alignment="top" inset="10" apply_to_children="true"/>
 
 			<!-- Player Picture -->
-			<widget class="competition_news_image_panel" id="ptpc" height="75">
+			<widget class="competition_news_image_panel" file="competition/extra_panels/competition news right-left image panel" id="ptpc" height="150">
 				<layout class="centre_in_parent_attachment" alignment="vertical"/>
 			</widget>
 
@@ -64,8 +64,8 @@
 				<record index="1" alignment="right,centre_y"/>
 			</list>
 
-			<widget class="text" id="fixl" col="0" row="0" style="bold"/>
-			<widget class="text" id="gdsc" col="0" row="1" multiline="true" auto_size="vertical" colour="faded text"/>
+			<widget class="text" id="fixl" col="0" row="0" size="xxlarge" style="bold"/>
+			<widget class="text" id="gdsc" col="0" row="1" size="large" multiline="true" auto_size="vertical" colour="faded text"/>
 		</widget>
 	</container>
 

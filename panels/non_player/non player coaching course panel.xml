@@ -45,7 +45,7 @@
 			<boolean id="exclude_from_find" value="true" />
 			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 		</widget>
-		<container class="inner_subtle_box" entity_layout_id="at20" id="at20" height="130" name="inner box">
+		<container class="main_box" entity_layout_id="at20" id="at20" height="130" name="inner box">
 			<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" move_side="true" target="main" />
 			<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 			<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
@@ -57,7 +57,7 @@
 				<boolean id="exclude_from_find" value="true" />
 				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 			</widget>
-			<container entity_layout_id="at06" id="at06" width="250" name="profilebox">
+			<container class="main_subtle_box" entity_layout_id="at06" id="at06" width="250" name="profilebox">
 				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" move_side="true" target="main" />
@@ -163,7 +163,7 @@
 					</widget>
 				</container>
 			</container>
-			<container class="main_box" entity_layout_id="at19" id="cCst" name="costbox">
+			<container class="main_subtle_box" entity_layout_id="at19" id="cCst" name="costbox">
 				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" move_side="true" target="main" />
@@ -176,25 +176,26 @@
 					<boolean id="exclude_from_find" value="true" />
 					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 				</widget>
-				<widget class="label" entity_layout_id="at16" alignment="left,bottom" auto_size="vertical" id="at16" height="30" name="costlabel">
+				<widget class="label" entity_layout_id="at16" alignment="left,bottom" auto_size="vertical" id="at16" height="40" name="costlabel">
 					<string id="standard_spec" value="text" />
 					<string id="font" value="label" />
-					<string id="size" value="small" />
+					<string id="size" value="large" />
 					<translation id="text" translation_id="333752" type="use" value="Cost[COMMENT: store dialog; text indicating how much a purchasable item costs]"/>
 					<layout class="stick_to_object_attachment" id="alPt" offset="11" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
-				<widget class="value_label" entity_layout_id="at00" alignment="left,bottom" id="coCL" height="30" name="costprice">
+				<widget class="value_label" entity_layout_id="at00" alignment="left,bottom" id="coCL" height="40" name="costprice">
 					<string id="style" value="semi_bold" />
 					<string id="colour" value="text" />
+					<string id="size" value="xlarge" />
 					<layout class="stick_to_object_attachment" id="alPt" offset="2" get_side="bottom" set_side="top" move_side="true" target="at16" />
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
-				<widget class="text" entity_layout_id="at18" id="cpbc" alignment="left,top" auto_size="vertical" height="30" name="costcovered">
+				<widget class="text" entity_layout_id="at18" id="cpbc" alignment="left,top" auto_size="vertical" height="40" name="costcovered">
 					<string id="standard_spec" value="text" />
-					<string id="size" value="small" />
+					<string id="size" value="large" />
 					<string id="colour" value="faded text" />
 					<string id="multiline" value="true" />
 					<layout class="stick_to_object_attachment" id="alPt" offset="1" get_side="bottom" set_side="top" move_side="true" target="at00" />
@@ -202,7 +203,7 @@
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
 			</container>
-			<container class="main_box" entity_layout_id="at15" id="cDur" name="durationbox">
+			<container class="main_subtle_box" entity_layout_id="at15" id="cDur" name="durationbox">
 				<layout class="stick_to_object_attachment" id="alPt" offset="1" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="alPb" offset="-1" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="alPr" offset="-8" get_side="left" set_side="right" move_side="true" target="at19" />
@@ -215,25 +216,25 @@
 					<boolean id="exclude_from_find" value="true" />
 					<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 				</widget>
-				<widget class="label" entity_layout_id="at13" id="labl" alignment="left,bottom" auto_size="vertical" height="30" name="durationlabel">
+				<widget class="label" entity_layout_id="at13" id="labl" alignment="left,bottom" auto_size="vertical" height="40" name="durationlabel">
 					<string id="standard_spec" value="text" />
 					<string id="font" value="label" />
-					<string id="size" value="small" />
+					<string id="size" value="large" />
 					<translation id="text" value="Duration" translation_id="230113" type="use" />
 					<layout class="stick_to_object_attachment" id="alPt" offset="9" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
-				<widget class="text" entity_layout_id="at14" id="dLAB" alignment="left,top" auto_size="vertical" height="30" name="durationtext">
+				<widget class="text" entity_layout_id="at14" id="dLAB" alignment="left,top" auto_size="vertical" height="40" name="durationtext">
 					<string id="standard_spec" value="text" />
-					<string id="size" value="large" />
+					<string id="size" value="xlarge" />
 					<string id="style" value="semi_bold" />
 					<layout class="stick_to_object_attachment" id="alPt" offset="1" get_side="bottom" set_side="top" move_side="true" target="at13" />
 					<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" target="main" />
 					<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 				</widget>
 			</container>
-			<container class="inner_subtle_box" entity_layout_id="at12" id="cDet" height="110" name="coursebox">
+			<container class="main_subtle_box" entity_layout_id="at12" id="cDet" height="110" name="coursebox">
 				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" move_side="true" target="main" />
 				<layout class="stick_to_object_attachment" id="alPl" offset="7" get_side="right" set_side="left" target="at06" />
 				<layout class="stick_to_object_attachment" id="alPr" offset="-8" get_side="left" set_side="right" target="at15" />
@@ -296,7 +297,7 @@
 			</container>
 		</container>
 	</container>
-	<container class="inner_subtle_box" entity_layout_id="at23" id="at23" name="staffoverview">
+	<container class="main_subtle_box" entity_layout_id="at23" id="at23" name="staffoverview">
 		<translation id="title" translation_id="329843" type="use" value="Coaching Qualifications[COMMENT: non-player profile; coaching qualification]" />
 		<layout class="stick_to_object_attachment" id="alPt" offset="141" get_side="top" set_side="top" target="main" />
 		<layout class="stick_to_object_attachment" id="alPb" offset="-27" get_side="bottom" set_side="bottom" target="main" />

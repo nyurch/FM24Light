@@ -4,212 +4,71 @@
 	<boolean id="is_in_inbox" value="true" />
 
 	<!--loan player info-->
-	<container class="main_subtle_box" id="lnmn">
-		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="120,-1,-1" horizontal_offset="0" vertical_offset="0" />
+	<container height="360" class="main_box" id="lnmn">
+		<layout class="horizontal_arrange" horizontal_layout="200,750,-1" />
+		<boolean id="should_force_refresh" value="true"/>
 
-		<!--picture-->
-		<container height="80">
-			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
-
-			<widget class="object_portrait_picture" width="80" image_alignment="centre" scale_picture="true">
-				<record id="object_property" get_property="Pcte" set_property="objt" />
-				<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
-			</widget>
-			<widget class="object_portrait_picture" width="80" image_alignment="centre" scale_picture="true">
-				<record id="object_property" get_property="objt" set_property="objt" />
-				<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
-			</widget>
-
+		<container class="main_box_no_margin">
+			<layout class="vertical_arrange" vertical_layout="100,80,-1" />
+			<!--picture-->
+			<container class="main_subtle_box" height="100">
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<widget class="object_portrait_picture" width="100" image_alignment="centre" scale_picture="true">
+					<record id="object_property" get_property="Pcte" set_property="objt" />
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+				</widget>
+				<widget class="object_portrait_picture" width="100" image_alignment="centre" scale_picture="true">
+					<record id="object_property" get_property="objt" set_property="objt" />
+					<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+				</widget>
+			</container>
+			<!--name/nationality etc-->
+			<container class="main_subtle_box">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+				<record id="default_properties" alignment="left,centre_y" auto_size="vertical" />
+				<widget class="person_button" colour="black" style="bold" size="large" person_is_player="true" info_popup_enabled="true" icon_enabled="true">
+					<record id="object_property" get_property="objt" set_property="valu" />
+				</widget>
+				<widget class="player_description_text" spec="text" display_format="0" multiline="false" colour="faded text">
+					<record id="object_property" get_property="Pdes" set_property="valu" />
+				</widget>
+				<widget class="nation_button" format="[%nation#1-nationality]">
+					<record id="object_property" get_property="Pnat" set_property="valu" />
+				</widget>
+			</container>
+			<!--contract-->
+			<container class="main_subtle_box" auto_size="vertical">
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+				<record id="default_properties" alignment="left" auto_size="vertical" />
+				<widget class="label" id="OLAl" />
+				<widget class="label" id="Plva" />
+				<widget class="label" id="Cuwa" />
+			</container>
 		</container>
-
-		<!--name/nationality etc-->
-		<container class="vertical_arrange_container" auto_size="vertical">
-
-			<record id="default_properties" alignment="left,centre_y" auto_size="vertical" />
-
-			<widget class="person_button" style="bold" size="large" person_is_player="true" info_popup_enabled="true" icon_enabled="true" colour="black">
-				<record id="object_property" get_property="objt" set_property="valu" />
-			</widget>
-			<widget class="player_description_text" spec="text" display_format="0" multiline="false" colour="faded text">
-				<record id="object_property" get_property="Pdes" set_property="valu" />
-			</widget>
-			<widget class="nation_button" format="[%nation#1-nationality]">
-				<record id="object_property" get_property="Pnat" set_property="valu" />
-			</widget>
+		<!-- attributes -->
+		<container class="player_overview_panel" id="po01" file="none">
+			<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="2"/>
+			<record id="object_property" get_property="Pers"/>
+			<container class="main_subtle_box">
+				<layout class="horizontal_arrange" horizontal_layout="-500,-135" horizontal_gap="8"/>
+				<container id="patt" class="player_attributes_panel" file="player/extra_panels/player overview tabs/attributes/player attributes popup" dont_allow_custom_attribute_change_ranges="true">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</container>
+				<container class="player_attributes_panel" file="player/extra_panels/player overview tabs/attributes/player additional attributes">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</container>
+			</container>
 		</container>
-
-		<!--contract-->
-		<container class="vertical_arrange_container" auto_size="vertical">
-			<record id="default_properties" alignment="left" auto_size="vertical" />
-			<widget class="label" id="OLAl" />
-			<widget class="label" id="Plva" />
-			<widget class="label" id="Cuwa" />
+		<container class="main_subtle_box" file="player/extra_panels/player last match">
+			<translation id="title" translation_id="316854" type="use" value="Last Match" />
 		</container>
 	</container>
 
-	<!-- match report -->
-	<container class="main_subtle_box" id="mtrp">
-		<attachment_group class="vertical_arrange_autosize" vertical_offset="6" horizontal_inset="0" />
-
-		<!--title-->
-		<container>
-			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="left" horizontal_inset="0" />
-
-			<widget class="link_button_title" id="mrln">
-				<translation id="text" translation_id="242329" type="use" value="Match Report" />
-			</widget>
-
-			<widget class="text" id="mrla" hidden="true" auto_size="horizontal" font="title" height="28" alignment="centre">
-				<translation id="text" translation_id="242329" type="use" value="Match Report" />
-			</widget>
-		</container>
-
-		<container draw_vertical_dividers="true">
-			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,200,200" horizontal_gap="6" vertical_inset="0" vertical_alignment="top" />
-
-			<container draw_horizontal_dividers="true">
-				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_inset="0" />
-
-				<container>
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0"/>
-
-					<container>
-						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle,fill" horizontal_gap="4" />
-
-						<widget class="team_button" id="htnm" auto_size="vertical" alignment="right,centre_y" icon_alignment="left,centre_y" alternate_format="[%team#1-six_letter]" icon_spacing="0" show_button_appearance="false"/>
-						<widget class="fixture_button" id="rstx" spec="text" size="large" alignment="centre" auto_size="all"/>
-						<widget class="team_button" id="atnm" auto_size="vertical" alignment="left,centre_y" icon_alignment="right,centre_y" alternate_format="[%team#1-six_letter]" icon_spacing="0" show_button_appearance="false"/>
-					</container>
-
-					<widget class="comp_button" id="cmpd" auto_size="all" colour="faded text" alignment="centre" icon_enabled="false" navigation_focus_target="false" />
-				</container>
-
-				<widget class="text" id="rptx" auto_size="vertical" colour="text" font="fonts/inbox_body" setup_hint_for_overrun="false">
-					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
-				</widget>
-			</container>
-
-
-			<!--Position played last match - pitch-->
-			<container id="lala" height="170">
-				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_inset="0"/>
-
-				<container>
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="8" />
-
-					<widget class="text" alignment="left" font="title" auto_size="vertical">
-						<translation id="text" translation_id="447609" type="use" value="Played As[COMMENT: Player Match Stats - Position Player played header]" />
-					</widget>
-
-					<widget class="tactical_role_label" id="tdut" auto_size="vertical" alignment="left,top" spec="text" />
-					<translation id="text" type="use" translation_id="227378" value="Unknown" />
-				</container>
-				<!-- Pitch -->
-
-				<container>
-					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
-
-					<widget class="pitch_with_played_position" id="pmtp" icon_flags="show_selection_image,dont_allow_player_links,dont_use_player_instructions_menu" pitch_line_colour="white" pitch_touchline_width_percentage="100" pitch_perspective="0.0" pitch_override_icon_size="1" line_width="1">
-						<flags id="pitch_alignment" value="centre,can_scale" />
-						<boolean id="vertical" value="false" />
-						<string id="player_icon_file" value="tactics/tactics icon info panel basic scaled" />
-						<boolean id="show_position_strength" value="false" />
-						<boolean id="hide_player_positions" value="false" />
-						<boolean id="pitch_is_read_only" value="true" />
-						<boolean id="pitch_show_names" value="false" />
-						<boolean id="pitch_draw_grass" value="true" />
-						<integer id="maximum_player_size" value="0.1" />
-					</widget>
-					<container wants_mouse_events="true" />
-				</container>
-			</container>
-
-			<container>
-				<attachment_group class="vertical_arrange_autosize" />
-
-				<container>
-					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,40,55" vertical_offset="0"/>
-
-					<widget class="text" alignment="left,centre_y" style="bold" size="small" auto_size="vertical">
-						<translation id="text" translation_id="291566" type="use" value="Match Stats[COMMENT: item on fixture context menu]" />
-					</widget>
-					<widget class="picture" file="icons/48px/time" image_alignment="right,centre_y" scale_picture="true" red_replacement="text" height="35"/>
-					<widget class="text" id="tmop" alignment="left,centre_y" auto_size="vertical" size="xlarge" style="bold" />
-				</container>
-
-				<widget class="horizontal_divider">
-					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
-				</widget>
-
-				<container>
-					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,65" vertical_offset="0"/>
-
-					<widget class="text" id="ms1t" alignment="left,centre_y" auto_size="vertical">
-						<translation id="text" translation_id="319558" type="use" value="Rating[COMMENT: Player rating for the match]" />
-					</widget>
-					<widget class="dashed_formatted_label" id="ms1v" alignment="left,centre_y" style="bold" format="[%fraction#1-2.1]" auto_size="vertical"/>
-				</container>
-
-				<set_var name="key_value_container">
-					<container>
-						<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,65" vertical_offset="0"/>
-						<widget class="text" auto_size="vertical">
-							<var id="widget_id" name="key_id" />
-						</widget>
-						<widget class="text" style="bold" auto_size="vertical">
-							<var id="widget_id" name="value_id" />
-						</widget>
-					</container>
-
-				</set_var>
-
-				<var name="key_value_container">
-					<set_var name="key_id">
-						<flags value="ms2t" />
-					</set_var>
-					<set_var name="value_id">
-						<flags value="ms2v" />
-					</set_var>
-				</var>
-
-				<var name="key_value_container">
-					<set_var name="key_id">
-						<flags value="ms3t" />
-					</set_var>
-					<set_var name="value_id">
-						<flags value="ms3v" />
-					</set_var>
-				</var>
-
-				<var name="key_value_container">
-					<set_var name="key_id">
-						<flags value="ms4t" />
-					</set_var>
-					<set_var name="value_id">
-						<flags value="ms4v" />
-					</set_var>
-				</var>
-
-				<var name="key_value_container">
-					<set_var name="key_id">
-						<flags value="ms5t" />
-					</set_var>
-					<set_var name="value_id">
-						<flags value="ms5v" />
-					</set_var>
-				</var>
-
-				<var name="key_value_container">
-					<set_var name="key_id">
-						<flags value="ms6t" />
-					</set_var>
-					<set_var name="value_id">
-						<flags value="ms6v" />
-					</set_var>
-				</var>
-
-			</container>
-		</container>
+	<container class="player_form_summary_panel" file="player/player form summary panel profile" id="frmS" height="120">
+		<record id="object_property">
+			<string id="set_property" value="objt" />
+			<string id="get_property" value="objt" />
+		</record>
 	</container>
 
 	<!--loan info-->

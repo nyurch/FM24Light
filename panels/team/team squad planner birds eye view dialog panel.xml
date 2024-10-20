@@ -1,0 +1,55 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top, extend" />
+
+	<boolean id="should_force_refresh" value="true" />
+	<boolean id="read_only" value="true" />
+	<boolean id="only_setup_icons_once" value="true" />
+
+	<!--general props for birds eyev view pitch columns-->
+	<list id="viewed_property_ids">
+		<record id="plyR" auto_hide_priority="1" colour="faded text" alignment="centre" width="25" />
+		<record id="Pers" auto_hide_priority="10" colour="black">
+			<boolean id="person_is_player" value="true" />
+			<integer id="minimum_width" value="60" />
+			<boolean id="info_popup_enabled" value="false" />
+		</record>
+	</list>
+
+	<!--main content box-->
+	<container>
+		<layout class="stick_to_sides_attachment" inset="0" alignment="all" apply_to_children="true" />
+
+		<!--no tactic set-->
+		<container id="ntac" hidden="true">
+			<attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_offset="50" />
+
+			<widget class="manager_text" size="11" font="fonts/letterpressed" auto_size="all">
+				<translation id="text" translation_id="553539" type="use" value="[%person#1-You] need to create a tactic before [%person#1-you] can set up [%person#1-your] squad planner.[COMMENT: FR 8989 - explanatory text to show that the user hasn't created a tactic yet, so can't set team instructions]" />
+			</widget>
+
+			<widget class="link_button" section="tacO" auto_size="all">
+				<translation id="text" translation_id="363642" type="use" value="Go To Tactics[COMMENT: FR 8989 - text for a button to take you to the tactics page]" />
+			</widget>
+		</container>
+
+		<!--birds eye view pitch-->
+		<container id="birE" class="main_subtle_box">
+			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="10" vertical_offset="1" />
+
+			<!--tactics popup and full screen button-->
+			<container height="35">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle" />
+
+				<widget class="tactic_popup_button" id="tsbE" colour="black" show_button_appearance="false" alignment="centre" request_tactic="false" dont_add_reset_text="true" auto_size="horizontal" />
+			</container>
+
+			<!--birds eye view pitch-->
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+				<widget class="pitch_with_squad_depth" id="birP" read_only="true" display_centre_side_positions="true" pitch_length_percentage="150" pitch_width_percentage="115" vertical="false" max_icon_width="0.18" max_icon_height="0.18" pitch_alignment="centre" pitch_draw_goals="true" pitch_draw_markings="true" show_position_strength="false" pitch_show_names="false" pitch_draw_grass="true" pitch_line_colour="faded white" pitch_touchline_width_percentage="0" pitch_perspective="0.0" pitch_override_icon_size="2" line_width="1.4" pitch_vertical_padding="0" disable_animations="true" pitch_ignore_mouse_hover="true">
+					<string id="pitch_kit_icon" value="pitch/icons/dots" />
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

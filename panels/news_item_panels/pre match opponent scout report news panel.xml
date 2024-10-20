@@ -111,26 +111,26 @@
 
 		<container>
 			<attachment_group class="horizontal_arrange" horizontal_layout="820,-1" horizontal_offset="0" vertical_inset="0" horizontal_gap="8" />
-			<container class="inner_contrast_box_no_margin" red_replacement="pitch_box_background">
+			<container class="main_box">
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="4" vertical_gap="-4" horizontal_inset="0" />
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="fill" horizontal_offset="0" />
-					<container>
+					<container class="main_subtle_box">
 						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="4" />
-						<widget class="text" auto_size="vertical" font="label" colour="faded white">
+						<widget class="text" auto_size="vertical" font="label" colour="faded black">
 							<translation id="text" translation_id="348204" type="use" value="Mentality[Comment: prefix used before mentality type text on quick tactical instruction button during match]" />
 						</widget>
-						<widget class="mentality_label" id="ment" auto_size="vertical" font="semibold" colour="white" navigation_focus_target="false">
-							<record id="primary_icon_properties" red_replacement="white" />
+						<widget class="mentality_label" id="ment" auto_size="vertical" font="semibold" colour="black" navigation_focus_target="false">
+							<record id="primary_icon_properties" red_replacement="black" />
 						</widget>
 					</container>
-					<container>
+					<container class="main_subtle_box">
 						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="4" />
-						<widget class="text" auto_size="vertical" font="label" colour="faded white">
+						<widget class="text" auto_size="vertical" font="label" colour="faded black">
 							<translation id="text" translation_id="465563" type="use" value="Team Fluidity[COMMENT: team tactical instruction, reference ID 364787, team shape is now team fluidity]" />
 						</widget>
-						<widget class="fluidity_label" id="flui" auto_size="vertical" font="semibold" colour="white" navigation_focus_target="false">
-							<record id="primary_icon_properties" red_replacement="white" />
+						<widget class="fluidity_label" id="flui" auto_size="vertical" font="semibold" colour="black" navigation_focus_target="false">
+							<record id="primary_icon_properties" red_replacement="black" />
 						</widget>
 					</container>
 				</container>

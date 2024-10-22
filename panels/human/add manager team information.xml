@@ -1,0 +1,239 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top, extend" gap="2" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<!-- Header with team name and bg colour -->
+	<container class="main_contrast_box" appearance="boxes/custom/add manager/paper" height="140" id="Thed" background_animator_duration="0.2">
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+		<layout class="arrange_horizontal_attachment" layout="140, -1, 280" gap="8" offset="0" />
+
+		<!-- Set background colour to team colour -->
+		<record id="object_property">
+			<integer id="get_property" value="oPCn" />
+			<integer id="set_property" value="rrep" />
+			<boolean id="dont_set_object" value="true" />
+		</record>
+
+		<!-- Team badge -->
+		<widget class="object_portrait_picture" id="Tbdg" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true" height="140" width="140">
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="6" />
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+		</widget>
+
+		<!-- Team name and media prediction -->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right,extend" />
+
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="0" />
+
+
+				<!-- Team name -->
+				<widget class="team_button" id="temN" icon_enabled="false" auto_size="vertical" size="12" font="title" force_draw_as_enabled="true">
+					<record id="object_property">
+						<list id="get_properties">
+							<record get_property="objt" dont_set_object="true" />
+							<record get_property="oSCn" set_property="colr" dont_set_object="true" />
+						</list>
+					</record>
+				</widget>
+
+				<!-- Predicted finish text -->
+				<widget class="media_expectation_text" id="mpre" auto_size="vertical" size="10" force_draw_as_enabled="true">
+					<translation id="format" translation_id="352187" type="use" value="Predicted to finish [%number#1-nth][COMMENT: media predicted position. ie 4th]" />
+					<record id="object_property">
+						<list id="get_properties">
+							<record get_property="CmeD" dont_set_object="true" />
+							<record get_property="oSCn" set_property="colr" dont_set_object="true" />
+						</list>
+					</record>
+				</widget>
+
+			</container>
+
+			<!-- View squad -->
+			<widget class="subtle_button" id="vsqd" click_event="tmin" auto_size="all">
+
+				<translation id="text" translation_id="320409" type="use" value="View Squad[COMMENT: add manager panel; button text; view selected team's squad]" />
+			</widget>
+		</container>
+
+		<container id="tiki" width="280">
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<!-- Instead of just aligning right we need to do some crazy layout because they overlap and we want the drawing order to be home away, etc -->
+			<widget class="kit_picture" id="T_tk" kit_id="2" scale_picture="true" keep_aspect_ratio="true" width="130" image_alignment="centre" always_use_latest_object_list="true">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			</widget>
+			<widget class="kit_picture" id="T_ak" kit_id="1" scale_picture="true" keep_aspect_ratio="true" width="130" image_alignment="centre" always_use_latest_object_list="true">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="30" />
+			</widget>
+			<widget class="kit_picture" id="T_hk" kit_id="0" scale_picture="true" keep_aspect_ratio="true" width="130" image_alignment="centre" always_use_latest_object_list="true">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="60" />
+			</widget>
+		</container>
+
+	</container>
+
+	<container class="main_box" id="fiCO" height="100" red_replacement="dark_box_background">
+		<translation id="title" translation_id="395022" type="use" value="Fantasy Club Information[COMMENT: FR 8517, title of a section, displaying Squad Budget and Squad Size]" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		<widget class="client_object_label_value_table" id="fCIN">
+			<record id="table_properties">
+				<flags id="mode" value="fill_rows, stripe_rows" />
+				<boolean id="auto_size_rows" value="true" />
+				<boolean id="fixed_size_rows" value="false" />
+				<flags id="auto_size" value="none" />
+				<string id="layout" value="-3, -4" />
+				<integer id="row_spacing" value="0" />
+
+				<list id="column_widget_properties">
+					<record index="0" alignment="left, centre_y" />
+					<record index="1" alignment="left, centre_y" auto_size="vertical" spec="text" colour="selection" />
+				</list>
+
+				<list id="column_table_properties">
+					<record index="0">
+						<integer id="left" value="8" />
+						<boolean id="sort_disabled" value="true" />
+					</record>
+					<record index="1">
+						<boolean id="sort_disabled" value="true" />
+						<flags id="alignment" value="left, centre_y" />
+						<integer id="top" value="2" />
+						<integer id="bottom" value="2" />
+					</record>
+				</list>
+			</record>
+
+			<!--this list contains the property ids you want to display in the table - if you omit it, the table will attempt to display all properties in the supplied object-->
+			<list id="viewed_property_ids">
+				<integer value="sqBD" />
+				<integer value="sqSI" />
+			</list>
+		</widget>
+	</container>
+
+	<container class="tabs" id="tabs" default_item="info">
+		<!-- Information -->
+		<container id="info">
+			<translation id="title" translation_id="292589" type="use" value="Information[COMMENT: top level menu title for team information screens]" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" />
+
+				<widget class="client_object_label_value_table" id="infp">
+					<!--this record contains any properties you want to pass on to the table-->
+					<record id="table_properties">
+						<flags id="mode" value="fill_rows, stripe_rows" />
+						<boolean id="auto_size_rows" value="true" />
+						<boolean id="fixed_size_rows" value="false" />
+						<flags id="auto_size" value="none" />
+						<boolean id="navigation_focus_target" value="true" />
+
+						<string id="layout" value="-3,-4" />
+						<integer id="row_spacing" value="0" />
+						<list id="column_widget_properties">
+							<record index="0" alignment="left, centre_y" colour="faded text" />
+							<record index="1" alignment="left, centre_y" auto_size="vertical" spec="text" navigation_focus_target="false" />
+						</list>
+
+						<list id="column_table_properties">
+							<record index="0">
+								<integer id="left" value="8" />
+								<boolean id="sort_disabled" value="true" />
+							</record>
+							<record index="1">
+								<boolean id="sort_disabled" value="true" />
+								<flags id="alignment" value="left, centre_y" />
+								<integer id="top" value="4" />
+								<integer id="bottom" value="4" />
+							</record>
+						</list>
+					</record>
+
+					<!--this list contains the property ids you want to display in the table - if you omit it, the table will attempt to display all properties in the supplied object-->
+					<list id="viewed_property_ids">
+						<integer value="Cprs" />
+						<integer value="Crsc" />
+						<integer value="TCnn" />
+						<integer value="Nffr" />
+						<integer value="Nlan" />
+						<integer value="CStT" />
+						<integer value="CTPl" />
+						<integer value="CmpM" />
+						<integer value="CfiD" />
+						<integer value="Tsta" />
+						<integer value="TstD" />
+						<integer value="TfcD" />
+						<integer value="TytD" />
+						<integer value="TsfD" />
+						<integer value="Ccon" />
+						<!--This is switched to a record and the link is disabled in code if we are in FMT onboarding-->
+						<integer value="Tldr" />
+						<!--<integer value="CmeD"/>-->
+						<integer value="Tptd" />
+						<!--<integer value="Ncac"/>-->
+						<integer value="NrgR" />
+						<integer value="Ncni" />
+						<integer value="Nafy" />
+						<integer value="Nfay" />
+						<integer value="Nfdy" />
+					</list>
+				</widget>
+
+				<container>
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" />
+
+					<container id="bocc">
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" />
+
+						<widget class="text" colour="title" font="title" auto_size="vertical">
+							<string id="create_if" value="use_cut_down_club_vision" />
+							<translation id="text" translation_id="491926" type="use" value="Club Culture[COMMENT: AREA: Club vision panel; SUB-AREA: Club culture sub-panel heading; FR-BN: 23335; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title string for the club culture section of the club vision panel, outlines the key objectives in the overall running of the club]" />
+						</widget>
+
+						<widget class="text" colour="title" font="title" auto_size="vertical">
+							<string id="remove_if" value="use_cut_down_club_vision" />
+							<translation id="text" translation_id="557776" type="use" value="Board Culture[COMMENT: AREA: Club vision panel; SUB-AREA: Club culture sub-panel heading; FR-BN: FM-8915; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title string for the club culture section of the club vision panel, outlines the key objectives in the overall running of the club]" />
+						</widget>
+
+						<widget class="table" id="bocu" layout="30, -1" mode="fill_rows, stripe_rows" auto_size_rows="false" fixed_size_rows="true" row_spacing="0" row_height="38" auto_size="vertical">
+							<list id="column_widget_properties">
+								<record index="0" alignment="centre" red_replacement="accent"/>
+								<record index="1" alignment="left, centre_y" />
+							</list>
+						</widget>
+					</container>
+
+					<container id="succ">
+						<string id="remove_if" value="use_cut_down_club_vision" />
+						<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" />
+
+						<widget class="text" colour="title" font="title" auto_size="vertical">
+							<translation id="text" translation_id="557777" type="use" value="Supporter Culture[COMMENT:AREA: Club vision; SUB - AREA: Annual supporter profile news inbox item FR-BN: FM-8915; TONE: Formal; CHARLIMIT: None; REF - ID: n/a; NOTE: Title string for the supporter culture, outlines the key objectives of the supporters]" />
+						</widget>
+
+						<widget class="table" id="sucu" layout="30, -1" mode="fill_rows, stripe_rows" auto_size_rows="false" fixed_size_rows="true" row_spacing="0" row_height="38" auto_size="vertical">
+							<list id="column_widget_properties">
+								<record index="0" alignment="centre" red_replacement="accent"/>
+								<record index="1" alignment="left, centre_y" />
+							</list>
+						</widget>
+					</container>
+				</container>
+			</container>
+
+		</container>
+
+		<!-- League History graph -->
+		<container class="club_league_history_graph" id="clhg" file="club/club league history graph no buttons">
+			<translation id="title" translation_id="229719" type="use" value="History" />
+		</container>
+
+	</container>
+
+</panel>

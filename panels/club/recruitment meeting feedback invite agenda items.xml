@@ -1,0 +1,89 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="20" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+	<list id="properties_to_forward">
+		<record get_property="trtc" set_property="valu" target="TrRv" />
+		<record get_property="rptc" set_property="valu" target="ReTp" />
+	</list>
+
+	<!--Recommended Signings Agenda-->
+	<container id="ReSA" draw_horizontal_dividers="true">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="10" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+			<container width="26" height="26">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="picture" file="icons/26px/circle" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" red_replacement="white" />
+				<widget class="picture" file="icons/16px/search" scale_picture="false" image_alignment="centre" red_replacement="accent" keep_aspect_ratio="true" />
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="4" />
+
+				<widget class="text" auto_size="vertical" font="title" size="large" colour="text">
+					<translation id="text" translation_id="554342" type="use" value="Transfer Review[COMMENT: AREA: Scouting; SUB-AREA: Recruitment meeting; FR-BN: FM-4199; NOTE: Panel title for recruitment meeting section reviewing past player transfers]" />
+				</widget>
+
+				<widget class="formatted_label" id="ReTp" auto_size="all" colour="faded text">
+					<!-- Choose string based on category id -->
+					<list id="format">
+						<record value="1">
+							<translation id="format" translation_id="538861" type="use" value="1 topic[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+						</record>
+						<record default_value="true">
+							<translation id="format" translation_id="538862" type="use" value="[%number#1] topics[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+						</record>
+					</list>
+				</widget>
+			</container>
+		</container>
+
+		<widget class="text" auto_size="vertical" colour="faded text">
+			<translation id="text" translation_id="557690" type="use" value="Review our recent transfer activity and current Recruitment Focuses[COMMENT: AREA: Inbox; SUB-AREA: Recruitment Meeting Inbox Item; FR-BN:4261 ; TONE: Formal; CHARLIMIT: None; REF-ID: XXXX; NOTE: String for Agenda Item]" />
+		</widget>
+	</container>
+
+	<!--Transfer Review Agenda-->
+	<container draw_horizontal_dividers="true">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="10" horizontal_alignment="horizontal" horizontal_inset="0" />
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
+
+			<container width="26" height="26">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="picture" file="icons/26px/circle" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" red_replacement="white" />
+				<widget class="picture" file="icons/16px/transfer in" scale_picture="false" blue_replacement="green 900" image_alignment="centre" red_replacement="red 900" keep_aspect_ratio="true" />
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="right,extend" horizontal_offset="4" />
+
+				<widget class="text" auto_size="vertical" font="title" size="large" colour="text">
+					<translation id="text" translation_id="557691" type="use" value="Recommended Signings[COMMENT: AREA: Squad; SUB-AREA: Squad Planner; FR-BN: FM-4063; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Section name for squad planner screen]" />
+				</widget>
+
+				<widget class="formatted_label" id="TrRv" auto_size="all" colour="faded text">
+					<!-- Choose string based on category id -->
+					<list id="format">
+						<record value="1">
+							<translation id="format" translation_id="538861" type="use" value="1 topic[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+						</record>
+						<record default_value="true">
+							<translation id="format" translation_id="538862" type="use" value="[%number#1] topics[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35342; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
+						</record>
+					</list>
+				</widget>
+			</container>
+
+		</container>
+
+		<widget class="text" auto_size="vertical" colour="faded text">
+			<translation id="text" translation_id="557692" type="use" value="Analyse our recently scouted player recommendations[COMMENT: AREA: Inbox; SUB-AREA: Recruitment Meeting Inbox Item; FR-BN:4261 ; TONE: Formal; CHARLIMIT: None; REF-ID: XXXX; NOTE: String for Agenda Item]" />
+		</widget>
+
+	</container>
+</panel>

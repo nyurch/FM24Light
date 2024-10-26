@@ -1,0 +1,43 @@
+﻿<panel class="inner_contrast_box">
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="12" vertical_gap="6" />
+
+	<boolean id="should_force_refresh" value="true" />
+
+	<container id="coof">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="0" vertical_offset="0" vertical_gap="6" />
+
+		<widget class="text" font="title" size="xlarge" colour="accent" auto_size="vertical">
+			<translation id="text" translation_id="557821" type="use" value="Offer New Contracts[COMMENT: AREA: Recruitment Planning Meeting; SUB-AREA: Follow Up; FR-BN: FM-4256; NOTE: title of planning meeting follow up inbox item to offer new contracts]" />
+		</widget>
+
+		<container class="scrolling_box" auto_size="vertical">
+			<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_offset="12" vertical_gap="6" />
+
+			<container id="plCn">
+				<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_offset="12" vertical_gap="6" />
+			</container>
+		</container>
+	</container>
+
+	<container id="trof">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="0" vertical_offset="0" vertical_gap="6" />
+
+		<widget class="text" font="title" size="xlarge" colour="accent" auto_size="vertical">
+			<translation id="text" translation_id="308151" type="use" value="Transfer Offers[COMMENT: News item category (type) in 'Inbox']" />
+		</widget>
+
+		<widget class="client_object_list_table" id="plTo" database_table_type="1" mode="fill_rows, hide_headings" horizontal_inset="4" horizontal_offset="4" auto_size="vertical">
+			<integer id="row_height" value="70" />
+			<integer id="row_spacing" value="4" />
+			<integer id="column_spacing" value="4" />
+
+			<boolean id="should_force_refresh" value="true" />
+			<string id="contextual_handler_column_id" value="Pnms" />
+			<record id="viewed_property_ids">
+				<record id="PPDW" width="-1" />
+				<record id="RMcb" width="-1" is_feedback_follow_up="true" />
+			</record>
+		</widget>
+	</container>
+
+</panel>

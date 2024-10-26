@@ -1,0 +1,50 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="20" horizontal_alignment="horizontal" horizontal_inset="10"/>
+
+	<widget class="text" id="NsfT" alignment="left" font="title" auto_size="vertical"/>
+
+	<container file="non_player/staff contract list container" id="NsfM" height="85"/>
+
+	<widget class="text" id="NsfD" alignment="left" auto_size="vertical"/>
+
+	<widget class="text" id="StfC" alignment="left" font="title" auto_size="vertical"/>
+
+	<widget class="client_object_list_table" id="pltb" database_table_type="1" height="240" customisation_context="staf" mode="fill_rows, stripe_rows, printable, keyboard, show_bullets, select_rows, select_multiple" auto_size_rows="true" fixed_size_rows="false">
+
+		<boolean id="save_session_state" value="true" />
+		<boolean id="save_default_state" value="true" />
+		<boolean id="should_force_refresh" value="true" />
+
+		<!-- default sort by team, job (primary) then name -->
+		<list id="default_sort_column">
+			<integer value="PcnT" />
+			<integer value="PcjN"/>
+		</list>
+
+		<!--default view-->
+		<record id="default_view" value="ctrc" />
+
+		<list id="viws">
+
+			<record id="ctrc">
+				<record id="view">
+					<record id="PcnT"/>
+					<record id="PcjN" width="250"/>
+					<!-- short job text -->
+					<record id="PScj" width="250"/>
+					<record id="Psnm" width="-1" navigation_focus_target="false" />
+					<!-- person name -->
+					<record id="Pcif" width="120"/>
+					<!-- full time or part-time contract -->
+					<record id="Pcww" />
+					<!-- weekly wage -->
+					<record id="Pced" />
+					<!-- end date -->
+				</record>
+			</record>
+
+		</list>
+
+	</widget>
+
+</panel>

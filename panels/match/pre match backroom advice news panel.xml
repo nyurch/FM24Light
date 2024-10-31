@@ -41,7 +41,7 @@
 				<global id="horizontal_gap" name="ui.split_button_row_gap" />
 			</attachment_group>
 
-			<widget class="radio_button" id="alMT" show_button_appearance="true" icon="none" selected="true" click_event="SlAM" colour="white" auto_size="all" appearance="switches/toggle/left/button">
+			<widget class="radio_button" id="alMT" show_button_appearance="true" icon="none" selected="true" click_event="SlAM" auto_size="all" appearance="switches/toggle/left/button">
 				<translation id="text" translation_id="509200" type="use" value="All Matches[COMMENT: AREA: tactics panel; SUB-AREA: tactics panel beforet the match; FR-BN: 30876; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: option to apply tactical changes to all other matches ]" />
 			</widget>
 			<widget class="radio_button" id="NMon" show_button_appearance="true" icon="none" click_event="SnMo" auto_size="all" appearance="switches/toggle/right/button">

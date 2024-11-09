@@ -1,0 +1,137 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<!--Title Link Button-->
+	<container>
+		<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left" />
+
+		<widget class="link_button" id="tlbw" alignment="centre_y,left" auto_size="all" appearance="buttons/link/title/button">
+			<!--COMPETITION_SECTION_RULES-->
+			<string id="section" value="csrl" />
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<string id="get_property" value="titl" />
+						<string id="set_property" value="text" />
+					</record>
+					<record>
+						<string id="get_property" value="comp" />
+						<string id="set_property" value="objt" />
+					</record>
+				</list>
+			</record>
+		</widget>
+	</container>
+
+	<!--Section of Contract Length-->
+	<widget class="icon_button" auto_size="all" icon="icons/16px/tv" show_button_appearance="false" font="title" colour="accent">
+		<translation id="text" translation_id="595949" type="use" value="Fixed Length TV Deal[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: Title text for the fixed length TV deal]" />
+		<record id="primary_icon_properties" red_replacement="accent" blue_replacement="accent" green_replacement="accent" />
+	</widget>
+
+	<container>
+		<attachment_group class="horizontal_arrange_autosize_all" horizontal_gap="10" />
+
+		<widget class="text" alignment="left, centre_y" auto_size="all" colour="faded text">
+			<translation id="text" translation_id="595947" type="use" value="Contract Length[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: Section title about TV deal contract length]" />
+		</widget>
+
+		<widget class="text" alignment="left, centre_y" auto_size="all">
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="tvcl" />
+						<integer id="set_property" value="valu" />
+					</record>
+				</list>
+			</record>
+		</widget>
+	</container>
+
+	<widget class="horizontal_divider" />
+
+	<!--Section of Prize Money-->
+	<widget class="text" alignment="left, centre_y" auto_size="all" font="title" colour="accent">
+		<translation id="text" translation_id="595948" type="use" value="Prize Money[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: Section title about TV deal prize money]" />
+	</widget>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, -1, -1" />
+
+		<!--Prize Money Adjustment-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize_all" />
+
+			<widget class="text" alignment="left, centre_y" auto_size="all" font="title" colour="faded text">
+				<translation id="text" translation_id="595950" type="use" value="Prize Money Adjustment[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: TV deal prize money adjustment percentage from last season to this season]" />
+			</widget>
+
+			<!--Adjustment Percentage text and icon-->
+			<container>
+				<attachment_group class="horizontal_arrange_autosize_all" horizontal_gap="2" vertical_alignment="vertical" />
+
+				<widget class="text" size="xlarge" style="bold" alignment="left, centre_y" auto_size="all">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="pmap" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+
+				<widget class="picture" auto_size="all" image_alignment="centre">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="icon" />
+								<integer id="set_property" value="valu" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+
+		<!--Total Last Season-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize_all" />
+
+			<widget class="text" alignment="left, centre_y" auto_size="all" font="title" colour="faded text">
+				<translation id="text" translation_id="595951" type="use" value="Total Last Season[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: TV deal prize money total last season]" />
+			</widget>
+
+			<widget class="cash_cell" size="xlarge" style="bold" cusv="true" auto_size="all">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="pmls" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+
+		<!--Total This Season-->
+		<container>
+			<attachment_group class="vertical_arrange_autosize_all" />
+
+			<widget class="text" alignment="left, centre_y" auto_size="all" font="title" colour="faded text">
+				<translation id="text" translation_id="595952" type="use" value="Total This Season[COMMENT: AREA: News and Media; SUB-AREA: Finances; FR-BN: FM-19038; NOTE: TV deal prize money total this season]" />
+			</widget>
+
+			<widget class="cash_cell" size="xlarge" style="bold" cusv="true" auto_size="all">
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="przm" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+		</container>
+	</container>
+</panel>

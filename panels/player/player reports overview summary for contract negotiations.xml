@@ -64,8 +64,8 @@
 		<container>
 			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend"/>
 
-			<widget class="player_scout_recommendation_widget" width="60" height="60" show_knowledge_bar="false">
-				<record id="object_property" get_property="Psrk" set_property="objt" />
+			<widget class="player_scout_recommendation_widget" width="60" height="60" show_knowledge_bar="false" >
+				<record id="object_property" get_property="PRpo" set_property="objt" />
 			</widget>
 
 			<widget class="text" id="recw" alignment="left,centre_y" multiline="true" auto_size="vertical"/>

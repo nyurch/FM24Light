@@ -554,26 +554,6 @@
 			<integer id="id" value="duni" />
 			<integer id="width" value="75" />
 			<translation id="name" translation_id="247478" type="use" value="Unique ID" />
-			<flags id="customisation_context" value="none" />
-			<translation id="category" translation_id="248359" type="use" value="General" />
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="247477" type="use" value="UID[comment - Unique ID]" />
-				<translation id="hint" translation_id="247478" type="use" value="Unique ID" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftx" />
-			</record>
-		</record>
-
-		<!--unique ID , with r- for regens-->
-		<record>
-			<integer id="id" value="Duni" />
-			<integer id="width" value="75" />
-			<translation id="name" translation_id="247478" type="use" value="Unique ID" />
 			<flags id="customisation_context" value="any" />
 			<translation id="category" translation_id="248359" type="use" value="General" />
 			<record id="column_widget_properties">
@@ -916,7 +896,7 @@
 			<integer id="minimum_width" value="48" />
 			<boolean id="row_drag_drop_handler" value="true" />
 			<boolean id="row_drag_draw_handler" value="true" />
-			<flags id="customisation_context" value="none" />
+			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="229527" type="use" value="Squad" />
 			<record id="widget_info">
 				<symbol id="class" value="tactic_button" />
@@ -1462,7 +1442,7 @@
 			<flags id="mode" value="invalid_for_fmt,invalid_for_versus_mode" />
 			<integer id="width" value="100" />
 			<translation id="name" translation_id="326095" type="use" value="Contract Type[COMMENT: type (full/loan/trial/co-owned etc) of a persons contract]" />
-			<flags id="customisation_context" value="none" />
+			<flags id="customisation_context" value="any" />
 			<translation id="category" translation_id="230163" type="use" value="Contract" />
 			<translation id="subcategory" translation_id="248359" type="use" value="General" />
 			<boolean id="sort_ascending" value="false" />
@@ -3292,7 +3272,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="383609" type="use" value="Pot. Cap Impact[COMMENT: squad registration panel; column header to indicate the cash value of a player's potential salary cap impact(in fact this might decrease depending on the squad selection); abbreviated version]" />
-				<translation id="hint" translation_id="358413" type="use" value="This is the potential salary cap impact of a single player depending on the number of off-budget players selected[COMMENT: squad registration panel; descriptive hint to better explain S. C. Pot Impact abbreviation]" />
+				<translation id="hint" translation_id="358413" type="use" value="This the potential salary cap impact of a single player depending on the number of off-budget players selected[COMMENT: squad registration panel; descriptive hint to better explain S. C. Pot Impact abbreviation]" />
 			</record>
 
 			<record id="search_filter">
@@ -5747,29 +5727,6 @@
 		</record>
 
 		<record>
-			<integer id="id" value="Pits" />
-			<integer id="width" value="80" />
-			<flags id="mode" value="invalid_for_fmt, invalid_for_fmt_tablet" />
-			<translation id="name" translation_id="585713" type="use" value="Tactical Suitability[COMMENT: AREA: National Pool; SUB-AREA: National Pool Squad Popup; FR-BN: FM-23486; TONE: Informal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Title for new Tactic Suitability widget]" />
-			<flags id="customisation_context" value="play" />
-			<integer id="auto_hide_priority" value="1200" />
-			<translation id="category" translation_id="229527" type="use" value="Squad" />
-			<record id="widget_info">
-				<symbol id="class" value="pie_chart_tactical_suitability" />
-				<string id="animation_file" value="none" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="595932" type="use" value="Suitability[COMMENT: AREA: National Pool; SUB-AREA: National Pool Squad Popup; FR-BN: FM-23486; TONE: Informal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Title for new Tactic Suitability widget]" />
-				<translation id="hint" translation_id="585713" type="use" value="Tactical Suitability[COMMENT: AREA: National Pool; SUB-AREA: National Pool Squad Popup; FR-BN: FM-23486; TONE: Informal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Title for new Tactic Suitability widget]" />
-			</record>
-		</record>
-
-		<record>
 			<integer id="id" value="Pcoo" />
 			<flags id="mode" value="invalid_for_fmt,invalid_for_versus_mode" />
 			<integer id="width" value="160" />
@@ -6046,7 +6003,7 @@
 			<integer id="width" value="90" />
 			<flags id="auto_size" value="vertical" />
 			<translation id="name" translation_id="227799" type="use" value="Wage" />
-			<flags id="customisation_context" value="none" />
+			<flags id="customisation_context" value="any" />
 			<translation id="category" translation_id="230163" type="use" value="Contract" />
 			<translation id="subcategory" translation_id="248359" type="use" value="General" />
 			<boolean id="sort_ascending" value="false" />
@@ -8611,7 +8568,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -8627,6 +8584,32 @@
 			</record>
 		</record>
 
+		<!--forced overall average rating-->
+		<record>
+			<integer id="id" value="PFaV" />
+			<integer id="width" value="65" />
+			<translation id="name" translation_id="227853" type="use" value="Average rating" />
+			<flags id="customisation_context" value="play" />
+			<translation id="category" translation_id="453945" type="use" value="Stats (General)[COMMENT: section heading]" />
+			<translation id="subcategory" translation_id="248359" type="use" value="General" />
+			<boolean id="sort_ascending" value="false" />
+			<integer id="auto_hide_priority" value="1200" />
+			<record id="widget_info">
+				<symbol id="class" value="match_rating_label_formatted" />
+				<string id="format" value="[%fraction#1-3.2]" />
+				<boolean id="dont_format_numeric_grouping" value="true" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+				<flags id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="227852" type="use" value="Av Rat[comment - Average rating]" />
+				<translation id="hint" translation_id="227853" type="use" value="Average rating" />
+			</record>
+		</record>
 
 		<!-- non competitive average rating-->
 		<record>
@@ -8642,7 +8625,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -8669,7 +8652,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -8696,7 +8679,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -8721,7 +8704,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -8744,7 +8727,7 @@
 			<integer id="auto_hide_priority" value="1200" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -8769,7 +8752,7 @@
 			<integer id="auto_hide_priority" value="1200" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -8867,7 +8850,7 @@
 			<integer id="id" value="POhg" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="376387" type="use" value="Aerial Challenges attempted per 90 minutes[COMMENT: player stat type]" />
+			<translation id="name" translation_id="376387" type="use" value="Aerial Challenge attempts per 90 minutes[COMMENT: player stat type]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="376394" type="use" value="Aerial Challenges[COMMENT: player stat: headers table label]" />
@@ -8882,7 +8865,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="376379" type="use" value="Aer A/90[COMMENT: player stats, Aerial Challenge attempts per 90 minutes, short text]" />
-				<translation id="hint" translation_id="376387" type="use" value="Aerial Challenges attempted per 90 minutes[COMMENT: player stat type]" />
+				<translation id="hint" translation_id="376387" type="use" value="Aerial Challenge attempts per 90 minutes[COMMENT: player stat type]" />
 			</record>
 
 			<record id="search_filter">
@@ -9128,7 +9111,7 @@
 			<integer id="id" value="PODr" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="565357" type="use" value="Distance Covered per 90 minutes[COMMENT: player stat: distance covered every 90 minutes, breaking translation to assign new ID, had a conflict a while ago]" />
+			<translation id="name" translation_id="301211" type="use" value="Distance Covered Per 90 Minutes[COMMENT: player stat: distance covered every 90 minutes]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="306495" type="use" value="Movement[COMMENT: match analysis panel; event type]" />
@@ -9143,7 +9126,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="301212" type="use" value="Dist/90[COMMENT: player stats, distance covered per 90 minutes, short text]" />
-				<translation id="hint" translation_id="565357" type="use" value="Distance Covered per 90 minutes[COMMENT: player stat: distance covered every 90 minutes, breaking translation to assign new ID, had a conflict a while ago]" />
+				<translation id="hint" translation_id="301211" type="use" value="Distance Covered Per 90 Minutes[COMMENT: player stat: distance covered every 90 minutes]" />
 			</record>
 
 			<record id="search_filter">
@@ -9303,9 +9286,9 @@
 
 		<!--TOTAL_SAVES_PER_90-->
 		<record>
-			<integer id="id" value="POs9" />
+			<integer id="id" value="P0s9" />
 			<integer id="width" value="60" />
-			<translation id="name" type="use" value="Total Saves per 90 minutes[COMMENT: AREA: squad/scouting ; SUB-AREA: Player Stats; FR-BN: FM-3707; TONE: Informal; CHARLIMIT: Short; REF-ID: n/a; NOTE: player stats; Total saves made by gk per 90, breaking translation to assign new ID, had a conflict a while ago]" translation_id="565359" />
+			<translation id="name" translation_id="561855" type="use" value="Total Saves Per 90[COMMENT: AREA: squad/scouting ; SUB-AREA: Player Stats; FR-BN: FM-3707; TONE: Informal; CHARLIMIT: Short; REF-ID: n/a; NOTE: player stats; Total saves made by gk per 90]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453945" type="use" value="Stats (General)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="248359" type="use" value="General" />
@@ -9319,7 +9302,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="561856" type="use" value="Saves/90[COMMENT: AREA: squad/scouting ; SUB-AREA: Player Stats; FR-BN: FM-3707; TONE: Informal; CHARLIMIT: Short; REF-ID: n/a; NOTE: player stats; (short version) Total saves made by gk per 90 ]" />
-				<translation id="hint" type="use" value="Total Saves per 90 minutes[COMMENT: AREA: squad/scouting ; SUB-AREA: Player Stats; FR-BN: FM-3707; TONE: Informal; CHARLIMIT: Short; REF-ID: n/a; NOTE: player stats; Total saves made by gk per 90, breaking translation to assign new ID, had a conflict a while ago]" translation_id="565359" />
+				<translation id="hint" translation_id="561855" type="use" value="Total Saves Per 90[COMMENT: AREA: squad/scouting ; SUB-AREA: Player Stats; FR-BN: FM-3707; TONE: Informal; CHARLIMIT: Short; REF-ID: n/a; NOTE: player stats; Total saves made by gk per 90]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pfpc" />
@@ -9516,7 +9499,7 @@
 		<record>
 			<integer id="id" value="POCg" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="249458" type="use" value="Team Goals Conceded per 90 minutes" />
+			<translation id="name" translation_id="249458" type="use" value="Team conceded per 90 minutes" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453945" type="use" value="Stats (General)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="248359" type="use" value="General" />
@@ -9531,7 +9514,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="301165" type="use" value="Tcon/90[COMMENT: Team conceded per game short text]" />
-				<translation id="hint" translation_id="249458" type="use" value="Team Goals Conceded per 90 minutes" />
+				<translation id="hint" translation_id="249458" type="use" value="Team conceded per 90 minutes" />
 			</record>
 
 			<record id="search_filter">
@@ -9570,7 +9553,7 @@
 			<integer id="id" value="POta" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="249445" type="use" value="Tackles attempted" />
+			<translation id="name" translation_id="249445" type="use" value="Tackle attempts" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="453951" type="use" value="Tackles and Interceptions[COMMENT: section heading]" />
@@ -9584,7 +9567,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="301167" type="use" value="Tck A[COMMENT: Tackle attempts, short text]" />
-				<translation id="hint" translation_id="249445" type="use" value="Tackles attempted" />
+				<translation id="hint" translation_id="249445" type="use" value="Tackle attempts" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -9609,61 +9592,8 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="598752" type="use" value="Tck C[COMMENT: AREA: Tackles completed (completed), short text]" />
+				<translation id="text" translation_id="301168" type="use" value="Tck W[COMMENT: Tackles won (completed), short text]" />
 				<translation id="hint" translation_id="249446" type="use" value="Tackles completed" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-
-		<!--shot blocked defending-->
-		<record>
-			<integer id="id" value="POsB" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562765" type="use" value="Shots Blocked Defending[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="453951" type="use" value="Tackles and Interceptions[COMMENT: section heading]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562766" type="use" value="Shts Blckd[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19995; TONE: Formal; CHARLIMIT: 3; REF-ID: n/a; NOTE: Stat description, abbreviation for shots blocked per 90]" />
-				<translation id="name" translation_id="562765" type="use" value="Shots Blocked Defending[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--shot blocked defending per game-->
-		<record>
-			<integer id="id" value="POsb" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562767" type="use" value="Shots Blocked Defending per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="453951" type="use" value="Tackles and Interceptions[COMMENT: section heading]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562768" type="use" value="Shts Blckd/90[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19995; TONE: Formal; CHARLIMIT: 3; REF-ID: n/a; NOTE: Stat description, abbreviation for shots blocked per 90]" />
-				<translation id="name" translation_id="562767" type="use" value="Shots Blocked Defending per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -9910,7 +9840,7 @@
 			<integer id="id" value="PRS9" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" type="use" value="Pressures attempted per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human, breaking translation to assign new ID, had a conflict a while ago]" translation_id="565361" />
+			<translation id="name" translation_id="557898" type="use" value="Pressures attempted per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="453951" type="use" value="Tackles and Interceptions[COMMENT: section heading]" />
@@ -9924,7 +9854,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="555713" type="use" value="Pres A/90[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for pressures attempted/90]" />
-				<translation id="hint" type="use" value="Pressures attempted per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human, breaking translation to assign new ID, had a conflict a while ago]" translation_id="565361" />
+				<translation id="hint" translation_id="557899" type="use" value="Pressures Attempted per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: ]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -9962,7 +9892,7 @@
 			<integer id="id" value="Prs9" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="565363" type="use" value="Pressures completed per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: n/a; NOTE: breaking translation to assign new ID, had a conflict a while ago]" />
+			<translation id="name" translation_id="557902" type="use" value="Pressures completed per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="453951" type="use" value="Tackles and Interceptions[COMMENT: section heading]" />
@@ -9975,8 +9905,8 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="555715" type="use" value="Pres C/90[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for pressures completed/90]" />
-				<translation id="hint" translation_id="565364" type="use" value="Pressures completed per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: n/a; NOTE: breaking translation to assign new ID, had a conflict a while ago ]" />
+				<translation id="text" translation_id="554495" type="use" value="Pres C[COMMENT:AREA: Competition Stats; SUB - AREA: Player Overview; FR - BN: 19995; TONE: Formal; CHARLIMIT: None; REF - ID: n / a; NOTE: Short stat description - Pressures Completed ]" />
+				<translation id="hint" translation_id="557903" type="use" value="Pressures Completed per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: ]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10040,7 +9970,7 @@
 			<integer id="id" value="POSp" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="585451" type="use" value="High Intensity Sprints per 90 minutes[COMMENT: AREA: Scouting/Squad view; SUB-AREA: Shortlist Panel; FR-BN:N/A; NOTE: High intensity sprints per 90 ]" />
+			<translation id="name" translation_id="561146" type="use" value="High Intensity Sprints[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="306495" type="use" value="Movement[COMMENT: match analysis panel; event type]" />
@@ -10054,7 +9984,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="554487" type="use" value="Sprints/90[COMMENT:AREA: Competition Stats; SUB - AREA: Player Overview; FR - BN: 19995; TONE: Formal; CHARLIMIT: None; REF - ID: n / a; NOTE: Short stat description - High intensity Sprints per 90]" />
-				<translation id="hint" translation_id="585451" type="use" value="High Intensity Sprints per 90 minutes[COMMENT: AREA: Scouting/Squad view; SUB-AREA: Shortlist Panel; FR-BN:N/A; NOTE: High intensity sprints per 90 ]" />
+				<translation id="hint" translation_id="561147" type="use" value="High Intensity Sprints[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: ]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10119,7 +10049,7 @@
 			<integer id="id" value="Pop9" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="565365" type="use" value="Open Play Key Passes per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human, breaking translation to assign new ID, had a conflict a while ago]" />
+			<translation id="name" translation_id="557906" type="use" value="Open play Key Passes per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: FM-4048; NOTE: Scouted person property name, which shows the scouted player's agent's name and their relationship w/ the human]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="249416" type="use" value="Passes[COMMENT: player stat: passes table label]" />
@@ -10133,7 +10063,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="557907" type="use" value="OP-KP/90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: ]" />
-				<translation id="hint" translation_id="565366" type="use" value="Open Play Key Passes per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: n/a; NOTE: breaking translation to assign new ID, had a conflict a while ago]" />
+				<translation id="hint" translation_id="557908" type="use" value="Open play Key Passes per 90[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: ]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10220,115 +10150,6 @@
 			</record>
 		</record>
 
-		<!--Open play crosses attempted-->
-		<record>
-			<integer id="id" value="PopC" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562769" type="use" value="Open Play Crosses attempted[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
-&gt;
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562770" type="use" value="OP-Crs A[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for open play crosses attempted per game]" />
-				<translation id="hint" translation_id="562769" type="use" value="Open Play Crosses attempted[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-
-		<!--Open play crosses attempted per game -->
-		<record>
-			<integer id="id" value="POP9" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562771" type="use" value="Open Play Crosses attempted per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
-&gt;
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562772" type="use" value="OP-Crs A/90[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for open play crosses attempted per game]" />
-				<translation id="hint" translation_id="562771" type="use" value="Open Play Crosses attempted per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--Open play crosses completed -->
-		<record>
-			<integer id="id" value="PoPC" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562773" type="use" value="Open Play Crosses completed[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
-&gt;
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562774" type="use" value="OP-Crs C[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for open play crosses completed]" />
-				<translation id="hint" translation_id="562775" type="use" value="Open Play Crosses completed[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--Open play crosses completed per game -->
-		<record>
-			<integer id="id" value="PoP9" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562776" type="use" value="Open Play Crosses completed per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
-&gt;
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562777" type="use" value="OP-Crs C/90[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for open play crosses completed per game]" />
-				<translation id="hint" translation_id="562776" type="use" value="Open Play Crosses completed per 90 minutes[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
 		<!--expected_goals_prevented-->
 		<record>
 			<integer id="id" value="PxGP" />
@@ -10339,7 +10160,7 @@
 			<translation id="subcategory" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
 			<boolean id="sort_ascending" value="false" />
 			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
+				<symbol id="class" value="dashed_record_percentage_label" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -10364,7 +10185,7 @@
 			<translation id="subcategory" translation_id="316588" type="use" value="Saves[COMMENT: match analysis panel; event type]" />
 			<boolean id="sort_ascending" value="false" />
 			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
+				<symbol id="class" value="dashed_record_percentage_label" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -10406,12 +10227,11 @@
 			</record>
 		</record>
 
-		<!--headers attempted-->
 		<record>
 			<integer id="id" value="POha" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="376388" type="use" value="Aerial Challenges attempted[COMMENT: player stat type]" />
+			<translation id="name" translation_id="376388" type="use" value="Aerial Challenge attempts[COMMENT: player stat type]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="376394" type="use" value="Aerial Challenges[COMMENT: player stat: headers table label]" />
@@ -10434,7 +10254,6 @@
 			</record>
 		</record>
 
-		<!--headers won-->
 		<record>
 			<integer id="id" value="POhc" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
@@ -10455,34 +10274,6 @@
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="388152" type="use" value="Hdrs[COMMENT: FR 8873; abbreviation for Headers Won]" />
 				<translation id="hint" translation_id="388158" type="use" value="Headers Won[COMMENT - match analysis screen, event type on chalkboard; TP - changed from Aerial Challenges Won, id 376391]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--headers lost per match-->
-		<record>
-			<integer id="id" value="POhL" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="562778" type="use" value="Headers Lost per 90 minutes[COMMENT - sqaud/scouting view -  Aerial Challenges Lost]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="376394" type="use" value="Aerial Challenges[COMMENT: player stat: headers table label]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562779" type="use" value="Hdrs L/90[COMMENT: FR 8873; abbreviation for Headers Lost/90]" />
-				<translation id="name" translation_id="562778" type="use" value="Headers Lost per 90 minutes[COMMENT - sqaud/scouting view -  Aerial Challenges Lost]" />
 			</record>
 
 			<record id="search_filter">
@@ -10521,22 +10312,21 @@
 			<integer id="id" value="PxGs" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="562383" type="use" value="Expected Goals per Shot[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description ]" />
+			<translation id="name" translation_id="516742" type="use" value="Expected goals per shot ratio (%)[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="247381" type="use" value="Shots" />
 			<boolean id="sort_ascending" value="false" />
 			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
+				<symbol id="class" value="dashed_record_percentage_label" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562384" type="use" value="xG/shot[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for Expected Goals per shot]" />
-				<translation id="hint" translation_id="562383" type="use" value="Expected Goals per Shot[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description ]" />
-
+				<translation id="text" translation_id="552481" type="use" value="xG/shot %[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 2480; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Short stat name for Expected Goals per shot ratio]" />
+				<translation id="hint" translation_id="516742" type="use" value="Expected goals per shot ratio (%)[COMMENT: AREA: Competition Stats; SUB-AREA: Player Overview; FR-BN: 19955; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Stat description]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10563,85 +10353,6 @@
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247381" type="use" value="Shots" />
 				<translation id="hint" translation_id="247381" type="use" value="Shots" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--Free kick shots -->
-		<record>
-			<integer id="id" value="PFKS" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="597566" type="use" value="Free Kick Shots[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="247381" type="use" value="Shots" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="597572" type="use" value="FK Shots[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336; NOTE: Free Kick Shots]" />
-				<translation id="hint" translation_id="597566" type="use" value="Free Kick Shots[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-
-		<!--goals from outside the box -->
-		<record>
-			<integer id="id" value="PGOB" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="597567" type="use" value="Goals From Outside The Box[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="247381" type="use" value="Shots" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="597568" type="use" value="Goals Outside Box [COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-				<translation id="hint" translation_id="597567" type="use" value="Goals From Outside The Box[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
-			</record>
-		</record>
-
-		<!--shots from outside the box per game -->
-		<record>
-			<integer id="id" value="PSOB" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="60" />
-			<translation id="name" translation_id="597569" type="use" value="Shots From Outside The Box Per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="247381" type="use" value="Shots" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="597570" type="use" value="Shots Outside Box/90 [COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
-				<translation id="hint" translation_id="597569" type="use" value="Shots From Outside The Box Per 90 minutes[COMMENT: AREA: Scouting; SUB-AREA: Shortlist Panel; FR-BN: 25336 ]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10782,7 +10493,7 @@
 			<integer id="id" value="POpa" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="249443" type="use" value="Passes attempted" />
+			<translation id="name" translation_id="249443" type="use" value="Pass attempts" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="249416" type="use" value="Passes[COMMENT: player stat: passes table label]" />
@@ -10796,7 +10507,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="301172" type="use" value="Pas A[COMMENT: Passes attempted, short text]" />
-				<translation id="hint" translation_id="249443" type="use" value="Passes attempted" />
+				<translation id="hint" translation_id="249443" type="use" value="Pass attempts" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -10808,7 +10519,7 @@
 			<integer id="id" value="POpg" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="60" />
-			<translation id="name" translation_id="249460" type="use" value="Passes attempted per 90 minutes" />
+			<translation id="name" translation_id="249460" type="use" value="Pass attempts per 90 minutes" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="249416" type="use" value="Passes[COMMENT: player stat: passes table label]" />
@@ -10822,7 +10533,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="301173" type="use" value="Ps A/90[COMMENT: Passes attempted per game, short text]" />
-				<translation id="hint" translation_id="249460" type="use" value="Passes attempted per 90 minutes" />
+				<translation id="hint" translation_id="249460" type="use" value="Pass attempts per 90 minutes" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -11279,7 +10990,7 @@
 			<integer id="auto_hide_priority" value="1250" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -11306,7 +11017,7 @@
 			<boolean id="sort_ascending" value="false" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -11353,7 +11064,7 @@
 			<integer id="auto_hide_priority" value="1250" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -11375,7 +11086,7 @@
 			<integer id="auto_hide_priority" value="1250" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -11398,7 +11109,7 @@
 			<integer id="auto_hide_priority" value="1250" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -11668,7 +11379,7 @@
 				<symbol id="class" value="match_rating_label_formatted" />
 				<string id="format" value="[%fraction#1-3.2]" />
 				<boolean id="dont_format_numeric_grouping" value="true" />
-				<translation id="hint_if_no_value" translation_id="562633" type="use" value="No match stats available[COMMENT: AREA: Scouting; SUB-AREA: Player stats panel/widget; FR-BN: FM-11536; NOTE: Fallback string, when the stats widget is hidden due to stats not being available - either player has not played any games yet, or has only played friendlies, where stats are not tracked]" />
+				<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
@@ -11704,7 +11415,7 @@
 		<record>
 			<integer id="id" value="Pomo" />
 			<integer id="width" value="55" />
-			<translation id="name" translation_id="227859" type="use" value="Player Of The Match" />
+			<translation id="name" translation_id="227859" type="use" value="Man Of The Match" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453945" type="use" value="Stats (General)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="248359" type="use" value="General" />
@@ -11717,8 +11428,8 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="227858" type="use" value="PoM[comment - Man of match]" />
-				<translation id="hint" translation_id="227859" type="use" value="Player Of The Match" />
+				<translation id="text" translation_id="227858" type="use" value="MoM[comment - Man of match]" />
+				<translation id="hint" translation_id="227859" type="use" value="Man Of The Match" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="pftr" />
@@ -12889,7 +12600,34 @@
 			</record>
 		</record>
 
-		<!-- scouting props -->
+		<record>
+			<integer id="id" value="Pscr" />
+			<flags id="aliased_property_id" value="Psrk" />
+			<flags id="mode" value="invalid_for_versus_mode" />
+			<integer id="width" value="80" />
+			<integer id="minimum_width" value="78" />
+			<translation id="name" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			<flags id="customisation_context" value="none" />
+			<boolean id="sort_ascending" value="false" />
+			<integer id="auto_hide_priority" value="400" />
+			<record id="widget_info">
+				<symbol id="class" value="player_scout_recommendation_widget" />
+				<boolean id="dont_set_object" value="true" />
+				<boolean id="showing_in_list" value="true" />
+				<flags id="file" value="widgets/player scout recommendation widget compact" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+				<flags id="navigation_focus_target" value="true" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
+				<translation id="hint" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			</record>
+		</record>
+
 		<record>
 			<integer id="id" value="Pdat" />
 			<flags id="mode" value="invalid_for_versus_mode" />
@@ -12918,6 +12656,7 @@
 			</record>
 		</record>
 
+
 		<record>
 			<integer id="id" value="PsKL" />
 			<integer id="width" value="150" />
@@ -12943,6 +12682,7 @@
 			</record>
 		</record>
 
+
 		<record>
 			<integer id="id" value="Pkna" />
 			<flags id="mode" value="invalid_for_versus_mode" />
@@ -12953,18 +12693,17 @@
 
 			<integer id="auto_hide_priority" value="400" />
 			<record id="widget_info">
-				<symbol id="class" value="world_knowledge_number_with_hint_widget" />
-				<boolean id="show_hover_popup_on_focus" value="true" />
-				<flags id="navigation_focus_target" value="true" />
+				<symbol id="class" value="percentage_label" />
 			</record>
 
 			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
+				<flags id="alignment" value="centre" />
+				<string id="fmat" value="[%number#1]" />
 			</record>
 			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<translation id="text" translation_id="334387" type="use" value="World Knowledge[COMMENT: team scouts; information about range of knowledge]" />
-				<translation id="hint" translation_id="334387" type="use" value="World Knowledge[COMMENT: team scouts; information about range of knowledge]" />
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="420776" type="use" value="Na. Know. Lvl[COMMENT - person list view column heading, abbreviation of Nation Knowledge Level, indication of a non-player's level of knowledge of a region used for scouting]" />
+				<translation id="hint" translation_id="375267" type="use" value="Knowledge level[COMMENT - person list view column heading hint, indication of a non-player's level of knowledge of a region used for scouting]" />
 			</record>
 		</record>
 
@@ -13574,6 +13313,9 @@
 			<integer id="width" value="78" />
 			<integer id="minimum_width" value="78" />
 			<translation id="name" translation_id="257319" type="use" value="Assistant manager's opinion of this player's potential ability[COMMENT - person list view column heading hint]" />
+			<flags id="customisation_context" value="play" />
+			<translation id="category" translation_id="230043" type="use" value="Coaching" />
+			<translation id="category" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]" />
 			<boolean id="sort_ascending" value="false" />
 			<integer id="auto_hide_priority" value="301" />
 			<record id="widget_info">
@@ -13587,6 +13329,10 @@
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="314427" type="use" value="Potential[COMMENT: player popup info panel - scout potential ability rating]" />
 				<translation id="hint" translation_id="257319" type="use" value="Assistant manager's opinion of this player's potential ability[COMMENT - person list view column heading hint]" />
+			</record>
+
+			<record id="search_filter">
+				<integer id="id" value="pfST" />
 			</record>
 		</record>
 
@@ -15149,7 +14895,6 @@
 			<integer id="id" value="Ncsp" />
 			<integer id="width" value="65" />
 			<translation id="name" translation_id="585677" type="use" value="Set Pieces[COMMENT: AREA: non player attributes; SUB-AREA: non player attributes; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:None; NOTE: Name of the coaching set pieces non player attribute]" />
-
 			<flags id="customisation_context" value="staf" />
 			<translation id="category" translation_id="229822" type="use" value="Attributes" />
 			<translation id="subcategory" translation_id="230043" type="use" value="Coaching" />
@@ -15947,188 +15692,6 @@
 			</record>
 		</record>
 
-		<!--Set Piece Delivery Type-->
-		<record>
-			<integer id="id" value="SPdt" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585668" type="use" value="Preferred Set Piece Delivery Type[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_delivery_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585668" type="use" value="Preferred Set Piece Delivery Type[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585668" type="use" value="Preferred Set Piece Delivery Type[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Post Defence-->
-		<record>
-			<integer id="id" value="SPpd" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585669" type="use" value="Preferred Set Piece Post Defence[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_post_defence_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585669" type="use" value="Preferred Set Piece Post Defence[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585669" type="use" value="Preferred Set Piece Post Defence[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Aim For-->
-		<record>
-			<integer id="id" value="SPaf" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585670" type="use" value="Preferred Set Piece Delivery Target[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_aim_for_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585670" type="use" value="Preferred Set Piece Delivery Target[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585670" type="use" value="Preferred Set Piece Delivery Target[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Defensive Marking-->
-		<record>
-			<integer id="id" value="SPDm" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585671" type="use" value="Preferred Set Piece Defensive Marking[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_defensive_marking_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585671" type="use" value="Preferred Set Piece Defensive Marking[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585671" type="use" value="Preferred Set Piece Defensive Marking[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Attacking Numbers-->
-		<record>
-			<integer id="id" value="SPan" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585672" type="use" value="Preferred Set Piece Attacking Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_attacking_numbers_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585672" type="use" value="Preferred Set Piece Attacking Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585672" type="use" value="Preferred Set Piece Attacking Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Defensive Numbers-->
-		<record>
-			<integer id="id" value="SPdn" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585673" type="use" value="Preferred Set Piece Defensive Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_defensive_numbers_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585673" type="use" value="Preferred Set Piece Defensive Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585673" type="use" value="Preferred Set Piece Defensive Numbers[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
-		<!--Set Piece Defensive Line-->
-		<record>
-			<integer id="id" value="Spdl" />
-			<integer id="width" value="100" />
-			<translation id="name" translation_id="585674" type="use" value="Preferred Set Piece Defensive Line[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			<flags id="customisation_context" value="staf" />
-			<translation id="category" translation_id="338138" type="use" value="Tactical[COMMENT: match analysis panel; title header]" />
-			<boolean id="sort_ascending" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="set_piece_defensive_line_preference_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="585674" type="use" value="Preferred Set Piece Defensive Line[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-				<translation id="hint" translation_id="585674" type="use" value="Preferred Set Piece Defensive Line[COMMENT: AREA: Non Player Profile; SUB-AREA: Non player attributes; FR-BN: FM-20531; TONE: Formal; CHARLIMIT: None;]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpu" />
-			</record>
-		</record>
-
 		<!--playing style-->
 		<record>
 			<integer id="id" value="npps" />
@@ -16804,7 +16367,7 @@
 		<record>
 			<integer id="id" value="asTC" />
 			<integer id="width" value="30" />
-			<translation id="name" translation_id="376441" type="use" value="Control[COMMENT: training players panel, column heading, user toggle to control training or not]" />
+			<translation id="name" translation_id="376441" type="use" value="Control Individual training[COMMENT: training players panel, column heading, user toggle to control training or not]" />
 			<flags id="customisation_context" value="none" />
 			<translation id="category" translation_id="248422" type="use" value="Training[COMMENT; training section of player profile]" />
 			<record id="widget_info">
@@ -16816,7 +16379,7 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="376441" type="use" value="Control[COMMENT: training players panel, column heading, user toggle to control training or not]" />
+				<translation id="text" translation_id="376441" type="use" value="Control Individual training[COMMENT: training players panel, column heading, user toggle to control training or not]" />
 			</record>
 		</record>
 
@@ -17308,52 +16871,14 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Renewal Percentage" />
+				<string id="text" value="Renew Percentage" />
 			</record>
 		</record>
 
 		<record>
-			<integer id="id" value="PCRT" />
-			<integer id="width" value="150" />
-			<string id="name" value="Renewal Playing Time" />
-			<flags id="customisation_context" value="none" />
-			<boolean id="sort_ascending" value="true" />
-			<record id="widget_info">
-				<symbol id="class" value="playing_time_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Renewal Playing Time" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="PCRF" />
-			<integer id="width" value="150" />
-			<string id="name" value="Potential Playing Time" />
-			<flags id="customisation_context" value="none" />
-			<boolean id="sort_ascending" value="true" />
-			<record id="widget_info">
-				<symbol id="class" value="playing_time_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Potential Playing Time" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="PCRR" />
-			<integer id="width" value="150" />
-			<string id="name" value="New Release Clause" />
+			<integer id="id" value="PMRV" />
+			<integer id="width" value="100" />
+			<string id="name" value="Release Fee Value" />
 			<flags id="customisation_context" value="none" />
 			<record id="widget_info">
 				<symbol id="class" value="value_label" />
@@ -17364,14 +16889,32 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="New Release Clause" />
+				<string id="text" value="Release Fee Value" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="PCRV" />
+			<integer id="width" value="100" />
+			<string id="name" value="Renew Value" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info">
+				<symbol id="class" value="value_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<string id="text" value="Renew Value" />
 			</record>
 		</record>
 
 		<record>
 			<integer id="id" value="PCRN" />
-			<integer id="width" value="130" />
-			<string id="name" value="Non-Urgent Renewal" />
+			<integer id="width" value="100" />
+			<string id="name" value="Renew Now" />
 			<flags id="customisation_context" value="none" />
 			<record id="widget_info">
 				<symbol id="class" value="label" />
@@ -17382,139 +16925,7 @@
 			</record>
 			<record id="column_heading">
 				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Non-Urgent Renewal" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="PCRU" />
-			<integer id="width" value="120" />
-			<string id="name" value="Urgent Renewal" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Urgent Renewal" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Pchf" />
-			<integer id="width" value="40" />
-			<string id="name" value="Club Choice Factor" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="CCF" />
-				<string id="hint" value="Club Choice Factor" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Pptc" />
-			<integer id="width" value="40" />
-			<string id="name" value="Agreed Playing Time Choice Factor" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_number_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="APTCF" />
-				<string id="hint" value="Agreed Playing Time Choice Factor" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Puag" />
-			<integer id="width" value="50" />
-			<string id="name" value="Unhappy Agreed Playing Time" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="UnPt" />
-				<string id="hint" value="Unhappy Agreed Playing Time" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Pcag" />
-			<integer id="width" value="50" />
-			<string id="name" value="Close To Unhappy Agreed Playing Time" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="ClPt" />
-				<string id="hint" value="Close To Unhappy Agreed Playing Time" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Puff" />
-			<integer id="width" value="50" />
-			<string id="name" value="Unhappy First Team Football" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="UnFf" />
-				<string id="hint" value="Unhappy First Team Football" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="Pcff" />
-			<integer id="width" value="50" />
-			<string id="name" value="Close To Unhappy First Team Football" />
-			<flags id="customisation_context" value="none" />
-			<record id="widget_info">
-				<symbol id="class" value="label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="ClFf" />
-				<string id="hint" value="Close To Unhappy First Team Football" />
+				<string id="text" value="Renew Now" />
 			</record>
 		</record>
 
@@ -18362,7 +17773,7 @@
 			<integer id="id" value="Nctc" />
 			<flags id="mode" value="invalid_for_versus_mode" />
 			<integer id="width" value="120" />
-			<translation id="name" translation_id="320435" type="use" value="Time at Current Club (Mgr)[COMMENT: manager list; column header]" />
+			<translation id="name" translation_id="320435" type="use" value="Time at Current Club[COMMENT: manager list; column header]" />
 			<flags id="customisation_context" value="staf" />
 			<translation id="category" translation_id="395203" type="use" value="Employment[COMMENT: person search filter category]" />
 			<boolean id="sort_ascending" value="false" />
@@ -18375,7 +17786,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="337821" type="use" value="C. Time (Days)[COMMENT - manager stats screen; time spent at current club column header (C is the abbreviation for Current)]" />
-				<translation id="hint" translation_id="320435" type="use" value="Time at Current Club (Mgr)[COMMENT: manager list; column header]" />
+				<translation id="hint" translation_id="320435" type="use" value="Time at Current Club[COMMENT: manager list; column header]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="p500" />
@@ -18387,7 +17798,7 @@
 			<integer id="id" value="NctC" />
 			<flags id="mode" value="invalid_for_versus_mode" />
 			<integer id="width" value="100" />
-			<translation id="name" translation_id="320435" type="use" value="Time at Current Club (Mgr)[COMMENT: manager list; column header]" />
+			<translation id="name" translation_id="320435" type="use" value="Time at Current Club[COMMENT: manager list; column header]" />
 			<flags id="customisation_context" value="none" />
 			<translation id="category" translation_id="395203" type="use" value="Employment[COMMENT: person search filter category]" />
 			<boolean id="sort_ascending" value="false" />
@@ -18401,7 +17812,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="337821" type="use" value="C. Time (Days)[COMMENT - manager stats screen; time spent at current club column header (C is the abbreviation for Current)]" />
-				<translation id="hint" translation_id="320435" type="use" value="Time at Current Club (Mgr)[COMMENT: manager list; column header]" />
+				<translation id="hint" translation_id="320435" type="use" value="Time at Current Club[COMMENT: manager list; column header]" />
 			</record>
 		</record>
 
@@ -18435,7 +17846,7 @@
 			<integer id="id" value="Nltd" />
 			<flags id="mode" value="invalid_for_versus_mode" />
 			<integer id="width" value="100" />
-			<translation id="name" translation_id="382825" type="use" value="Longest Time at Club (Mgr)[COMMENT: manager list; column header]" />
+			<translation id="name" translation_id="382825" type="use" value="Longest Time at Club[COMMENT: manager list; column header]" />
 			<flags id="customisation_context" value="staf" />
 			<translation id="category" translation_id="395203" type="use" value="Employment[COMMENT: person search filter category]" />
 			<boolean id="sort_ascending" value="false" />
@@ -18448,7 +17859,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="337977" type="use" value="L. Time (Days)[COMMENT - manager stats screen; longest amount of time spent at a club column header (L is the abbreviation for Longest)]" />
-				<translation id="hint" translation_id="382825" type="use" value="Longest Time at Club (Mgr)[COMMENT: manager list; column header]" />
+				<translation id="hint" translation_id="382825" type="use" value="Longest Time at Club[COMMENT: manager list; column header]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="p500" />
@@ -18485,7 +17896,7 @@
 			<integer id="id" value="Nstd" />
 			<flags id="mode" value="invalid_for_versus_mode" />
 			<integer id="width" value="100" />
-			<translation id="name" translation_id="382829" type="use" value="Shortest Time at Club (Mgr)[COMMENT: manager list; column header]" />
+			<translation id="name" translation_id="382829" type="use" value="Shortest Time at Club[COMMENT: manager list; column header]" />
 			<flags id="customisation_context" value="staf" />
 			<translation id="category" translation_id="395203" type="use" value="Employment[COMMENT: person search filter category]" />
 			<boolean id="sort_ascending" value="true" />
@@ -18498,7 +17909,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="338090" type="use" value="S. Time (Days)[COMMENT - manager stats screen; shortest amount of time spent at a club column header (S is the abbreviation for Shortest)]" />
-				<translation id="hint" translation_id="382829" type="use" value="Shortest Time at Club (Mgr)[COMMENT: manager list; column header]" />
+				<translation id="hint" translation_id="382829" type="use" value="Shortest Time at Club[COMMENT: manager list; column header]" />
 			</record>
 			<record id="search_filter">
 				<integer id="id" value="p500" />
@@ -21037,7 +20448,7 @@
 			<integer id="id" value="POca" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
 			<integer id="width" value="45" />
-			<translation id="name" translation_id="318346" type="use" value="Crosses attempted[COMMENT: Player stats column name]" />
+			<translation id="name" translation_id="318346" type="use" value="Cross Attempts[COMMENT: Player stats column name]" />
 			<flags id="customisation_context" value="play" />
 			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
 			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
@@ -21086,7 +20497,7 @@
 			</record>
 		</record>
 
-		<!-- Player stats - crosses attempted/completed ratio -->
+		<!-- Player stats - crosses attmpted/completed ratio -->
 		<record>
 			<integer id="id" value="POcr" />
 			<flags id="mode" value="invalid_for_fmt_tablet" />
@@ -21106,33 +20517,6 @@
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="318353" type="use" value="Cr C/A[COMMENT: Crosses completed ratio column short text]" />
 				<translation id="hint" translation_id="318354" type="use" value="Cross completed compared to crosses attempted[COMMENT: Player stats column hint text]" />
-			</record>
-
-			<record id="search_filter">
-				<integer id="id" value="pfpc" />
-			</record>
-		</record>
-
-		<!-- open play crosses attempted/completed ratio -->
-		<record>
-			<integer id="id" value="POCr" />
-			<flags id="mode" value="invalid_for_fmt_tablet" />
-			<integer id="width" value="45" />
-			<translation id="name" translation_id="562780" type="use" value="Open Play Cross Completion Ratio[COMMENT: Player stats column name]" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="453950" type="use" value="Stats (Chalkboard)[COMMENT: section heading]" />
-			<translation id="subcategory" translation_id="291481" type="use" value="Crosses[COMMENT: match analysis panel; event type]" />
-			<record id="widget_info">
-				<symbol id="class" value="dashed_record_percentage_label" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="562781" type="use" value="OP-Cr %[COMMENT: Open Play Crosses completed ratio column short text]" />
-				<translation id="name" translation_id="562780" type="use" value="Open Play Cross Completion Ratio[COMMENT: Player stats column name]" />
 			</record>
 
 			<record id="search_filter">
@@ -22716,7 +22100,7 @@
 			<integer id="id" value="PMaa" />
 			<integer id="width" value="60" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="228120" type="use" value="Arrives Late In Opponents' Area" />
+			<translation id="name" translation_id="228120" type="use" value="Arrives Late In Opponents Area" />
 			<record id="widget_edit_info">
 				<symbol id="class" value="check_box" />
 				<flags id="click_event" value="CDBd" />
@@ -22771,7 +22155,7 @@
 			<integer id="id" value="PMfp" />
 			<integer id="width" value="60" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="228134" type="use" value="Hits Free Kicks With Power" />
+			<translation id="name" translation_id="228134" type="use" value="Hits Free Kick With Power" />
 			<record id="widget_edit_info">
 				<symbol id="class" value="check_box" />
 				<flags id="click_event" value="CDBd" />
@@ -23002,7 +22386,7 @@
 			<integer id="id" value="PMof" />
 			<integer id="width" value="60" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="501865" type="use" value="Likes To Switch Ball To Wide Areas[COMMENT: AREA: Player Traits; SUB-AREA: Traits; FR-BN: 26233; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: this used to be string ID 228136 Likes To Switch Ball To Other Flank]" />
+			<translation id="name" translation_id="228136" type="use" value="Likes To Switch Ball To Other Flank" />
 			<record id="widget_edit_info">
 				<symbol id="class" value="check_box" />
 				<flags id="click_event" value="CDBd" />
@@ -23609,20 +22993,6 @@
 			<integer id="width" value="60" />
 			<flags id="customisation_context" value="none" />
 			<translation id="name" translation_id="251413" type="use" value="Goalkeeping Coach" />
-
-			<record id="widget_edit_info">
-				<symbol id="class" value="number_edit_box" />
-				<flags id="edit_event" value="CDBd" />
-				<integer id="min_value" value="1" />
-				<integer id="max_value" value="20" />
-			</record>
-		</record>
-
-		<record>
-			<integer id="id" value="PPpc" />
-			<integer id="width" value="60" />
-			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="585367" type="use" value="Set Piece Coach[COMMENT: AREA: Staff job roles; SUB-AREA: job role title; FR-BN: FM-20524; TONE: Formal; CHARLIMIT: None; REF-ID: None; NOTE: Name of the job title]" />
 
 			<record id="widget_edit_info">
 				<symbol id="class" value="number_edit_box" />
@@ -24919,7 +24289,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="394621" type="use" value="ThI[COMMENT: three letter abbreviation for 247690 Throw Ins]" />
-				<translation id="hint" translation_id="247690" type="use" value="Throw-Ins" />
+				<translation id="hint" translation_id="247690" type="use" value="Throw Ins" />
 			</record>
 		</record>
 
@@ -26491,7 +25861,7 @@
 			<integer id="width" value="40" />
 			<flags id="customisation_context" value="chlk" />
 			<translation id="category" translation_id="453960" type="use" value="Chalkboard - Set Pieces[COMMENT: section title text for chalkboard category]" />
-			<translation id="name" translation_id="247690" type="use" value="Throw-Ins" />
+			<translation id="name" translation_id="247690" type="use" value="Throw Ins" />
 
 			<record id="widget_info">
 				<symbol id="class" value="chalkboard_toggle_event" />
@@ -26505,7 +25875,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="394621" type="use" value="ThI[COMMENT: three letter abbreviation for 247690 Throw Ins]" />
-				<translation id="hint" translation_id="247690" type="use" value="Throw-Ins" />
+				<translation id="hint" translation_id="247690" type="use" value="Throw Ins" />
 			</record>
 		</record>
 
@@ -27219,8 +26589,9 @@
 			<integer id="auto_hide_priority" value="10" />
 			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
 			<record id="widget_info">
-				<symbol id="class" value="client_object_viewer_xml_panel" />
+				<symbol id="class" value="property_list_viewer_xml_panel" />
 				<string id="file" value="widgets/person name and club widget" />
+				<boolean id="dont_set_object" value="true" />
 			</record>
 
 			<record id="column_widget_properties">
@@ -27627,16 +26998,16 @@
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="450721" type="use" value="Assignment Type[COMMENT - bug 162191, scouting label]" />
 			</record>
+
 		</record>
 
-		<!-- scouting recommendations -->
-		<!-- these three all retrieve the same property lists, but use different values according to the recommendation_mode -->
-		<!-- scout -->
+
 		<record>
-			<integer id="id" value="PRps" />
-			<boolean id="locked" value="true" />
+			<integer id="id" value="Psrk" />
 			<flags id="mode" value="invalid_for_versus_mode" />
+			<boolean id="locked" value="true" />
 			<integer id="width" value="80" />
+			<integer id="height" value="60" />
 			<integer id="minimum_width" value="78" />
 			<translation id="name" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
 			<flags id="customisation_context" value="none" />
@@ -27645,8 +27016,41 @@
 			<integer id="auto_hide_priority" value="400" />
 			<record id="widget_info">
 				<symbol id="class" value="player_scout_recommendation_widget" />
-				<integer id="recommendation_mode" value="0" />
+				<integer id="rMdo" value="2" />
+				<boolean id="showing_in_list" value="true" />
 				<boolean id="dont_set_object" value="true" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+				<flags id="navigation_focus_target" value="true" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
+				<translation id="hint" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			</record>
+
+			<record id="search_filter">
+				<integer id="id" value="p100" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="PsrK" />
+			<flags id="aliased_property_id" value="Psrk" />
+			<boolean id="locked" value="true" />
+			<flags id="mode" value="invalid_for_versus_mode" />
+			<integer id="width" value="80" />
+			<integer id="minimum_width" value="78" />
+			<translation id="name" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			<flags id="customisation_context" value="none" />
+			<boolean id="sort_ascending" value="false" />
+			<integer id="auto_hide_priority" value="400" />
+			<record id="widget_info">
+				<symbol id="class" value="player_scout_recommendation_widget" />
+				<boolean id="dont_set_object" value="true" />
+				<integer id="rMdo" value="0" />
 				<boolean id="showing_in_list" value="true" />
 				<flags id="file" value="widgets/player scout recommendation widget compact" />
 			</record>
@@ -27655,7 +27059,6 @@
 				<flags id="alignment" value="centre" />
 				<flags id="navigation_focus_target" value="true" />
 			</record>
-
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
@@ -27663,9 +27066,38 @@
 			</record>
 		</record>
 
-		<!-- analyst -->
 		<record>
-			<integer id="id" value="PRpa" />
+			<integer id="id" value="PsRK" />
+			<flags id="aliased_property_id" value="Psrk" />
+			<boolean id="locked" value="true" />
+			<flags id="mode" value="invalid_for_versus_mode" />
+			<integer id="width" value="80" />
+			<integer id="minimum_width" value="78" />
+			<translation id="name" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			<flags id="customisation_context" value="none" />
+			<boolean id="sort_ascending" value="false" />
+			<integer id="auto_hide_priority" value="40" />
+			<record id="widget_info">
+				<symbol id="class" value="player_scout_recommendation_widget" />
+				<boolean id="dont_set_object" value="true" />
+				<integer id="recommendation_mode" value="2" />
+				<boolean id="showing_in_list" value="true" />
+				<flags id="file" value="widgets/player scout recommendation widget" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+				<flags id="navigation_focus_target" value="true" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
+				<translation id="hint" translation_id="251864" type="use" value="Scout recommendation[COMMENT - person list view column heading hint]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="PSrK" />
 			<boolean id="locked" value="true" />
 			<flags id="mode" value="invalid_for_versus_mode" />
 			<integer id="width" value="80" />
@@ -27676,51 +27108,20 @@
 			<integer id="auto_hide_priority" value="400" />
 			<record id="widget_info">
 				<symbol id="class" value="player_scout_recommendation_widget" />
-				<integer id="recommendation_mode" value="1" />
 				<boolean id="dont_set_object" value="true" />
+				<integer id="rMdo" value="1" />
 				<boolean id="showing_in_list" value="true" />
+				<flags id="file" value="widgets/player scout recommendation widget" />
 			</record>
 
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 				<flags id="navigation_focus_target" value="true" />
 			</record>
-
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
 				<translation id="hint" translation_id="517312" type="use" value="Analyst recommendation[COMMENT: AREA: Scouting and Analysis; NOTE: person list view column heading hint]" />
-			</record>
-		</record>
-
-		<!-- overall (scout + analyst) -->
-		<record>
-			<integer id="id" value="PRpo" />
-			<boolean id="locked" value="true" />
-			<flags id="mode" value="invalid_for_versus_mode" />
-			<integer id="width" value="80" />
-			<integer id="height" value="60" />
-			<integer id="minimum_width" value="78" />
-			<translation id="name" type="use" value="Scouting team recommendation[COMMENT - person list view column heading hint]" translation_id="565367" />
-			<flags id="customisation_context" value="none" />
-			<boolean id="sort_ascending" value="false" />
-			<integer id="auto_hide_priority" value="400" />
-			<record id="widget_info">
-				<symbol id="class" value="player_scout_recommendation_widget" />
-				<integer id="recommendation_mode" value="2" />
-				<boolean id="dont_set_object" value="true" />
-				<boolean id="showing_in_list" value="true" />
-			</record>
-
-			<record id="column_widget_properties">
-				<flags id="alignment" value="centre" />
-				<flags id="navigation_focus_target" value="true" />
-			</record>
-
-			<record id="column_heading">
-				<flags id="alignment" value="centre" />
-				<translation id="text" translation_id="255666" type="use" value="Rec[COMMENT - person list view column heading; short for Scout Recommendation]" />
-				<translation id="hint" type="use" value="Scouting team recommendation[COMMENT - person list view column heading hint]" translation_id="565367" />
 			</record>
 		</record>
 
@@ -28260,31 +27661,6 @@
 		</record>
 
 		<record>
-			<integer id="id" value="npRf" />
-			<integer id="width" value="100" />
-			<flags id="customisation_context" value="play" />
-			<flags id="mode" value="invalid_for_versus_mode" />
-			<translation id="category" translation_id="248356" type="use" value="Scouting" />
-			<translation id="name" translation_id="557637" type="use" value="Current Focuses[COMMENT: AREA: Scouting; SUB-AREA: Scouting Coverage; FR-BN: FM-4076; NOTE: title for the recruitment focuses buttons]" />
-			<integer id="auto_hide_priority" value="100" />
-			<record id="widget_info">
-				<symbol id="class" value="recruitment_focus_widget" />
-				<symbol id="file" value="human/recruitment focus number with hint widget" />
-				<boolean id="force_show_if_empty" value="true" />
-				<boolean id="show_hover_popup_on_focus" value="true" />
-				<flags id="navigation_focus_target" value="true" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<translation id="text" translation_id="557637" type="use" value="Current Focuses[COMMENT: AREA: Scouting; SUB-AREA: Scouting Coverage; FR-BN: FM-4076; NOTE: title for the recruitment focuses buttons]" />
-				<translation id="hint" translation_id="557637" type="use" value="Current Focuses[COMMENT: AREA: Scouting; SUB-AREA: Scouting Coverage; FR-BN: FM-4076; NOTE: title for the recruitment focuses buttons]" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-		</record>
-
-		<record>
 			<integer id="id" value="PNfR" />
 			<integer id="width" value="150" />
 			<flags id="customisation_context" value="none" />
@@ -28544,32 +27920,6 @@
 				<flags id="alignment" value="centre" />
 				<string id="text" value="Staff PA" />
 				<string id="hint" value="What the selector (staff) thinks the PA of a player is..." />
-			</record>
-		</record>
-		<!-- DEBUG ONLY -->
-
-		<!-- DEBUG ONLY -->
-		<!--late developer-->
-		<record>
-			<integer id="id" value="PLAB" />
-			<integer id="width" value="90" />
-			<string id="name" value="Late Developer" />
-			<flags id="customisation_context" value="play" />
-			<translation id="category" translation_id="348857" type="use" value="Hidden[COMMENT: steam workshop publishing panel; user can set the level of publicity for their steam workshop content]" />
-			<integer id="auto_hide_priority" value="false" />
-			<record id="widget_info">
-				<symbol id="class" value="yes_no_label" />
-			</record>
-			<record id="column_widget_properties">
-				<flags id="alignment" value="left,centre_y" />
-			</record>
-			<record id="column_heading">
-				<flags id="alignment" value="left,centre_y" />
-				<string id="text" value="Late Developer" />
-				<string id="hint" value="Late Developer" />
-			</record>
-			<record id="search_filter">
-				<integer id="id" value="pftr" />
 			</record>
 		</record>
 		<!-- DEBUG ONLY -->

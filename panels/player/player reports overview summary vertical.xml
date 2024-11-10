@@ -14,7 +14,7 @@
 			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="40,-6, -1" horizontal_gap="4" horizontal_offset="6" vertical_offset="8" />
 
 			<widget class="player_scout_recommendation_widget" id="sriW" width="40" height="40" show_knowledge_bar="false" navigation_focus_target="false">
-				<record id="object_property" get_property="Psrk" set_property="objt" />
+				<record id="object_property" get_property="PRpo" set_property="objt" />
 			</widget>
 
 			<!-- Coach report info etc (only for own players)-->
@@ -63,7 +63,7 @@
 						</widget>
 
 						<!--CA label-->
-						<widget class="text" id="caTX" auto_size="vertical" alignment="left" colour="faded text" />
+						<widget class="text" id="caLB" auto_size="vertical" alignment="left" colour="faded text" />
 
 					</container>
 
@@ -86,7 +86,7 @@
 						</widget>
 
 						<!--PA label-->
-						<widget class="text" id="paTX" auto_size="vertical" alignment="left" colour="faded text" />
+						<widget class="text" id="paLB" auto_size="vertical" alignment="left" colour="faded text" />
 					</container>
 
 				</container>

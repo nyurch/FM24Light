@@ -41,13 +41,15 @@
 				<translation id="text" translation_id="557613" type="use" value="Assigned to:[COMMENT: AREA: Scouting; SUB-AREA: Active Recruitment Focuses Panel; FR-BN: FM-4038; NOTE: Subtitle showing which scout and which analyst the focus has been assigned to]" />
 			</widget>
 
-			<widget class="person_button" id="scas" size="medium" colour="text" info_popup_enabled="true" info_popup_alignment="left, centre_y" person_is_player="false" person_is_human="false" alignment="left, centre_y" auto_size="horizontal" />
+			<widget class="person_button" id="scPB" size="medium" colour="text" info_popup_enabled="true" info_popup_alignment="left, centre_y" person_is_player="false" person_is_human="false" alignment="left, centre_y" auto_size="horizontal" />
+			<widget class="text" id="scTx" size="medium" colour="text" alignment="left, centre_y" auto_size="horizontal" hidden="true" />
 
 			<widget class="text" id="asAn" colour="faded text" alignment="left, centre_y" auto_size="horizontal">
 				<translation id="text" translation_id="282538" type="use" value="and[COMMENT: news_item; where_are_they_now_news; used to link two sentences together in a list e.g. person1 and person2]" />
 			</widget>
 
-			<widget class="person_button" id="anas" size="medium" colour="text" info_popup_enabled="true" info_popup_alignment="left, centre_y" person_is_player="false" person_is_human="false" alignment="left, centre_y" auto_size="horizontal" />
+			<widget class="person_button" id="anPB" size="medium" colour="text" info_popup_enabled="true" info_popup_alignment="left, centre_y" person_is_player="false" person_is_human="false" alignment="left, centre_y" auto_size="horizontal" />
+			<widget class="text" id="anTx" size="medium" colour="text" alignment="left, centre_y" auto_size="horizontal" hidden="true" />
 		</container>
 	</container>
 
@@ -78,7 +80,7 @@
 						<string id="font" value="title" />
 					</record>
 					<record id="b_button">
-						<translation id="text" translation_id="310338" type="use" value="Completed[COMMENT: board request status; the board request has been completed]" />
+						<translation id="text" translation_id="598749" type="use" value="Completed[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focuses; NOTE: recruitment focus has been completed]" />
 						<string id="font" value="title" />
 					</record>
 				</list>
@@ -151,7 +153,7 @@
 
 				<!--Tab buttons-->
 				<container id="tbbt">
-					<attachment_group class="horizontal_arrange" horizontal_alignment="left" vertical_inset="0" horizontal_offset="0" horizontal_gap="6" />
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left" vertical_inset="0" horizontal_offset="0" horizontal_gap="0" />
 
 					<widget class="radio_button" id="recB" select_event="eREC" auto_size="horizontal" secondary_icon="icons/16px/subscribed" show_button_appearance="true" alignment="centre" appearance="switches/store toggle/normal/button" icon_enabled="false" secondary_icon_enabled="true" secondary_icon_alignment="left" selected="true">
 						<translation id="text" translation_id="554343" type="use" value="Recommendations[COMMENT: AREA: Scouting; SUB-AREA: Active Recruitment Focuses Panel; FR-BN: FM-4038; NOTE: Tab title of table w/ players recommended as part of recruitment focus]" />
@@ -174,14 +176,14 @@
 					<widget class="text" id="noPL" alignment="centre_x,centre_y" hidden="true">
 						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 
-						<translation id="text" translation_id="557618" type="use" value="No players found yet. Check in again in a few days.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4023; NOTE: Fallback text shown, when recruitment focus hasn't foudn players yet]" />
+						<translation id="text" translation_id="561837" type="use" value="No players found yet.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4023; NOTE: Fallback text shown, when recruitment focus hasn't foudn players yet]" />
 					</widget>
 
 					<!--Player list table -->
 					<widget class="client_object_list_table" id="rstb" mode="fill_rows, stripe_rows, printable, keyboard, show_bullets, select_rows, select_multiple" select_event="ePLS" fixed_size_rows="true" auto_size_rows="false" fixed_row_height="30" navigation_container="true" default_focus="true">
 						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 
-						<flags id="default_sort_column" value="PsRK" />
+						<flags id="default_sort_column" value="PRpo" />
 
 						<list id="views">
 							<record id="ovvw">
@@ -202,7 +204,7 @@
 									<!-- value -->
 									<record id="Pcww" auto_hide_priority="11" />
 									<!-- weekly wage -->
-									<record id="PsRK" auto_hide_priority="3" minimum_width="70" width="70" />
+									<record id="PRpo" auto_hide_priority="3" minimum_width="70" width="70" />
 									<!-- recommended -->
 									<record id="PsKL" auto_hide_priority="9" />
 									<!-- knowledge -->

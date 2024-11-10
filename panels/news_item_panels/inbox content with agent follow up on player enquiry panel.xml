@@ -22,14 +22,19 @@
 			<record id="value_widget_properties" auto_size="horizontal" alignment="left, centre_y" />
 		</widget>
 
+		<container height="60">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" vertical_gap="8" />
+			<!--Value-->
+			<widget class="label" font="label" height="14">
+				<translation id="text" translation_id="292633" type="use" value="Estimated Value[COMMENT: player profile; value label]" />
+			</widget>
+			<widget class="transfer_value_label" id="Pdva" auto_size="vertical" font="value">
+				<record id="object_property" get_property="Pdva" dont_set_hint="true" />
+			</widget>
+		</container>
+		
 		<!--value label-->
-		<widget class="client_object_property_labelled_panel" id="Pdva" property="Pdva" height="60">
-			<record id="label_widget_properties" />
-			<record id="value_widget_properties" auto_size="horizontal" alignment="left, centre_y" />
-		</widget>
-
-		<!--value label-->
-		<widget class="client_object_property_labelled_panel" id="Pscr" property="PsRK" height="60">
+		<widget class="client_object_property_labelled_panel" id="Pscr" property="PRps" height="60">
 			<record id="label_widget_properties" />
 			<record id="value_widget_properties" auto_size="horizontal" auto_size_minimum_width="60" height="60" alignment="left, centre_y" />
 		</widget>

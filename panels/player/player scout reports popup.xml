@@ -139,7 +139,7 @@
 					<attachment_group class="horizontal_arrange" />
 
 					<widget class="player_scout_recommendation_widget" recommendation_mode="0" show_knowledge_bar="false" show_hover_popup="false" alignment="left, centre_y" width="40">
-						<record id="object_property" get_property="Psrk" set_property="objt" />
+						<record id="object_property" get_property="PRpo" set_property="objt" />
 					</widget>
 				</container>
 			</container>
@@ -156,7 +156,7 @@
 					<attachment_group class="horizontal_arrange" />
 
 					<widget class="player_scout_recommendation_widget" recommendation_mode="1" show_knowledge_bar="false" show_hover_popup="false" width="40">
-						<record id="object_property" get_property="Psrk" set_property="objt" />
+						<record id="object_property" get_property="PRpo" set_property="objt" />
 					</widget>
 				</container>
 			</container>

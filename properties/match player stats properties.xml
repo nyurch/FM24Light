@@ -10,7 +10,7 @@
 			<integer id="minimum_width" value="48" />
 			<boolean id="row_drag_drop_handler" value="true" />
 			<boolean id="row_drag_draw_handler" value="true" />
-			<flags id="customisation_context" value="play" />
+			<flags id="customisation_context" value="none" />
 			<translation id="category" translation_id="229527" type="use" value="Squad" />
 			<record id="widget_info">
 				<symbol id="class" value="tactic_button" />
@@ -43,8 +43,7 @@
 			<integer id="auto_hide_priority" value="10" />
 			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
 			<record id="widget_info">
-				<symbol id="class" value="text" />
-				<!--this is just a reasonable default that will show the value; in FM there is a more complicated widget, person_button, which is used-->
+				<symbol id="class" value="text" />	<!--this is just a reasonable default that will show the value; in FM there is a more complicated widget, person_button, which is used-->
 			</record>
 			<record id="column_widget_properties">
 				<flags id="alignment" value="left,centre_y" />
@@ -127,7 +126,7 @@
 			<integer id="id" value="MPpa" />
 			<integer id="width" value="26" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="249443" type="use" value="Pass attempts" />
+			<translation id="name" translation_id="249443" type="use" value="Passes attempted" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
 			</record>
@@ -139,7 +138,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="248736" type="use" value="Pas" />
-				<translation id="hint" translation_id="249443" type="use" value="Pass attempts" />
+				<translation id="hint" translation_id="249443" type="use" value="Passes attempted" />
 			</record>
 		</record>
 
@@ -169,7 +168,7 @@
 			<integer id="id" value="MPcr" />
 			<integer id="width" value="26" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="297348" type="use" value="Cross Attempts[COMMENT - match stats; cross attempts]" />
+			<translation id="name" translation_id="297348" type="use" value="Crosses attempted[COMMENT - match stats; cross attempts]" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
 			</record>
@@ -181,7 +180,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="297346" type="use" value="Crs[COMMENT: match stats; three-letter abbreviation for crosses]" />
-				<translation id="hint" translation_id="297348" type="use" value="Cross Attempts[COMMENT - match stats; cross attempts]" />
+				<translation id="hint" translation_id="297348" type="use" value="Crosses attempted[COMMENT - match stats; cross attempts]" />
 			</record>
 		</record>
 
@@ -255,7 +254,7 @@
 			<integer id="id" value="MPta" />
 			<integer id="width" value="26" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="249445" type="use" value="Tackle attempts" />
+			<translation id="name" translation_id="249445" type="use" value="Tackles attempted" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
 			</record>
@@ -267,7 +266,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="248739" type="use" value="Tck" />
-				<translation id="hint" translation_id="249445" type="use" value="Tackle attempts" />
+				<translation id="hint" translation_id="249445" type="use" value="Tackles attempted" />
 			</record>
 		</record>
 
@@ -1006,7 +1005,7 @@
 			<integer id="id" value="MPti" />
 			<integer id="width" value="26" />
 			<flags id="customisation_context" value="none" />
-			<translation id="name" translation_id="247690" type="use" value="Throw Ins" />
+			<translation id="name" translation_id="247690" type="use" value="Throw-Ins" />
 			<record id="widget_info">
 				<symbol id="class" value="dashed_number_label" />
 			</record>
@@ -1018,7 +1017,7 @@
 			<record id="column_heading">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="392818" type="use" value="Thr[COMMENT: match stats; three-letter abbreviation for Throw-ins taken]" />
-				<translation id="hint" translation_id="247690" type="use" value="Throw Ins" />
+				<translation id="hint" translation_id="247690" type="use" value="Throw-Ins" />
 			</record>
 		</record>
 

@@ -1,0 +1,42 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="text" set_property="text" target="TiTe"/>
+		<record get_property="rrep" set_property="rrep" target="cola"/>
+		<record get_property="objL" set_property="objL" target="elit"/>
+	</list>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+	<container class="inner_contrast_box" appearance="boxes/main/transparent/paper" id="cola">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0"/>
+		<widget class="text" font="title" height="20" colour="white" id="TiTe" alignment="left, centre_y"/>
+	</container>
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+
+		<widget class="client_object_list_table" id="elit" fixed_size_rows="true" auto_size="vertical" database_table_type="1" row_height="70">
+			<flags id="mode" value="fill_rows, stripe_rows, hide_headings"/>
+			<integer id="contextual_handler_column_id" value="Pnms"/>
+			<record id="viewed_property_ids">
+				<record id="PpsP" width="140" auto_hide_priority="10"/>
+				<record id="port" width="60" auto_hide_priority="10"/>
+				<record id="PNaN" width="-1" auto_hide_priority="10"/>
+				<record id="PPst" width="140" auto_hide_priority="10"/>
+				<record id="Pdes" width="150" auto_hide_priority="30"/>
+				<record id="Phei" width="60" auto_hide_priority="10"/>
+				<record id="Pwei" width="50" auto_hide_priority="10"/>
+				<record id="Pcab" width="80" auto_hide_priority="20"/>
+				<record id="Ppab" width="80" auto_hide_priority="20"/>
+				<record id="Pced" width="200" auto_hide_priority="10"/>
+			</record>
+
+			<list id="column_table_properties">
+				<record id="PpsP">
+					<record id="widget_info" class="client_object_viewer_xml_panel" file="player/player positions indicator tiny own player" />
+				</record>
+				<record id="Pced">
+					<record id="widget_info" class="container" file="widgets/youth scholar contract end date widget" />
+				</record>
+			</list>
+		</widget>
+
+	</container>
+</panel>

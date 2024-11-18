@@ -16,7 +16,7 @@
 			<flags id="mode" value="fill_rows, stripe_rows, hide_headings"/>
 			<integer id="contextual_handler_column_id" value="Pnms"/>
 			<record id="viewed_property_ids">
-				<record id="PpsP" width="140" auto_hide_priority="10"/>
+				<record id="PpsP" width="160" auto_hide_priority="10"/>
 				<record id="port" width="60" auto_hide_priority="10"/>
 				<record id="PNaN" width="-1" auto_hide_priority="10"/>
 				<record id="PPst" width="140" auto_hide_priority="10"/>

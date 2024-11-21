@@ -42,7 +42,7 @@
 				</container>
 			</container>
 
-			<container class="contrast_box_no_margin" red_replacement="bg info">
+			<container class="contrast_box_no_margin" red_replacement="bg positive">
 				<layout class="arrange_vertical_attachment" layout="30,-1" offset="0" gap="8" />
 				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 

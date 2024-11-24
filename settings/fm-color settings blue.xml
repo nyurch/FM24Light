@@ -196,7 +196,7 @@
 	<colour name="sidebar text"														value="white"/>
 	<colour name="sidebar"															value="lighter"/>
 	<colour name="news ticker"														value="fg alert" />
-	<colour name="accent button text"												value="fg"/>
+	<colour name="accent button text"												value="bg"/>
 
 	<!-- Base icon colours -->
 	<colour name="normal_icon"														value="fg"/>

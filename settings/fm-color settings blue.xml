@@ -529,7 +529,7 @@
 	<colour name="co own out"											value="lime 900"/>
 	<colour name="trial in"												value="green 900"/>
 	<colour name="trial out"											value="green 900"/>
-	<colour name="shortlisted"											value="dark orange"/>
+	<colour name="shortlisted"											value="rgb(150,0,0)"/>
 	<colour name="golden generation"									value="gold"/>
 	<colour name="human controlled"										value="fg accent"/>
 	<colour name="feeder club"											value="purple 900"/>

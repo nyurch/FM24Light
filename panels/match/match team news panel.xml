@@ -157,7 +157,7 @@
 				<container>
 					<layout class="arrange_horizontal_attachment" alignment="all" layout="-1" offset="0" gap="0"/>
 					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
-					<container class="team_recent_form_widget" alignment="right" id="frRF" bar_width="24" show_form_letters="true" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw">
+					<container class="team_recent_form_widget" alignment="right" id="frRF" bar_width="24" show_form_letters="false" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw">
 						<layout class="stick_to_sides_attachment" alignment="all" inset="3,4,0,4"/>
 						<record id="object_property">
 							<list id="get_properties">
@@ -165,6 +165,10 @@
 									<integer id="get_property" value="homF"/>
 									<integer id="set_property" value="valu"/>
 									<boolean id="dont_set_object" value="true"/>
+								</record>
+								<record>
+									<integer id="get_property" value="home" />
+									<integer id="set_property" value="objt" />
 								</record>
 							</list>
 						</record>
@@ -315,7 +319,7 @@
 				<container>
 					<layout class="arrange_horizontal_attachment" alignment="all" layout="-1" offset="" gap="0"/>
 					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
-					<container class="team_recent_form_widget" alignment="centre" id="frAF" bar_width="24" show_form_letters="true" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw">
+					<container class="team_recent_form_widget" alignment="centre" id="frAF" bar_width="24" show_form_letters="false" show_form_popup="false" win_filename="icons/custom/form large/win" loss_filename="icons/custom/form large/lose" draw_filename="icons/custom/form large/draw">
 						<layout class="stick_to_sides_attachment" alignment="all" inset="3,4,0,0"/>
 						<record id="object_property">
 							<list id="get_properties">
@@ -323,6 +327,10 @@
 									<integer id="get_property" value="awaF"/>
 									<integer id="set_property" value="valu"/>
 									<boolean id="dont_set_object" value="true"/>
+								</record>
+								<record>
+									<integer id="get_property" value="home" />
+									<integer id="set_property" value="objt" />
 								</record>
 							</list>
 						</record>

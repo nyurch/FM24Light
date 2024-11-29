@@ -12,8 +12,7 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
 			<container height="40">
 				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
-				<layout class="arrange_horizontal_attachment" layout="26,26,-1" offset="0" gap="8"/>
-				<widget class="picture" file="Wannachup-Logo" auto_size="all" image_alignment="centre"/>
+				<layout class="arrange_horizontal_attachment" layout="26,-1" offset="0" gap="8"/>
 				<widget class="picture" file="icons/26px/urgent" red_replacement="negative" auto_size="all" image_alignment="centre"/>
 				<widget class="text" size="10" multiline="true" colour="negative">
 					<translation id="text" translation_id="339576" type="use" value="Are you sure you want to leave this match to your staff?"/>

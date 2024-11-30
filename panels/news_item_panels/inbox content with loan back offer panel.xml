@@ -72,7 +72,7 @@
 
 				<!--transfer status icon-->
 				<container>
-					<container class="inner_box" id="tsic" appearance="labels/standard/label" red_replacement="green" hidden="false">
+					<container class="inner_box" id="tsic" appearance="boxes/contrast/standard/paper" red_replacement="green" hidden="false">
 
 						<attachment_group class="horizontal_arrange_autosize_all_centre_centered_in_parent" horizontal_alignment="middle" />
 
@@ -165,7 +165,7 @@
 				<!-- Player feedback -->
 				<container class="inner_box" id="PlFb" height="50">
 					<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" apply_to_children="true" inset="0" />
-					<widget class="text" id="PlFt" alignment="left, centre_y" colour="white" size="10" multiline="true" />
+					<widget class="text" id="PlFt" alignment="left, centre_y" colour="black" size="10" multiline="true" />
 				</container>
 			</container>
 

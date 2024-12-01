@@ -1,0 +1,62 @@
+﻿<panel width="600">
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<list id="properties_to_forward">
+		<record get_property="TPIN" set_property="text" target="TPIn" />
+	</list>
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="12" vertical_gap="12" horizontal_inset="12" />
+
+		<widget class="text" auto_size="vertical" font="title">
+			<translation id="text" translation_id="557686" type="use" value="Recruitment Focus Priority[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4461; NOTE: Title of recruitment focus priority tooltip]" />
+		</widget>
+
+		<!--Top Priority Focus-->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+			<widget class="picture" file="icons/custom/icon box/focus" width="18" height="18" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" red_replacement="recruitment focus top priority" blue_replacement="black" />
+
+			<widget class="text" auto_size="vertical" font="title" colour="black">
+				<translation id="text" translation_id="557687" type="use" value="Top Priority Focus[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4461; NOTE: Title of top priority focus section in recruitment focus priority tooltip]" />
+			</widget>
+
+		</container>
+
+		<widget class="text" id="TPIn" auto_size="vertical" colour="fg alpha" />
+
+		<!--Standard Focus-->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+			<widget class="picture" file="icons/custom/icon box/focus" width="18" height="18" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" red_replacement="recruitment focus standard priority" blue_replacement="black" />
+
+			<widget class="text" auto_size="vertical" font="title" colour="black">
+				<translation id="text" translation_id="557688" type="use" value="Standard Priority Focus[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4461; NOTE: Title of standard priority focus section in recruitment focus priority tooltip]" />
+			</widget>
+
+		</container>
+
+		<widget class="text" colour="fg alpha" auto_size="vertical">
+			<translation id="text" translation_id="557689" type="use" value="Standard Priorities only require one scout to be working on the focus, but results tend to take longer. A scout will only begin a standard focus once they have finished on a top priority.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4461; NOTE: Part of the recruitment focus popup priority tooltip]" />
+		</widget>
+
+		<!--Ongoing focus-->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+			<widget class="picture" file="icons/custom/icon box/focus" width="18" height="18" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" red_replacement="recruitment focus ongoing priority" blue_replacement="black" />
+
+			<widget class="text" auto_size="vertical" font="title" colour="black">
+				<translation id="text" translation_id="254535" type="use" value="Ongoing[COMMENT: scout assignments panel]" />
+			</widget>
+
+		</container>
+
+		<widget class="text" colour="fg alpha" auto_size="vertical">
+			<translation id="text" translation_id="560936" type="use" value="Ongoing focuses have the lowest priority and do not have an end date. They will only finish when a decision is made to stop them.[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FR-BN: FM-4461; NOTE: Part of the recruitment focus popup priority tooltip]" />
+		</widget>
+
+	</container>
+</panel>

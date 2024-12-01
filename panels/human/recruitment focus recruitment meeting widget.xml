@@ -16,7 +16,7 @@
 		<container class="inner_subtle_box_no_margin" appearance="switches/recruitment focus/split/left/button">
 			<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" vertical_offset="0" horizontal_gap="0" horizontal_offset="0"/>
 
-			<widget class="picture" id="fcPC" width="26" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" blue_replacement="black"/>
+			<widget class="picture" id="fcPC" width="26" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false"/>
 
 			<widget class="info_icon_hint_text" id="fcNM" height="20" size="xlarge" colour="white" widget_type="recruitment_focus_widget_tooltip"/>
 		</container>

@@ -1,7 +1,7 @@
 ﻿<panel>
 	<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="32, -1" horizontal_gap="4"/>
 
-	<widget class="picture" id="fcPC" width="32" height="46" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" wants_mouse_events="false" blue_replacement="black"/>
+	<widget class="picture" id="fcPC" width="32" height="46" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" wants_mouse_events="false"/>
 
 	<container>
 		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1, -1" vertical_gap="0"/>

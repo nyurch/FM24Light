@@ -19,7 +19,7 @@
 			<translation id="text" translation_id="557619" type="use" value="Recommendations For: [COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Section; FR-BN: FM-4270; NOTE: Header text for current recruitment focus]" />
 		</widget>
 
-		<widget class="picture" id="fcTI" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" red_replacement="bg yellow lighter" blue_replacement="black" width="16" height="16" hidden="true" />
+		<widget class="picture" id="fcTI" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" width="16" height="16" hidden="true" />
 		<widget class="text" id="fcTT" font="title" size="large" colour="text" alignment="left, centre_y" auto_size="horizontal" />
 
 		<widget class="vertical_subtle_divider" />

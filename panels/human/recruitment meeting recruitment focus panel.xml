@@ -11,7 +11,7 @@
 		<container>
 			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_gap="8" />
 
-			<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" scale_picture="true" height="16" width="16" red_replacement="title" blue_replacement="white" />
+			<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" scale_picture="true" height="16" width="16"/>
 			<widget class="text" font="title" size="large" auto_size="vertical" alignment="left, centre_y">
 				<translation id="text" translation_id="509169" type="use" value="Recruitment Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 24174; NOTE: Recruitment focus dialog title]" />
 			</widget>

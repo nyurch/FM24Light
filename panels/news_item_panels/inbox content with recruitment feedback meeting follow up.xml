@@ -1,6 +1,6 @@
 ﻿<panel class="inner_contrast_box">
 	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="0" vertical_gap="12" />
-	
+
 	<boolean id="should_force_refresh" value="true" />
 
 	<widget class="text" font="title" size="xlarge" colour="black" auto_size="vertical">
@@ -29,7 +29,7 @@
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="20, -1" horizontal_offset="0" horizontal_gap="6" vertical_offset="0" />
 
-					<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" red_replacement="bg yellow lighter" blue_replacement="black" height="16" width="16" />
+					<widget class="picture" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false" height="16" width="16" />
 					<widget class="text" font="title" size="large" colour="black" auto_size="vertical" alignment="left, centre_y">
 						<translation id="text" translation_id="557818" type="use" value="Recruitment Focus Recommendations[COMMENT: AREA: Recruitment Feedback Meeting; SUB-AREA: Follow Up; FR-BN: FM-4277; NOTE: title of feedback meeting follow up inbox item recruitment focus players container]" />
 					</widget>

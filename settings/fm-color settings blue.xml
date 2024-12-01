@@ -2006,8 +2006,8 @@
 	<colour name="supporter percentage casual"				value="rgb(236,107,86)"/>
 
 	<!--Recruitment focus priority colours-->
-	<colour name="recruitment focus top priority"				value="fg yellow"/>
-	<colour name="recruitment focus standard priority"			value="fg cyan"/>
+	<colour name="recruitment focus top priority"				value="white"/>
+	<colour name="recruitment focus standard priority"			value="white"/>
 	<colour name="recruitment focus ongoing priority"			value="white"/>
 
 	<colour name="recruitment focus notification"				value="rgb(195,0,165)"/>

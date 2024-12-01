@@ -159,7 +159,7 @@
 					<container>
 						<attachment_group class="horizontal_arrange" horizontal_layout="32, -1, -1" vertical_inset="0" horizontal_offset="0" vertical_gap="12" horizontal_gap="6" />
 
-						<widget class="picture" id="fcTI" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" wants_mouse_events="false" blue_replacement="black" />
+						<widget class="picture" id="fcTI" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="false" wants_mouse_events="false"/>
 						<widget class="text" id="fcTT" auto_size="horizontal" height="26" size="xlarge" colour="black" font="title" alignment="left,centre_y" />
 
 						<container id="asst">

@@ -816,12 +816,12 @@
 				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" move_side="true" target="main"/>
 			</widget>
 		</container>
-		<widget class="text" entity_layout_id="at0W" alignment="centre_x,centre_y" id="fLTC" width="20" height="20">
+		<widget class="text" entity_layout_id="at0W" alignment="centre_x,centre_y" id="fLTC" width="40" height="20">
 			<string id="font" value="title"/>
-			<string id="colour" value="white"/>
+			<string id="colour" value="black"/>
 			<string id="size" value="large"/>
 			<layout class="stick_to_object_attachment" id="align_top" offset="96" get_side="top" set_side="top" move_side="true" target="main"/>
-			<layout class="stick_to_object_attachment" id="align_left" offset="-14" get_side="right" set_side="left" move_side="true" target="at0F"/>
+			<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="right" set_side="left" move_side="true" target="at0F"/>
 		</widget>
 		<widget class="text" entity_layout_id="at0w" alignment="centre_y,left" id="fpHT" auto_size="horizontal" width="0" height="20">
 			<translation id="text" translation_id="561232" type="use" value="*Find players who can play all selected positions[COMMENT: AREA: Scouting; SUB-AREA: Recruitment Focus Dialog; FN: FM-12287; NOTE: Hint subtitle explaining how the recruitment focus selected positions work]"/>

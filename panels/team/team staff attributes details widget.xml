@@ -24,7 +24,7 @@
 		</record>
 	</widget>
 
-	<widget class="attribute_label" id="attv" alignment="centre">
+	<widget class="attribute_label" id="attv" alignment="centre" colour="white" size="11" font="text_white" use_attribute_colour_as_bg="true" appearance="boxes/custom/attributes/paper">
 		<record id="object_property">
 			<list id="get_properties">
 				<record>

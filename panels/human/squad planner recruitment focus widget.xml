@@ -1,0 +1,33 @@
+﻿<panel height="35">
+	<list id="properties_to_forward">
+		<record get_property="text" set_property="value" target="mtFC"/>
+		<record get_property="hide_container_title" set_property="hidden" target="mtFC"/>
+		<record get_property="is_completed_focus" set_property="hidden" target="rfBT"/>
+		<record get_property="is_completed_focus" set_property="shown" target="afBT"/>
+	</list>
+
+	<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left" vertical_offset="0" horizontal_gap="1" horizontal_offset="0"/>
+
+	<container class="inner_subtle_box_no_margin" appearance="switches/recruitment focus/split/left/button">
+		<attachment_group class="horizontal_arrange_autosize" vertical_offset="0" horizontal_gap="6" horizontal_offset="3" horizontal_alignment="left"/>
+
+		<widget class="picture" id="fcPC" width="20" file="icons/custom/icon box/focus" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" wants_mouse_events="false"/>
+		<widget class="info_icon_hint_text" id="fcNM" height="20" width="200" size="xlarge" colour="white" widget_type="recruitment_focus_widget_tooltip" />
+	</container>
+
+	<container class="inner_subtle_box_no_margin" appearance="switches/recruitment focus/split/middle/button" width="30">
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+		<widget class="icon_button" icon="icons/16px/edit" icon_alignment="centre_x, centre_y" appearance="chrome/buttons/items/button" width="22" click_event="edRF"/>
+	</container>
+
+	<container class="inner_subtle_box_no_margin" id="rfBT" appearance="switches/recruitment focus/split/right/button" width="30">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+		<widget class="icon_button" icon="icons/16px/cross" icon_alignment="centre_x, centre_y" appearance="chrome/buttons/items/button" width="22" click_event="erRF"/>
+	</container>
+
+	<container class="inner_subtle_box_no_margin" id="afBT" appearance="switches/recruitment focus/split/right/button" hidden="true" width="26">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+		<widget class="icon_button" icon="icons/16px/plus" icon_alignment="centre_x, centre_y" appearance="chrome/buttons/items/button" width="22" click_event="erAF"/>
+	</container>
+</panel>

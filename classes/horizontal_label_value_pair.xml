@@ -1,0 +1,33 @@
+﻿<class class="horizontal_label_value_pair" parent="container">
+	<list id="attachments">
+		<record class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="3" vertical_inset="0" />
+	</list>
+
+	<list id="mapped_properties">
+		<record>
+			<flags id="widget_id" value="value_widget" />
+			<record id="properties">
+				<flags id="spec" value="text" />
+				<flags id="style" value="bold" />
+				<flags id="size" value="normal" />
+				<flags id="alignment" value="centre_x,bottom" />
+				<flags id="auto_size" value="vertical" />
+				<flags id="font" value="value" />
+			</record>
+		</record>
+
+		<record>
+			<flags id="widget_id" value="label_widget" />
+			<record id="properties">
+				<flags id="spec" value="text" />
+				<flags id="alignment" value="centre_x,top" />
+				<flags id="auto_size" value="vertical" />
+				<flags id="font" value="value" />
+				<flags id="size" value="normal" />
+				<flags id="colour" value="faded text" />
+			</record>
+		</record>
+	</list>
+
+
+</class>

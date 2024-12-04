@@ -1,0 +1,63 @@
+﻿<panel height="200">
+	<layout class="horizontal_arrange" horizontal_layout="120,300,-1"/>
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container class="main_subtle_box">
+		<layout class="vertical_arrange" vertical_layout="110,50" />
+		<container class="vertical_adaptive_container" horizontal_alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+			<widget class="picture" scale_picture="true" width="100" height="100">
+				<string id="value" value="pictures/person/none/male/player/portrait"/>
+			</widget>
+		</container>
+		<container id="tsic" height="50">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+			<container class="contrast_box" id="spIB" appearance="labels/standard/label" file="widgets/transfer status widget">
+				<string id="red_replacement" value="red"/>
+			</container>
+		</container>
+	</container>
+
+	<container class="main_subtle_box">
+		<layout class="vertical_arrange" vertical_layout="66,1,33,-1" />
+		<container class="vertical_label_value_pair">
+			<widget class="text" colour="black" size="xxlarge" alignment="centre_y,left" id="plNm" auto_size="horizontal" height="30">
+			</widget>
+			<widget class="text" colour="faded black" size="large" alignment="left,top" id="plAP" auto_size="horizontal" height="30">
+			</widget>
+		</container>
+		<widget class="horizontal_divider"/>
+		<container class="horizontal_label_value_pair">
+			<widget class="nation_button" id="ntnB" auto_size="horizontal" height="30">
+			</widget>
+			<widget class="club_button" id="ntmB" auto_size="horizontal" height="30">
+			</widget>
+		</container>
+		<container>
+			<layout class="horizontal_arrange" horizontal_layout="-1,-1" />
+			<container class="vertical_label_value_pair">
+				<widget class="text" alignment="left,bottom" id="caLb" width="100" height="20">
+					<translation id="text" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
+				</widget>
+				<widget class="scout_stars_label" alignment="left" id="casL" width="100" height="30" mode="1">
+				</widget>
+			</container>
+			<container class="vertical_label_value_pair">
+				<widget class="text" alignment="left,bottom" id="paLb" width="100" height="20">
+					<translation id="text" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
+				</widget>
+				<widget class="scout_stars_label" alignment="left" id="pasL" width="100" height="30" mode="2">
+				</widget>
+			</container>
+		</container>
+	</container>
+
+	<container class="main_subtle_box">
+		<layout class="vertical_arrange" vertical_layout="-1,150,-1" />
+		<container/>
+		<widget class="text" alignment="left,top" id="dfIT" font="title" size="xlarge" multiline="true">
+		</widget>
+		<container/>
+	</container>
+
+</panel>

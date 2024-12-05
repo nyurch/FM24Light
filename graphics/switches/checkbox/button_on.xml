@@ -14,9 +14,7 @@
 		<flags id="font" value="fonts/button"/>
 	</record>
 
-	<colour id="red_replacement" name="primary_button"/>
-	<colour id="green_replacement" name="normal_icon"/>
-	<colour id="blue_replacement" name="primary_button_text"/>
-	<!-- changed from fg -->
+	<colour id="red_replacement" name="darker"/>
+	<colour id="blue_replacement" name="white"/>
 
 </properties>

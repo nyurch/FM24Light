@@ -15,17 +15,13 @@
 			<flags id="auto_size" value="all" />
 			<flags id="icon_alignment" value="left,centre_y" />
 			<flags id="appearance" value="buttons/primary/normal/button" />
-			<flags id="colour" value="white" />
-			<flags id="disabled_colour" value="faded_text" />
-			<flags id="font" value="button" />
-			<flags id="icon_colour" value="white" />
 		</record>
 
-		<widget class="check_box" id="shtl" icon_colour="green" colour="black">
+		<widget class="check_box" id="shtl">
 			<!--!Add/remove to/from shortlist-->
 		</widget>
 
-		<widget class="check_box" id="pool" icon_colour="green" colour="black">
+		<widget class="check_box" id="pool">
 			<!--!Add/remove to/from national pool-->
 		</widget>
 

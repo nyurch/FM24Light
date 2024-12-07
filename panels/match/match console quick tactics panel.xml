@@ -6,7 +6,6 @@
 	<flags id="maBI" value="icons/16px/show bottom bar" />
 	<!--icon to expand -->
 
-
 	<!--formation-->
 	<container>
 		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="0" />
@@ -89,15 +88,15 @@
 			<global id="horizontal_offset" name="ui.safe_area_left"/>
 		</attachment_group>
 
-		<container width="8">
+		<container width="2">
 			<layout class="show_medium_horizontal" min_value="1366" />
 		</container>
 
-		<container width="15">
+		<container width="2">
 			<layout class="show_medium_horizontal" min_value="1600" />
 		</container>
 
-		<container width="20">
+		<container width="8">
 			<layout class="show_medium_horizontal" min_value="1920" />
 		</container>
 
@@ -115,15 +114,14 @@
 						<integer id="false_value" value="330" />
 					</record>
 					<record min_value="1066" max_value="1251" true_value="350"/>
-					<record min_value="1251" max_value="1500" true_value="440"/>
-					<record min_value="1501" max_value="1600" true_value="500"/>
-					<record min_value="1601" max_value="1920" true_value="550"/>
-					<record min_value="1921" max_value="10000" true_value="600"/>
+					<record min_value="1251" max_value="1500" true_value="350"/>
+					<record min_value="1501" max_value="1600" true_value="350"/>
+					<record min_value="1601" max_value="1920" true_value="350"/>
+					<record min_value="1921" max_value="10000" true_value="350"/>
 				</list>
 			</attachment>
 
 			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="4" vertical_gap="4" horizontal_inset="12" />
-
 
 			<widget class="menu_strip_popup_button" id="form" secondary_icon_alignment="centre_right" popup_alignment="left,top" appearance="buttons/custom/over state only/button" font="title" colour="black" size="small" auto_size="vertical" auto_size_maximum_width="250" alignment="centre">
 				<translation id="hint" translation_id="332222" type="use" value="Change tactic for your team[COMMENT: hint for a popup button that allows the user to change tactic during a match]" />
@@ -203,7 +201,6 @@
 						</record>
 					</widget>
 
-
 				</container>
 
 			</container>
@@ -225,10 +222,10 @@
 						<integer id="false_value" value="330" />
 					</record>
 					<record min_value="1066" max_value="1251" true_value="350"/>
-					<record min_value="1251" max_value="1500" true_value="440"/>
-					<record min_value="1501" max_value="1600" true_value="500"/>
-					<record min_value="1601" max_value="1920" true_value="550"/>
-					<record min_value="1921" max_value="10000" true_value="600"/>
+					<record min_value="1251" max_value="1500" true_value="350"/>
+					<record min_value="1501" max_value="1600" true_value="350"/>
+					<record min_value="1601" max_value="1920" true_value="350"/>
+					<record min_value="1921" max_value="10000" true_value="350"/>
 				</list>
 			</attachment>
 
@@ -257,15 +254,15 @@
 			</container>
 		</container>
 
-		<container width="8">
+		<container width="2">
 			<layout class="show_medium_horizontal" min_value="1366" />
 		</container>
 
-		<container width="15">
+		<container width="2">
 			<layout class="show_medium_horizontal" min_value="1600" />
 		</container>
 
-		<container width="20">
+		<container width="8">
 			<layout class="show_medium_horizontal" min_value="1920" />
 		</container>
 
@@ -297,8 +294,6 @@
 				</container>
 
 			</container>
-
-
 
 		</container>
 

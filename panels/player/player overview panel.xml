@@ -7,7 +7,7 @@
 		<layout class="horizontal_arrange" horizontal_layout="-1,350,350" />
 		<!-- PLAYER INFO -->
 		<container class="main_subtle_box">
-			<attachment class="horizontal_arrange" horizontal_layout="300,-1" vertical_gap="10"/>
+			<attachment class="horizontal_arrange" horizontal_layout="300,-1" vertical_gap="2"/>
 			<container class="main_box_no_margin">
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 				<layout class="arrange_vertical_attachment" layout="180,40" gap="0"/>
@@ -23,44 +23,27 @@
 						<record id="object_property" get_property="Pnfa"/>
 					</widget>
 					<container class="main_box" width="101">
-						<layout class="stick_to_sides_attachment" alignment="vertical" inset="-20"/>
-						<layout class="stick_to_sides_attachment" alignment="left" inset="12"/>
-					</container>
-					<widget height="55" width="75" class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
-						<layout class="stick_to_sides_attachment" alignment="top" inset="15"/>
-						<layout class="stick_to_sides_attachment" alignment="left" inset="25"/>
-						<record id="object_property" get_property="PNat" set_property="objt" dont_set_hint="true"/>
-					</widget>
-					<container height="75" width="75">
-						<layout class="stick_to_sides_attachment" alignment="bottom" inset="20"/>
-						<layout class="stick_to_sides_attachment" alignment="left" inset="25"/>
-						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
-						<widget class="value_based_picture" scale_picture="true" file="none">
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="5"/>
+						<layout class="stick_to_sides_attachment" alignment="left" inset="5"/>
+						<widget height="55" width="75" class="object_portrait_picture" image_alignment="top" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
 							<layout class="stick_to_sides_attachment" alignment="all"/>
-							<list id="value_list">
-								<record value="0" file="icons/custom/staff/unemployed"/>
-							</list>
-							<record id="object_property">
-								<list id="get_properties">
-									<record get_property="Pcjo" set_property="valu" dont_set_hint="true"/>
-								</list>
-							</record>
+							<record id="object_property" get_property="PNat" set_property="objt" dont_set_hint="true"/>
 						</widget>
-						<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
+						<widget height="55" width="75" class="object_portrait_picture" image_alignment="bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="true">
 							<layout class="stick_to_sides_attachment" alignment="all"/>
 							<record id="object_property" get_property="Pclb" set_property="objt" dont_set_hint="true"/>
 						</widget>
 					</container>
 				</container>
 				<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
-					<widget class="text" font="main menu" size="11" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
-						<layout class="stick_to_sides_attachment" alignment="all" inset="10"/>
+					<widget class="text" font="title" size="12" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
+						<layout class="stick_to_sides_attachment" alignment="all"/>
 						<record id="object_property" get_property="titl" set_property="text"/>
 					</widget>
 				</container>
 			</container>
 			<container>
-				<attachment class="vertical_arrange" vertical_layout="218,400" vertical_gap="10"/>
+				<attachment class="vertical_arrange" vertical_layout="218,400" vertical_gap="2"/>
 				<container class="vertical_arrange_container" gap="10">
 					<container height="67" class="player_transfer_information_small_panel" file="none">
 						<attachment class="horizontal_arrange" horizontal_layout="190,30,-1,-1,-1,-1,-1" horizontal_gap="10"/>
@@ -69,7 +52,7 @@
 							<attachment class="horizontal_arrange" horizontal_layout="-1,30" horizontal_gap="10"/>
 							<record id="object_property" get_property="objt" set_property="objt"/>
 							<container>
-								<attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="10"/>
+								<attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="2"/>
 								<container>
 									<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
 									<container class="main_subtle_box"/>
@@ -82,7 +65,7 @@
 								</container>
 							</container>
 							<container>
-								<attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="10"/>
+								<attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="2"/>
 								<container>
 									<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 									<container class="main_subtle_box"/>

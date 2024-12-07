@@ -1,5 +1,13 @@
 ﻿<panel>
+
 	<string id="skin_style" value="text" />
+
+	<list id="properties_to_forward">
+		<record get_property="PinD" set_property="valu" target="PMsi"/>
+		<record get_property="SPms" set_property="Shwn" target="PMsi"/>
+		<record get_property="SPms" set_property="hidn" target="PinD"/>
+	</list>
+
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 
 	<container>
@@ -7,13 +15,16 @@
 
 		<container height="20">
 			<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
-			<widget class="client_object_property_panel" property="PinD" width="20">
+			<widget class="client_object_property_panel" id="PinD" property="PinD" width="20">
 				<record id="object_property" get_property="objt" set_property="objt" />
 				<record id="widget_properties">
 					<flags id="label_disabled" value="true" />
 				</record>
 			</widget>
 
+			<widget class="player_substitute_picture" id="PMsi" width="20" label_disabled="true" icon_enabled="false">
+
+			</widget>
 
 		</container>
 
@@ -37,13 +48,12 @@
 				</container>
 			</container>
 
-
 		</container>
 
 		<container>
 			<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="0"/>
 
-			<widget class="text" id="name" auto_size="vertical" colour="red" alignment="centre, can_scale" multiline="false" style="semi_bold">
+			<widget class="text" id="name" auto_size="vertical" alignment="centre, can_scale" multiline="false" style="semi_bold">
 				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
 			</widget>
 
@@ -54,6 +64,5 @@
 		</container>
 
 	</container>
-
 
 </panel>

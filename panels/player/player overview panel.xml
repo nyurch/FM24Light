@@ -8,20 +8,10 @@
 		<!-- PLAYER INFO -->
 		<container class="main_subtle_box">
 			<attachment class="horizontal_arrange" horizontal_layout="300,-1" vertical_gap="2"/>
-			<container class="main_box_no_margin">
-				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
-				<layout class="arrange_vertical_attachment" layout="180,40" gap="0"/>
+			<container>
+				<layout class="vertical_arrange" vertical_layout="180,40" />
 				<container>
-					<widget height="164" width="164" class="object_portrait_picture" id="face" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
-						<layout class="stick_to_sides_attachment" alignment="bottom" inset="0"/>
-						<layout class="stick_to_sides_attachment" alignment="right" inset="20"/>
-						<record id="object_property" get_property="objt" set_property="objt" />
-					</widget>
-					<widget class="player_status_all_button" id="psAB" maximised="true" auto_size="vertical" alignment="bottom" gap="2" max_items_per_row_or_column="6">
-						<layout class="stick_to_sides_attachment" alignment="top" inset="10"/>
-						<layout class="stick_to_sides_attachment" alignment="right" inset="12"/>
-						<record id="object_property" get_property="Pnfa"/>
-					</widget>
+					<layout class="horizontal_arrange" horizontal_layout="101,-1" />
 					<container class="main_box" width="101">
 						<layout class="stick_to_sides_attachment" alignment="vertical" inset="5"/>
 						<layout class="stick_to_sides_attachment" alignment="left" inset="5"/>
@@ -34,12 +24,31 @@
 							<record id="object_property" get_property="Pclb" set_property="objt" dont_set_hint="true"/>
 						</widget>
 					</container>
+					<container>
+						<widget class="player_status_all_button" id="psAB" maximised="true" auto_size="vertical" alignment="bottom" gap="2" max_items_per_row_or_column="6">
+							<layout class="stick_to_sides_attachment" alignment="top" inset="10"/>
+							<layout class="stick_to_sides_attachment" alignment="right" inset="12"/>
+							<record id="object_property" get_property="Pnfa"/>
+						</widget>
+						<widget height="164" width="164" class="object_portrait_picture" id="face" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+							<layout class="stick_to_sides_attachment" alignment="bottom" inset="0"/>
+							<layout class="stick_to_sides_attachment" alignment="right" inset="20"/>
+							<record id="object_property" get_property="objt" set_property="objt" />
+						</widget>
+					</container>
 				</container>
 				<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
-					<widget class="text" font="title" size="12" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
-						<layout class="stick_to_sides_attachment" alignment="all"/>
-						<record id="object_property" get_property="titl" set_property="text"/>
-					</widget>
+					<layout class="horizontal_arrange" horizontal_layout="-1,50" />
+					<container class="horizontal_adaptive_container" vertical_alignment="centre">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+						<widget class="text" font="title" size="12" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
+							<layout class="stick_to_sides_attachment" alignment="top" inset="-5"/>
+							<layout class="stick_to_sides_attachment" alignment="right" inset="5"/>
+							<record id="object_property" get_property="titl" set_property="text"/>
+						</widget>
+					</container>
+					<container class="horizontal_adaptive_container" vertical_alignment="centre">
+					</container>
 				</container>
 			</container>
 			<container>

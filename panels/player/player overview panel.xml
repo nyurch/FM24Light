@@ -47,7 +47,12 @@
 							<record id="object_property" get_property="titl" set_property="text"/>
 						</widget>
 					</container>
-					<container class="horizontal_adaptive_container" vertical_alignment="centre">
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="right,top" inset="-5"/>
+						<widget class="add_to_shortlist_icon_button" width="50" height="50">
+							<layout class="stick_to_sides_attachment" alignment="all"/>
+							<record id="object_property" get_property="PatF" set_property="valu" />
+						</widget>
 					</container>
 				</container>
 			</container>

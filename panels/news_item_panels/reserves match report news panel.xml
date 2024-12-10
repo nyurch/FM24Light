@@ -59,6 +59,18 @@
 				</record>
 			</widget>
 			<widget class="horizontal_subtle_divider" />
+			<widget class="stadium_picture" file="none" scale_picture="true" height="200" keep_aspect_ratio="true">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-60"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				<widget class="picture" id="STPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
+					<layout class="centre_in_parent_attachment" alignment="all"/>
+					<record id="object_property">
+						<integer id="get_property" value="text"/>
+						<string id="set_property" value="hint"/>
+					</record>
+				</widget>
+			</widget>
+			<widget class="horizontal_subtle_divider" />
 			<!--big badge display-->
 			<container height="90" id="resB">
 				<widget class="client_object_viewer_xml_panel" id="badg" file="team/team upcoming fixture badges no versus">

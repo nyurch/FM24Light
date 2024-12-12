@@ -58,14 +58,15 @@
 				<!-- Player Name -->
 				<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">
 					<layout class="horizontal_arrange" horizontal_layout="-1,50" />
-					<container class="horizontal_adaptive_container" vertical_alignment="centre">
-						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
-						<widget class="text" font="title" size="12" alignment="centre_x,centre_y,can_scale" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
-							<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
-							<layout class="stick_to_sides_attachment" alignment="right" inset="5"/>
-							<record id="object_property" get_property="titl" set_property="text"/>
-						</widget>
-					</container>
+					<record id="object_property" get_property="tbcl" set_property="rrep" dont_set_object="true" />
+					<widget class="text" font="main menu" size="11" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<list id="get_properties">
+								<record get_property="titl" set_property="text" />
+								<record get_property="ttcl" set_property="colr" dont_set_object="true" />
+							</list>
+						</record>
+					</widget>
 					<container>
 						<layout class="stick_to_sides_attachment" alignment="right,top" inset="0"/>
 						<widget class="add_to_shortlist_icon_button" width="50" height="50">

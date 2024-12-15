@@ -1,0 +1,129 @@
+﻿<panel>
+
+	<list id="properties_to_forward">
+		<record get_property="icon_enabled" set_property="Shwn" target="ico1" />
+		<record get_property="icon_enabled" set_property="Shwn" target="ico2" />
+		<record get_property="icon_enabled" set_property="Shwn" target="ico3" />
+		<record get_property="icon_enabled" set_property="Shwn" target="ico4" />
+		<record get_property="titc" set_property="colour" target="txt1" />
+		<record get_property="titc" set_property="colour" target="txt2" />
+		<record get_property="titc" set_property="colour" target="txt3" />
+		<record get_property="titc" set_property="colour" target="txt4" />
+		<record get_property="stit" set_property="Shwn" target="titW" />
+		<record get_property="stit" set_property="Shwn" target="spac" />
+	</list>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="24" />
+
+	<widget class="text" font="title" id="titW" hidden="true" auto_size="vertical" alignment="centre">
+		<translation id="text" translation_id="586109" type="use" value="Load Previous Saved Games[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+
+	</widget>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+		<widget class="picture" id="ico1" width="42" height="42" file="icons/custom/saved game compatability/fm" image_alignment="centre" scale_picture="true" red_replacement="title" blue_replacement="bg darker" green_replacement="FM orange" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+			<widget class="text" id="txt1" font="title" auto_size="vertical">
+				<translation id="text" translation_id="586110" type="use" value="Load Saves from FM23[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+			<widget class="text" auto_size="vertical" multiline="true" colour="fg lighter">
+				<translation id="text" translation_id="586111" type="use" value="You now have the ability to load saved games from Football Manager 2023 and continue your story.[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+		</container>
+
+	</container>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+		<widget class="picture" id="ico2" width="42" height="42" file="icons/custom/saved game compatability/loading" image_alignment="centre" scale_picture="true" red_replacement="title" blue_replacement="bg darker" green_replacement="FM orange" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+			<widget class="text" id="txt2" font="title" auto_size="vertical">
+				<translation id="text" translation_id="586112" type="use" value="Loading times[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+			<widget class="text" auto_size="vertical" multiline="true" colour="fg lighter">
+				<translation id="text" translation_id="586113" type="use" value="It may take slightly longer to load a saved game from Football Manager 2023 for the first time as we make it compatible.[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+		</container>
+
+	</container>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+		<widget class="picture" id="ico3" width="42" height="42" file="icons/custom/saved game compatability/compatability" image_alignment="centre" scale_picture="true" red_replacement="title" blue_replacement="bg darker" green_replacement="FM orange" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+			<widget class="text" id="txt3" font="title" auto_size="vertical">
+				<translation id="text" translation_id="586114" type="use" value="Compatibility with New Features[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+			<widget class="text" auto_size="vertical" multiline="true" colour="fg lighter">
+				<translation id="text" translation_id="586115" type="use" value="When you bring your saved game into FM24, most new features will be compatible with your save, but some may not be populated with existing FM23 data.[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+		</container>
+
+	</container>
+
+	<container>
+		<string id="remove_if" value="platform_is_switch" />
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+		<widget class="picture" id="ico4" width="42" height="42" file="icons/custom/saved game compatability/achievements" image_alignment="centre" scale_picture="true" red_replacement="title" blue_replacement="bg darker" green_replacement="FM orange" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+			<widget class="text" id="txt4" font="title" auto_size="vertical">
+				<translation id="text" translation_id="578009" type="use" value="In Game Achievements[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+			<widget class="text" auto_size="vertical" multiline="true" colour="fg lighter">
+				<translation id="text" translation_id="578010" type="use" value="Achievements cannot be unlocked in FM24 while playing a Career from FM23.[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+
+		</container>
+
+	</container>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+
+			<widget class="horizontal_divider" red_replacement="accent">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" />
+			</widget>
+
+			<widget class="button" show_button_appearance="false" auto_size="vertical" alignment="centre" colour="accent" multiline="true" size="large">
+				<translation id="text" translation_id="597586" type="use" value="For more information and troubleshooting, please visit our FAQ.[COMMENT: AREA: Splash Screen; SUB-AREA: What's New FM24; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game, can't be feminised]" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" />
+				<record id="click_event">
+					<flags id="event_id" value="OURL" />
+					<string id="url" value="https://www.footballmanager.com/help/savegamefaq" />
+				</record>
+			</widget>
+
+		</container>
+
+	</container>
+
+	<widget class="spacer" id="spac" hidden="true" height="1" />
+
+</panel>

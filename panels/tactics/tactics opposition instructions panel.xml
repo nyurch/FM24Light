@@ -188,7 +188,7 @@
 				</widget>
 
 				<!--Other info-->
-				<widget class="opposition_pitch_tactics_component_panel" id="teip" file="tactics/opposition pitch tactics component" minimum_width="180" priority="3" />
+				<widget class="opposition_pitch_tactics_component_panel" id="teip" file="tactics/opposition pitch tactics component" minimum_width="300" priority="3" />
 			</container>
 		</container>
 	</container>

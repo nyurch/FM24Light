@@ -40,7 +40,7 @@
 						<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0"/>
 
 						<!-- Person 1 details -->
-						<widget class="label" id="nam1" alignment="left,centre_y" height="25" font="title" size="large" style="bold" colour="gold">
+						<widget class="label" id="nam1" alignment="left,centre_y" height="25" font="title" size="large" style="bold" colour="black">
 							<translation id="text" translation_id="229689" type="use" value="Name" />
 						</widget>
 
@@ -112,7 +112,7 @@
 
 							<container>
 								<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0" />
-								<widget class="popup_button" id="pccw" alignment="right,centre_y" height="25" sele="pccw" fixed="true" appearance="buttons/custom/very subtle/button" font="title" size="10" style="bold" colour="gold" auto_tick_exclusive="true" save_default_state="true" default_focus="true">
+								<widget class="popup_button" id="pccw" alignment="right,centre_y" height="25" sele="pccw" fixed="true" appearance="buttons/custom/very subtle/button" font="title" size="10" style="bold" colour="black" auto_tick_exclusive="true" save_default_state="true" default_focus="true">
 									<translation id="text" translation_id="329857" type="use" value="Compared With: No Person Selected[COMMENT: Button text on compare person screen]" />
 								</widget>
 							</container>

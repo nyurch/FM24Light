@@ -22,8 +22,8 @@
 					</record>
 
 					<list id="value_list">
-						<record value="1301407" file="photos/dynamic/euro/cup draw/france draw"/>
-						<record value="1301410" file="photos/dynamic/euro/cup draw/germany draw"/>
+						<record value="1301407" file="photos/dynamic/euro/cup draw/france cup"/>
+						<record value="1301410" file="photos/dynamic/euro/cup draw/germany cup"/>
 					</list>
 				</widget>
 			</container>

@@ -58,8 +58,8 @@
 				<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 				<!--dynamic image here please-->
-				<container id="ICdi" height="192">
-					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+				<container id="ICdi" height="200">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="-20" apply_to_children="true"/>
 				</container>
 
 				<!-- opposition details -->

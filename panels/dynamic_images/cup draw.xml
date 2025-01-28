@@ -1,0 +1,51 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container  class="client_object_viewer_xml_panel">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+		<record id="object_property" get_property="comp" set_property="objt"/>
+
+		<!-- Background image layer -->
+		<container id="laye">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+			<!-- Background image -->
+			<container id="bgim">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+				<widget class="picture" file="photos/dynamic/draw/bg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false"/>
+
+				<widget class="value_based_picture" id="CoPi" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true" >
+					<record id="object_property">
+						<integer id="get_property" value="id  "/>
+						<integer id="set_property" value="valu"/>
+					</record>
+
+					<list id="value_list">
+						<record value="1301407" file="photos/dynamic/euro/cup draw/france draw"/>
+						<record value="1301410" file="photos/dynamic/euro/cup draw/germany draw"/>
+					</list>
+				</widget>
+			</container>
+		</container>
+
+		<container id="horC">
+			<layout class="arrange_vertical_attachment" layout="-1, -3, -1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<widget class="spacer" />
+
+			<container>
+				<layout class="arrange_horizontal_attachment" layout="-2, -4, -2" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<!-- Logo/Portrait -->
+				<widget class="spacer"/>
+				<widget class="spacer"/>
+				<widget class="spacer"/>
+			</container>
+
+			<widget class="spacer"/>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,438 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!-- Background image -->
+	<container class="client_object_viewer_xml_panel" id="bgim">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+		<!-- PROP_TEAM -->
+		<record id="object_property" get_property="Ttea" set_property="objt"/>
+
+		<widget class="picture" file="photos/dynamic/generic/bg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false"/>
+
+		<widget class="value_based_picture" id="CoPi" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true">
+			<record id="object_property">
+				<integer id="get_property" value="id  "/>
+				<integer id="set_property" value="valu"/>
+			</record>
+
+			<list id="value_list">
+				<record value="11" file="pictures/competition images/11"/>
+				<record value="32" file="pictures/competition images/32"/>
+				<record value="47" file="pictures/competition images/47"/>
+				<record value="48" file="pictures/competition images/48"/>
+				<record value="102412" file="pictures/competition images/102412"/>
+				<record value="109134" file="pictures/competition images/109134"/>
+				<record value="214399" file="pictures/competition images/214399"/>
+				<record value="418017" file="pictures/competition images/418017"/>
+				<record value="418870" file="pictures/competition images/418870"/>
+				<record value="1301408" file="pictures/competition images/1301408"/>
+				<record value="1301426" file="pictures/competition images/1301426"/>
+				<record value="5250792" file="pictures/competition images/5250792"/>
+				<record value="12017574" file="pictures/competition images/12017574"/>
+				<record value="222987" file="pictures/competition images/222987"/>
+				<record value="55006606" file="pictures/competition images/55006606"/>
+				<record value="1301421" file="pictures/competition images/1301421"/>
+				<record value="130284" file="pictures/competition images/130284"/>
+				<record value="12019393" file="pictures/competition images/12019393"/>
+				<record value="12019395" file="pictures/competition images/12019395"/>
+				<record value="43344161" file="pictures/competition images/43344161"/>
+				<record value="102427" file="pictures/competition images/102427"/>
+				<record value="136544" file="pictures/competition images/136544"/>
+				<record value="132321" file="pictures/competition images/132321"/>
+				<record value="1301430" file="pictures/competition images/1301430"/>
+				<record value="60008733" file="pictures/competition images/60008733"/>
+				<record value="129645" file="pictures/competition images/129645"/>
+				<record value="129120" file="pictures/competition images/129120"/>
+				<record value="7520395" file="pictures/competition images/7520395"/>
+				<record value="7520391" file="pictures/competition images/7520391"/>
+				<record value="1300397" file="pictures/competition images/1300397"/>
+				<record value="5314301" file="pictures/competition images/5314301"/>
+				<record value="5314302" file="pictures/competition images/5314302"/>
+				<record value="68" file="pictures/competition images/68"/>
+				<record value="22" file="pictures/competition images/22"/>
+				<record value="115065" file="pictures/competition images/115065"/>
+				<record value="109288" file="pictures/competition images/109288"/>
+				<record value="5624536" file="pictures/competition images/5624536"/>
+				<record value="120798" file="pictures/competition images/120798"/>
+				<record value="23" file="pictures/competition images/23"/>
+				<record value="90" file="pictures/competition images/90"/>
+				<record value="1301411" file="pictures/competition images/1301411"/>
+				<record value="102418" file="pictures/competition images/102418"/>
+				<record value="41042746" file="pictures/competition images/41042746"/>
+				<record value="43032015" file="pictures/competition images/43032015"/>
+				<record value="60008783" file="pictures/competition images/60008783"/>
+				<record value="102421" file="pictures/competition images/102421"/>
+				<record value="40" file="pictures/competition images/40"/>
+				<record value="5626772" file="pictures/competition images/5626772"/>
+				<record value="67" file="pictures/competition images/67"/>
+				<record value="12" file="pictures/competition images/12"/>
+				<record value="33" file="pictures/competition images/33"/>
+				<record value="1301412" file="pictures/competition images/1301412"/>
+				<record value="1301406" file="pictures/competition images/1301406"/>
+				<record value="129372" file="pictures/competition images/129372"/>
+				<record value="129649" file="pictures/competition images/129649"/>
+				<record value="137889" file="pictures/competition images/137889"/>
+				<record value="7681558" file="pictures/competition images/7681558"/>
+				<record value="1301385" file="pictures/competition images/1301385"/>
+				<record value="1301394" file="pictures/competition images/1301394"/>
+				<record value="1301397" file="pictures/competition images/1301397"/>
+				<record value="1301396" file="pictures/competition images/1301396"/>
+				<record value="31051584" file="pictures/competition images/31051584"/>
+				<record value="1301388" file="pictures/competition images/1301388"/>
+				<record value="100100" file="pictures/competition images/100100"/>
+				<record value="100101" file="pictures/competition images/100101"/>
+				<record value="100102" file="pictures/competition images/100102"/>
+				<record value="100103" file="pictures/competition images/100103"/>
+				<record value="100104" file="pictures/competition images/100104"/>
+				<record value="100105" file="pictures/competition images/100105"/>
+				<record value="208999" file="pictures/competition images/208999"/>
+				<record value="23287301" file="pictures/competition images/23287301"/>
+				<record value="42038170" file="pictures/competition images/42038170"/>
+				<record value="42038862" file="pictures/competition images/42038862"/>
+				<record value="91" file="pictures/competition images/91"/>
+				<record value="92" file="pictures/competition images/92"/>
+				<record value="93" file="pictures/competition images/93"/>
+				<record value="94" file="pictures/competition images/94"/>
+				<record value="95" file="pictures/competition images/95"/>
+				<record value="100109" file="pictures/competition images/100109"/>
+				<record value="150988" file="pictures/competition images/150988"/>
+				<record value="1301390" file="pictures/competition images/1301390"/>
+				<record value="131244" file="pictures/competition images/131244"/>
+				<record value="13100123" file="pictures/competition images/13100123"/>
+				<record value="13100132" file="pictures/competition images/13100132"/>
+				<record value="13160886" file="pictures/competition images/13160886"/>
+				<record value="102415" file="pictures/competition images/102415"/>
+				<record value="1301389" file="pictures/competition images/1301389"/>
+				<record value="102416" file="pictures/competition images/102416"/>
+				<record value="51002641" file="pictures/competition images/51002641"/>
+				<record value="31000110" file="pictures/competition images/31000110"/>
+				<record value="692430" file="pictures/competition images/692430"/>
+				<record value="130486" file="pictures/competition images/130486"/>
+				<record value="130286" file="pictures/competition images/130286"/>
+				<record value="157149" file="pictures/competition images/157149"/>
+				<record value="222981" file="pictures/competition images/222981"/>
+				<record value="23177175" file="pictures/competition images/23177175"/>
+				<record value="45020033" file="pictures/competition images/45020033"/>
+				<record value="2000087217" file="pictures/competition images/2000087217"/>
+				<record value="1301428" file="pictures/competition images/1301428"/>
+				<record value="129986" file="pictures/competition images/129986"/>
+				<record value="135973" file="pictures/competition images/135973"/>
+				<record value="135974" file="pictures/competition images/135974"/>
+				<record value="150783" file="pictures/competition images/150783"/>
+				<record value="157097" file="pictures/competition images/157097"/>
+				<record value="5629195" file="pictures/competition images/5629195"/>
+				<record value="29047086" file="pictures/competition images/29047086"/>
+				<record value="89053889" file="pictures/competition images/89053889"/>
+				<record value="92030194" file="pictures/competition images/92030194"/>
+				<record value="95041291" file="pictures/competition images/95041291"/>
+				<record value="120861" file="pictures/competition images/120861"/>
+				<record value="130674" file="pictures/competition images/130674"/>
+				<record value="130027" file="pictures/competition images/130027"/>
+				<record value="50" file="pictures/competition images/50"/>
+				<record value="129648" file="pictures/competition images/129648"/>
+				<record value="136040" file="pictures/competition images/136040"/>
+				<record value="136547" file="pictures/competition images/136547"/>
+				<record value="1301424" file="pictures/competition images/1301424"/>
+				<record value="7500000" file="pictures/competition images/7500000"/>
+				<record value="7540084" file="pictures/competition images/7540084"/>
+				<record value="7540085" file="pictures/competition images/7540085"/>
+				<record value="7560276" file="pictures/competition images/7560276"/>
+				<record value="7560279" file="pictures/competition images/7560279"/>
+				<record value="7580000" file="pictures/competition images/7580000"/>
+				<record value="7580014" file="pictures/competition images/7580014"/>
+				<record value="129558" file="pictures/competition images/129558"/>
+				<record value="102414" file="pictures/competition images/102414"/>
+				<record value="223470" file="pictures/competition images/223470"/>
+				<record value="1301419" file="pictures/competition images/1301419"/>
+				<record value="72005981" file="pictures/competition images/72005981"/>
+				<record value="43131832" file="pictures/competition images/43131832"/>
+				<record value="72007057" file="pictures/competition images/72007057"/>
+				<record value="5626560" file="pictures/competition images/5626560"/>
+				<record value="131273" file="pictures/competition images/131273"/>
+				<record value="150786" file="pictures/competition images/150786"/>
+				<record value="150787" file="pictures/competition images/150787"/>
+				<record value="25054613" file="pictures/competition images/25054613"/>
+				<record value="72006960" file="pictures/competition images/72006960"/>
+				<record value="61" file="pictures/competition images/61"/>
+				<record value="130931" file="pictures/competition images/130931"/>
+				<record value="135941" file="pictures/competition images/135941"/>
+				<record value="136407" file="pictures/competition images/136407"/>
+				<record value="7483354" file="pictures/competition images/7483354"/>
+				<record value="5320807" file="pictures/competition images/5320807"/>
+				<record value="5624972" file="pictures/competition images/5624972"/>
+				<record value="65013268" file="pictures/competition images/65013268"/>
+				<record value="72007061" file="pictures/competition images/72007061"/>
+				<record value="129562" file="pictures/competition images/129562"/>
+				<record value="130694" file="pictures/competition images/130694"/>
+				<record value="136499" file="pictures/competition images/136499"/>
+				<record value="52077510" file="pictures/competition images/52077510"/>
+				<record value="14251708" file="pictures/competition images/14251708"/>
+				<record value="208926" file="pictures/competition images/208926"/>
+				<record value="19158846" file="pictures/competition images/19158846"/>
+				<record value="102413" file="pictures/competition images/102413"/>
+				<record value="167644" file="pictures/competition images/167644"/>
+				<record value="1301387" file="pictures/competition images/1301387"/>
+				<record value="5626836" file="pictures/competition images/5626836"/>
+				<record value="19164238" file="pictures/competition images/19164238"/>
+				<record value="1301415" file="pictures/competition images/1301415"/>
+				<record value="5314307" file="pictures/competition images/5314307"/>
+				<record value="87000416" file="pictures/competition images/87000416"/>
+				<record value="109201" file="pictures/competition images/109201"/>
+				<record value="102429" file="pictures/competition images/102429"/>
+				<record value="146958" file="pictures/competition images/146958"/>
+				<record value="136517" file="pictures/competition images/136517"/>
+				<record value="5666911" file="pictures/competition images/5666911"/>
+				<record value="51078102" file="pictures/competition images/51078102"/>
+				<record value="136516" file="pictures/competition images/136516"/>
+				<record value="317567" file="pictures/competition images/317567"/>
+				<record value="2000017067" file="pictures/competition images/2000017067"/>
+				<record value="2000026060" file="pictures/competition images/2000026060"/>
+				<record value="98015063" file="pictures/competition images/98015063"/>
+				<record value="13" file="pictures/competition images/13"/>
+				<record value="14" file="pictures/competition images/14"/>
+				<record value="1301427" file="pictures/competition images/1301427"/>
+				<record value="2000157475" file="pictures/competition images/2000157475"/>
+				<record value="31051860" file="pictures/competition images/31051860"/>
+				<record value="7840174" file="pictures/competition images/7840174"/>
+				<record value="130937" file="pictures/competition images/130937"/>
+				<record value="129374" file="pictures/competition images/129374"/>
+				<record value="150995" file="pictures/competition images/150995"/>
+				<record value="131306" file="pictures/competition images/131306"/>
+				<record value="131288" file="pictures/competition images/131288"/>
+				<record value="129119" file="pictures/competition images/129119"/>
+				<record value="8300358" file="pictures/competition images/8300358"/>
+				<record value="61025888" file="pictures/competition images/61025888"/>
+				<record value="127285" file="pictures/competition images/127285"/>
+				<record value="219740" file="pictures/competition images/219740"/>
+				<record value="145509" file="pictures/competition images/145509"/>
+				<record value="19106793" file="pictures/competition images/19106793"/>
+				<record value="19187651" file="pictures/competition images/19187651"/>
+				<record value="19373297" file="pictures/competition images/19373297"/>
+				<record value="5123055" file="pictures/competition images/5123055"/>
+				<record value="5123054" file="pictures/competition images/5123054"/>
+				<record value="2000073339" file="pictures/competition images/2000073339"/>
+				<record value="13135082" file="pictures/competition images/13135082"/>
+				<record value="13135353" file="pictures/competition images/13135353"/>
+				<record value="13135368" file="pictures/competition images/13135368"/>
+				<record value="13135374" file="pictures/competition images/13135374"/>
+				<record value="13135377" file="pictures/competition images/13135377"/>
+				<record value="13135378" file="pictures/competition images/13135378"/>
+				<record value="13194866" file="pictures/competition images/13194866"/>
+				<record value="13194867" file="pictures/competition images/13194867"/>
+				<record value="13194868" file="pictures/competition images/13194868"/>
+				<record value="13194869" file="pictures/competition images/13194869"/>
+				<record value="2000073335" file="pictures/competition images/2000073335"/>
+				<record value="45115574" file="pictures/competition images/45115574"/>
+				<record value="13135375" file="pictures/competition images/13135375"/>
+				<record value="7860002" file="pictures/competition images/7860002"/>
+				<record value="7860003" file="pictures/competition images/7860003"/>
+				<record value="7860000" file="pictures/competition images/7860000"/>
+				<record value="46" file="pictures/competition images/46"/>
+				<record value="5626602" file="pictures/competition images/5626602"/>
+				<record value="13100131" file="pictures/competition images/13100131"/>
+				<record value="167279" file="pictures/competition images/167279"/>
+				<record value="13117767" file="pictures/competition images/13117767"/>
+				<record value="13148019" file="pictures/competition images/13148019"/>
+				<record value="157150" file="pictures/competition images/157150"/>
+				<record value="8830770" file="pictures/competition images/8830770"/>
+				<record value="95041319" file="pictures/competition images/95041319"/>
+				<record value="219715" file="pictures/competition images/219715"/>
+				<record value="109202" file="pictures/competition images/109202"/>
+				<record value="95041312" file="pictures/competition images/95041312"/>
+				<record value="127299" file="pictures/competition images/127299"/>
+				<record value="7920263" file="pictures/competition images/7920263"/>
+				<record value="23226121" file="pictures/competition images/23226121"/>
+				<record value="5624525" file="pictures/competition images/5624525"/>
+				<record value="2000182343" file="pictures/competition images/2000182343"/>
+				<record value="102430" file="pictures/competition images/102430"/>
+				<record value="107255" file="pictures/competition images/107255"/>
+				<record value="102428" file="pictures/competition images/102428"/>
+				<record value="129985" file="pictures/competition images/129985"/>
+				<record value="15051375" file="pictures/competition images/15051375"/>
+				<record value="135942" file="pictures/competition images/135942"/>
+				<record value="102423" file="pictures/competition images/102423"/>
+				<record value="107191" file="pictures/competition images/107191"/>
+				<record value="107192" file="pictures/competition images/107192"/>
+				<record value="5512770" file="pictures/competition images/5512770"/>
+				<record value="78084647" file="pictures/competition images/78084647"/>
+				<record value="78102476" file="pictures/competition images/78102476"/>
+				<record value="75034145" file="pictures/competition images/75034145"/>
+				<record value="5250793" file="pictures/competition images/5250793"/>
+				<record value="5251645" file="pictures/competition images/5251645"/>
+				<record value="157425" file="pictures/competition images/157425"/>
+				<record value="5260948" file="pictures/competition images/5260948"/>
+				<record value="5260950" file="pictures/competition images/5260950"/>
+				<record value="76033484" file="pictures/competition images/76033484"/>
+				<record value="55065454" file="pictures/competition images/55065454"/>
+				<record value="2000015975" file="pictures/competition images/2000015975"/>
+				<record value="1301414" file="pictures/competition images/1301414"/>
+				<record value="1301413" file="pictures/competition images/1301413"/>
+				<record value="43344160" file="pictures/competition images/43344160"/>
+				<record value="17" file="pictures/competition images/17"/>
+				<record value="130934" file="pictures/competition images/130934"/>
+				<record value="129373" file="pictures/competition images/129373"/>
+				<record value="7864595" file="pictures/competition images/7864595"/>
+				<record value="7864596" file="pictures/competition images/7864596"/>
+				<record value="8403697" file="pictures/competition images/8403697"/>
+				<record value="47017525" file="pictures/competition images/47017525"/>
+				<record value="131287" file="pictures/competition images/131287"/>
+				<record value="7500078" file="pictures/competition images/7500078"/>
+				<record value="7504886" file="pictures/competition images/7504886"/>
+				<record value="214404" file="pictures/competition images/214404"/>
+				<record value="131234" file="pictures/competition images/131234"/>
+				<record value="131235" file="pictures/competition images/131235"/>
+				<record value="5290551" file="pictures/competition images/5290551"/>
+				<record value="5395850" file="pictures/competition images/5395850"/>
+				<record value="5395851" file="pictures/competition images/5395851"/>
+				<record value="5624449" file="pictures/competition images/5624449"/>
+				<record value="7920317" file="pictures/competition images/7920317"/>
+				<record value="20502998" file="pictures/competition images/20502998"/>
+				<record value="23049225" file="pictures/competition images/23049225"/>
+				<record value="65045201" file="pictures/competition images/65045201"/>
+				<record value="2000217610" file="pictures/competition images/2000217610"/>
+				<record value="2000217623" file="pictures/competition images/2000217623"/>
+				<record value="2000217625" file="pictures/competition images/2000217625"/>
+				<record value="95041309" file="pictures/competition images/95041309"/>
+				<record value="130026" file="pictures/competition images/130026"/>
+				<record value="130028" file="pictures/competition images/130028"/>
+				<record value="137890" file="pictures/competition images/137890"/>
+				<record value="416327" file="pictures/competition images/416327"/>
+				<record value="7540024" file="pictures/competition images/7540024"/>
+				<record value="17012177" file="pictures/competition images/17012177"/>
+				<record value="84150352" file="pictures/competition images/84150352"/>
+				<record value="7681867" file="pictures/competition images/7681867"/>
+				<record value="92086584" file="pictures/competition images/92086584"/>
+				<record value="89022624" file="pictures/competition images/89022624"/>
+				<record value="95041306" file="pictures/competition images/95041306"/>
+				<record value="95041317" file="pictures/competition images/95041317"/>
+				<record value="2000148115" file="pictures/competition images/2000148115"/>
+				<record value="26" file="pictures/competition images/26"/>
+				<record value="35010927" file="pictures/competition images/35010927"/>
+				<record value="91107110" file="pictures/competition images/91107110"/>
+				<record value="2000073329" file="pictures/competition images/2000073329"/>
+				<record value="2000073330" file="pictures/competition images/2000073330"/>
+				<record value="2000073331" file="pictures/competition images/2000073331"/>
+				<record value="2000073332" file="pictures/competition images/2000073332"/>
+				<record value="2000073334" file="pictures/competition images/2000073334"/>
+				<record value="2000073336" file="pictures/competition images/2000073336"/>
+				<record value="2000073337" file="pictures/competition images/2000073337"/>
+				<record value="2000073338" file="pictures/competition images/2000073338"/>
+				<record value="2000073340" file="pictures/competition images/2000073340"/>
+				<record value="2000073341" file="pictures/competition images/2000073341"/>
+				<record value="2000073343" file="pictures/competition images/2000073343"/>
+				<record value="2000073344" file="pictures/competition images/2000073344"/>
+				<record value="2000073348" file="pictures/competition images/2000073348"/>
+				<record value="2000073349" file="pictures/competition images/2000073349"/>
+				<record value="2000104662" file="pictures/competition images/2000104662"/>
+				<record value="2000073342" file="pictures/competition images/2000073342"/>
+				<record value="2000073333" file="pictures/competition images/2000073333"/>
+				<record value="2000073345" file="pictures/competition images/2000073345"/>
+				<record value="2000073347" file="pictures/competition images/2000073347"/>
+				<record value="6" file="pictures/competition images/6"/>
+				<record value="558119" file="pictures/competition images/558119"/>
+				<record value="7840132" file="pictures/competition images/7840132"/>
+				<record value="1301407" file="pictures/competition images/1301407"/>
+				<record value="13100167" file="pictures/competition images/13100167"/>
+				<record value="2000289984" file="pictures/competition images/2000289984"/>
+				<record value="2000272767" file="pictures/competition images/2000272767"/>
+				<record value="5623042" file="pictures/competition images/5623042"/>
+				<record value="5626865" file="pictures/competition images/5626865"/>
+				<record value="5781023" file="pictures/competition images/5781023"/>
+				<record value="47017546" file="pictures/competition images/47017546"/>
+				<record value="8350942" file="pictures/competition images/8350942"/>
+				<record value="13212429" file="pictures/competition images/13212429"/>
+				<record value="59135038" file="pictures/competition images/59135038"/>
+				<record value="86000001" file="pictures/competition images/86000001"/>
+				<record value="23084471" file="pictures/competition images/23084471"/>
+				<record value="1301395" file="pictures/competition images/1301395"/>
+				<record value="115424" file="pictures/competition images/115424"/>
+				<record value="7" file="pictures/competition images/7"/>
+				<record value="2000259627" file="pictures/competition images/2000259627"/>
+				<record value="2000259628" file="pictures/competition images/2000259628"/>
+				<record value="60" file="pictures/competition images/60"/>
+				<record value="23090971" file="pictures/competition images/23090971"/>
+				<record value="1301431" file="pictures/competition images/1301431"/>
+				<record value="129650" file="pictures/competition images/129650"/>
+				<record value="149216" file="pictures/competition images/149216"/>
+				<record value="45" file="pictures/competition images/45"/>
+				<record value="129375" file="pictures/competition images/129375"/>
+				<record value="130023" file="pictures/competition images/130023"/>
+				<record value="130024" file="pictures/competition images/130024"/>
+				<record value="130672" file="pictures/competition images/130672"/>
+				<record value="130675" file="pictures/competition images/130675"/>
+				<record value="29" file="pictures/competition images/29"/>
+				<record value="30" file="pictures/competition images/30"/>
+				<record value="14063636" file="pictures/competition images/14063636"/>
+				<record value="2000298334" file="pictures/competition images/2000298334"/>
+				<record value="104551" file="pictures/competition images/104551"/>
+				<record value="1301422" file="pictures/competition images/1301422"/>
+				<record value="1301423" file="pictures/competition images/1301423"/>
+				<record value="35010926" file="pictures/competition images/35010926"/>
+				<record value="71097126" file="pictures/competition images/71097126"/>
+				<record value="2" file="pictures/competition images/2"/>
+				<record value="1" file="pictures/competition images/1"/>
+				<record value="136543" file="pictures/competition images/136543"/>
+				<record value="1301403" file="pictures/competition images/1301403"/>
+				<record value="1301404" file="pictures/competition images/1301404"/>
+				<record value="137892" file="pictures/competition images/137892"/>
+				<record value="155007" file="pictures/competition images/155007"/>
+				<record value="463479" file="pictures/competition images/463479"/>
+				<record value="92086571" file="pictures/competition images/92086571"/>
+				<record value="1301410" file="pictures/competition images/1301410"/>
+				<record value="2000217716" file="pictures/competition images/2000217716"/>
+				<record value="2000217713" file="pictures/competition images/2000217713"/>
+				<record value="219424" file="pictures/competition images/219424"/>
+				<record value="8351374" file="pictures/competition images/8351374"/>
+				<record value="59006943" file="pictures/competition images/59006943"/>
+				<record value="5632240" file="pictures/competition images/5632240"/>
+				<record value="7746536" file="pictures/competition images/7746536"/>
+				<record value="2000189135" file="pictures/competition images/2000189135"/>
+				<record value="7746538" file="pictures/competition images/7746538"/>
+				<record value="7746537" file="pictures/competition images/7746537"/>
+				<record value="41042740" file="pictures/competition images/41042740"/>
+				<record value="41004312" file="pictures/competition images/41004312"/>
+				<record value="127286" file="pictures/competition images/127286"/>
+				<record value="1001959" file="pictures/competition images/1001959"/>
+				<record value="1001960" file="pictures/competition images/1001960"/>
+				<record value="16" file="pictures/competition images/16"/>
+				<record value="121092" file="pictures/competition images/121092"/>
+				<record value="1301429" file="pictures/competition images/1301429"/>
+				<record value="14043892" file="pictures/competition images/14043892"/>
+				<record value="791180" file="pictures/competition images/791180"/>
+			</list>
+		</widget>
+	</container>
+
+	<!-- overlay -->
+	<widget class="picture" id="ssha" file="photos/dynamic/match preview/shading" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-4,-9,-4" offset="0" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="spacer" />
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-3,-10,-2,-3,-2,-10,-3" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<widget class="spacer" />
+			<!-- Logo/Portrait -->
+			<widget class="object_portrait_picture" id="log1" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_TEAM -->
+				<record id="object_property" get_property="Ttea" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+			<widget class="text" alignment="centre,auto_fit" style="bold" colour="white">
+				<translation id="text" translation_id="242324" type="use" value="v[versus]" />
+			</widget>
+			<widget class="spacer" />
+			<widget class="object_portrait_picture" id="log2" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_OTHER_TEAM -->
+				<record id="object_property" get_property="ottm" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+		</container>
+		<widget class="spacer" />
+	</container>
+</panel>

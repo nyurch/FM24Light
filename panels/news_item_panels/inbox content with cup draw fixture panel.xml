@@ -60,6 +60,20 @@
 				<!--dynamic image here please-->
 				<container id="ICdi" height="200">
 					<layout class="stick_to_sides_attachment" alignment="all" inset="-20" apply_to_children="true"/>
+					<widget class="picture" file="photos/dynamic/draw/bg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false"/>
+					<widget class="value_based_picture" id="CoPi" image_alignment="centre" keep_aspect_ratio="true" scale_picture="true">
+						<record id="object_property">
+							<integer id="get_property" value="id  "/>
+							<integer id="set_property" value="valu"/>
+						</record>
+
+						<list id="value_list">
+							<record value="1301394" file="photos/dynamic/uefa/cup draw/ucl cup draw"/>
+							<record value="1301396" file="photos/dynamic/uefa/cup draw/uel cup draw"/>
+							<record value="31051584" file="photos/dynamic/uefa/cup draw/uecl cup draw"/>
+							<record value="1301397" file="photos/dynamic/draw/bg"/>
+						</list>
+					</widget>
 				</container>
 
 				<!-- opposition details -->

@@ -1,0 +1,10 @@
+<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+	<record id="default_properties" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true"/>
+
+	<widget class="stadium_picture" id="STAp" priority="1">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="-50"/>
+		<record id="object_property" get_property="objt" set_property="objt"/>
+	</widget>
+</panel>

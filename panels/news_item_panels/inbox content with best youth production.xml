@@ -17,7 +17,7 @@
 					</record>
 					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
 				</widget>
-				<container class="object_portrait_picture" id="tmPr" auto_size="horizontal" >
+				<container class="object_portrait_picture" id="tmPr" auto_size="horizontal">
 					<string id="scale_picture" value="true" />
 					<string id="keep_aspect_ratio" value="true" />
 					<string id="image_alignment" value="centre" />
@@ -70,7 +70,9 @@
 
 	<container class="inner_box">
 		<layout class="horizontal_arrange" horizontal_layout="-1" />
-		<container class="horizontal_adaptive_container" vertical_alignment="centre">
+		<container class="inner_box" id="tblB">
+			<string id="colour" value="faded text" />
+			<string id="standard_spec" value="title" />
 			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 			<container class="client_object_list_table" id="clTb" hidden="true" save_session_state="true" save_default_state="true" default_sort_column="PDcl">
 				<string id="mode" value="fill_rows, stripe_rows" />

@@ -37,7 +37,7 @@
 						<attachment_group class="horizontal_arrange_autosize"/>
 						<!-- Primary Logo -->
 						<widget class="picture" id="lgtF" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="120">
-							<layout class="stick_to_sides_attachment" alignment="vertical" inset="6" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
 							<attachment class="test_setting_attachment" get_setting="show_badges" default_value="true" set_property="hidden">
 								<boolean id="value" value="false" />
 							</attachment>
@@ -60,14 +60,14 @@
 								<attachment class="get_global_attachment" get_property="stNQ" set_property="click_event" />
 							</widget>
 							<widget class="popup_button" appearance="buttons/custom/customise panel/button" icon="icons/16px/menu" secondary_icon_enabled="false" fixed="true" cached="true" red_replacement="white" icon_colour="white" width="16">
-							<layout class="stick_to_sides_attachment" alignment="left,top" inset="55,0,0,0" />
-							<attachment class="get_global_attachment" get_property="lnks" set_property="itms"/>
-							<attachment class="test_global_attachment" get_property="lnks" set_property="hidn">
-								<list id="value">
-									<integer value="0"/>
-								</list>
-							</attachment>
-						</widget>
+								<layout class="stick_to_sides_attachment" alignment="left,top" inset="55,0,0,0" />
+								<attachment class="get_global_attachment" get_property="lnks" set_property="itms"/>
+								<attachment class="test_global_attachment" get_property="lnks" set_property="hidn">
+									<list id="value">
+										<integer value="0"/>
+									</list>
+								</attachment>
+							</widget>
 						</container>
 					</container>
 					<!--object name and search bar-->
@@ -91,6 +91,20 @@
 						</attachment>
 					</widget>
 				</container>
+				<container width="120">
+					<attachment_group class="horizontal_arrange_autosize"/>
+					<widget class="picture" id="rgtF" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="120">
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
+						<attachment class="test_setting_attachment" get_setting="show_badges" default_value="true" set_property="hidden">
+							<boolean id="value" value="false" />
+						</attachment>
+						<record id="object_property">
+							<integer id="get_property" value="scpc" />
+							<integer id="set_property" value="file" />
+						</record>
+					</widget>
+				</container>
+
 			</container>
 		</container>
 		<!-- Group of buttons in the top right -->

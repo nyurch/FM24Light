@@ -7,7 +7,7 @@
 		<record get_property="sert" set_property="text" target="sert" />
 	</list>
 
-	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="180,-1" />
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="250,-1" />
 
 	<container class="main_subtle_box">
 		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1,1,-1,1,-1,1,-1"/>

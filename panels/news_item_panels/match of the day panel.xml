@@ -118,13 +118,13 @@
 					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="10" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 					<!-- First match result-->
-					<container class="property_list_viewer_xml_panel" id="res1" file="news_item_panels/match of the day main result item panel" height="32" />
+					<container class="property_list_viewer_xml_panel" id="res1" file="news_item_panels/extra_panels/match of the day main result item panel" height="92" />
 					<widget class="text" id="mde1" auto_size="vertical" colour="faded text"/>
 
 					<widget class="horizontal_divider" />
 
 					<!-- Second match result / overall description-->
-					<container class="property_list_viewer_xml_panel" id="res2" file="news_item_panels/match of the day main result item panel" height="32" />
+					<container class="property_list_viewer_xml_panel" id="res2" file="news_item_panels/extra_panels/match of the day main result item panel" height="92" />
 					<widget class="text" id="mde2" auto_size="vertical" colour="faded text"/>
 				</container>
 			</container>

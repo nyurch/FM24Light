@@ -1,0 +1,106 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="Ttea" set_property="valu" target="tnam" />
+		<record get_property="Topp" set_property="valu" target="onam" />
+		<record get_property="stad" set_property="valu" target="stad" />
+		<record get_property="bert" set_property="text" target="bert" />
+		<record get_property="sert" set_property="text" target="sert" />
+	</list>
+
+	<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="180,-1" />
+
+	<container class="main_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1,1,-1,1,-1,1,-1"/>
+		<container class="vertical_label_value_pair">
+			<widget class="object_portrait_picture" id="clog" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" comp_use_trophy_icon="true" width="90" height="90" />
+			<widget class="comp_button" id="cnam" icon_enabled="false" font="title" alignment="centre" colour="text" />
+		</container>
+		<widget class="horizontal_subtle_divider" />
+		<container class="vertical_label_value_pair">
+			<widget class="team_button" id="onam" icon_enabled="true" font="title" colour="text" alignment="left,centre_y"/>
+			<widget class="team_button" id="tnam" icon_enabled="true" font="title" colour="text" alignment="left,centre_y"/>
+		</container>
+		<widget class="horizontal_subtle_divider" />
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_layout="200,5,25" />
+			<widget class="stadium_button" id="stad" show_stadium_icon="true" alignment="left,centre_y" font="title" colour="text"/>
+			<widget class="spacer" />
+			<widget class="text" id="date" auto_size="all" alignment="left,centre_y"/>
+		</container>
+		<widget class="horizontal_subtle_divider" />
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" />
+			<container class="main_subtle_box_no_margin">
+				<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="middle" horizontal_offset="12" vertical_alignment="vertical" />
+				<widget class="spacer" width="12" />
+				<widget class="text" alignment="centre_x, centre_y" auto_size="all">
+					<translation id="text" translation_id="344616" type="use" value="Previous Meetings[COMMENT: title for a box containing information on previous meetings between two sides]" />
+				</widget>
+				<widget class="team_recent_form_widget" id="PaMe" size="medium" font="bold" colour="text" show_no_form_on_empty="true" show_form_popup="false" alignment="centre_x, centre_y" auto_size="all" />
+				<widget class="icon_button" id="FBib" click_event="SHPm" colour="text" width="24" height="24" show_button_appearance="false" icon_enabled="true" icon="icons/16px/maximise" icon_alignment="centre_x, centre_y" />
+			</container>
+		</container>
+	</container>
+
+	<container class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" horizontal_inset="0" vertical_offset="0" vertical_gap="0" />
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" vertical_inset="0" horizontal_offset="0" horizontal_gap="10" />
+			<widget class="icon_button" icon_alignment="centre" alignment="centre" auto_size="all" appearance="" icon="icons/26px/board" font="title" size="large" colour="performance board tag" icon_colour="performance board tag">
+				<translation id="text" translation_id="557809" type="use" value="Board Expectations[COMMENT: AREA: Pre Match News Item; SUB-AREA: Board And Supporters Expectations; FM-7348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Section title for board expectations.]" />
+			</widget>
+			<widget class="icon_button" icon_alignment="centre" alignment="centre" auto_size="all" appearance="" icon="icons/26px/fans" font="title" size="large" colour="performance fans tag" icon_colour="performance fans tag">
+				<translation id="text" translation_id="557810" type="use" value="Supporter Expectations[COMMENT: AREA: Pre Match News Item; SUB-AREA: Board And Supporters Expectations; FM-7348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Section title for fan expectations.]" />
+			</widget>
+		</container>
+		<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,-1" vertical_inset="0" horizontal_offset="0" horizontal_gap="0" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" horizontal_inset="10" vertical_offset="10" vertical_gap="10" />
+				<container class="inner_subtle_box">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" />
+					<widget class="text" id="bers" font="title" colour="text" size="large" alignment="centre" auto_size="vertical" />
+				</container>
+				<widget class="text" id="bert" alignment="centre" height="40" multiline="true" />
+				<widget class="horizontal_divider" />
+				<widget class="icon_button" icon_alignment="centre" alignment="centre" auto_size="vertical" appearance="" icon="icons/16px/speech bubble" font="title" colour="performance board tag" icon_colour="performance board tag">
+					<translation id="text" translation_id="557811" type="use" value="Voice of the Board[COMMENT: AREA: Pre Match News Item; SUB-AREA: Board And Supporters Expectations; FM-7348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Section title for voice of the board.]" />
+				</widget>
+				<widget class="text" id="bspt" alignment="centre" auto_size="vertical" colour="faded text" text="Compiled by John Smith - Director of Football" />
+				<widget class="table" id="belt" layout="-1" mode="fill_rows" fixed_size_rows="false" auto_size_rows="true" auto_size="vertical" row_spacing="4">
+					<list id="column_table_properties">
+						<record index="0">
+							<record id="widget_info">
+								<symbol id="class" value="container" />
+								<string id="file" value="widgets/club match confidence expectation list widget" />
+							</record>
+						</record>
+					</list>
+				</widget>
+			</container>
+			<container>
+				<attachment_group class="vertical_arrange_autosize" horizontal_inset="10" vertical_offset="10" vertical_gap="10" />
+				<container class="inner_subtle_box">
+					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" />
+					<widget class="text" id="sers" font="title" colour="positive" size="large" alignment="centre" auto_size="vertical" />
+				</container>
+				<widget class="text" id="sert" alignment="centre" height="40" multiline="true" />
+				<widget class="horizontal_divider" />
+				<widget class="icon_button" icon_alignment="centre" alignment="centre" auto_size="vertical" appearance="" icon="icons/16px/speech bubble" font="title" colour="performance fans tag" icon_colour="performance fans tag">
+					<translation id="text" translation_id="557812" type="use" value="Voice of the Supporters[COMMENT: AREA: Pre Match News Item; SUB-AREA: Board And Supporters Expectations; FM-7348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Section title for voice of the supporters.]" />
+				</widget>
+				<widget class="text" id="sspt" alignment="centre" auto_size="vertical" colour="faded text" text="Compiled by John Smith - Supporter Liason Officer" />
+				<widget class="table" id="selt" layout="-1" mode="fill_rows" fixed_size_rows="false" auto_size_rows="true" auto_size="vertical" row_spacing="4">
+					<list id="column_table_properties">
+						<record index="0">
+							<record id="widget_info">
+								<symbol id="class" value="container" />
+								<string id="file" value="widgets/club match confidence expectation list widget" />
+							</record>
+						</record>
+					</list>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

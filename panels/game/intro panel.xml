@@ -37,14 +37,21 @@
 		<boolean id="late_loading" value="true" />
 		<string id="remove_if" value="platform_is_handheld" />
 
-		<container id="CHWc">
-			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<container class="animated_wipe_cycle_left_container" id="anmt" interval="10">
+			<!-- Overlay over the top of manager BG -->
+			<widget class="picture" id="bkg100" file="main menu/background/100" scale_picture="true" keep_aspect_ratio="false">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="picture" id="bkg200" file="main menu/background/200" scale_picture="true" keep_aspect_ratio="false">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="picture" id="bkg300" file="main menu/background/300" scale_picture="true" keep_aspect_ratio="false">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+			<widget class="picture" id="bkg400" file="main menu/background/400" scale_picture="true" keep_aspect_ratio="false">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
 		</container>
-
-		<!-- Overlay over the top of manager BG -->
-		<widget class="picture" id="bkg1" file="main menu/background" scale_picture="true" keep_aspect_ratio="false">
-			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
-		</widget>
 
 		<container>
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
@@ -194,8 +201,8 @@
 			<layout class="stick_to_sides_attachment" alignment="all" inset="-370" />
 
 			<!-- Menu -->
-			<container class="main_contrast_box" id="mPic" width="500" appearance="boxes/custom/main menu/paper" red_replacement="bg" blue_replacement="green">
-				<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" />
+			<container class="main_contrast_box" id="mPic" width="500" red_replacement="bg">
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="-25" apply_to_children="true" />
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="37" />
 
 				<!-- Change the size of the box for switch -->

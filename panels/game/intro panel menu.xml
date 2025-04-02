@@ -1,0 +1,201 @@
+﻿<container>
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="16" vertical_offset="12" horizontal_inset="12" />
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize_horizontal_centre" vertical_alignment="top" horizontal_offset="0" vertical_gap="16" vertical_inset="4" />
+		<!-- Logos for different SKUs and Platforms -->
+		<!-- FM -->
+		<widget class="picture" file="main menu/logo" scale_picture="true" image_alignment="centre" width="320" height="100">
+			<string id="remove_if" value="is_fmt, ui.is_fmt_touchscreen_skin, ui.is_fmt_pc_skin" />
+		</widget>
+		<!-- FMT -->
+		<widget class="picture" file="main menu/fmt_logo" scale_picture="true" image_alignment="centre" width="320" height="100">
+			<string id="create_if" value="ui.is_fmt_touchscreen_skin, ui.is_fmt_pc_skin" />
+			<string id="remove_if" value="game_mode_is_console_mode" />
+		</widget>
+		<!-- Console -->
+		<widget class="picture" file="main menu/fmxe_logo" scale_picture="true" image_alignment="centre" width="320" height="100">
+			<string id="create_if" value="game_mode_is_console_mode" />
+		</widget>
+	</container>
+
+	<!-- Load Old version saves -->
+	<container class="inner_box" id="LovS" height="70" appearance="boxes/custom/main menu/most recent/paper" red_replacement="bg accent" blue_replacement="fg" green_replacement="bg alpha">
+		<string id="remove_if" value="is_demo_mode" />
+		<attachment_group class="horizontal_arrange" horizontal_gap="40" horizontal_offset="16" />
+		<container height="42" width="42">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<!--Club image-->
+			<widget class="icon_button" auto_size="horizontal" icon="icons/custom/saved game compatability/file" red_replacement="bg darker" icon_alignment="centre_x" appearance="" />
+		</container>
+		<!-- Button Text -->
+		<container width="270">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="16" />
+			<!-- Header Text -->
+			<widget class="label" auto_size="all" alignment="left, centre_y" font="title" size="xlarge" height="40" colour="text">
+				<translation id="text" translation_id="594831" type="use" value="Load FM23 Saved Games[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+			<widget class="label" auto_size="all" colour="fg alpha" size="small">
+				<translation id="text" translation_id="594832" type="use" value="It is now possible to load an FM23 save[COMMENT: AREA: Intro Panel; SUB-AREA: More Detailed Sub-Area; FR-BN: FM-24312; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; any other information the translator can make use of]" />
+			</widget>
+		</container>
+		<!-- Button (spans across entire parent container) -->
+		<widget class="button" id="Lovb" appearance="buttons/custom/intro panel/button" focus_appearance="buttons/subtle/flex/button_controller" default_focus="true">
+			<record id="click_event" event_id="OPLD">
+				<symbol id="settings_name" value="show_older_version_saves_dialog" />
+			</record>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+	</container>
+
+	<!-- Most recent game -->
+	<container class="contrast_box" id="MRsC" height="70" appearance="boxes/custom/main menu/most recent/paper">
+		<attachment_group class="horizontal_arrange" horizontal_gap="40" horizontal_offset="16" />
+		<container height="40" width="40">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			<!--Club image-->
+			<widget class="picture" id="resp" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" />
+		</container>
+		<!-- Button Text -->
+		<container width="270">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="16" />
+			<!-- Header Text -->
+			<widget class="label" id="morl" auto_size="all" alignment="left, centre_y" font="title" size="xlarge" height="40" colour="text">
+				<translation id="text" translation_id="420632" type="use" value="Most Recent[COMMENT: FR 16138, main menu text to load the most recent saved game, the saved game name itself will be displayed in parentheses below this]" />
+			</widget>
+			<widget class="label" id="resT" auto_size="vertical" colour="fg alpha" size="small">
+				<translation id="text" translation_id="260987" type="use" value="Load Last Game[COMMENT: Title of confirmation dialog when attempting to load last game]" />
+			</widget>
+		</container>
+		<!-- Button (spans across entire parent container) -->
+		<widget class="button" id="resb" appearance="buttons/custom/intro panel/button" focus_appearance="buttons/subtle/flex/button_controller" default_focus="true">
+			<record id="click_event" event_id="RLGA" event_target="glob" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+	</container>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+		<container class="main_subtle_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="6" />
+			<string id="remove_if" value="is_demo_mode" />
+			<!-- Game modes popup dialog -->
+			<widget class="icon_button" click_event="gmpu" default_focus="true" appearance="boxes/custom/main menu/start/paper" alignment="left, centre_y" font="title" size="xlarge" height="40" fixed="true">
+				<translation id="text" translation_id="339126" type="use" value="Start a new game[COMMENT: intro panel; start a new game, use top matches as a similar string was previously used]" />
+			</widget>
+		</container>
+		<!-- Select Quick Save Menu -->
+		<widget class="demo_quick_start_popup_button" id="demo" height="40">
+			<string id="create_if" value="is_demo_mode" />
+		</widget>
+		<!-- Load Game Button-->
+		<container class="main_subtle_box">
+			<attachment_group class="vertical_arrange_autosize"/>
+			<container class="icon_button" appearance="boxes/custom/main menu/start/paper" alignment="left, centre_y" font="title" size="xlarge" height="40">
+				<translation id="text" translation_id="248149" type="use" value="Load Game" />
+				<translation id="hint" translation_id="320428" type="use" value="Choose this option to load a previously saved game[COMMENT: intro panel; hint text]" />
+				<record id="click_event" event_id="OPLD">
+					<symbol id="settings_name" value="show_older_version_saves_dialog" />
+				</record>
+				<record id="contextual_event" event_id="ldgc" />
+			</container>
+		</container>
+		<!-- Join Online Game Button-->
+		<container class="main_subtle_box">
+			<attachment_group class="vertical_arrange_autosize"/>
+			<container id="netb" class="icon_button" appearance="boxes/custom/main menu/start/paper" alignment="left, centre_y" font="title" size="xlarge" height="40">
+				<translation id="text" translation_id="339054" type="use" value="Join Online Game[COMMENT: intro panel button text to join a network game]" />
+				<translation id="hint" translation_id="338948" type="use" value="Choose this option to join an online game.[COMMENT: game start screen, hint text for Join Online Game button, use top ten matches as this string is only slightly altered to remove references to starting a game]" />
+				<record id="click_event" event_id="join" />
+			</container>
+		</container>
+	</container>
+
+	<widget class="horizontal_divider" />
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" gap="5" />
+		<!-- Preferences -->
+		<widget class="subtle_button" id="more" click_event="PLSM" auto_size="all" appearance="buttons/subtle/flex/button">
+			<translation id="text" translation_id="229824" type="use" value="Preferences" />
+			<translation id="hint" translation_id="255121" type="use" value="Change your game preferences.[COMMENT: intro screen: preferences button hint]" />
+			<record id="click_event">
+				<flags id="event_id" value="PREF" />
+				<flags id="event_target" value="scrC" />
+			</record>
+		</widget>
+		<!-- Manual -->
+		<widget class="icon_button" id="mnBT" click_event="soUM" auto_size="all" appearance="buttons/subtle/flex/button">
+			<translation id="text" translation_id="326982" type="use" value="Manual" />
+		</widget>
+		<!-- FM More -->
+		<!-- Exclusion container for FMT and distribution_is_apple -->
+		<container height="30">
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<attachment_group class="horizontal_arrange_autosize" />
+			<widget class="subtle_popup_button" id="more" auto_size="all" appearance="buttons/subtle/flex/button" fixed="true">
+				<translation id="text" translation_id="382316" type="use" value="More...[COMMENT: sections menu strip, menubar heading for section that contains miscellaneous items, ellipses needed to hint that things are contained therein]" />
+				<string id="remove_if" value="is_fmt, distribution_is_apple" />
+				<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+				<list id="items">
+					<record id="1" event_id="STOR" fssa="0">
+						<translation id="text" translation_id="349581" type="use" value="Downloads[COMMENT: button text to take user to the downloads]" />
+						<global id="hidden" name="is_store_disabled" />
+					</record>
+					<record id="2" event_id="PLSM">
+						<translation id="text" translation_id="242332" type="use" value="View Match" />
+					</record>
+					<record id="3" event_id="CRED">
+						<translation id="text" translation_id="247992" type="use" value="Credits" />
+					</record>
+					<record id="4" event_id="LDRB">
+						<translation id="text" translation_id="335142" type="use" value="Leaderboards[COMMENT: section title for leaderboard section]" />
+						<global id="hidden" name="is_demo_mode" />
+					</record>
+					<record id="5" event_id="EULA">
+						<translation id="text" translation_id="454702" type="use" value="Privacy Policies" />
+						<translation id="hint" translation_id="492126" type="use" value="Click here to read the relevant notices with regards to your privacy[COMMENT: AREA: Main Menu; SUB-AREA: Privacy Policies help; FR-BN: 7245; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: tooltip for 454702 Privacy Policies, cannot be feminised]" />
+					</record>
+				</list>
+			</widget>
+		</container>
+		<!-- FM/FMT Apple More -->
+		<widget class="subtle_popup_button" id="more" auto_size="all" appearance="buttons/subtle/flex/button" fixed="true">
+			<translation id="text" translation_id="382316" type="use" value="More...[COMMENT: sections menu strip, menubar heading for section that contains miscellaneous items, ellipses needed to hint that things are contained therein]" />
+			<global id="shown" name="distribution_is_apple" />
+			<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+			<list id="items">
+				<record id="1" event_id="PLSM">
+					<translation id="text" translation_id="242332" type="use" value="View Match" />
+				</record>
+				<record id="2" event_id="CRED">
+					<translation id="text" translation_id="247992" type="use" value="Credits" />
+				</record>
+				<record id="3" event_id="LDRB">
+					<translation id="text" translation_id="335142" type="use" value="Leaderboards[COMMENT: section title for leaderboard section]" />
+					<global id="hidden" name="is_demo_mode" />
+				</record>
+				<record id="4" event_id="EULA">
+					<translation id="text" translation_id="454702" type="use" value="Privacy Policies" />
+					<translation id="hint" translation_id="492126" type="use" value="Click here to read the relevant notices with regards to your privacy[COMMENT: AREA: Main Menu; SUB-AREA: Privacy Policies help; FR-BN: 7245; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: tooltip for 454702 Privacy Policies, cannot be feminised]" />
+				</record>
+				<record id="5" event_id="ACHV">
+					<translation id="text" translation_id="247607" type="use" value="Achievements" />
+				</record>
+			</list>
+		</widget>
+	</container>
+
+	<container width="450" height="80">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="-1" horizontal_inset="0" />
+			<widget class="picture" height="-1" width="-1" scale_picture="true" keep_aspect_ratio="true" file="main menu/my_logo" image_alignment="centre"/>
+		</container>
+		<widget class="button" id="YFMD" appearance="buttons/custom/over state only/button">
+			<record id="click_event" event_id="OURL" url="https://community.sports-interactive.com/forums/topic/571853-fm23-fm24-fm-light-skin-last-update-24112024/" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		</widget>
+	</container>
+
+</container>

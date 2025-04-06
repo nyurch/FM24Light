@@ -1,7 +1,7 @@
 ﻿<panel width="955" height="612">
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-	<container class="main_box" appearance="boxes/custom/whats new/paper">
+	<container class="main_contrast_box" red_replacement="bg">
 
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
@@ -13,13 +13,13 @@
 			<container>
 				<attachment_group class="horizontal_arrange" vertical_offset="0" vertical_gap="0" horizontal_alignment="middle" vertical_alignment="vertical" horizontal_inset="0" />
 
-				<widget class="label" id="titl" auto_size="horizontal" alignment="centre" font="extendedblack" size="16" colour="text">
+				<widget class="label" id="titl" auto_size="horizontal" alignment="centre" font="extendedblack" size="16" colour="darker">
 					<translation id="text" translation_id="538926" type="use" value="Select Game Mode[COMMENT: AREA: Intro Screen; SUB-AREA: Game Mode selection; FR-BN: 36508; TONE: Formal; CHARLIMIT: N/A; REF-ID: n/a; NOTE: Title of the game mode selection dialog]" />
 
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 				</widget>
 
-				<widget class="icon_button" controller_button="b_button" icon_alignment="far_right" colour="darker" click_event="mcan" height="92" auto_size="horizontal" secondary_icon_enabled="true" secondary_icon="icons/16px/cross" secondary_icon_alignment="centre_y, centre_x" appearance="buttons/standard/normal/button" red_replacement="darker">
+				<widget class="icon_button" controller_button="b_button" icon_alignment="far_right" colour="darker" click_event="mcan" height="92" auto_size="horizontal" secondary_icon_enabled="true" secondary_icon="icons/16px/cross" secondary_icon_colour="darker" secondary_icon_alignment="centre_y, centre_x" appearance="buttons/standard/normal/button" red_replacement="darker">
 					<layout class="stick_to_sides_attachment" alignment="right,top" inset="0" />
 				</widget>
 			</container>

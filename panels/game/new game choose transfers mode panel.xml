@@ -1,0 +1,158 @@
+﻿<panel width="970">
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="24" horizontal_inset="0" vertical_offset="0" />
+	<layout class="centre_in_parent_attachment" alignment="all" offset="0" />
+
+	<widget class="text" alignment="centre" auto_size="vertical" font="extendedblack" size="16" colour="darker">
+		<translation id="text" translation_id="594824" type="use" value="Choose A Game Mode[COMMENT: AREA: Start new game; SUB-AREA: Team choice dialog; FR-BN: FM-23921; NOTE: Button label to progress to game mode choice when starting a new career]" />
+	</widget>
+
+	<widget class="text" alignment="centre" auto_size="vertical" size="medium">
+		<translation id="text" translation_id="594807" type="use" value="Choose which game mode you would like to add to your career game setup.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Description text for choose game mode dialog]" />
+	</widget>
+
+	<container height="320">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="12" />
+
+		<container>
+			<attachment_group class="vertical_arrange" />
+
+			<container class="plain_box" id="claB">
+				<attachment_group class="vertical_arrange" vertical_layout="-1, 60" vertical_gap="8" horizontal_alignment="horizontal" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="12" />
+
+					<widget class="picture" file="icons/custom/real life transfers/classic" width="40" height="40" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+					<widget class="text" font="title" colour="darker" size="large" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594817" type="use" value="Original[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode type title]" />
+					</widget>
+
+					<widget class="text" id="claD" colour="faded text" alignment="centre_x, top" auto_size="vertical" />
+					<widget class="spacer" height="4" />
+					<widget class="text" colour="faded text" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594808" type="use" value="The original way to play Football Manager; updated squads will be in use at the start of each new Career, even if those transfers hadn't happened yet by the corresponding real-life date.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_gap="8" horizontal_offset="12" />
+
+					<widget class="picture" file="icons/16px/thumbs up" width="16" height="16" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" red_replacement="darker" />
+					<widget class="text" alignment="left, centre_y" auto_size="none">
+						<translation id="text" translation_id="594811" type="use" value="Recommended if you prefer to play Football Manager in the traditional manner.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+			</container>
+
+			<widget class="button" id="Scla" click_event="Scla" appearance="buttons/custom/over state only/button" auto_size="none">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange" />
+
+			<container class="inner_subtle_box" id="rltB">
+				<attachment_group class="vertical_arrange" vertical_layout="-1, 60" vertical_gap="8" horizontal_alignment="horizontal" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="12" />
+
+					<widget class="picture" file="icons/custom/real life transfers/real life" width="40" height="40" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+					<widget class="text" font="title" colour="darker" size="large" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594818" type="use" value="Real World[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode type title]" />
+					</widget>
+
+					<widget class="text" id="rltD" colour="faded text" alignment="centre_x, top" auto_size="vertical" />
+					<widget class="spacer" height="4" />
+					<widget class="text" colour="faded text" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594809" type="use" value="Players will start at the clubs they were with at the start date of this Career. They will then move to their new club on the same date they did in real life as the Career progresses.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_gap="8" horizontal_offset="12" />
+
+					<widget class="picture" file="icons/16px/thumbs up" width="16" height="16" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" red_replacement="darker" />
+					<widget class="text" alignment="left, centre_y" auto_size="none">
+						<translation id="text" translation_id="594812" type="use" value="Recommended if you want the most up-to-date experience.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+			</container>
+
+			<widget class="button" id="Srlt" click_event="Srlt" appearance="buttons/custom/over state only/button" auto_size="none">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange" />
+
+			<container class="inner_subtle_box" id="ntrB">
+				<attachment_group class="vertical_arrange" vertical_layout="-1, 60" vertical_gap="8" horizontal_alignment="horizontal" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="12" vertical_offset="12" />
+
+					<widget class="picture" file="icons/custom/real life transfers/no transfers" width="40" height="40" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+
+					<widget class="text" font="title" colour="darker" size="large" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594819" type="use" value="Your World[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode type title]" />
+					</widget>
+
+					<widget class="text" id="ntrD" colour="faded text" alignment="centre_x, top" auto_size="vertical" size="small" />
+					<widget class="spacer" height="4" />
+					<widget class="text" colour="faded text" alignment="centre_x, top" auto_size="vertical">
+						<translation id="text" translation_id="594810" type="use" value="Club squads and budgets will be accurate as of the start of the 2023-24 season, with no real-life transfers reflected after that date.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="left, extend" horizontal_gap="8" horizontal_offset="12" />
+
+					<widget class="picture" file="icons/16px/thumbs up" width="16" height="16" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" red_replacement="darker" />
+					<widget class="text" alignment="left, centre_y" auto_size="none">
+						<translation id="text" translation_id="594813" type="use" value="Recommended if you want to explore a different reality.[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Game mode description]" />
+					</widget>
+				</container>
+			</container>
+
+			<widget class="button" id="Sntr" click_event="Sntr" appearance="buttons/custom/over state only/button" auto_size="none">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+			</widget>
+		</container>
+	</container>
+
+	<container id="Warn" hidden="true">
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" horizontal_gap="8" horizontal_offset="80" />
+
+		<widget class="picture" file="icons/16px/warning" width="16" height="16" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" red_replacement="title" blue_replacement="bg darker">
+			<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
+		</widget>
+		<widget class="text" colour="title" alignment="left, centre_y" auto_size="vertical">
+			<translation id="text" translation_id="597598" type="use" value="If this mode is selected then no other transfers aside from those that occurred in real life will occur for the first season in both MLS (United States) and A-League (Australia).[COMMENT: AREA: Start new game; SUB-AREA: Choose game mode dialog; FR-BN: FM-23921; NOTE: Warning string for real life transfers mode when playing in Australia or MLS]" />
+		</widget>
+	</container>
+
+	<container>
+		<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+		<layout class="arrange_horizontal_platform_attachment" alignment="right" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" apply_to_children="true" />
+
+		<widget class="primary_icon_tick_button" id="qsta" click_event="qsta" controller_button="x_button">
+			<translation id="text" translation_id="341393" type="use" value="Quick Start[COMMENT: intro panel; demo only; quickstarts section title text, allows the user to click and load from a selection of quick start saved games]" />
+		</widget>
+		<widget class="primary_icon_button" id="Adva" click_event="Adva" auto_size="all" icon="icons/16px/edit" controller_button="y_button">
+			<translation id="text" translation_id="347955" type="use" value="Advanced Setup[COMMENT: text for a button that will allow the user some extra options when setting up the game]" />
+		</widget>
+		<widget class="button" id="canc" event_id="canc" auto_size="all" default_focus="true">
+			<translation id="text" translation_id="229828" type="use" value="Cancel" />
+		</widget>
+	</container>
+
+</panel>

@@ -3,7 +3,6 @@
 	<container class="main_contrast_box" red_replacement="sidebar" navigation_container="true">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="-2"/>
 		<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="0"/>
-
 		<container>
 			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="4" gap="4" />
 			<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
@@ -104,7 +103,6 @@
 						</record>
 					</widget>
 				</container>
-
 			</container>
 		</container>
 		<!-- Group of buttons in the top right -->

@@ -1,0 +1,21 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="main_contrast_box" red_replacement="bg" id="nemc">
+		<layout class="horizontal_arrange" horizontal_layout="120,5,-1,8,50" />
+		<widget class="text" alignment="left,centre_y" style="bold" colour="darker">
+			<translation id="text" translation_id="247353" type="use" value="Next Match"/>
+		</widget>
+		<widget class="text" alignment="left,centre_y" style="bold" colour="darker">
+			<string id="text" value=":" />
+		</widget>
+		<widget class="team_button" id="otna" alignment="left,centre_y" style="bold" colour="darker" format="[%team#1-short_abb]" />
+		<widget class="text" alignment="left,centre_y" style="bold" colour="darker">
+			<string id="text" value="-" />
+		</widget>
+		<widget class="text" id="nMat" format="days_only" style="bold" alignment="left,centre_y" colour="fg magenta">
+			<translation id="text" value="" />
+		</widget>
+	</container>
+
+</panel>

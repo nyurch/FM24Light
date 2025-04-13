@@ -2,7 +2,7 @@
 	<layout class="horizontal_arrange" horizontal_layout="-1,260" />
 	<boolean id="should_force_refresh" value="true"/>
 
-	<container id="main">
+	<container id="main" class="main_subtle_box">
 		<layout class="vertical_arrange" vertical_layout="70,70,1,80,1,-1" />
 		<container>
 			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
@@ -43,49 +43,46 @@
 			<widget class="text" id="mtrp" auto_size="vertical" alignment="left,centre_y" />
 		</container>
 		<widget class="horizontal_divider" />
+
 		<container>
-			<layout class="vertical_arrange" vertical_layout="200,500,-1" />
-			<boolean id="should_force_refresh" value="true"/>
-			<container>
-				<layout class="horizontal_arrange" horizontal_layout="-1,-1,-1" />
-				<container class="main_subtle_box">
+			<layout class="horizontal_arrange" horizontal_layout="-1,-1,-1" />
+			<container class="main_subtle_box">
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+				<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+				<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" />
+				<!--promoted-->
+				<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="prom" colour="positive">
+					<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
 					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
-					<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
-					<layout class="arrange_horizontal_attachment" alignment="fill" offset="0" />
-					<!--promoted-->
-					<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="prom" colour="positive">
-						<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
-						<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
-						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
-					</container>
-					<!--relegated-->
-					<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="rele" colour="negative">
-						<translation id="title" translation_id="249385" type="use" value="Relegated[COMMENT: home_page; team league/group fate]" />
-						<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
-						<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
-						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
-					</container>
 				</container>
-				<container class="main_subtle_box" id="oabx" colour="darker">
-					<translation id="title" translation_id="346588" type="use" value="Biggest Overachievers[COMMENT: season summary review; section title for most overachieving team]" />
-					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
-					<layout class="fit_children_attachment" alignment="vertical" />
-					<layout class="arrange_horizontal_attachment" layout="60, -1" gap="8" />
-					<!--logo-->
-					<widget class="object_portrait_picture" id="oalw" clickable="true" height="60" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
-					<!--text-->
-					<widget class="text" id="oasw" auto_size="vertical" />
+				<!--relegated-->
+				<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" id="rele" colour="negative">
+					<translation id="title" translation_id="249385" type="use" value="Relegated[COMMENT: home_page; team league/group fate]" />
+					<layout class="fit_children_attachment" alignment="vertical,extend" gap="0" offset="0" />
+					<layout class="arrange_horizontal_attachment" alignment="left" wrap="true" gap="0" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
 				</container>
-				<container class="main_subtle_box" id="uabx" colour="darker">
-					<translation id="title" translation_id="350745" type="use" value="Biggest Underachievers[COMMENT: season summary review; section title for most underachieving team]" />
-					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
-					<layout class="fit_children_attachment" alignment="vertical" />
-					<layout class="arrange_horizontal_attachment" layout="60, -1" gap="8" />
-					<!--logo-->
-					<widget class="object_portrait_picture" id="ualw" clickable="true" height="60" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
-					<!--text-->
-					<widget class="text" id="uasw" auto_size="vertical" />
-				</container>
+			</container>
+			<container class="main_subtle_box" id="oabx" colour="darker">
+				<translation id="title" translation_id="346588" type="use" value="Biggest Overachievers[COMMENT: season summary review; section title for most overachieving team]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+				<layout class="fit_children_attachment" alignment="vertical" />
+				<layout class="arrange_horizontal_attachment" layout="60, -1" gap="8" />
+				<!--logo-->
+				<widget class="object_portrait_picture" id="oalw" clickable="true" height="60" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+				<!--text-->
+				<widget class="text" id="oasw" auto_size="vertical" />
+			</container>
+			<container class="main_subtle_box" id="uabx" colour="darker">
+				<translation id="title" translation_id="350745" type="use" value="Biggest Underachievers[COMMENT: season summary review; section title for most underachieving team]" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" />
+				<layout class="fit_children_attachment" alignment="vertical" />
+				<layout class="arrange_horizontal_attachment" layout="60, -1" gap="8" />
+				<!--logo-->
+				<widget class="object_portrait_picture" id="ualw" clickable="true" height="60" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" />
+				<!--text-->
+				<widget class="text" id="uasw" auto_size="vertical" />
 			</container>
 		</container>
 	</container>

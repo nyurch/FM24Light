@@ -396,9 +396,9 @@
 										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
 										<container class="sections_menu_strip" id="acse" />
 									</container>
-									<container class="training_slot" id="triS" file="none" width="300">
-										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
-										<container id="nxMP" class="team_next_match_panel" file="team/extra_panels/team next match tactics" width="300"/>
+									<container class="training_slot" id="triS" file="none" width="450">
+										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="3" />
+										<container id="nxMP" class="team_next_match_panel" file="team/extra_panels/team next match tactics" width="450"/>
 										<record id="object_property">
 											<integer id="get_property" value="objt" />
 											<integer id="set_property" value="objt" />

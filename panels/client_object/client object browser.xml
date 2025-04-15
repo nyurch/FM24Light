@@ -150,6 +150,17 @@
 		</attachment>
 	</widget>
 
+	<!-- Pre match team selection scene ++-->
+	<widget class="picture" file="backgrounds/dressingroom" scale_picture="true" keep_aspect_ratio="false">
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="section" test_mode="0" value="phtc" skip_if_null="false"/>
+				<record get_property="section" test_mode="0" comparison_mode="1" value="patc" skip_if_null="true"/>
+			</list>
+			<integer id="set_property" value="Shwn"/>
+		</attachment>
+	</widget>
+
 	<!-- Team meeting scene -->
 	<widget class="picture" file="backgrounds/preseason" scale_picture="true" keep_aspect_ratio="false">
 		<attachment class="test_multiple_globals_attachment" default_value="false">

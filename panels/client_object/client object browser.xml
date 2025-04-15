@@ -34,7 +34,7 @@
 		</attachment>
 	</widget>
 
-	<!-- For Background support adjust transparency value. 0.0 is transparent, 1 is solid, 0.5 is 50% etc... This is the purple pattern mainly shown on sidebar -->
+	<!-- For Background support adjust transparency value. 0.0 is transparent, 1 is solid, 0.5 is 50% etc.. -->
 	<widget class="picture" file="boxes/custom/interface/background pattern/paper" id="BgPa" transparency="0.0">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 		<attachment class="test_multiple_globals_attachment" default_value="false">
@@ -109,12 +109,23 @@
 		</attachment>
 	</widget>
 
-	<!-- Tunnel interview scene +++-->
+	<!-- Tunnel interview Prematch scene +++-->
 	<widget class="picture" file="backgrounds/tunnel" scale_picture="true" keep_aspect_ratio="false">
 		<attachment class="test_multiple_globals_attachment" default_value="false">
 			<list id="get_properties">
 				<record get_property="sect" test_mode="0" value="mpPh" skip_if_null="false"/>
 				<record get_property="sect" test_mode="0" comparison_mode="1" value="mpPa" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="Shwn"/>
+		</attachment>
+	</widget>
+
+	<!-- Tunnel interview Postmatch scene +++-->
+	<widget class="picture" file="backgrounds/tunnel" scale_picture="true" keep_aspect_ratio="false">
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="sect" test_mode="0" value="mPCh" skip_if_null="false"/>
+				<record get_property="sect" test_mode="0" comparison_mode="1" value="mPCa" skip_if_null="true" />
 			</list>
 			<integer id="set_property" value="Shwn"/>
 		</attachment>
@@ -174,6 +185,16 @@
 		<attachment class="test_multiple_globals_attachment" default_value="false">
 			<list id="get_properties">
 				<record get_property="sect" test_mode="0" value="TeMS" skip_if_null="false"/>
+			</list>
+			<integer id="set_property" value="Shwn"/>
+		</attachment>
+	</widget>
+
+	<!-- Private chat scene - staff -->
+	<widget class="picture" file="backgrounds/teamnews">
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="section" test_mode="equal" value="CoaC" skip_if_null="false"/>
 			</list>
 			<integer id="set_property" value="Shwn"/>
 		</attachment>
@@ -270,7 +291,7 @@
 	</widget>
 
 	<!-- Contract offer scenes -->
-	<widget class="picture" file="backgrounds/default" scale_picture="true" keep_aspect_ratio="false">
+	<widget class="picture" file="backgrounds/boardroom" scale_picture="true" keep_aspect_ratio="false">
 		<attachment class="test_multiple_globals_attachment" default_value="false">
 			<list id="get_properties">
 				<record get_property="sect" test_mode="0" value="PctO" skip_if_null="false"/>

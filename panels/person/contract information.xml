@@ -395,7 +395,6 @@
 					<integer id="value" value="40" />
 				</record>
 
-
 			</list>
 		</container>
 
@@ -554,7 +553,7 @@
 				<global id="horizontal_gap" name="ui.main_contrast_box_gap" />
 			</attachment_group>
 
-			<container class="main_subtle_box">
+			<container class="main_contrast_box" red_replacement="bg darker">
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" horizontal_inset="0" />
 
 				<container navigation_container="true">
@@ -632,11 +631,9 @@
 
 				</container>
 
-
 			</container>
 
-
-			<container class="main_subtle_box" id="pldl" width="450" navigation_container="true">
+			<container id="pldl" width="450" navigation_container="true">
 				<attachment class="show_large_horizontal" id="PDla" />
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 				<list id="properties_to_forward">
@@ -646,7 +643,7 @@
 
 					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="10" vertical_offset="10" />
 
-					<container>
+					<container class="main_contrast_box" red_replacement="bg darker">
 						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left,extend" horizontal_gap="8" />
 
 						<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="45" width="45">
@@ -668,7 +665,6 @@
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
 
-
 							<container>
 								<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" />
 
@@ -684,16 +680,13 @@
 									</widget>
 								</widget>
 
-
 							</container>
-
-
 
 						</container>
 
 					</container>
 
-					<container>
+					<container class="main_contrast_box" red_replacement="bg darker">
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="5" />
 
 						<container class="player_reports_overview_panel" id="psra" file="player/player reports overview for contract negotiations" hidden="true">
@@ -705,7 +698,6 @@
 						</container>
 					</container>
 
-
 				</container>
 
 			</container>
@@ -713,6 +705,5 @@
 		</container>
 
 	</container>
-
 
 </panel>

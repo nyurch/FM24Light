@@ -108,7 +108,7 @@
 			</container>
 
 			<container class="main_subtle_box" id="mnIf">
-				<layout class="arrange_horizontal_attachment" layout="70,-1, -1, -1, -1" offset="0" gap="4" />
+				<layout class="arrange_horizontal_attachment" layout="55,-1, -1, -1, -1" offset="0" gap="4" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
 				<container embed_in_frame="true">

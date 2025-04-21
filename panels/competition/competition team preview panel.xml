@@ -4,10 +4,11 @@
 	<container class="vertical_adaptive_container" inset="0" offset="0">
 
 		<container height="110" priority="1" navigation_container="true">
-			<layout class="arrange_horizontal_attachment" layout="-4,-3" offset="0" />
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
 			<container class="main_subtle_box" force_title_borders="true" height="110" priority="1" navigation_container="true">
-				<layout class="arrange_horizontal_attachment" layout="35,-1, -1, -1, -1, -1" offset="0" gap="4" />
+				<layout class="arrange_horizontal_attachment" layout="70,-1, -1, -1, -1, -1" offset="0" gap="4" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
 				<container embed_in_frame="true">
@@ -71,25 +72,6 @@
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
 					<widget class="text" font="label" auto_size="vertical">
-						<translation id="text" translation_id="319583" type="use" value="Squad Personality[COMMENT: club properties; club's squad's overall personality]" />
-					</widget>
-
-					<widget class="client_object_property_panel" property="Csca" font="value" alignment="left,top">
-						<record id="object_property">
-							<integer id="get_property" value="objt" />
-							<integer id="set_property" value="objt" />
-						</record>
-						<record id="widget_properties">
-							<flags id="auto_size" value="vertical" />
-						</record>
-					</widget>
-				</container>
-
-				<container>
-					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
-					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-					<widget class="text" font="label" auto_size="vertical">
 						<translation id="text" translation_id="316566" type="use" value="Finances[COMMENT: Link to club finances]" />
 					</widget>
 
@@ -125,131 +107,127 @@
 
 			</container>
 
-			<container height="110" priority="2" navigation_container="true">
-				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container class="main_subtle_box" id="mnIf">
+				<layout class="arrange_horizontal_attachment" layout="70,-1, -1, -1, -1" offset="0" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-				<container class="main_subtle_box" id="mnIf">
-					<layout class="arrange_horizontal_attachment" layout="40,-1, -1, -1, -1" offset="4" gap="4" />
-					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<container embed_in_frame="true">
+					<layout class="stick_to_sides_attachment" alignment="all" embed_in_frame="true" inset="12" />
 
-					<container embed_in_frame="true">
-						<layout class="stick_to_sides_attachment" alignment="all" embed_in_frame="true" inset="0" />
-
-						<widget class="link_button_title" id="mnGr" section="Pnpl" embed_in_frame="true">
-							<layout class="stick_to_sides_attachment" alignment="top" embed_in_frame="true" inset="2" />
-							<layout class="stick_to_sides_attachment" alignment="left" embed_in_frame="true" inset="6" />
-							<translation id="text" translation_id="433440" type="use" value="Manager[%person#1-hidden][COMMENT: competition team preview label displaying a team's manager]" />
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-
-					</container>
-
-					<widget class="object_portrait_picture" id="manG" scale_picture="true" image_alignment="centre">
+					<widget class="link_button_title" id="mnGr" section="Pnpl" embed_in_frame="true">
+						<layout class="stick_to_sides_attachment" alignment="top" embed_in_frame="true" inset="2" />
+						<layout class="stick_to_sides_attachment" alignment="left" embed_in_frame="true" inset="6" />
+						<translation id="text" translation_id="433440" type="use" value="Manager[%person#1-hidden][COMMENT: competition team preview label displaying a team's manager]" />
 						<record id="object_property">
 							<integer id="get_property" value="TMnR" />
 							<integer id="set_property" value="objt" />
 						</record>
 					</widget>
 
-					<container>
-						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
-						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-						<widget class="client_object_property_panel" property="dref" size="normal" colour="faded text" style="bold" alignment="left,bottom" height="25">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-
-						<widget class="client_object_property_panel" property="PSag" size="small" alignment="left" colour="faded text" height="20">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-
-						<widget class="client_object_property_panel" property="Pnat" size="small" alignment="left" icon_enabled="false" colour="faded text" height="20">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-					</container>
-
-					<container>
-						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
-						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-						<widget class="text" alignment="left,bottom" font="label" height="20">
-							<translation id="text" translation_id="227963" type="use" value="Reputation" />
-						</widget>
-
-						<widget class="client_object_property_panel" property="NrSr" alignment="left,centre_y" height="17">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-
-						<widget class="client_object_property_panel" property="Pcqu" size="small" colour="faded text" height="20" navigation_focus_target="false">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-					</container>
-
-					<container>
-						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
-						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-						<widget class="client_object_label" font="label" alignment="left,bottom" height="20">
-							<translation id="format" translation_id="420583" type="use" value="Manager Tenure[%person#1-hidden][COMMENT: competition team preview panel, label for how long the manager has been in their post, -hidden variable is there to use for female versions of the string if necessary]" />
-							<record id="object_property">
-								<integer id="get_property" value="TMnR"/>
-							</record>
-						</widget>
-
-						<widget class="client_object_property_panel" property="Nctc" alignment="left,top" height="24" font="value">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-						<container height="15"/>
-					</container>
-
-
-					<container>
-						<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
-						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
-
-						<widget class="text" alignment="left,bottom" font="label" height="20">
-							<translation id="text" translation_id="247713" type="use" value="Personality" />
-						</widget>
-
-						<widget class="client_object_property_panel" property="PPst" alignment="left,top" height="24" font="value">
-							<record id="object_property">
-								<integer id="get_property" value="TMnR" />
-								<integer id="set_property" value="objt" />
-							</record>
-						</widget>
-						<container height="15"/>
-					</container>
-
 				</container>
 
-				<container class="main_box" id="nMin" hidden="true">
-					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="object_portrait_picture" id="manG" scale_picture="true" image_alignment="centre">
+					<record id="object_property">
+						<integer id="get_property" value="TMnR" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
 
-					<widget class="text" alignment="centre" size="xlarge">
-						<translation id="text" translation_id="298047" type="use" value="No manager." />
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="client_object_property_panel" property="dref" size="normal" colour="faded text" style="bold" alignment="left,bottom" height="25">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+
+					<widget class="client_object_property_panel" property="PSag" size="small" alignment="left" colour="faded text" height="20">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+
+					<widget class="client_object_property_panel" property="Pnat" size="small" alignment="left" icon_enabled="false" colour="faded text" height="20">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
 					</widget>
 				</container>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="text" alignment="left,bottom" font="label" height="20">
+						<translation id="text" translation_id="227963" type="use" value="Reputation" />
+					</widget>
+
+					<widget class="client_object_property_panel" property="NrSr" alignment="left,centre_y" height="17">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+
+					<widget class="client_object_property_panel" property="Pcqu" size="small" colour="faded text" height="20" navigation_focus_target="false">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="client_object_label" font="label" alignment="left,bottom" height="20">
+						<translation id="format" translation_id="420583" type="use" value="Manager Tenure[%person#1-hidden][COMMENT: competition team preview panel, label for how long the manager has been in their post, -hidden variable is there to use for female versions of the string if necessary]" />
+						<record id="object_property">
+							<integer id="get_property" value="TMnR"/>
+						</record>
+					</widget>
+
+					<widget class="client_object_property_panel" property="Nctc" alignment="left,top" height="24" font="value">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+					<container height="15"/>
+				</container>
+
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="text" alignment="left,bottom" font="label" height="20">
+						<translation id="text" translation_id="247713" type="use" value="Personality" />
+					</widget>
+
+					<widget class="client_object_property_panel" property="PPst" alignment="left,top" height="24" font="value">
+						<record id="object_property">
+							<integer id="get_property" value="TMnR" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+					<container height="15"/>
+				</container>
+
+			</container>
+
+			<container class="main_box" id="nMin" hidden="true">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="text" alignment="centre" size="xlarge">
+					<translation id="text" translation_id="298047" type="use" value="No manager." />
+				</widget>
 			</container>
 		</container>
 

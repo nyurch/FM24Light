@@ -51,13 +51,22 @@
 					<integer id="get_property" value="FxNm" />
 				</record>
 			</widget>
-			<!--date-->
-			<widget class="date_cell" id="fxdt" alignment="centre_x" auto_size="vertical" size="10">
-				<translation id="format" value="[%date#1-long]" />
-				<record id="object_property">
-					<integer id="get_property" value="fxdt" />
-				</record>
-			</widget>
+			<container height="30">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="2" horizontal_offset="0" vertical_inset="0"/>
+				<!--stadium-->
+				<widget class="stadium_button" id="stad" auto_size="horizontal" colour="faded text" navigation_focus_target="false">
+					<translation id="no_object_text" translation_id="227505" type="use" value="Unknown Stadium"/>
+					<record id="object_property" get_property="stad"/>
+				</widget>
+				<widget class="text" auto_size="horizontal" alignment="centre" colour="faded text">
+					<string id="text" value="-"/>
+				</widget>
+				<!--date-->
+				<widget class="date_cell" id="fxdt" alignment="centre" auto_size="horizontal" colour="faded text" navigation_focus_target="false">
+					<string id="format" value="[%date#1-long]"/>
+					<record id="object_property" get_property="fxdt"/>
+				</widget>
+			</container>
 			<widget class="horizontal_subtle_divider" />
 			<widget class="stadium_picture" file="none" scale_picture="true" height="200" keep_aspect_ratio="true">
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-60"/>

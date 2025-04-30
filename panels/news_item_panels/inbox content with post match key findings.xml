@@ -17,7 +17,7 @@
 				<global id="vertical_gap" name="ui.main_box_gap" />
 			</attachment_group>
 
-			<widget class="container" id="scRL" file="widgets/match/match result scoreline with xg widget" height="60">
+			<widget class="container" id="scRL" file="widgets/extra_files/match result scoreline with xg widget and photo" height="60">
 				<record id="object_property" get_property="objt" set_property="objt" />
 			</widget>
 			<widget class="text" alignment="centre" size="large" auto_size="vertical" id="desc" />

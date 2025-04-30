@@ -1,0 +1,12 @@
+﻿<panel width="600">
+	<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+	<container class="titled_box" id="titB">
+		<translation id="text" translation_id="539044" type="use" value="Key Findings[COMMENT: AREA: Data Hub; SUB-AREA: Analyst Key findings; FR: 31585; TONE: Formal; CHARLIMIT: None NOTES: Key findings of analyst header]" />
+		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" />
+		<container class="horizontal_arrange_container" layout="-1,-1,-1,-1,-1" height="180" offset="0" gap="0" inset="0" id="keyF" />
+
+		<widget class="text" id="notA" height="300" alignment="centre" colour="faded text">
+			<translation id="text" translation_id="330275" type="use" value="Not available[COMMENT: happiness panel; text displayed when no happiness information is available]" />
+		</widget>
+	</container>
+</panel>

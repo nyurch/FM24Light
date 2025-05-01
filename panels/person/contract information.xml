@@ -29,7 +29,7 @@
 
 		<record id="default_properties" hidden="true" />
 
-		<container id="offe" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="offe" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="20" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -50,7 +50,7 @@
 			</container>
 		</container>
 
-		<container id="out" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="out" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -64,7 +64,7 @@
 			<widget class="text" id="oure" auto_size="all" alignment="centre" size="10" />
 		</container>
 
-		<container id="ythc" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="ythc" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -83,7 +83,7 @@
 			</widget>
 		</container>
 
-		<container id="loac" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="loac" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -96,7 +96,7 @@
 			</widget>
 		</container>
 
-		<container id="ontr" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="ontr" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -109,7 +109,7 @@
 			</widget>
 		</container>
 
-		<container id="pago" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="pago" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -122,7 +122,7 @@
 			</widget>
 		</container>
 
-		<container id="rndc" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="rndc" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -141,7 +141,7 @@
 			</widget>
 		</container>
 
-		<container id="cafc" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="cafc" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -160,7 +160,7 @@
 			</widget>
 		</container>
 
-		<container id="lvcc" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="lvcc" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -176,7 +176,7 @@
 			</widget>
 		</container>
 
-		<container id="huma" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="huma" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -214,7 +214,7 @@
 			</container>
 		</container>
 
-		<container id="with" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="with" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -227,7 +227,7 @@
 			</widget>
 		</container>
 
-		<container id="cnot" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="cnot" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -241,7 +241,7 @@
 		</container>
 
 		<!-- panel for boardover the transfer-->
-		<container id="btop" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="btop" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -251,7 +251,7 @@
 			</widget>
 		</container>
 
-		<container id="wpla" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="wpla" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -264,7 +264,7 @@
 			</widget>
 		</container>
 
-		<container id="halo" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="halo" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -277,7 +277,7 @@
 			</widget>
 		</container>
 
-		<container id="halt" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="halt" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -290,7 +290,7 @@
 			</widget>
 		</container>
 
-		<container id="hatr" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="hatr" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -303,7 +303,7 @@
 			</widget>
 		</container>
 
-		<container id="stok" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="stok" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -316,7 +316,7 @@
 			</widget>
 		</container>
 
-		<container id="stac" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="stac" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -329,7 +329,7 @@
 			</widget>
 		</container>
 
-		<container id="exch" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="exch" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -339,7 +339,7 @@
 			</widget>
 		</container>
 
-		<container id="pfnc" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="pfnc" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
@@ -360,7 +360,7 @@
 
 		</container>
 
-		<container id="impo" class="empty_state" navigation_container="true" navigation_container_allow_empty="true">
+		<container id="impo" class="empty_state" appearance="boxes/main/subtle_custom/paper" red_replacement="bg" navigation_container="true" navigation_container_allow_empty="true">
 			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 

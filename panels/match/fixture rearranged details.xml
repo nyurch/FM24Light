@@ -79,9 +79,7 @@
 		</widget>
 	</container>
 
-	<widget class="horizontal_divider"/>
-
-	<container height="340">
+	<container height="400">
 		<layout class="horizontal_arrange" horizontal_layout="-1,600,-1" />
 		<!-- fake -->
 		<container class="horizontal_adaptive_container">
@@ -102,7 +100,5 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
 		</container>
 	</container>
-
-	<widget class="horizontal_divider"/>
 
 </panel>

@@ -193,7 +193,7 @@
 			<widget class="picture" height="-1" width="-1" scale_picture="true" keep_aspect_ratio="true" file="main menu/my_logo" image_alignment="centre"/>
 		</container>
 		<widget class="button" id="YFMD" appearance="buttons/custom/over state only/button">
-			<record id="click_event" event_id="OURL" url="https://community.sports-interactive.com/forums/topic/571853-fm23-fm24-fm-light-skin-last-update-24112024/" />
+			<record id="click_event" event_id="OURL" url="https://community.sports-interactive.com/forums/topic/571853-fm23-fm24-fm-light-skin-last-update-13052025/" />
 			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 		</widget>
 	</container>

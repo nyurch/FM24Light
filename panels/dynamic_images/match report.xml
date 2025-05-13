@@ -11,9 +11,27 @@
 		<!-- PROP_TEAM -->
 		<record id="object_property" get_property="Ttea" set_property="objt"/>
 
-			<widget class="client_object_viewer_xml_panel" file="club/extra_panels/stadium_pictures">
-				<record id="object_property" get_property="objt" set_property="objt"/>
-			</widget>
+			<container id="NatC">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<record id="object_property">
+					<integer id="get_property" value="TISC" />
+					<integer id="set_property" value="hidn" />
+				</record>
+				<widget class="client_object_viewer_xml_panel" id="NatS" file="club/extra_panels/stadium_pictures">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="TsHA" />
+								<integer id="set_property" value="Shwn" />
+							</record>
+							<record>
+								<integer id="get_property" value="TsFI" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
 
 		</container>
 	</container>

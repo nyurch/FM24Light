@@ -4,7 +4,6 @@ this file contains a list of all of the sections in the game
 <properties>
 	<string id="text" value="Sidebar" />
 	<list id="items">
-
 		<!--home section-->
 		<record id="home">
 			<list id="items">
@@ -110,10 +109,8 @@ this file contains a list of all of the sections in the game
 					</list>
 				</record>
 				<record id="TspL" />
-
 			</list>
 		</record>
-
 		<!-- transfer deadline day section -->
 		<record id="TDDy">
 			<list id="items">
@@ -123,7 +120,6 @@ this file contains a list of all of the sections in the game
 				<record id="Ptwd" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--inbox section-->
 		<record id="inbo">
 			<list id="items">
@@ -151,7 +147,6 @@ this file contains a list of all of the sections in the game
 				<record id="Ptwo" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--schedule section-->
 		<record id="sche">
 			<list id="items">
@@ -164,7 +159,6 @@ this file contains a list of all of the sections in the game
 				<!--add team fixtures here-->
 			</list>
 		</record>
-
 		<!--job centre section-->
 		<record id="jobc">
 			<list id="items">
@@ -172,7 +166,6 @@ this file contains a list of all of the sections in the game
 				<record id="Pjjc" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--job security section-->
 		<record id="jobs">
 			<list id="items">
@@ -180,7 +173,6 @@ this file contains a list of all of the sections in the game
 				<record id="Pjjs" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--squad section (club)-->
 		<record id="squC">
 			<list id="items">
@@ -220,7 +212,6 @@ this file contains a list of all of the sections in the game
 				<record id="TDbg" item_type="ACTT" human_object_type="HOTt" ISda="true" />-->
 			</list>
 		</record>
-
 		<!--squad planner section-->
 		<record id="plaC">
 			<list id="items">
@@ -252,7 +243,6 @@ this file contains a list of all of the sections in the game
 				</record>
 			</list>
 		</record>
-
 		<!--Injuries section-->
 		<record id="Inju">
 			<list id="items">
@@ -268,7 +258,6 @@ this file contains a list of all of the sections in the game
 				<record id="InSS" human_object_type="HOTt" />
 			</list>
 		</record>
-
 		<!--squad section (nation)-->
 		<record id="squN">
 			<list id="items">
@@ -317,7 +306,6 @@ this file contains a list of all of the sections in the game
 				<record id="TDbg" item_type="ACTT" human_object_type="HOTt" ISda="true" />-->
 			</list>
 		</record>
-
 		<!--tactics section-->
 		<record id="tact">
 			<list id="items">
@@ -374,23 +362,19 @@ this file contains a list of all of the sections in the game
 				<record id="TeMP" human_object_type="HOTt" />
 				<!--Mentoring-->
 				<record id="TeMn" human_object_type="HOTt" />
-
 				<!--individual-->
 				<record id="TeTi" human_object_type="HOTt" />
 				<!--rest-->
 				<record id="TeTR" human_object_type="HOTt" />
-
 				<!--coach assignments-->
 				<record id="TeTc" human_object_type="HOTt" />
 			</list>
 		</record>
-
 		<!--Chemistry section-->
 		<record id="dyna">
 			<list id="items">
 				<!--Dressing Room Overview-->
 				<record id="tHOv" human_object_type="HOTt" />
-
 				<!--Team Hierarchy-->
 				<record id="tHie" human_object_type="HOTt" />
 				<!--Team Social Groups-->
@@ -405,7 +389,6 @@ this file contains a list of all of the sections in the game
 				<record id="TeMS" human_object_type="HOTt" />
 				<!--assistant team talk feedback-->
 				<record id="tAsF" human_object_type="HOTt" />
-
 				<!--debug-->
 				<record id="Debu" ISda="true">
 					<string id="text" value="Debug" />
@@ -414,16 +397,13 @@ this file contains a list of all of the sections in the game
 						<record id="cocs" human_object_type="HOTc" />
 					</list>
 				</record>
-
 			</list>
 		</record>
-
 		<!--Data Hub section-->
 		<record id="datH">
 			<list id="items">
 				<!--Data Hub Overview-->
 				<record id="DHtO" human_object_type="HOTt" />
-
 				<!--Data Hub Team Analytics-->
 				<record id="dhTe">
 					<translation id="text" translation_id="243484" type="use" value="Team[COMMENT:player history screen heading]" />
@@ -437,7 +417,6 @@ this file contains a list of all of the sections in the game
 				</record>
 				<!--Data Hub Player Analytics-->
 				<record id="DHpA" human_object_type="HOTt" />
-
 				<record id="matc">
 					<translation id="text" translation_id="257238 " type="use" value="Matches" />
 					<list id="items">
@@ -473,7 +452,6 @@ this file contains a list of all of the sections in the game
 				<record id="comp" human_object_type="HOTt" />
 			</list>
 		</record>
-
 		<!--scouting section (unemployed)-->
 		<record id="scoU">
 			<list id="items">
@@ -487,17 +465,13 @@ this file contains a list of all of the sections in the game
 				<record id="pssh" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--scouting section (club)-->
 		<record id="scoC">
 			<list id="items">
-
 				<!--Overview-->
 				<record id="tsov" human_object_type="HOTh" />
-
 				<!--Scouting Centre-->
 				<record id="tssc" human_object_type="HOTc" />
-
 				<record id="play">
 					<translation id="text" translation_id="232113" type="use" value="Players" />
 					<list id="items">
@@ -507,10 +481,8 @@ this file contains a list of all of the sections in the game
 						<record id="sasp" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--draft player search-->
 				<record id="drfS" human_object_type="HOTc" />
-
 				<record id="assi">
 					<translation id="text" translation_id="509169" type="use" value="Recruitment Focus[COMMENT: AREA: Scouting/Recruitment; SUB-AREA:Recruitment focus dialog; FR-BN: 24174; NOTE: Recruitment focus dialog title]" />
 					<list id="items">
@@ -520,8 +492,6 @@ this file contains a list of all of the sections in the game
 						<record id="tspo" human_object_type="HOTc" />
 					</list>
 				</record>
-
-
 				<!--Scouting Coverage-->
 				<record id="tscv">
 					<translation id="text" translation_id="557615" type="use" value="Scouting Coverage[COMMENT: AREA: Scouting; SUB-AREA: Scouting Coverage; FR-BN: FM-4038; NOTE: section title for the new Scouting Coverage area, which merges Scout Assignments and Knowledge]" />
@@ -534,7 +504,6 @@ this file contains a list of all of the sections in the game
 						<record id="trpo" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--Shortlist-->
 				<record id="shls">
 					<translation id="text" translation_id="227994" type="use" value="Shortlist" />
@@ -545,16 +514,13 @@ this file contains a list of all of the sections in the game
 						<record id="tsdl" human_object_type="HOTc" />
 					</list>
 				</record>
-
 			</list>
 		</record>
-
 		<!--scouting section (nation)-->
 		<record id="scoN">
 			<list id="items">
 				<!--scouting centre-->
 				<record id="tssc" human_object_type="HOTc" />
-
 				<record id="play">
 					<translation id="text" translation_id="232113" type="use" value="Players" />
 					<list id="items">
@@ -570,7 +536,6 @@ this file contains a list of all of the sections in the game
 						<record id="rcnt" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<record id="assi">
 					<translation id="text" translation_id="251956" type="use" value="Assignments[COMMENT - team screen section; Scouting; title; current assignments]" />
 					<list id="items">
@@ -584,7 +549,6 @@ this file contains a list of all of the sections in the game
 				</record>
 			</list>
 		</record>
-
 		<!--transfers section-->
 		<record id="tran">
 			<list id="items">
@@ -612,12 +576,10 @@ this file contains a list of all of the sections in the game
 				<record id="tdra" human_object_type="HOTc" />
 				<!--offer to MLS clubs-->
 				<record id="offM" human_object_type="HOTc" />
-
 				<!-- debug Transfers -->
 				<record id="cdtr" human_object_type="HOTc" />
 			</list>
 		</record>
-
 		<!--club section-->
 		<record id="club">
 			<list id="items">
@@ -659,9 +621,9 @@ this file contains a list of all of the sections in the game
 						<record id="hipl" human_object_type="HOTc" />
 						<!--notes-->
 						<record id="Tnot" human_object_type="HOTc" />
-
 					</list>
 				</record>
+				<record id="tciX" human_object_type="HOTc" />
 				<!--debug-->
 				<record id="Debu" ISda="true">
 					<string id="text" value="Debug" />
@@ -688,7 +650,6 @@ this file contains a list of all of the sections in the game
 				</record>
 			</list>
 		</record>
-
 		<!--staff section-->
 		<record id="staf">
 			<list id="items">
@@ -703,7 +664,6 @@ this file contains a list of all of the sections in the game
 						<record id="tcsp" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--responsibilities-->
 				<record id="mnop">
 					<translation id="text" translation_id="335274" type="use" value="Responsibilities[COMMENT: Manager main/top menu: national team options when team name is not visible]" />
@@ -722,7 +682,6 @@ this file contains a list of all of the sections in the game
 						<record id="mnsp" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--staff search-->
 				<record id="stfs" human_object_type="HOTc" />
 				<!--staff shortlist-->
@@ -733,12 +692,10 @@ this file contains a list of all of the sections in the game
 				<record id="Pjjs" human_object_type="HOTh" />
 			</list>
 		</record>
-
 		<!--board section-->
 		<record id="boar">
 			<list id="items">
 				<record id="tcbr" human_object_type="HOTc" />
-
 				<record id="Cono">
 					<translation id="text" translation_id="491844" type="use" value="Performance[COMMENT: AREA: Boardroom; SUB-AREA: Appraisal of Performance; FR-BN: n/a; TONE: Formal; CHARLIMIT: Short, one word; REF-ID: n/a; NOTE: this is replacing Confidence as the singular term relating to the Boardroom and the evaluation of managerial performance]" />
 					<list id="items">
@@ -762,7 +719,6 @@ this file contains a list of all of the sections in the game
 						<record id="tsqc" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<record id="Supp">
 					<translation id="text" translation_id="447646" type="use" value="Supporters[COMMENT:Team Dynamics: header for the supporters' take on the manager's level of support within the squad]" />
 					<list id="items">
@@ -772,28 +728,21 @@ this file contains a list of all of the sections in the game
 						<record id="gsup" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<record id="BoPr" human_object_type="HOTc" />
-
 				<record id="sppo" human_object_type="HOTc" />
-
 				<!-- club ambitions meeting -->
 				<record id="Cvim" human_object_type="HOTc" />
-
 				<!-- debug club ambitions -->
 				<record id="cdam" human_object_type="HOTc" />
-
 				<!--meeting-->
 				<record id="breq" human_object_type="HOTc" />
 				<!-- meeting summary -->
 				<record id="brqS" human_object_type="HOTc" />
-
 				<!--actions-->
 				<!--Buy 3rd DP Slot (Club)-->
 				<record id="Cxdp" item_type="ACTT" human_object_type="HOTc" />
 			</list>
 		</record>
-
 		<!--finances section-->
 		<record id="fina">
 			<translation id="text" translation_id="229821" type="use" value="Finances" />
@@ -816,7 +765,6 @@ this file contains a list of all of the sections in the game
 						<record id="cFin" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--financial fair play-->
 				<record id="FFPm">
 					<translation id="text" translation_id="383321" type="use" value="FFP[COMMENT:Financial Fair Play (FFP) label]" />
@@ -827,7 +775,6 @@ this file contains a list of all of the sections in the game
 						<record id="tFpS" human_object_type="HOTc" />
 					</list>
 				</record>
-
 				<!--debt and Loans-->
 				<record id="tFid" human_object_type="HOTc" />
 				<!--sponsors-->
@@ -836,10 +783,8 @@ this file contains a list of all of the sections in the game
 				<record id="tFip" human_object_type="HOTc" />
 				<!--league specific-->
 				<record id="tFls" human_object_type="HOTc" />
-
 			</list>
 		</record>
-
 		<!--national pool section-->
 		<record id="pool">
 			<list id="items">
@@ -849,7 +794,6 @@ this file contains a list of all of the sections in the game
 				<record id="ncfp" human_object_type="HOTc" />
 			</list>
 		</record>
-
 		<!--nation section-->
 		<record id="nati">
 			<list id="items">
@@ -937,7 +881,6 @@ this file contains a list of all of the sections in the game
 				</record>
 			</list>
 		</record>
-
 		<!--Youth development Centre section-->
 		<record id="yDcT">
 			<list id="items">
@@ -947,8 +890,6 @@ this file contains a list of all of the sections in the game
 				<record id="ytLp" human_object_type="HOTc" />
 				<!-- Youth Development youth candidates-->
 				<record id="ytYc" human_object_type="HOTc" />
-
-
 				<record id="staf">
 					<translation id="text" translation_id="229528" type="use" value="Staff" />
 					<list id="items">
@@ -1001,21 +942,17 @@ this file contains a list of all of the sections in the game
 						<record id="pasn" human_object_type="HOTm" />
 					</list>
 				</record>
-
 				<!-- pre match briefings -->
 				<record id="phBR" human_object_type="HOTm" />
 				<!-- pre match briefings -->
 				<record id="paBR" human_object_type="HOTm" />
-
 				<!-- pre match briefings -->
 				<record id="phTA" human_object_type="HOTm" />
 				<!-- pre match briefings -->
 				<record id="paTA" human_object_type="HOTm" />
-
 				<!--stat pack-->
 				<record id="pmms" human_object_type="HOTm" />
 			</list>
 		</record>
 	</list>
-
 </properties>

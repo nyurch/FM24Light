@@ -13,7 +13,6 @@
 		<integer id="tcSS" value="tcsp" />
 		<integer id="Ptra" value="PInj" />
 	</record>
-
 	<!-- Defaults These are applied to all sections for ui settings currently
 		     and can then be override on a per section basis -->
 	<record id="section_defaults">
@@ -26,7 +25,6 @@
 			<boolean id="hide_pre_match_details" value="false" />
 		</record>
 	</record>
-
 	<!-- handy XML variable used when you want to hide multiple things to make a panel "FULLSCREEN"-->
 	<set_var name="full_screen_ui_settings">
 		<record>
@@ -35,7 +33,6 @@
 			<boolean id="hide_tabs" value="true" />
 		</record>
 	</set_var>
-
 	<set_var name="matchday_header_data">
 		<record>
 			<symbol id="class" value="client_object_viewer_xml_panel" />
@@ -45,8 +42,6 @@
 			</record>
 		</record>
 	</set_var>
-
-
 	<set_var name="past_match_header_data">
 		<record>
 			<symbol id="class" value="match_titlebar_panel" />
@@ -57,7 +52,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="interaction_header_data">
 		<record>
 			<symbol id="class" value="interaction_header_panel" />
@@ -67,35 +61,27 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="tactical_meeting_header_title">
 		<translation id="title" translation_id="515153" type="use" value="Tactical Meeting[COMMENT: AREA: UI; SUB-AREA: Continue game; NOTE: continue button text when team selection for the next match is next screen to appear]" />
 	</set_var>
-
 	<set_var name="team_selection_header_title">
 		<translation id="title" translation_id="258583" type="use" value="Team Selection[COMMENT - continue button text when team selection for the next match is next screen to appear]" />
 	</set_var>
-
 	<set_var name="pre_match_briefing_header_title">
 		<translation id="title" translation_id="443673" type="use" value="Briefing[COMMENT: title for pre matching briefing before match]" />
 	</set_var>
-
 	<set_var name="team_news_header_title">
 		<translation id="title" translation_id="515154" type="use" value="Team News[COMMENT: AREA: Match; SUB-AREA: Pre match flow; FR: 30889; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for pre match flow screen that shows the Teams sheets along with various news stuff and backroom advice]" />
 	</set_var>
-
 	<set_var name="tunnel_interview_header_title">
 		<translation id="title" translation_id="513702" type="use" value="Broadcast Interview[COMMENT: AREA: responsibilities; SUB-AREA: short description of responsibility; NOTE: these used to be tunnel interviews, we've renamed them]" />
 	</set_var>
-
 	<set_var name="team_talk_header_title">
 		<translation id="title" translation_id="247846" type="use" value="Team Talk[COMMENT - half time team talk column on team talk screen]" />
 	</set_var>
-
 	<set_var name="penalty_shootout_header_title">
 		<translation id="title" translation_id="515155" type="use" value="Choose Penalty Takers[COMMENT: AREA: Match Header Panel Title; SUB-AREA: Penalty Shootout Match Header Title; FR: 31533; TONE: Formal; CHARLIMIT: None; NOTE:]" />
 	</set_var>
-
 	<set_var name="changing_room_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -107,7 +93,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="post_match_changing_room_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -119,7 +104,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="boardroom_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -131,7 +115,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="manager_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -143,7 +126,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="pre_match_briefing_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -155,7 +137,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="team_meeting_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -167,7 +148,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="interview_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -179,7 +159,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="welcome_pack_scene">
 		<record>
 			<symbol id="class" value="container" />
@@ -194,7 +173,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="cup_draw_scene">
 		<record>
 			<symbol id="class" value="environment" />
@@ -206,7 +184,6 @@
 			</record>
 		</record>
 	</set_var>
-
 	<set_var name="matchday_footer_data">
 		<record>
 			<symbol id="class" value="match_footer_panel" />
@@ -216,9 +193,7 @@
 			</record>
 		</record>
 	</set_var>
-
 	<list id="items">
-
 		<!-- application -->
 		<record id="Aint" section="Aint">
 			<translation id="text" translation_id="316832" type="use" value="Main Menu[COMMENT: application screen; main menu section]" />
@@ -227,7 +202,6 @@
 			</record>
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 		</record>
-
 		<record id="Asuf" section="Asuf" help_page="new_game">
 			<translation id="text" translation_id="320504" type="use" value="Editor Data Files[COMMENT: start new game screen; select user files section]" />
 			<record id="widget_info">
@@ -301,7 +275,6 @@
 			</record>
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 		</record>
-
 		<!--<record id="Apga" section="Apga" help_page="preferences">
 			<translation id="text" translation_id="330300" type="use" value="Overview[COMMENT: preferences: most important settings section (short) name]" />
 			<record id="widget_info">
@@ -356,7 +329,6 @@
 				<symbol id="class" value="preferences_debug_channels_panel" />
 			</record>
 		</record>
-
 		<!--<record id="Apne" section="Apne" help_page="network">
 			<translation id="text" translation_id="349026" type="use" value="Online Game Preferences[COMMENT: preferences section title]" />
 			<record id="widget_info">
@@ -400,7 +372,6 @@
 				<symbol id="class" value="leaderboard_panel" />
 			</record>
 		</record>
-
 		<!-- game -->
 		<record id="Gsta" section="Gsta" help_page="options">
 			<translation id="text" translation_id="242853" type="use" value="Status" />
@@ -665,7 +636,6 @@
 							<integer id="sort" value="Trst" />
 						</record>
 					</record>
-
 					<record id="geya">
 						<translation id="text" translation_id="596868" type="use" value="Youth Academy[COMMENT: AREA: World Clubs list category; NOTE: Shows off the best youth systems in football]" />
 						<record id="view">
@@ -678,7 +648,6 @@
 							<integer id="sort" value="Tysc" />
 						</record>
 					</record>
-
 					<record id="geyg">
 						<translation id="text" translation_id="596869" type="use" value="Youth Graduates[COMMENT: AREA: World Clubs list category; NOTE: Shows off the best youth systems in football, how many key graduates have come from it]" />
 						<record id="view">
@@ -691,7 +660,6 @@
 							<integer id="sort" value="Tgit" />
 						</record>
 					</record>
-
 					<record id="glsr">
 						<translation id="text" translation_id="232092" type="use" value="Top Goalscorer" />
 						<record id="view">
@@ -855,7 +823,6 @@
 				<string id="file" value="person/retired people list" />
 			</record>
 		</record>
-
 		<!--person-->
 		<record id="Psnp" section="Psnp" help_page="manager_snapshot">
 			<translation id="text" translation_id="257222" type="use" value="Home[COMMENT: quick link icon hint]" />
@@ -923,7 +890,6 @@
 				<symbol id="class" value="manager_promises_panel" />
 			</record>
 		</record>
-
 		<record id="Mtar" section="Mtar">
 			<translation id="text" translation_id="596178" type="use" value="Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
 			<record id="widget_info">
@@ -962,7 +928,6 @@
 			<var id="custom_background_scene_data" name="manager_scene" />
 			<integer id="main_content_margin" value="0" />
 		</record>
-
 		<record id="ConS" section="ConS" help_page="manager_interaction">
 			<record id="widget_info">
 				<symbol id="class" value="interaction_summary_panel" />
@@ -1023,7 +988,6 @@
 			</record>
 			<integer id="main_content_margin" value="0" />
 		</record>
-
 		<record id="PesR" section="PesR" SaiC="true">
 			<translation id="text" translation_id="509217" type="use" value="End of Season Review[COMMENT: AREA: End of season pack; FR-BN: 32407; NOTE: End of season review title]" />
 			<record id="widget_info">
@@ -1045,7 +1009,6 @@
 				</record>
 			</record>
 		</record>
-
 		<record id="PrMD" section="PrMD">
 			<translation id="text" translation_id="509177" type="use" value="Recruitment Meeting[COMMENT: AREA: Recruitment meeting; FR-BN: 32765; NOTE: Recruitment meeting title]" />
 			<record id="widget_info">
@@ -1061,7 +1024,6 @@
 			</record>
 			<var id="custom_background_scene_data" name="boardroom_scene" />
 		</record>
-
 		<record id="PBAm" section="PBAm">
 			<translation id="text" translation_id="538836" type="use" value="Staff Meeting[COMMENT: AREA: Staff; SUB-AREA: Meeting agenda; FR-BN: 35362; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; NOTE: number of topics to be discussed in meeting]" />
 			<record id="widget_info">
@@ -1079,7 +1041,6 @@
 			<integer id="main_content_margin" value="0" />
 			<var id="custom_background_scene_data" name="boardroom_scene" />
 		</record>
-
 		<record id="PrCS" section="PrCS" help_page="news">
 			<translation id="text" translation_id="515157" type="use" value="Press Conference Summary[COMMENT: AREA: Press Conference; SUB-AREA: Header section; FR-BN: 32025; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for press conference summary screen]" />
 			<record id="widget_info">
@@ -1414,14 +1375,12 @@
 				<symbol id="class" value="player_history_achievements_panel" />
 			</record>
 		</record>
-
 		<record id="PBio" section="PBio" help_page="player#history">
 			<translation id="text" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
 			<record id="widget_info">
 				<symbol id="class" value="person_history_biography_panel" />
 			</record>
 		</record>
-
 		<record id="Mchp" section="Mchp">
 			<translation id="text" translation_id="382298" type="use" value="Job History[COMMENT: panel title; panel showing the history of manager's club management]" />
 			<record id="widget_info">
@@ -1538,7 +1497,6 @@
 				<symbol id="class" value="debug_dynamic_images_panel" />
 			</record>
 		</record>
-
 		<!-- team container -->
 		<record id="NovP" section="NovP" help_page="nation#overview">
 			<translation id="text" translation_id="320576" type="use" value="Profile[COMMENT: title of human attributes screen]" />
@@ -1550,6 +1508,13 @@
 			<translation id="text" translation_id="320576" type="use" value="Profile[COMMENT: title of human attributes screen]" />
 			<record id="widget_info">
 				<symbol id="class" value="club_overview_panel" />
+			</record>
+		</record>
+		<record id="tciX" section="tciX" help_page="club_info">
+			<translation id="text" translation_id="227745" type="use" value="Media" />
+			<record id="widget_info">
+				<symbol id="class" value="club_overview_panel" />
+				<string id="file" value="club/media panel" />
 			</record>
 		</record>
 		<record id="tcss" section="tcss" help_page="nation#season_summary">
@@ -1642,7 +1607,6 @@
 				<symbol id="class" value="club_squad_confidence_panel" />
 			</record>
 		</record>
-
 		<record id="supp" section="supp" help_page="confidence">
 			<translation id="text" translation_id="320609" type="use" value="Supporter Profile" />
 			<record id="widget_info">
@@ -1661,7 +1625,6 @@
 				<symbol id="class" value="supporter_profile_panel" />
 			</record>
 		</record>
-
 		<record id="tfin" section="tfin" help_page="finances#summary">
 			<translation id="text" translation_id="247971" type="use" value="Summary" />
 			<record id="widget_info">
@@ -2013,7 +1976,6 @@
 				<symbol id="class" value="team_container_staff_overview_panel" />
 			</record>
 		</record>
-
 		<!--team staff sections for YOuth Development centre-->
 		<record id="tsYD" section="tsYD" help_page="squad_menu#staff" SaiC="true">
 			<translation id="text" translation_id="247414" type="use" value="Overview" />
@@ -2111,7 +2073,6 @@
 				<string id="file" value="team/team container match responsibilities" />
 			</record>
 		</record>
-
 		<record id="mnsp" section="mnsp" help_page="manager_options#setpieces">
 			<translation id="text" translation_id="229307" type="use" value="Set Pieces[COMMENT - training category]" />
 			<record id="widget_info">
@@ -2119,7 +2080,6 @@
 				<string id="file" value="team/team container set piece tactics responsibilities" />
 			</record>
 		</record>
-
 		<record id="tcnp" section="tcnp">
 			<translation id="text" translation_id="230335" type="use" value="National Pool" />
 			<record id="widget_info">
@@ -2154,35 +2114,30 @@
 				<symbol id="class" value="club_players_panel" />
 			</record>
 		</record>
-
 		<record id="tHOv" section="tHOv">
 			<translation id="text" translation_id="450832" type="use" value="Overview[COMMENT - team screen section; Dynamics section; Dressing Room OVerview Section]" />
 			<record id="widget_info">
 				<symbol id="class" value="team_chemistry_overview_panel" />
 			</record>
 		</record>
-
 		<record id="tHie" section="tHie">
 			<translation id="text" translation_id="447635" type="use" value="Hierarchy[COMMENT: The column name representing the Player Hierarchy details of the person]" />
 			<record id="widget_info">
 				<symbol id="class" value="team_chemistry_hierarchy_panel" />
 			</record>
 		</record>
-
 		<record id="tHSg" section="tHSg">
 			<translation id="text" translation_id="450833" type="use" value="Social Groups[COMMENT - team screen section; Dynamics section; Social Groups Section]" />
 			<record id="widget_info">
 				<symbol id="class" value="team_chemistry_social_groups_panel" />
 			</record>
 		</record>
-
 		<record id="tHap" section="tHap">
 			<translation id="text" translation_id="447639" type="use" value="Happiness[COMMENT - team screen section; Dynamics section; Dressing Room happiness Section]" />
 			<record id="widget_info">
 				<symbol id="class" value="team_chemistry_happiness_panel" />
 			</record>
 		</record>
-
 		<record id="TCii" section="TCii">
 			<translation id="text" translation_id="335123" type="use" value="Int Friendly Availability[COMMENT: international friendly instructions panel; title text for panel]" />
 			<record id="widget_info">
@@ -2273,7 +2228,6 @@
 				<string id="file" value="team/team opposition report analytics panel" />
 			</record>
 		</record>
-
 		<record id="DHpA" section="DHpA">
 			<translation id="text" translation_id="227966" type="use" value="Player" />
 			<record id="widget_info">
@@ -2316,12 +2270,10 @@
 			<record id="widget_info">
 				<symbol id="class" value="client_object_viewer_xml_panel" />
 				<string id="file" value="person/shortlist overview" />
-
 			</record>
 		</record>
 		<record id="mDyT" section="mDyT" SaiC="true">
 			<translation id="text" translation_id="560970" type="use" value="View Timeline[COMMENT: AREA: Dynamic Timeline; SUB-AREA: main section; FR-BN: 24213; NOTE: Panel displays a timeline of managers history]" />
-
 			<record id="widget_info">
 				<symbol id="class" value="manager_dynamic_timeline_panel" />
 			</record>
@@ -2595,7 +2547,6 @@
 				<symbol id="class" value="club_transfers_debug_panel" />
 			</record>
 		</record>
-
 		<!--youth development section-->
 		<record id="ythD" section="ythD">
 			<translation id="text" translation_id="247414" type="use" value="Overview" />
@@ -2615,14 +2566,12 @@
 				<symbol id="class" value="youth_development_youth_candidates_panel" />
 			</record>
 		</record>
-
 		<record id="ydTo" section="ydTo" SaiC="true">
 			<translation id="text" translation_id="247414" type="use" value="Overview" />
 			<record id="widget_info">
 				<symbol id="class" value="youth_development_team_overview" />
 			</record>
 		</record>
-
 		<record id="ydSQ" section="ydSQ" SaiC="true">
 			<translation id="text" translation_id="229527" type="use" value="Squad" />
 			<record id="widget_info">
@@ -2630,28 +2579,24 @@
 				<string id="should_add_bullets" value="false" />
 			</record>
 		</record>
-
 		<record id="ydFi" section="ydFi" SaiC="true">
 			<translation id="text" translation_id="242258" type="use" value="Fixtures" />
 			<record id="widget_info">
 				<symbol id="class" value="fixtures_list_panel" />
 			</record>
 		</record>
-
 		<record id="ydTT" section="ydTT" SaiC="true">
 			<translation id="text" translation_id="282227" type="use" value="Tactics[COMMENT: match analysis panel; title header]" />
 			<record id="widget_info">
 				<symbol id="class" value="youth_development_team_tactics_panel" />
 			</record>
 		</record>
-
 		<record id="ydTr" section="ydTr" SaiC="true">
 			<translation id="text" translation_id="242773" type="use" value="Training" />
 			<record id="widget_info">
 				<symbol id="class" value="youth_development_team_training" />
 			</record>
 		</record>
-
 		<record id="ydDy" section="ydDy" SaiC="true">
 			<translation id="text" translation_id="447669" type="use" value="Dynamics[COMMENT: Manager Main/Top Menu; link to Dynamics screen showcasing a representation of interpersonal relationships at the club]" />
 			<record id="widget_info">
@@ -2659,7 +2604,6 @@
 				<string id="file" value="team/youth development dynamics panel" />
 			</record>
 		</record>
-
 		<record id="ydCM" section="ydCM" SaiC="true">
 			<translation id="text" translation_id="316654" type="use" value="Competitions[COMMENT: search panel results tab; Show competition results]" />
 			<record id="widget_info">
@@ -2667,15 +2611,12 @@
 				<string id="file" value="team/youth development competitions panel" />
 			</record>
 		</record>
-
 		<record id="ydMA" section="ydMA" SaiC="true">
 			<translation id="text" translation_id="319905" type="use" value="Match[COMMENT: Manager main/top menu: human manager's game settings]" />
 			<record id="widget_info">
 				<symbol id="class" value="youth_development_team_match_analysis" />
 			</record>
 		</record>
-
-
 		<!--team-->
 		<record id="TeSq" section="TeSq" help_page="squad_menu">
 			<translation id="text" translation_id="257300" type="use" value="Overview[COMMENT: Overview menu item on the notes view menu]" />
@@ -2859,7 +2800,6 @@
 				<string id="file" value="team/analysis stats pack" />
 			</record>
 		</record>
-
 		<!--Chalkboard comparitson not currently used, but kept here for readding if needed in future-->
 		<record id="TeMA" section="TeMA" help_page="fixtures" SaiC="true">
 			<translation id="text" translation_id="319905" type="use" value="Match[COMMENT: Manager main/top menu: human manager's game settings]" />
@@ -3003,7 +2943,6 @@
 				<symbol id="class" value="team_competitions_overview_panel" />
 			</record>
 		</record>
-
 		<!-- competition -->
 		<record id="ccop" section="ccop">
 			<translation id="text" translation_id="336602" type="use" value="Profile[COMMENT: title of competition overview panel]" />
@@ -3320,7 +3259,6 @@
 				<symbol id="class" value="competition_debug_transfer_panel" />
 			</record>
 		</record>
-
 		<record id="csin" section="csin" help_page="league_comp#injury_table">
 			<translation id="text" translation_id="247965" type="use" value="Injury Table" />
 			<record id="widget_info">
@@ -3360,19 +3298,16 @@
 			</record>
 		</record>
 		<!-- fixture -->
-
 		<record id="pmms" section="pmms">
 			<translation id="text" translation_id="348325" type="use" value="Stat Pack[COMMENT: sections.xml, pre match stats pack panel header text]" />
 			<record id="widget_info">
 				<symbol id="class" value="pre_match_stats_panel" />
 			</record>
 		</record>
-
 		<record id="phtc" section="phtc" help_page="tactics">
 			<translation id="text" translation_id="247414" type="use" value="Overview" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_overview_panel" />
@@ -3381,22 +3316,18 @@
 					<boolean id="request_confirmation_from_server" value="true" />
 				</record>
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
-
 		</record>
 		<record id="PhcT" section="PhcT" help_page="tactics">
 			<translation id="text" translation_id="229408" type="use" value="Team" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_team_instructions_panel" />
@@ -3409,14 +3340,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="PhcP" section="PhcP" help_page="tactics">
 			<translation id="text" translation_id="227966" type="use" value="Player" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_player_instructions_panel" />
@@ -3429,14 +3358,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="phOI" section="phOI" help_page="tactics">
 			<translation id="text" translation_id="336534" type="use" value="Opposition[COMMENT - opposition team instructions on match tactics]" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_opposition_instructions_panel" />
@@ -3449,14 +3376,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="PhcS" section="PhcS" help_page="tactics">
 			<translation id="text" translation_id="229307" type="use" value="Set Pieces[COMMENT - training category]" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_set_piece_routine_container_panel" />
@@ -3470,14 +3395,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="PhcN" section="PhcN" help_page="tactics">
 			<translation id="text" translation_id="335212" type="use" value="Penalties[COMMENT: sections.xml, tactics section header text]" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_penalty_takers_panel" />
@@ -3490,14 +3413,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="PhcC" section="PhcC" help_page="tactics">
 			<translation id="text" translation_id="247736" type="use" value="Captains" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_captains_panel" />
@@ -3510,14 +3431,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="phsn" section="phsn" help_page="squad_menu">
 			<translation id="text" translation_id="234055" type="use" value="Squad Numbers" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_squad_numbers_panel" />
@@ -3532,14 +3451,12 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
 		<record id="patc" section="patc" help_page="tactics">
 			<translation id="text" translation_id="247414" type="use" value="Overview" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_overview_panel" />
@@ -3547,38 +3464,31 @@
 					<boolean id="minimise_initial_state" value="true" />
 					<boolean id="request_confirmation_from_server" value="true" />
 				</record>
-
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="PacT" section="PacT" help_page="tactics">
 			<translation id="text" translation_id="229408" type="use" value="Team" />
 			<record id="widget_info">
 				<symbol id="class" value="tactics_with_embedded_sections_tabs_panel" />
-
 				<record id="suPP">
 					<symbol id="class" value="match_team_panel" />
 					<symbol id="panel" value="team_tactics_team_instructions_panel" />
 					<integer id="team_index" value="1" />
 				</record>
-
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="PacP" section="PacP" help_page="tactics">
@@ -3591,14 +3501,12 @@
 					<integer id="team_index" value="1" />
 				</record>
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="paOI" section="paOI" help_page="tactics">
@@ -3617,7 +3525,6 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="PacS" section="PacS" help_page="tactics">
@@ -3636,7 +3543,6 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="PacN" section="PacN" help_page="tactics">
@@ -3655,7 +3561,6 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="PacC" section="PacC" help_page="tactics">
@@ -3674,7 +3579,6 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<record id="pasn" section="pasn" help_page="squad_menu">
@@ -3695,7 +3599,6 @@
 					<var id="value" name="team_selection_header_title" />
 				</set_var>
 			</var>
-
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
 		<!--these tabs are to indicate match flow post "Submit Team" and pre "Play Match"-->
@@ -3724,7 +3627,6 @@
 				<symbol id="class" value="match_press_officer_summary_panel" />
 			</record>
 		</record>
-
 		<record id="MRev" section="MRev" help_page="match_day#live">
 			<translation id="text" translation_id="450835" type="use" value="Review[COMMENT: not sure whether or not this will need translating, it might get cut out with the new match screen, so hold off for the moment]" />
 			<record id="widget_info">
@@ -4282,7 +4184,16 @@
 				<boolean id="hide_tabs" value="true" />
 			</record>
 		</record>
-
+		<record id="stov" section="stov" SaiC="true">
+			<translation id="text" translation_id="349045" type="use" value="Profile[COMMENT: media source profile tab, use top 10 matches]" />
+			<record id="widget_info">
+				<symbol id="class" value="client_object_viewer_xml_panel" />
+				<string id="file" value="club/stadium overview panel" />
+			</record>
+			<record id="section_ui_settings">
+				<boolean id="hide_tabs" value="true" />
+			</record>
+		</record>
 		<record id="DbTp" section="DbTp" help_page="team_talks" SaiC="true">
 			<string id="text" value="Debug" />
 			<record id="widget_info">
@@ -4299,14 +4210,12 @@
 			</record>
 			<integer id="main_content_margin" value="0" />
 		</record>
-
 		<!--<record id="smap" section="smap">
       <translation id="text" translation_id="251341" type="use" value="Debug[COMMENT: preferences: debug settings section (short) name]" />
       <record id="widget_info">
         <symbol id="class" value="scouting_map_panel" />
       </record>
     </record>-->
-
 		<!-- Pre Match Briefing -->
 		<record id="paBR" section="paBR">
 			<translation id="text" translation_id="443673" type="use" value="Briefing[COMMENT: title for pre matching briefing before match]" />
@@ -4315,7 +4224,6 @@
 				<symbol id="panel" value="pre_match_briefing_panel_base" />
 				<integer id="team_index" value="1" />
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
@@ -4324,7 +4232,6 @@
 			</var>
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
-
 		<record id="phBR" section="phBR">
 			<translation id="text" translation_id="443673" type="use" value="Briefing[COMMENT: title for pre matching briefing before match]" />
 			<record id="widget_info">
@@ -4332,7 +4239,6 @@
 				<symbol id="panel" value="pre_match_briefing_panel_base" />
 				<integer id="team_index" value="0" />
 			</record>
-
 			<var id="section_ui_settings" name="full_screen_ui_settings" />
 			<var id="custom_header_data" name="matchday_header_data">
 				<set_var name="matchday_header_title">
@@ -4341,7 +4247,6 @@
 			</var>
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
-
 		<!-- Pre Match Tactical Advice -->
 		<record id="phTA" section="phTA">
 			<translation id="title" translation_id="515091" type="use" value="Pre-Match Tactical Advice[COMMENT: AREA: Pre-match advice tab; SUB-AREA:  a sub-tab for the pre-match advice panl; BN: 35836; TONE: Formal; CHARLIMIT: none; REF-ID: n/a; NOTE; showing the main and cirtical pre-match advices]" />
@@ -4357,7 +4262,6 @@
 			</var>
 			<var id="custom_background_scene_data" name="manager_scene" />
 		</record>
-
 		<record id="paTA" section="paTA">
 			<translation id="title" translation_id="515091" type="use" value="Pre-Match Tactical Advice[COMMENT: AREA: Pre-match advice tab; SUB-AREA:  a sub-tab for the pre-match advice panl; BN: 35836; TONE: Formal; CHARLIMIT: none; REF-ID: n/a; NOTE; showing the main and cirtical pre-match advices]" />
 			<record id="widget_info">
@@ -4372,10 +4276,7 @@
 			</var>
 			<var id="custom_background_scene_data" name="pre_match_briefing_scene" />
 		</record>
-
 		<!-- Opposition Report Sections -->
-
-
 		<!--team opposition panel we pass a team ref to-->
 		<record id="tPha" section="tPha">
 			<translation id="text" translation_id="447607" type="use" value="Analyst Report[COMMENT: Panel title for when viewing analyst report]" />
@@ -4383,7 +4284,6 @@
 				<symbol id="class" value="team_opposition_report_analyst_report_panel" />
 			</record>
 		</record>
-
 		<record id="tpsr" section="tpsr">
 			<translation id="text" translation_id="316845" type="use" value="Scout Report[COMMENT: Panel title for when viewing a scout report]" />
 			<record id="widget_info">

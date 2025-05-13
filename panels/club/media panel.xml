@@ -1,0 +1,124 @@
+<panel>
+	<layout class="vertical_arrange" vertical_layout="-1,-1" />
+	<boolean id="should_force_refresh" value="true"/>
+
+	<!-- HEADER CONTAINER -->
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1"/>
+		<!-- ??? -->
+		<container class="main_subtle_box">
+			<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="0" gap="4"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+			<widget class="club_overview_kits_panel" file="none">
+				<attachment class="horizontal_arrange" horizontal_layout="-5,-3" horizontal_gap="10"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				<container>
+					<attachment class="horizontal_arrange" horizontal_layout="-1,-1,-1" horizontal_gap="10"/>
+					<container id="T_hk" class="main_subtle_box_no_margin" priority="4">
+						<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+							<record id="object_property">
+								<integer id="get_property" value="Tidx"/>
+								<integer id="set_property" value="indx"/>
+							</record>
+						</record>
+						<widget class="kit_picture" kit_id="0">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+						</widget>
+					</container>
+					<container id="T_ak" class="main_subtle_box_no_margin" priority="5">
+						<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+							<record id="object_property">
+								<integer id="get_property" value="Tidx"/>
+								<integer id="set_property" value="indx"/>
+							</record>
+						</record>
+						<widget class="kit_picture" kit_id="1">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+						</widget>
+					</container>
+					<container id="T_tk" class="main_subtle_box_no_margin" priority="8">
+						<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+							<record id="object_property">
+								<integer id="get_property" value="Tidx"/>
+								<integer id="set_property" value="indx"/>
+							</record>
+						</record>
+						<widget class="kit_picture" kit_id="2">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0"/>
+						</widget>
+					</container>
+				</container>
+			</widget>
+		</container>
+		<!-- CITY PIC-->
+		<container class="main_subtle_box">
+			<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="0" gap="4"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+			<container>
+				<layout class="arrange_horizontal_attachment" offset="0" gap="4"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+				<widget class="background" file="backgrounds" id="bgnd">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="-60" />
+					<record id="object_property">
+						<integer id="get_property" value="bgnd" />
+						<integer id="set_property" value="file" />
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+	<!-- FOOTER CONTAINER -->
+	<container>
+		<layout class="horizontal_arrange" horizontal_layout="-1,-1"/>
+		<!-- STADIUM PIC OUTSIDE -->
+		<container class="main_subtle_box">
+			<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="0" gap="4"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+			<container class="bordered_box" appearance="boxes/bordered/standard/papery">
+				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+				<widget class="club_overview_stadium_panel" file="club overview stadium inside" id="clys">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="Cclu" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="Tsre" />
+								<integer id="set_property" value="objt" />
+								<boolean id="dont_set_hint" value="true" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+		<!-- STADIUM PIC INSIDE-->
+		<container class="main_subtle_box">
+			<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="0" gap="4"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+			<container class="bordered_box" appearance="boxes/bordered/standard/papery">
+				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+				<widget class="club_overview_stadium_panel" file="club overview stadium outside" id="clou">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="Cclu" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="Tsre" />
+								<integer id="set_property" value="objt" />
+								<boolean id="dont_set_hint" value="true" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+		</container>
+	</container>
+</panel>

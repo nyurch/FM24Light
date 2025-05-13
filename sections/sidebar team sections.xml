@@ -15,7 +15,6 @@ this file contains a list of all of the sections in the game
 				<record id="*ssl" />
 			</list>
 		</record>
-
 		<record id="dyna">
 			<translation id="text" translation_id="447669" type="use" value="Dynamics[COMMENT: Manager Main/Top Menu; link to Dynamics screen showcasing a representation of interpersonal relationships at the club]" />
 			<list id="items">
@@ -27,7 +26,6 @@ this file contains a list of all of the sections in the game
 				<record id="tHSg" />
 			</list>
 		</record>
-
 		<record id="tact">
 			<translation id="text" translation_id="230056" type="use" value="Tactics" />
 			<list id="items">
@@ -52,7 +50,6 @@ this file contains a list of all of the sections in the game
 				<record id="TacD" />
 			</list>
 		</record>
-
 		<record id="trng" section="trng">
 			<translation id="text" translation_id="300976" type="use" value="Training[COMMENT - training schedule sub menu on person actions menu]" />
 			<list id="items">
@@ -74,7 +71,6 @@ this file contains a list of all of the sections in the game
 				<record id="TeTc" />
 			</list>
 		</record>
-
 		<record id="Injy" section="Injy">
 			<translation id="text" translation_id="450760" type="use" value="Medical Centre[COMMENT: Panel title for when viewing medical report, was ID 447586 but we've since been asked to change it to Medical Centre]" />
 			<list id="items">
@@ -90,7 +86,6 @@ this file contains a list of all of the sections in the game
 				<record id="InSS" />
 			</list>
 		</record>
-
 		<record id="intr">
 			<translation id="text" translation_id="336416" type="use" value="Interaction[COMMENT: team section tree menu]" />
 			<list id="items">
@@ -106,7 +101,6 @@ this file contains a list of all of the sections in the game
 				<record id="TDeI" item_type="ACTT" />
 			</list>
 		</record>
-
 		<record id="rprt">
 			<translation id="text" translation_id="336619" type="use" value="Report[COMMENT: team section tree menu]" />
 			<list id="items">
@@ -150,8 +144,5 @@ this file contains a list of all of the sections in the game
 				<record id="tcSS" />
 			</list>
 		</record>
-
-
 	</list>
-
 </properties>

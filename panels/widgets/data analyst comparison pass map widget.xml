@@ -1,0 +1,24 @@
+﻿<panel>
+
+	<list id="properties_to_forward">
+		<record get_property="objt" set_property="objt" target="pmw1"/>
+		<record get_property="objt" set_property="objt" target="pmw2"/>
+		<record get_property="objt" set_property="objt" target="pmw3"/>
+	</list>
+
+	<attachment_group class="vertical_arrange" vertical_layout="-1,30" vertical_offset="40"/>
+
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_alignment="fill"/>
+		<widget class="data_analyst_pass_map_widget" id="pmw1" type="0" file="widgets/data analyst pass map widget pitch only" is_comparison_pass_map="true"/>
+		<widget class="data_analyst_pass_map_widget" id="pmw2" type="1" file="widgets/data analyst pass map widget pitch only" is_comparison_pass_map="true"/>
+	</container>
+
+	<widget class="data_analyst_pass_map_widget" id="pmw3" type="0" file="">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+		<container class="horizontal_arrange_container" id="horC" alignment="middle" wrap="true" gap="8">
+			<record id="default_properties" spec="text" colour="black" />
+		</container>
+
+	</widget>
+</panel>

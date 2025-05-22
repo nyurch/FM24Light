@@ -75,7 +75,7 @@
 					<integer id="default_widget" value="ttCp" />
 				</container>
 
-				<container >
+				<container class="main_box">
 					<translation id="title" translation_id="348321" type="use" value="Squad Fitness[COMMENT: training overview panel; showing an overview of the fitness of your squad]" />
 					<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0" />
 					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />

@@ -313,7 +313,7 @@
 					<container>
 						<attachment_group class="vertical_arrange" vertical_gap="0" vertical_alignment="middle"/>
 
-						<widget class="person_button" auto_size="all" style="bold" info_popup_enabled="true" icon_enabled="true" person_is_player="false" navigation_focus_target="false">
+						<widget class="person_button" auto_size="all" style="bold" colour="black" info_popup_enabled="true" icon_enabled="true" person_is_player="false" navigation_focus_target="false">
 							<record id="object_property" get_property="objt" set_property="valu" />
 						</widget>
 

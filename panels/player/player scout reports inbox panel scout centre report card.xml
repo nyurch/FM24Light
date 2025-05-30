@@ -1,0 +1,384 @@
+﻿<panel save_session_state="true">
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+
+	<boolean id="should_force_refresh" value="true"/>
+	<boolean id="is_in_inbox" value="true"/>
+	<boolean id="use_pro_con_long_strings" value="true"/>
+
+	<!-- No scout report -->
+	<container id="nsrc" class="main_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="6" horizontal_alignment="horizontal" horizontal_inset="20"/>
+
+		<widget class="spacer" height="10"/>
+
+		<container id="nocs" height="70">
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="8"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<!--explanatory text-->
+			<widget class="label" alignment="centre" spec="text" size="11" auto_size="vertical">
+				<translation id="text" translation_id="320496" type="use" value="You need to request a member of your scouting staff to compile a report on this player.[COMMENT: scout report; need to scout advice]"/>
+			</widget>
+
+			<container height="30">
+				<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="8"/>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+				<widget class="button" id="sctP" click_event="sctc" alignment="centre" auto_size="horizontal" height="30">
+					<translation id="text" translation_id="243421" type="use" value="Scout Player"/>
+				</widget>
+			</container>
+		</container>
+
+		<widget id="nocn" class="label" spec="text" size="11" alignment="centre" auto_size="vertical">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+		</widget>
+
+		<widget class="spacer" height="10"/>
+	</container>
+
+	<!-- Already being scounted -->
+	<container id="Arbs" class="main_box">
+		<layout class="stick_to_sides_attachment" alignment="top, horizontal" apply_to_children="true" inset="0"/>
+
+		<!--explanatory text-->
+		<widget class="text" id="arbt" alignment="centre" spec="text" colour="attention" height="80">
+			<translation id="text" translation_id="447600" type="use" value="This player is being scouted by [%person#1] and the report will be available shortly.[COMMENT:scout report, scouting in progress]"/>
+		</widget>
+	</container>
+
+	<!-- Already being scouted by pool -->
+	<container id="Pool" class="main_box">
+		<layout class="stick_to_sides_attachment" alignment="top, horizontal" apply_to_children="true" inset="0"/>
+
+		<!--explanatory text-->
+		<widget class="text" alignment="centre" spec="text" size="large" style="semi_bold, embossed" height="80">
+			<translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]"/>
+		</widget>
+	</container>
+
+	<container class="main_box_no_margin" red_replacement="bg" height="400">
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" horizontal_inset="0" vertical_offset="0" vertical_gap="0"/>
+
+		<container class="main_contrast_box_no_margin" red_replacement="bg darker">
+			<attachment_group class="vertical_arrange" vertical_layout="68, -1" horizontal_inset="0" vertical_offset="0" vertical_gap="0"/>
+
+			<!--Top header w/ player info-->
+			<container class="inner_subtle_box_no_margin" appearance="boxes/custom/scouting/heading/paper" red_replacement="bg lighter">
+
+				<container class="client_object_viewer_xml_panel" height="68">
+					<record id="object_property" get_property="Pers" set_property="objt"/>
+
+					<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left" horizontal_inset="0" horizontal_gap="8"/>
+					<layout class="stick_to_sides_attachment" alignment="top, left" inset="0"/>
+
+					<container height="68">
+						<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left" horizontal_gap="8" horizontal_offset="10"/>
+
+						<widget class="object_portrait_picture" id="ppic" width="55">
+							<boolean id="scale_picture" value="true"/>
+							<boolean id="keep_aspect_ratio" value="true"/>
+							<flags id="image_alignment" value="centre"/>
+							<record id="object_property" get_property="objt"/>
+						</widget>
+
+						<container height="68">
+							<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" horizontal_inset="0" vertical_offset="0" vertical_gap="2"/>
+
+							<widget class="client_object_property_panel" property="Pnms" height="20">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="objt"/>
+											<integer id="set_property" value="objt"/>
+										</record>
+									</list>
+								</record>
+								<record id="widget_info" alignment="left, centre_y" auto_size="horizontal" colour="text" info_popup_enabled="true" font="title" size="large"/>
+							</widget>
+
+							<container height="16">
+
+								<attachment_group class="horizontal_arrange_autosize" horizontal_layout="26, -1" horizontal_offset="0" horizontal_gap="2"/>
+
+								<widget class="client_object_property_panel" property="PNat">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="objt"/>
+												<integer id="set_property" value="objt"/>
+											</record>
+										</list>
+									</record>
+									<record id="widget_info" height="18" auto_size="horizontal" size="small" colour="text" display_format="4" alignment="centre_y"/>
+								</widget>
+
+								<widget class="player_age_and_description_widget" size="small" colour="text" file="none" height="16">
+									<record id="object_property">
+										<list id="get_properties">
+											<record>
+												<integer id="get_property" value="objt"/>
+												<integer id="set_property" value="objt"/>
+											</record>
+										</list>
+									</record>
+
+									<layout class="stick_to_sides_attachment" alignment="top,left" inset="0" apply_to_children="true"/>
+									<layout class="fit_children_attachment" alignment="horizontal" offset="0" gap="0"/>
+
+									<widget class="text" id="mtxt" alignment="left,centre_y" height="16" size="small" auto_size="horizontal" wrap="false">
+										<translation id="text" translation_id="347559" type="use" value="[%number#1] year-old [%player_description#1][COMMENT: inbox person information panel; person description]"/>
+									</widget>
+								</widget>
+							</container>
+
+							<widget class="client_object_property_panel" property="PpsC" height="16" size="small">
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="objt"/>
+											<integer id="set_property" value="objt"/>
+										</record>
+									</list>
+								</record>
+								<record id="widget_info" alignment="left,centre_y" auto_size="horizontal" colour="faded text"/>
+							</widget>
+						</container>
+					</container>
+
+					<widget class="vertical_divider" width="2">
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="8"/>
+					</widget>
+
+					<container id="pLRC">
+						<attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left,extend" horizontal_gap="8" vertical_inset="0"/>
+
+						<container>
+							<attachment_group class="horizontal_arrange_autosize_vertical_centre"/>
+
+							<widget class="object_portrait_picture" width="26" height="26" navigation_focus_target="true">
+								<boolean id="scale_picture" value="true"/>
+								<boolean id="keep_aspect_ratio" value="true"/>
+								<flags id="image_alignment" value="centre"/>
+								<record id="object_property" get_property="Pclb" set_property="objt"/>
+							</widget>
+						</container>
+
+						<widget class="client_object_property_panel" property="Pclb">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt"/>
+										<integer id="set_property" value="objt"/>
+									</record>
+								</list>
+							</record>
+							<record id="widget_info" auto_size="horizontal" height="16" auto_size_maximum_height="26" alignment="left,centre_y" colour="text" icon_enabled="false" style="semi_bold"/>
+						</widget>
+
+						<widget class="vertical_divider" width="2">
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="8"/>
+						</widget>
+
+						<container>
+							<attachment_group class="vertical_arrange_horizontal_autosize" vertical_alignment="middle" vertical_gap="-2"/>
+
+							<attachment class="test_screen_size_attachment" skip_if_false="true">
+								<list id="properties">
+									<record>
+										<flags id="alignment" value="horizontal"/>
+										<integer id="min_value" value="0"/>
+										<integer id="max_value" value="1450"/>
+										<symbol id="set_property" value="hidden"/>
+										<integer id="true_value" value="true"/>
+									</record>
+									<record>
+										<flags id="alignment" value="horizontal"/>
+										<integer id="min_value" value="1450"/>
+										<integer id="max_value" value="30000"/>
+										<symbol id="set_property" value="hidden"/>
+										<integer id="true_value" value="false"/>
+									</record>
+								</list>
+							</attachment>
+
+							<widget class="game_formatted_label" id="wgex" alignment="left, centre_y" auto_size="all" colour="text" size="small" multiline="true" width="100">
+								<record id="object_property">
+									<list id="get_properties">
+										<record get_property="PcMM" set_property="var1" dont_set_object="true"/>
+										<record get_property="Pcww" set_property="var2" dont_set_object="true"/>
+										<record get_property="Pced" set_property="var3" dont_set_object="true"/>
+									</list>
+								</record>
+								<list id="format">
+									<record value="-1">
+										<string id="format" value=""/>
+									</record>
+									<record value="0">
+										<translation id="format" translation_id="450823" type="use" value="[%wage#2] until [%date#3-short][COMMENT: player overview; wage and contract expiry date string, small change to ID 394401 to remove the 'Earning' part so this can be used in a lot of places]"/>
+									</record>
+									<record>
+										<string id="format" value="[%wage#2]"/>
+									</record>
+								</list>
+								<record id="forced_formats" var2="vf_wage"/>
+							</widget>
+
+							<container class="player_contract_panel" file="" width="100">
+								<record id="object_property" get_property="objt" set_property="objt"/>
+								<attachment_group class="vertical_arrange_autosize"/>
+
+								<container id="main">
+									<attachment_group class="vertical_arrange_autosize"/>
+									<widget class="text" spec="text" id="typw" auto_size="all" colour="text" size="small"/>
+								</container>
+							</container>
+						</container>
+					</container>
+
+					<widget class="client_object_property_panel" property="PSpi">
+						<layout class="centre_in_parent_attachment" alignment="vertical"/>
+
+						<attachment class="test_screen_size_attachment" skip_if_false="true">
+							<list id="properties">
+								<record>
+									<flags id="alignment" value="horizontal"/>
+									<integer id="min_value" value="0"/>
+									<integer id="max_value" value="1250"/>
+									<symbol id="set_property" value="hidden"/>
+									<integer id="true_value" value="true"/>
+								</record>
+								<record>
+									<flags id="alignment" value="horizontal"/>
+									<integer id="min_value" value="1250"/>
+									<integer id="max_value" value="30000"/>
+									<symbol id="set_property" value="hidden"/>
+									<integer id="true_value" value="false"/>
+								</record>
+							</list>
+						</attachment>
+
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="objt"/>
+									<integer id="set_property" value="objt"/>
+								</record>
+							</list>
+						</record>
+						<record id="widget_info" width="60" height="25"/>
+					</widget>
+				</container>
+
+				<container class="client_object_viewer_xml_panel" height="54">
+					<record id="object_property" get_property="Pers" set_property="objt"/>
+
+					<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="right" horizontal_offset="10" horizontal_gap="5"/>
+					<layout class="centre_in_parent_attachment" alignment="vertical"/>
+					<layout class="stick_to_sides_attachment" alignment="top, right" inset="0"/>
+
+					<widget class="popup_button" id="slPP" fixed="true" auto_size="all" alignment="left, centre_y" hidden="true">
+						<translation id="text" translation_id="516730" type="use" value="Suggest player[COMMENT: AREA: Recruitment meeting; SUB-AREA: Recruitment meeting scouting cards panel; FR-BN: 32765; NOTE: Scouting card popup title for suggesting shortlisted players to scout]"/>
+					</widget>
+
+					<container>
+						<attachment_group class="vertical_arrange_autosize_all" horizontal_alignment="right" horizontal_inset="10"/>
+
+						<widget class="link_button" appearance="buttons/link/title/button" section="Pssr" alignment="right,centre_y" auto_size="all">
+							<translation id="text" translation_id="317219" type="use" value="View Report[COMMENT - view scout report card screen]"/>
+							<string id="create_if" value="is_fmt"/>
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt"/>
+										<integer id="set_property" value="objt"/>
+									</record>
+								</list>
+							</record>
+						</widget>
+
+						<container height="20">
+							<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="horizontal" horizontal_inset="0" horizontal_gap="10" horizontal_offset="0"/>
+
+							<widget class="link_button" appearance="buttons/link/title/button" section="Prov" alignment="right,centre_y" auto_size="all">
+								<translation id="text" translation_id="317219" type="use" value="View Report[COMMENT - view scout report card screen]"/>
+								<string id="remove_if" value="is_fmt"/>
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="objt"/>
+											<integer id="set_property" value="objt"/>
+										</record>
+									</list>
+								</record>
+							</widget>
+						</container>
+
+						<container>
+							<attachment_group class="vertical_arrange_autosize_all" horizontal_alignment="right"/>
+
+							<widget class="icon_button" id="khtx" appearance="" icon="icons/16px/scouting" font="label" colour="fg" auto_size="all" size="medium"/>
+							<widget class="label" id="rdtx" colour="disabled" auto_size="all" size="medium"/>
+						</container>
+
+						<container id="sRTX" height="20">
+							<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="horizontal" horizontal_inset="0" horizontal_gap="10" horizontal_offset="6"/>
+
+							<widget class="text" id="srTX" colour="faded text" auto_size="all" size="small"/>
+						</container>
+					</container>
+				</container>
+			</container>
+
+			<container id="recC">
+				<attachment_group class="horizontal_arrange" horizontal_layout="340, -1" vertical_inset="10" horizontal_offset="10" horizontal_gap="4"/>
+
+				<!--Scouting recommendation subpanel on the LHS-->
+				<container class="inner_subtle_box" navigation_container="true" width="340">
+					<attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="4" vertical_offset="0" vertical_gap="4"/>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="bottom, extend" vertical_offset="0" horizontal_inset="0" vertical_gap="4"/>
+
+						<container class="scrolling_box" hidden="true">
+							<widget class="text" id="RecT" alignment="left, top" colour="faded text" auto_size="vertical" multiline="true">
+								<record id="object_property" get_property="PsCT" set_property="text"/>
+							</widget>
+						</container>
+
+						<!--Key- and other reasons subpanel (panel autosizes)-->
+						<widget class="player_reports_overview_summary_panel" file="player/player reports overview summary vertical scouting card" mode="6">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="Pspc"/>
+										<integer id="set_property" value="Pspc"/>
+									</record>
+									<record>
+										<integer id="get_property" value="Pers"/>
+										<integer id="set_property" value="objt"/>
+									</record>
+									<record>
+										<integer id="get_property" value="hpde"/>
+										<integer id="set_property" value="hidn"/>
+									</record>
+								</list>
+							</record>
+						</widget>
+					</container>
+				</container>
+
+				<!--Pros/cons section on the RHS-->
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="5"/>
+
+					<widget class="player_scout_reports_panel" id="sCSB" file="player/extra_panels/player scout reports pro con only horizontal">
+						<record id="object_property" get_property="Pers" set_property="objt"/>
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+
+
+</panel>

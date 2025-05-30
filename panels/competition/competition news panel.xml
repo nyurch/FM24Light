@@ -129,7 +129,7 @@
 						</container>
 					</container>
 
-					<container class="main_contrast_box" red_replacement="top news related" height="180">
+					<container class="main_box" height="180">
 						<attachment_group class="horizontal_arrange" horizontal_alignment="fill"/>
 
 						<container class="competition_news_item_panel" file="competition/competition news item large" index="1"/>

@@ -81,11 +81,13 @@
 				<widget class="tactic_slot_tab_container" id="tacF" file="tactics/tactic slot tab container training news" />
 			</container>
 
-			<!-- Match Preparation-->
+			<!-- Medical Centre -->
 			<container class="inner_subtle_box" red_replacement="black">
-				<translation id="title" translation_id="308600" type="use" value="Match Preparation[COMMENT - team screen section for match preparation]" />
+				<translation id="title" translation_id="450760" type="use" value="Medical Centre[COMMENT: Panel title for when viewing medical report, was ID 447586 but we've since been asked to change it to Medical Centre]" />
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
-				<widget class="training_overview_panel" file="team/team training panel match preparation" id="mtcp"/>
+				<widget class="team_injuries_overview_panel" id="MedC" section="InOv" late_loading="true" valid_for_unemployed_manager="false" file="team/team injuries overview panel snapshot">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</widget>
 			</container>
 		</container>
 	</container>

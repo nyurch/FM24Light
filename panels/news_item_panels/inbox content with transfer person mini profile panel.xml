@@ -26,8 +26,8 @@
 		<attachment_group class="vertical_arrange_autosize" vertical_gap="4"/>
 
 		<!--Name age position-->
-		<container height="84" class="inner_subtle_box">
-			<attachment_group class="horizontal_arrange" horizontal_layout="112, -1, 260" horizontal_offset="0" vertical_inset="0"/>
+		<container height="168" class="inner_subtle_box">
+			<attachment_group class="horizontal_arrange" horizontal_layout="300, -1, 400" horizontal_offset="0" vertical_inset="0"/>
 
 			<container class="inbox_mini_profile_player_details_panel" id="psdt" file="">
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>

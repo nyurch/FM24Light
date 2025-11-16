@@ -12,8 +12,8 @@
 	<container class="main_subtle_box">
 		<attachment_group class="vertical_arrange_autosize" vertical_layout="-1,1,-1,1,-1,1,-1"/>
 		<container class="vertical_label_value_pair">
-			<widget class="object_portrait_picture" id="clog" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" comp_use_trophy_icon="true" width="90" height="90" />
-			<widget class="comp_button" id="cnam" icon_enabled="false" font="title" alignment="centre" colour="text" />
+			<widget class="object_portrait_picture" id="clog" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" comp_use_trophy_icon="true" width="190" height="190" />
+			<widget class="comp_button" id="cnam" icon_enabled="false" font="title" alignment="centre" colour="text" multiline="true"/>
 		</container>
 		<widget class="horizontal_subtle_divider" />
 		<container class="vertical_label_value_pair">

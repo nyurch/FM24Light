@@ -7,7 +7,7 @@
 	<boolean id="is_in_inbox" value="true"/>
 
 	<container class="inner_subtle_box" red_replacement="black">
-		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="130,-1" horizontal_offset="6" vertical_offset="6" />
+		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="260,-1" horizontal_offset="6" vertical_offset="6" />
 
 		<!-- placing -->
 		<container class="inner_box" background_colour="fg" height="28" width="28" embed_in_frame="true">
@@ -18,7 +18,7 @@
 		</container>
 
 		<!-- Player Picture -->
-		<widget class="competition_news_image_panel" id="ptpc" height="80" />
+		<widget class="competition_news_image_panel" id="ptpc" height="120" />
 
 		<widget class="table" id="pitb" layout="18,-1" auto_size="vertical" row_height="24" row_spacing="1" sort_disabled="true">
 

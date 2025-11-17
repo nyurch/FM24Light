@@ -1,0 +1,7 @@
+<!-- image properties -->
+<properties>
+
+	<colour id="red_replacement" name="deadline day bg accent"/>
+	<colour id="blue_replacement" name="icon fg"/>
+
+</properties>

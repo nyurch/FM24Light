@@ -5,7 +5,7 @@
 	<colour id="budget_info_positive_colour" name="positive" />
 	<colour id="budget_info_zero_colour" name="text" />
 	<colour id="budget_info_negative_colour" name="negative" />
-	<colour id="scouting_package_highlight_colour" name="bg accent" />
+	<colour id="scouting_range_highlight_colour" name="bg accent" />
 
 	<list id="visible_items">
 		<flags value="trbc" />
@@ -62,12 +62,16 @@
 			</container>
 
 			<!--Recruitment team-->
-			<widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="rtec" priority="1" icon="icons/custom/icon box/package" red_replacement="deadline day fg accent" puhd="true" section="tssc" lkcl="deadline day fg accent" lkrr="deadline day fg titles" navigation_focus_target="false">
+			<widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="rtec" priority="1" icon="icons/custom/icon box/staff dd" red_replacement="deadline day bg accent" puhd="true" section="tcSS" navigation_focus_target="false">
 				<translation id="lktx" translation_id="539027" type="use" value="Recruitment[COMMENT: AREA: Backroom advice; SUB-AREA: Backroom advice category; FR-BN: 35379; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Name of backroom advice category]" />
+				<string id="lktx" value="" />
+				<boolean id="lnkH" value="false" />
+				<boolean id="ustB" value="true" />
+				<boolean id="ustP" value="true" />
 			</widget>
 
 			<!-- Transfer Activity -->
-			<widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="TrAc" priority="1" icon="icons/custom/icon box/transfer centre" red_replacement="deadline day fg accent" puhd="true" section="trcn" lkcl="deadline day fg accent" lkrr="deadline day fg titles" navigation_focus_target="false">
+			<widget class="property_list_viewer_xml_panel" file="widgets/scouting top bar widget" minimum_width="190" id="TrAc" priority="1" icon="icons/custom/icon box/transfer centre dd" red_replacement="deadline day bg accent" puhd="true" section="trcn" lkcl="deadline day fg titles" lkrr="deadline day fg titles" navigation_focus_target="false">
 				<translation id="lktx" translation_id="330721" type="use" value="Transfer Activity[COMMENT: how to system; help string]" />
 			</widget>
 		</container>

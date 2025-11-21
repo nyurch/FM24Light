@@ -25,7 +25,7 @@
 			<layout class="stick_to_sides_attachment" alignment="top" inset="6" apply_to_children="true"/>
 
 			<!-- Player Picture -->
-			<widget class="competition_news_image_panel" id="ptpc" height="75">
+			<widget class="competition_news_image_panel" id="ptpc" height="130">
 				<layout class="centre_in_parent_attachment" alignment="vertical"/>
 			</widget>
 

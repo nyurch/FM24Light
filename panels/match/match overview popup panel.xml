@@ -22,7 +22,7 @@
 				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
 				<container class="main_subtle_box" id="homc" name="pitch_container">
 					<attachment_group class="horizontal_arrange" horizontal_layout="-1,350" horizontal_gap="0" />
-					<container class="main_subtle_box">
+					<container class="main_box">
 						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 						<widget class="match_team_stats_panel" id="hfMs" file="match/match team stats overview popup" team_index="0">
 							<record id="object_property">
@@ -192,7 +192,7 @@
 				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
 				<container class="main_subtle_box" id="awac" name="pitch_container">
 					<attachment_group class="horizontal_arrange" horizontal_layout="-1,350" horizontal_alignment="left,extend" horizontal_gap="0" />
-					<container class="main_subtle_box">
+					<container class="main_box">
 						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 						<widget class="match_team_stats_panel" id="afMs" file="match/match team stats overview popup" team_index="1">
 							<record id="object_property">

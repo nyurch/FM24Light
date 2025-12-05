@@ -114,10 +114,12 @@
 						<record id="PRPr" auto_hide_priority="6" width="82" navigation_focus_target="false" />
 						<!-- player pnstruction-->
 						<record id="pIDa" auto_hide_priority="7" width="40" navigation_focus_target="false"/>
-						<!-- Face -->
-						<record id="port" auto_hide_priority="1" width="45" />
+						<!-- status info -->
+						<record id="Pnfo" offset="2" span="2" auto_hide_priority="4" width="30" navigation_focus_target="false" />
 						<!-- person name -->
-						<record id="PNaN" auto_hide_priority="1" width="-1" minimum_width="120" />
+						<record id="PlSE" auto_hide_priority="1" width="-1" minimum_width="120" />
+						<!-- person nationality -->
+						<record id="Pnat" auto_hide_priority="1" width="70" />
 						<!-- person age -->
 						<record id="PSag" auto_hide_priority="1" width="30" navigation_focus_target="false" />
 						<!-- person height -->
@@ -125,8 +127,6 @@
 
 						<record id="Sep0" auto_hide_priority="1" width="2"/>
 
-						<!-- status info -->
-						<record id="Pnfo" offset="2" span="2" auto_hide_priority="4" width="30" navigation_focus_target="false" />
 						<!-- player condition -->
 						<record id="PcOI" auto_hide_priority="3" width="30" navigation_focus_target="false" />
 						<!-- player sharpness -->

@@ -106,7 +106,7 @@
 			<list id="viws">
 
 				<record id="ylst">
-					<translation id="name" type="use" value="NY Squad Info" />
+					<translation id="name" type="use" value="MY Squad Info" />
 					<record id="view">
 						<!-- role -->
 						<record id="TPRD" auto_hide_priority="2" width="107" />
@@ -114,10 +114,14 @@
 						<record id="PRPr" auto_hide_priority="6" width="82" navigation_focus_target="false" />
 						<!-- player pnstruction-->
 						<record id="pIDa" auto_hide_priority="7" width="40" navigation_focus_target="false"/>
+						<!-- Face -->
+						<record id="port" auto_hide_priority="1" width="45" />
 						<!-- person name -->
-						<record id="PlSE" auto_hide_priority="1" width="-1" minimum_width="120" />
+						<record id="PNaN" auto_hide_priority="1" width="-1" minimum_width="120" />
+						<!-- person age -->
+						<record id="PSag" auto_hide_priority="1" width="30" navigation_focus_target="false" />
 						<!-- person height -->
-						<record id="Phei" auto_hide_priority="1" width="40" navigation_focus_target="false" />
+						<record id="Phei" auto_hide_priority="1" width="45" navigation_focus_target="false" />
 						<!-- status info -->
 						<record id="Pnfo" auto_hide_priority="4" width="30" navigation_focus_target="false" />
 						<!-- player condition -->
@@ -139,7 +143,7 @@
 						<!-- overall assists -->
 						<record id="Poas" auto_hide_priority="14" width="30" navigation_focus_target="false" />
 						<!-- shots on target ratio -->
-						<record id="Post" auto_hide_priority="14" width="30" navigation_focus_target="false" />
+						<record id="Post" auto_hide_priority="14" width="40" navigation_focus_target="false" />
 						<!-- overall goals -->
 						<record id="Pogl" auto_hide_priority="14" width="30" navigation_focus_target="false" />
 						<!-- overall yellow cards -->

@@ -111,7 +111,7 @@
 						<!-- role -->
 						<record id="TPRD" auto_hide_priority="2" width="107" />
 						<!-- current ability in role-->
-						<record id="PRPr" auto_hide_priority="6" width="82" navigation_focus_target="false" />
+						<record id="PRPr" auto_hide_priority="6" width="80" navigation_focus_target="false" />
 						<!-- player pnstruction-->
 						<record id="pIDa" auto_hide_priority="7" width="40" navigation_focus_target="false"/>
 						<!-- status info -->
@@ -141,7 +141,7 @@
 						<!-- tactical familiarity -->
 						<record id="pTLV" auto_hide_priority="12" width="80" navigation_focus_target="false"/>
 						<!-- injury risk -->
-						<record id="PMlo" auto_hide_priority="8" width="70" navigation_focus_target="false"/>
+						<record id="PMlo" auto_hide_priority="8" width="60" navigation_focus_target="false"/>
 
 						<record id="Sep2" auto_hide_priority="1" width="2"/>
 
@@ -163,7 +163,7 @@
 						<record id="Sep3" auto_hide_priority="1" width="2"/>
 
 						<!-- overall average rating -->
-						<record id="Poav" auto_hide_priority="8" width="60" navigation_focus_target="false"/>
+						<record id="Poav" auto_hide_priority="8" width="50" navigation_focus_target="false"/>
 					</record>
 				</record>
 

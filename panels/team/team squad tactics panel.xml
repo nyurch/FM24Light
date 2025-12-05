@@ -122,20 +122,29 @@
 						<record id="PSag" auto_hide_priority="1" width="30" navigation_focus_target="false" />
 						<!-- person height -->
 						<record id="Phei" auto_hide_priority="1" width="45" navigation_focus_target="false" />
+
+						<record id="Sep0" auto_hide_priority="1" width="2"/>
+
 						<!-- status info -->
-						<record id="Pnfo" auto_hide_priority="4" width="30" navigation_focus_target="false" />
+						<record id="Pnfo" offset="2" span="2" auto_hide_priority="4" width="30" navigation_focus_target="false" />
 						<!-- player condition -->
 						<record id="PcOI" auto_hide_priority="3" width="30" navigation_focus_target="false" />
 						<!-- player sharpness -->
 						<record id="PftI" auto_hide_priority="3" width="30" navigation_focus_target="false" />
 						<!-- player morale -->
 						<record id="Pmor" auto_hide_priority="5" width="120" ShTx="true" navigation_focus_target="false" />
+
+						<record id="Sep1" auto_hide_priority="1" width="2"/>
+
 						<!-- position -->
-						<record id="PpsC" auto_hide_priority="9" width="140" navigation_focus_target="false" />
+						<record id="PpsC" offset="5" auto_hide_priority="9" width="140" navigation_focus_target="false" />
 						<!-- tactical familiarity -->
 						<record id="pTLV" auto_hide_priority="12" width="80" navigation_focus_target="false"/>
 						<!-- injury risk -->
 						<record id="PMlo" auto_hide_priority="8" width="70" navigation_focus_target="false"/>
+
+						<record id="Sep2" auto_hide_priority="1" width="2"/>
+
 						<!-- overall appearances -->
 						<record id="Poap" auto_hide_priority="13" width="40" navigation_focus_target="false" />
 						<!-- chances created per 90 -->
@@ -150,6 +159,9 @@
 						<record id="Poyc" auto_hide_priority="15" width="30" navigation_focus_target="false" />
 						<!-- overall red card -->
 						<record id="Porc" auto_hide_priority="15" width="30" navigation_focus_target="false" />
+
+						<record id="Sep3" auto_hide_priority="1" width="2"/>
+
 						<!-- overall average rating -->
 						<record id="Poav" auto_hide_priority="8" width="60" navigation_focus_target="false"/>
 					</record>

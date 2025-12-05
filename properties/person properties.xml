@@ -1,6 +1,28 @@
 <record>
 	<list id="column_table_properties">
 
+		<!-- vertical dividers -->
+		<record>
+			<integer id="id" value="Sep0" />
+			<integer id="width" value="2" />
+			<record id="widget_info" alignment="centre" background_colour="black" />
+		</record>
+		<record>
+			<integer id="id" value="Sep1" />
+			<integer id="width" value="2" />
+			<record id="widget_info" alignment="centre" background_colour="black" />
+		</record>
+		<record>
+			<integer id="id" value="Sep2" />
+			<integer id="width" value="2" />
+			<record id="widget_info" alignment="centre" background_colour="black" />
+		</record>
+		<record>
+			<integer id="id" value="Sep3" />
+			<integer id="width" value="2" />
+			<record id="widget_info" alignment="centre" background_colour="black" />
+		</record>
+
 		<record>
 			<integer id="id" value="Pssi" />
 			<integer id="width" value="130" />

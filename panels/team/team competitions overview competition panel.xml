@@ -134,7 +134,7 @@
 						<widget class="text" id="stgn" auto_size="vertical" alignment="centre_x,top" size="large" multiline="true"/>
 					</container>
 					<!-- Trophy panel when user's team wins -->
-					<container id="trop" height="250">
+					<container id="trop" height="200">
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
 						<!-- Trophy and team badge -->

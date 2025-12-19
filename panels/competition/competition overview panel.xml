@@ -59,15 +59,15 @@
 		</widget>
 	</container>
 
-	<container draw_horizontal_dividers="true">
+	<container draw_horizontal_dividers="false">
 		<attachment_group class="vertical_arrange" vertical_alignment="top,extend">
 			<global id="vertical_gap" name="ui.main_box_gap"/>
 		</attachment_group>
 
-		<container class="horizontal_adaptive_container" inset="0" offset="0" mode="distribute_equally" draw_vertical_dividers="true" height="350">
+		<container class="horizontal_adaptive_container" inset="0" offset="0" mode="distribute_equally" draw_vertical_dividers="false" height="350">
 			<global id="gap" name="ui.main_box_gap"/>
 
-			<container class="main_box" minimum_width="390" priority="1" default_width="-3" id="cofo" navigation_container="true">
+			<container class="main_subtle_box" minimum_width="390" priority="1" default_width="-3" id="cofo" navigation_container="true">
 				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
 
 				<widget class="link_button_title" section="csfp">
@@ -109,7 +109,7 @@
 
 		</container>
 
-		<container class="horizontal_adaptive_container" id="cops" mode="distribute_equally" offset="0" inset="0" draw_vertical_dividers="true">
+		<container class="horizontal_adaptive_container" id="cops" mode="distribute_equally" offset="0" inset="0" draw_vertical_dividers="false">
 
 			<attachment class="test_screen_size_attachment" skip_if_false="true">
 				<list id="properties">
@@ -129,7 +129,7 @@
 
 			<global id="gap" name="ui.main_box_gap"/>
 			<!-- Player stats-->
-			<container class="main_box" id="cmpS" minimum_width="625" priority="1" default_width="-3" navigation_container="true">
+			<container class="main_subtle_box" id="cmpS" minimum_width="625" priority="1" default_width="-3" navigation_container="true">
 				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
 
 				<widget class="link_button_title" section="cspl">

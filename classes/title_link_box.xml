@@ -1,0 +1,49 @@
+﻿<class class="title_link_box" parent="main_subtle_box">
+
+	<boolean id="force_title_borders" value="true" />
+
+	<list id="properties_to_forward">
+		<record target="COSt" get_property="link_title" set_property="text" />
+		<record target="COSt" get_property="link_hidden" set_property="hidden" />
+		<record target="popv" get_property="hide_view_menu" set_property="hidden" />
+
+
+		<record target="COSt" get_property="sect" set_property="sect"/>
+		<record target="COSt" get_property="objt" set_property="objt"/>
+	</list>
+
+	<list id="attachments">
+		<record class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	</list>
+
+	<list id="contents">
+		<record class="container">
+
+			<record id="properties" embed_in_frame="true">
+			</record>
+
+			<list id="attachments">
+				<record class="fit_children_attachment" alignment="vertical" embed_in_frame="true" offset="4" gap="0" />
+				<record class="stick_to_sides_attachment" alignment="top" embed_in_frame="true" inset="0" />
+				<record class="stick_to_sides_attachment" alignment="horizontal" embed_in_frame="true" inset="8" />
+			</list>
+
+			<list id="contents">
+				<record class="link_button_panel_title">
+					<record id="properties" widget_id="COSt" height="20" auto_size="horizontal" alignment="left,centre_y" embed_in_frame="true" navigation_focus_target="true" ignore_error_detection="true"/>
+					<list id="attachments">
+						<record class="stick_to_sides_attachment" alignment="top" embed_in_frame="true" inset="4" />
+						<record class="stick_to_sides_attachment" alignment="left" embed_in_frame="true" inset="-3" />
+					</list>
+				</record>
+
+				<record class="popup_button">
+					<record id="properties" widget_id="popv" width="20" height="20" click_event="msis" show_button_appearance="false" fixed="true" embed_in_frame="true" navigation_focus_target="true" />
+					<list id="attachments">
+						<record class="stick_to_sides_attachment" alignment="right,top" embed_in_frame="true" inset="0" />
+					</list>
+				</record>
+			</list>
+		</record>
+	</list>
+</class>

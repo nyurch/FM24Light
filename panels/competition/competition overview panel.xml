@@ -1,9 +1,9 @@
 <panel>
-	<attachment_group class="horizontal_arrange" horizontal_layout="230,440,-1" horizontal_offset="0" vertical_inset="0">
+	<attachment_group class="horizontal_arrange" horizontal_layout="250,440,-1" horizontal_offset="0" vertical_inset="0">
 		<global id="horizontal_gap" name="ui.main_contrast_box_gap"/>
 	</attachment_group>
 
-	<container id="copw" navigation_container="true">
+	<container class="main_subtle_box" id="copw" navigation_container="true">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 		<widget class="competition_overview_past_winners_panel" id="cowp">
 			<integer id="maximum_winners_to_show" value="520" />

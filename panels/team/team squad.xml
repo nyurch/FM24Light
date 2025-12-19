@@ -115,7 +115,7 @@
 			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
-			<widget class="tactic_player_list_table" id="pltb" database_table_type="1" customisation_context="play" mode="fill_rows, stripe_rows, printable, store_sort_state, drag_rows, drop_on_rows, show_bullets, select_rows, select_multiple, show_insert_column_popup,keyboard" column_mode="resize_columns, move_columns, custom_views" popup_menu_class="popup_button_table_header" row_height="30" navigation_container="true" default_focus="true">
+			<widget class="tactic_player_list_table" id="pltb" database_table_type="1" customisation_context="play" mode="fill_rows, stripe_rows, printable, store_sort_state, drag_rows, drop_on_rows, show_bullets, select_rows, select_multiple, show_insert_column_popup,keyboard" column_mode="resize_columns, move_columns, custom_views" popup_menu_class="popup_button_table_header" row_height="40" navigation_container="true" default_focus="true">
 
 				<boolean id="save_session_state" value="true" />
 				<boolean id="save_default_state" value="true" />
@@ -139,33 +139,31 @@
 						<!-- Define attributes/properties to view in this view type on the panel.
 								 Any properties not defined here will be hidden for this view. -->
 						<record id="view">
-							<flags id="PtsL" />
+							<record id="PtsL" />
 							<!-- picked info -->
-							<flags id="Pnfo" />
+							<record id="Pnfo" />
 							<!-- player status/info -->
-							<flags id="Pnms" />
+							<record id="port" />
+							<!-- face -->
+							<record id="PNaN" />
 							<!-- person name -->
-							<flags id="PpsC" />
+							<record id="PpsC" />
 							<!-- position -->
-							<flags id="PSag" />
+							<record id="PSag" />
 							<!-- person age -->
-							<flags id="Phei" />
+							<record id="Phei" />
 							<!-- person height -->
-							<record id="Pnat">
-								<!-- person nationality -->
-								<flags id="use_format" value="short" />
-							</record>
-							<flags id="Pcac" />
+							<record id="Pcac" />
 							<!-- current ability -->
-							<flags id="Pppc" />
+							<record id="Pppc" />
 							<!-- potential ability -->
-							<flags id="PPst" />
+							<record id="PPst" />
 							<!-- person personality -->
-							<flags id="Pcww" />
+							<record id="Pcww" />
 							<!-- wage -->
-							<flags id="Pced" />
+							<record id="Pced" />
 							<!-- contract expiry -->
-							<flags id="Pdva" />
+							<record id="Pdva" />
 							<!-- value -->
 							<record id="Poap" auto_hide_priority="3000" />
 							<!-- overall appearances -->
@@ -173,15 +171,15 @@
 							<!-- overall goals -->
 							<record id="Poas" auto_hide_priority="4000" />
 							<!-- overall assists -->
-							<flags id="POhc" />
+							<record id="POhc" />
 							<!-- overall headers won -->
-							<flags id="POtc" />
+							<record id="POtc" />
 							<!-- player overall tackle completed -->
-							<flags id="Poyc" />
+							<record id="Poyc" />
 							<!-- overall yellow cards -->
-							<flags id="Porc" />
+							<record id="Porc" />
 							<!-- overall red card -->
-							<flags id="Poav" />
+							<record id="Poav" />
 							<!-- overall average rating -->
 							<record id="Pdet" />
 							<!-- (m) determination -->
@@ -189,15 +187,15 @@
 							<!-- (m) work rate -->
 							<record id="Ptwr" />
 							<!-- (m) teamwork -->
-							<flags id="Pnft" />
+							<record id="Pnft" />
 							<!-- (p) natural fitness -->
-							<flags id="Ppac" />
+							<record id="Ppac" />
 							<!-- (p) pace -->
-							<flags id="Pacc" />
+							<record id="Pacc" />
 							<!-- (p) acceleration -->
-							<flags id="Psta" />
+							<record id="Psta" />
 							<!-- (p) stamina -->
-							<flags id="Pstr" />
+							<record id="Pstr" />
 							<!-- (p) strength -->
 						</record>
 					</record>

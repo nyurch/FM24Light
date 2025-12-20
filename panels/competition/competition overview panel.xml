@@ -15,7 +15,7 @@
 		</widget>
 	</container>
 
-	<container class="main_subtle_box" id="cost" red_replacement="black" navigation_container="true" default_focus="true">
+	<container class="main_subtle_box" id="cost" navigation_container="true" default_focus="true">
 		<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" horizontal_inset="0"/>
 
 		<container id="titC" class="inner_box" red_replacement="text" height="70">

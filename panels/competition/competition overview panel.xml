@@ -1,5 +1,5 @@
 <panel>
-	<attachment_group class="horizontal_arrange" horizontal_layout="250,440,-1" horizontal_offset="0" vertical_inset="0">
+	<attachment_group class="horizontal_arrange" horizontal_layout="230,440,-1" horizontal_offset="0" vertical_inset="0">
 		<global id="horizontal_gap" name="ui.main_contrast_box_gap"/>
 	</attachment_group>
 

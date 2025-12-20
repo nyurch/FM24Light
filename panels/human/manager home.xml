@@ -6,7 +6,7 @@
 
 		<container id="tab1">
 			<translation id="title" translation_id="247671" type="use" value="Default"/>
-			<layout class="arrange_vertical_attachment" layout="200, -1" offset="0" gap="8"/>
+			<layout class="arrange_vertical_attachment" layout="200, -1" offset="0" gap="5"/>
 			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
 			<!-- VERTICAL TOP -->
@@ -14,7 +14,6 @@
 
 			<!-- VERTICAL BOTTOM -->
 			<container class="horizontal_adaptive_container" inset="0" offset="0" mode="use_positional_appearance" draw_vertical_dividers="false">
-				<global id="gap" name="ui.main_box_gap"/>
 
 				<!-- HORIZONTAL LEFT -->
 				<container class="client_object_viewer_selector_panel" id="cos11" file="human/manager home selector panel" default_width="-1" minimum_width="300" priority="1" default_focus="true">
@@ -29,9 +28,9 @@
 				</container>
 
 				<!-- HORIZONTAL MIDDLE -->
-				<container class="vertical_adaptive_container" layout="-1, 200" inset="0" offset="0" minimum_width="300" default_width="-2" priority="1" gap="16" draw_horizontal_dividers="false">
+				<container class="vertical_adaptive_container" layout="-1, 200" inset="0" offset="0" minimum_width="300" default_width="-2" priority="1" gap="5" draw_horizontal_dividers="false">
 					<!-- MIDDLE TOP -->
-					<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="16" draw_vertical_dividers="false">
+					<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="5" draw_vertical_dividers="false">
 						<!-- TOP LEFT -->
 						<container class="client_object_viewer_selector_panel" id="cos22" file="human/manager home selector panel" minimum_width="300" default_width="-1" priority="1">
 							<integer id="default_for_club_teams" value="pssu"/>
@@ -54,7 +53,7 @@
 					</container>
 
 					<!-- MIDDLE BOTTOM -->
-					<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="16" draw_vertical_dividers="false">
+					<container class="horizontal_adaptive_container" mode="distribute_equally" inset="0" offset="0" minimum_height="300" default_height="-1" priority="1" gap="5" draw_vertical_dividers="false">
 						<!-- BOTTOM LEFT -->
 						<container class="client_object_viewer_selector_panel" id="cos44" file="human/manager home selector panel" minimum_width="300" default_width="-1" priority="1">
 							<integer id="default_for_club_teams" value="Mpro"/>
@@ -78,7 +77,7 @@
 				</container>
 
 				<!-- HORIZONTAL RIGHT 1 -->
-				<container class="vertical_adaptive_container" layout="-1, -1" inset="0" offset="0" minimum_width="300" default_width="-1" priority="1" gap="16" draw_horizontal_dividers="false">
+				<container class="vertical_adaptive_container" layout="-1, -1" inset="0" offset="0" minimum_width="300" default_width="-1" priority="1" gap="5" draw_horizontal_dividers="false">
 					<!-- RIGHT TOP -->
 					<container class="client_object_viewer_selector_panel" id="cos66" file="human/manager home selector panel" minimum_width="300" default_width="-1" priority="1">
 						<integer id="default_for_club_teams" value="tsco"/>
@@ -104,7 +103,7 @@
 				</container>
 
 				<!-- HORIZONTAL RIGHT 2 -->
-				<container class="vertical_adaptive_container" layout="-2, -1" inset="0" offset="0" minimum_width="300" default_width="-1" priority="1" gap="16" draw_horizontal_dividers="false">
+				<container class="vertical_adaptive_container" layout="-2, -1" inset="0" offset="0" minimum_width="300" default_width="-1" priority="1" gap="5" draw_horizontal_dividers="false">
 					<!-- RIGHT TOP -->
 					<container class="client_object_viewer_selector_panel" id="cos88" file="human/manager home selector panel" minimum_width="300" default_width="-1" priority="1">
 						<integer id="default_for_club_teams" value="tstr"/>
@@ -133,7 +132,7 @@
 
 		<container id="tab2">
 			<translation id="title" translation_id="308589" type="use" value="Next Match[COMMENT: Text on match preparation fixture tab]"/>
-			<layout class="arrange_horizontal_attachment" layout="560,-1" offset="0" gap="8"/>
+			<layout class="arrange_horizontal_attachment" layout="560,-1" offset="0" gap="5"/>
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
 			<!-- HORIZONTAL LEFT -->

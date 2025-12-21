@@ -1,6 +1,6 @@
 ﻿<panel>
 
-	<widget class="picture" file="backgrounds/default" id="bgnd">
+	<widget class="picture" file="backgrounds/default_light" id="bgnd">
 		<boolean id="scale_picture" value="true" />
 		<boolean id="keep_aspect_ratio" value="false" />
 	</widget>

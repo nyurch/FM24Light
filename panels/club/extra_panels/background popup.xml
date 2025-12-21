@@ -1,0 +1,6 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<widget class="picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+		<record id="object_property" get_property="bgnd" set_property="file" />
+	</widget>
+</panel>

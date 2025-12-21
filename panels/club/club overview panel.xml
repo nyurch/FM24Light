@@ -134,6 +134,35 @@
 			</container>
 			<container class="plain_box" id="tstf" height="400" priority="1">
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container class="finances_summary_panel" file="none">
+					<record id="object_property" get_property="objt" set_property="objt" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+					<widget class="widget_popup_button" id="bact" appearance="none" popup_alignment="all">
+						<string id="widget_type" value="client_object_viewer_xml_panel" />
+						<record id="widget_properties" width="1920" height="1080">
+							<string id="file" value="club/extra_panels/background popup" />
+							<list id="animations">
+								<record class="slide_in_right_animation"/>
+							</list>
+							<real id="delay_modal_close" value="0.3"/>
+						</record>
+						<record id="modal_popup_properties">
+							<string id="file" value="modal popup panel auto sized" />
+							<!-- <string id="modal_sheet_file" value="modal sheet" /> -->
+							<!-- <string id="modal_sheet_file" value="modal sheet no animation" /> -->
+							<!-- <flags id="stick_to_parent" value="all" /> -->
+							<!-- <flags id="stick_to_parent" value="middle" /> -->
+							<!-- <boolean id="darkened" value="true"/> -->
+							<!-- <boolean id="propagate_mouse_events" value="false"/> -->
+							<boolean id="attempt_to_reposition" value="true" />
+							<!-- <string id="file" value="club/bf/background popup" /> -->
+						</record>
+						<!-- This must be set after modal properties -->
+						<boolean id="allow_hover_to_open" value="false"/>
+					</widget>
+				</container>
+
 				<widget class="background" file="backgrounds" id="bgnd">
 					<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
@@ -180,16 +209,42 @@
 					</container>
 					<container height="288">
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
-						<widget class="stadium_picture" file="none" scale_picture="true" keep_aspect_ratio="true">
-							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="-120"/>
-							<record id="object_property" get_property="objt" set_property="objt"/>
-							<widget class="picture" id="STPC" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
-								<layout class="centre_in_parent_attachment" alignment="all"/>
-								<record id="object_property">
-									<integer id="get_property" value="text"/>
-									<string id="set_property" value="hint"/>
+
+						<container class="finances_summary_panel" file="none">
+							<record id="object_property" get_property="objt" set_property="objt" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+							<widget class="widget_popup_button" id="bact" appearance="none" popup_alignment="all">
+								<string id="widget_type" value="client_object_viewer_xml_panel" />
+								<record id="widget_properties" width="1920" height="1080">
+									<string id="file" value="club/extra_panels/stadium popup" />
+									<list id="animations">
+										<record class="slide_in_right_animation"/>
+									</list>
+									<real id="delay_modal_close" value="0.3"/>
 								</record>
+								<record id="modal_popup_properties">
+									<string id="file" value="modal popup panel auto sized" />
+									<!-- <string id="modal_sheet_file" value="modal sheet" /> -->
+									<!-- <string id="modal_sheet_file" value="modal sheet no animation" /> -->
+									<!-- <flags id="stick_to_parent" value="all" /> -->
+									<!-- <flags id="stick_to_parent" value="middle" /> -->
+									<!-- <boolean id="darkened" value="true"/> -->
+									<!-- <boolean id="propagate_mouse_events" value="false"/> -->
+									<boolean id="attempt_to_reposition" value="true" />
+									<!-- <string id="file" value="club/bf/background popup" /> -->
+								</record>
+								<!-- This must be set after modal properties -->
+								<boolean id="allow_hover_to_open" value="false"/>
 							</widget>
+						</container>
+
+						<widget class="stadium_picture" id="STAp" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" priority="1">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="-120"/>
+							<record id="object_property">
+								<integer id="get_property" value="objt"/>
+								<integer id="set_property" value="objt"/>
+							</record>
 						</widget>
 					</container>
 					<container class="plain_box" appearance="boxes/contrast/no margin/bottom/paper" red_replacement="primary">

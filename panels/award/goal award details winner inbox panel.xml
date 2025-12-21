@@ -7,7 +7,7 @@
 
 	<boolean id="is_in_inbox" value="true"/>
 
-	<container class="main_subtle_box">
+	<container class="inner_subtle_box" red_replacement="black">
 		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
 		<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="1" />
 		<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>

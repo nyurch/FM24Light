@@ -6,7 +6,7 @@
 
 	<boolean id="is_in_inbox" value="true"/>
 
-	<container class="main_subtle_box">
+	<container class="inner_subtle_box" red_replacement="black">
 		<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="250,-1,-1" horizontal_offset="6" vertical_offset="6" />
 
 		<!-- placing -->

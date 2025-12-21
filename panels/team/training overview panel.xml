@@ -1,7 +1,7 @@
 <panel>
 
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
-	<widget class="picture" file="backgrounds/default" id="bgnd">
+	<widget class="picture" file="backgrounds/default_light" id="bgnd">
 		<boolean id="scale_picture" value="true" />
 		<boolean id="keep_aspect_ratio" value="false" />
 	</widget>

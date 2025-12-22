@@ -27,10 +27,10 @@
 				<!-- agent feedback on player interest-->
 				<record id="PSag" auto_hide_priority="10"/>
 				<!-- person age -->
+				<record id="Pced" alignement="right,centre_y"/>
+				<!-- contract expiry -->
 				<record id="Pdva" auto_hide_priority="300" />
 				<!-- value -->
-				<record id="Pced" alignement="centre"/>
-				<!-- contract expiry -->
 				<record id="PRpo" auto_hide_priority="40" />
 				<!-- recommended -->
 				<record id="PsKL" auto_hide_priority="500" />

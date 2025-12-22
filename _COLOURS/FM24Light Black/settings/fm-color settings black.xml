@@ -5,8 +5,8 @@
 
 	<!-- Default theme colors -->
 	<colour name="lighter"												value="rgb(102,102,102)" />
-	<colour name="normal"												value="rgb(51,51,51)" />
-	<colour name="darker"												value="rgb(34,34,34)" />
+	<colour name="normal"												value="rgb(74,74,74)" />
+	<colour name="darker"												value="rgb(58,58,58)" />
 
 	<!-- Default accent colours used when no object colours are available -->
 	<colour name="default accent"													value="fg tertiary"/>

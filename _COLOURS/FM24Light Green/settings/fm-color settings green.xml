@@ -4,9 +4,9 @@
 	<!-- The following colours define the base colours scheme for the skin. The colours are references by other colour names in fm colours.xml -->
 
 	<!-- Default theme colors -->
-	<colour name="darker"												value="rgb(4,77,41)" />
-	<colour name="normal"												value="rgb(22,128,57)" />
-	<colour name="lighter"												value="rgb(69,191,85)" />
+	<colour name="darker"												value="rgb(6,112,61)" />
+	<colour name="normal"												value="rgb(7,140,76)" />
+	<colour name="lighter"												value="rgb(15,189,108)" />
 
 	<!-- Default accent colours used when no object colours are available -->
 	<colour name="default accent"													value="fg tertiary"/>

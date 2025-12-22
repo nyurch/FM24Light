@@ -46,7 +46,7 @@
 				<flags id="scroll_bar_class" value="scroll_bar_vertical_inbox"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
 
-				<container draw_horizontal_dividers="true">
+				<container draw_horizontal_dividers="false">
 					<attachment_group class="vertical_arrange_autosize"/>
 
 					<container class="main_contrast_box" red_replacement="top news">
@@ -137,7 +137,7 @@
 					</container>
 
 					<set_var name="medium_news_item_panel">
-						<container height="130" draw_vertical_dividers="true">
+						<container height="130" draw_vertical_dividers="false">
 							<attachment class="hide_empty_container_attachment" min_value="1"/>
 							<attachment_group class="horizontal_arrange" horizontal_layout="-1, -1">
 								<global id="vertical_gap" name="ui.main_box_gap"/>
@@ -263,7 +263,7 @@
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
 				<translation id="title" translation_id="395260" type="use" value="Leagues in Focus[COMMENT: FR 11005; title for panel showing overview of leagues from across the game]"/>
 
-				<container class="vertical_adaptive_container" id="ocmp" inset="0" offset="0" mode="distribute_equally" draw_horizontal_dividers="true">
+				<container class="vertical_adaptive_container" id="ocmp" inset="0" offset="0" mode="distribute_equally" draw_horizontal_dividers="false">
 					<global id="gap" name="ui.main_box_gap"/>
 					<record id="default_properties" news="false" minimum_height="150"/>
 

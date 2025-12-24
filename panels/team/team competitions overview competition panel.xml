@@ -2,7 +2,7 @@
 <panel minimum_width='300' maximum_width="500" minimum_height="400" maximum_height="1024">
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-	<container class="main_box">
+	<container class="main_subtle_box">
 		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="1" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="1" />
 

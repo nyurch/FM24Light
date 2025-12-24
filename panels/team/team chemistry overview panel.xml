@@ -183,7 +183,7 @@
 			<layout class="stick_to_object_attachment" id="alPr" get_side="right" set_side="right" target="main" />
 			<layout class="stick_to_sizes_attachment" height="40.000000" />
 		</container>
-		<container entity_layout_id="at23" id="at23">
+		<container class="main_box" entity_layout_id="at23" id="at23">
 			<layout class="stick_to_object_attachment" id="alPt" get_side="bottom" set_side="top" target="atas">
 				<global id="offset" name="ui.main_contrast_box_gap"/>
 			</layout>
@@ -198,7 +198,7 @@
 				<boolean id="exclude_from_find" value="true" />
 				<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0" />
 			</widget>
-			<container entity_layout_id="at17" id="at17" width="280">
+			<container class="main_subtle_box" entity_layout_id="at17" id="at17" width="280">
 				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="alPb" get_side="bottom" set_side="bottom" target="main" />
 				<layout class="stick_to_object_attachment" id="alPl" get_side="left" set_side="left" move_side="true" target="main" />
@@ -280,14 +280,7 @@
 					</container>
 				</container>
 			</container>
-			<widget class="vertical_divider" entity_layout_id="hod1" width="2">
-				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
-				<layout class="stick_to_object_attachment" id="alPb" offset="-2" get_side="bottom" set_side="bottom" target="main" />
-				<layout class="stick_to_object_attachment" id="alPl" get_side="right" set_side="left" target="at17">
-					<global id="offset" name="ui.main_box_gap"/>
-				</layout>
-			</widget>
-			<container class="main_box" entity_layout_id="at22" id="at22">
+			<container class="main_subtle_box" entity_layout_id="at22" id="at22">
 				<translation id="title" translation_id="450797" type="use" value="Issues[COMMENT:Team Dynamics: Team player issues]" />
 				<layout class="stick_to_object_attachment" id="alPt" get_side="top" set_side="top" target="main" />
 				<layout class="stick_to_object_attachment" id="alPb" offset="0" get_side="bottom" set_side="bottom" target="main" />

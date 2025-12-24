@@ -53,11 +53,11 @@
 	</container>
 
 	<!--Main Content-->
-	<container id="trg1" draw_vertical_dividers="true">
+	<container id="trg1" draw_vertical_dividers="false">
 		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
 
 		<!--Development-->
-		<container>
+		<container class="main_subtle_box">
 			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_inset="0" vertical_gap="6" />
 
 			<!--Development Header-->
@@ -86,7 +86,7 @@
 		</container>
 
 		<!--Breakthrough-->
-		<container>
+		<container class="main_subtle_box">
 			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_inset="0" vertical_gap="6" />
 
 			<!--Breakthrough Header-->
@@ -115,7 +115,7 @@
 		</container>
 
 		<!--Peak-->
-		<container>
+		<container class="main_subtle_box">
 			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_inset="0" vertical_gap="6" />
 
 			<!--Peak Header-->
@@ -143,7 +143,7 @@
 		</container>
 
 		<!--Twilight-->
-		<container>
+		<container class="main_subtle_box">
 			<attachment_group class="vertical_arrange" vertical_alignment="top, extend" vertical_offset="0" vertical_inset="0" vertical_gap="6" />
 
 			<!--Twilight Header-->

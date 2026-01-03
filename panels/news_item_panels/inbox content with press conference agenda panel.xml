@@ -100,7 +100,7 @@
 		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 		<!-- Notable Journalists -->
-		<container class="inner_box" colour="text">
+		<container class="main_box">
 			<translation id="text" translation_id="466485" type="use" value="Notable Journalists In Attendance[COMMENT: FR 22941; press conference invite news; title for box containing list of notable journalists]" />
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
@@ -131,7 +131,7 @@
 		<widget class="horizontal_divider" image_alignment="centre_y" height="2"/>
 
 		<!-- Talking points -->
-		<container class="inner_box" colour="text">
+		<container class="main_box">
 			<translation id="text" translation_id="466486" type="use" value="Likely Talking Points[COMMENT: FR 22941; press conference invite news; title for box containing number of journalists expected to attend]" />
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 

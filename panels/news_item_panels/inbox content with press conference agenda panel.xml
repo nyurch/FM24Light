@@ -100,11 +100,11 @@
 		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 		<!-- Notable Journalists -->
-		<container class="main_box">
+		<container class="main_subtle_box">
 			<translation id="text" translation_id="466485" type="use" value="Notable Journalists In Attendance[COMMENT: FR 22941; press conference invite news; title for box containing list of notable journalists]" />
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
-			<widget class="table" id="NMtb" layout="230,170,-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" height="205" row_spacing="4">
+			<widget class="table" id="NMtb" layout="230,170,-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" height="300" row_spacing="4">
 				<list id="column_table_properties">
 					<record auto_hide_priority="1">
 						<boolean id="sort_disabled" value="true" />
@@ -128,14 +128,16 @@
 			</widget>
 		</container>
 
-		<widget class="horizontal_divider" image_alignment="centre_y" height="2"/>
-
 		<!-- Talking points -->
-		<container class="main_box">
+		<container class="main_subtle_box">
 			<translation id="text" translation_id="466486" type="use" value="Likely Talking Points[COMMENT: FR 22941; press conference invite news; title for box containing number of journalists expected to attend]" />
 			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
-			<widget class="table" id="Tapt" layout="20,-1" mode="fill_rows" row_spacing="2" auto_size_rows="true" fixed_size_rows="false" height="140"/>
+			<widget class="table" id="Tapt" layout="20,-1" mode="fill_rows" row_spacing="2" auto_size_rows="true" fixed_size_rows="false" height="220">
+				<list id="column_widget_properties">
+					<record index="1" alignment="left, centre_y" auto_size="all" colour="text" />
+				</list>
+			</widget>
 
 		</container>
 	</container>

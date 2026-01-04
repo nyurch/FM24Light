@@ -82,7 +82,7 @@
 			<widget class="text" entity_layout_id="at07" id="at07" height="15">
 				<translation id="text" translation_id="309184" type="use" value="Match Performance[COMMENT: interaction manager; category type]" />
 				<string id="font" value="title" />
-				<string id="colour" value="white" />
+				<string id="colour" value="darker" />
 				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main" />
 				<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main" />
 				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
@@ -94,7 +94,6 @@
 				<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main" />
 			</widget>
 			<widget class="text" entity_layout_id="at09" id="scrL" alignment="centre_x,centre_y" auto_size="horizontal" height="25">
-
 				<string id="style" value="bold" />
 				<string id="value" value="text" />
 				<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="bottom" set_side="top" move_side="true" target="at08" />
@@ -114,7 +113,7 @@
 				</widget>
 				<widget class="text" id="at0&gt;" alignment="centre_y,left" entity_layout_id="at0&gt;" width="140" height="35">
 					<integer id="size" value="10" />
-					<translation id="text" value="Average Rating" translation_id="233158" type="use" />
+					<translation id="text" translation_id="420697" type="use" value="Match Rating[COMMENT: match report news panel]"/>
 					<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main" />
 					<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" move_side="true" target="main" />
 				</widget>

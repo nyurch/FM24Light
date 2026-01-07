@@ -9,5 +9,6 @@
 
 	<list id="maps">
 		<record from="680" to="graphics/pictures/club/680/logo"/>
+		<record from="1139" to="graphics/pictures/club/1139/logo"/>
 	</list>
 </record>

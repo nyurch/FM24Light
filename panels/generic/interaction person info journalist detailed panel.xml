@@ -3,11 +3,11 @@
 
 	<boolean id="should_force_refresh" value="true"/>
 
-	<container width="70" height="70">
+	<container width="140" height="140">
 		<attachment_group class="horizontal_arrange" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
 
 		<!-- portrait -->
-		<widget class="object_portrait_picture" width="70" height="70" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+		<widget class="object_portrait_picture" width="140" height="140" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
 			<record id="object_property">
 				<integer id="get_property" value="Pers"/>
 				<boolean id="dont_set_object" value="true"/>

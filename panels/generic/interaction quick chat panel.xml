@@ -12,8 +12,8 @@
 		<container>
 			<attachment_group class="horizontal_arrange_autosize_all_centre_centered_in_parent" horizontal_gap="10"/>
 
-			<widget class="picture" id="titi" red_replacement="fg" scale_picture="true" image_alignment="left" width="20" height="20"/>
-			<widget class="text" id="titl" font="title" size="xlarge" colour="fg" auto_size="all" auto_size_maximum_width="500" alignment="left, centre_y"/>
+			<widget class="picture" id="titi" red_replacement="darker" scale_picture="true" image_alignment="left" width="20" height="20"/>
+			<widget class="text" id="titl" font="title" size="xlarge" colour="darker" auto_size="all" auto_size_maximum_width="500" alignment="left, centre_y"/>
 		</container>
 
 		<!-- leave -->

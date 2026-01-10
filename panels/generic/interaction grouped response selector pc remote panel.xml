@@ -4,7 +4,7 @@
 	<!-- answer list -->
 	<container class="scrolling_box">
 		<container class="plain_box" appearance="boxes/custom/quick chat/user_quick_chat_speech" red_replacement="lighter">
-			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend"/>en 3
+			<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend"/>
 
 			<container id="ancr">
 				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend"/>

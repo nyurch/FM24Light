@@ -55,7 +55,7 @@
 			<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" />
 			<container class="horizontal_arrange_container" id="cnHi" />
 
-			<container class="main_box" width="350" height="50" alignment="right">
+			<container class="main_box" width="350" height="70" alignment="right">
 				<attachment class="test_screen_size_attachment">
 					<list id="properties">
 						<record>
@@ -63,8 +63,8 @@
 							<integer id="min_value" value="0" />
 							<integer id="max_value" value="1365" />
 							<symbol id="set_property" value="width" />
-							<integer id="true_value" value="130" />
-							<integer id="false_value" value="280" />
+							<integer id="true_value" value="340" />
+							<integer id="false_value" value="350" />
 						</record>
 					</list>
 				</attachment>

@@ -189,7 +189,7 @@
 	<colour name="dark text"														value="rgb(55,64,71)"/>
 	<colour name="hint"																value="white"/>
 	<colour name="title"															value="fg tertiary" />
-	<colour name="standard_button_text"												value="fg"/>
+	<colour name="standard_button_text"												value="darker"/>
 	<colour name="searchbox text"													value="fg"/>
 	<colour name="continue text"													value="bg" />
 	<colour name="continue text match"												value="bg" />
@@ -201,10 +201,10 @@
 	<colour name="accent button text"												value="bg"/>
 
 	<!-- Base icon colours -->
-	<colour name="normal_icon"														value="fg"/>
-	<colour name="button_icon"														value="fg"/>
-	<colour name="match_icon"														value="fg"/>
-	<colour name="ui_header_icons"													value="fg"/>
+	<colour name="normal_icon"														value="darker"/>
+	<colour name="button_icon"														value="darker"/>
+	<colour name="match_icon"														value="darker"/>
+	<colour name="ui_header_icons"													value="darker"/>
 
 	<!-- Alerts -->
 	<colour name="attention"														value="fg alert"/>
@@ -220,7 +220,7 @@
 	<colour name="negative light"													value="red 200"/>
 
 	<!-- Button colours -->
-	<colour name="standard_button"													value="fg"/>
+	<colour name="standard_button"													value="darker"/>
 	<colour name="match_button"														value="fg"/>
 	<colour name="solid_button"														value="bg lighter"/>
 	<colour name="primary_button_text"												value="bg"/>
@@ -2040,5 +2040,6 @@
 	<colour name="cup draw react"									value="rgb(13,58,255)"/>
 	<colour name="top news"											value="darker"/>
 	<colour name="top news related"									value="lighter"/>
+	<colour name="topbar menu"										value="darker"/>
 	<colour name="fg magenta"										value="rgb(187,38,73)"/>
 </properties>

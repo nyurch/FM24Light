@@ -12,7 +12,7 @@
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 			</container>
 
-			<widget class="icon_button" icon="icons/16px/clear" height="30" width="30" icon_alignment="centre" id="clos" appearance="buttons/subtle/flex/button">
+			<widget class="icon_button" icon="icons/16px/clear" height="30" width="30" icon_alignment="centre" id="clos">
 				<layout class="stick_to_sides_attachment" alignment="right,top" inset="4"/>
 
 				<record id="click_event">

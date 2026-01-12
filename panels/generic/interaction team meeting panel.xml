@@ -1,0 +1,134 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0"/>
+
+	<boolean id="save_immediate_state" value="true"/>
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-1, 70" offset="0" gap="5"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="10, 0, 0, 0"/>
+
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="bottom, extend"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<animation class="fade_animation" start_value="0" end_value="1" duration="0.6" delay="0.2" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true"/>-->
+
+			<!-- players box -->
+			<container>
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="middle, extend" horizontal_offset="20"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+					<container>
+						<attachment class="test_screen_size_attachment" skip_if_false="true">
+							<list id="properties">
+								<record>
+									<flags id="alignment" value="vertical"/>
+									<integer id="min_value" value="0"/>
+									<integer id="max_value" value="1080"/>
+									<symbol id="set_property" value="height"/>
+									<integer id="true_value" value="1"/>
+								</record>
+								<record min_value="1200" max_value="1377" true_value="150"/>
+								<record min_value="1377" max_value="1440" true_value="200"/>
+								<record min_value="1440" max_value="10000" true_value="250"/>
+							</list>
+						</attachment>
+					</container>
+
+					<container class="scrolling_box" id="tobx" hidden="false" scroll_value_changed_event="ScSc" alignment="top">
+						<container>
+							<layout class="fit_children_attachment" alignment="vertical"/>
+							<layout class="stick_to_sides_attachment" alignment="top, horizontal" inset="0" apply_to_children="true"/>
+
+							<container id="intB">
+								<attachment_group class="horizontal_arrange_wrapped" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="5"/>
+								<record id="default_properties" width="185"/>
+
+								<!-- players get added here -->
+							</container>
+						</container>
+					</container>
+
+					<widget class="spacer" height="10"/>
+				</container>
+
+				<!-- question -->
+				<!-- the parent is stick to sides all, then the child 'queb' can be moved around within it to locate it next to the speaking journalist -->
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+					<container class="interaction_speech_bubble_panel" id="queb" width="300"/>
+				</container>
+			</container>
+
+			<!-- main human response box -->
+			<container id="mnrs">
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom, extend" horizontal_inset="20"/>
+
+				<container class="main_contrast_box" red_replacement="bg lighter" navigation_container="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="bottom"/>
+
+					<!-- gestures -->
+					<container class="interaction_gesture_selector_panel" id="gest" hidden="true"/>
+
+					<!-- human responses -->
+					<container class="scrolling_box" auto_size="vertical" auto_size_maximum_height="300">
+						<container class="interaction_grouped_response_selector_panel" id="resp"/>
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<container class="main_transparent_box_no_margin" height="70" appearance="boxes/custom/solid/paper" red_replacement="bg darker">
+			<attachment_group class="horizontal_arrange" horizontal_layout="-1, 200, -1"/>
+			<animation class="translate_animation" start_value="0, 1" end_value="0, 0" duration="0.3" delay="0" end_mode="hold_end" tween="ease_out_4" coord_mode="relative_to_target" trigger_id="hidden" trigger_start="false" trigger_end="true" no_clipping="true"/>
+
+			<container id="OPat">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right"/>
+				<record id="default_properties" width="200"/>
+
+				<!-- other people added here (usually assistant manager/director of football) -->
+			</container>
+
+			<!-- human manager description -->
+			<widget class="interaction_person_info_panel" id="humd" interaction_person_type="human" width="200" talk="true" show_background="false" disable_link="true">
+				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+				<layout class="stick_to_sides_attachment" alignment="top" inset="3"/>
+			</widget>
+
+			<container/>
+			<!-- spacer -->
+		</container>
+	</container>
+
+	<!-- featured object profile -->
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+		<animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.3" delay="0.2" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target" centre_point="top" />
+		<animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="0.2" end_mode="hold_end" trigger_id="hidden" trigger_start="false" trigger_end="true"/>
+
+		<!-- start with this hidden by default so it doesn't obscure any players -->
+		<container class="interaction_featured_object_container" id="FObP" width="220" start_hidden="true" show_dynamic_image="false">
+			<layout class="stick_to_sides_attachment" alignment="right, top" inset="0"/>
+		</container>
+	</container>
+
+	<container id="NoCc" class="main_transparent_box" hidden="true">
+		<attachment_group class="horizontal_arrange_autosize_all_centre_centered_in_parent"/>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize_all" vertical_alignment="middle, extend"/>
+
+			<widget class="text" id="NoCt" colour="text" size="large" auto_size="all" alignment="centre" style="semi_bold"/>
+
+			<widget class="button" auto_size="all">
+				<record id="click_event" event_id="GOTO" event_target="brow" scin="-3"/>
+				<translation id="text" translation_id="247672" type="use" value="Back"/>
+				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+			</widget>
+		</container>
+	</container>
+</panel>

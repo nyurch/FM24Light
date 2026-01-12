@@ -10,8 +10,8 @@
 	<container class="bordered_box_no_margin" appearance="boxes/popup/standard/paper">
 		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top, extend"/>
 
-		<widget class="text" id="titl" style="bold" colour="white" alignment="left, centre_y" auto_size="vertical"/>
+		<widget class="text" id="titl" style="bold" colour="text" alignment="left, centre_y" auto_size="vertical"/>
 		<widget class="horizontal_divider"/>
-		<widget class="text" id="desc" colour="white" alignment="left, centre_y" auto_size="vertical"/>
+		<widget class="text" id="desc" colour="text" alignment="left, centre_y" auto_size="vertical"/>
 	</container>
 </panel>

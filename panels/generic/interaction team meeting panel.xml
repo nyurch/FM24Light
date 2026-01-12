@@ -45,7 +45,7 @@
 
 							<container id="intB">
 								<attachment_group class="horizontal_arrange_wrapped" horizontal_alignment="middle" horizontal_offset="0" horizontal_gap="5"/>
-								<record id="default_properties" width="185"/>
+								<record id="default_properties" width="220"/>
 
 								<!-- players get added here -->
 							</container>

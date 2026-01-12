@@ -49,11 +49,11 @@
   <container width="25" height="25">
     <layout class="stick_to_sides_attachment" alignment="right,top" inset="0" />
     <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-    <widget class="picture" id="cptP" image_alignment="right,centre_y" file="icons/custom/promises/captain" red_replacement="yellow" blue_replacement="black" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+    <widget class="picture" id="cptP" image_alignment="right,centre_y" file="icons/custom/promises/captain" red_replacement="darker" blue_replacement="white" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
       <translation id="hint" translation_id="300013" type="use" value="Captain" />
     </widget>
 
-    <widget class="picture" id="vcpP" image_alignment="right,centre_y" file="icons/custom/promises/vice captain" red_replacement="white" blue_replacement="black" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+    <widget class="picture" id="vcpP" image_alignment="right,centre_y" file="icons/custom/promises/vice captain" red_replacement="normal" blue_replacement="white" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
       <translation id="hint" translation_id="300014" type="use" value="Vice Captain" />
     </widget>
   </container>

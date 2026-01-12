@@ -2,7 +2,6 @@
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 	<boolean id="is_live_cup_draw_panel" value="true" />
 
-
 	<container class="main_box" id="mnCO">
 		<attachment class="get_global_attachment" get_property="comp_draw_dialog_image" set_property="appearance" />
 		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="15" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="15" />
@@ -329,32 +328,42 @@
 				</container>
 
 			</container>
-
-			<container class="main_subtle_box">
-				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
-				<widget class="text" font="title" colour="normal" auto_size="vertical">
-					<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
-					<translation id="text" translation_id="509183" type="use" value="Notable Reactions[COMMENT: AREA: Pre-match briefing; SUB-AREA: title for a section; FR-BN: 30879; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: The section is showing noteable reactions to the confirmed tactics for the match]" />
+			<container>
+				<!--background-->
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="picture" file="backgrounds/teamnews" scale_picture="false">
+					<boolean id="keep_aspect_ratio" value="true" />
 				</widget>
-				<widget class="news_feed_panel" id="socs" filter="Fsco" file="" social_item_file="human/news feed social item content panel for cup draws matchup info">
-					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<!--overlay-->
+				<widget class="picture" file="boxes/custom/overlay/paper" scale_picture="true">
+					<boolean id="keep_aspect_ratio" value="false" />
+				</widget>
+				<container class="main_subtle_box">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
+					<widget class="text" font="title" colour="normal" auto_size="vertical">
+						<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+						<translation id="text" translation_id="509183" type="use" value="Notable Reactions[COMMENT: AREA: Pre-match briefing; SUB-AREA: title for a section; FR-BN: 30879; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: The section is showing noteable reactions to the confirmed tactics for the match]" />
+					</widget>
+					<widget class="news_feed_panel" id="socs" filter="Fsco" file="" social_item_file="human/news feed social item content panel for cup draws matchup info">
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-					<integer id="number_of_items_to_display" value="2" />
+						<integer id="number_of_items_to_display" value="2" />
 
-					<!-- Note that the id is important so that the league selector panels have their popups display correctly -->
-					<container id="Pnlf">
-						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+						<!-- Note that the id is important so that the league selector panels have their popups display correctly -->
+						<container id="Pnlf">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
 
-						<container id="nwsl">
-							<attachment_group class="vertical_arrange_autosize" horizontal_gap="50" />
+							<container id="nwsl">
+								<attachment_group class="vertical_arrange_autosize" horizontal_gap="50" />
 
-							<!-- items added in code here -->
+								<!-- items added in code here -->
+							</container>
+
+
 						</container>
 
-
-					</container>
-
-				</widget>
+					</widget>
+				</container>
 			</container>
 		</container>
 	</container>

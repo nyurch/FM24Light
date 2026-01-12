@@ -1,0 +1,38 @@
+﻿<panel width="260">
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<container id="main" class="inner_subtle_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="4" horizontal_alignment="horizontal" horizontal_inset="8" vertical_gap="10"/>
+
+		<widget class="text" id="titl" alignment="centre" height="50" size="50" font="title" colour="fg" value="“"/>
+
+		<container id="SCnt">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!-- tweet -->
+			<widget class="text" id="sttx" alignment="centre" multiline="true" auto_size="vertical" style="bold">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+			</widget>
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize"/>
+
+			<widget class="client_object_label" alignment="centre" size="large" id="nmtx" font="title" colour="text" auto_size="vertical"/>
+			<container class="object_portrait_picture_with_label_and_background" id="medi" file="">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- label -->
+				<widget class="client_object_label" id="oblw" font="capitals" colour="normal" multiline="false" size="8" alignment="centre" auto_size="vertical">
+
+				</widget>
+
+
+			</container>
+		</container>
+
+
+	</container>
+
+</panel>

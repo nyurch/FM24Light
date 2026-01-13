@@ -1,11 +1,9 @@
 ﻿<panel width="1000">
 	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 	<boolean id="is_live_cup_draw_panel" value="true" />
-
 	<container class="main_box" id="mnCO">
 		<attachment class="get_global_attachment" get_property="comp_draw_dialog_image" set_property="appearance" />
 		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="15" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="15" />
-
 		<list id="properties_to_forward">
 			<record get_property="Ttea" set_property="objt" target="hmTC" />
 			<record get_property="Ttea" set_property="objt" target="man1" />
@@ -18,64 +16,103 @@
 			<record get_property="ottm" set_property="objt" target="str2" />
 			<record get_property="ottm" set_property="objt" target="clp2" />
 		</list>
-
 		<widget class="text" size="xlarge" colour="normal" auto_size="all">
 			<string id="remove_if" value="is_fmt" />
 			<attachment class="get_global_attachment" get_property="comp_draw_title_font" set_property="font" />
 			<translation id="text" translation_id="557725" type="use" value="Matchup Info[COMMENT: AREA: Cup Draw; SUB-AREA:; FR-BN: ; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for matchup info dialog]" />
 		</widget>
-
 		<widget class="spacer" height="16">
 			<string id="remove_if" value="is_fmt" />
 		</widget>
-
 		<container>
 			<attachment_group class="horizontal_arrange" horizontal_layout="-2,-1" horizontal_gap="14" vertical_alignment="vertical" />
 			<container class="main_subtle_box">
 				<attachment_group class="vertical_arrange" />
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1, 20, -1" vertical_alignment="vertical" />
-
 					<container class="client_object_viewer_xml_panel" id="hmTC">
-						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" vertical_alignment="vertical" />
-
-
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right, extend" vertical_alignment="vertical" />
 						<container>
 							<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right, extend" vertical_alignment="vertical" horizontal_gap="12" />
 							<container>
-								<attachment_group class="vertical_arrange" />
-								<widget class="team_button" size="xlarge" auto_size="vertical" alignment="right, centre_y" icon_enabled="false">
+								<layout class="vertical_arrange" vertical_layout="30,20,20,20,20,20,20" horizontal_alignment="right"/>
+								<widget class="team_button" size="xlarge" font="title" auto_size="all" alignment="right, centre_y" icon_enabled="false">
 									<record id="object_property" get_property="objt" set_property="valu" />
 									<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 								</widget>
-								<widget class="nation_button" id="natb" label_disabled="false" auto_size="vertical" alignment="right, centre_y">
-									<record id="object_property" get_property="Nnat" set_property="objt" />
-
+								<widget class="city_label" colour="faded text" auto_size="all" alignment="right, centre_y">
+									<record id="object_property" get_property="SctI"/>
 								</widget>
+								<widget class="nation_button" id="natb" label_disabled="false" auto_size="all" alignment="right, centre_y">
+									<record id="object_property" get_property="Nnat" set_property="objt" />
+								</widget>
+								<container class="horizontal_label_value_pair" auto_size="horizontal">
+									<!-- Reputation -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csta" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="right, centre_y" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_reputation_stars_label" auto_size="horizontal" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csta"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Finances -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csfs" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="right, centre_y" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="financial_status_label" colour="lighter" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csfs"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Personality -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csca" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="right, centre_y" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_squad_character_label" colour="lighter" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="Csca"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Atmosphere -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="right, centre_y" height="20">
+										<translation id="text" translation_id="509553" type="use" value="Club Atmosphere[COMMENT: AREA: Dynamics; SUB-AREA: Team DRA Panel; FR-BN: 19635; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Used on the main Dynamics panel to display the club's overall atmosphere]" />
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="right, centre_y" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_atmosphere_label" colour="lighter" auto_size="all" alignment="right, centre_y" height="20">
+										<record id="object_property" get_property="ccca"/>
+									</widget>
+								</container>
 							</container>
+
 							<widget class="object_portrait_picture" height="200" width="200" scale_picture="true" keep_aspect_ratio="true">
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
-
-
 						</container>
-
 					</container>
-
 					<widget class="text" value="V" style="bold" alignment="centre" size="20" colour="normal">
 						<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 					</widget>
-
 					<container class="client_object_viewer_xml_panel" id="awTC">
 						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right, extend" vertical_alignment="vertical" />
 						<container>
 							<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" vertical_alignment="vertical" horizontal_gap="12"/>
-
 							<widget class="object_portrait_picture" height="200" width="200" scale_picture="true" keep_aspect_ratio="true">
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
 							<container>
-								<layout class="vertical_arrange" vertical_layout="30,20,20,20,20,20" />
+								<layout class="vertical_arrange" vertical_layout="30,20,20,20,20,20,20" />
 								<widget class="team_button" size="xlarge" font="title" auto_size="vertical" alignment="left, centre_y" icon_enabled="false">
 									<record id="object_property" get_property="objt" set_property="valu" />
 									<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
@@ -125,7 +162,7 @@
 								<container class="horizontal_label_value_pair">
 									<!-- Atmosphere -->
 									<widget class="label" colour="faded text" auto_size="all" alignment="all" height="20">
-										<record id="object_property" get_property="ccca" name="true"/>
+										<translation id="text" translation_id="509553" type="use" value="Club Atmosphere[COMMENT: AREA: Dynamics; SUB-AREA: Team DRA Panel; FR-BN: 19635; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Used on the main Dynamics panel to display the club's overall atmosphere]" />
 									</widget>
 									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="all" height="20">>
 										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
@@ -136,25 +173,18 @@
 								</container>
 							</container>
 						</container>
-
 					</container>
-
 				</container>
-
 				<widget class="spacer" height="8" />
 				<widget class="horizontal_divider" />
 				<widget class="spacer" height="8" />
-
 				<widget class="text" colour="normal" auto_size="vertical" alignment="centre">
 					<translation id="text" translation_id="557726" type="use" value="Head-to-Head[COMMENT: AREA: Cup Draw; SUB-AREA:; FR-BN: ; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Title for matchup info dialog section]" />
 					<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 				</widget>
-
 				<widget class="spacer" height="2" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle" horizontal_gap="8"/>
-
 					<container class="main_contrast_box" red_replacement="green 900" width="100">
 						<attachment_group class="vertical_arrange_autosize" />
 						<widget class="text" auto_size="vertical" alignment="centre_x" size="12" font="title" style="bold" colour="white">
@@ -186,11 +216,9 @@
 						</widget>
 					</container>
 				</container>
-
 				<widget class="spacer" height="8" />
 				<widget class="horizontal_divider" />
 				<widget class="spacer" height="8" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,240,100,240,-1" vertical_alignment="vertical" />
 					<container/>
@@ -228,9 +256,7 @@
 					</container>
 					<container/>
 				</container>
-
 				<widget class="spacer" height="8" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,240,100,240,-1" vertical_alignment="vertical" />
 					<container/>
@@ -268,9 +294,7 @@
 					</container>
 					<container/>
 				</container>
-
 				<widget class="spacer" height="8" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-1,240,100,240,-1" vertical_alignment="vertical" />
 					<container/>
@@ -308,11 +332,9 @@
 					</container>
 					<container/>
 				</container>
-
 				<widget class="spacer" height="8" />
 				<widget class="horizontal_divider" />
 				<widget class="spacer" height="8" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" vertical_alignment="vertical" />
 					<widget class="text" id="hmBR" auto_size="all" alignment="left" colour="text" value="Placeholder">
@@ -326,9 +348,7 @@
 						<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 					</widget>
 				</container>
-
 				<widget class="spacer" height="8" />
-
 				<container id="PrSc">
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" vertical_alignment="vertical" />
 					<widget class="text" id="hmPS" auto_size="all" alignment="left" colour="text" value="Placeholder">
@@ -342,14 +362,11 @@
 						<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 					</widget>
 				</container>
-
 				<widget class="spacer" height="8" />
-
 				<container>
 					<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" vertical_alignment="vertical" />
 					<container class="client_object_viewer_xml_panel" id="clp1">
 						<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" vertical_alignment="vertical" />
-
 						<widget class="formatted_label" auto_size="horizontal" alignment="left,centre_y" colour="text">
 							<string id="format" value="[%comp#1-short]" />
 							<record id="object_property" get_property="Tdiv" set_property="valu" />
@@ -377,10 +394,8 @@
 							<record id="object_property" get_property="TpoN" set_property="valu" />
 							<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 						</widget>
-
 					</container>
 				</container>
-
 			</container>
 			<container>
 				<!--background-->
@@ -400,26 +415,18 @@
 					</widget>
 					<widget class="news_feed_panel" id="socs" filter="Fsco" file="" social_item_file="human/news feed social item content panel for cup draws matchup info">
 						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
-
 						<integer id="number_of_items_to_display" value="2" />
-
 						<!-- Note that the id is important so that the league selector panels have their popups display correctly -->
 						<container id="Pnlf">
 							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
-
 							<container id="nwsl">
 								<attachment_group class="vertical_arrange_autosize" horizontal_gap="50" />
-
 								<!-- items added in code here -->
 							</container>
-
-
 						</container>
-
 					</widget>
 				</container>
 			</container>
 		</container>
 	</container>
-
 </panel>

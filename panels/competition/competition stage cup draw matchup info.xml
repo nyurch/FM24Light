@@ -75,14 +75,65 @@
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
 							<container>
-								<attachment_group class="vertical_arrange" />
+								<layout class="vertical_arrange" vertical_layout="30,20,20,20,20,20" />
 								<widget class="team_button" size="xlarge" font="title" auto_size="vertical" alignment="left, centre_y" icon_enabled="false">
 									<record id="object_property" get_property="objt" set_property="valu" />
 									<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 								</widget>
+								<widget class="city_label" colour="faded text" auto_size="all" alignment="all" height="20">
+									<record id="object_property" get_property="SctI"/>
+								</widget>
 								<widget class="nation_button" id="natb" label_disabled="false" auto_size="vertical" alignment="left, centre_y">
 									<record id="object_property" get_property="Nnat" set_property="objt" />
 								</widget>
+								<container class="horizontal_label_value_pair">
+									<!-- Reputation -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="left, centre_y" height="20">
+										<record id="object_property" get_property="Csta" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="all" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_reputation_stars_label" auto_size="horizontal" alignment="left, centre_y" height="20">
+										<record id="object_property" get_property="Csta"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Finances -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="Csfs" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="all" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="financial_status_label" colour="lighter" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="Csfs"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Personality -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="Csca" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="all" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_squad_character_label" colour="lighter" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="Csca"/>
+									</widget>
+								</container>
+								<container class="horizontal_label_value_pair">
+									<!-- Atmosphere -->
+									<widget class="label" colour="faded text" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="ccca" name="true"/>
+									</widget>
+									<widget class="text" value=": " colour="faded text" auto_size="all" alignment="all" height="20">>
+										<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+									</widget>
+									<widget class="club_atmosphere_label" colour="lighter" auto_size="all" alignment="all" height="20">
+										<record id="object_property" get_property="ccca"/>
+									</widget>
+								</container>
 							</container>
 						</container>
 

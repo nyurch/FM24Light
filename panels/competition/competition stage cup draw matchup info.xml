@@ -38,19 +38,21 @@
 
 					<container class="client_object_viewer_xml_panel" id="hmTC">
 						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="left, extend" vertical_alignment="vertical" />
-						<widget class="nation_button" id="natb" label_disabled="false" auto_size="all">
-							<record id="object_property" get_property="Nnat" set_property="objt" />
 
-						</widget>
 
 						<container>
 							<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right, extend" vertical_alignment="vertical" horizontal_gap="12" />
+							<container>
+								<attachment_group class="vertical_arrange" />
+								<widget class="team_button" size="xlarge" auto_size="vertical" alignment="right, centre_y" icon_enabled="false">
+									<record id="object_property" get_property="objt" set_property="valu" />
+									<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+								</widget>
+								<widget class="nation_button" id="natb" label_disabled="false" auto_size="vertical" alignment="right, centre_y">
+									<record id="object_property" get_property="Nnat" set_property="objt" />
 
-							<widget class="team_button" size="xlarge" auto_size="vertical" alignment="right, centre_y" icon_enabled="false">
-								<record id="object_property" get_property="objt" set_property="valu" />
-								<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
-							</widget>
-
+								</widget>
+							</container>
 							<widget class="object_portrait_picture" height="200" width="200" scale_picture="true" keep_aspect_ratio="true">
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
@@ -60,7 +62,7 @@
 
 					</container>
 
-					<widget class="text" value="V" style="bold" alignment="centre" auto_size="all" colour="text">
+					<widget class="text" value="V" style="bold" alignment="centre" size="20" colour="normal">
 						<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
 					</widget>
 
@@ -72,17 +74,18 @@
 							<widget class="object_portrait_picture" height="200" width="200" scale_picture="true" keep_aspect_ratio="true">
 								<record id="object_property" get_property="objt" set_property="valu" />
 							</widget>
-
-							<widget class="team_button" size="xlarge" font="title" auto_size="vertical" alignment="left, centre_y" icon_enabled="false">
-								<record id="object_property" get_property="objt" set_property="valu" />
-								<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
-							</widget>
-
+							<container>
+								<attachment_group class="vertical_arrange" />
+								<widget class="team_button" size="xlarge" font="title" auto_size="vertical" alignment="left, centre_y" icon_enabled="false">
+									<record id="object_property" get_property="objt" set_property="valu" />
+									<attachment class="get_global_attachment" get_property="comp_draw_font" set_property="font" />
+								</widget>
+								<widget class="nation_button" id="natb" label_disabled="false" auto_size="vertical" alignment="left, centre_y">
+									<record id="object_property" get_property="Nnat" set_property="objt" />
+								</widget>
+							</container>
 						</container>
 
-						<widget class="nation_button" id="natb" label_disabled="false" auto_size="all">
-							<record id="object_property" get_property="Nnat" set_property="objt" />
-						</widget>
 					</container>
 
 				</container>

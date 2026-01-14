@@ -1,0 +1,35 @@
+﻿<panel>
+	<list id="properties_to_forward">
+		<record get_property="text" set_property="valu" target="text"/>
+		<record get_property="titl" set_property="valu" target="titl"/>
+		<record get_property="subt" set_property="valu" target="subt"/>
+		<record get_property="objt" set_property="objt" target="pict"/>
+		<record get_property="top" set_property="hidden" target="divT"/>
+		<record get_property="top" set_property="hidden" target="cirT"/>
+		<record get_property="top" set_property="shown" target="divB"/>
+		<record get_property="top" set_property="shown" target="cirB"/>
+		<record get_property="hAdS" set_property="shown" target="text"/>
+		<record get_property="hAdS" set_property="shown" target="divM"/>
+		<record get_property="hAdS" set_property="shown" target="dvMC"/>
+		<record get_property="IBcc" set_property="red_replacement" target="main"/>
+		<record get_property="IAcc" set_property="red_replacement" target="divM"/>
+		<record get_property="IAcc" set_property="blue_replacement" target="main"/>
+		<record get_property="ITcc" set_property="colour" target="text"/> 
+		<record get_property="ITcc" set_property="colour" target="titl"/> 
+		<record get_property="ICAp" set_property="appearance" target="main"/>
+	</list>
+	<attachment_group class="vertical_arrange_autosize_all_centre" vertical_gap="0" vertical_offset="0" horizontal_inset="24"/>
+	<container class="main_contrast_box" appearance="boxes/custom/manager timeline/media event card/paper" id="main" width="400">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="2" />
+		
+		<widget class="text" width="40" height="50" size="50" alignment="centre_x,centre_y" font="title" colour="fg" value="“" />
+		
+		<widget class="text" id="text" spec="text" size="medium" auto_size="vertical" alignment="centre_x, centre_y" multiline="true">
+			<layout class="stick_to_sides_attachment" auto_size="vertical" alignment="horizontal" inset="20"/>
+		</widget>
+		
+		<widget class="client_object_label" auto_size="vertical" id="titl" font="title" alignment="bottom, centre_y" colour="text"  size="9" />
+
+		<widget class="client_object_label" auto_size="vertical" id="subt" font="regular" alignment="bottom, centre_y" colour="dark text" size="8" />
+	</container>
+</panel>

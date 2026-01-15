@@ -18,7 +18,7 @@
 		<container height="32" width="32">
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 
-			<widget class="picture" id="icon" file="icons/48px/grade_scout" red_replacement="white" image_alignment="centre_x, centre_y" keep_aspect_ratio="true" scale_picture="true" height="32">
+			<widget class="picture" id="icon" file="icons/48px/grade_scout" image_alignment="centre_x, centre_y" keep_aspect_ratio="true" scale_picture="true" height="32">
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" />
 			</widget>
 

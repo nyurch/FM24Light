@@ -6,25 +6,20 @@
 	<container class="bordered_box_no_margin" appearance="boxes/custom/interaction/person/paper">
 		<attachment_group class="vertical_arrange_autosize" vertical_alignment="top" vertical_gap="0" vertical_inset="0"/>
 
-		<container height="30">
-			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="30, -1" horizontal_gap="8" vertical_offset="0"/>
+		<container height="90">
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_layout="90, -1" horizontal_gap="8" vertical_offset="0"/>
 
 			<!-- portrait -->
 			<container>
 				<attachment_group class="horizontal_arrange_vertical_autosize" vertical_inset="0" vertical_offset="0" horizontal_inset="0" horizontal_offset="0"/>
 
 				<!-- portrait -->
-				<widget class="object_portrait_picture" id="PPor" width="30" height="30" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+				<widget class="object_portrait_picture" id="PPor" width="90" height="90" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
 					<record id="object_property">
 						<integer id="get_property" value="Pers"/>
 						<boolean id="dont_set_object" value="true"/>
 						<boolean id="dont_set_hint" value="true"/>
 					</record>
-					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
-				</widget>
-
-				<!-- currently speaking icon? -->
-				<widget class="picture" id="talk" file="icons/custom/quick chat/quick_chat_speaking_mask_square_small" scale_picture="true" keep_aspect_ratio="true" width="30" height="30" image_alignment="centre" red_replacement="fg red" hidden="true">
 					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
 				</widget>
 			</container>

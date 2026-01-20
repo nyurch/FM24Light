@@ -1,0 +1,48 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<container class="inner_contrast_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="6" horizontal_inset="4" />
+
+		<widget class="text" font="title" auto_size="vertical">
+			<translation id="text" translation_id="596177" type="use" value="Player Targets[COMMENT: AREA: Player Targets; SUB-AREA: Targets Panel; FR-BN: FM-23145; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE; panel header title for a section listing all targets a manager has set for a player]" />
+		</widget>
+
+		<widget class="spacer" height="4" />
+
+		<widget class="person_button" colour="black" style="bold" info_popup_enabled="true" person_is_player="true" auto_size="vertical">
+			<record id="object_property" get_property="PlPe" set_property="valu" />
+		</widget>
+
+		<widget class="spacer" height="8" />
+
+		<!-- the agreed target -->
+		<widget class="text" auto_size="vertical">
+			<record id="object_property" get_property="titl" set_property="text" />
+		</widget>
+
+		<!-- time remaining to achieve target -->
+		<widget class="text" auto_size="vertical" colour="faded text">
+			<record id="object_property" get_property="dRes" set_property="text" />
+		</widget>
+
+		<widget class="spacer" height="12" />
+
+		<widget class="text" font="title" auto_size="vertical">
+			<translation id="text" translation_id="558866" type="use" value="Outcome[COMMENT: AREA: Board profile panel; SUB-AREA: Borad request status table; FR-BN: 3644; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Table column heading describing the outcome of a board request]" />
+		</widget>
+
+		<widget class="spacer" height="4" />
+
+		<widget class="person_button" colour="black" style="bold" info_popup_enabled="true" person_is_player="true" auto_size="vertical">
+			<record id="object_property" get_property="PlPe" set_property="valu" />
+		</widget>
+
+		<widget class="spacer" height="8" />
+
+		<!-- outcome if target met -->
+		<widget class="text" auto_size="vertical" multiline="true">
+			<record id="object_property" get_property="oops" set_property="text" />
+		</widget>
+	</container>
+</panel>

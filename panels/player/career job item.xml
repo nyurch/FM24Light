@@ -1,0 +1,22 @@
+﻿<container height="60" width="600">
+	<layout class="horizontal_arrange" horizontal_layout="30, 25, -1" horizontal_gap="10" vertical_alignment="vertical" />
+
+	<widget class="check_box" id="tick" alignment="centre" />
+
+	<widget class="object_portrait_picture" id="logo" image_alignment="centre" scale_picture="true" />
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="30, -1" vertical_gap="0" />
+
+		<container>
+			<layout class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="5" />
+
+			<widget class="team_button" id="tema" auto_size="horizontal" alignment="left, bottom" icon_enabled="false" style="bold" />
+
+			<widget class="text" id="jobl" alignment="left, bottom" colour="faded text" size="small" />
+		</container>
+
+		<widget class="text" id="durn" alignment="left, top" size="small" />
+	</container>
+
+</container>

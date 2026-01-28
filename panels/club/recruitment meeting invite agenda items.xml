@@ -99,7 +99,7 @@
 
 				<widget class="picture" file="icons/26px/circle" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" red_replacement="red" />
 
-				<widget class="picture" file="icons/16px/recruitment focus" red_replacement="white" blue_replacement="bg" image_alignment="centre" scale_picture="false" auto_size="vertical" />
+				<widget class="picture" file="icons/16px/recruitment focus" red_replacement="red" blue_replacement="white" image_alignment="centre" scale_picture="false" auto_size="vertical" />
 
 			</container>
 

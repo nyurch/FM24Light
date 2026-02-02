@@ -29,7 +29,7 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
 
 			<!--pivotal match-->
-			<widget class="label" font="title" colour="gold" alignment="centre" auto_size="vertical" id="titl">
+			<widget class="label" font="title" colour="black" alignment="centre" auto_size="vertical" id="titl">
 				<translation id="text" translation_id="437033" type="use" value="Pivotal Match[COMMENT: FR 13665; comp win news item; section title for important match]"/>
 			</widget>
 
@@ -45,7 +45,7 @@
 
 				</container>
 
-				<widget class="fixture_button" id="scrl" colour="gold" size="16" style="bold" alignment="centre_x,centre_y"/>
+				<widget class="fixture_button" id="scrl" colour="black" size="16" style="bold" alignment="centre_x,centre_y"/>
 
 				<container height="50">
 					<layout class="arrange_vertical_attachment" layout="60, -1," gap="7"/>
@@ -83,7 +83,7 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
 
 			<!--key player-->
-			<widget class="label" auto_size="none" font="title" colour="gold" alignment="left,centre_y">
+			<widget class="label" auto_size="none" font="title" colour="black" alignment="left,centre_y">
 				<translation id="text" translation_id="227396" type="use" value="Key Player"/>
 			</widget>
 

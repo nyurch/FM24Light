@@ -1,0 +1,70 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" />
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" horizontal_inset="8" vertical_gap="8" offset="10" />
+
+		<widget class="table" id="pstb" layout="-2,-2,-2,-1" mode="fill_rows, stripe_rows" auto_size_rows="false" fixed_size_rows="true" row_height="26" auto_size="vertical">
+			<list id="headings">
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="248033" type="use" value="Nationality[COMMENT - Hall of fame section]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="557651" type="use" value="Signed From[COMMENT:AREA: Club vision; SUB - AREA: Performance transfers players signed from panel FR - BN: FM-3272; TONE: Formal; CHARLIMIT: None; REF - ID: n/a; NOTE: table column title.]" />
+				</record>
+				<record alignment="left,centre_y">
+					<translation id="text" translation_id="247258" type="use" value="Fee[COMMENT - fee for friendly opposition on arrange friendly panel]" />
+				</record>
+			</list>
+			<list id="column_table_properties">
+				<record>
+					<integer id="index" value="0" />
+					<record id="widget_info">
+						<symbol id="class" value="person_button" />
+						<boolean id="person_is_player" value="true" />
+						<boolean id="info_popup_enabled" value="false" />
+					</record>
+				</record>
+				<record>
+					<integer id="index" value="1" />
+					<record id="widget_info">
+						<symbol id="class" value="nation_button" />
+						<flags id="auto_size" value="all" />
+						<string id="format" value="[%nation#1-3letter]" />
+					</record>
+				</record>
+				<record>
+					<integer id="index" value="2" />
+					<record id="widget_info">
+						<symbol id="class" value="team_button" />
+						<flags id="auto_size" value="all" />
+						<string id="format" value="[%team#1-six_letter]" />
+					</record>
+				</record>
+				<record>
+					<integer id="index" value="3" />
+					<record id="widget_info">
+						<symbol id="class" value="value_label" />
+					</record>
+				</record>
+			</list>
+			<list id="column_widget_properties">
+				<record alignment="centre_y,left">
+					<integer id="index" value="0" colour="black" />
+				</record>
+				<record alignment="centre_y,left">
+					<integer id="index" value="1" />
+				</record>
+				<record alignment="centre_y,left">
+					<integer id="index" value="2" />
+				</record>
+				<record alignment="centre_y,left">
+					<integer id="index" value="3" colour="black" />
+				</record>
+			</list>
+		</widget>
+	</container>
+</panel>

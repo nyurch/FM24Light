@@ -52,8 +52,8 @@
 				</record>
 			</list>
 			<list id="column_widget_properties">
-				<record alignment="centre_y,left">
-					<integer id="index" value="0" colour="black" />
+				<record alignment="centre_y,left" colour="faded black">
+					<integer id="index" value="0" />
 				</record>
 				<record alignment="centre_y,left">
 					<integer id="index" value="1" />
@@ -61,8 +61,8 @@
 				<record alignment="centre_y,left">
 					<integer id="index" value="2" />
 				</record>
-				<record alignment="centre_y,left">
-					<integer id="index" value="3" colour="black" />
+				<record alignment="centre_y,left" colour="faded black">
+					<integer id="index" value="3" />
 				</record>
 			</list>
 		</widget>

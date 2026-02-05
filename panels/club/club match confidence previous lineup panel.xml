@@ -5,7 +5,7 @@
 
 	<widget class="text" id="PRti" font="title" colour="text" auto_size="vertical"/>
 
-	<widget class="pitch_with_tactics" id="prLu" height="550" icon_flags="show_name, drop_initial_if_possible, show_number" player_icon_file="tactics/tactics icon match confidence previous lineup" pitch_draw_grass="true" pitch_additional_touchline_pixels_top="4" tactic_icon_min_size="100.f" pitch_line_colour="faded white">
+	<widget class="pitch_with_tactics" id="prLu" height="550" icon_flags="show_name, drop_initial_if_possible, show_number" player_icon_file="tactics/tactics icon match confidence previous lineup" pitch_draw_grass="true" tactic_icon_min_size="100.f" pitch_line_colour="faded white">
 		<boolean id="vertical" value="true"/>
 		<boolean id="pitch_is_read_only" value="true"/>
 		<boolean id="pitch_dont_draw_indicators" value="true"/>

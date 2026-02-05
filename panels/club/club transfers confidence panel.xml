@@ -1,7 +1,7 @@
 <panel>
 	<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="10" />
 
-	<container>
+	<container class="main_subtle_box" >
 		<!-- Main content always shown -->
 		<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
 
@@ -79,7 +79,7 @@
 						<record id="widget_info">
 							<symbol id="class" value="players_signed_from_icon_widget" />
 							<string id="file" value="icons/16px/info" />
-							<flags id="icon_colour" value="grey" />
+							<flags id="icon_colour" value="darker" />
 							<flags id="icon_alignment" value="left" />
 						</record>
 					</record>
@@ -88,7 +88,7 @@
 					<record alignment="centre_y,left">
 						<integer id="index" value="0" />
 					</record>
-					<record alignment="centre_y,right">
+					<record alignment="centre_y,right" colour="black">
 						<integer id="index" value="1" />
 					</record>
 				</list>

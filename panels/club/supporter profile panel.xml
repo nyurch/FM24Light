@@ -34,7 +34,7 @@
 				<container>
 					<attachment_group class="vertical_arrange_autosize" horizontal_inset="4" vertical_offset="12" />
 
-					<widget class="text" auto_size="all" style="semi_bold" font="title" size="large" colour="text">
+					<widget class="text" auto_size="all" style="semi_bold" font="title" size="large" colour="accent">
 						<translation id="text" translation_id="557710" type="use" value="Supporter Profile[COMMENT:AREA: Club vision; SUB - AREA: Supporter profile panel FR - BN: FM-3272; TONE: Formal; CHARLIMIT: None; REF - ID: n/a; NOTE: Supporters profile title text.]" />
 					</widget>
 					<widget class="text" id="sptx" display_format="1" auto_size="all" colour="text" />
@@ -95,7 +95,7 @@
 						<layout class="centre_in_parent_attachment" alignment="vertical" />
 					</widget>
 
-					<widget class="link_button" section="TeFi" appearance="buttons/text/button" font="title" colour="text" alignment="left, centre_y" auto_size="all">
+					<widget class="link_button" section="TeFi" appearance="buttons/text/button" font="title" colour="accent" alignment="left, centre_y" auto_size="all">
 						<translation id="text" translation_id="316854" type="use" value="Last Match" />
 					</widget>
 				</container>
@@ -170,7 +170,7 @@
 						<layout class="centre_in_parent_attachment" alignment="vertical" />
 					</widget>
 
-					<widget class="link_button" section="tciG" appearance="buttons/text/button" font="title" colour="text" alignment="left, centre_y" auto_size="all">
+					<widget class="link_button" section="tciG" appearance="buttons/text/button" font="title" colour="accent" alignment="left, centre_y" auto_size="all">
 						<translation id="text" translation_id="557714" type="use" value="Rivals[COMMENT:AREA: Club vision; SUB - AREA: Supporter profile panel FR - BN: FM-3272; TONE: Formal; CHARLIMIT: None; REF - ID: n/a; NOTE: title string for rivals reason section.]" />
 					</widget>
 				</container>
@@ -229,7 +229,7 @@
 						<layout class="centre_in_parent_attachment" alignment="vertical" />
 					</widget>
 
-					<widget class="link_button" section="tciG" appearance="buttons/text/button" font="title" colour="text" alignment="left, centre_y" auto_size="all">
+					<widget class="link_button" section="tciG" appearance="buttons/text/button" font="title" colour="accent" alignment="left, centre_y" auto_size="all">
 						<translation id="text" translation_id="557716" type="use" value="Favoured Personnel at Club[COMMENT:AREA: Club vision; SUB - AREA: Supporter profile panel FR - BN: FM-3272; TONE: Formal; CHARLIMIT: None; REF - ID: n/a; NOTE: title string for current favoured personnel section.]" />
 					</widget>
 				</container>
@@ -297,7 +297,7 @@
 						<layout class="centre_in_parent_attachment" alignment="vertical" />
 					</widget>
 
-					<widget class="link_button" section="tfin" appearance="buttons/text/button" font="title" colour="text" alignment="left, centre_y" auto_size="all">
+					<widget class="link_button" section="tfin" appearance="buttons/text/button" font="title" colour="accent" alignment="left, centre_y" auto_size="all">
 						<translation id="text" translation_id="316566" type="use" value="Finances[COMMENT: Link to club finances]" />
 					</widget>
 				</container>

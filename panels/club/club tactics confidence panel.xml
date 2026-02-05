@@ -1,5 +1,5 @@
 ﻿<panel>
-	<attachment_group class="horizontal_arrange" horizontal_layout="-1, -1" vertical_offset="0" horizontal_inset="0" horizontal_gap="16" />
+	<attachment_group class="horizontal_arrange" horizontal_layout="-1, -1" vertical_offset="0" horizontal_inset="0" horizontal_gap="5" />
 
 	<set_var name="tactics_confidence_table">
 		<widget class="table" mode="fill_rows" layout="20, -1" auto_size_rows="true" fixed_size_rows="false" row_spacing="4" column_spacing="6" auto_size="vertical">

@@ -1,0 +1,85 @@
+﻿<panel width="336">
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<colour id="transfer_value_up_to_date_colour" name="fg positive"/>
+	<colour id="transfer_value_out_of_date_colour" name="fg alert"/>
+	<colour id="transfer_value_no_data_colour" name="fg negative"/>
+
+	<container class="standard_popup_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="15" vertical_gap="10" horizontal_inset="15"/>
+
+		<container height="40">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right, extend" horizontal_gap="8"/>
+
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="-1, -1"/>
+
+				<widget class="text">
+					<translation id="text" translation_id="538841" type="use" value="Transfer Value[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: 34410; TONE: Formal; CHARLIMIT: Shortish, column header; REF-ID: 227806; NOTE: displays the player's estimated transfer value in a range]"/>
+				</widget>
+
+				<widget class="text" id="ValL" size="large" font="bold" colour="text" alignment="left, centre_y, can_scale"/>
+			</container>
+
+			<widget class="client_action_icon_button" id="offr" icon="icons/custom/transfer deadline day/transfer status/offer made" action_id="offr" auto_size="horizontal" force_display_text="true">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+
+		<container class="inner_subtle_box" appearance="boxes/custom/scouting knowledge/paper" height="12">
+			<attachment_group class="vertical_arrange" vertical_alignment="middle"/>
+
+			<widget class="horizontal_percentage_bar" id="scKN" label_width="0" height="5" bar_value_colour="knowledge level" appearance="charts/bar/custom/knowledge"/>
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="10"/>
+
+			<widget class="text" auto_size="vertical">
+				<translation id="text" translation_id="539036" type="use" value="Based On:[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR: 34410; TONE: Formal; NOTE: how did the scouting team come up with the player's estimated value?]"/>
+			</widget>
+			<widget class="icon_button" multiline="true" id="rrDT" show_button_appearance="false" colour="text" size="large" auto_size="vertical"/>
+			<widget class="icon_button" multiline="true" id="scDT" show_button_appearance="false" colour="text" size="large" auto_size="vertical"/>
+			<widget class="icon_button" multiline="true" id="agDT" show_button_appearance="false" colour="text" size="large" auto_size="vertical"/>
+		</container>
+
+		<container class="player_scout_reports_panel" file="none" type="1" IsPV="true">
+			<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left"/>
+
+			<record id="object_property" get_property="objt" set_property="objt"/>
+
+			<container id="Pool">
+				<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left"/>
+
+				<!--explanatory text-->
+				<widget class="text" alignment="centre" spec="text" auto_size="all">
+					<translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]"/>
+				</widget>
+			</container>
+
+			<container id="nsrc">
+				<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left"/>
+
+				<container id="nocs">
+					<attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="left"/>
+
+					<widget class="icon_button" id="sctP" click_event="sctc" auto_size="all" icon="icons/16px/search">
+						<translation id="text" translation_id="243421" type="use" value="Scout Player"/>
+					</widget>
+				</container>
+
+				<widget class="label" id="nocn" spec="text" size="11" alignment="left" auto_size="vertical"/>
+			</container>
+		</container>
+
+		<container>
+			<attachment_group class="horizontal_arrange_autosize_all"/>
+
+			<widget class="client_action_icon_button" icon="icons/custom/scouting/agent" action_id="apaa" auto_size="all">
+				<translation id="text" translation_id="515101" type="use" value="Ask Agent[COMMENT: AREA: Player Shortlist; SUB-AREA:Shortlisted player table player interest widget FR-BN: 32754; NOTE: Discuss interest with agent button text]"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+	</container>
+
+</panel>

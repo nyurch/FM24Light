@@ -29,7 +29,7 @@
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
 
 			<!--pivotal match-->
-			<widget class="label" font="title" colour="black" alignment="centre" auto_size="vertical" id="titl">
+			<widget class="label" font="title" colour="faded white" alignment="centre" auto_size="vertical" id="titl">
 				<translation id="text" translation_id="437033" type="use" value="Pivotal Match[COMMENT: FR 13665; comp win news item; section title for important match]"/>
 			</widget>
 
@@ -45,7 +45,7 @@
 
 				</container>
 
-				<widget class="fixture_button" id="scrl" colour="black" size="16" style="bold" alignment="centre_x,centre_y"/>
+				<widget class="fixture_button" id="scrl" colour="white" size="16" style="bold" alignment="centre_x,centre_y"/>
 
 				<container height="50">
 					<layout class="arrange_vertical_attachment" layout="60, -1," gap="7"/>
@@ -58,14 +58,14 @@
 
 		<!--scorers-->
 		<container id="SCOR" height="150">
-			<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="0" />
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" gap="8" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" inset="5" apply_to_children="true"/>
 
 			<!--home scorers-->
 			<container class="scrolling_box">
 				<container>
-					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-					<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="bg"/>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="5" />
+					<widget class="fixture_goalscorers_text" id="HMsc" team_index="0" auto_size="vertical" separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="white"/>
 				</container>
 			</container>
 
@@ -73,30 +73,30 @@
 			<container class="scrolling_box">
 				<container>
 					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-					<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="bg"/>
+					<widget class="fixture_goalscorers_text" id="AWsc" team_index="1" auto_size="vertical" separate_lines="true" show_none_if_nothing_happened="false" size="small" colour="white"/>
 				</container>
 			</container>
 		</container>
 
-		<container id="kypC" height="70">
-			<layout class="arrange_vertical_attachment" layout="30, 25" gap="0" offset="0" />
+		<container class="main_subtle_box" id="kypC" height="90">
+			<layout class="arrange_vertical_attachment" layout="30, 25" gap="8" offset="0" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
 
 			<!--key player-->
-			<widget class="label" auto_size="none" font="title" colour="black" alignment="left,centre_y">
+			<widget class="label" auto_size="none" font="title" colour="faded white" alignment="centre">
 				<translation id="text" translation_id="227396" type="use" value="Key Player"/>
 			</widget>
 
 			<container height="25">
-				<layout class="arrange_horizontal_attachment" layout="-1,5,85" gap="0" offset="0" />
+				<layout class="arrange_horizontal_attachment" layout="-1,5,85" gap="8" offset="0" />
 				<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true"/>
 
-				<widget class="person_button" id="kypl" person_is_player="true" auto_size="all" alignment="left,centre_y" style="bold" colour="bg">
+				<widget class="person_button" id="kypl" person_is_player="true" auto_size="all" alignment="left,centre_y" style="bold" colour="white">
 					<translation id="text" translation_id="227396" type="use" value="Key Player"/>
 				</widget>
-				<widget class="horizontal_divider" />
+				<widget class="horizontal_divider" colour="white"/>
 				<!--key player's average rating-->
-				<widget class="label" id="avrt" auto_size="none" colour="bg" alignment="centre"/>
+				<widget class="label" id="avrt" auto_size="none" colour="white" alignment="centre"/>
 
 			</container>
 

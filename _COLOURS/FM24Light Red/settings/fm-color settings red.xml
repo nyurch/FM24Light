@@ -1593,7 +1593,7 @@
 	<colour name="knowledge colour nominal"													value="red 300"/>
 	<colour name="knowledge colour minimal"													value="red 600"/>
 
-	<colour name="knowledge level"													value="rgb(2, 144, 161)"/>
+	<colour name="knowledge level"													value="lighter"/>
 
 	<colour name="tactical analysis scored low"													value="rgb(40,119,62)"/>
 	<colour name="tactical analysis scored high"												value="rgb(39,190,62)"/>

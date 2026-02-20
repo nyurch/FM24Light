@@ -1,0 +1,206 @@
+﻿<panel width="950">
+	<boolean id="should_force_refresh" value="true" />
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<container class="main_contrast_box">
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="5"/>
+
+		<!--Close button-->
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="right" />
+
+			<widget class="icon_button" auto_size="vertical" appearance="" navigation_focus_target="true" controller_button="b_button" width="35" alignment="right, centre_y" icon="icons/16px/cross" click_event="clOD"/>
+		</container>
+
+		<container class="inner_subtle_box" height="45">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="right, extend" horizontal_gap="0"/>
+
+			<widget class="text" id="titl" font="title" colour="title" size="large" auto_size="none" height="30" alignment="left,centre_y"/>
+
+			<widget class="radio_toggle_switch_left" auto_size="horizontal" show_button_appearance="true" appearance="switches/toggle/left/button" icon="" alignment="centre" navigation_focus_target="true" icon_alignment="right" click_event="allS" id="albu">
+				<translation id="text" translation_id="382818" type="use" value="All[COMMENT: bug 112567; on button to select to view all items in store]" />
+			</widget>
+			<widget class="radio_toggle_switch_middle" auto_size="horizontal" show_button_appearance="true" appearance="switches/toggle/middle/button" icon="" alignment="centre" navigation_focus_target="true" icon_alignment="right" click_event="goaS" id="gkbu">
+				<translation id="text" translation_id="243925" type="use" value="Goalkeepers[COMMENT - training schedule]" />
+			</widget>
+			<widget class="radio_toggle_switch_middle" auto_size="horizontal" show_button_appearance="true" appearance="switches/toggle/middle/button" icon="" alignment="centre" navigation_focus_target="true" icon_alignment="right" click_event="defS" id="dfbu">
+				<translation id="text" translation_id="231452" type="use" value="Defenders" />
+			</widget>
+			<widget class="radio_toggle_switch_middle" auto_size="horizontal" show_button_appearance="true" appearance="switches/toggle/middle/button" icon="" alignment="centre" navigation_focus_target="true" icon_alignment="right" click_event="midS" id="mibu">
+				<translation id="text" translation_id="231453" type="use" value="Midfielders" />
+			</widget>
+			<widget class="radio_toggle_switch_right" auto_size="horizontal" show_button_appearance="true" appearance="switches/toggle/right/button" icon="" alignment="centre" navigation_focus_target="true" icon_alignment="right" click_event="attS" id="atbu">
+				<translation id="text" translation_id="231454" type="use" value="Attackers" />
+			</widget>
+		</container>
+
+		<container id="stff">
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1,-3" horizontal_gap="0"/>
+
+			<container class="client_object_viewer_xml_panel" id="mper">
+				<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="left,extend" horizontal_gap="8"/>
+
+				<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" height="45" width="45">
+					<record id="object_property">
+						<list id="get_properties">
+							<!--Facegen data request-->
+							<record get_property="fcgn"/>
+							<!--Fake name request-->
+							<record get_property="Pfke"/>
+							<record get_property="prpc" set_property="valu"/>
+						</list>
+					</record>
+				</widget>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize"/>
+
+					<widget class="person_button" id="PerB" style="bold" colour="black" height="17" navigation_focus_target="true" info_popup_enabled="true" icon_enabled="true" person_is_player="false" auto_size="horizontal">
+						<record id="object_property" get_property="objt" set_property="valu"/>
+					</widget>
+
+					<!-- Nationality -->
+					<widget class="person_nationality_button" navigation_focus_target="true" height="17" id="natp" colour="text">
+						<record id="object_property">
+							<integer id="get_property" value="Pnat" />
+						</record>
+					</widget>
+
+					<widget class="job_label" colour="faded text" height="17">
+						<record id="object_property" get_property="PcJj" set_property="valu"/>
+					</widget>
+				</container>
+			</container>
+
+			<container class="interaction_speech_bubble_panel" id="conv" show_minimise_icon="false" auto_size="vertical" />
+		</container>
+
+		<widget class="horizontal_divider" auto_size="vertical"/>
+		<container class="scrolling_box" height="420">
+			<container>
+				<attachment_group class="vertical_arrange_autosize" />
+				<!--Goalkeeper Container-->
+				<container id="Goal">
+					<attachment_group class="vertical_arrange_autosize"/>
+					<widget class="text" colour="title" font="title" auto_size="vertical" id="GKTx"/>
+					<widget class="client_object_list_table" database_table_type="1" fixed_size_rows="true" navigation_container="true" auto_size_rows="false" mode="stripe_rows, select_rows, fill_rows" fixed_row_height="25" row_height="50" id="gktb" auto_size="vertical">
+						<integer id="contextual_handler_column_id" value="Pnms" />
+						<record id="viewed_property_ids">
+							<record id="Pers"/>
+							<record id="Ppos" auto_hide_priority="10"/>
+							<record id="Page" auto_hide_priority="10"/>
+							<record id="Pcac" auto_hide_priority="20"/>
+							<record id="Pits" auto_hide_priority="10"/>
+							<record id="Piap" auto_hide_priority="20"/>
+							<record id="Poap" auto_hide_priority="10"/>
+							<record id="POcs" auto_hide_priority="10"/>
+							<record id="Poco" auto_hide_priority="10"/>
+							<record id="Pomo" auto_hide_priority="10"/>
+							<record id="Poav" auto_hide_priority="10"/>
+						</record>
+
+						<list id="column_table_properties">
+							<record id="Pers" width="-1">
+								<record id="widget_info" class="int_player_jersey_name_and_club_widget" auto_size="vertical" />
+								<record id="column_heading">
+									<translation id="text" translation_id="227966" type="use" value="Player" />
+								</record>
+							</record>
+						</list>
+					</widget>
+				</container>
+				<!--Defender Container-->
+				<container id="Defe">
+					<attachment_group class="vertical_arrange_autosize"/>
+					<widget class="text" colour="title" font="title" auto_size="vertical" id="DeTx"/>
+					<widget class="client_object_list_table" database_table_type="1" mode="stripe_rows, select_rows" navigation_container="true" fixed_size_rows="true" auto_size_rows="false" fixed_row_height="25" row_height="50" id="detb" auto_size="vertical">
+						<integer id="contextual_handler_column_id" value="Pnms" />
+						<record id="viewed_property_ids">
+							<record id="Pers"/>
+							<record id="Ppos" auto_hide_priority="10"/>
+							<record id="Page" auto_hide_priority="10"/>
+							<record id="Pcab" auto_hide_priority="20"/>
+							<record id="Pits" auto_hide_priority="10"/>
+							<record id="Piap" auto_hide_priority="20"/>
+							<record id="Poap" auto_hide_priority="10"/>
+							<record id="Pogl" auto_hide_priority="10"/>
+							<record id="POtc" auto_hide_priority="10"/>
+							<record id="Popa" auto_hide_priority="10"/>
+							<record id="Poav" auto_hide_priority="10"/>
+						</record>
+						<list id="column_table_properties">
+							<record id="Pers" width="-1">
+								<record id="widget_info" class="int_player_jersey_name_and_club_widget" auto_size="vertical" />
+								<record id="column_heading">
+									<translation id="text" translation_id="227966" type="use" value="Player" />
+								</record>
+							</record>
+						</list>
+					</widget>
+				</container>
+				<!--midfielder Container-->
+				<container id="MidF">
+					<attachment_group class="vertical_arrange_autosize"/>
+					<widget class="text" colour="title" mode="" font="title" auto_size="vertical" id="MiTx"/>
+					<widget class="client_object_list_table" database_table_type="1" navigation_container="true" mode="stripe_rows, select_rows" fixed_size_rows="true" auto_size_rows="false" fixed_row_height="25" row_height="50" id="mitb" auto_size="vertical">
+						<integer id="contextual_handler_column_id" value="Pnms" />
+						<record id="viewed_property_ids">
+							<record id="Pers"/>
+							<record id="Ppos" auto_hide_priority="10"/>
+							<record id="Page" auto_hide_priority="10"/>
+							<record id="Pica" auto_hide_priority="20"/>
+							<record id="Pits" auto_hide_priority="10"/>
+							<record id="Piap" auto_hide_priority="20"/>
+							<record id="Poap" auto_hide_priority="10"/>
+							<record id="Pogl" auto_hide_priority="10"/>
+							<record id="Poas" auto_hide_priority="10"/>
+							<record id="Popa" auto_hide_priority="10"/>
+							<record id="Poav" auto_hide_priority="10"/>
+						</record>
+						<list id="column_table_properties">
+							<record id="Pers" width="-1">
+								<record id="widget_info" class="int_player_jersey_name_and_club_widget" auto_size="vertical" />
+								<record id="column_heading">
+									<translation id="text" translation_id="227966" type="use" value="Player" />
+								</record>
+							</record>
+						</list>
+					</widget>
+				</container>
+				<!--Attacker Container-->
+				<container id="Atta">
+					<attachment_group class="vertical_arrange_autosize"/>
+					<widget class="text" colour="title" mode="stripe_rows" font="title" auto_size="vertical" id="AtTx"/>
+					<widget class="client_object_list_table" database_table_type="1" mode="stripe_rows, select_rows" fixed_size_rows="true" navigation_container="true" auto_size_rows="false" fixed_row_height="25" row_height="50" id="attb" auto_size="vertical">
+						<integer id="contextual_handler_column_id" value="Pnms" />
+						<record id="viewed_property_ids">
+							<record id="Pers"/>
+							<record id="Ppos" auto_hide_priority="10"/>
+							<record id="Page" auto_hide_priority="10"/>
+							<record id="Pica" auto_hide_priority="20"/>
+							<record id="Pits" auto_hide_priority="10"/>
+							<record id="Piap" auto_hide_priority="20"/>
+							<record id="Poap" auto_hide_priority="10"/>
+							<record id="Pogl" auto_hide_priority="10"/>
+							<record id="Poas" auto_hide_priority="10"/>
+							<record id="Pomo" auto_hide_priority="10"/>
+							<record id="Poav" auto_hide_priority="10"/>
+						</record>
+						<list id="column_table_properties">
+							<record id="Pers" width="-1">
+								<record id="widget_info" class="int_player_jersey_name_and_club_widget" auto_size="vertical" />
+								<record id="column_heading">
+									<translation id="text" translation_id="227966" type="use" value="Player" />
+								</record>
+							</record>
+						</list>
+					</widget>
+				</container>
+			</container>
+		</container>
+
+
+		<widget class="national_pool_selection_info_panel" auto_size="vertical" id="ssnm" />
+
+	</container>
+</panel>

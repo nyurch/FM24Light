@@ -1,0 +1,47 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!-- Background image layer -->
+	<container class="client_object_viewer_xml_panel">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<!-- Background image -->
+		<widget class="picture" id="bgim" file="photos/dynamic/ticker stadium/fireworks" image_alignment="top" scale_picture="true" keep_aspect_ratio="false"/>
+
+		<!-- PROP_CLUB -->
+		<record id="object_property" get_property="Cclu" set_property="objt"/>
+
+		<!-- Ticker tape coloured to teams colours -->
+		<widget class="picture" file="photos/dynamic/ticker stadium/ticker" image_alignment="top" scale_picture="true" keep_aspect_ratio="true">
+			<record id="object_property">
+				<list id="get_properties">
+					<!-- PROP_TEAM_FOREGROUND_COLOUR1 -->
+					<record get_property="oPCn" set_property="rrep"/>
+					<!-- PROP_TEAM_BACKGROUND_COLOUR1 -->
+					<record get_property="oSCn" set_property="brep"/>
+				</list>
+			</record>
+		</widget>
+	</container>
+
+	<!-- Overlay the Club Logo -->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="140,60" offset="5" gap="5"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<!-- Logo/Portrait -->
+		<widget class="object_portrait_picture" id="logo" image_alignment="top, centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+			<!-- PROP_CLUB -->
+			<record id="object_property" get_property="Cclu" set_property="objt" />
+		</widget>
+
+		<widget class="simple_data_list" alignment="horizontal,fill" set_property="objt">
+			<!-- PROP_COMPETITIONS -->
+			<record id="object_property" get_property="cmps" set_property="valu"/>
+			<record id="widget_properties" class="object_portrait_picture" auto_size="horizontal" comp_use_trophy_icon="true" scale_picture="true" image_alignment="centre" keep_aspect_ratio="true" wants_mouse_events="false"/>
+		</widget>
+	</container>
+
+	<!-- Overlay the competition(s) won -->
+
+</panel>

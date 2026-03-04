@@ -10,11 +10,27 @@
 		<record get_property="hClC" target="clds" set_property="hidn" />
 		<record get_property="dref" target="todt" set_property="objt" />
 		<record get_property="dref" target="prtb" set_property="objt" />
+		<record get_property="ShTX" target="capc" set_property="hidn" />
+		<record get_property="ShSC" target="JobP" set_property="hidn" />
+		<record get_property="CapT" target="capT" set_property="valu" />
+		<record get_property="ScPr" target="JobP" set_property="WdgP" />
 		<record get_property="properties" target="prtb" set_property="vpid" />
 		<record get_property="properties_to_add_to_context" target="prtb" set_property="properties_to_add_to_context" />
 		<record get_property="ctDT" target="prtb" set_property="properties" />
 	</list>
 
+	<container id="capc" hidden="true" height="30">
+		<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_alignment="right,extend" />
+		<container id="capa" height="30">
+			<attachment_group class="horizontal_arrange_autosize_vertical_centre" horizontal_alignment="right,extend" />
+			<widget class ="text" auto_size="all" alignment="left, centre_y" colour="fg accent" id="capT"/>
+			<widget class="widget_popup_button" id="JobP" auto_size="all" navigation_focus_target="false" appearance="" icon="icons/16px/maximise" secondary_icon="" controller_button="x_button" popup_alignment="right,bottom" alignment="right,centre_y">
+				<string id="widget_type" value="container" />
+				<record id="modal_popup_properties" file="modal popup panel auto sized" />
+				<record id="WdgP" file="club/backroom advice staff capacity popup panel" width="500" height="500"/>
+			</widget>
+		</container>
+	</container>
 	<widget class ="text" auto_size="vertical" colour="faded text" id="rmtx"/>
 	<widget class ="text" auto_size="vertical" id="topi"/>
 

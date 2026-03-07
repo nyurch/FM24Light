@@ -1727,7 +1727,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="394318" type="use" value="Aer[COMMENT: aerial reach three letter abbreviation]" />
 				<translation id="hint" translation_id="388017" type="use" value="Aerial Reach[COMMENT: strengths field scout report list]" />
@@ -1755,7 +1755,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227768" type="use" value="Acc[comment - Acceleration]" />
 				<translation id="hint" translation_id="227769" type="use" value="Acceleration" />
@@ -1914,7 +1914,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227771" type="use" value="Agg[comment - Aggression]" />
 				<translation id="hint" translation_id="227772" type="use" value="Aggression" />
@@ -1942,7 +1942,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227773" type="use" value="Agi[comment - Agility]" />
 				<translation id="hint" translation_id="227774" type="use" value="Agility" />
@@ -1970,7 +1970,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227775" type="use" value="Ant[comment - Anticipation]" />
 				<translation id="hint" translation_id="227776" type="use" value="Anticipation" />
@@ -2721,7 +2721,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227779" type="use" value="Bal[comment - Balance]" />
 				<translation id="hint" translation_id="248653" type="use" value="Balance[COMMENT - playing attribute]" />
@@ -2749,7 +2749,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227781" type="use" value="Bra[comment - Bravery]" />
 				<translation id="hint" translation_id="227782" type="use" value="Bravery" />
@@ -5582,7 +5582,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227788" type="use" value="Cmd[comment - Command of area]" />
 				<translation id="hint" translation_id="230025" type="use" value="Command Of Area" />
@@ -5610,7 +5610,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227790" type="use" value="Com[comment - Communication]" />
 				<translation id="hint" translation_id="227791" type="use" value="Communication" />
@@ -5984,7 +5984,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="363781" type="use" value="Vis[COMMENT - Vision]" />
 				<translation id="hint" translation_id="230023" type="use" value="Vision" />
@@ -6012,7 +6012,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227797" type="use" value="Cro[comment - Crossing]" />
 				<translation id="hint" translation_id="227798" type="use" value="Crossing" />
@@ -6402,7 +6402,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227800" type="use" value="Dec[comment - Decisions]" />
 				<translation id="hint" translation_id="227801" type="use" value="Decisions" />
@@ -6430,7 +6430,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227802" type="use" value="Det[comment - Determination]" />
 				<translation id="hint" translation_id="227803" type="use" value="Determination" />
@@ -6458,7 +6458,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227804" type="use" value="Dri[comment - Dribbling]" />
 				<translation id="hint" translation_id="227805" type="use" value="Dribbling" />
@@ -6643,7 +6643,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227807" type="use" value="Ecc[comment - Eccentricity]" />
 				<translation id="hint" translation_id="227808" type="use" value="Eccentricity" />
@@ -6672,7 +6672,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227809" type="use" value="Fin[comment - Finishing]" />
 				<translation id="hint" translation_id="227810" type="use" value="Finishing" />
@@ -6701,7 +6701,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227811" type="use" value="Fla[comment - Flair]" />
 				<translation id="hint" translation_id="227812" type="use" value="Flair" />
@@ -6779,7 +6779,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227815" type="use" value="Han[comment - Handling]" />
 				<translation id="hint" translation_id="227816" type="use" value="Handling" />
@@ -6808,7 +6808,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227817" type="use" value="Hea[comment - Heading]" />
 				<translation id="hint" translation_id="227818" type="use" value="Heading" />
@@ -6965,7 +6965,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="348973" type="use" value="Ldr[COMMENT: attribute name, three letter name for Leadership, we're changing Influence to Leadership]" />
 				<translation id="hint" translation_id="230010" type="use" value="Leadership" />
@@ -6993,7 +6993,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227827" type="use" value="Jum[comment - Jumping]" />
 				<translation id="hint" translation_id="349773" type="use" value="Jumping Reach[COMMENT: player attribute; changed from Jumping to Jumping Reach so as to better indicate that it represents the highest point a player can reach when jumping]" />
@@ -7022,7 +7022,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227831" type="use" value="Kic[comment - Kicking]" />
 				<translation id="hint" translation_id="227832" type="use" value="Kicking" />
@@ -7051,7 +7051,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="251254" type="use" value="Lon[COMMENT: Long Shots]" />
 				<translation id="hint" translation_id="227834" type="use" value="Long Shots" />
@@ -7079,7 +7079,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227837" type="use" value="Mar[comment - Marking]" />
 				<translation id="hint" translation_id="227838" type="use" value="Marking" />
@@ -11766,7 +11766,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="383198" type="use" value="1v1[COMMENT: short text column abbreviation for Goalkeeper One on Ones]" />
 				<translation id="hint" translation_id="227861" type="use" value="One On Ones" />
@@ -11794,7 +11794,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227913" type="use" value="Cmp[comment - Composure]" />
 				<translation id="hint" translation_id="227914" type="use" value="Composure" />
@@ -11823,7 +11823,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247502" type="use" value="Cnt[comment - Concentration]" />
 				<translation id="hint" translation_id="227916" type="use" value="Concentration" />
@@ -11852,7 +11852,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247503" type="use" value="Nat[comment - Natural Fitness]" />
 				<translation id="hint" translation_id="227830" type="use" value="Natural Fitness" />
@@ -11881,7 +11881,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247504" type="use" value="L Th[comment - Long Throws]" />
 				<translation id="hint" translation_id="227836" type="use" value="Long Throws" />
@@ -11910,7 +11910,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227893" type="use" value="Fir[comment - First Touch]" />
 				<translation id="hint" translation_id="227894" type="use" value="First Touch" />
@@ -11938,7 +11938,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227895" type="use" value="Cor[comment - Corners]" />
 				<translation id="hint" translation_id="227896" type="use" value="Corners" />
@@ -11965,7 +11965,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="361095" type="use" value="Cons[COMMENT: column heading; short for Consistency]" />
 				<translation id="hint" translation_id="230006" type="use" value="Consistency" />
@@ -11992,7 +11992,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="361101" type="use" value="Dirt[COMMENT: column heading; short for Dirtiness]" />
 				<translation id="hint" translation_id="230007" type="use" value="Dirtiness" />
@@ -12019,7 +12019,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="361157" type="use" value="Imp M[COMMENT: column heading; short for Important Matches]" />
 				<translation id="hint" translation_id="230008" type="use" value="Important Matches" />
@@ -12046,7 +12046,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="361160" type="use" value="Inj Pr[COMMENT: column heading; short for Injury Proneness]" />
 				<translation id="hint" translation_id="230009" type="use" value="Injury Proneness" />
@@ -12073,7 +12073,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="361361" type="use" value="Vers[COMMENT: column heading; short for Versatility]" />
 				<translation id="hint" translation_id="230011" type="use" value="Versatility" />
@@ -12210,7 +12210,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="338033" type="use" value="OtB[COMENT :Off The Ball, abbreviation used for the Off The Ball attribute, differentiating it from 'Off', which was used for offsides. Must be short as possible]" />
 				<translation id="hint" translation_id="227877" type="use" value="Off The Ball" />
@@ -12239,7 +12239,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227878" type="use" value="Pac[comment - Pace]" />
 				<translation id="hint" translation_id="227879" type="use" value="Pace" />
@@ -12268,7 +12268,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227880" type="use" value="Pas[comment - Passing]" />
 				<translation id="hint" translation_id="227881" type="use" value="Passing" />
@@ -12297,7 +12297,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227882" type="use" value="Pen[comment - Penalty Taking]" />
 				<translation id="hint" translation_id="227883" type="use" value="Penalty Taking" />
@@ -12462,7 +12462,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227885" type="use" value="Pos[comment - Positioning]" />
 				<translation id="hint" translation_id="227886" type="use" value="Positioning" />
@@ -12491,7 +12491,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227887" type="use" value="Ref[comment - Reflexes]" />
 				<translation id="hint" translation_id="227888" type="use" value="Reflexes" />
@@ -12520,7 +12520,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="492102" type="use" value="TRO[COMMENT: AREA: Player Attribute; SUB-AREA: Goalkeeper Attribute; FR-BN: 26784; TONE: Formal; CHARLIMIT: 3 chars; REF-ID: 227890; NOTE: Three-letter version of 'Rushing Out', which itself is renamed from the referenced ID to Tendency to Rush Out]" />
 				<translation id="hint" translation_id="492101" type="use" value="Rushing Out (Tendency)[COMMENT: AREA: Player Attributes; SUB-AREA: Goalkeeper Attributes; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Was previously called 'Rushing Out', the (Tendency) in parentheses is because if we have it as Tendency to Rush Out, the UI struggles to fit it in, and it confuses people with Tendency to Punch Ball]" />
@@ -12549,7 +12549,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227891" type="use" value="Fre[comment - Free Kicks]" />
 				<translation id="hint" translation_id="227892" type="use" value="Free Kicks" />
@@ -12578,7 +12578,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227897" type="use" value="Sta[comment - Stamina]" />
 				<translation id="hint" translation_id="227898" type="use" value="Stamina" />
@@ -13997,7 +13997,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227899" type="use" value="Str[comment - Strength]" />
 				<translation id="hint" translation_id="227900" type="use" value="Strength" />
@@ -14026,7 +14026,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="383660" type="use" value="Tck[COMMENT: three letter abbreviation for Tackling]" />
 				<translation id="hint" translation_id="227902" type="use" value="Tackling" />
@@ -14055,7 +14055,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227903" type="use" value="Tec[comment - Technique]" />
 				<translation id="hint" translation_id="227904" type="use" value="Technique" />
@@ -14084,7 +14084,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227905" type="use" value="Thr[comment - Throwing]" />
 				<translation id="hint" translation_id="227906" type="use" value="Throwing" />
@@ -14113,7 +14113,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227907" type="use" value="Pun[comment - Punching]" />
 				<translation id="hint" translation_id="492103" type="use" value="Punching (Tendency)[COMMENT: AREA: Player Attributes; SUB-AREA: Goalkeeper Attributes; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Was previously called 'Tendency to Punch Ball', the (Tendency) in parentheses is because if we have it as Tendency to Punch Ball, the UI struggles to fit it in, and it confuses people with Tendency to Punch Ball]" />
@@ -14142,7 +14142,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227909" type="use" value="Tea[comment - Teamwork]" />
 				<translation id="hint" translation_id="227910" type="use" value="Teamwork" />
@@ -14171,7 +14171,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227911" type="use" value="Wor[comment - Work Rate]" />
 				<translation id="hint" translation_id="227912" type="use" value="Work Rate" />
@@ -14932,7 +14932,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="441142" type="use" value="GkD[COMMENT: Coaching Goalkeepers Distribution, short column abbreviation, please keep this to three characters]" />
 				<translation id="hint" translation_id="441141" type="use" value="Goalkeeper Distribution[COMMENT: non-player attribute type]" />
@@ -14960,7 +14960,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="441144" type="use" value="GkH[COMMENT: Coaching Goalkeepers Handling, short column abbreviation, please keep this to three characters]" />
 				<translation id="hint" translation_id="441143" type="use" value="Goalkeeper Handling[COMMENT: non-player attribute type]" />
@@ -14988,7 +14988,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="441146" type="use" value="GkS[COMMENT: Coaching Goalkeepers Shot Stopping, short column abbreviation, please keep this to three characters]" />
 				<translation id="hint" translation_id="441145" type="use" value="Goalkeeper Shot Stopping[COMMENT: non-player attribute type]" />
@@ -15016,7 +15016,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227922" type="use" value="Att[comment - Attack Coaching coach attribute]" />
 				<translation id="hint" translation_id="227923" type="use" value="Attack Coaching[COMMENT - coach attribute name]" />
@@ -15044,7 +15044,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227924" type="use" value="Def[comment - Defence Coaching coach attribute]" />
 				<translation id="hint" translation_id="227925" type="use" value="Defence Coaching[COMMENT - coach attribute name]" />
@@ -15072,7 +15072,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227926" type="use" value="Fit[comment - Coaching Fitness coach attribute]" />
 				<translation id="hint" translation_id="227927" type="use" value="Fitness Coaching[COMMENT - coach attribute name]" />
@@ -15100,7 +15100,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227928" type="use" value="Men[comment - Mental Coaching coach attribute]" />
 				<translation id="hint" translation_id="227929" type="use" value="Mental Coaching[COMMENT - coach attribute name]" />
@@ -15128,7 +15128,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227930" type="use" value="Tec[comment - Technique Coaching coach attribute]" />
 				<translation id="hint" translation_id="227931" type="use" value="Technique Coaching[COMMENT - coach attribute name]" />
@@ -15156,7 +15156,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="451442" type="use" value="TCo[COMMENT: 227933 Tactical Coaching, three letter abbreviation, revised from 385625 as the previous version was far too long]" />
 				<translation id="hint" translation_id="227933" type="use" value="Tactical Coaching[COMMENT - coach attribute name]" />
@@ -15185,7 +15185,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="585679" type="use" value="SPC[COMMENT: AREA: non player attributes; SUB-AREA: Abbreviation of non player attribute; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:3; NOTE: Abbreviation of the coaching set pieces non player attribute]" />
 				<translation id="hint" translation_id="585678" type="use" value="Set Piece Coaching[COMMENT: AREA: non player attributes; SUB-AREA: Name of non player attribute; FR-BN: FM-20960; TONE: Formal; CHARLIMIT:None; NOTE: Name of the coaching set pieces non player attribute]" />
@@ -15213,7 +15213,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227934" type="use" value="Phy[comment - Physiotherapy]" />
 				<translation id="hint" translation_id="227935" type="use" value="Physiotherapy" />
@@ -15241,7 +15241,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="447684" type="use" value="SpS[COMMENT: non-player attribute type, abbreviation of Sports Science, how well the staff member organises and deals with injury management and prevention]" />
 				<translation id="hint" translation_id="447683" type="use" value="Sports Science[COMMENT: non-player attribute type, how well the staff member organises and deals with injury management and prevention]" />
@@ -15269,7 +15269,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="385626" type="use" value="Tac Knw[comment - Tactical Knowledge coach attribute]" />
 				<translation id="hint" translation_id="227937" type="use" value="Tactical Knowledge" />
@@ -15297,7 +15297,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247534" type="use" value="Youth[comment - Working With Youngsters]" />
 				<translation id="hint" translation_id="227939" type="use" value="Working With Youngsters" />
@@ -15325,7 +15325,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="534821" type="use" value="Mgm[COMMENT: AREA: Non-Player Profile; SUB-AREA: Attributes; FR-BN: 34684; TONE: Formal; CHARLIMIT: 3; REF-ID: n/a; NOTE: abbreviation, used to be MAN for Man Management, changed to a more inclusive term]" />
 				<translation id="hint" translation_id="534820" type="use" value="People Management[COMMENT: AREA: Non-Player Profile; SUB-AREA: Attributes; FR-BN: 34684; TONE: Formal; CHARLIMIT: None; REF-ID: 284430; NOTE: used to be Man Management, changed to a more inclusive term]" />
@@ -15353,7 +15353,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227942" type="use" value="Ada[comment - Adaptability]" />
 				<translation id="hint" translation_id="227943" type="use" value="Adaptability" />
@@ -15460,7 +15460,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227802" type="use" value="Det[comment - Determination]" />
 				<translation id="hint" translation_id="227803" type="use" value="Determination" />
@@ -15488,7 +15488,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247535" type="use" value="Judge A[comment - Judging Player Ability]" />
 				<translation id="hint" translation_id="227945" type="use" value="Judging Player Ability" />
@@ -15516,7 +15516,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247536" type="use" value="Judge P[comment - Judging Player Potential]" />
 				<translation id="hint" translation_id="227947" type="use" value="Judging Player Potential" />
@@ -15543,7 +15543,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247535" type="use" value="Judge A[comment - Judging Player Ability]" />
 				<translation id="hint" translation_id="227945" type="use" value="Judging Player Ability" />
@@ -15567,7 +15567,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="247536" type="use" value="Judge P[comment - Judging Player Potential]" />
 				<translation id="hint" translation_id="227947" type="use" value="Judging Player Potential" />
@@ -15592,7 +15592,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="482627" type="use" value="Jud SA[COMMENT: AREA: non player attributes; SUB-AREA: technical director attribute; FR-BN: 26847; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: abbreviation for Judging Staff Ability]" />
 				<translation id="hint" translation_id="482628" type="use" value="Judging Staff Ability[COMMENT: AREA: non player attributes; SUB-AREA: technical director attribute; FR-BN: 26847; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: ]" />
@@ -15620,7 +15620,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="492104" type="use" value="Negotiating[COMMENT:AREA: Non Player Profile; SUB - AREA: Non - Player Attributes; FR - BN: 26048; TONE: Formal; CHARLIMIT: None; REF - ID: n / a; NOTE: Name for Negotiating attribute]" />
 				<translation id="hint" translation_id="492104" type="use" value="Negotiating[COMMENT:AREA: Non Player Profile; SUB - AREA: Non - Player Attributes; FR - BN: 26048; TONE: Formal; CHARLIMIT: None; REF - ID: n / a; NOTE: Name for Negotiating attribute]" />
@@ -15648,7 +15648,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="513329" type="use" value="Ana D[COMMENT: AREA: Non Player Profile; SUB-AREA: Non-Player Attributes; FR-BN: 32193; TONE: Formal; CHARLIMIT: Very Short; REF-ID: n/a; NOTE: Abbreviation for analysing data attribute]" />
 				<translation id="hint" translation_id="513327" type="use" value="Analysing Data[COMMENT: AREA: Non Player Profile; SUB-AREA: Non-Player Attributes; FR-BN: 32193; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Name for analysing data attribute]" />
@@ -15751,7 +15751,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227948" type="use" value="Dis[comment - Level Of Discipline]" />
 				<translation id="hint" translation_id="227949" type="use" value="Level Of Discipline" />
@@ -15779,7 +15779,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="227950" type="use" value="Mot[comment - Motivating]" />
 				<translation id="hint" translation_id="227951" type="use" value="Motivating" />
@@ -17062,7 +17062,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="227942" type="use" value="Ada[comment - Adaptability]" />
 				<translation id="hint" translation_id="227943" type="use" value="Adaptability" />
@@ -17088,7 +17088,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361058" type="use" value="Amb[COMMENT: column heading; shor for Ambition]" />
 				<translation id="hint" translation_id="293412" type="use" value="Ambition" />
@@ -17114,7 +17114,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361230" type="use" value="Loy[COMMENT: column heading; short for Loyalty]" />
 				<translation id="hint" translation_id="293414" type="use" value="Loyalty" />
@@ -17140,7 +17140,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361256" type="use" value="Pres[COMMENT: column heading; short for Pressure]" />
 				<translation id="hint" translation_id="293329" type="use" value="Pressure" />
@@ -17166,7 +17166,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361259" type="use" value="Prof[COMMENT: column heading; short for Professionalism]" />
 				<translation id="hint" translation_id="293415" type="use" value="Professionalism" />
@@ -17192,7 +17192,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361278" type="use" value="Spor[COMMENT: column heading; short for Sportsmanship]" />
 				<translation id="hint" translation_id="293416" type="use" value="Sportsmanship" />
@@ -17218,7 +17218,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="361281" type="use" value="Temp[COMMENT: column heading; short for Temperament]" />
 				<translation id="hint" translation_id="349110" type="use" value="Temperament[COMMENT: how good a person is at keeping their temper]" />
@@ -17247,7 +17247,7 @@
 			<record id="widget_edit_info">
 				<symbol id="class" value="attribute_edit_box" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="left,centre_y" />
 				<translation id="text" translation_id="348796" type="use" value="Cont[comment - Controversy]" />
 				<translation id="hint" translation_id="293413" type="use" value="Controversy" />
@@ -21475,7 +21475,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="346900" type="use" value="Touting Players[COMMENT: - agent attribute; how likely they are to offer their clients around to other teams]" />
 				<translation id="hint" translation_id="346900" type="use" value="Touting Players[COMMENT: - agent attribute; how likely they are to offer their clients around to other teams]" />
@@ -21498,7 +21498,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="346562" type="use" value="Agent Fee Demand[COMMENT: how likely the agent is to put his fee up]" />
 				<translation id="hint" translation_id="346562" type="use" value="Agent Fee Demand[COMMENT: how likely the agent is to put his fee up]" />
@@ -21521,7 +21521,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="308644" type="use" value="Patience[COMMENT: his patience in negotiation]" />
 				<translation id="hint" translation_id="308644" type="use" value="Patience[COMMENT: his patience in negotiation]" />
@@ -21544,7 +21544,7 @@
 			<record id="column_widget_properties">
 				<flags id="alignment" value="centre" />
 			</record>
-			<record id="column_heading">
+			<record id="column_heading" font="text_black">
 				<flags id="alignment" value="centre" />
 				<translation id="text" translation_id="447689" type="use" value="SoA[COMMENT: bug 162123, agent's size of agency, abbreviation]" />
 				<translation id="hint" translation_id="447688" type="use" value="Size of Agency[COMMENT: bug 162123, agent's size of agency]" />

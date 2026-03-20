@@ -4,8 +4,8 @@
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 
 	<!--main panel-->
-	<container id="rpmp" draw_vertical_dividers="true">
-		<layout class="arrange_horizontal_attachment" layout="-3,-4,-3" offset="0" />
+	<container id="rpmp">
+		<layout class="arrange_horizontal_attachment" layout="-3,-4,-4,-3" offset="0" />
 		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
 		<!-- Data on whether we have non player and/or player info -->
@@ -21,9 +21,9 @@
 		</record>
 
 		<!--left panel (personal details/achievements summary)-->
-		<container class="main_subtle_box" draw_horizontal_dividers="true">
-			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
-			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<container class="main_subtle_box">
+			<layout class="arrange_vertical_attachment" layout="450,180,-1" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
 
 			<widget class="client_object_viewer_xml_panel" id="rpdp" file="person/retired personal details panel">
 				<record id="object_property">
@@ -31,7 +31,6 @@
 					<integer id="set_property" value="objt" />
 				</record>
 			</widget>
-
 
 			<container class="main_box">
 				<translation id="title" translation_id="435775" type="use" value="Career Milestones[COMMENT: was previously ID 329749 Career Achievements, rewording as it's a better term for the content on the screen]" />
@@ -45,15 +44,33 @@
 					</record>
 				</widget>
 			</container>
+
+			<container/>
 		</container>
 
-		<!--middle container (biography/landmarks)-->
-		<container class="client_object_viewer_selector_panel" id="Cos1">
-			<widget class="person_history_biography_panel" id="phbp" file="person/retired person history biography" default_item="true">
-				<translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
-			</widget>
+		<!--middle container (landmarks)-->
+		<container class="main_subtle_box">
+			<translation id="title" translation_id="248354" type="use" value="Landmarks" />
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 			<widget class="person_achievements_list_panel" id="palp">
-				<translation id="title" translation_id="248354" type="use" value="Landmarks" />
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+		</container>
+
+		<!--middle container (biography)-->
+		<container class="main_subtle_box">
+			<translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+			<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<widget class="person_history_biography_panel" id="phbp" file="person/retired person history biography" default_item="true">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
 			</widget>
 		</container>
 

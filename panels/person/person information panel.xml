@@ -18,7 +18,7 @@
 
 
 	<!-- Personal Information on the left -->
-	<container draw_horizontal_dividers="true">
+	<container draw_horizontal_dividers="false">
 		<attachment_group class="vertical_arrange" vertical_layout="-8,-5">
 			<global id="horizontal_gap" name="ui.main_box_gap"/>
 		</attachment_group>
@@ -154,7 +154,7 @@
 		<container navigation_container="true">
 			<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_offset="0" vertical_inset="0" />
 
-			<container>
+			<container class="main_subtle_box">
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 				<!-- Happiness -->
 				<widget class="person_happiness_panel" id="phap" hidden="true">
@@ -173,7 +173,7 @@
 			</container>
 
 			<!-- Tendencies (non-players) -->
-			<container class="main_box" id="npt1" width="270">
+			<container class="main_subtle_box" id="npt1" width="270">
 				<translation id="title" translation_id="347330" type="use" value="Tendencies[COMMENT: Non person information; title for a list of tendencies/inclinations that the person may have]" />
 				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
 

@@ -1,4 +1,4 @@
-﻿<panel draw_vertical_dividers="true">
+﻿<panel draw_vertical_dividers="false">
 	<!--very close relationship colour-->
 	<colour id="pVgC" name="very close relationship" />
 	<!--close relationship colour-->
@@ -19,7 +19,7 @@
 	</attachment_group>
 
 	<!--Happiness-->
-	<container class="main_box" id="happ">
+	<container class="main_subtle_box" id="happ">
 		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="6" gap="12" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 		<translation id="title" translation_id="247463" type="use" value="Happiness" />
@@ -48,7 +48,7 @@
 	</widget>
 
 	<!-- Playing time panel-->
-	<container class="main_box" draw_horizontal_dividers="true" id="plaC">
+	<container class="main_subtle_box" draw_horizontal_dividers="false" id="plaC">
 		<attachment_group class="vertical_arrange" vertical_layout="-8,-3,-3" />
 		<translation id="title" translation_id="491902" type="use" value="Playing Time Pathway[COMMENT: AREA: Splash Screen; SUB-AREA: What's New; FR-BN: n/a; TONE: Informal; CHARLIMIT: None; REF-ID: n/a; NOTE: splash screen indicating what's new in this version of the game]" />
 
@@ -435,7 +435,7 @@
 	</container>
 
 	<!--Squad Hierarchy-->
-	<container class="main_box" navigation_container="true" draw_horizontal_dividers="true">
+	<container class="main_subtle_box" navigation_container="true" draw_horizontal_dividers="false">
 		<attachment_group class="vertical_arrange" vertical_alignment="fill" offset="6">
 			<global id="vertical_gap" name="ui.main_box_gap" />
 		</attachment_group>

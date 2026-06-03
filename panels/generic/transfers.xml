@@ -55,13 +55,6 @@
 							<translation id="name" translation_id="260358" type="use" value="Staff[COMMENT: team transfers section; a list of staff who have joined or left the club]" />
 						</record>
 						<record id="----" />
-						<record id="12">
-							<translation id="name" translation_id="248405" type="use" value="Future Transfers" />
-						</record>
-						<record id="13">
-							<translation id="name" translation_id="297746" type="use" value="Leading Transfers[COMMENT: transfers section; a list of record-breaking transfers]" />
-						</record>
-						<record id="----" />
 						<record id="9">
 							<translation id="name" translation_id="316774" type="use" value="Youth Intake[COMMENT: Players who have joined clubs youth team]" />
 						</record>
